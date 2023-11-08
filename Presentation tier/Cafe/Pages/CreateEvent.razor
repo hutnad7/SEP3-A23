@@ -1,0 +1,84 @@
+﻿@page "/create-event"
+
+@using Cafe.Models
+@inject NotificationService NotificationService
+
+@inject HttpClient HttpClient
+
+<h3>Create event</h3>
+
+<RadzenTemplateForm TItem="Event" Data=Event Submit="@SubmitEvent">
+    <RadzenTextBox @bind-Value="Event.Name" Name="Name" Placeholder="Event Name" Style="width:100%; margin-bottom: 20px;" />
+    <RadzenTextBox @bind-Value="Event.Description" Name="Description" Placeholder="Description" Style="width:100%; margin-bottom: 20px;" />
+   <div class="rz-p-sm-12 rz-text-align-center">
+       <RadzenDropDown @bind-Value="Event.EntertainerId" Data=@entertainers TextProperty="FullName" ValueProperty="Id" Style="width: 100%; max-width: 400px;" />
+   </div>
+
+
+    <RadzenButton ButtonType="ButtonType.Submit" Text="Create Event" />
+</RadzenTemplateForm>
+
+@code {
+    public Event Event = new();
+    IEnumerable<Entertainer> entertainers;
+
+    protected override void OnInitialized()
+    {
+        entertainers = new List<Entertainer>
+        {
+            new Entertainer { Id = 1, FirstName = "John", LastName = "Doe" },
+            new Entertainer { Id = 2, FirstName = "Jane", LastName = "Smith" },
+            new Entertainer { Id = 3, FirstName = "Bob", LastName = "Brown" },
+            new Entertainer { Id = 4, FirstName = "Alice", LastName = "White" },
+            new Entertainer { Id = 5, FirstName = "Charlie", LastName = "Green" },
+            new Entertainer { Id = 6, FirstName = "David", LastName = "Black" },
+            new Entertainer { Id = 7, FirstName = "Eva", LastName = "Blue" },
+            new Entertainer { Id = 8, FirstName = "Frank", LastName = "Gray" },
+            new Entertainer { Id = 9, FirstName = "Grace", LastName = "Red" },
+            new Entertainer { Id = 10, FirstName = "Harry", LastName = "Yellow" }
+        };
+
+        Event.EntertainerId = entertainers.First().Id;
+    }
+
+    private async Task SubmitEvent(Event evt)
+    {
+        try
+        {
+            var response = await HttpClient.PostAsJsonAsync("http://localhost:8080/api/events", evt);
+            if (response.IsSuccessStatusCode)
+            {
+                ShowSuccessNotification();
+                ResetForm();
+            }
+            else
+            {
+                ShowErrorNotification("An error occurred while processing your request.");
+            }
+        }
+        catch (HttpRequestException)
+        {
+            ShowErrorNotification("Server is down or there's an issue with the request.");
+        }
+        catch (Exception ex)
+        {
+            ShowErrorNotification($"An unexpected error occurred: {ex.Message}");
+        }
+    }
+
+    private void ShowSuccessNotification()
+    {
+        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Event created", Detail = "Success Detail", Duration = 4000 });
+    }
+    
+    private void ShowErrorNotification(string message)
+    {
+        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = message, Detail = "Unable to create the event", Duration = 4000 });
+    }
+
+    private void ResetForm()
+    {
+        Event = new ();
+        Event.EntertainerId = entertainers.First().Id;
+    }
+}
