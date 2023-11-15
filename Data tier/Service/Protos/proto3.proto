@@ -15,7 +15,6 @@ message EventRequest{
 	string Entertainer = 3;
 	string CafeOwner = 5;
 	string Date=6;
-
 }
 message EventResponse{
   string id = 1;
