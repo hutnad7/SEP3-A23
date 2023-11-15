@@ -297,7 +297,11 @@
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Alternative</AssetRole>
+<<<<<<< HEAD
+      <RelatedAsset>C:\Users\denim\Documents\VIA\3-Semester\SDJ3\SEP3-A23\Presentation tier\Cafe\bin\Debug\net7.0\wwwroot\_framework\blazor.webassembly.js</RelatedAsset>
+=======
       <RelatedAsset>C:\Users\javib\Desktop\Holi\Sep3\SEP3-A23\Presentation tier\Cafe\bin\Debug\net7.0\wwwroot\_framework\blazor.webassembly.js</RelatedAsset>
+>>>>>>> aea79a66772a59317bd77c5a2138942963bbf160
       <AssetTraitName>Content-Encoding</AssetTraitName>
       <AssetTraitValue>gzip</AssetTraitValue>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

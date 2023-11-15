@@ -1,0 +1,211 @@
+{
+  "format": 1,
+  "restore": {
+<<<<<<< HEAD:DataTier1/Service/obj/Service.csproj.nuget.dgspec.json
+    "C:\\Users\\denim\\Documents\\VIA\\3-Semester\\SDJ3\\SEP3-A23\\DataTier1\\Service\\Service.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\denim\\Documents\\VIA\\3-Semester\\SDJ3\\SEP3-A23\\DataTier1\\Data\\Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\denim\\Documents\\VIA\\3-Semester\\SDJ3\\SEP3-A23\\DataTier1\\Data\\Data.csproj",
+        "projectName": "Data",
+        "projectPath": "C:\\Users\\denim\\Documents\\VIA\\3-Semester\\SDJ3\\SEP3-A23\\DataTier1\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\denim\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denim\\Documents\\VIA\\3-Semester\\SDJ3\\SEP3-A23\\DataTier1\\Data\\obj\\",
+=======
+    "C:\\Users\\javib\\Desktop\\Holi\\Sep3\\SEP3-A23\\Data tier\\Service\\Service.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\javib\\Desktop\\Holi\\Sep3\\SEP3-A23\\Data tier\\Data\\Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\javib\\Desktop\\Holi\\Sep3\\SEP3-A23\\Data tier\\Data\\Data.csproj",
+        "projectName": "Data",
+        "projectPath": "C:\\Users\\javib\\Desktop\\Holi\\Sep3\\SEP3-A23\\Data tier\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\javib\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\javib\\Desktop\\Holi\\Sep3\\SEP3-A23\\Data tier\\Data\\obj\\",
+>>>>>>> aea79a66772a59317bd77c5a2138942963bbf160:Data tier/Service/obj/Service.csproj.nuget.dgspec.json
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\javib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+<<<<<<< HEAD:DataTier1/Service/obj/Service.csproj.nuget.dgspec.json
+    "C:\\Users\\denim\\Documents\\VIA\\3-Semester\\SDJ3\\SEP3-A23\\DataTier1\\Service\\Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\denim\\Documents\\VIA\\3-Semester\\SDJ3\\SEP3-A23\\DataTier1\\Service\\Service.csproj",
+        "projectName": "Service",
+        "projectPath": "C:\\Users\\denim\\Documents\\VIA\\3-Semester\\SDJ3\\SEP3-A23\\DataTier1\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\denim\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\denim\\Documents\\VIA\\3-Semester\\SDJ3\\SEP3-A23\\DataTier1\\Service\\obj\\",
+=======
+    "C:\\Users\\javib\\Desktop\\Holi\\Sep3\\SEP3-A23\\Data tier\\Service\\Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\javib\\Desktop\\Holi\\Sep3\\SEP3-A23\\Data tier\\Service\\Service.csproj",
+        "projectName": "Service",
+        "projectPath": "C:\\Users\\javib\\Desktop\\Holi\\Sep3\\SEP3-A23\\Data tier\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\javib\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\javib\\Desktop\\Holi\\Sep3\\SEP3-A23\\Data tier\\Service\\obj\\",
+>>>>>>> aea79a66772a59317bd77c5a2138942963bbf160:Data tier/Service/obj/Service.csproj.nuget.dgspec.json
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\javib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+<<<<<<< HEAD:DataTier1/Service/obj/Service.csproj.nuget.dgspec.json
+              "C:\\Users\\denim\\Documents\\VIA\\3-Semester\\SDJ3\\SEP3-A23\\DataTier1\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\denim\\Documents\\VIA\\3-Semester\\SDJ3\\SEP3-A23\\DataTier1\\Data\\Data.csproj"
+=======
+              "C:\\Users\\javib\\Desktop\\Holi\\Sep3\\SEP3-A23\\Data tier\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\javib\\Desktop\\Holi\\Sep3\\SEP3-A23\\Data tier\\Data\\Data.csproj"
+>>>>>>> aea79a66772a59317bd77c5a2138942963bbf160:Data tier/Service/obj/Service.csproj.nuget.dgspec.json
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.40.0, )"
+            },
+            "Grpc.AspNetCore.Server": {
+              "target": "Package",
+              "version": "[2.40.0, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.40.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "protoc_x64": {
+              "target": "Package",
+              "version": "[2.6.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
