@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Data tier",
+    "\\Data tier\\Data\\Interfaces",
+    "\\Data tier\\Data\\Models",
+    "\\Data tier\\Data\\Repositories",
+    "\\Data tier\\Service",
+    "\\Data tier\\Service\\Services"
+  ],
+  "SelectedNode": "\\Data tier\\Service\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

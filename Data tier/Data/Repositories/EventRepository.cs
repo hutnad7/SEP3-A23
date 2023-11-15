@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq.Expressions;
 using Data.Models;
 using Data.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace Data.Repositories
 {
@@ -15,9 +17,9 @@ namespace Data.Repositories
         }
         public override async Task<Event> CreateAsync(Event entity)
         {
-            User cafeOwner = _context.Users.FirstOrDefault(c=>c.Id==entity.CafeOwnerId);
+            User cafeOwner = _context.Users.Include(u=>u.Events).FirstOrDefault(c=>c.Id==entity.CafeOwnerId);
             entity.CafeOwner = cafeOwner;
-            User enterteiner = _context.Users.FirstOrDefault(c => c.Id == entity.EnterteinerId);
+            User enterteiner = _context.Users.Include(u => u.Events).FirstOrDefault(c => c.Id == entity.EnterteinerId);
             entity.Enterteiner = enterteiner;
             await _context.Events.AddAsync(entity);
             await _context.SaveChangesAsync();

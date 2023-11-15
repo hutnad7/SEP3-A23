@@ -32,8 +32,7 @@ namespace Data
     .WithMany(e => e.Events)
     .HasForeignKey(e => e.CafeOwnerId)
     .IsRequired();
-
-
+             
             modelBuilder.Entity<User>().HasData(
                 new User 
                 { 
@@ -46,7 +45,18 @@ namespace Data
                     Role = Role.CafeOwner,
                     PasswordHash = "CafePa33word".GetHashCode().ToString(),
                 });
-
+            modelBuilder.Entity<User>().HasData(
+                new User 
+                { 
+                    Id = Guid.NewGuid(),
+                    Firstname = "User",
+                    Lastname = "Normal",
+                    Username = "normal_user",
+                    Email = "normaluser@gmail.com",
+                    CreationDate = DateTime.Now,
+                    Role = Role.User,
+                    PasswordHash = "UserPa33word".GetHashCode().ToString(),
+                });
             modelBuilder.Entity<User>().HasData(
                 new User
                 {

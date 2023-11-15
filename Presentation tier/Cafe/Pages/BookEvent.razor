@@ -1,0 +1,59 @@
+﻿@page "/BookEvent/{Id}"
+@using Cafe.Models
+@inject HttpClient HttpClient
+@inject NotificationService NotificationService
+
+<h3>BookEvent</h3>
+<RadzenTemplateForm TItem="Booking" Data="booking" Submit="@Submit">
+    <RadzenTextBox @bind-Value="booking.FirstName" Name="First Name" Placeholder="First Name" Style="width:100%; margin-bottom: 20px;" />
+    <RadzenTextBox @bind-Value="booking.LastName" Name="Last Name" Placeholder="Last Name" Style="width:100%; margin-bottom: 20px;" />
+    <div class="rz-p-12 rz-text-align-center">
+        <RadzenNumeric @bind-Value=@booking.numberOfPeople />
+    </div>
+    <p>@booking.EventId</p>
+    <RadzenButton ButtonType="ButtonType.Submit" Text="Book now" />
+</RadzenTemplateForm>
+
+
+@code {
+
+    [Parameter]
+    public string Id { get; set; }
+
+    public Booking booking = new();
+
+    protected override async void OnInitialized()
+    {
+        booking.EventId = Guid.Parse(Id);
+    }
+
+    private async Task Submit(Booking _booking)
+    {
+        try
+        {
+    /*var response = await HttpClient.PostAsJsonAsync("http://localhost:8080/api/events", evt);
+            if (response.IsSuccessStatusCode)
+            {
+                ShowSuccessNotification();
+                ResetForm();
+            }
+            else
+            {
+                ShowErrorNotification("An error occurred while processing your request.");
+            }*/
+        }
+        catch (HttpRequestException)
+        {
+            ShowErrorNotification("Server is down or there's an issue with the request.");
+        }
+        catch (Exception ex)
+        {
+            ShowErrorNotification($"An unexpected error occurred: {ex.Message}");
+        }
+    }
+
+    private void ShowErrorNotification(string message)
+    {
+        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = message, Detail = "Unable to create the event", Duration = 4000 });
+    }
+}
