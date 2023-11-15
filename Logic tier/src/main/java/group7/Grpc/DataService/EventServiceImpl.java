@@ -1,11 +1,12 @@
-package group7.Grpc.DataService;
+ package group7.Grpc.DataService;
 
-import com.sun.jdi.request.EventRequest;
+import group7.protobuf.EventRequest;
+import group7.protobuf.EventResponse;
+import io.grpc.stub.StreamObserver;
 import group7.protobuf.EventServiceGrpc;
 import net.devh.boot.grpc.server.service.GrpcService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import group7.protobuf.Event;
 import java.util.List;
 
 @GrpcService
