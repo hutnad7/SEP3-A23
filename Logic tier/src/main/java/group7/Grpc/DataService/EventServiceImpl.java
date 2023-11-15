@@ -1,5 +1,6 @@
 package group7.Grpc.DataService;
 
+import com.sun.jdi.request.EventRequest;
 import group7.protobuf.EventServiceGrpc;
 import net.devh.boot.grpc.server.service.GrpcService;
 import org.slf4j.Logger;
@@ -12,21 +13,32 @@ public class EventServiceImpl extends EventServiceGrpc.EventServiceImplBase {
     private final static Logger LOG =
             LoggerFactory.getLogger(EventServiceImpl.class);
 
-    private final static List<Event> Events = List.of(
-        Event.newBuilder().setId(1).setName("the shit").setDescription("").setEntertainer("the shitty guy").build()
+    private final static List<EventRequest> EVENTS = List.of(
+            EventRequest.newBuilder()
+                    .setName("Full Chicken")
+                    .setDescription("Description for Full Chicken")
+                    .setEntertainer("Full Chicken from Poland")
+                    .setCafeOwner("CafeOwner1") // Example CafeOwner
+                    .setDate("2023-11-07 16:08:17.932232") // Example Date
+                    .build(),
+            EventRequest.newBuilder()
+                    .setName("Chicken Breast")
+                    .setDescription("Description for Chicken Breast")
+                    .setEntertainer("Chicken Breast from Poland")
+                    .setCafeOwner("CafeOwner2") // Example CafeOwner
+                    .setDate("2023-11-08 17:09:18.933333") // Example Date
+                    .build()
     );
 
 
-@Override
-public void createEvent(com.google.protobuf.Int32Value request,
-                        io.grpc.stub.StreamObserver<group7.protobuf.Event> responseObserver){
-    LOG.info("Received request for event with id: {}", request.getValue());
-    Event isEventPresent = Events.stream()
-            .filter(findProduct -> findProduct.getId() == request.getValue())
-            .findFirst()
-            .orElseThrow(() -> new RuntimeException("Product not found"));
-    LOG.info(isEventPresent.toString());
-    responseObserver.onNext(isEventPresent);
-    responseObserver.onCompleted();
-}
+    @Override
+    public void createEvent(EventRequest request,
+                            StreamObserver<EventResponse> responseObserver) {
+        LOG.info("Received request to create event with name: {}", request.getName());
+        EventRequest isEventPresent = EVENTS.stream()
+                .filter(findEvent -> findEvent.getName().equals(request.getName()))
+                .findFirst()
+                .orElseThrow(() -> new RuntimeException("Event not found"));
+        LOG.info(isEventPresent.toString());
+    }
 }
