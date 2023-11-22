@@ -1,0 +1,10 @@
+
+*.gz
+DataTier1/Data/bin/Debug/net7.0/Data.deps.json
+DataTier1/Data/bin/Debug/net7.0/Data.deps.json
+*.dll
+DataTier1/Data/obj/Data.csproj.nuget.g.props
+DataTier1/Data/obj/Data.csproj.nuget.dgspec.json
+DataTier1/Data/obj/Debug/net7.0/Data.csproj.CoreCompileInputs.cache
+DataTier1/Data/obj/Debug/net7.0/Data.csproj.AssemblyReference.cache
+*.dll

@@ -1,4 +1,0 @@
-obj\Release\net7.0\Protos/Proto3.cs \
-obj\Release\net7.0\Protos/Proto3Grpc.cs: C:/Users/denim/.nuget/packages/grpc.tools/2.40.0/build/native/include/google/protobuf/empty.proto\
- C:/Users/denim/.nuget/packages/grpc.tools/2.40.0/build/native/include/google/protobuf/wrappers.proto\
- Protos/proto3.proto

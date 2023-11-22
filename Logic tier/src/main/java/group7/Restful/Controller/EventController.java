@@ -3,6 +3,7 @@ package group7.Restful.Controller;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
 import group7.Restful.entity.Event;
 import group7.Restful.service.EventService;
@@ -36,11 +37,12 @@ public class EventController {
 
     @PostMapping
     public ResponseEntity<Event> createEvent(@RequestBody Event event) {
+        System.out.println("EventController.createEvent");
         return ResponseEntity.ok(this.eventService.createEvent(event));
     }
 
     @GetMapping({"/{id}"})
-    public ResponseEntity<Event> getEventById(@PathVariable Long id) {
+    public ResponseEntity<Event> getEventById(@PathVariable UUID id) {
         Optional<Event> eventOpt = this.eventService.getEventById(id);
         return eventOpt.isPresent() ? ResponseEntity.ok((Event)eventOpt.get()) : ResponseEntity.notFound().build();
     }
@@ -51,13 +53,13 @@ public class EventController {
     }
 
     @PutMapping({"/{id}"})
-    public ResponseEntity<Event> updateEvent(@PathVariable Long id, @RequestBody Event event) {
+    public ResponseEntity<Event> updateEvent(@PathVariable UUID id, @RequestBody Event event) {
         Optional<Event> updatedEventOpt = this.eventService.updateEvent(id, event);
         return updatedEventOpt.isPresent() ? ResponseEntity.ok((Event)updatedEventOpt.get()) : ResponseEntity.notFound().build();
     }
 
     @DeleteMapping({"/{id}"})
-    public ResponseEntity<Void> deleteEvent(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteEvent(@PathVariable UUID id) {
         this.eventService.deleteEvent(id);
         return ResponseEntity.noContent().build();
     }

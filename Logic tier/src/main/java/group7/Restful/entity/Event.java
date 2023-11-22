@@ -1,34 +1,35 @@
 package group7.Restful.entity;
 
 import java.io.Serializable;
+import java.util.UUID;
 
 public class Event implements Serializable {
-    private Long id;
+    private UUID id;
     private String name;
     private String description;
-    private int entertainerId;
+    private UUID entertainerId;
 
     public Event() {
     }
 
-    public Event(String name, String description, int entertainerId) {
+    public Event(String name, String description, UUID entertainerId) {
         this.name = name;
         this.description = description;
         this.entertainerId = entertainerId;
     }
 
-    public Event(Long id, String name, String description, int entertainerId) {
+    public Event(UUID id, String name, String description, UUID entertainerId) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.entertainerId = entertainerId;
     }
 
-    public Long getId() {
+    public UUID getId() {
         return this.id;
     }
 
-    public void setId(Long id) {
+    public void setId(UUID id) {
         this.id = id;
     }
 
@@ -48,11 +49,11 @@ public class Event implements Serializable {
         this.description = description;
     }
 
-    public int getEntertainerId() {
+    public UUID getEntertainerId() {
         return this.entertainerId;
     }
 
-    public void setEntertainerId(int entertainerId) {
+    public void setEntertainerId(UUID entertainerId) {
         this.entertainerId = entertainerId;
     }
 }
