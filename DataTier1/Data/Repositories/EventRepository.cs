@@ -17,7 +17,7 @@ namespace Data.Repositories
         }
         public override async Task<Event> CreateAsync(Event entity)
         {
-            User cafeOwner = _context.Users.Include(u=>u.Events).FirstOrDefault(c=>c.Id==entity.CafeOwnerId);
+            User cafeOwner = _context.Set<User>().Include(u=>u.Events).FirstOrDefault(c=>c.Id.Equals(entity.CafeOwnerId));
             entity.CafeOwner = cafeOwner;
             User enterteiner = _context.Users.Include(u => u.Events).FirstOrDefault(c => c.Id == entity.EnterteinerId);
             entity.Enterteiner = enterteiner;

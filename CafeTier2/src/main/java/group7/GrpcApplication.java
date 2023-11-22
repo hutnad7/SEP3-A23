@@ -1,4 +1,4 @@
-package group7.Grpc;
+package group7;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
