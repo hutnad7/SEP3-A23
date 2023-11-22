@@ -1,34 +1,42 @@
 package group7.Restful.entity;
 
 import java.io.Serializable;
+import java.util.UUID;
 
 public class Event implements Serializable {
-    private Long id;
+    private UUID id;
     private String name;
     private String description;
-    private int entertainerId;
+    private UUID entertainerId;
+    private UUID cafeOwnerId;
+    private String date;
+
 
     public Event() {
     }
 
-    public Event(String name, String description, int entertainerId) {
+    public Event(String name, String description, UUID entertainerId, UUID cafeOwnerId, String date) {
         this.name = name;
         this.description = description;
         this.entertainerId = entertainerId;
+        this.cafeOwnerId = cafeOwnerId;
+        this.date = date;
     }
 
-    public Event(Long id, String name, String description, int entertainerId) {
+    public Event(UUID id, String name, String description, UUID entertainerId, UUID cafeOwnerId, String date) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.entertainerId = entertainerId;
+        this.cafeOwnerId = cafeOwnerId;
+        this.date = date;
     }
 
-    public Long getId() {
+    public UUID getId() {
         return this.id;
     }
 
-    public void setId(Long id) {
+    public void setId(UUID id) {
         this.id = id;
     }
 
@@ -48,11 +56,19 @@ public class Event implements Serializable {
         this.description = description;
     }
 
-    public int getEntertainerId() {
+    public UUID getEntertainerId() {
         return this.entertainerId;
     }
 
-    public void setEntertainerId(int entertainerId) {
+    public void setEntertainerId(UUID entertainerId) {
         this.entertainerId = entertainerId;
     }
+
+    public UUID getCafeOwnerId() {return this.cafeOwnerId;}
+
+    public void setCafeOwnerId(UUID cafeOwnerId) {this.cafeOwnerId = cafeOwnerId;}
+
+    public String getDate() {return this.date;}
+
+    public void setDate(String date) {this.date = date;}
 }

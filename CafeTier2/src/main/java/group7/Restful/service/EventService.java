@@ -5,10 +5,13 @@
 
 package group7.Restful.service;
 
+import group7.Grpc.service.EventRequestService;
 import group7.Restful.entity.Event;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+
+import group7.protobuf.EventRequest;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -19,13 +22,23 @@ public class EventService {
     public EventService() {
     }
 
+//    public Event createEvent(Event event) {
+//        Long var2 = this.idCounter;
+//        this.idCounter = this.idCounter + 1L;
+//        event.setId(var2);
+//        this.events.add(event);
+//
+//        return event;
+//    }
+
     public Event createEvent(Event event) {
-        Long var2 = this.idCounter;
-        this.idCounter = this.idCounter + 1L;
-        event.setId(var2);
+        EventRequestService eventRequestService = new EventRequestService();
+        eventRequestService.createEvent(event.getName(), event.getDescription(), event.getEntertainerId().toString(), event.getCafeOwnerId().toString(), event.getDate());
+        System.out.println("Event sent to gRPC server");
         this.events.add(event);
         return event;
     }
+
 
     public Optional<Event> getEventById(Long id) {
         return this.events.stream().filter((e) -> {

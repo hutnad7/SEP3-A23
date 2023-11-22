@@ -1,7 +1,6 @@
 package group7.Grpc.Configs;
 
 
-import group7.Restful.service.GrpcClientService;
 import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -6,9 +6,6 @@ import java.util.Optional;
 
 import group7.Restful.entity.Event;
 import group7.Restful.service.EventService;
-import group7.Restful.service.GrpcClientService;
-import group7.protobuf.EventRequest;
-import group7.protobuf.EventResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -33,36 +30,14 @@ public class EventController {
     private final EventService eventService;
 
     @Autowired
-    private GrpcClientService grpcClientService; // Assuming you have a GrpcClientService to interact with gRPC
-
-    @Autowired
     public EventController(EventService eventService) {
         this.eventService = eventService;
     }
-//
-//    @PostMapping
-//    public ResponseEntity<Event> createEvent(@RequestBody Event event) {
-//        return ResponseEntity.ok(this.eventService.createEvent(event));
-//    }
+
     @PostMapping
     public ResponseEntity<Event> createEvent(@RequestBody Event event) {
-    // Convert your Event entity to EventRequest (gRPC message)
-    EventRequest grpcRequest = EventRequest.newBuilder()
-            .setName(event.getName())
-            .setDescription(event.getDescription())
-            // other fields
-            .build();
-
-    // Call the gRPC service
-    EventResponse grpcResponse = grpcClientService.createEvent(grpcRequest);
-
-    // Process the response and create your entity to be returned
-    Event createdEvent = new Event(
-            // extract fields from grpcResponse or event
-    );
-
-    return ResponseEntity.ok(createdEvent);
-}
+        return ResponseEntity.ok(this.eventService.createEvent(event));
+    }
 
     @GetMapping({"/{id}"})
     public ResponseEntity<Event> getEventById(@PathVariable Long id) {
