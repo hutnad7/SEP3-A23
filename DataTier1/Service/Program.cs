@@ -18,6 +18,8 @@ builder.Services.AddDbContext<DBContext>(options =>
 builder.Services.AddScoped<IEnterteinerRepository, EnterteinerRepository>();
 builder.Services.AddScoped<ICafeOwnerRepository, CafeOwnerRepository>();
 builder.Services.AddScoped<IEventRepository, EventRepository>();
+builder.Services.AddScoped<IBookingRepository, BookingRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

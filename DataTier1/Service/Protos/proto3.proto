@@ -9,9 +9,23 @@ option java_outer_classname = "EventProto";
 service EventService{
   rpc CreateEvent(CreateEventRequest) returns (CreateEventResponse){};
   rpc GetEvent(GetEventRequest) returns (GetEventResponse){};
+  rpc BookEvent(BookEventRequest) returns (BookEventResponse){};
 }
 service UserService{
 	  rpc CreateUser(CreateUserRequest) returns (CreateUserResponse){};
+}
+message BookEventRequest{
+	string userId = 1;
+	string eventId = 2;
+	string Date = 3;
+	int32 NumerOfPeople = 4;
+}
+message BookEventResponse{
+	string userId = 1;
+	string eventId = 2;
+	string Date = 3;
+	int32 NumerOfPeople = 4;
+	string id =5;
 }
 message CreateUserRequest{
 	string FisrtName = 1;
@@ -35,12 +49,14 @@ message CreateEventRequest{
 	string Entertainer = 3;
 	string CafeOwner = 4;
 	string Date=5;
+	int32 AvailablePlaces = 6;
 }
 message CreateEventResponse{
   string id = 1;
   string name = 2;
   string description = 3;
   string Entertainer = 4;
+  	int32 AvailablePlaces = 5;
 }
 message GetEventRequest{
 	string id = 1;

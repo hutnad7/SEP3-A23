@@ -9,10 +9,12 @@ namespace Service.Services
     {
         private readonly ILogger<EventServiceImpl> _logger;
         private readonly IEventRepository _eventRepository;
-        public EventServiceImpl(ILogger<EventServiceImpl> logger, IEventRepository eventRepository)
+        private readonly IBookingRepository _bookingRepository;
+        public EventServiceImpl(ILogger<EventServiceImpl> logger, IEventRepository eventRepository, IBookingRepository bookingRepository)
         {
             _logger = logger;
             _eventRepository = eventRepository;
+            _bookingRepository = bookingRepository;
         }
         public override async Task<CreateEventResponse> CreateEvent(CreateEventRequest request, ServerCallContext context)
         {
@@ -24,7 +26,8 @@ namespace Service.Services
                 CreationDate = DateTime.Now,
                 Date = DateTime.Parse(request.Date),
                 Text = request.Description,
-                Title = request.Name
+                Title = request.Name,
+                AvailablePlaces = request.AvailablePlaces
             };
             Event ev = await _eventRepository.CreateAsync(e);
             CreateEventResponse response = new CreateEventResponse()
@@ -32,7 +35,8 @@ namespace Service.Services
                 Id = ev.Id.ToString(),
                 Entertainer = ev.EnterteinerId.ToString(),
                 Name = ev.Title,
-                Description = ev.Text
+                Description = ev.Text,
+                AvailablePlaces = ev.AvailablePlaces
             };
             return response;
         }
@@ -50,5 +54,27 @@ namespace Service.Services
             };
             return response;
         }
+        public override async Task<BookEventResponse> BookEvent(BookEventRequest request, ServerCallContext context)
+        {
+            Booking booking = new Booking()
+            {
+                Id = Guid.NewGuid(),
+                UserId = Guid.Parse(request.UserId),
+                EventId = Guid.Parse(request.EventId),
+                CreationDate = DateTime.Parse(request.Date),
+                NumberOfPeople = request.NumerOfPeople
+            };
+            Booking b =  await _bookingRepository.CreateAsync(booking);
+            BookEventResponse response = new BookEventResponse()
+            {
+                Id = booking.Id.ToString(),
+                UserId = b.UserId.ToString(),
+                EventId = b.EventId.ToString(),
+                Date = b.CreationDate.ToString(),
+                NumerOfPeople = b.NumberOfPeople
+            };
+            return response;
+        }
+
     }
 }

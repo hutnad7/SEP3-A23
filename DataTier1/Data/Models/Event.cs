@@ -29,6 +29,9 @@ namespace Data.Models
 
         [Required]
         public string Text { get; set; }
+        [Required]
+        public int AvailablePlaces { get; set; }
+        public virtual ICollection<Booking> Bookings { get; set; }
         public Event() { }
 
     }

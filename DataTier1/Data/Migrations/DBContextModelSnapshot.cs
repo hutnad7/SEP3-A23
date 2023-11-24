@@ -19,11 +19,41 @@ namespace Data.Migrations
                 .HasAnnotation("ProductVersion", "7.0.13")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("Data.Models.Booking", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<DateTime>("CreationDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<Guid>("EventId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<int>("NumberOfPeople")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("char(36)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EventId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Bookings");
+                });
+
             modelBuilder.Entity("Data.Models.Event", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
+
+                    b.Property<int>("AvailablePlaces")
+                        .HasColumnType("int");
 
                     b.Property<Guid>("CafeOwnerId")
                         .HasColumnType("char(36)");
@@ -99,26 +129,56 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("0d8d4874-3b70-445c-98ef-eb9c2306ba55"),
-                            CreationDate = new DateTime(2023, 11, 7, 16, 8, 17, 932, DateTimeKind.Local).AddTicks(2190),
+                            Id = new Guid("8a34711c-00a2-49f3-800e-6cba7fdaf772"),
+                            CreationDate = new DateTime(2023, 11, 22, 15, 56, 37, 97, DateTimeKind.Local).AddTicks(9157),
                             Email = "coffeowner@gmail.com",
                             Firstname = "Coffe",
                             Lastname = "Owner",
-                            PasswordHash = "-1417871599",
+                            PasswordHash = "-1847320417",
                             Role = 1,
                             Username = "CoffeOwnerTest"
                         },
                         new
                         {
-                            Id = new Guid("2ef5bf7b-11a9-41cc-aed0-fe37e3b46e62"),
-                            CreationDate = new DateTime(2023, 11, 7, 16, 8, 17, 932, DateTimeKind.Local).AddTicks(2323),
+                            Id = new Guid("d3d99d3d-bd21-4ed2-87d3-eabc8be202ec"),
+                            CreationDate = new DateTime(2023, 11, 22, 15, 56, 37, 97, DateTimeKind.Local).AddTicks(9288),
+                            Email = "normaluser@gmail.com",
+                            Firstname = "User",
+                            Lastname = "Normal",
+                            PasswordHash = "1682876097",
+                            Role = 0,
+                            Username = "normal_user"
+                        },
+                        new
+                        {
+                            Id = new Guid("54a606f1-c5a9-475d-82e4-e9534c0f93f6"),
+                            CreationDate = new DateTime(2023, 11, 22, 15, 56, 37, 97, DateTimeKind.Local).AddTicks(9319),
                             Email = "enterteiner@gmail.com",
                             Firstname = "Enter",
                             Lastname = "Teiner",
-                            PasswordHash = "764849110",
+                            PasswordHash = "1917760719",
                             Role = 2,
                             Username = "enterteiner"
                         });
+                });
+
+            modelBuilder.Entity("Data.Models.Booking", b =>
+                {
+                    b.HasOne("Data.Models.Event", "Event")
+                        .WithMany("Bookings")
+                        .HasForeignKey("EventId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Data.Models.User", "User")
+                        .WithMany("Bookings")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Event");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Data.Models.Event", b =>
@@ -140,8 +200,15 @@ namespace Data.Migrations
                     b.Navigation("Enterteiner");
                 });
 
+            modelBuilder.Entity("Data.Models.Event", b =>
+                {
+                    b.Navigation("Bookings");
+                });
+
             modelBuilder.Entity("Data.Models.User", b =>
                 {
+                    b.Navigation("Bookings");
+
                     b.Navigation("Events");
                 });
 #pragma warning restore 612, 618
