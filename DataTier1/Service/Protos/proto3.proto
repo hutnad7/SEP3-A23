@@ -48,7 +48,7 @@ message CreateEventRequest{
 	string description = 2;
 	string Entertainer = 3;
 	string CafeOwner = 4;
-	string Date=5;
+	string Date = 5;
 	int32 AvailablePlaces = 6;
 }
 message CreateEventResponse{

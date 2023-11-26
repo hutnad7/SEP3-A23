@@ -22,12 +22,12 @@ namespace Service.Services
             {
                 Id = Guid.NewGuid(),
                 EnterteinerId = Guid.Parse(request.Entertainer),
-                CafeOwnerId = Guid.Parse(request.CafeOwner),
+                CafeOwnerId = Guid.Parse(request.Entertainer),
                 CreationDate = DateTime.Now,
                 Date = DateTime.Parse(request.Date),
                 Text = request.Description,
                 Title = request.Name,
-                AvailablePlaces = request.AvailablePlaces
+                AvailablePlaces = 10 //request.AvailablePlaces
             };
             Event ev = await _eventRepository.CreateAsync(e);
             CreateEventResponse response = new CreateEventResponse()

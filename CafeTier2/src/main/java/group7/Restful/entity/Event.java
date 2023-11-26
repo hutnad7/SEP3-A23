@@ -10,26 +10,29 @@ public class Event implements Serializable {
     private UUID entertainerId;
     private UUID cafeOwnerId;
     private String date;
+    private int availablePlaces;
 
 
     public Event() {
     }
 
-    public Event(String name, String description, UUID entertainerId, UUID cafeOwnerId, String date) {
+    public Event(String name, String description, UUID entertainerId, UUID cafeOwnerId, String date, int availablePlaces) {
         this.name = name;
         this.description = description;
         this.entertainerId = entertainerId;
         this.cafeOwnerId = cafeOwnerId;
         this.date = date;
+        this.availablePlaces = availablePlaces;
     }
 
-    public Event(UUID id, String name, String description, UUID entertainerId, UUID cafeOwnerId, String date) {
+    public Event(UUID id, String name, String description, UUID entertainerId, UUID cafeOwnerId, String date, int availablePlaces) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.entertainerId = entertainerId;
         this.cafeOwnerId = cafeOwnerId;
         this.date = date;
+        this.availablePlaces = availablePlaces;
     }
 
     public UUID getId() {
@@ -71,4 +74,12 @@ public class Event implements Serializable {
     public String getDate() {return this.date;}
 
     public void setDate(String date) {this.date = date;}
+
+    public int getAvailablePlaces() {
+        return availablePlaces;
+    }
+
+    public void setAvailablePlaces(int availablePlaces) {
+        this.availablePlaces = availablePlaces;
+    }
 }

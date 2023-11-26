@@ -10,9 +10,13 @@
 <RadzenTemplateForm TItem="Event" Data=Event Submit="@SubmitEvent">
     <RadzenTextBox @bind-Value="Event.Name" Name="Name" Placeholder="Event Name" Style="width:100%; margin-bottom: 20px;" />
     <RadzenTextBox @bind-Value="Event.Description" Name="Description" Placeholder="Description" Style="width:100%; margin-bottom: 20px;" />
-   <div class="rz-p-sm-12 rz-text-align-center">
-       <RadzenDropDown @bind-Value="Event.EntertainerId" Data=@entertainers TextProperty="FullName" ValueProperty="Id" Style="width: 100%; max-width: 400px;" />
-   </div>
+    <div class="rz-p-sm-12 rz-text-align-center">
+        <RadzenDropDown @bind-Value="Event.EntertainerId" Data=@entertainers TextProperty="FullName" ValueProperty="Id" Style="width: 100%; max-width: 400px;" />
+    </div>
+    
+    <RadzenNumeric @bind-Value="Event.AvailablePlaces" />
+    
+    <RadzenDatePicker @bind-Value="Event.Date" ShowTime="true" HourFormat="12" DateFormat="MM/dd/yyyy h:mm tt" />
 
 
     <RadzenButton ButtonType="ButtonType.Submit" Text="Create Event" />
@@ -46,8 +50,8 @@
         try
         {
             evt.EntertainerId = Guid.Parse("2ef5bf7b-11a9-41cc-aed0-fe37e3b46e62");
-            evt.OwnerId = Guid.Parse("0d8d4874-3b70-445c-98ef-eb9c2306ba55");
-            var response = await HttpClient.PostAsJsonAsync("http://10.154.218.77:8088/api/events", evt);
+            evt.CafeOwnerId = Guid.Parse("0d8d4874-3b70-445c-98ef-eb9c2306ba55");
+            var response = await HttpClient.PostAsJsonAsync("http://localhost:8080/api/events", evt);
             if (response.IsSuccessStatusCode)
             {
                 ShowSuccessNotification();
