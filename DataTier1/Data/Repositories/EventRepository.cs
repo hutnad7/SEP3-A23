@@ -59,6 +59,10 @@ namespace Data.Repositories
                 entity.CafeOwner = cafeOwner;
                 User enterteiner = _context.Users.Include(u => u.Events).Include(u => u.Bookings).FirstOrDefault(c => c.Id == entity.EnterteinerId);
                 entity.Enterteiner = enterteiner;
+                if(entity.Bookings is null)
+                {
+                    entity.Bookings = new List<Booking>();
+                }
                 await _context.Events.AddAsync(entity);
                 await _context.SaveChangesAsync();
                 return entity;

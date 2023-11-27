@@ -30,7 +30,7 @@ public class EventRequestService {
             LOG.error("Error in communication");
             return null;
         }
-
+         clientServiceStub.createEvent(eventRequest);
         LOG.debug("Received response: {}", eventRequest.toString());
         return eventRequest;
     }

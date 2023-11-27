@@ -49,8 +49,8 @@
     {
         try
         {
-            evt.EntertainerId = Guid.Parse("2ef5bf7b-11a9-41cc-aed0-fe37e3b46e62");
-            evt.CafeOwnerId = Guid.Parse("0d8d4874-3b70-445c-98ef-eb9c2306ba55");
+            evt.EntertainerId = Guid.Parse("54a606f1-c5a9-475d-82e4-e9534c0f93f6");
+            evt.CafeOwnerId = Guid.Parse("8a34711c-00a2-49f3-800e-6cba7fdaf772");
             var response = await HttpClient.PostAsJsonAsync("http://localhost:8080/api/events", evt);
             if (response.IsSuccessStatusCode)
             {

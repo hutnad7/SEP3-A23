@@ -5,6 +5,7 @@
 
 package group7.Restful.service;
 
+import group7.Grpc.service.EventRequestService;
 import group7.Restful.entity.Event;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,19 +21,18 @@ public class EventService {
     public EventService() {
     }
 
-    public Event createEvent(Event event) {
-        this.events.add(event);
-
-        return event;
-    }
-
 //    public Event createEvent(Event event) {
-//        EventRequestService eventRequestService = new EventRequestService();
-//        eventRequestService.createEvent(event.getName(), event.getDescription(), event.getEntertainerId().toString(), event.getCafeOwnerId().toString(), event.getDate());
-//        System.out.println("Event sent to gRPC server");
 //        this.events.add(event);
+//
 //        return event;
 //    }
+
+    public Event createEvent(Event event) {
+        EventRequestService eventRequestService = new EventRequestService();
+        eventRequestService.createEvent(event.getName(), event.getDescription(), event.getEntertainerId().toString(), event.getCafeOwnerId().toString(), event.getDate());
+        System.out.println("Event sent to gRPC server");
+        return event;
+    }
 
 
     public Optional<Event> getEventById(UUID id) {

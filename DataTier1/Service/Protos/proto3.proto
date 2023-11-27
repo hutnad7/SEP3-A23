@@ -9,6 +9,7 @@ option java_outer_classname = "EventProto";
 service EventService{
   rpc CreateEvent(CreateEventRequest) returns (CreateEventResponse){};
   rpc GetEvent(GetEventRequest) returns (GetEventResponse){};
+  rpc GetAllEvents(google.protobuf.Empty) returns (GetEventsResponse){};
   rpc BookEvent(BookEventRequest) returns (BookEventResponse){};
 }
 service UserService{
@@ -19,6 +20,9 @@ message BookEventRequest{
 	string eventId = 2;
 	string Date = 3;
 	int32 NumerOfPeople = 4;
+}
+message GetEventsResponse{
+	repeated GetEventResponse event = 1;
 }
 message BookEventResponse{
 	string userId = 1;

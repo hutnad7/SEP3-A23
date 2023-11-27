@@ -1,6 +1,7 @@
 using Data.Interfaces;
 using Data.Models;
 using Data.Repositories;
+using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 
 namespace Service.Services
@@ -16,9 +17,30 @@ namespace Service.Services
             _eventRepository = eventRepository;
             _bookingRepository = bookingRepository;
         }
+        public override async Task<GetEventsResponse> GetAllEvents(Empty request, ServerCallContext context)
+        {
+            ICollection<Event> events = await _eventRepository.GetAll();
+            ICollection<GetEventResponse> e = new List<GetEventResponse>();
+            foreach (Event ev in events)
+            {
+                GetEventResponse response = new GetEventResponse()
+                {
+                    Id = ev.Id.ToString(),
+                    Name = ev.Title.ToString(),
+                    Description = ev.Text.ToString(),
+                    CafeOwner = ev.CafeOwnerId.ToString(),
+                    Entertainer = ev.EnterteinerId.ToString(),
+                    Date = ev.Date.ToString(),
+                };
+                e.Add(response);
+            }
+            GetEventsResponse getEventsResponse = new GetEventsResponse(); 
+            getEventsResponse.Event.Add(e);
+            return getEventsResponse;
+        }
         public override async Task<CreateEventResponse> CreateEvent(CreateEventRequest request, ServerCallContext context)
         {
-            Event e = new Event()
+             Event e = new Event()
             {
                 Id = Guid.NewGuid(),
                 EnterteinerId = Guid.Parse(request.Entertainer),
