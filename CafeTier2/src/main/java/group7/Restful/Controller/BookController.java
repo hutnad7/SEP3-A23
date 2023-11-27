@@ -3,10 +3,8 @@ package group7.Restful.Controller;
 import java.util.List;
 import java.util.Optional;
 
-import group7.Restful.entity.Book;
-import group7.Restful.entity.Event;
+import group7.Restful.entity.Booking;
 import group7.Restful.service.BookService;
-import group7.Restful.service.EventService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -37,30 +35,30 @@ public class BookController {
     }
 
     @PostMapping
-    public ResponseEntity<Book> createBook(@RequestBody Book book) {
-        return ResponseEntity.ok(this.bookService.createBook(book));
+    public ResponseEntity<Booking> createBook(@RequestBody Booking booking) {
+        return ResponseEntity.ok(this.bookService.createBook(booking));
     }
 
-    @GetMapping({"/{id}"})
-    public ResponseEntity<Book> getBookById(@PathVariable Long id) {
-        Optional<Book> bookOpt = this.bookService.getBookById(id);
-        return bookOpt.isPresent() ? ResponseEntity.ok((Book)bookOpt.get()) : ResponseEntity.notFound().build();
-    }
+  /*  @GetMapping({"/{id}"})
+    public ResponseEntity<Booking> getBookById(@PathVariable Long id) {
+        Optional<Booking> bookOpt = this.bookService.getBookById(id);
+        return bookOpt.isPresent() ? ResponseEntity.ok((Booking)bookOpt.get()) : ResponseEntity.notFound().build();
+    }*/
 
-    @GetMapping
-    public ResponseEntity<List<Book>> getAllBooks() {
+ /*   @GetMapping
+    public ResponseEntity<List<Booking>> getAllBooks() {
         return ResponseEntity.ok(this.bookService.getAllBookings());
-    }
+    }*/
 
-    @PutMapping({"/{id}"})
-    public ResponseEntity<Book> updateBook(@PathVariable Long id, @RequestBody Book book) {
-        Optional<Book> updatedEventOpt = this.bookService.updateBooking(id, book);
-        return updatedEventOpt.isPresent() ? ResponseEntity.ok((Book)updatedEventOpt.get()) : ResponseEntity.notFound().build();
-    }
+   /* @PutMapping({"/{id}"})
+    public ResponseEntity<Booking> updateBook(@PathVariable Long id, @RequestBody Booking booking) {
+        Optional<Booking> updatedEventOpt = this.bookService.updateBooking(id, booking);
+        return updatedEventOpt.isPresent() ? ResponseEntity.ok((Booking)updatedEventOpt.get()) : ResponseEntity.notFound().build();
+    }*/
 
-    @DeleteMapping({"/{id}"})
+   /* @DeleteMapping({"/{id}"})
     public ResponseEntity<Void> deleteBooking(@PathVariable Long id) {
         this.bookService.deleteBooking(id);
         return ResponseEntity.ok().build();
-    }
+    }*/
 }

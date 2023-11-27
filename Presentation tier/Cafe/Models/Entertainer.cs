@@ -1,4 +1,6 @@
-﻿namespace Cafe.Models;
+﻿using System;
+
+namespace Cafe.Models;
 
 public class Entertainer
 {

@@ -1,32 +1,33 @@
 //package group7.Grpc.Controller;
 //
-//import group7.Grpc.service.EventRequestService;
-//import group7.protobuf.EventRequest;
+//import group7.Grpc.service.EventClientService;
+//import group7.Restful.entity.Event;
+//import group7.Restful.service.EventService;
+//import group7.protobuf.CreateEventRequest;
 //import org.slf4j.Logger;
 //import org.slf4j.LoggerFactory;
-//import org.springframework.web.bind.annotation.GetMapping;
-//import org.springframework.web.bind.annotation.PathVariable;
-//import org.springframework.web.bind.annotation.RequestMapping;
-//import org.springframework.web.bind.annotation.RestController;
+//import org.springframework.web.bind.annotation.*;
+//
+//import java.util.UUID;
 //
 //@RestController
 //@RequestMapping("/grpc/api")
 //public class EventRequestController {
 //    private final static Logger LOG = LoggerFactory.getLogger(EventRequestController.class);
-//    private EventRequestService eventRequestService;
+//    private EventService eventRequestService;
 //
-//    public EventRequestController(EventRequestService eventRequestService) {
+//    public EventRequestController(EventService eventRequestService) {
 //        this.eventRequestService = eventRequestService;
 //    }
 //
-//    @GetMapping("/events/{name}/{description}/{entertainer}/{cafeOwner}/{date}")
-//    public String createEvent(@PathVariable("name")String name, @PathVariable("description")String description, @PathVariable("entertainer")String entertainer, @PathVariable("cafeOwner")String cafeOwner, @PathVariable("date")String date){
-//        LOG.info("Received request to create event with name: {}", name);
-//        EventRequest result = eventRequestService.createEvent(name, description, entertainer, cafeOwner, date);
-//        if(result == null){
-//            return "Event not found";
-//        }
-//        LOG.info(result.toString());
-//        return eventRequestService.createEvent(name, description, entertainer, cafeOwner, date).toString();
+//    @PostMapping("/events/")
+//    public String createEvent(@RequestBody Event event) {
+//        LOG.info("Received request to create event with name: {}", event.getName());
+////        CreateEventRequest result = eventRequestService.createEvent(name, description, entertainer, cafeOwner, date);
+////        if(result == null){
+////            return "Event not found";
+////        }
+////        LOG.info(result.toString());
+//        return eventRequestService.createEvent(event).toString();
 //    }
 //}

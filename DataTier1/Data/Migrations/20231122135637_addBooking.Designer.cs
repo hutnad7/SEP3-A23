@@ -3,6 +3,7 @@ using System;
 using Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(DBContext))]
-    partial class DBContextModelSnapshot : ModelSnapshot
+    [Migration("20231122135637_addBooking")]
+    partial class addBooking
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -129,34 +132,34 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("8ce4dccf-1828-4c08-99b4-a0f0d026af5c"),
-                            CreationDate = new DateTime(2023, 11, 27, 13, 45, 33, 580, DateTimeKind.Local).AddTicks(4271),
+                            Id = new Guid("8a34711c-00a2-49f3-800e-6cba7fdaf772"),
+                            CreationDate = new DateTime(2023, 11, 22, 15, 56, 37, 97, DateTimeKind.Local).AddTicks(9157),
                             Email = "coffeowner@gmail.com",
                             Firstname = "Coffe",
                             Lastname = "Owner",
-                            PasswordHash = "2040000821",
+                            PasswordHash = "-1847320417",
                             Role = 1,
                             Username = "CoffeOwnerTest"
                         },
                         new
                         {
-                            Id = new Guid("c87450ad-fcf3-479f-a4d6-10042cd78720"),
-                            CreationDate = new DateTime(2023, 11, 27, 13, 45, 33, 580, DateTimeKind.Local).AddTicks(4353),
+                            Id = new Guid("d3d99d3d-bd21-4ed2-87d3-eabc8be202ec"),
+                            CreationDate = new DateTime(2023, 11, 22, 15, 56, 37, 97, DateTimeKind.Local).AddTicks(9288),
                             Email = "normaluser@gmail.com",
                             Firstname = "User",
                             Lastname = "Normal",
-                            PasswordHash = "2034148697",
+                            PasswordHash = "1682876097",
                             Role = 0,
                             Username = "normal_user"
                         },
                         new
                         {
-                            Id = new Guid("4a754225-8370-498e-803f-c467e0ce405a"),
-                            CreationDate = new DateTime(2023, 11, 27, 13, 45, 33, 580, DateTimeKind.Local).AddTicks(4366),
+                            Id = new Guid("54a606f1-c5a9-475d-82e4-e9534c0f93f6"),
+                            CreationDate = new DateTime(2023, 11, 22, 15, 56, 37, 97, DateTimeKind.Local).AddTicks(9319),
                             Email = "enterteiner@gmail.com",
                             Firstname = "Enter",
                             Lastname = "Teiner",
-                            PasswordHash = "-2087047826",
+                            PasswordHash = "1917760719",
                             Role = 2,
                             Username = "enterteiner"
                         });

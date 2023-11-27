@@ -1,6 +1,9 @@
+using System;
+using System.Net.Http;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Cafe;
+using Microsoft.Extensions.DependencyInjection;
 using Radzen;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);

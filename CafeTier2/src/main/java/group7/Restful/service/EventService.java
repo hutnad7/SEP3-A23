@@ -5,7 +5,7 @@
 
 package group7.Restful.service;
 
-import group7.Grpc.service.EventRequestService;
+import group7.Grpc.service.EventClientService;
 import group7.Restful.entity.Event;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,14 +13,19 @@ import java.util.Optional;
 import java.util.UUID;
 
 
-
+import group7.protobuf.CreateEventRequest;
+import group7.protobuf.CreateEventResponse;
 import org.springframework.stereotype.Service;
 
 @Service
 public class EventService {
-    private final List<Event> events = new ArrayList<>();
 
-    public EventService() {
+
+    private final List<Event> events = new ArrayList<>();
+    private final EventClientService eventClientService;
+
+    public EventService(EventClientService eventClientService) {
+        this.eventClientService = eventClientService;
     }
 
 //    public Event createEvent(Event event) {
@@ -30,10 +35,18 @@ public class EventService {
 
 
     public Event createEvent(Event event) {
-        EventRequestService eventRequestService = new EventRequestService();
-        eventRequestService.createEvent(event.getName(), event.getDescription(), event.getEntertainerId().toString(), event.getCafeOwnerId().toString(), event.getDate());
+        CreateEventRequest request = CreateEventRequest.newBuilder().setAvailablePlaces(event.getAvailablePlaces()).setCafeOwner(event.getCafeOwnerId().toString()).setEntertainer(event.getEntertainerId().toString()).setDate(event.getDate()).setName(event.getName()).setDescription(event.getDescription()).build();
+        CreateEventResponse response = eventClientService.createEvent(request);
+        Event e = new Event(){
+            {
+                setId(UUID.fromString(response.getId()));
+                setName(response.getName());
+                setDescription(response.getDescription());
+                setEntertainerId(UUID.fromString(response.getEntertainer()));
+            }
+        };
         System.out.println("Event sent to gRPC server");
-        return event;
+        return e;
     }
 
 

@@ -1,11 +1,9 @@
 syntax = "proto3";
 import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
-
 option java_multiple_files = true;
 option java_package = "group7.protobuf";
 option java_outer_classname = "EventProto";
-
 service EventService{
   rpc CreateEvent(CreateEventRequest) returns (CreateEventResponse){};
   rpc GetEvent(GetEventRequest) returns (GetEventResponse){};
@@ -51,12 +49,25 @@ message CreateEventRequest{
 	string name = 1;
 	string description = 2;
 	string Entertainer = 3;
-	string CafeOwner = 5;
-	string Date=6;
+	string CafeOwner = 4;
+	string Date = 5;
+	int32 AvailablePlaces = 6;
 }
-message EventResponse{
+message CreateEventResponse{
   string id = 1;
   string name = 2;
   string description = 3;
   string Entertainer = 4;
+  	int32 AvailablePlaces = 5;
+}
+message GetEventRequest{
+	string id = 1;
+}
+message GetEventResponse{
+	string id = 1;
+	string name = 2;
+    string description = 3;
+    string Entertainer = 4;
+    string CafeOwner = 5;
+	string Date=6;
 }
