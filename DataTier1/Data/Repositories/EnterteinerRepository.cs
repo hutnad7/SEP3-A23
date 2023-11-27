@@ -1,4 +1,4 @@
-﻿ using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,19 +18,19 @@ namespace Data.Repositories
 
         public override async Task<ICollection<User>> GetAll()
         {
-            return await _context.Set<User>().Where(e=> e.Role.Equals(Role.Enterteiner)).Include(e => e.Bookings).Include(e=> e.Events).ToListAsync();
+            return await _context.Set<User>().Where(e=> e.Role.Equals(Role.Enterteiner)).Include(e=> e.Events).ToListAsync();
         }
         public override async Task<ICollection<User>> GetAll(Expression<Func<User, bool>> filter)
         {
-            return await _context.Set<User>().Where(e => e.Role.Equals(Role.Enterteiner)).Include(e => e.Events).Include(e => e.Bookings).Where(filter).ToListAsync();
+            return await _context.Set<User>().Where(e => e.Role.Equals(Role.Enterteiner)).Include(e => e.Events).Where(filter).ToListAsync();
         }
         public override async ValueTask<ICollection<User>> GetByAsync(Expression<Func<User, bool>> filter)
         {
-            return await _context.Set<User>().Where(e => e.Role.Equals(Role.Enterteiner)).Include(e => e.Events).Include(e => e.Bookings).Where(filter).ToListAsync();
+            return await _context.Set<User>().Where(e => e.Role.Equals(Role.Enterteiner)).Include(e => e.Events).Where(filter).ToListAsync();
         }
         public override async Task<User> GetByIdAsync(Guid id)
         {
-            return await _context.Set<User>().Include(e => e.Events).Include(e => e.Bookings).SingleAsync(e=>e.Id==id);
+            return await _context.Set<User>().Include(e => e.Events).SingleAsync(e=>e.Id==id);
         }
         public override async Task UpdateAsync(User entity)
         {
@@ -46,14 +46,6 @@ namespace Data.Repositories
             foreach(var destination in entity.Events)
             {
                 dbEntity.Events.Add(destination);
-            }
-            if (dbEntity.Bookings is null)
-            {
-                dbEntity.Bookings = new List<Booking>();
-            }
-            foreach (var booking in entity.Bookings)
-            {
-                dbEntity.Bookings.Add(booking);
             }
             _context.Update(dbEntity);
 

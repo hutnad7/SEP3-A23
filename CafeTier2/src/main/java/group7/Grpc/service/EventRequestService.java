@@ -1,6 +1,6 @@
 package group7.Grpc.service;
 
-import group7.protobuf.EventRequest;
+import group7.protobuf.CreateEventRequest;
 import group7.protobuf.EventServiceGrpc;
 import net.devh.boot.grpc.client.inject.GrpcClient;
 import org.slf4j.Logger;
@@ -15,11 +15,11 @@ public class EventRequestService {
     @GrpcClient("wo")
     EventServiceGrpc.EventServiceBlockingStub clientServiceStub; //syncronous communication
 
-    public EventRequest createEvent(String name, String description, String entertainer, String cafeOwner, String date) {
+    public CreateEventRequest createEvent(String name, String description, String entertainer, String cafeOwner, String date) {
         LOG.info("Received request to create event with name: {}", name);
-        EventRequest eventRequest;
+        CreateEventRequest eventRequest;
         try {
-            eventRequest = EventRequest.newBuilder()
+            eventRequest = CreateEventRequest.newBuilder()
                     .setName(name)
                     .setDescription(description)
                     .setEntertainer(entertainer)

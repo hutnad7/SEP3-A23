@@ -12,6 +12,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
+
+
 import org.springframework.stereotype.Service;
 
 @Service
@@ -25,7 +27,7 @@ public class EventService {
 //        this.events.add(event);
 //
 //        return event;
-//    }
+
 
     public Event createEvent(Event event) {
         EventRequestService eventRequestService = new EventRequestService();
