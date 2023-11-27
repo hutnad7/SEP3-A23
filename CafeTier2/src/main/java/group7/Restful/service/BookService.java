@@ -4,12 +4,13 @@ import group7.Grpc.service.BookEventService;
 import group7.Restful.entity.Book;
 import group7.Restful.entity.Event;
 import group7.protobuf.BookEventRequest;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-
+@Service
 public class BookService {
     private final List<Book> bookings = new ArrayList();
 
