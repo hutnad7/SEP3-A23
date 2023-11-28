@@ -12,6 +12,7 @@ service EventService{
   rpc GetAllEvents(google.protobuf.Empty) returns (GetEventsResponse){};
   rpc BookEvent(BookEventRequest) returns (BookEventResponse){};
 }
+
 service UserService{
   rpc CreateUser(CreateUserRequest) returns (CreateUserResponse){};
 }
@@ -21,9 +22,11 @@ message BookEventRequest{
   string Date = 3;
   int32 NumerOfPeople = 4;
 }
+
 message GetEventsResponse{
   repeated GetEventResponse event = 1;
 }
+
 message BookEventResponse{
   string userId = 1;
   string eventId = 2;
@@ -31,6 +34,7 @@ message BookEventResponse{
   int32 NumerOfPeople = 4;
   string id =5;
 }
+
 message CreateUserRequest{
   string FisrtName = 1;
   string LastName = 2;

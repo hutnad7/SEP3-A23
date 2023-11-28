@@ -6,17 +6,26 @@ public class Booking {
     private UUID UserId;
     private UUID EventId;
     private String CreationDate;
-
     private int NumberOfPeople;
+
+    private UUID id;
 
     public Booking() {
     }
 
-    public Booking(UUID UserId, UUID EventId, String CreationDate, int NumberOfPeople) {
+    public Booking(UUID id, UUID UserId, UUID EventId, String CreationDate, int NumberOfPeople) {
+        this.id = id;
         this.UserId = UserId;
         this.EventId = EventId;
         this.CreationDate = CreationDate;
         this.NumberOfPeople = NumberOfPeople;
+    }
+
+    public UUID getId() {
+        return id;
+    }
+    public void setId(UUID id) {
+        this.id = id;
     }
 
     public UUID getUserId() {
