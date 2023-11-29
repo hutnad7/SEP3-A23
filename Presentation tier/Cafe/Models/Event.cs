@@ -13,6 +13,7 @@ public class Event
         [JsonPropertyName("description")]
         public string Description { get; set; }
         
+        [JsonPropertyName("entertainerId")]
         public Guid EntertainerId { get; set; }
         
         [JsonPropertyName("cafeOwnerId")]
