@@ -63,11 +63,13 @@ message CreateEventResponse{
 message GetEventRequest{
 	string id = 1;
 }
+
 message GetEventResponse{
 	string id = 1;
 	string name = 2;
     string description = 3;
     string Entertainer = 4;
     string CafeOwner = 5;
-	string Date=6;
+	string Date = 6;
+	int32 available_places = 7;
 }

@@ -1,5 +1,6 @@
 package group7.Grpc.service;
 
+import com.google.protobuf.Empty;
 import group7.protobuf.*;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
@@ -23,8 +24,13 @@ public class EventClientService {
     public BookEventResponse bookEvent(BookEventRequest request) {
         return stub.bookEvent(request);
     }
+
    public CreateEventResponse createEvent(CreateEventRequest request) {
         return stub.createEvent(request);
+    }
+
+    public GetEventsResponse getAllEvents() {
+        return stub.getAllEvents(Empty.getDefaultInstance());
     }
 
     public void shutdown() {

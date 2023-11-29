@@ -72,6 +72,7 @@ message GetEventResponse{
   string Entertainer = 4;
   string CafeOwner = 5;
   string Date=6;
+  int32 available_places = 7;
 }
 
 

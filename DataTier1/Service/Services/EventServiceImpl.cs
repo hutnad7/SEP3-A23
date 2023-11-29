@@ -31,6 +31,7 @@ namespace Service.Services
                     CafeOwner = ev.CafeOwnerId.ToString(),
                     Entertainer = ev.EnterteinerId.ToString(),
                     Date = ev.Date.ToString(),
+                    AvailablePlaces = ev.AvailablePlaces
                 };
                 e.Add(response);
             }

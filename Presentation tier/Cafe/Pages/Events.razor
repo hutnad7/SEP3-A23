@@ -1,9 +1,12 @@
 ﻿@page "/events"
 @using Cafe.Models
+@using System.Text.Json
 @using System.Collections
+@using Cafe.Uitlities
 @inject NotificationService NotificationService
 @inject HttpClient HttpClient
 @inject NavigationManager _nav_manager
+
 <h3>Events</h3>
 @foreach (Event e in events)
 {
@@ -12,15 +15,15 @@
             <Items>
                 <RadzenAccordionItem ExpandTitle="@e.Name" Text=@e.Name>
                     <div class="row">
-                        <p class="col-12" style="text-align: end">@e.Date</p>
-                        <p class="col-12" style="text-align: center">@e.Description</p>
+                        <p class="col-12" style="text-align: end">Date: @e.Date</p>
+                        <p class="col-12" style="text-align: center">Description: @e.Description</p>
                     </div>
-                    <p>
-                        @e.Id
-                    </p>
+                    
+                    
                     <div class="row">
                         <div class="col-12">
                             <div class="button-row">
+                                <p>Available places: @e.AvailablePlaces</p>
                                 <button type="button" ButtonType="ButtonType.Submit" class="acceptbtn" Text="Book now" @onclick="@(() => _nav_manager.NavigateTo($"/BookEvent/{e.Id.ToString()}"))">Book now</button>
                             </div>
                         </div>
@@ -32,25 +35,22 @@
 
 }
 @code {
-    List<Event> events=new List<Event>();
+    List<Event> events = new ();
     
-    protected override async void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
         try
         {
-           // var response = await HttpClient.GetAsync("http://localhost:8080/api/events");
-            /*events = await response.ReadAsync<List<Event>>();
-            if (!response.IsSuccessStatusCode)
+            var response = await HttpClient.GetAsync("http://localhost:8080/api/events");
+            if (response.IsSuccessStatusCode)
+            {
+                var stream = await response.Content.ReadAsStreamAsync();
+                events = await JsonSerializer.DeserializeAsync<List<Event>>(stream, JsonOptionsHelper.DefaultJsonSerializerOptions) ?? new List<Event>();
+            }
+            else
             {
                 ShowErrorNotification("An error occurred while processing your request.");
-            }*/
-            events = new List<Event>()
-            {
-                new Event() { Name = "Event1", Description = "First Event", Date = new DateTime(), Id = Guid.NewGuid()},
-                new Event() { Name = "Event2", Description = "Second Event", Date = new DateTime(), Id = Guid.NewGuid() },
-                new Event() { Name = "Event3", Description = "Third Event", Date = new DateTime(), Id = Guid.NewGuid() },
-                new Event() { Name = "Event4", Description = "Fourth Event", Date = new DateTime(), Id = Guid.NewGuid() }
-            };
+            }
         }
         catch (HttpRequestException)
         {
@@ -61,6 +61,9 @@
             ShowErrorNotification($"An unexpected error occurred: {ex.Message}");
         }
     }
+
+
+    
     private void ShowErrorNotification(string message)
     {
         NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = message, Detail = "Unable to create the event", Duration = 4000 });
