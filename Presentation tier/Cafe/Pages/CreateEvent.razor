@@ -1,6 +1,7 @@
 ﻿@page "/create-event"
 
 @using Cafe.Models
+@using System.Globalization
 @inject NotificationService NotificationService
 
 @inject HttpClient HttpClient
@@ -14,9 +15,10 @@
        <RadzenDropDown @bind-Value="Event.EntertainerId" Data=@entertainers TextProperty="FullName" ValueProperty="Id" Style="width: 100%; max-width: 400px;" />
    </div>
     
-        <RadzenNumeric @bind-Value="Event.AvailablePlaces" />
-    
-        <RadzenDatePicker @bind-Value="Event.Date" ShowTime="true" HourFormat="12" DateFormat="MM/dd/yyyy h:mm tt" />
+    <RadzenNumeric @bind-Value="Event.AvailablePlaces" />
+    <!--  <RadzenTextBox @bind-Value="Event.DateString" Name="Date" Placeholder="Date" Style="width:100%; margin-bottom: 20px;" />
+    -->
+    <RadzenDatePicker @bind-Value="Event.Date" ShowTime="true" HourFormat="12" Culture='CultureInfo.CreateSpecificCulture("en-GB")' DateFormat="dd/MM/yyyy hh:mm" />
 
     <RadzenButton ButtonType="ButtonType.Submit" Text="Create Event" />
 </RadzenTemplateForm>
@@ -27,6 +29,8 @@
 
     protected override void OnInitialized()
     {
+        CultureInfo provider = CultureInfo.CreateSpecificCulture("en-GB");
+
         entertainers = new List<Entertainer>
         {
             new Entertainer { Id = Guid.NewGuid(), FirstName = "John", LastName = "Doe" },
@@ -48,8 +52,12 @@
     {
         try
         {
-            evt.EntertainerId = Guid.Parse("4a754225-8370-498e-803f-c467e0ce405a");
-            evt.CafeOwnerId = Guid.Parse("8ce4dccf-1828-4c08-99b4-a0f0d026af5c");
+            evt.EntertainerId = Guid.Parse("c60f40aa-9028-4036-9c09-192dceb95f73");
+            evt.CafeOwnerId = Guid.Parse("70c38fa9-62ad-438d-a245-3d44bda8675e");
+            CultureInfo provider = CultureInfo.CreateSpecificCulture("en-GB");
+            string format = "MM/dd/yyyy hh:mm";
+           evt.Date = DateTime.ParseExact(evt.Date.ToString(), format,provider);
+           // evt.Date = DateTime.Parse( evt.Date.ToString(), CultureInfo.CreateSpecificCulture("fr-FR") );
             var response = await HttpClient.PostAsJsonAsync("http://localhost:8080/api/events", evt);
             if (response.IsSuccessStatusCode)
             {

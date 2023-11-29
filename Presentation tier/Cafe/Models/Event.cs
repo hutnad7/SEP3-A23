@@ -8,9 +8,9 @@ public class Event
         public string Name { get; set; }
         public string Description { get; set; }
         public Guid EntertainerId { get; set; }
-        
         public Guid CafeOwnerId { get; set; }
         public DateTime Date { get; set; }
+        public string DateString { get; set; }
         
         public int AvailablePlaces { get; set; }
 

@@ -1,16 +1,18 @@
 syntax = "proto3";
 import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
-
 option java_multiple_files = true;
 option java_package = "group7.protobuf";
 option java_outer_classname = "EventProto";
-
 service EventService{
-  rpc CreateEvent(CreateEventRequest) returns (CreateEventResponse){};
+  rpc CreateEvent(CreateEventRequest) returns (GetEventResponse){};
   rpc GetEvent(GetEventRequest) returns (GetEventResponse){};
+  rpc GetEventsByUser(GetEventRequest) returns (GetEventsByUserResponse){};
   rpc GetAllEvents(google.protobuf.Empty) returns (GetEventsResponse){};
   rpc BookEvent(BookEventRequest) returns (BookEventResponse){};
+  rpc AcceptEvent(GetEventRequest) returns (GetEventResponse){};
+  rpc RefuseEvent(GetEventRequest) returns (GetEventResponse){};
+  rpc ReverseState(GetEventRequest) returns (GetEventResponse){};
 }
 service UserService{
   rpc CreateUser(CreateUserRequest) returns (CreateUserResponse){};
@@ -72,6 +74,21 @@ message GetEventResponse{
   string Entertainer = 4;
   string CafeOwner = 5;
   string Date=6;
+  int32 AvailablePlaces = 7;
+  string state = 8;
 }
-
-
+message GetEventByUserResponse{
+  string id = 1;
+  string name = 2;
+  string description = 3;
+  string EntertainerId = 4;
+  string CafeOwnerId = 5;
+  string Date=6;
+  int32 AvailablePlaces = 7;
+  string state = 8;
+  string Entertainer = 9;
+  string CafeOwner = 10;
+}
+message GetEventsByUserResponse{
+  repeated GetEventByUserResponse events = 1;
+}

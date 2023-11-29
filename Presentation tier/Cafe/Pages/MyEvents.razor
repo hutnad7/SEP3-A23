@@ -1,0 +1,106 @@
+﻿@page "/MyEvents"
+@using Cafe.Models
+@using Cafe.dto
+@using System.Data
+@inject NotificationService NotificationService
+@inject HttpClient httpClient
+
+<RadzenFieldset AllowCollapse="true" Style="width: 700px; margin: 40px auto;" ExpandTitle="Expand events." CollapseTitle="Collapse events."
+                ExpandAriaLabel="Expand the list of events." CollapseAriaLabel="Collapse the list of events.">
+    <HeaderTemplate>
+        <span class="d-inline-flex align-items-center align-middle">
+            <RadzenIcon Icon="account_box" class="me-1" /><b>My events</b>
+        </span>
+    </HeaderTemplate>
+    <ChildContent>
+        <RadzenDataList PageSize="4" WrapItems="true" AllowPaging="true" 
+                        Data="@my_events" TItem="EventDto">
+            <Template Context="myEvent">
+                <RadzenCard Style="width: 250px">
+                    <div class="row">
+                        <div class="col-md-8 text-truncate">
+                            <RadzenBadge BadgeStyle="BadgeStyle.Light" Text=@($"{myEvent.Status}") class="me-1" />
+                            <b>@(myEvent.Name)</b>
+                        </div>
+                        <div class="col-md-4 text-end">
+                            <RadzenBadge BadgeStyle="BadgeStyle.Info" Text=@myEvent.Date.ToString() />
+                        </div>
+                    </div>
+                    <hr style="border: none; background-color: rgba(0,0,0,.08); height: 1px; margin: 1rem 0;" />
+                    <div class="d-flex flex-row align-items-center">
+                        <div>
+                            <h4 class="mb-0">@(myEvent.CafeOwnerName)</h4>
+                            <div>@myEvent.EntertainerName</div>
+                            <div style="font-size: .8em">@(myEvent.Description)</div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="align-items-start">
+                                <RadzenButton Variant="Variant.Flat" Click=@(args => Accept(myEvent.Id)) Text="Accept" ButtonStyle="ButtonStyle.Success" />
+                        </div>
+                        <div class="align-items-end">
+                                <RadzenButton Variant="Variant.Flat" Click=@(args => Refuse(myEvent.Id)) Text="Refuse" ButtonStyle="ButtonStyle.Danger" />
+                        </div>
+                    </div>
+                </RadzenCard>
+            </Template>
+        </RadzenDataList>
+    </ChildContent>
+    <SummaryTemplate>
+        <RadzenCard class="mt-3">
+            <b>@my_events.Count() Events</b>
+        </RadzenCard>
+    </SummaryTemplate>
+</RadzenFieldset>
+
+
+@code {
+    Guid id = Guid.Parse("c60f40aa-9028-4036-9c09-192dceb95f73");
+    List<EventDto> my_events = new List<EventDto>();
+    protected async override void OnInitialized()
+    {
+        var response = await httpClient.GetFromJsonAsync<List<EventDto>>("http://localhost:8080/api/events/users/" + id);
+        /*if (response.IsSuccessStatusCode)
+        {
+            ShowSuccessNotification();
+        }
+        else
+        {
+            ShowErrorNotification("An error occurred while processing your request.");
+        }
+        my_events = await response.ReadAsync<List<EventDto>>();*/
+    }
+    private void ShowSuccessNotification()
+    {
+        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Event created", Detail = "Success Detail", Duration = 4000 });
+    }
+    private void ShowErrorNotification(string message)
+    {
+        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = message, Detail = "Unable to create the event", Duration = 4000 });
+    }
+
+    private async void Accept(Guid id)
+    {
+        var response = await httpClient.GetAsync("http://localhost:8080/api/events/state/?id=" + id + "&state=accept");
+        if (response.IsSuccessStatusCode)
+        {
+            ShowSuccessNotification();
+        }
+        else
+        {
+            ShowErrorNotification("An error occurred while processing your request.");
+        }
+    }
+    private async void Refuse(Guid id)
+    {
+        var response = await httpClient.GetAsync("http://localhost:8080/api/events/state/?id=" + id + "&state=refuse");
+        if (response.IsSuccessStatusCode)
+        {
+            ShowSuccessNotification();
+        }
+        else
+        {
+            ShowErrorNotification("An error occurred while processing your request.");
+        }
+    }
+}
