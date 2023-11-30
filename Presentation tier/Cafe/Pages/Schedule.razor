@@ -1,0 +1,61 @@
+﻿@page "/Schedule"
+@using Cafe.dto
+@using Cafe.Models
+@inject NotificationService NotificationService
+@inject HttpClient httpClient
+
+<RadzenScheduler @ref=@Scheduler SlotRender=@OnSlotRender style="height: 768px;" TItem="Event" Data=@appointments 
+    TextProperty="Name" SelectedIndex="2" StartProperty="Start" EndProperty="End">
+    <RadzenDayView />
+    <RadzenWeekView />
+    <RadzenMonthView />
+    <RadzenYearView />
+</RadzenScheduler>
+@code {
+    RadzenScheduler<Event> Scheduler;
+    Dictionary<DateTime, string> events = new Dictionary<DateTime, string>();
+    IList<Event> appointments = new List<Event>
+    {
+        new Event { Start = DateTime.Today.AddDays(-2), End = DateTime.Today.AddDays(-2), Name = "Birthday"  },
+        new Event { Start = DateTime.Today.AddDays(-2), End = DateTime.Today.AddDays(-2), Name = "Birthday"  },
+        new Event { Start = DateTime.Today.AddDays(-2), End = DateTime.Today.AddDays(-2), Name = "Birthday"  },
+        new Event { Start = DateTime.Today.AddDays(-2), End = DateTime.Today.AddDays(-2), Name = "Birthday"  },
+     };
+    protected async override void OnInitialized()
+    {
+      //  var response = await httpClient.GetFromJsonAsync<List<EventDto>>("http://localhost:8080/api/events/");
+    /*if (response.IsSuccessStatusCode)
+        {
+            ShowSuccessNotification();
+        }
+        else
+        {
+            ShowErrorNotification("An error occurred while processing your request.");
+        }
+        my_events = await response.ReadAsync<List<EventDto>>();*/
+    }
+    private void ShowSuccessNotification()
+    {
+        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Event created", Detail = "Success Detail", Duration = 4000 });
+    }
+    private void ShowErrorNotification(string message)
+    {
+        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = message, Detail = "Unable to create the event", Duration = 4000 });
+    }   
+    void OnSlotRender(SchedulerSlotRenderEventArgs args)
+    {
+        // Highlight today in month view
+        if (args.View.Text == "Month" && args.Start.Date == DateTime.Today)
+        {
+            args.Attributes["style"] = "background: rgba(255,220,40,.2);";
+        }
+
+        // Highlight working hours (9-18)
+        if ((args.View.Text == "Week" || args.View.Text == "Day") && args.Start.Hour > 8 && args.Start.Hour < 19)
+        {
+            args.Attributes["style"] = "background: rgba(255,220,40,.2);";
+        }
+    }
+
+    
+}

@@ -18,7 +18,7 @@
     <RadzenNumeric @bind-Value="Event.AvailablePlaces" />
     <!--  <RadzenTextBox @bind-Value="Event.DateString" Name="Date" Placeholder="Date" Style="width:100%; margin-bottom: 20px;" />
     -->
-    <RadzenDatePicker @bind-Value="Event.Date" ShowTime="true" HourFormat="12" Culture='CultureInfo.CreateSpecificCulture("en-GB")' DateFormat="dd/MM/yyyy hh:mm" />
+    <RadzenDatePicker @bind-Value="Event.Date" ShowTime="true" HourFormat="12" Culture='CultureInfo.CreateSpecificCulture("en-GB")' DateFormat="yyyy/MM/dd hh:mm" />
 
     <RadzenButton ButtonType="ButtonType.Submit" Text="Create Event" />
 </RadzenTemplateForm>
@@ -55,8 +55,8 @@
             evt.EntertainerId = Guid.Parse("c60f40aa-9028-4036-9c09-192dceb95f73");
             evt.CafeOwnerId = Guid.Parse("70c38fa9-62ad-438d-a245-3d44bda8675e");
             CultureInfo provider = CultureInfo.CreateSpecificCulture("en-GB");
-            string format = "MM/dd/yyyy hh:mm";
-           evt.Date = DateTime.ParseExact(evt.Date.ToString(), format,provider);
+            string format = "dd/MM/yyyy hh:mm";
+           evt.Date = DateTime.ParseExact(evt.Date.ToShortTimeString(), format,provider);
            // evt.Date = DateTime.Parse( evt.Date.ToString(), CultureInfo.CreateSpecificCulture("fr-FR") );
             var response = await HttpClient.PostAsJsonAsync("http://localhost:8080/api/events", evt);
             if (response.IsSuccessStatusCode)
