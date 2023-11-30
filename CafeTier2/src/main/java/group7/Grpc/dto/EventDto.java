@@ -12,7 +12,8 @@ public class EventDto {
     private UUID cafeOwnerId;
     private String entertainerName;
     private String cafeOwnerName;
-    private String date;
+    private String startDate;
+    private String endDate;
     private String Status;
     private int availablePlaces;
 }

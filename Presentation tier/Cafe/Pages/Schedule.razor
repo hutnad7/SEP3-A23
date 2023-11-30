@@ -4,7 +4,7 @@
 @inject NotificationService NotificationService
 @inject HttpClient httpClient
 
-<RadzenScheduler @ref=@Scheduler SlotRender=@OnSlotRender style="height: 768px;" TItem="Event" Data=@appointments 
+<RadzenScheduler @ref=@Scheduler SlotRender=@OnSlotRender style="height: 768px;" TItem="EventDto" Data=@appointments 
     TextProperty="Name" SelectedIndex="2" StartProperty="Start" EndProperty="End">
     <RadzenDayView />
     <RadzenWeekView />
@@ -12,19 +12,20 @@
     <RadzenYearView />
 </RadzenScheduler>
 @code {
-    RadzenScheduler<Event> Scheduler;
+    RadzenScheduler<EventDto> Scheduler;
     Dictionary<DateTime, string> events = new Dictionary<DateTime, string>();
-    IList<Event> appointments = new List<Event>
+    IList<EventDto> appointments = new List<EventDto>
     {
-        new Event { Start = DateTime.Today.AddDays(-2), End = DateTime.Today.AddDays(-2), Name = "Birthday"  },
-        new Event { Start = DateTime.Today.AddDays(-2), End = DateTime.Today.AddDays(-2), Name = "Birthday"  },
-        new Event { Start = DateTime.Today.AddDays(-2), End = DateTime.Today.AddDays(-2), Name = "Birthday"  },
-        new Event { Start = DateTime.Today.AddDays(-2), End = DateTime.Today.AddDays(-2), Name = "Birthday"  },
+      /*  new EventDto { Start = DateTime.Today.AddDays(-2), End = DateTime.Today.AddDays(-2), Name = "Birthday"  },
+        new EventDto { Start = DateTime.Today.AddDays(-2), End = DateTime.Today.AddDays(-2), Name = "Birthday"  },
+        new EventDto { Start = DateTime.Today.AddDays(-2), End = DateTime.Today.AddDays(-2), Name = "Birthday"  },
+        new EventDto { Start = DateTime.Today.AddDays(-2), End = DateTime.Today.AddDays(-2), Name = "Birthday"  },*/
      };
     protected async override void OnInitialized()
     {
-      //  var response = await httpClient.GetFromJsonAsync<List<EventDto>>("http://localhost:8080/api/events/");
-    /*if (response.IsSuccessStatusCode)
+        Guid id = Guid.Parse("c60f40aa-9028-4036-9c09-192dceb95f73");
+     var response = await httpClient.GetAsync("http://localhost:8080/api/events/users"+id);
+    if (response.IsSuccessStatusCode)
         {
             ShowSuccessNotification();
         }
@@ -32,7 +33,7 @@
         {
             ShowErrorNotification("An error occurred while processing your request.");
         }
-        my_events = await response.ReadAsync<List<EventDto>>();*/
+        appointments = await response.ReadAsync<List<EventDto>>();
     }
     private void ShowSuccessNotification()
     {

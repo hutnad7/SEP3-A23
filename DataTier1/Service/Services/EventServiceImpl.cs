@@ -36,7 +36,8 @@ namespace Service.Services
                     Description = ev.Text.ToString(),
                     CafeOwner = ev.CafeOwnerId.ToString(),
                     Entertainer = ev.EnterteinerId.ToString(),
-                    Date = ev.Date.ToString(),
+                    StartDate = ev.StartDate.ToString(),
+                    EndDate = ev.EndDate.ToString(),
                     AvailablePlaces = ev.AvailablePlaces,
                     State = ev.state.ToString(),
                 };
@@ -56,7 +57,8 @@ namespace Service.Services
                  EnterteinerId = Guid.Parse(request.Entertainer),
                  CafeOwnerId = Guid.Parse(request.CafeOwner),
                  CreationDate = DateTime.Now,
-                 Date = DateTime.ParseExact(request.Date,format, provider),
+                 StartDate = DateTime.Parse(request.StartDate),
+                 EndDate = DateTime.Parse(request.EndDate),
                  Text = request.Description,
                  Title = request.Name,
                  AvailablePlaces = request.AvailablePlaces
@@ -69,7 +71,8 @@ namespace Service.Services
                 Description = ev.Text.ToString(),
                 CafeOwner = ev.CafeOwnerId.ToString(),
                 Entertainer = ev.EnterteinerId.ToString(),
-                Date = ev.Date.ToString(),
+                StartDate = ev.StartDate.ToString(),
+                EndDate = ev.EndDate.ToString(),
                 AvailablePlaces = ev.AvailablePlaces,
                 State = ev.state.ToString(),
             };
@@ -95,7 +98,8 @@ namespace Service.Services
                     Description = ev.Text.ToString(),
                     CafeOwnerId = ev.CafeOwnerId.ToString(),
                     EntertainerId = ev.EnterteinerId.ToString(),
-                    Date = ev.Date.ToString(),
+                    StartDate = ev.StartDate.ToString(),
+                    EndDate = ev.EndDate.ToString(),
                     AvailablePlaces = ev.AvailablePlaces,
                     State = ev.state.ToString(),
                     CafeOwner = ev.CafeOwner.Username,
@@ -118,7 +122,8 @@ namespace Service.Services
                 Description = ev.Text.ToString(),
                 CafeOwner = ev.CafeOwnerId.ToString(),
                 Entertainer = ev.EnterteinerId.ToString(),
-                Date = ev.Date.ToString(),
+                StartDate = ev.StartDate.ToString(),
+                EndDate = ev.EndDate.ToString(),
                 AvailablePlaces = ev.AvailablePlaces,
                 State = ev.state.ToString(),
 
@@ -132,7 +137,7 @@ namespace Service.Services
                 Id = Guid.NewGuid(),
                 UserId = Guid.Parse(request.UserId),
                 EventId = Guid.Parse(request.EventId),
-                CreationDate = DateTime.Parse(request.Date),
+                CreationDate = DateTime.Now,
                 NumberOfPeople = request.NumerOfPeople
             };
             Booking b = await _bookingRepository.CreateAsync(booking);
@@ -141,7 +146,7 @@ namespace Service.Services
                 Id = booking.Id.ToString(),
                 UserId = b.UserId.ToString(),
                 EventId = b.EventId.ToString(),
-                Date = b.CreationDate.ToString(),
+                CreationDate = b.CreationDate.ToString(),
                 NumerOfPeople = b.NumberOfPeople,
 
             };
@@ -158,7 +163,8 @@ namespace Service.Services
                 Description = result.Text.ToString(),
                 CafeOwner = result.CafeOwnerId.ToString(),
                 Entertainer = result.EnterteinerId.ToString(),
-                Date = result.Date.ToString(),
+                StartDate = result.StartDate.ToString(),
+                EndDate = result.EndDate.ToString(),
                 AvailablePlaces = result.AvailablePlaces,
                 State = result.state.ToString(),
 
@@ -177,7 +183,8 @@ namespace Service.Services
                 Description = result.Text.ToString(),
                 CafeOwner = result.CafeOwnerId.ToString(),
                 Entertainer = result.EnterteinerId.ToString(),
-                Date = result.Date.ToString(),
+                StartDate = result.StartDate.ToString(),
+                EndDate = result.EndDate.ToString(),
                 AvailablePlaces = result.AvailablePlaces,
                 State = result.state.ToString(),
 
@@ -196,7 +203,8 @@ namespace Service.Services
                 Description = result.Text.ToString(),
                 CafeOwner = result.CafeOwnerId.ToString(),
                 Entertainer = result.EnterteinerId.ToString(),
-                Date = result.Date.ToString(),
+                StartDate = result.StartDate.ToString(),
+                EndDate = result.EndDate.ToString(),
                 AvailablePlaces = result.AvailablePlaces,
                 State = result.state.ToString(),
             };

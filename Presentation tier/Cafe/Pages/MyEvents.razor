@@ -2,6 +2,9 @@
 @using Cafe.Models
 @using Cafe.dto
 @using System.Data
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@using Cafe.Uitlities
 @inject NotificationService NotificationService
 @inject HttpClient httpClient
 
@@ -22,9 +25,9 @@
                             <RadzenBadge BadgeStyle="BadgeStyle.Light" Text=@($"{myEvent.Status}") class="me-1" />
                             <b>@(myEvent.Name)</b>
                         </div>
-                        <div class="col-md-4 text-end">
-                            <RadzenBadge BadgeStyle="BadgeStyle.Info" Text=@myEvent.Date.ToString() />
-                        </div>
+                <!--        <div class="col-md-4 text-end">
+                            <RadzenBadge BadgeStyle="BadgeStyle.Info" Text=@myEvent.Start.ToString() />
+                        </div>-->
                     </div>
                     <hr style="border: none; background-color: rgba(0,0,0,.08); height: 1px; margin: 1rem 0;" />
                     <div class="d-flex flex-row align-items-center">
@@ -55,20 +58,22 @@
 
 
 @code {
-    Guid id = Guid.Parse("c60f40aa-9028-4036-9c09-192dceb95f73");
+    Guid id = Guid.Parse("cc232ead-0b61-4395-9b14-a1de097c0e49");
     List<EventDto> my_events = new List<EventDto>();
     protected async override void OnInitialized()
     {
-        var response = await httpClient.GetFromJsonAsync<List<EventDto>>("http://localhost:8080/api/events/users/" + id);
-        /*if (response.IsSuccessStatusCode)
+        var response = await httpClient.GetAsync("http://localhost:8080/api/events/users/" + id);
+        if (response.IsSuccessStatusCode)
         {
+            var stream = await response.Content.ReadAsStreamAsync();
+      //      my_events = await httpClient.GetFromJsonAsync<List<EventDto>>("http://localhost:8080/api/events/users/" + id, JsonOptionsHelper.DefaultJsonSerializerOptions);
+            my_events = await JsonSerializer.DeserializeAsync<List<EventDto>>(stream, JsonOptionsHelper.DefaultJsonSerializerOptions) ?? new List<EventDto>();
             ShowSuccessNotification();
         }
         else
         {
             ShowErrorNotification("An error occurred while processing your request.");
         }
-        my_events = await response.ReadAsync<List<EventDto>>();*/
     }
     private void ShowSuccessNotification()
     {
@@ -81,7 +86,7 @@
 
     private async void Accept(Guid id)
     {
-        var response = await httpClient.GetAsync("http://localhost:8080/api/events/state/?id=" + id + "&state=accept");
+        var response = await httpClient.PatchAsync("http://localhost:8080/api/events/state/?id=" + id + "&state=accepted",null);
         if (response.IsSuccessStatusCode)
         {
             ShowSuccessNotification();
@@ -93,7 +98,7 @@
     }
     private async void Refuse(Guid id)
     {
-        var response = await httpClient.GetAsync("http://localhost:8080/api/events/state/?id=" + id + "&state=refuse");
+        var response = await httpClient.PatchAsync("http://localhost:8080/api/events/state/?id=" + id + "&state=refused",null);
         if (response.IsSuccessStatusCode)
         {
             ShowSuccessNotification();

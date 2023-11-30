@@ -20,8 +20,7 @@ service UserService{
 message BookEventRequest{
   string userId = 1;
   string eventId = 2;
-  string Date = 3;
-  int32 NumerOfPeople = 4;
+  int32 NumerOfPeople =3;
 }
 message GetEventsResponse{
   repeated GetEventResponse event = 1;
@@ -29,7 +28,7 @@ message GetEventsResponse{
 message BookEventResponse{
   string userId = 1;
   string eventId = 2;
-  string Date = 3;
+  string CreationDate = 3;
   int32 NumerOfPeople = 4;
   string id =5;
 }
@@ -54,8 +53,9 @@ message CreateEventRequest{
   string description = 2;
   string Entertainer = 3;
   string CafeOwner = 4;
-  string Date = 5;
-  int32 AvailablePlaces = 6;
+  string StartDate = 5;
+  string EndDate = 6;
+  int32 AvailablePlaces = 7;
 }
 message CreateEventResponse{
   string id = 1;
@@ -73,9 +73,10 @@ message GetEventResponse{
   string description = 3;
   string Entertainer = 4;
   string CafeOwner = 5;
-  string Date=6;
-  int32 AvailablePlaces = 7;
-  string state = 8;
+  string StartDate = 6;
+  string EndDate = 7;
+  int32 AvailablePlaces = 8;
+  string state = 9;
 }
 message GetEventByUserResponse{
   string id = 1;
@@ -83,11 +84,12 @@ message GetEventByUserResponse{
   string description = 3;
   string EntertainerId = 4;
   string CafeOwnerId = 5;
-  string Date=6;
-  int32 AvailablePlaces = 7;
-  string state = 8;
-  string Entertainer = 9;
-  string CafeOwner = 10;
+  string StartDate = 6;
+  string EndDate = 7;
+  int32 AvailablePlaces = 8;
+  string state = 9;
+  string Entertainer = 10;
+  string CafeOwner = 11;
 }
 message GetEventsByUserResponse{
   repeated GetEventByUserResponse events = 1;

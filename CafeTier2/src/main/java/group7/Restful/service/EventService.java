@@ -5,6 +5,7 @@
 
 package group7.Restful.service;
 
+import com.google.type.DateTime;
 import group7.Grpc.dto.EventDto;
 import group7.Grpc.service.EventClientService;
 import group7.Restful.entity.Event;
@@ -40,26 +41,34 @@ public class EventService {
 
     public Event createEvent(Event event) {
         DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm");
-        CreateEventRequest request = CreateEventRequest.newBuilder().setAvailablePlaces(event.getAvailablePlaces()).setCafeOwner(event.getCafeOwnerId().toString()).setEntertainer(event.getEntertainerId().toString()).setDate(dateFormat.format(event.getDate())).setName(event.getName()).setDescription(event.getDescription()).build();
+        try{
+        if(dateFormat.parse(event.getStartDate()).getSeconds() > dateFormat.parse(event.getEndDate()).getSeconds()){
+            throw new IllegalArgumentException("Start date must be before end date");
+        }}
+        catch (ParseException e){
+            throw new IllegalArgumentException(e.toString());
+        }
+        CreateEventRequest request = CreateEventRequest.newBuilder().setAvailablePlaces(event.getAvailablePlaces())
+                .setCafeOwner(event.getCafeOwnerId().toString()).setEntertainer(event.getEntertainerId().toString())
+                .setStartDate(event.getStartDate()).setEndDate(event.getEndDate()).setName(event.getName())
+                .setDescription(event.getDescription()).build();
         GetEventResponse response = eventClientService.createEvent(request);
-        try{Event e = new Event(){
+        Event e = new Event(){
             {
                 setId(UUID.fromString(response.getId()));
                 setName(response.getName());
                 setDescription(response.getDescription());
                 setEntertainerId(UUID.fromString(response.getEntertainer()));
-                setDate(dateFormat.parse(response.getDate()).toString());
+                setStartDate(response.getStartDate());
+                setEndDate(response.getEndDate());
                 setAvailablePlaces(response.getAvailablePlaces());
                 setCafeOwnerId(UUID.fromString(response.getCafeOwner()));
                 setStatus(response.getState());
             }
         };
         System.out.println("Event sent to gRPC server");
-        return e;}
-        catch (ParseException e){
-            throw new IllegalArgumentException(e.toString());
+        return e;
         }
-    }
 
     public Event acceptState(UUID id){
         GetEventResponse response = eventClientService.acceptEvent(GetEventRequest.newBuilder().setId(id.toString()).build());
@@ -69,7 +78,8 @@ public class EventService {
                 setName(response.getName());
                 setDescription(response.getDescription());
                 setEntertainerId(UUID.fromString(response.getEntertainer()));
-                setDate(response.getDate());
+                setStartDate(response.getStartDate());
+                setEndDate(response.getEndDate());
                 setAvailablePlaces(response.getAvailablePlaces());
                 setCafeOwnerId(UUID.fromString(response.getCafeOwner()));
                  setStatus(response.getState());
@@ -85,7 +95,8 @@ public class EventService {
                 setName(response.getName());
                 setDescription(response.getDescription());
                 setEntertainerId(UUID.fromString(response.getEntertainer()));
-                setDate(response.getDate());
+                setStartDate(response.getStartDate());
+                setEndDate(response.getEndDate());
                 setAvailablePlaces(response.getAvailablePlaces());
                 setCafeOwnerId(UUID.fromString(response.getCafeOwner()));
                 setStatus(response.getState());
@@ -101,7 +112,8 @@ public class EventService {
                 setName(response.getName());
                 setDescription(response.getDescription());
                 setEntertainerId(UUID.fromString(response.getEntertainer()));
-                setDate(response.getDate());
+                setStartDate(response.getStartDate());
+                setEndDate(response.getEndDate());
                 setAvailablePlaces(response.getAvailablePlaces());
                 setCafeOwnerId(UUID.fromString(response.getCafeOwner()));
                 setStatus(response.getState());
@@ -121,7 +133,8 @@ public class EventService {
                     setName(e.getName());
                     setDescription(e.getDescription());
                     setEntertainerId(UUID.fromString(e.getEntertainerId()));
-                    setDate(parser.parse(e.getDate()).toString());
+                    setStartDate(e.getStartDate());
+                    setEndDate(e.getEndDate());
                     setAvailablePlaces(e.getAvailablePlaces());
                     setCafeOwnerId(UUID.fromString(e.getCafeOwnerId()));
                     setStatus(e.getState());

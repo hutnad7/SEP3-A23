@@ -1,6 +1,10 @@
 ﻿@page "/events"
 @using Cafe.Models
 @using System.Collections
+@using System.Net
+@using System.Net.Http.Headers
+@using System.Text.Json
+@using Cafe.Uitlities
 @inject NotificationService NotificationService
 @inject HttpClient HttpClient
 @inject NavigationManager _nav_manager
@@ -34,23 +38,20 @@
 @code {
     List<Event> events=new List<Event>();
     
-    protected override async void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
         try
         {
-           // var response = await HttpClient.GetAsync("http://localhost:8080/api/events");
-            /*events = await response.ReadAsync<List<Event>>();
-            if (!response.IsSuccessStatusCode)
+            var response = await HttpClient.GetAsync("http://localhost:8080/api/events");
+            if (response.IsSuccessStatusCode)
+            {
+                var stream = await response.Content.ReadAsStreamAsync();
+                events = await JsonSerializer.DeserializeAsync<List<Event>>(stream, JsonOptionsHelper.DefaultJsonSerializerOptions) ?? new List<Event>();
+            }
+            else
             {
                 ShowErrorNotification("An error occurred while processing your request.");
-            }*/
-            events = new List<Event>()
-            {
-                new Event() { Name = "Event1", Description = "First Event", Date = new DateTime(), Id = Guid.NewGuid()},
-                new Event() { Name = "Event2", Description = "Second Event", Date = new DateTime(), Id = Guid.NewGuid() },
-                new Event() { Name = "Event3", Description = "Third Event", Date = new DateTime(), Id = Guid.NewGuid() },
-                new Event() { Name = "Event4", Description = "Fourth Event", Date = new DateTime(), Id = Guid.NewGuid() }
-            };
+            }
         }
         catch (HttpRequestException)
         {
@@ -61,6 +62,8 @@
             ShowErrorNotification($"An unexpected error occurred: {ex.Message}");
         }
     }
+
+
     private void ShowErrorNotification(string message)
     {
         NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = message, Detail = "Unable to create the event", Duration = 4000 });

@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin(
         origins = {"*"},
         allowedHeaders = {"*"},
-        methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE}
+        methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE, RequestMethod.PATCH}
 )
 @RestController
 @RequestMapping({"/api/events"})
@@ -60,7 +60,6 @@ public class EventController {
         Optional<Event> updatedEventOpt = this.eventService.updateEvent(id, event);
         return updatedEventOpt.isPresent() ? ResponseEntity.ok((Event)updatedEventOpt.get()) : ResponseEntity.notFound().build();
     }
-
     @PatchMapping("/state")
     public ResponseEntity<Event> changeState(@RequestParam(value = "id") String id,
                                              @RequestParam(value = "state") String state){

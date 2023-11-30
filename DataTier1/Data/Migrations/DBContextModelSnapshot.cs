@@ -61,11 +61,14 @@ namespace Data.Migrations
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<DateTime>("Date")
+                    b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime(6)");
 
                     b.Property<Guid>("EnterteinerId")
                         .HasColumnType("char(36)");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime(6)");
 
                     b.Property<string>("Text")
                         .IsRequired()
@@ -132,34 +135,34 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("70c38fa9-62ad-438d-a245-3d44bda8675e"),
-                            CreationDate = new DateTime(2023, 11, 28, 13, 4, 43, 74, DateTimeKind.Local).AddTicks(6689),
+                            Id = new Guid("2d22883c-aed7-4725-89fb-1457ddac2882"),
+                            CreationDate = new DateTime(2023, 11, 30, 14, 18, 47, 725, DateTimeKind.Local).AddTicks(729),
                             Email = "coffeowner@gmail.com",
                             Firstname = "Coffe",
                             Lastname = "Owner",
-                            PasswordHash = "616136064",
+                            PasswordHash = "-2103683928",
                             Role = 1,
                             Username = "CoffeOwnerTest"
                         },
                         new
                         {
-                            Id = new Guid("ec219f26-9475-4192-922b-484ce92ad381"),
-                            CreationDate = new DateTime(2023, 11, 28, 13, 4, 43, 74, DateTimeKind.Local).AddTicks(6771),
+                            Id = new Guid("55361a5f-1b2b-467d-8886-7f1ce379f4cd"),
+                            CreationDate = new DateTime(2023, 11, 30, 14, 18, 47, 725, DateTimeKind.Local).AddTicks(865),
                             Email = "normaluser@gmail.com",
                             Firstname = "User",
                             Lastname = "Normal",
-                            PasswordHash = "824479591",
+                            PasswordHash = "-1566889369",
                             Role = 0,
                             Username = "normal_user"
                         },
                         new
                         {
-                            Id = new Guid("c60f40aa-9028-4036-9c09-192dceb95f73"),
-                            CreationDate = new DateTime(2023, 11, 28, 13, 4, 43, 74, DateTimeKind.Local).AddTicks(6790),
+                            Id = new Guid("cc232ead-0b61-4395-9b14-a1de097c0e49"),
+                            CreationDate = new DateTime(2023, 11, 30, 14, 18, 47, 725, DateTimeKind.Local).AddTicks(889),
                             Email = "enterteiner@gmail.com",
                             Firstname = "Enter",
                             Lastname = "Teiner",
-                            PasswordHash = "33361348",
+                            PasswordHash = "574792231",
                             Role = 2,
                             Username = "enterteiner"
                         });
