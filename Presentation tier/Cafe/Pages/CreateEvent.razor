@@ -56,8 +56,9 @@
             evt.CafeOwnerId = Guid.Parse("70c38fa9-62ad-438d-a245-3d44bda8675e");
             CultureInfo provider = CultureInfo.CreateSpecificCulture("en-GB");
             string format = "dd/MM/yyyy hh:mm";
-           evt.Date = DateTime.ParseExact(evt.Date.ToShortTimeString(), format,provider);
-           // evt.Date = DateTime.Parse( evt.Date.ToString(), CultureInfo.CreateSpecificCulture("fr-FR") );
+            DateTime date = DateTime.Now;
+            // evt.Date = DateTime.ParseExact(evt.Date.ToShortTimeString(), format,provider);
+            // evt.Date = DateTime.Parse( evt.Date.ToString(), CultureInfo.CreateSpecificCulture("fr-FR") );
             var response = await HttpClient.PostAsJsonAsync("http://localhost:8080/api/events", evt);
             if (response.IsSuccessStatusCode)
             {
