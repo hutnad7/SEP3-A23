@@ -1,9 +1,10 @@
 ﻿@page "/create-event"
-
 @using Cafe.Models
 @inject NotificationService NotificationService
-
 @inject HttpClient HttpClient
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+@attribute [Authorize("MustBeCafeOwner")]
 
 <h3>Create event</h3>
 
@@ -75,7 +76,7 @@
     {
         NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Event created", Detail = "Success Detail", Duration = 4000 });
     }
-    
+
     private void ShowErrorNotification(string message)
     {
         NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = message, Detail = "Unable to create the event", Duration = 4000 });
@@ -83,7 +84,9 @@
 
     private void ResetForm()
     {
-        Event = new ();
-        //Event.EntertainerId = entertainers.First().Id;
+        Event = new();
+    //Event.EntertainerId = entertainers.First().Id;
     }
+
+
 }
