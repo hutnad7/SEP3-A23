@@ -4,24 +4,30 @@ import "google/protobuf/wrappers.proto";
 option java_multiple_files = true;
 option java_package = "group7.protobuf";
 option java_outer_classname = "EventProto";
+
 service EventService{
   rpc CreateEvent(CreateEventRequest) returns (CreateEventResponse){};
   rpc GetEvent(GetEventRequest) returns (GetEventResponse){};
   rpc GetAllEvents(google.protobuf.Empty) returns (GetEventsResponse){};
   rpc BookEvent(BookEventRequest) returns (BookEventResponse){};
 }
+
 service UserService{
-	  rpc CreateUser(CreateUserRequest) returns (CreateUserResponse){};
+	rpc CreateUser(CreateUserRequest) returns (CreateUserResponse){};
+	rpc LoginUser(LoginRequest) returns (LoginResponse){};
 }
+
 message BookEventRequest{
 	string userId = 1;
 	string eventId = 2;
 	string Date = 3;
 	int32 NumerOfPeople = 4;
 }
+
 message GetEventsResponse{
 	repeated GetEventResponse event = 1;
 }
+
 message BookEventResponse{
 	string userId = 1;
 	string eventId = 2;
@@ -29,6 +35,7 @@ message BookEventResponse{
 	int32 NumerOfPeople = 4;
 	string id =5;
 }
+
 message CreateUserRequest{
 	string FisrtName = 1;
 	string LastName = 2;
@@ -37,6 +44,7 @@ message CreateUserRequest{
 	string Role = 5;
 	string Password = 6;
 }
+
 message CreateUserResponse{
 	string FisrtName = 1;
 	string LastName = 2;
@@ -45,6 +53,16 @@ message CreateUserResponse{
 	string Role = 5;
 	string Id = 6;
 }
+
+message LoginRequest {
+	string email = 1;
+	string password = 2;
+}
+
+message LoginResponse {
+	bool is_successful = 1;
+}
+
 message CreateEventRequest{
 	string name = 1;
 	string description = 2;
@@ -53,6 +71,7 @@ message CreateEventRequest{
 	string Date = 5;
 	int32 AvailablePlaces = 6;
 }
+
 message CreateEventResponse{
   string id = 1;
   string name = 2;
@@ -60,6 +79,7 @@ message CreateEventResponse{
   string Entertainer = 4;
   	int32 AvailablePlaces = 5;
 }
+
 message GetEventRequest{
 	string id = 1;
 }
