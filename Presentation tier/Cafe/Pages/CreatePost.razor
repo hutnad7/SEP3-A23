@@ -1,0 +1,61 @@
+﻿@page "/create-post"
+@using Cafe.Models
+@inject NotificationService NotificationService
+
+@inject HttpClient HttpClient
+
+
+<h3>CreatePost</h3>
+
+<RadzenTemplateForm TItem="Post" Data=Post Submit="@SubmitPost">
+    <RadzenTextBox @bind-value="Post.Title" Name="Title" Placeholder="Post Title" Style="width:100%; margin-bottom: 20px;"/>
+    <RadzenTextArea @bind-value="Post.Content" Name="Content" Placeholder="Content" Style="width:100%; margin-bottom: 20px; height: 200px"/>
+    
+    <RadzenButton ButtonType="ButtonType.Submit" Text="Post"/>
+</RadzenTemplateForm>
+
+
+@code {
+    public Post Post = new Post();
+    IEnumerable<Entertainer> entertainers;
+    
+    private async Task SubmitPost(Post post)
+    {
+        try
+        {
+            var response = await HttpClient.PostAsJsonAsync("http://localhost:8080/api/posts", post);
+            if (response.IsSuccessStatusCode)
+            {
+                ShowSuccessNotification();
+                ResetForm();
+            }
+            else
+            {
+                ShowErrorNotification("An error occurred while processing your request.");
+            }
+        }
+        catch (HttpRequestException)
+        {
+            ShowErrorNotification("Server is down or there's an issue with the request.");
+        }
+        catch (Exception ex)
+        {
+            ShowErrorNotification($"An unexpected error occurred: {ex.Message}");
+        }
+    }
+    
+    private void ShowSuccessNotification()
+    {
+        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Post created", Detail = "Success Detail", Duration = 4000 });
+    }
+    
+    private void ShowErrorNotification(string message)
+    {
+        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = message, Detail = "Unable to create the event", Duration = 4000 });
+    }
+    
+    private void ResetForm()
+    {
+        Post = new ();
+    }
+}

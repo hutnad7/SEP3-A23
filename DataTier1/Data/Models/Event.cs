@@ -22,6 +22,7 @@ namespace Data.Models
 
         [Required]
         public DateTime CreationDate { get; set; }
+        
         [Required]
         public DateTime StartDate { get; set; }
         [Required]
@@ -39,6 +40,5 @@ namespace Data.Models
         {
             this.state = StateEvent.Pending;
         }
-
     }
 }

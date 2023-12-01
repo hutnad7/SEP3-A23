@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Cafe.Models;
+﻿namespace Cafe.Models;
 
 public class Event
 {
@@ -10,10 +8,7 @@ public class Event
         public Guid EntertainerId { get; set; }
         public Guid CafeOwnerId { get; set; }
         public DateTime Date { get; set; }
-        public string DateString { get; set; }
-        
         public int AvailablePlaces { get; set; }
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
-
 }

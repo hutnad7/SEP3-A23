@@ -1,7 +1,6 @@
 using Data.Interfaces;
 using Data.Models;
 using Data.Repositories;
-using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using Microsoft.VisualBasic;
 using MySqlX.XDevAPI.Common;
@@ -126,7 +125,6 @@ namespace Service.Services
                 EndDate = ev.EndDate.ToString(),
                 AvailablePlaces = ev.AvailablePlaces,
                 State = ev.state.ToString(),
-
             };
             return response;
         }
@@ -140,7 +138,7 @@ namespace Service.Services
                 CreationDate = DateTime.Now,
                 NumberOfPeople = request.NumerOfPeople
             };
-            Booking b = await _bookingRepository.CreateAsync(booking);
+            Booking b =  await _bookingRepository.CreateAsync(booking);
             BookEventResponse response = new BookEventResponse()
             {
                 Id = booking.Id.ToString(),
@@ -210,5 +208,6 @@ namespace Service.Services
             };
             return response;
         }
+
     }
 }
