@@ -23,13 +23,14 @@ public class BookService {
     }
 
     public Booking createBook(Booking booking) {
-        if (booking.getNumberOfPeople()>30){
-            throw new IllegalArgumentException("Number of people cannot be more than 30");
-        }
         BookEventRequest request = BookEventRequest.newBuilder().setUserId(booking.getUserId().toString()).setEventId(booking.getEventId().toString()).setDate(booking.getCreationDate()).setNumerOfPeople(booking.getNumberOfPeople()).build();
 
         BookEventResponse response = eventClientService.bookEvent(request);
-        Booking b = new Booking(UUID.fromString(response.getId()), UUID.fromString(response.getUserId()), UUID.fromString(response.getEventId()), response.getDate(), response.getNumerOfPeople());
+        Booking b = new Booking(
+                UUID.fromString(response.getId()),
+                UUID.fromString(response.getUserId()),
+                UUID.fromString(response.getEventId()),
+                response.getDate(), response.getNumerOfPeople());
         return booking;
     }
 
