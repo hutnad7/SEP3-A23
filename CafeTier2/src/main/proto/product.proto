@@ -17,10 +17,14 @@ service EventService{
 service UserService{
   rpc CreateUser(CreateUserRequest) returns (CreateUserResponse){};
 }
+service PostService{
+  rpc CreatePost(CreatePostRequest) returns (CreatePostResponse){};
+}
 message BookEventRequest{
   string userId = 1;
   string eventId = 2;
-  int32 NumerOfPeople =3;
+  string Date = 3;
+  int32 NumerOfPeople = 4;
 }
 message GetEventsResponse{
   repeated GetEventResponse event = 1;
@@ -31,6 +35,12 @@ message BookEventResponse{
   string CreationDate = 3;
   int32 NumerOfPeople = 4;
   string id =5;
+}
+message GetBooksResponse{
+  repeated BookEventResponse book = 1;
+}
+message GetBookRequest{
+  string id = 1;
 }
 message CreateUserRequest{
   string FisrtName = 1;
@@ -47,6 +57,20 @@ message CreateUserResponse{
   string Email = 4;
   string Role = 5;
   string Id = 6;
+}
+message CreatePostRequest{
+  string id = 1;
+  string author = 2;
+  string title = 3;
+  string content = 4;
+  string Date = 5;
+}
+message CreatePostResponse{
+  string id = 1;
+  string author = 2;
+  string title = 3;
+  string content = 4;
+  string Date = 5;
 }
 message CreateEventRequest{
   string name = 1;
