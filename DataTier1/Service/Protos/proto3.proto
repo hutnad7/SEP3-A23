@@ -32,9 +32,9 @@ message GetEventsResponse{
 message BookEventResponse{
   string userId = 1;
   string eventId = 2;
-  string Date = 3;
+  string CreationDate = 3;
   int32 NumerOfPeople = 4;
-  string id = 5;
+  string id =5;
 }
 message GetBooksResponse{
   repeated BookEventResponse book = 1;

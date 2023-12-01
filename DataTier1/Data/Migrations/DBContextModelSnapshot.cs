@@ -61,11 +61,14 @@ namespace Data.Migrations
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<DateTime>("Date")
+                    b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime(6)");
 
                     b.Property<Guid>("EnterteinerId")
                         .HasColumnType("char(36)");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime(6)");
 
                     b.Property<string>("Text")
                         .IsRequired()
@@ -74,6 +77,9 @@ namespace Data.Migrations
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<int>("state")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -129,34 +135,34 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("8ce4dccf-1828-4c08-99b4-a0f0d026af5c"),
-                            CreationDate = new DateTime(2023, 11, 27, 13, 45, 33, 580, DateTimeKind.Local).AddTicks(4271),
+                            Id = new Guid("2d22883c-aed7-4725-89fb-1457ddac2882"),
+                            CreationDate = new DateTime(2023, 11, 30, 14, 18, 47, 725, DateTimeKind.Local).AddTicks(729),
                             Email = "coffeowner@gmail.com",
                             Firstname = "Coffe",
                             Lastname = "Owner",
-                            PasswordHash = "2040000821",
+                            PasswordHash = "-2103683928",
                             Role = 1,
                             Username = "CoffeOwnerTest"
                         },
                         new
                         {
-                            Id = new Guid("c87450ad-fcf3-479f-a4d6-10042cd78720"),
-                            CreationDate = new DateTime(2023, 11, 27, 13, 45, 33, 580, DateTimeKind.Local).AddTicks(4353),
+                            Id = new Guid("55361a5f-1b2b-467d-8886-7f1ce379f4cd"),
+                            CreationDate = new DateTime(2023, 11, 30, 14, 18, 47, 725, DateTimeKind.Local).AddTicks(865),
                             Email = "normaluser@gmail.com",
                             Firstname = "User",
                             Lastname = "Normal",
-                            PasswordHash = "2034148697",
+                            PasswordHash = "-1566889369",
                             Role = 0,
                             Username = "normal_user"
                         },
                         new
                         {
-                            Id = new Guid("4a754225-8370-498e-803f-c467e0ce405a"),
-                            CreationDate = new DateTime(2023, 11, 27, 13, 45, 33, 580, DateTimeKind.Local).AddTicks(4366),
+                            Id = new Guid("cc232ead-0b61-4395-9b14-a1de097c0e49"),
+                            CreationDate = new DateTime(2023, 11, 30, 14, 18, 47, 725, DateTimeKind.Local).AddTicks(889),
                             Email = "enterteiner@gmail.com",
                             Firstname = "Enter",
                             Lastname = "Teiner",
-                            PasswordHash = "-2087047826",
+                            PasswordHash = "574792231",
                             Role = 2,
                             Username = "enterteiner"
                         });

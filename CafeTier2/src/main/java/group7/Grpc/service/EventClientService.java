@@ -23,9 +23,22 @@ public class EventClientService {
     public BookEventResponse bookEvent(BookEventRequest request) {
         return stub.bookEvent(request);
     }
-   public CreateEventResponse createEvent(CreateEventRequest request) {
+   public GetEventResponse createEvent(CreateEventRequest request) {
         return stub.createEvent(request);
     }
+    public GetEventsByUserResponse getEventsByUserId(GetEventRequest request) {
+        return stub.getEventsByUser(request);
+    }
+   public GetEventResponse acceptEvent(GetEventRequest request) {
+        return stub.acceptEvent(request);
+    }
+    public GetEventResponse refuseEvent(GetEventRequest request) {
+        return stub.refuseEvent(request);
+    }
+    public GetEventResponse reverseState(GetEventRequest request) {
+        return stub.reverseState(request);
+    }
+
 
     public void shutdown() {
         channel.shutdown();

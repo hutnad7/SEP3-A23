@@ -1,8 +1,8 @@
 package group7;
 
+import com.jpomykala.springhoc.cors.EnableCORS;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 @SpringBootApplication
 public class GrpcApplication {
     public static void main(String[] args) {

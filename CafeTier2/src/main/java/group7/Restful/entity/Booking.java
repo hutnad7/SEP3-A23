@@ -1,9 +1,7 @@
 package group7.Restful.entity;
 
 import lombok.Data;
-
 import java.util.UUID;
-
 @Data
 public class Booking {
     private UUID UserId;

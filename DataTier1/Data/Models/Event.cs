@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using Data.State;
 
 namespace Data.Models
 {
@@ -24,10 +25,8 @@ namespace Data.Models
         
         [Required]
         public DateTime StartDate { get; set; }
-        
         [Required]
         public DateTime EndDate { get; set; }
-
         [Required]
         public string Title { get; set; }
 
@@ -36,8 +35,10 @@ namespace Data.Models
         [Required]
         public int AvailablePlaces { get; set; }
         public virtual ICollection<Booking> Bookings { get; set; }
-        
-        public Event() { }
-
+        public StateEvent state { get; set; }
+        public Event() 
+        {
+            this.state = StateEvent.Pending;
+        }
     }
 }
