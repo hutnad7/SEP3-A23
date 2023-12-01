@@ -195,7 +195,7 @@ namespace Service.Services
         {
 
             Event @event = await _eventRepository.GetByIdAsync(Guid.Parse(request.Id));
-            Event result = await _eventRepository.AcceptEventAsync(@event);
+            Event result = await _eventRepository.RevertStateAsync(@event);
             GetEventResponse response = new GetEventResponse()
             {
                 Id = result.Id.ToString(),

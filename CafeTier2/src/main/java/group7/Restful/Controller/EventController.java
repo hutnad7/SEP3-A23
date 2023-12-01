@@ -40,6 +40,7 @@ public class EventController {
         Optional<Event> eventOpt = this.eventService.getEventById(id);
         return eventOpt.isPresent() ? ResponseEntity.ok((Event)eventOpt.get()) : ResponseEntity.notFound().build();
     }
+
     @GetMapping({"/users/{id}"})
     public ResponseEntity<ArrayList<EventDto>> getEventByUserId(@PathVariable UUID id) {
         try {
@@ -60,17 +61,25 @@ public class EventController {
         Optional<Event> updatedEventOpt = this.eventService.updateEvent(id, event);
         return updatedEventOpt.isPresent() ? ResponseEntity.ok((Event)updatedEventOpt.get()) : ResponseEntity.notFound().build();
     }
-    @PatchMapping("/state")
-    public ResponseEntity<Event> changeState(@RequestParam(value = "id") String id,
-                                             @RequestParam(value = "state") String state){
+    @CrossOrigin(
+            origins = {"*"},
+            allowedHeaders = {"*"},
+            allowCredentials = "false",
+            methods = {RequestMethod.PUT, RequestMethod.PATCH}
+    )
+    @GetMapping({"/state/{id}/{state}"})
+    public ResponseEntity<Event> changeState(@PathVariable UUID id, @PathVariable String state){
         Event updatedEventOpt = null;
         switch (state){
             case "accepted":
-                updatedEventOpt =  this.eventService.acceptState(UUID.fromString(id));
+                updatedEventOpt =  this.eventService.acceptState(id);
+                break;
             case "refused":
-                updatedEventOpt =  this.eventService.refuseEvent(UUID.fromString(id));
+                updatedEventOpt =  this.eventService.refuseEvent(id);
+                break;
             case "reversed":
-                updatedEventOpt =  this.eventService.reverseState(UUID.fromString(id));
+                updatedEventOpt =  this.eventService.reverseState(id);
+                break;
         }
         return updatedEventOpt!=null ? ResponseEntity.ok(updatedEventOpt) : ResponseEntity.notFound().build();
     }
