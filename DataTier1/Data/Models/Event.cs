@@ -21,8 +21,12 @@ namespace Data.Models
 
         [Required]
         public DateTime CreationDate { get; set; }
+        
         [Required]
-        public DateTime Date { get; set; }
+        public DateTime StartDate { get; set; }
+        
+        [Required]
+        public DateTime EndDate { get; set; }
 
         [Required]
         public string Title { get; set; }
@@ -32,6 +36,7 @@ namespace Data.Models
         [Required]
         public int AvailablePlaces { get; set; }
         public virtual ICollection<Booking> Bookings { get; set; }
+        
         public Event() { }
 
     }

@@ -1,7 +1,6 @@
 using Data.Interfaces;
 using Data.Models;
 using Data.Repositories;
-using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 
 namespace Service.Services
@@ -17,40 +16,20 @@ namespace Service.Services
             _eventRepository = eventRepository;
             _bookingRepository = bookingRepository;
         }
-        public override async Task<GetEventsResponse> GetAllEvents(Empty request, ServerCallContext context)
-        {
-            ICollection<Event> events = await _eventRepository.GetAll();
-            ICollection<GetEventResponse> e = new List<GetEventResponse>();
-            foreach (Event ev in events)
-            {
-                GetEventResponse response = new GetEventResponse()
-                {
-                    Id = ev.Id.ToString(),
-                    Name = ev.Title.ToString(),
-                    Description = ev.Text.ToString(),
-                    CafeOwner = ev.CafeOwnerId.ToString(),
-                    Entertainer = ev.EnterteinerId.ToString(),
-                    Date = ev.Date.ToString(),
-                };
-                e.Add(response);
-            }
-            GetEventsResponse getEventsResponse = new GetEventsResponse();
-            getEventsResponse.Event.Add(e);
-            return getEventsResponse;
-        }
         public override async Task<CreateEventResponse> CreateEvent(CreateEventRequest request, ServerCallContext context)
         {
-             Event e = new Event()
-             {
-                 Id = Guid.NewGuid(),
-                 EnterteinerId = Guid.Parse(request.Entertainer),
-                 CafeOwnerId = Guid.Parse(request.Entertainer),
-                 CreationDate = DateTime.Now,
-                 Date = DateTime.Parse(request.Date),
-                 Text = request.Description,
-                 Title = request.Name,
-                 AvailablePlaces = request.AvailablePlaces
-             };
+            Event e = new Event()
+            {
+                Id = Guid.NewGuid(),
+                EnterteinerId = Guid.Parse(request.Entertainer),
+                CafeOwnerId = Guid.Parse(request.Entertainer),
+                CreationDate = DateTime.Now,
+                Text = request.Description,
+                Title = request.Name,
+                AvailablePlaces = 10, //request.AvailablePlaces
+                StartDate = DateTime.Parse(request.StartDate),
+                EndDate = DateTime.Parse(request.EndDate)
+            };
             Event ev = await _eventRepository.CreateAsync(e);
             CreateEventResponse response = new CreateEventResponse()
             {
@@ -72,7 +51,6 @@ namespace Service.Services
                 Description = ev.Text.ToString(),
                 CafeOwner = ev.CafeOwnerId.ToString(),
                 Entertainer = ev.EnterteinerId.ToString(),
-                Date = ev.Date.ToString(),
             };
             return response;
         }
@@ -86,7 +64,7 @@ namespace Service.Services
                 CreationDate = DateTime.Parse(request.Date),
                 NumberOfPeople = request.NumerOfPeople
             };
-            Booking b = await _bookingRepository.CreateAsync(booking);
+            Booking b =  await _bookingRepository.CreateAsync(booking);
             BookEventResponse response = new BookEventResponse()
             {
                 Id = booking.Id.ToString(),
@@ -97,5 +75,6 @@ namespace Service.Services
             };
             return response;
         }
+
     }
 }
