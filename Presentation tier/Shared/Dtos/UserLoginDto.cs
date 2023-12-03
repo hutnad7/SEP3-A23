@@ -1,7 +1,11 @@
-﻿namespace Shared.Dtos;
+﻿using System.Text.Json.Serialization;
+
+namespace Shared.Dtos;
 
 public class UserLoginDto
 {
-    public string Username { get; init; }
+    [JsonPropertyName("email")]
+    public string Email { get; init; }
+    [JsonPropertyName("password")]
     public string Password { get; init; }
 }

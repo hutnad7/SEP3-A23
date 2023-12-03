@@ -15,6 +15,8 @@ public class JwtAuthService : IAuthService
 
     // this private variable for simple caching
     public string? Jwt { get; private set; } = "";
+    
+    public string? GetJwt() => Jwt;
 
     public Action<ClaimsPrincipal> OnAuthStateChanged { get; set; } = null!;
 
@@ -22,14 +24,14 @@ public class JwtAuthService : IAuthService
     {
         UserLoginDto userLoginDto = new()
         {
-            Username = username,
+            Email = username,
             Password = password
         };
 
         string userAsJson = JsonSerializer.Serialize(userLoginDto);
         StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
 
-        HttpResponseMessage response = await client.PostAsync("https://localhost:7130/auth/login", content);
+        HttpResponseMessage response = await client.PostAsync("http://localhost:8080/api/auth/login", content);
         string responseContent = await response.Content.ReadAsStringAsync();
 
         if (!response.IsSuccessStatusCode)
@@ -72,7 +74,7 @@ public class JwtAuthService : IAuthService
     {
         string userAsJson = JsonSerializer.Serialize(user);
         StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
-        HttpResponseMessage response = await client.PostAsync("https://localhost:7130/auth/register", content);
+        HttpResponseMessage response = await client.PostAsync("http://localhost:8080/api/auth/register", content);
         string responseContent = await response.Content.ReadAsStringAsync();
 
         if (!response.IsSuccessStatusCode)

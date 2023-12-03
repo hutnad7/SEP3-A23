@@ -24,7 +24,7 @@ namespace Service.Services
                     Id = Guid.NewGuid(),
                     Firstname = request.FisrtName,
                     Lastname = request.LastName,
-                    Username = request.FisrtName + request.LastName,
+                    Username = request.Email + "u",
                     Email = request.Email,
                     CreationDate = DateTime.Now,
                     Role = (Role)Enum.Parse(typeof(Role), request.Role),
@@ -52,7 +52,7 @@ namespace Service.Services
             }
         }
 
-        public override async Task<LoginResponse> LoginUser(LoginRequest request, ServerCallContext context)
+        public override async Task<CreateUserResponse> LoginUser(LoginRequest request, ServerCallContext context)
         {
             Auth auth = new()
             {
@@ -60,9 +60,16 @@ namespace Service.Services
                 Password = request.Password
             };
 
-            LoginResponse response = new()
+            User? foundUser = await _authRepository.LoginUserAsync(auth);
+
+            CreateUserResponse response = new()
             {
-                IsSuccessful = await _authRepository.LoginUserAsync(auth)
+                FisrtName = foundUser.Firstname,
+                LastName = foundUser.Lastname,
+                Username = foundUser.Username,
+                Email = foundUser.Email,
+                Role = foundUser.Role.ToString(),
+                Id = foundUser.Id.ToString(),
             };
 
             return response;

@@ -1,7 +1,6 @@
 ﻿@page "/Login"
 
 @using Cafe.Services
-@using Cafe.Services
 @inject IAuthService authService
 @inject NavigationManager navMgr
 
@@ -9,7 +8,6 @@
 <AuthorizeView>
     <NotAuthorized>
         <div class="card">
-            <h3>Please login</h3>
             <div class="field">
                 <label>User name:</label>
                 <input type="text" @bind="userName"/>

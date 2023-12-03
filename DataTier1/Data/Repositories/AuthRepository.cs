@@ -30,18 +30,18 @@ public class AuthRepository : IAuthRepository
         }
     }
 
-    public async Task<bool> LoginUserAsync(Auth auth)
+    public async Task<User> LoginUserAsync(Auth auth)
     {
         try
         {
-            User? user = await _context.Users.FirstOrDefaultAsync(u => u.Email == auth.Email);
-            
-            if (user == null || user.PasswordHash != auth.Password)
+            User? foundUser = await _context.Users.FirstOrDefaultAsync(u => u.Email == auth.Email);
+
+            if (foundUser == null)
             {
-                return false;
+                throw new Exception("User not found");
             }
 
-            return true;
+            return foundUser;
         }
         catch (Exception e)
         {

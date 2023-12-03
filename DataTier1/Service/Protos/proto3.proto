@@ -14,7 +14,7 @@ service EventService{
 
 service UserService{
 	rpc CreateUser(CreateUserRequest) returns (CreateUserResponse){};
-	rpc LoginUser(LoginRequest) returns (LoginResponse){};
+	rpc LoginUser(LoginRequest) returns (CreateUserResponse){};
 }
 
 message BookEventRequest{

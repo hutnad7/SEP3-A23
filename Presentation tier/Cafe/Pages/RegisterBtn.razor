@@ -1,0 +1,18 @@
+﻿@using Cafe.Services
+@namespace Registration
+@inject NavigationManager navMgr
+@inject IAuthService authService
+
+<AuthorizeView>
+<NotAuthorized>
+    <img class="icon" src="img/Register.png" @onclick="Register"/>
+</NotAuthorized>
+</AuthorizeView>
+
+
+@code {
+    private void Register()
+    {
+        navMgr.NavigateTo("/Register");
+    }
+}

@@ -1,0 +1,77 @@
+﻿@page "/Register"
+
+@using Cafe.Services
+@using global::Shared.Models
+@inject IAuthService authService
+@inject NavigationManager navMgr
+
+<h3>Register</h3>
+<div class="card">
+    <div class="field">
+        <label>User Name:</label>
+        <input type="text" @bind="userName" />
+    </div>
+    <div class="field">
+        <label>Password:</label>
+        <input type="password" @bind="password" />
+    </div>
+    <div class="field">
+        <label>Confirm Password:</label>
+        <input type="password" @bind="confirmPassword" />
+    </div>
+    <div class="field">
+        <label>Email:</label>
+        <input type="text" @bind="email" />
+    </div>
+    <div class="field">
+        <label>Role:</label>
+        <select @bind="selectedRole">
+            <option value="User">User</option>
+            <option value="CafeOwner">Cafe Owner</option>
+            <option value="Entertainer">Entertainer</option>
+        </select>
+    </div>
+    @if (!string.IsNullOrEmpty(errorLabel))
+    {
+        <div class="field">
+            <label style="color: red">
+                @errorLabel
+            </label>
+        </div>
+    }
+    <div class="field">
+        <button class="registerbtn" @onclick="RegisterAsync">Register</button>
+    </div>
+</div>
+
+@code {
+    private string userName;
+    private string password;
+    private string confirmPassword;
+    private string email;
+    private string selectedRole = "User"; // Default role is User
+    private string errorLabel;
+
+    private async Task RegisterAsync()
+    {
+        errorLabel = "";
+        try
+        {
+            var user = new User
+            {
+                Username = userName,
+                Password = password,
+                Email = email,
+                Role = selectedRole
+            };
+
+            await authService.RegisterAsync(user);
+            navMgr.NavigateTo("/Login"); 
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            errorLabel = $"Error: {e.Message}";
+        }
+    }
+}

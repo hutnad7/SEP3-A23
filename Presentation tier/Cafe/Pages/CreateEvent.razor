@@ -1,10 +1,13 @@
 ﻿@page "/create-event"
 @using Cafe.Models
+@using Cafe.Services
+@using Cafe.Services.Http
 @inject NotificationService NotificationService
 @inject HttpClient HttpClient
 @inject AuthenticationStateProvider AuthenticationStateProvider
-
+@inject IAuthService JwtAuthService
 @attribute [Authorize("MustBeCafeOwner")]
+
 
 <h3>Create event</h3>
 
@@ -26,8 +29,11 @@
     public Event Event = new();
     IEnumerable<Entertainer> entertainers;
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
+        var jwt = JwtAuthService.GetJwt();
+        Console.WriteLine("JWT :: " + jwt);;
+        
         entertainers = new List<Entertainer>
         {
             new Entertainer { Id = Guid.NewGuid(), FirstName = "John", LastName = "Doe" },
