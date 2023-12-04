@@ -15,6 +15,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddGrpc();
 builder.Services.AddDbContext<DBContext>(options =>
   options.UseMySQL(builder.Configuration.GetConnectionString("Database")));
+builder.Services.AddScoped<IAuthRepository, AuthRepository>();
 builder.Services.AddScoped<IEnterteinerRepository, EnterteinerRepository>();
 builder.Services.AddScoped<ICafeOwnerRepository, CafeOwnerRepository>();
 builder.Services.AddScoped<IEventRepository, EventRepository>();
@@ -35,6 +36,7 @@ app.UseCors("AllowBlazorOrigin");
 
 // Configure the HTTP request pipeline.
 app.MapGrpcService<Service.Services.EventServiceImpl>();
+app.MapGrpcService<Service.Services.UserServiceImpl>();
 app.MapGet("/", () => "Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909");
 
  app.Run();

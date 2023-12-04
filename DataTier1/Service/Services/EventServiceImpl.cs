@@ -35,6 +35,8 @@ namespace Service.Services
                     Description = ev.Text.ToString(),
                     CafeOwner = ev.CafeOwnerId.ToString(),
                     Entertainer = ev.EnterteinerId.ToString(),
+                    Date = ev.Date.ToString(),
+                    AvailablePlaces = ev.AvailablePlaces
                     StartDate = ev.StartDate.ToString(),
                     EndDate = ev.EndDate.ToString(),
                     AvailablePlaces = ev.AvailablePlaces,

@@ -135,6 +135,12 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
+                            Id = new Guid("75d0d2c8-d933-4c13-96fd-4cda008e3327"),
+                            CreationDate = new DateTime(2023, 11, 27, 14, 37, 43, 425, DateTimeKind.Local).AddTicks(8970),
+                            Email = "coffeowner@gmail.com",
+                            Firstname = "Coffe",
+                            Lastname = "Owner",
+                            PasswordHash = "-1472469731",
                             Id = new Guid("2d22883c-aed7-4725-89fb-1457ddac2882"),
                             CreationDate = new DateTime(2023, 11, 30, 14, 18, 47, 725, DateTimeKind.Local).AddTicks(729),
                             Email = "coffeowner@gmail.com",
@@ -146,6 +152,12 @@ namespace Data.Migrations
                         },
                         new
                         {
+                            Id = new Guid("a4f3e04a-8ee0-436e-b628-8873cd77508d"),
+                            CreationDate = new DateTime(2023, 11, 27, 14, 37, 43, 425, DateTimeKind.Local).AddTicks(9058),
+                            Email = "normaluser@gmail.com",
+                            Firstname = "User",
+                            Lastname = "Normal",
+                            PasswordHash = "1520653645",
                             Id = new Guid("55361a5f-1b2b-467d-8886-7f1ce379f4cd"),
                             CreationDate = new DateTime(2023, 11, 30, 14, 18, 47, 725, DateTimeKind.Local).AddTicks(865),
                             Email = "normaluser@gmail.com",
@@ -157,6 +169,12 @@ namespace Data.Migrations
                         },
                         new
                         {
+                            Id = new Guid("f1ca2ca9-e322-4bb3-91ac-db0edfb3d324"),
+                            CreationDate = new DateTime(2023, 11, 27, 14, 37, 43, 425, DateTimeKind.Local).AddTicks(9082),
+                            Email = "enterteiner@gmail.com",
+                            Firstname = "Enter",
+                            Lastname = "Teiner",
+                            PasswordHash = "-822210838",
                             Id = new Guid("cc232ead-0b61-4395-9b14-a1de097c0e49"),
                             CreationDate = new DateTime(2023, 11, 30, 14, 18, 47, 725, DateTimeKind.Local).AddTicks(889),
                             Email = "enterteiner@gmail.com",

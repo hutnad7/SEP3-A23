@@ -19,6 +19,10 @@ import java.util.Optional;
 import java.util.UUID;
 
 
+import group7.protobuf.CreateEventRequest;
+import group7.protobuf.CreateEventResponse;
+import group7.protobuf.GetEventResponse;
+import group7.protobuf.GetEventsResponse;
 import group7.protobuf.*;
 import org.springframework.stereotype.Service;
 
@@ -32,12 +36,6 @@ public class EventService {
     public EventService(EventClientService eventClientService) {
         this.eventClientService = eventClientService;
     }
-
-//    public Event createEvent(Event event) {
-//        this.events.add(event);
-//
-//        return event;
-
 
     public Event createEvent(Event event) {
         DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm");
@@ -66,7 +64,7 @@ public class EventService {
                 setStatus(response.getState());
             }
         };
-        System.out.println("Event sent to gRPC server");
+
         return e;
         }
 
@@ -147,6 +145,8 @@ public class EventService {
         return events;
     }
 
+    public List<Event> getAllEvents() {
+        GetEventsResponse response = eventClientService.getAllEvents();
         public Optional<Event> getEventById(UUID id) {
         return this.Events.stream().filter((e) -> {
             return e.getId().equals(id);
@@ -157,19 +157,52 @@ public class EventService {
         return this.Events;
     }
 
-    public Optional<Event> updateEvent(UUID id, Event event) {
-        Optional<Event> existingEventOpt = this.getEventById(id);
-        if (existingEventOpt.isPresent()) {
-            Event existingEvent = (Event)existingEventOpt.get();
-            existingEvent.setName(event.getName());
-            existingEvent.setDescription(event.getDescription());
-            existingEvent.setEntertainerId(event.getEntertainerId());
-            return Optional.of(existingEvent);
-        } else {
-            return Optional.empty();
+        List<Event> events = new ArrayList<>();
+        for (GetEventResponse grpcEvent : response.getEventList()) {
+            // Assuming you have a method to convert from EventProtoMessage to Event
+            Event event = convertToEvent(grpcEvent);
+            events.add(event);
         }
+
+        return events;
     }
 
+//    public Optional<Event> getEventById(UUID id) {
+//        return this.events.stream().filter((e) -> {
+//            return e.getId().equals(id);
+//        }).findFirst();
+//    }
+
+//    public Optional<Event> updateEvent(UUID id, Event event) {
+//        Optional<Event> existingEventOpt = this.getEventById(id);
+//        if (existingEventOpt.isPresent()) {
+//            Event existingEvent = (Event)existingEventOpt.get();
+//            existingEvent.setName(event.getName());
+//            existingEvent.setDescription(event.getDescription());
+//            existingEvent.setEntertainerId(event.getEntertainerId());
+//            return Optional.of(existingEvent);
+//        } else {
+//            return Optional.empty();
+//        }
+//    }
+//
+//    public void deleteEvent(UUID id) {
+//        this.events.removeIf((e) -> {
+//            return e.getId().equals(id);
+//        });
+//    }
+
+    // Method to convert from generated proto message to your Event class
+    private Event convertToEvent(GetEventResponse event) {
+        return new Event(
+                UUID.fromString(event.getId()),
+                event.getName(),
+                event.getDescription(),
+                UUID.fromString(event.getEntertainer()),
+                UUID.fromString(event.getCafeOwner()),
+                event.getDate(),
+                event.getAvailablePlaces()
+        );
     public void deleteEvent(UUID id) {
         this.Events.removeIf((e) -> {
             return e.getId().equals(id);

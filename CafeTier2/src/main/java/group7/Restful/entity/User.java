@@ -11,6 +11,8 @@ public class User {
     private String Role;
     private UUID Id;
 
+    private String Password;
+
     public User() {
     }
 
@@ -32,6 +34,11 @@ public class User {
     public UUID getId() {
         return Id;
     }
+
+    public String getPassword() {
+        return Password;
+    }
+
     public void setFirstName(String FirstName) {
         this.FirstName = FirstName;
     }
@@ -50,4 +57,10 @@ public class User {
     public void setId(UUID Id) {
         this.Id = Id;
     }
+
+    public void setPassword(String Password) {
+        this.Password = Password;
+    }
+
+
 }
