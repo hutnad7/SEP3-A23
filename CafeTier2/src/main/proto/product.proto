@@ -1,11 +1,9 @@
 syntax = "proto3";
 import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
-
 option java_multiple_files = true;
 option java_package = "group7.protobuf";
 option java_outer_classname = "EventProto";
-
 service EventService{
 rpc CreateEvent(CreateEventRequest) returns (CreateEventResponse){};
     rpc GetEvent(GetEventRequest) returns (GetEventResponse){};
@@ -13,11 +11,23 @@ rpc CreateEvent(CreateEventRequest) returns (CreateEventResponse){};
     rpc BookEvent(BookEventRequest) returns (BookEventResponse){};
     }
 
+  rpc CreateEvent(CreateEventRequest) returns (GetEventResponse){};
+  rpc GetEvent(GetEventRequest) returns (GetEventResponse){};
+  rpc GetEventsByUser(GetEventRequest) returns (GetEventsByUserResponse){};
+  rpc GetAllEvents(google.protobuf.Empty) returns (GetEventsResponse){};
+  rpc BookEvent(BookEventRequest) returns (BookEventResponse){};
+  rpc AcceptEvent(GetEventRequest) returns (GetEventResponse){};
+  rpc RefuseEvent(GetEventRequest) returns (GetEventResponse){};
+  rpc ReverseState(GetEventRequest) returns (GetEventResponse){};
+}
 service UserService{
   rpc CreateUser(CreateUserRequest) returns (CreateUserResponse){};
   rpc LoginUser(LoginRequest) returns (CreateUserResponse){};
 }
 
+service PostService{
+  rpc CreatePost(CreatePostRequest) returns (CreatePostResponse){};
+}
 message BookEventRequest{
   string userId = 1;
   string eventId = 2;
@@ -32,9 +42,21 @@ message GetEventsResponse{
 message BookEventResponse{
   string userId = 1;
   string eventId = 2;
-  string Date = 3;
+  string CreationDate = 3;
   int32 NumerOfPeople = 4;
-  string id =5;
+  string id = 5;
+}
+message GetBooksResponse{
+  repeated BookEventResponse book = 1;
+}
+message GetBookRequest{
+  string id = 1;
+}
+message GetBooksResponse{
+  repeated BookEventResponse book = 1;
+}
+message GetBookRequest{
+  string id = 1;
 }
 
 message CreateUserRequest{
@@ -64,13 +86,28 @@ message LoginResponse {
   bool is_successful = 1;
 }
 
+message CreatePostRequest{
+  string id = 1;
+  string author = 2;
+  string title = 3;
+  string content = 4;
+  string Date = 5;
+}
+message CreatePostResponse{
+  string id = 1;
+  string author = 2;
+  string title = 3;
+  string content = 4;
+  string Date = 5;
+}
 message CreateEventRequest{
   string name = 1;
   string description = 2;
   string Entertainer = 3;
   string CafeOwner = 4;
-  string Date = 5;
-  int32 AvailablePlaces = 6;
+  string StartDate = 5;
+  string EndDate = 6;
+  int32 AvailablePlaces = 7;
 }
 
 message CreateEventResponse{
@@ -93,4 +130,25 @@ message GetEventResponse{
   string CafeOwner = 5;
   string Date = 6;
   int32 available_places = 7;
+}
+  string StartDate = 6;
+  string EndDate = 7;
+  int32 AvailablePlaces = 8;
+  string state = 9;
+}
+message GetEventByUserResponse{
+  string id = 1;
+  string name = 2;
+  string description = 3;
+  string EntertainerId = 4;
+  string CafeOwnerId = 5;
+  string StartDate = 6;
+  string EndDate = 7;
+  int32 AvailablePlaces = 8;
+  string state = 9;
+  string Entertainer = 10;
+  string CafeOwner = 11;
+}
+message GetEventsByUserResponse{
+  repeated GetEventByUserResponse events = 1;
 }

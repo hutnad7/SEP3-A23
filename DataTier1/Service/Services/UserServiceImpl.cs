@@ -13,6 +13,10 @@ namespace Service.Services
         {
             _logger = logger;
             _authRepository = authRepository;
+        private readonly ICafeOwnerRepository _eventRepository;
+        public UserServiceImpl(ILogger<EventServiceImpl> logger, ICafeOwnerRepository eventRepository)
+        {
+            _eventRepository = eventRepository;
         }
 
         public override async Task<CreateUserResponse> CreateUser(CreateUserRequest request, ServerCallContext context)

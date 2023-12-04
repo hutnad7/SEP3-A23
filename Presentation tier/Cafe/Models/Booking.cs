@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Cafe.Models;
+﻿namespace Cafe.Models;
 
 public class Booking
 {

@@ -20,8 +20,19 @@ builder.Services.AddScoped<IEnterteinerRepository, EnterteinerRepository>();
 builder.Services.AddScoped<ICafeOwnerRepository, CafeOwnerRepository>();
 builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<IBookingRepository, BookingRepository>();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: "AllowBlazorOrigin",
+        builder =>
+        {
+            builder.WithOrigins("https://localhost:7185",
+                "https://localhost:5200").AllowAnyHeader().AllowAnyMethod();
 
+        });
+
+});
 var app = builder.Build();
+app.UseCors("AllowBlazorOrigin");
 
 // Configure the HTTP request pipeline.
 app.MapGrpcService<Service.Services.EventServiceImpl>();

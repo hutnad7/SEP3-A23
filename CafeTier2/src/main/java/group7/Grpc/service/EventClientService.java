@@ -26,8 +26,22 @@ public class EventClientService {
     }
 
    public CreateEventResponse createEvent(CreateEventRequest request) {
+   public GetEventResponse createEvent(CreateEventRequest request) {
         return stub.createEvent(request);
     }
+    public GetEventsByUserResponse getEventsByUserId(GetEventRequest request) {
+        return stub.getEventsByUser(request);
+    }
+   public GetEventResponse acceptEvent(GetEventRequest request) {
+        return stub.acceptEvent(request);
+    }
+    public GetEventResponse refuseEvent(GetEventRequest request) {
+        return stub.refuseEvent(request);
+    }
+    public GetEventResponse reverseState(GetEventRequest request) {
+        return stub.reverseState(request);
+    }
+
 
     public GetEventsResponse getAllEvents() {
         return stub.getAllEvents(Empty.getDefaultInstance());

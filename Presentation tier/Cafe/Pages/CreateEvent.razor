@@ -2,6 +2,7 @@
 @using Cafe.Models
 @using Cafe.Services
 @using Cafe.Services.Http
+@using System.Globalization
 @inject NotificationService NotificationService
 @inject HttpClient HttpClient
 @inject AuthenticationStateProvider AuthenticationStateProvider
@@ -14,13 +15,15 @@
 <RadzenTemplateForm TItem="Event" Data=Event Submit="@SubmitEvent">
     <RadzenTextBox @bind-Value="Event.Name" Name="Name" Placeholder="Event Name" Style="width:100%; margin-bottom: 20px;" />
     <RadzenTextBox @bind-Value="Event.Description" Name="Description" Placeholder="Description" Style="width:100%; margin-bottom: 20px;" />
-   <div class="rz-p-sm-12 rz-text-align-center">
-       <RadzenDropDown @bind-Value="Event.EntertainerId" Data=@entertainers TextProperty="FullName" ValueProperty="Id" Style="width: 100%; max-width: 400px;" />
-   </div>
+    <div class="rz-p-sm-12 rz-text-align-center">
+        <RadzenDropDown @bind-Value="Event.EntertainerId" Data=@entertainers TextProperty="FullName" ValueProperty="Id" Style="width: 100%; max-width: 400px;" />
+    </div>
     
-        <RadzenNumeric @bind-Value="Event.AvailablePlaces" />
-    
-        <RadzenDatePicker @bind-Value="Event.Date" ShowTime="true" HourFormat="12" DateFormat="MM/dd/yyyy h:mm tt" />
+    <RadzenNumeric @bind-Value="Event.AvailablePlaces" />
+    <!--  <RadzenTextBox @bind-Value="Event.DateString" Name="Date" Placeholder="Date" Style="width:100%; margin-bottom: 20px;" />
+    -->
+    <RadzenDatePicker @bind-Value="Event.Start" ShowTime="true" HourFormat="12" Culture='CultureInfo.CreateSpecificCulture("en-GB")' DateFormat="yyyy/MM/dd hh:mm" />
+    <RadzenDatePicker @bind-Value="Event.End" ShowTime="true" HourFormat="12" Culture='CultureInfo.CreateSpecificCulture("en-GB")' DateFormat="yyyy/MM/dd hh:mm" />
 
     <RadzenButton ButtonType="ButtonType.Submit" Text="Create Event" />
 </RadzenTemplateForm>
@@ -34,6 +37,8 @@
         var jwt = JwtAuthService.GetJwt();
         Console.WriteLine("JWT :: " + jwt);;
         
+        CultureInfo provider = CultureInfo.CreateSpecificCulture("en-GB");
+
         entertainers = new List<Entertainer>
         {
             new Entertainer { Id = Guid.NewGuid(), FirstName = "John", LastName = "Doe" },
@@ -57,6 +62,13 @@
         {
             evt.EntertainerId = Guid.Parse("e7c9d815-30fd-4e94-95f1-64d0577a7acf");
             evt.CafeOwnerId = Guid.Parse("e7c9d815-30fd-4e94-95f1-64d0577a7acf");
+            evt.EntertainerId = Guid.Parse("cc232ead-0b61-4395-9b14-a1de097c0e49");
+            evt.CafeOwnerId = Guid.Parse("2d22883c-aed7-4725-89fb-1457ddac2882");
+         /*   CultureInfo provider = CultureInfo.CreateSpecificCulture("en-GB");
+            string format = "dd/MM/yyyy hh:mm";
+            DateTime date = DateTime.Now;
+            // evt.Date = DateTime.ParseExact(evt.Date.ToShortTimeString(), format,provider);
+            // evt.Date = DateTime.Parse( evt.Date.ToString(), CultureInfo.CreateSpecificCulture("fr-FR") );*/
             var response = await HttpClient.PostAsJsonAsync("http://localhost:8080/api/events", evt);
             if (response.IsSuccessStatusCode)
             {

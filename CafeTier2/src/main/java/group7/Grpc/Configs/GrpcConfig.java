@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
 @ImportAutoConfiguration({
         net.devh.boot.grpc.common.autoconfigure.GrpcCommonCodecAutoConfiguration.class,
         net.devh.boot.grpc.common.autoconfigure.GrpcCommonTraceAutoConfiguration.class,
-
         net.devh.boot.grpc.server.autoconfigure.GrpcAdviceAutoConfiguration.class,
         net.devh.boot.grpc.server.autoconfigure.GrpcHealthServiceAutoConfiguration.class,
         net.devh.boot.grpc.server.autoconfigure.GrpcMetadataConsulConfiguration.class,

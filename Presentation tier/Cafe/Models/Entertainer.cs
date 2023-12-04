@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Cafe.Models;
+﻿namespace Cafe.Models;
 
 public class Entertainer
 {
@@ -10,4 +8,4 @@ public class Entertainer
         public string LastName { get; set; }
         public string FullName => $"{FirstName} {LastName}";
     }
-
+    

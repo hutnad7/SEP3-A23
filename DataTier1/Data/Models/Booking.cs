@@ -23,7 +23,5 @@ namespace Data.Models
 
         [Required]
         public int NumberOfPeople { get; set; }
-
-
     }
 }
