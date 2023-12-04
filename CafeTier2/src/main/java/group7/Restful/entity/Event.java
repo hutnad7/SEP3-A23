@@ -19,4 +19,16 @@ public class Event implements Serializable {
 
     public Event() {
     }
+
+    public Event(UUID id, String name, String description, UUID entertainerId, UUID cafeOwnerId, String startDate, String endDate, String status, int availablePlaces) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.entertainerId = entertainerId;
+        this.cafeOwnerId = cafeOwnerId;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        Status = status;
+        this.availablePlaces = availablePlaces;
+    }
 }

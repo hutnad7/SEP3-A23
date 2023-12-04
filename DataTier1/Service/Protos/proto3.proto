@@ -19,7 +19,6 @@ service EventService{
 service UserService{
 	rpc CreateUser(CreateUserRequest) returns (CreateUserResponse){};
 	rpc LoginUser(LoginRequest) returns (CreateUserResponse){};
-  rpc CreateUser(CreateUserRequest) returns (CreateUserResponse){};
 }
 service PostService{
   rpc CreatePost(CreatePostRequest) returns (CreatePostResponse){};
@@ -114,13 +113,6 @@ message GetEventRequest{
 }
 
 message GetEventResponse{
-	string id = 1;
-	string name = 2;
-    string description = 3;
-    string Entertainer = 4;
-    string CafeOwner = 5;
-	string Date = 6;
-	int32 available_places = 7;
   string id = 1;
   string name = 2;
   string description = 3;

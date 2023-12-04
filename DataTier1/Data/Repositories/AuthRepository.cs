@@ -34,7 +34,7 @@ public class AuthRepository : IAuthRepository
     {
         try
         {
-            User? foundUser = await _context.Users.FirstOrDefaultAsync(u => u.Email == auth.Email);
+            User? foundUser = await _context.Users.FirstOrDefaultAsync(u => u.Email.Equals( auth.Email));
 
             if (foundUser == null)
             {

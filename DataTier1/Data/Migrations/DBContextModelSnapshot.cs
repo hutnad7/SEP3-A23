@@ -141,12 +141,6 @@ namespace Data.Migrations
                             Firstname = "Coffe",
                             Lastname = "Owner",
                             PasswordHash = "-1472469731",
-                            Id = new Guid("2d22883c-aed7-4725-89fb-1457ddac2882"),
-                            CreationDate = new DateTime(2023, 11, 30, 14, 18, 47, 725, DateTimeKind.Local).AddTicks(729),
-                            Email = "coffeowner@gmail.com",
-                            Firstname = "Coffe",
-                            Lastname = "Owner",
-                            PasswordHash = "-2103683928",
                             Role = 1,
                             Username = "CoffeOwnerTest"
                         },
@@ -158,12 +152,6 @@ namespace Data.Migrations
                             Firstname = "User",
                             Lastname = "Normal",
                             PasswordHash = "1520653645",
-                            Id = new Guid("55361a5f-1b2b-467d-8886-7f1ce379f4cd"),
-                            CreationDate = new DateTime(2023, 11, 30, 14, 18, 47, 725, DateTimeKind.Local).AddTicks(865),
-                            Email = "normaluser@gmail.com",
-                            Firstname = "User",
-                            Lastname = "Normal",
-                            PasswordHash = "-1566889369",
                             Role = 0,
                             Username = "normal_user"
                         },
@@ -175,12 +163,6 @@ namespace Data.Migrations
                             Firstname = "Enter",
                             Lastname = "Teiner",
                             PasswordHash = "-822210838",
-                            Id = new Guid("cc232ead-0b61-4395-9b14-a1de097c0e49"),
-                            CreationDate = new DateTime(2023, 11, 30, 14, 18, 47, 725, DateTimeKind.Local).AddTicks(889),
-                            Email = "enterteiner@gmail.com",
-                            Firstname = "Enter",
-                            Lastname = "Teiner",
-                            PasswordHash = "574792231",
                             Role = 2,
                             Username = "enterteiner"
                         });

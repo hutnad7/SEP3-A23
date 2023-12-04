@@ -42,8 +42,9 @@ public class EventController {
 
     @GetMapping({"/{id}"})
     public ResponseEntity<Event> getEventById(@PathVariable UUID id) {
-        Optional<Event> eventOpt = this.eventService.getEventById(id);
-        return eventOpt.isPresent() ? ResponseEntity.ok((Event)eventOpt.get()) : ResponseEntity.notFound().build();
+   //     Optional<Event> eventOpt = this.eventService.getEventById(id);
+    //    return eventOpt.isPresent() ? ResponseEntity.ok((Event)eventOpt.get()) : ResponseEntity.notFound().build();
+        return null;
     }
 
     @GetMapping({"/users/{id}"})
@@ -66,7 +67,7 @@ public class EventController {
 //        Optional<Event> updatedEventOpt = this.eventService.updateEvent(id, event);
 //        return updatedEventOpt.isPresent() ? ResponseEntity.ok((Event)updatedEventOpt.get()) : ResponseEntity.notFound().build();
 //    }
-//
+
 //    @DeleteMapping({"/{id}"})
 //    public ResponseEntity<Void> deleteEvent(@PathVariable UUID id) {
 //        this.eventService.deleteEvent(id);
@@ -74,8 +75,9 @@ public class EventController {
 //    }
     @PutMapping({"/{id}"})
     public ResponseEntity<Event> updateEvent(@PathVariable UUID id, @RequestBody Event event) {
-        Optional<Event> updatedEventOpt = this.eventService.updateEvent(id, event);
-        return updatedEventOpt.isPresent() ? ResponseEntity.ok((Event)updatedEventOpt.get()) : ResponseEntity.notFound().build();
+//        Optional<Event> updatedEventOpt = this.eventService.updateEvent(id, event);
+//        return updatedEventOpt.isPresent() ? ResponseEntity.ok((Event)updatedEventOpt.get()) : ResponseEntity.notFound().build();
+        return null;
     }
     @CrossOrigin(
             origins = {"*"},
@@ -102,7 +104,8 @@ public class EventController {
 
     @DeleteMapping({"/{id}"})
     public ResponseEntity<Void> deleteEvent(@PathVariable UUID id) {
-        this.eventService.deleteEvent(id);
-        return ResponseEntity.noContent().build();
+//        this.eventService.deleteEvent(id);
+//        return ResponseEntity.noContent().build();
+        return null;
     }
 }

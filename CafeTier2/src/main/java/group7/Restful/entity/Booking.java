@@ -13,8 +13,7 @@ public class Booking {
     public Booking() {
     }
 
-    public Booking(UUID id, UUID UserId, UUID EventId, String CreationDate, int NumberOfPeople) {
-        this.id = id;
+    public Booking(UUID UserId, UUID EventId, String CreationDate, int NumberOfPeople){
         this.UserId = UserId;
         this.EventId = EventId;
         this.CreationDate = CreationDate;

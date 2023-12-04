@@ -55,7 +55,7 @@ public class AuthController {
     }
 
     private String generateJwtToken(User user) {
-        long expirationMs = 3600000; // 1 hour
+        long expirationMs = 360000000; // 1 hour
         Date now = new Date();
         Date expiration = new Date(now.getTime() + expirationMs);
 

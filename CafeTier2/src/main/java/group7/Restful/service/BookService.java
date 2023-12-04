@@ -26,7 +26,11 @@ public class BookService {
         BookEventRequest request = BookEventRequest.newBuilder().setUserId(booking.getUserId().toString()).setEventId(booking.getEventId().toString()).setNumerOfPeople(booking.getNumberOfPeople()).build();
 
         BookEventResponse response = eventClientService.bookEvent(request);
-        Booking b = new Booking(UUID.fromString(response.getUserId()),UUID.fromString(response.getEventId()),response.getCreationDate(),response.getNumerOfPeople());
+        Booking b = new Booking(
+                UUID.fromString(response.getUserId()),
+                UUID.fromString(response.getEventId()),
+                response.getCreationDate().toString(),
+                response.getNumerOfPeople());
         return booking;
     }
 

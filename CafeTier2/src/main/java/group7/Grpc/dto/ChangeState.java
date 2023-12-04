@@ -1,6 +1,5 @@
 package group7.Grpc.dto;
 
-import com.google.inject.Guice;
 import lombok.Data;
 
 import java.security.Guard;

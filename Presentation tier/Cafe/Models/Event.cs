@@ -1,7 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
 namespace Cafe.Models;
-﻿namespace Cafe.Models;
 
 public class Event
 {
@@ -21,11 +20,12 @@ public class Event
         
         [JsonPropertyName("date")]
         public DateTime Date { get; set; }
-        
+
         [JsonPropertyName("availablePlaces")]
         public int AvailablePlaces { get; set; }
-}
-        public int AvailablePlaces { get; set; }
+        [JsonPropertyName("startDate")]
+
         public DateTime Start { get; set; }
+        [JsonPropertyName("endDate")]
         public DateTime End { get; set; }
 }

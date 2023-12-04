@@ -39,13 +39,13 @@ public class EventService {
 
     public Event createEvent(Event event) {
         DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy hh:mm");
-        try{
+      /*  try{
         if(dateFormat.parse(event.getStartDate()).getSeconds() > dateFormat.parse(event.getEndDate()).getSeconds()){
             throw new IllegalArgumentException("Start date must be before end date");
         }}
         catch (ParseException e){
             throw new IllegalArgumentException(e.toString());
-        }
+        }*/
         CreateEventRequest request = CreateEventRequest.newBuilder().setAvailablePlaces(event.getAvailablePlaces())
                 .setCafeOwner(event.getCafeOwnerId().toString()).setEntertainer(event.getEntertainerId().toString())
                 .setStartDate(event.getStartDate()).setEndDate(event.getEndDate()).setName(event.getName())
@@ -145,18 +145,10 @@ public class EventService {
         return events;
     }
 
-    public List<Event> getAllEvents() {
-        GetEventsResponse response = eventClientService.getAllEvents();
-        public Optional<Event> getEventById(UUID id) {
-        return this.Events.stream().filter((e) -> {
-            return e.getId().equals(id);
-        }).findFirst();
-    }
+
 
     public List<Event> getAllEvents() {
-        return this.Events;
-    }
-
+            GetEventsResponse response = eventClientService.getAllEvents();
         List<Event> events = new ArrayList<>();
         for (GetEventResponse grpcEvent : response.getEventList()) {
             // Assuming you have a method to convert from EventProtoMessage to Event
@@ -200,12 +192,10 @@ public class EventService {
                 event.getDescription(),
                 UUID.fromString(event.getEntertainer()),
                 UUID.fromString(event.getCafeOwner()),
-                event.getDate(),
+                event.getStartDate(),
+                event.getEndDate(),
+                event.getState(),
                 event.getAvailablePlaces()
         );
-    public void deleteEvent(UUID id) {
-        this.Events.removeIf((e) -> {
-            return e.getId().equals(id);
-        });
     }
 }

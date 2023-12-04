@@ -4,7 +4,6 @@ import group7.Grpc.service.EventClientService;
 import group7.Grpc.service.PostClientService;
 import group7.Restful.entity.Post;
 import group7.protobuf.CreatePostRequest;
-import group7.protobuf.CreatePostResponse;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

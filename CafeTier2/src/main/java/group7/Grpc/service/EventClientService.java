@@ -25,8 +25,7 @@ public class EventClientService {
         return stub.bookEvent(request);
     }
 
-   public CreateEventResponse createEvent(CreateEventRequest request) {
-   public GetEventResponse createEvent(CreateEventRequest request) {
+   public group7.protobuf.GetEventResponse createEvent(group7.protobuf.CreateEventRequest request) {
         return stub.createEvent(request);
     }
     public GetEventsByUserResponse getEventsByUserId(GetEventRequest request) {
