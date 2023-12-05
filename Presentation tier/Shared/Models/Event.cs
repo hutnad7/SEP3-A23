@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Cafe.Models;
+namespace Shared.Models;
 
 public class Event
 {

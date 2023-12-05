@@ -1,4 +1,4 @@
-﻿namespace Cafe.Models;
+﻿namespace Shared.Models;
 
 public class Booking
 {
