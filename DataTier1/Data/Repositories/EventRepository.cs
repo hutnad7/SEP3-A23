@@ -73,7 +73,6 @@ namespace Data.Repositories
 
         public async Task<Event> AcceptEventAsync(Event @event)
         {
-            //@event.state.accept(@event);
             @event.state = StateEvent.Accepted;
             await this.UpdateAsync(@event);
             return @event;
@@ -81,7 +80,6 @@ namespace Data.Repositories
 
         public async Task<Event> RefuseEventAsync(Event @event)
         {
-            //@event.state.refuse(@event);
             @event.state = StateEvent.Refused;
             await this.UpdateAsync(@event);
             return @event;
@@ -91,7 +89,6 @@ namespace Data.Repositories
 
         public async Task<Event> RevertStateAsync(Event @event)
         {
-            //@event.state.cancel(@event);
             @event.state = StateEvent.Pending;
             await this.UpdateAsync(@event);
             return @event;

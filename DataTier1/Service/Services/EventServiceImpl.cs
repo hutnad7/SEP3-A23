@@ -82,7 +82,7 @@ namespace Service.Services
             catch (Exception ex) { return response; }
             
         }
-        public override async Task<GetEventsByUserResponse> GetEventsByUser(GetEventRequest request, ServerCallContext context)
+        public override async Task<GetEventsByUserResponse> GetEventsByUser(GetRequest request, ServerCallContext context)
         {
             string id = request.Id;
             ICollection<Event> events = await _eventRepository.GetByAsync(e=>e.EnterteinerId.Equals(Guid.Parse(id)));
@@ -111,7 +111,7 @@ namespace Service.Services
             return getEventsResponse;
         }
 
-        public override async Task<GetEventResponse> GetEvent(GetEventRequest request, ServerCallContext context)
+        public override async Task<GetEventResponse> GetEvent(GetRequest request, ServerCallContext context)
         {
             Event ev = await _eventRepository.GetByIdAsync(Guid.Parse(request.Id));
             GetEventResponse response = new GetEventResponse()
@@ -150,7 +150,7 @@ namespace Service.Services
             };
             return response;
         }
-        public override async Task<GetEventResponse> AcceptEvent(GetEventRequest request, ServerCallContext context)
+        public override async Task<GetEventResponse> AcceptEvent(GetRequest request, ServerCallContext context)
         {
             Event @event = await _eventRepository.GetByIdAsync(Guid.Parse(request.Id));
             Event result = await _eventRepository.AcceptEventAsync(@event);
@@ -169,7 +169,7 @@ namespace Service.Services
             };
             return response;
         }
-        public override async Task<GetEventResponse> RefuseEvent(GetEventRequest request, ServerCallContext context)
+        public override async Task<GetEventResponse> RefuseEvent(GetRequest request, ServerCallContext context)
         {
 
             Event @event = await _eventRepository.GetByIdAsync(Guid.Parse(request.Id));
@@ -189,7 +189,7 @@ namespace Service.Services
             };
             return response;
         }
-        public override async Task<GetEventResponse> ReverseState(GetEventRequest request, ServerCallContext context)
+        public override async Task<GetEventResponse> ReverseState(GetRequest request, ServerCallContext context)
         {
 
             Event @event = await _eventRepository.GetByIdAsync(Guid.Parse(request.Id));

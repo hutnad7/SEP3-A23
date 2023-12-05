@@ -1,4 +1,4 @@
-﻿namespace Cafe.dto;
+﻿namespace Shared.Dtos;
 
 public class ChangeState
 {

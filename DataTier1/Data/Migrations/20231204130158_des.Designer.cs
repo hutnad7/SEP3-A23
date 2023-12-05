@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(DBContext))]
-    [Migration("20231130121847_enddate")]
-    partial class enddate
+    [Migration("20231204130158_des")]
+    partial class des
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -93,6 +93,38 @@ namespace Data.Migrations
                     b.ToTable("Events");
                 });
 
+            modelBuilder.Entity("Data.Models.Post", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<Guid>("AuthorId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("CreationDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<Guid>("EventId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("EventId");
+
+                    b.ToTable("Posts");
+                });
+
             modelBuilder.Entity("Data.Models.User", b =>
                 {
                     b.Property<Guid>("Id")
@@ -101,6 +133,10 @@ namespace Data.Migrations
 
                     b.Property<DateTime>("CreationDate")
                         .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -138,34 +174,37 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("2d22883c-aed7-4725-89fb-1457ddac2882"),
-                            CreationDate = new DateTime(2023, 11, 30, 14, 18, 47, 725, DateTimeKind.Local).AddTicks(729),
+                            Id = new Guid("23bc6ea6-8a3e-445b-bb9a-d0c3d103590a"),
+                            CreationDate = new DateTime(2023, 12, 4, 15, 1, 58, 774, DateTimeKind.Local).AddTicks(9714),
+                            Description = "",
                             Email = "coffeowner@gmail.com",
                             Firstname = "Coffe",
                             Lastname = "Owner",
-                            PasswordHash = "-2103683928",
+                            PasswordHash = "-48564536",
                             Role = 1,
                             Username = "CoffeOwnerTest"
                         },
                         new
                         {
-                            Id = new Guid("55361a5f-1b2b-467d-8886-7f1ce379f4cd"),
-                            CreationDate = new DateTime(2023, 11, 30, 14, 18, 47, 725, DateTimeKind.Local).AddTicks(865),
+                            Id = new Guid("43f69c47-602c-4d49-b3ac-9afe3fc60c63"),
+                            CreationDate = new DateTime(2023, 12, 4, 15, 1, 58, 774, DateTimeKind.Local).AddTicks(9848),
+                            Description = "",
                             Email = "normaluser@gmail.com",
                             Firstname = "User",
                             Lastname = "Normal",
-                            PasswordHash = "-1566889369",
+                            PasswordHash = "1175273470",
                             Role = 0,
                             Username = "normal_user"
                         },
                         new
                         {
-                            Id = new Guid("cc232ead-0b61-4395-9b14-a1de097c0e49"),
-                            CreationDate = new DateTime(2023, 11, 30, 14, 18, 47, 725, DateTimeKind.Local).AddTicks(889),
+                            Id = new Guid("b07e3044-66c8-4acb-9e6b-fbfccfa6d21f"),
+                            CreationDate = new DateTime(2023, 12, 4, 15, 1, 58, 774, DateTimeKind.Local).AddTicks(9865),
+                            Description = "cool enterteiner",
                             Email = "enterteiner@gmail.com",
                             Firstname = "Enter",
                             Lastname = "Teiner",
-                            PasswordHash = "574792231",
+                            PasswordHash = "1328091793",
                             Role = 2,
                             Username = "enterteiner"
                         });
@@ -209,9 +248,30 @@ namespace Data.Migrations
                     b.Navigation("Enterteiner");
                 });
 
+            modelBuilder.Entity("Data.Models.Post", b =>
+                {
+                    b.HasOne("Data.Models.User", "Author")
+                        .WithMany("Posts")
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Data.Models.Event", "Event")
+                        .WithMany("Posts")
+                        .HasForeignKey("EventId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Author");
+
+                    b.Navigation("Event");
+                });
+
             modelBuilder.Entity("Data.Models.Event", b =>
                 {
                     b.Navigation("Bookings");
+
+                    b.Navigation("Posts");
                 });
 
             modelBuilder.Entity("Data.Models.User", b =>
@@ -219,6 +279,8 @@ namespace Data.Migrations
                     b.Navigation("Bookings");
 
                     b.Navigation("Events");
+
+                    b.Navigation("Posts");
                 });
 #pragma warning restore 612, 618
         }

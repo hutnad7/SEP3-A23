@@ -71,7 +71,7 @@ public class EventService {
         }
 
     public Event acceptState(UUID id){
-        GetEventResponse response = eventClientService.acceptEvent(GetEventRequest.newBuilder().setId(id.toString()).build());
+        GetEventResponse response = eventClientService.acceptEvent(GetRequest.newBuilder().setId(id.toString()).build());
         Event e = new Event(){
             {
                 setId(UUID.fromString(response.getId()));
@@ -88,7 +88,7 @@ public class EventService {
         return e;
     }
     public Event refuseEvent(UUID id){
-        GetEventResponse response = eventClientService.refuseEvent(GetEventRequest.newBuilder().setId(id.toString()).build());
+        GetEventResponse response = eventClientService.refuseEvent(GetRequest.newBuilder().setId(id.toString()).build());
         Event e = new Event(){
             {
                 setId(UUID.fromString(response.getId()));
@@ -105,7 +105,7 @@ public class EventService {
         return e;
     }
     public Event reverseState(UUID id){
-        GetEventResponse response = eventClientService.reverseState(GetEventRequest.newBuilder().setId(id.toString()).build());
+        GetEventResponse response = eventClientService.reverseState(GetRequest.newBuilder().setId(id.toString()).build());
         Event e = new Event(){
             {
                 setId(UUID.fromString(response.getId()));
@@ -122,7 +122,7 @@ public class EventService {
         return e;
     }
     public ArrayList<EventDto> getEventByUserId(UUID id) throws ParseException {
-        GetEventRequest request = GetEventRequest.newBuilder().setId(id.toString()).build();
+        GetRequest request = GetRequest.newBuilder().setId(id.toString()).build();
         GetEventsByUserResponse response = eventClientService.getEventsByUserId(request);
         ArrayList<EventDto> events = new ArrayList<>();
         SimpleDateFormat parser = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");

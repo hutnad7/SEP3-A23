@@ -1,10 +1,15 @@
 package group7.Restful.service;
 
+import com.google.protobuf.Empty;
 import group7.Grpc.service.EventClientService;
 import group7.Grpc.service.PostClientService;
 import group7.Restful.entity.Post;
+<<<<<<< Updated upstream
 import group7.protobuf.CreatePostRequest;
 import group7.protobuf.CreatePostResponse;
+=======
+import group7.protobuf.*;
+>>>>>>> Stashed changes
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -23,22 +28,22 @@ public class PostService {
         this.postClientService = postClientService;
     }
 
-    public List<Post> getAllPosts() {
-        return this.posts;
-    }
 
     public Post createPost(Post post) {
         CreatePostRequest request = CreatePostRequest.newBuilder().setAuthor(post.getAuthor()).setTitle(post.getTitle()).setContent(post.getContent()).build();
-        Post p = new Post(){
+
+       CreatePostResponse response = postClientService.createPost(request);
+       Post p = new Post(){
             {
-                setId(UUID.fromString(post.getId().toString()));
-                setAuthor(post.getAuthor());
-                setTitle(post.getTitle());
-                setContent(post.getContent());
+                setId(UUID.fromString(response.getId().toString()));
+                setAuthor(response.getAuthor());
+                setTitle(response.getTitle());
+                setContent(response.getContent());
+                setEvent(response.getEventId());
+                setCreationDate(response.getDate());
             }
         };
-        System.out.println("Post sent to gRPC server");
-        return post;
+        return p;
     }
 
     public Optional<Post> getPostById(UUID id) {
@@ -47,10 +52,59 @@ public class PostService {
         }).findFirst();
     }
 
-    public List<Post> getPostsByAuthor(String author) {
-        return this.posts.stream().filter((e) -> {
-            return e.getAuthor().equals(author);
-        }).toList();
+    public ArrayList<Post> getAllPosts() {
+        GetPostsResponse response = postClientService.getAllPosts();
+        ArrayList<Post> posts = new ArrayList<>();
+        for (GetPostResponse p : response.getPostsList()) {
+            Post post = new Post() {
+                {
+                    setId(UUID.fromString(p.getId()));
+                    setAuthor(p.getAuthor());
+                    setTitle(p.getTitle());
+                    setContent(p.getContent());
+                    setEvent(p.getEventId());
+                    setCreationDate(p.getDate());
+                }
+            };
+            posts.add(post);
+        }
+        return posts;
     }
-
+    public ArrayList<Post> getPostsByAuthor(UUID id) {
+        GetRequest request = GetRequest.newBuilder().setId(id.toString()).build();
+        GetPostsResponse response = postClientService.getPostsByAuthor(request);
+        ArrayList<Post> posts = new ArrayList<>();
+        for (GetPostResponse p : response.getPostsList()) {
+            Post post = new Post() {
+                {
+                    setId(UUID.fromString(p.getId()));
+                    setAuthor(p.getAuthor());
+                    setTitle(p.getTitle());
+                    setContent(p.getContent());
+                    setEvent(p.getEventId());
+                    setCreationDate(p.getDate());
+                }
+            };
+            posts.add(post);
+        }
+        return posts;
+    }
+    public ArrayList<Post> getPostsByEvent(UUID id) {
+        GetRequest request = GetRequest.newBuilder().setId(id.toString()).build();
+        GetPostsResponse response = postClientService.getPostsByEvent(request);
+        ArrayList<Post> posts = new ArrayList<>();
+        for (GetPostResponse p : response.getPostsList()) {
+            Post post = new Post() {
+                {
+                    setId(UUID.fromString(p.getId()));
+                    setAuthor(p.getAuthor());
+                    setTitle(p.getTitle());
+                    setContent(p.getContent());
+                    setEvent(p.getEventId());
+                    setCreationDate(p.getDate());
+                }
+            };
+            posts.add(post);
+        }
+        return posts;    }
 }

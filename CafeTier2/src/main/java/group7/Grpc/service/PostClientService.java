@@ -1,8 +1,7 @@
 package group7.Grpc.service;
 
-import group7.protobuf.CreatePostRequest;
-import group7.protobuf.CreatePostResponse;
-import group7.protobuf.PostServiceGrpc;
+import com.google.protobuf.Empty;
+import group7.protobuf.*;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import net.devh.boot.grpc.client.inject.GrpcClient;
@@ -27,6 +26,15 @@ public class PostClientService {
 
     public CreatePostResponse createPost(CreatePostRequest request) {
         return stub.createPost(request);
+    }
+    public GetPostsResponse getAllPosts() {
+        return stub.getAllPosts(Empty.getDefaultInstance());
+    }
+    public GetPostsResponse getPostsByAuthor(GetRequest request) {
+        return stub.getAllPostsByAuthorId(request);
+    }
+    public GetPostsResponse getPostsByEvent(GetRequest request) {
+        return stub.getAllPostsByEventId(request);
     }
 
     public void shutdown() {

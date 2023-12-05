@@ -9,7 +9,7 @@
 @inject HttpClient HttpClient
 @inject NavigationManager _nav_manager
 <h3>Events</h3>
-@foreach (Event e in events)
+@foreach (EventPage e in events)
 {
     <RadzenStack Gap="1rem" Class="rz-p-sm-12">
         <RadzenAccordion Multiple="true">
@@ -36,7 +36,11 @@
 
 }
 @code {
+<<<<<<< Updated upstream
     List<Event> events=new List<Event>();
+=======
+    List<EventPage> events = new ();
+>>>>>>> Stashed changes
     
     protected override async Task OnInitializedAsync()
     {
@@ -46,7 +50,7 @@
             if (response.IsSuccessStatusCode)
             {
                 var stream = await response.Content.ReadAsStreamAsync();
-                events = await JsonSerializer.DeserializeAsync<List<Event>>(stream, JsonOptionsHelper.DefaultJsonSerializerOptions) ?? new List<Event>();
+                events = await JsonSerializer.DeserializeAsync<List<EventPage>>(stream, JsonOptionsHelper.DefaultJsonSerializerOptions) ?? new List<EventPage>();
             }
             else
             {

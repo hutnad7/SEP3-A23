@@ -1,4 +1,10 @@
+<<<<<<< Updated upstream:Presentation tier/Cafe/Models/Event.cs
 ﻿namespace Cafe.Models;
+=======
+﻿using System.Text.Json.Serialization;
+
+namespace Shared.Models;
+>>>>>>> Stashed changes:Presentation tier/Shared/Models/Event.cs
 
 public class Event
 {

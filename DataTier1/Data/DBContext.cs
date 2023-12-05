@@ -24,7 +24,6 @@ namespace Data
             modelBuilder.Entity<User>()
                 .HasIndex(x => x.Username)
                 .IsUnique();
-
             modelBuilder.Entity<User>()
                 .HasIndex(x => x.Email)
                 .IsUnique();
@@ -45,6 +44,7 @@ namespace Data
                     CreationDate = DateTime.Now,
                     Role = Role.CafeOwner,
                     PasswordHash = "CafePa33word".GetHashCode().ToString(),
+                    Description = ""
                 });
             modelBuilder.Entity<User>().HasData(
                 new User 
@@ -57,6 +57,7 @@ namespace Data
                     CreationDate = DateTime.Now,
                     Role = Role.User,
                     PasswordHash = "UserPa33word".GetHashCode().ToString(),
+                    Description = ""
                 });
             modelBuilder.Entity<User>().HasData(
                 new User
@@ -69,6 +70,7 @@ namespace Data
                     CreationDate = DateTime.Now,
                     Role = Role.Enterteiner,
                     PasswordHash = "EntrPa33word".GetHashCode().ToString(),
+                    Description = "cool enterteiner"
                 });
             base.OnModelCreating(modelBuilder);
         }

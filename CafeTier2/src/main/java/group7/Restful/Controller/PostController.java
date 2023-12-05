@@ -46,9 +46,17 @@ public class PostController {
         return postOpt.isPresent() ? ResponseEntity.ok((Post)postOpt.get()) : ResponseEntity.notFound().build();
     }
 
-    @GetMapping
-    public ResponseEntity<List<Post>> getAllPostsByAuthor(@PathVariable String author){
+    @GetMapping({"/author/{author}"})
+    public ResponseEntity<List<Post>> getAllPostsByAuthor(@PathVariable UUID author){
         return ResponseEntity.ok(this.postService.getPostsByAuthor(author));
+    }
+    @GetMapping({"/event/{event}"})
+    public ResponseEntity<List<Post>> getAllPostsByEvent(@PathVariable UUID event){
+        return ResponseEntity.ok(this.postService.getPostsByEvent(event));
+    }
+    @GetMapping({"/all}"})
+    public ResponseEntity<List<Post>> getAllPosts(){
+        return ResponseEntity.ok(this.postService.getAllPosts());
     }
 
 }

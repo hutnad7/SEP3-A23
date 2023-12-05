@@ -6,19 +6,23 @@ option java_package = "group7.protobuf";
 option java_outer_classname = "EventProto";
 service EventService{
   rpc CreateEvent(CreateEventRequest) returns (GetEventResponse){};
-  rpc GetEvent(GetEventRequest) returns (GetEventResponse){};
-  rpc GetEventsByUser(GetEventRequest) returns (GetEventsByUserResponse){};
+  rpc GetEvent(GetRequest) returns (GetEventResponse){};
+  rpc GetEventsByUser(GetRequest) returns (GetEventsByUserResponse){};
   rpc GetAllEvents(google.protobuf.Empty) returns (GetEventsResponse){};
   rpc BookEvent(BookEventRequest) returns (BookEventResponse){};
-  rpc AcceptEvent(GetEventRequest) returns (GetEventResponse){};
-  rpc RefuseEvent(GetEventRequest) returns (GetEventResponse){};
-  rpc ReverseState(GetEventRequest) returns (GetEventResponse){};
+  rpc AcceptEvent(GetRequest) returns (GetEventResponse){};
+  rpc RefuseEvent(GetRequest) returns (GetEventResponse){};
+  rpc ReverseState(GetRequest) returns (GetEventResponse){};
 }
 service UserService{
   rpc CreateUser(CreateUserRequest) returns (CreateUserResponse){};
 }
 service PostService{
   rpc CreatePost(CreatePostRequest) returns (CreatePostResponse){};
+  rpc getAllPosts(google.protobuf.Empty) returns (GetPostsResponse){};
+  rpc getAllPostsByAuthorId(GetRequest) returns (GetPostsResponse){};
+  rpc getAllPostsByEventId(GetRequest) returns (GetPostsResponse){};
+
 }
 message BookEventRequest{
   string userId = 1;
@@ -45,9 +49,13 @@ message GetBookRequest{
 message GetBooksResponse{
   repeated BookEventResponse book = 1;
 }
+<<<<<<< Updated upstream
 message GetBookRequest{
   string id = 1;
 }
+=======
+
+>>>>>>> Stashed changes
 message CreateUserRequest{
   string FisrtName = 1;
   string LastName = 2;
@@ -55,6 +63,7 @@ message CreateUserRequest{
   string Email = 4;
   string Role = 5;
   string Password = 6;
+  string Description = 7;
 }
 message CreateUserResponse{
   string FisrtName = 1;
@@ -63,6 +72,20 @@ message CreateUserResponse{
   string Email = 4;
   string Role = 5;
   string Id = 6;
+  string Description = 7;
+
+}
+message GetPostsResponse{
+  repeated GetPostResponse posts=1;
+}
+message GetPostResponse{
+  string id = 1;
+  string author = 2;
+  string title = 3;
+  string content = 4;
+  string Date = 5;
+  string eventId = 6;
+  string authorName = 7;
 }
 message CreatePostRequest{
   string id = 1;
@@ -70,6 +93,7 @@ message CreatePostRequest{
   string title = 3;
   string content = 4;
   string Date = 5;
+  string eventId = 6;
 }
 message CreatePostResponse{
   string id = 1;
@@ -77,6 +101,7 @@ message CreatePostResponse{
   string title = 3;
   string content = 4;
   string Date = 5;
+  string eventId = 6;
 }
 message CreateEventRequest{
   string name = 1;
@@ -94,7 +119,12 @@ message CreateEventResponse{
   string Entertainer = 4;
   int32 AvailablePlaces = 5;
 }
+<<<<<<< Updated upstream
 message GetEventRequest{
+=======
+
+message GetRequest{
+>>>>>>> Stashed changes
   string id = 1;
 }
 message GetEventResponse{

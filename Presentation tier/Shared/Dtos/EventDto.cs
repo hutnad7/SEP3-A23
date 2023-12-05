@@ -1,7 +1,7 @@
 using System.Runtime.Serialization;
 using System.Text.Json.Serialization;
 
-namespace Cafe.dto;
+namespace Shared.Dtos;
 
 public class EventDto{
     [JsonPropertyName("id")]

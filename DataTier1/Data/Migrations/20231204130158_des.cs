@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Data.Migrations
 {
     /// <inheritdoc />
-    public partial class enddate : Migration
+    public partial class des : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -23,6 +23,7 @@ namespace Data.Migrations
                     Id = table.Column<Guid>(type: "char(36)", nullable: false),
                     Firstname = table.Column<string>(type: "longtext", nullable: false),
                     Lastname = table.Column<string>(type: "longtext", nullable: false),
+                    Description = table.Column<string>(type: "longtext", nullable: false),
                     Username = table.Column<string>(type: "varchar(255)", nullable: false),
                     Email = table.Column<string>(type: "varchar(255)", nullable: false),
                     CreationDate = table.Column<DateTime>(type: "datetime(6)", nullable: false),
@@ -96,14 +97,43 @@ namespace Data.Migrations
                 })
                 .Annotation("MySQL:Charset", "utf8mb4");
 
+            migrationBuilder.CreateTable(
+                name: "Posts",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "char(36)", nullable: false),
+                    Title = table.Column<string>(type: "longtext", nullable: false),
+                    Content = table.Column<string>(type: "longtext", nullable: false),
+                    AuthorId = table.Column<Guid>(type: "char(36)", nullable: false),
+                    EventId = table.Column<Guid>(type: "char(36)", nullable: false),
+                    CreationDate = table.Column<DateTime>(type: "datetime(6)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Posts", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Posts_Events_EventId",
+                        column: x => x.EventId,
+                        principalTable: "Events",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Posts_Users_AuthorId",
+                        column: x => x.AuthorId,
+                        principalTable: "Users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                })
+                .Annotation("MySQL:Charset", "utf8mb4");
+
             migrationBuilder.InsertData(
                 table: "Users",
-                columns: new[] { "Id", "CreationDate", "Email", "Firstname", "Lastname", "PasswordHash", "Role", "Username" },
+                columns: new[] { "Id", "CreationDate", "Description", "Email", "Firstname", "Lastname", "PasswordHash", "Role", "Username" },
                 values: new object[,]
                 {
-                    { new Guid("2d22883c-aed7-4725-89fb-1457ddac2882"), new DateTime(2023, 11, 30, 14, 18, 47, 725, DateTimeKind.Local).AddTicks(729), "coffeowner@gmail.com", "Coffe", "Owner", "-2103683928", 1, "CoffeOwnerTest" },
-                    { new Guid("55361a5f-1b2b-467d-8886-7f1ce379f4cd"), new DateTime(2023, 11, 30, 14, 18, 47, 725, DateTimeKind.Local).AddTicks(865), "normaluser@gmail.com", "User", "Normal", "-1566889369", 0, "normal_user" },
-                    { new Guid("cc232ead-0b61-4395-9b14-a1de097c0e49"), new DateTime(2023, 11, 30, 14, 18, 47, 725, DateTimeKind.Local).AddTicks(889), "enterteiner@gmail.com", "Enter", "Teiner", "574792231", 2, "enterteiner" }
+                    { new Guid("23bc6ea6-8a3e-445b-bb9a-d0c3d103590a"), new DateTime(2023, 12, 4, 15, 1, 58, 774, DateTimeKind.Local).AddTicks(9714), "", "coffeowner@gmail.com", "Coffe", "Owner", "-48564536", 1, "CoffeOwnerTest" },
+                    { new Guid("43f69c47-602c-4d49-b3ac-9afe3fc60c63"), new DateTime(2023, 12, 4, 15, 1, 58, 774, DateTimeKind.Local).AddTicks(9848), "", "normaluser@gmail.com", "User", "Normal", "1175273470", 0, "normal_user" },
+                    { new Guid("b07e3044-66c8-4acb-9e6b-fbfccfa6d21f"), new DateTime(2023, 12, 4, 15, 1, 58, 774, DateTimeKind.Local).AddTicks(9865), "cool enterteiner", "enterteiner@gmail.com", "Enter", "Teiner", "1328091793", 2, "enterteiner" }
                 });
 
             migrationBuilder.CreateIndex(
@@ -127,6 +157,16 @@ namespace Data.Migrations
                 column: "EnterteinerId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Posts_AuthorId",
+                table: "Posts",
+                column: "AuthorId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Posts_EventId",
+                table: "Posts",
+                column: "EventId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Users_Email",
                 table: "Users",
                 column: "Email",
@@ -144,6 +184,9 @@ namespace Data.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Bookings");
+
+            migrationBuilder.DropTable(
+                name: "Posts");
 
             migrationBuilder.DropTable(
                 name: "Events");

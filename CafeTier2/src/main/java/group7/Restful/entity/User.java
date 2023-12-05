@@ -1,19 +1,24 @@
 package group7.Restful.entity;
 
+import lombok.Data;
+
 import java.util.UUID;
 
+@Data
 public class User {
     private String FirstName;
     private String LastName;
     private String Username;
 
     private String Email;
+    private String Description;
     private String Role;
     private UUID Id;
 
     public User() {
     }
 
+<<<<<<< Updated upstream
     public String getFirstName() {
         return FirstName;
     }
@@ -50,4 +55,8 @@ public class User {
     public void setId(UUID Id) {
         this.Id = Id;
     }
+=======
+
+
+>>>>>>> Stashed changes
 }

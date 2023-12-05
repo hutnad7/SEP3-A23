@@ -8,48 +8,47 @@
 
 <h3>Create event</h3>
 
-<RadzenTemplateForm TItem="Event" Data=Event Submit="@SubmitEvent">
-    <RadzenTextBox @bind-Value="Event.Name" Name="Name" Placeholder="Event Name" Style="width:100%; margin-bottom: 20px;" />
-    <RadzenTextBox @bind-Value="Event.Description" Name="Description" Placeholder="Description" Style="width:100%; margin-bottom: 20px;" />
+<RadzenTemplateForm TItem="EventPage" Data=EventPage Submit="@SubmitEvent">
+    <RadzenTextBox @bind-Value="EventPage.Name" Name="Name" Placeholder="Event Name" Style="width:100%; margin-bottom: 20px;" />
+    <RadzenTextBox @bind-Value="EventPage.Description" Name="Description" Placeholder="Description" Style="width:100%; margin-bottom: 20px;" />
     <div class="rz-p-sm-12 rz-text-align-center">
-        <RadzenDropDown @bind-Value="Event.EntertainerId" Data=@entertainers TextProperty="FullName" ValueProperty="Id" Style="width: 100%; max-width: 400px;" />
+        <RadzenDropDown @bind-Value="EventPage.EntertainerId" Data=@entertainers TextProperty="FullName" ValueProperty="Id" Style="width: 100%; max-width: 400px;" />
     </div>
     
-    <RadzenNumeric @bind-Value="Event.AvailablePlaces" />
-    <!--  <RadzenTextBox @bind-Value="Event.DateString" Name="Date" Placeholder="Date" Style="width:100%; margin-bottom: 20px;" />
+    <RadzenNumeric @bind-Value="EventPage.AvailablePlaces" />
+    <!--  <RadzenTextBox @bind-Value="EventPage.DateString" Name="Date" Placeholder="Date" Style="width:100%; margin-bottom: 20px;" />
     -->
-    <RadzenDatePicker @bind-Value="Event.Start" ShowTime="true" HourFormat="12" Culture='CultureInfo.CreateSpecificCulture("en-GB")' DateFormat="yyyy/MM/dd hh:mm" />
-    <RadzenDatePicker @bind-Value="Event.End" ShowTime="true" HourFormat="12" Culture='CultureInfo.CreateSpecificCulture("en-GB")' DateFormat="yyyy/MM/dd hh:mm" />
-
+    <RadzenDatePicker @bind-Value="EventPage.Start" ShowTime="true" HourFormat="12" Culture='CultureInfo.CreateSpecificCulture("en-GB")' DateFormat="yyyy/MM/dd hh:mm" />
+    <RadzenDatePicker @bind-Value="EventPage.End" ShowTime="true" HourFormat="12" Culture='CultureInfo.CreateSpecificCulture("en-GB")' DateFormat="yyyy/MM/dd hh:mm" />
     <RadzenButton ButtonType="ButtonType.Submit" Text="Create Event" />
 </RadzenTemplateForm>
 
 @code {
-    public Event Event = new();
-    IEnumerable<Entertainer> entertainers;
+    public EventPage EventPage = new();
+    IEnumerable<User> entertainers;
 
     protected override void OnInitialized()
     {
         CultureInfo provider = CultureInfo.CreateSpecificCulture("en-GB");
 
-        entertainers = new List<Entertainer>
+        entertainers = new List<User>
         {
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "John", LastName = "Doe" },
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "Jane", LastName = "Smith" },
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "Bob", LastName = "Brown" },
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "Alice", LastName = "White" },
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "Charlie", LastName = "Green" },
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "David", LastName = "Black" },
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "Eva", LastName = "Blue" },
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "Frank", LastName = "Gray" },
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "Grace", LastName = "Red" },
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "Harry", LastName = "Yellow" }
+            new User { Id = Guid.NewGuid(), FirstName = "John", LastName = "Doe" },
+            new User { Id = Guid.NewGuid(), FirstName = "Jane", LastName = "Smith" },
+            new User { Id = Guid.NewGuid(), FirstName = "Bob", LastName = "Brown" },
+            new User { Id = Guid.NewGuid(), FirstName = "Alice", LastName = "White" },
+            new User { Id = Guid.NewGuid(), FirstName = "Charlie", LastName = "Green" },
+            new User { Id = Guid.NewGuid(), FirstName = "David", LastName = "Black" },
+            new User { Id = Guid.NewGuid(), FirstName = "Eva", LastName = "Blue" },
+            new User { Id = Guid.NewGuid(), FirstName = "Frank", LastName = "Gray" },
+            new User { Id = Guid.NewGuid(), FirstName = "Grace", LastName = "Red" },
+            new User { Id = Guid.NewGuid(), FirstName = "Harry", LastName = "Yellow" }
         };
 
-        Event.EntertainerId = Guid.NewGuid();
+        EventPage.EntertainerId = Guid.NewGuid();
     }
 
-    private async Task SubmitEvent(Event evt)
+    private async Task SubmitEvent(EventPage evt)
     {
         try
         {
@@ -93,7 +92,12 @@
 
     private void ResetForm()
     {
+<<<<<<< Updated upstream
         Event = new ();
         //Event.EntertainerId = entertainers.First().Id;
+=======
+        EventPage = new();
+    //Event.EntertainerId = entertainers.First().Id;
+>>>>>>> Stashed changes
     }
 }

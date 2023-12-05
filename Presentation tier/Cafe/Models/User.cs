@@ -1,6 +1,6 @@
 ﻿namespace Cafe.Models;
 
-public class Entertainer
+public class User
 {
     
         public Guid Id { get; set; }

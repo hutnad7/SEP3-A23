@@ -35,6 +35,7 @@ namespace Data.Models
         [Required]
         public int AvailablePlaces { get; set; }
         public virtual ICollection<Booking> Bookings { get; set; }
+        public virtual ICollection<Post> Posts { get; set; }
         public StateEvent state { get; set; }
         public Event() 
         {
