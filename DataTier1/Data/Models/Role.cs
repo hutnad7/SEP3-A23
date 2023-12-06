@@ -9,6 +9,6 @@ namespace Data.Models
     {
         User,
         CafeOwner,
-        Enterteiner
+        Entertainer
     }
 }

@@ -4,6 +4,10 @@
 @inject NotificationService NotificationService
 @inject HttpClient httpClient
 
+@attribute [Authorize("MustBeEntertainer")]
+
+
+
 <RadzenScheduler @ref=@Scheduler SlotRender=@OnSlotRender style="height: 768px;" TItem="EventDto" Data=@appointments 
     TextProperty="Name" SelectedIndex="2" StartProperty="Start" EndProperty="End">
     <RadzenDayView />

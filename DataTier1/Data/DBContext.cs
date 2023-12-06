@@ -68,7 +68,7 @@ namespace Data
                     Username = "enterteiner",
                     Email = "enterteiner@gmail.com",
                     CreationDate = DateTime.Now,
-                    Role = Role.Enterteiner,
+                    Role = Role.Entertainer,
                     PasswordHash = "EntrPa33word".GetHashCode().ToString(),
                 });
             base.OnModelCreating(modelBuilder);

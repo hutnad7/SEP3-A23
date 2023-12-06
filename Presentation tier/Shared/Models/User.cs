@@ -1,9 +1,19 @@
-﻿namespace Shared.Models;
+﻿using System.Text.Json.Serialization;
 
-    public class User
-    {
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public string Email { get; set; }
-        public string Role { get; set; }
-    }
+namespace Shared.Models;
+
+public class User
+{
+    [JsonPropertyName("firstName")]
+    public string FirstName { get; set; }
+    [JsonPropertyName("lastName")]
+    public string LastName { get; set; }
+    [JsonPropertyName("username")]
+    public string Username { get; set; }
+    [JsonPropertyName("password")]
+    public string Password { get; set; }
+    [JsonPropertyName("email")]
+    public string Email { get; set; }
+    [JsonPropertyName("role")]
+    public string Role { get; set; }
+}

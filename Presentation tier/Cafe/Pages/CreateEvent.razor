@@ -10,7 +10,6 @@
 @inject IAuthService JwtAuthService
 @attribute [Authorize("MustBeCafeOwner")]
 
-
 <h3>Create event</h3>
 
 <RadzenTemplateForm TItem="Event" Data=Event Submit="@SubmitEvent">

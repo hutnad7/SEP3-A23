@@ -11,6 +11,8 @@
 @inject HttpClient HttpClient
 @inject NavigationManager _nav_manager
 
+@attribute [Authorize]
+
 <h3>Events</h3>
 @foreach (Event e in events)
 {
