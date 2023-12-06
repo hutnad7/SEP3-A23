@@ -3,6 +3,7 @@ using System;
 using Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,20 +11,52 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(DBContext))]
-    partial class DBContextModelSnapshot : ModelSnapshot
+    [Migration("20231205154911_op")]
+    partial class op
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "7.0.13")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("Data.Models.Booking", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<DateTime>("CreationDate")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<Guid>("EventId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<int>("NumberOfPeople")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("char(36)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EventId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Bookings");
+                });
+
             modelBuilder.Entity("Data.Models.Event", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
+
+                    b.Property<int>("AvailablePlaces")
+                        .HasColumnType("int");
 
                     b.Property<Guid>("CafeOwnerId")
                         .HasColumnType("char(36)");
@@ -32,25 +65,17 @@ namespace Data.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-<<<<<<< Updated upstream
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime(6)");
-=======
                     b.Property<string>("EndDate")
                         .IsRequired()
                         .HasColumnType("longtext");
->>>>>>> Stashed changes
 
                     b.Property<Guid>("EnterteinerId")
                         .HasColumnType("char(36)");
 
-<<<<<<< Updated upstream
-=======
                     b.Property<string>("StartDate")
                         .IsRequired()
                         .HasColumnType("longtext");
 
->>>>>>> Stashed changes
                     b.Property<string>("Text")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -58,6 +83,9 @@ namespace Data.Migrations
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<int>("state")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -151,14 +179,6 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-<<<<<<< Updated upstream
-                            Id = new Guid("0d8d4874-3b70-445c-98ef-eb9c2306ba55"),
-                            CreationDate = new DateTime(2023, 11, 7, 16, 8, 17, 932, DateTimeKind.Local).AddTicks(2190),
-                            Email = "coffeowner@gmail.com",
-                            Firstname = "Coffe",
-                            Lastname = "Owner",
-                            PasswordHash = "-1417871599",
-=======
                             Id = new Guid("85ca6e30-075d-438d-a239-48d2ce1076e7"),
                             CreationDate = "05/12/2023 17:49:11",
                             Description = "Cafe Owner",
@@ -166,20 +186,11 @@ namespace Data.Migrations
                             Firstname = "Coffe",
                             Lastname = "Owner",
                             PasswordHash = "291333243",
->>>>>>> Stashed changes
                             Role = 1,
                             Username = "CoffeOwnerTest"
                         },
                         new
                         {
-<<<<<<< Updated upstream
-                            Id = new Guid("2ef5bf7b-11a9-41cc-aed0-fe37e3b46e62"),
-                            CreationDate = new DateTime(2023, 11, 7, 16, 8, 17, 932, DateTimeKind.Local).AddTicks(2323),
-                            Email = "enterteiner@gmail.com",
-                            Firstname = "Enter",
-                            Lastname = "Teiner",
-                            PasswordHash = "764849110",
-=======
                             Id = new Guid("eafa239b-dbfa-4866-b6b8-ac03cf287d22"),
                             CreationDate = "05/12/2023 17:49:11",
                             Description = "",
@@ -199,10 +210,28 @@ namespace Data.Migrations
                             Firstname = "Enter",
                             Lastname = "Teiner",
                             PasswordHash = "-1091989785",
->>>>>>> Stashed changes
                             Role = 2,
                             Username = "enterteiner"
                         });
+                });
+
+            modelBuilder.Entity("Data.Models.Booking", b =>
+                {
+                    b.HasOne("Data.Models.Event", "Event")
+                        .WithMany("Bookings")
+                        .HasForeignKey("EventId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Data.Models.User", "User")
+                        .WithMany("Bookings")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Event");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Data.Models.Event", b =>
@@ -224,8 +253,6 @@ namespace Data.Migrations
                     b.Navigation("Enterteiner");
                 });
 
-<<<<<<< Updated upstream
-=======
             modelBuilder.Entity("Data.Models.Post", b =>
                 {
                     b.HasOne("Data.Models.User", "Author")
@@ -252,9 +279,10 @@ namespace Data.Migrations
                     b.Navigation("Posts");
                 });
 
->>>>>>> Stashed changes
             modelBuilder.Entity("Data.Models.User", b =>
                 {
+                    b.Navigation("Bookings");
+
                     b.Navigation("Events");
 
                     b.Navigation("Posts");
