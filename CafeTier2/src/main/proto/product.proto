@@ -133,6 +133,17 @@ message GetEventResponse{
   string id = 1;
   string name = 2;
   string description = 3;
+  string Entertainer = 4;
+  string CafeOwner = 5;
+  string StartDate = 6;
+  string EndDate = 7;
+  int32 AvailablePlaces = 8;
+  string state = 9;
+}
+message GetEventByUserResponse{
+  string id = 1;
+  string name = 2;
+  string description = 3;
   string EntertainerId = 4;
   string CafeOwnerId = 5;
   string StartDate = 6;
@@ -143,5 +154,5 @@ message GetEventResponse{
   string CafeOwner = 11;
 }
 message GetEventsByUserResponse{
-  repeated GetEventResponse events = 1;
+  repeated GetEventByUserResponse events = 1;
 }

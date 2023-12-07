@@ -41,7 +41,7 @@ public class BookController {
 
   /*  @GetMapping({"/{id}"})
     public ResponseEntity<Booking> getBookById(@PathVariable Long id) {
-        Optional<Booking> bookOpt = this.bookService.(id);
+        Optional<Booking> bookOpt = this.bookService.getBookById(id);
         return bookOpt.isPresent() ? ResponseEntity.ok((Booking)bookOpt.get()) : ResponseEntity.notFound().build();
     }*/
 

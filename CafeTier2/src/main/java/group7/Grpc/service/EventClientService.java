@@ -24,10 +24,10 @@ public class EventClientService {
     public BookEventResponse bookEvent(BookEventRequest request) {
         return stub.bookEvent(request);
     }
+
     public GetEventResponse getEventById(GetRequest request) {
         return stub.getEvent(request);
     }
-
    public group7.protobuf.GetEventResponse createEvent(group7.protobuf.CreateEventRequest request) {
         return stub.createEvent(request);
     }
@@ -41,6 +41,7 @@ public class EventClientService {
         return stub.refuseEvent(request);
     }
     public GetEventResponse reverseState(GetRequest request) {
+
         return stub.reverseState(request);
     }
 

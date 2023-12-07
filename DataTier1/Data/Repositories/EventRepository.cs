@@ -15,8 +15,6 @@ namespace Data.Repositories
         public EventRepository(DBContext context) : base(context)
         {
         }
-<<<<<<< Updated upstream
-=======
         public override async Task<ICollection<Event>> GetAll()
         {
             return await _context.Set<Event>().Include(e => e.Bookings).Include(e => e.CafeOwner).Include(e => e.Enterteiner).ToListAsync();
@@ -52,17 +50,50 @@ namespace Data.Repositories
             _context.Update(dbEntity);
 
             await _context.SaveChangesAsync();
-        }
->>>>>>> Stashed changes
+        } 
         public override async Task<Event> CreateAsync(Event entity)
         {
-            User cafeOwner = _context.Users.Include(u=>u.Events).FirstOrDefault(c=>c.Id==entity.CafeOwnerId);
-            entity.CafeOwner = cafeOwner;
-            User enterteiner = _context.Users.Include(u => u.Events).FirstOrDefault(c => c.Id == entity.EnterteinerId);
-            entity.Enterteiner = enterteiner;
-            await _context.Events.AddAsync(entity);
-            await _context.SaveChangesAsync();
-            return entity;
+            try
+            {
+                User cafeOwner = _context.Set<User>().Include(u => u.Events).Include(u => u.Bookings).AsSplitQuery().FirstOrDefault(c => c.Id.Equals(entity.CafeOwnerId));
+                entity.CafeOwner = cafeOwner;
+                User enterteiner = _context.Users.Include(u => u.Events).Include(u => u.Bookings).AsSplitQuery().FirstOrDefault(c => c.Id == entity.EnterteinerId);
+                entity.Enterteiner = enterteiner;
+                entity.state = StateEvent.Pending;
+                await _context.Events.AddAsync(entity);
+                await _context.SaveChangesAsync();
+                return entity;
+            }
+            catch(ArgumentNullException e)
+            {
+                throw new ArgumentNullException(e.Message);
+            }
+        }
+
+        public async Task<Event> AcceptEventAsync(Event @event)
+        {
+            //@event.state.accept(@event);
+            @event.state = StateEvent.Accepted;
+            await this.UpdateAsync(@event);
+            return @event;
+        }
+
+        public async Task<Event> RefuseEventAsync(Event @event)
+        {
+            //@event.state.refuse(@event);
+            @event.state = StateEvent.Refused;
+            await this.UpdateAsync(@event);
+            return @event;
+
+
+        }
+
+        public async Task<Event> RevertStateAsync(Event @event)
+        {
+            //@event.state.cancel(@event);
+            @event.state = StateEvent.Pending;
+            await this.UpdateAsync(@event);
+            return @event;
         }
     }
 }

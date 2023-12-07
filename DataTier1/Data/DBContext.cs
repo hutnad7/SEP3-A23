@@ -16,6 +16,8 @@ namespace Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Event> Events { get; set; }
+        public DbSet<Post> Posts { get; set; }
+        public DbSet<Booking> Bookings { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -56,7 +58,7 @@ namespace Data
                     Email = "normaluser@gmail.com",
                     CreationDate = DateTime.Now.ToString(),
                     Role = Role.User,
-                    Description = "",
+                    Description = "", 
                     PasswordHash = "UserPa33word".GetHashCode().ToString(),
                 });
             modelBuilder.Entity<User>().HasData(

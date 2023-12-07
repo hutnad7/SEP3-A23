@@ -1,6 +1,9 @@
 package group7.Restful.Controller;
 
+<<<<<<< HEAD
 import group7.Restful.dto.PostDto;
+=======
+>>>>>>> 7c9ab47a80f9de9bbbc95ddfb895efbd1f1b8823
 import group7.Restful.entity.Post;
 import group7.Restful.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;

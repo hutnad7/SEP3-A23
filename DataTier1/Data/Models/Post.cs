@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Diagnostics.CodeAnalysis;
 
 namespace Data.Models;
 
@@ -18,5 +17,4 @@ public class Post : BaseEntity
 
     [Required]
     public string CreationDate { get; set; }
-    
 }

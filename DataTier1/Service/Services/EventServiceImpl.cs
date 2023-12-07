@@ -1,6 +1,14 @@
 using Data.Interfaces;
 using Data.Models;
+using Data.Repositories;
+using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
+using Microsoft.VisualBasic;
+using MySqlX.XDevAPI.Common;
+using System.Globalization;
+using System.Runtime.Serialization;
+using System.Xml.Linq;
+using static Org.BouncyCastle.Bcpg.Attr.ImageAttrib;
 
 namespace Service.Services
 {
@@ -8,16 +16,15 @@ namespace Service.Services
     {
         private readonly ILogger<EventServiceImpl> _logger;
         private readonly IEventRepository _eventRepository;
-        public EventServiceImpl(ILogger<EventServiceImpl> logger, IEventRepository eventRepository)
+        private readonly IBookingRepository _bookingRepository;
+        public EventServiceImpl(ILogger<EventServiceImpl> logger, IEventRepository eventRepository, IBookingRepository bookingRepository)
         {
             _logger = logger;
             _eventRepository = eventRepository;
+            _bookingRepository = bookingRepository;
         }
-        public override async Task<EventResponse> CreateEvent(EventRequest request, ServerCallContext context)
+        public override async Task<GetEventsResponse> GetAllEvents(Empty request, ServerCallContext context)
         {
-<<<<<<< Updated upstream
-            Event e = new Event()
-=======
             ICollection<Event> events = await _eventRepository.GetAll();
             ICollection<GetEventResponse> e = new List<GetEventResponse>();
             foreach (Event ev in events)
@@ -84,10 +91,10 @@ namespace Service.Services
             string id = request.Id;
             ICollection<Event> events = await _eventRepository.GetByAsync(e=>e.EnterteinerId.Equals(Guid.Parse(id)));
             //ICollection<Event> events = await _eventRepository.GetByAsync(e => e.AvailablePlaces==0);
-            ICollection <GetEventResponse> e = new List<GetEventResponse>();
+            ICollection <GetEventByUserResponse> e = new List<GetEventByUserResponse>();
             foreach (Event ev in events)
             {
-                GetEventResponse response = new GetEventResponse()
+                GetEventByUserResponse response = new GetEventByUserResponse()
                 {
                     Id = ev.Id.ToString(),
                     Name = ev.Title.ToString(),
@@ -122,37 +129,32 @@ namespace Service.Services
                 EndDate = ev.EndDate.ToString(),
                 AvailablePlaces = ev.AvailablePlaces,
                 State = ev.state.ToString(),
-                CafeOwnerId = ev.CafeOwnerId.ToString(),
-                EntertainerId = ev.EnterteinerId.ToString(),
             };
             return response;
         }
         public override async Task<BookEventResponse> BookEvent(BookEventRequest request, ServerCallContext context)
         {
             Booking booking = new Booking()
->>>>>>> Stashed changes
             {
                 Id = Guid.NewGuid(),
-                EnterteinerId = Guid.Parse(request.Entertainer),
-                CafeOwnerId = Guid.Parse(request.CafeOwner),
+                UserId = Guid.Parse(request.UserId),
+                EventId = Guid.Parse(request.EventId),
                 CreationDate = DateTime.Now,
-                Date = DateTime.Parse(request.Date),
-                Text = request.Description,
-                Title = request.Name
+                NumberOfPeople = request.NumerOfPeople
             };
-            Event ev = await _eventRepository.CreateAsync(e);
-            EventResponse response = new EventResponse()
+            Booking b =  await _bookingRepository.CreateAsync(booking);
+            BookEventResponse response = new BookEventResponse()
             {
-                Id = ev.Id.ToString(),
-                Entertainer = ev.EnterteinerId.ToString(),
-                Name = ev.Title,
-                Description = ev.Text
+                Id = booking.Id.ToString(),
+                UserId = b.UserId.ToString(),
+                EventId = b.EventId.ToString(),
+                CreationDate = b.CreationDate.ToString(),
+                NumerOfPeople = b.NumberOfPeople,
+
             };
             return response;
         }
-<<<<<<< Updated upstream
-=======
-        public override async Task<GetEventResponse> AcceptEvent(GetRequest request, ServerCallContext context)
+        public override async Task<GetEventResponse> AcceptEvent(GetEventRequest request, ServerCallContext context)
         {
             Event @event = await _eventRepository.GetByIdAsync(Guid.Parse(request.Id));
             Event result = await _eventRepository.AcceptEventAsync(@event);
@@ -191,7 +193,6 @@ namespace Service.Services
                 State = result.state.ToString(),
                 CafeOwnerId = result.CafeOwnerId.ToString(),
                 EntertainerId = result.EnterteinerId.ToString(),
-
             };
             return response;
         }
@@ -216,7 +217,5 @@ namespace Service.Services
             };
             return response;
         }
-
->>>>>>> Stashed changes
     }
 }

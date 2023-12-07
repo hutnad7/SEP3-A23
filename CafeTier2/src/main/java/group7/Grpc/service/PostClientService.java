@@ -1,5 +1,6 @@
 package group7.Grpc.service;
 
+<<<<<<< HEAD
 import com.google.protobuf.Empty;
 import group7.protobuf.*;
 import io.grpc.ManagedChannel;
@@ -36,7 +37,6 @@ public class PostClientService {
     public GetPostsResponse GetAllPostsByEventId(GetRequest request) {
         return stub.getAllPostsByEventId(request);
     }
-
     public void shutdown() {
         channel.shutdown();
     }

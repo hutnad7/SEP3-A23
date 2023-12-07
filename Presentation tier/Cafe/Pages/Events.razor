@@ -1,9 +1,12 @@
 ﻿@page "/events"
-@using Cafe.Models
 @using System.Collections
 @inject NotificationService NotificationService
 @inject HttpClient HttpClient
 @inject NavigationManager _nav_manager
+@using System.Text.Json
+@using Cafe.Uitlities
+@using global::Shared.Models
+
 <h3>Events</h3>
 @foreach (Event e in events)
 {
@@ -19,6 +22,12 @@
                         @e.Id
                     </p>
                     <div class="row">
+                        <div class="button-row">
+                            <p class="col-12" style="text-align: end">Date: @e.Date</p>
+                            <p class="col-12" style="text-align: center">Description: @e.Description</p>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col-12">
                             <div class="button-row">
                                 <button type="button" ButtonType="ButtonType.Submit" class="acceptbtn" Text="Book now" @onclick="@(() => _nav_manager.NavigateTo($"/BookEvent/{e.Id.ToString()}"))">Book now</button>
@@ -32,25 +41,22 @@
 
 }
 @code {
-    List<Event> events=new List<Event>();
+    List<Event> events = new List<Event>();
     
-    protected override async void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
         try
         {
-           // var response = await HttpClient.GetAsync("http://localhost:8080/api/events");
-            /*events = await response.ReadAsync<List<Event>>();
-            if (!response.IsSuccessStatusCode)
+            var response = await HttpClient.GetAsync("http://localhost:8080/api/events");
+            if (response.IsSuccessStatusCode)
+            {
+                var stream = await response.Content.ReadAsStreamAsync();
+                events = await JsonSerializer.DeserializeAsync<List<Event>>(stream, JsonOptionsHelper.DefaultJsonSerializerOptions) ?? new List<Event>();
+            }
+            else
             {
                 ShowErrorNotification("An error occurred while processing your request.");
-            }*/
-            events = new List<Event>()
-            {
-                new Event() { Name = "Event1", Description = "First Event", Date = new DateTime(), Id = Guid.NewGuid()},
-                new Event() { Name = "Event2", Description = "Second Event", Date = new DateTime(), Id = Guid.NewGuid() },
-                new Event() { Name = "Event3", Description = "Third Event", Date = new DateTime(), Id = Guid.NewGuid() },
-                new Event() { Name = "Event4", Description = "Fourth Event", Date = new DateTime(), Id = Guid.NewGuid() }
-            };
+            }
         }
         catch (HttpRequestException)
         {
@@ -70,6 +76,4 @@
     {
         _nav_manager.NavigateTo("create-event");
     }
-    
-
 }

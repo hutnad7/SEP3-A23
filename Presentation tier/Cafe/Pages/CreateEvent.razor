@@ -1,19 +1,29 @@
 ﻿@page "/create-event"
-
-@using Cafe.Models
+@using Cafe.Services
+@using Cafe.Services.Http
+@using System.Globalization
+@using global::Shared.Models
 @inject NotificationService NotificationService
-
 @inject HttpClient HttpClient
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IAuthService JwtAuthService
+@attribute [Authorize("MustBeCafeOwner")]
+
 
 <h3>Create event</h3>
 
 <RadzenTemplateForm TItem="Event" Data=Event Submit="@SubmitEvent">
     <RadzenTextBox @bind-Value="Event.Name" Name="Name" Placeholder="Event Name" Style="width:100%; margin-bottom: 20px;" />
     <RadzenTextBox @bind-Value="Event.Description" Name="Description" Placeholder="Description" Style="width:100%; margin-bottom: 20px;" />
-   <div class="rz-p-sm-12 rz-text-align-center">
-       <RadzenDropDown @bind-Value="Event.EntertainerId" Data=@entertainers TextProperty="FullName" ValueProperty="Id" Style="width: 100%; max-width: 400px;" />
-   </div>
-
+    <div class="rz-p-sm-12 rz-text-align-center">
+        <RadzenDropDown @bind-Value="Event.EntertainerId" Data=@entertainers TextProperty="FullName" ValueProperty="Id" Style="width: 100%; max-width: 400px;" />
+    </div>
+    
+    <RadzenNumeric @bind-Value="Event.AvailablePlaces" />
+    <!--  <RadzenTextBox @bind-Value="Event.Date" Name="Date" Placeholder="Date" Style="width:100%; margin-bottom: 20px;" />
+    -->
+    <RadzenDatePicker @bind-Value="Event.Start" ShowTime="true" HourFormat="12" Culture='CultureInfo.CreateSpecificCulture("en-GB")' DateFormat="yyyy/MM/dd hh:mm" />
+    <RadzenDatePicker @bind-Value="Event.End" ShowTime="true" HourFormat="12" Culture='CultureInfo.CreateSpecificCulture("en-GB")' DateFormat="yyyy/MM/dd hh:mm" />
 
     <RadzenButton ButtonType="ButtonType.Submit" Text="Create Event" />
 </RadzenTemplateForm>
@@ -22,29 +32,43 @@
     public Event Event = new();
     IEnumerable<Entertainer> entertainers;
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
+        var jwt = JwtAuthService.GetJwt();
+        Console.WriteLine("JWT :: " + jwt);;
+        
+        CultureInfo provider = CultureInfo.CreateSpecificCulture("en-GB");
+
         entertainers = new List<Entertainer>
         {
-            new Entertainer { Id = 1, FirstName = "John", LastName = "Doe" },
-            new Entertainer { Id = 2, FirstName = "Jane", LastName = "Smith" },
-            new Entertainer { Id = 3, FirstName = "Bob", LastName = "Brown" },
-            new Entertainer { Id = 4, FirstName = "Alice", LastName = "White" },
-            new Entertainer { Id = 5, FirstName = "Charlie", LastName = "Green" },
-            new Entertainer { Id = 6, FirstName = "David", LastName = "Black" },
-            new Entertainer { Id = 7, FirstName = "Eva", LastName = "Blue" },
-            new Entertainer { Id = 8, FirstName = "Frank", LastName = "Gray" },
-            new Entertainer { Id = 9, FirstName = "Grace", LastName = "Red" },
-            new Entertainer { Id = 10, FirstName = "Harry", LastName = "Yellow" }
+            new Entertainer { Id = Guid.NewGuid(), FirstName = "John", LastName = "Doe" },
+            new Entertainer { Id = Guid.NewGuid(), FirstName = "Jane", LastName = "Smith" },
+            new Entertainer { Id = Guid.NewGuid(), FirstName = "Bob", LastName = "Brown" },
+            new Entertainer { Id = Guid.NewGuid(), FirstName = "Alice", LastName = "White" },
+            new Entertainer { Id = Guid.NewGuid(), FirstName = "Charlie", LastName = "Green" },
+            new Entertainer { Id = Guid.NewGuid(), FirstName = "David", LastName = "Black" },
+            new Entertainer { Id = Guid.NewGuid(), FirstName = "Eva", LastName = "Blue" },
+            new Entertainer { Id = Guid.NewGuid(), FirstName = "Frank", LastName = "Gray" },
+            new Entertainer { Id = Guid.NewGuid(), FirstName = "Grace", LastName = "Red" },
+            new Entertainer { Id = Guid.NewGuid(), FirstName = "Harry", LastName = "Yellow" }
         };
 
-        Event.EntertainerId = entertainers.First().Id;
+        Event.EntertainerId = Guid.NewGuid();
     }
 
     private async Task SubmitEvent(Event evt)
     {
         try
         {
+            evt.EntertainerId = Guid.Parse("e7c9d815-30fd-4e94-95f1-64d0577a7acf");
+            evt.CafeOwnerId = Guid.Parse("e7c9d815-30fd-4e94-95f1-64d0577a7acf");
+            evt.EntertainerId = Guid.Parse("cc232ead-0b61-4395-9b14-a1de097c0e49");
+            evt.CafeOwnerId = Guid.Parse("2d22883c-aed7-4725-89fb-1457ddac2882");
+         /*   CultureInfo provider = CultureInfo.CreateSpecificCulture("en-GB");
+            string format = "dd/MM/yyyy hh:mm";
+            DateTime date = DateTime.Now;
+            // evt.Date = DateTime.ParseExact(evt.Date.ToShortTimeString(), format,provider);
+            // evt.Date = DateTime.Parse( evt.Date.ToString(), CultureInfo.CreateSpecificCulture("fr-FR") );*/
             var response = await HttpClient.PostAsJsonAsync("http://localhost:8080/api/events", evt);
             if (response.IsSuccessStatusCode)
             {
@@ -70,7 +94,7 @@
     {
         NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Event created", Detail = "Success Detail", Duration = 4000 });
     }
-    
+
     private void ShowErrorNotification(string message)
     {
         NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = message, Detail = "Unable to create the event", Duration = 4000 });
@@ -78,7 +102,9 @@
 
     private void ResetForm()
     {
-        Event = new ();
-        Event.EntertainerId = entertainers.First().Id;
+        Event = new();
+    //Event.EntertainerId = entertainers.First().Id;
     }
+
+
 }

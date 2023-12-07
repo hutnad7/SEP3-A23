@@ -17,8 +17,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
-
-import group7.protobuf.CreateEventRequest;
 import group7.protobuf.*;
 import org.springframework.stereotype.Service;
 
