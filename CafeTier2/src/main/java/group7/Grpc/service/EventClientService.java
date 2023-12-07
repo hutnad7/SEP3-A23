@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class EventClientService {
 
-    private final ManagedChannel channel;
+   private final ManagedChannel channel;
     private final EventServiceGrpc.EventServiceBlockingStub stub;
 
     public EventClientService() {
@@ -25,19 +25,23 @@ public class EventClientService {
         return stub.bookEvent(request);
     }
 
+    public GetEventResponse getEventById(GetRequest request) {
+        return stub.getEvent(request);
+    }
    public group7.protobuf.GetEventResponse createEvent(group7.protobuf.CreateEventRequest request) {
         return stub.createEvent(request);
     }
-    public GetEventsByUserResponse getEventsByUserId(GetEventRequest request) {
+    public GetEventsByUserResponse getEventsByUserId(GetRequest request) {
         return stub.getEventsByUser(request);
     }
-   public GetEventResponse acceptEvent(GetEventRequest request) {
+   public GetEventResponse acceptEvent(GetRequest request) {
         return stub.acceptEvent(request);
     }
-    public GetEventResponse refuseEvent(GetEventRequest request) {
+    public GetEventResponse refuseEvent(GetRequest request) {
         return stub.refuseEvent(request);
     }
-    public GetEventResponse reverseState(GetEventRequest request) {
+    public GetEventResponse reverseState(GetRequest request) {
+
         return stub.reverseState(request);
     }
 

@@ -34,12 +34,14 @@ namespace Service.Services
                     Id = ev.Id.ToString(),
                     Name = ev.Title.ToString(),
                     Description = ev.Text.ToString(),
-                    CafeOwner = ev.CafeOwnerId.ToString(),
-                    Entertainer = ev.EnterteinerId.ToString(),
+                    CafeOwner = ev.CafeOwner.Username.ToString(),
+                    Entertainer = ev.Enterteiner.Username.ToString(),
                     StartDate = ev.StartDate.ToString(),
                     EndDate = ev.EndDate.ToString(),
                     AvailablePlaces = ev.AvailablePlaces,
                     State = ev.state.ToString(),
+                    CafeOwnerId = ev.CafeOwnerId.ToString(),
+                    EntertainerId = ev.EnterteinerId.ToString(),
                 };
                 e.Add(response);
             }
@@ -50,15 +52,14 @@ namespace Service.Services
         public override async Task<GetEventResponse> CreateEvent(CreateEventRequest request, ServerCallContext context)
         {
             CultureInfo provider = CultureInfo.InvariantCulture;
-            string format = "d";
             Event e = new Event()
              {
                  Id = Guid.NewGuid(),
                  EnterteinerId = Guid.Parse(request.Entertainer),
                  CafeOwnerId = Guid.Parse(request.CafeOwner),
-                 CreationDate = DateTime.Now,
-                 StartDate = DateTime.Parse(request.StartDate),
-                 EndDate = DateTime.Parse(request.EndDate),
+                 CreationDate = DateTime.Now.ToString(),
+                 StartDate = request.StartDate,
+                 EndDate = request.EndDate,
                  Text = request.Description,
                  Title = request.Name,
                  AvailablePlaces = request.AvailablePlaces
@@ -69,12 +70,14 @@ namespace Service.Services
                 Id = ev.Id.ToString(),
                 Name = ev.Title.ToString(),
                 Description = ev.Text.ToString(),
-                CafeOwner = ev.CafeOwnerId.ToString(),
-                Entertainer = ev.EnterteinerId.ToString(),
+                CafeOwner = ev.CafeOwner.Username.ToString(),
+                Entertainer = ev.Enterteiner.Username.ToString(),
                 StartDate = ev.StartDate.ToString(),
                 EndDate = ev.EndDate.ToString(),
                 AvailablePlaces = ev.AvailablePlaces,
                 State = ev.state.ToString(),
+                CafeOwnerId = ev.CafeOwnerId.ToString(),
+                EntertainerId = ev.EnterteinerId.ToString(),
             };
             try
             {
@@ -83,7 +86,7 @@ namespace Service.Services
             catch (Exception ex) { return response; }
             
         }
-        public override async Task<GetEventsByUserResponse> GetEventsByUser(GetEventRequest request, ServerCallContext context)
+        public override async Task<GetEventsByUserResponse> GetEventsByUser(GetRequest request, ServerCallContext context)
         {
             string id = request.Id;
             ICollection<Event> events = await _eventRepository.GetByAsync(e=>e.EnterteinerId.Equals(Guid.Parse(id)));
@@ -112,7 +115,7 @@ namespace Service.Services
             return getEventsResponse;
         }
 
-        public override async Task<GetEventResponse> GetEvent(GetEventRequest request, ServerCallContext context)
+        public override async Task<GetEventResponse> GetEvent(GetRequest request, ServerCallContext context)
         {
             Event ev = await _eventRepository.GetByIdAsync(Guid.Parse(request.Id));
             GetEventResponse response = new GetEventResponse()
@@ -120,12 +123,14 @@ namespace Service.Services
                 Id = ev.Id.ToString(),
                 Name = ev.Title.ToString(),
                 Description = ev.Text.ToString(),
-                CafeOwner = ev.CafeOwnerId.ToString(),
-                Entertainer = ev.EnterteinerId.ToString(),
+                CafeOwner = ev.CafeOwner.Username.ToString(),
+                Entertainer = ev.Enterteiner.Username.ToString(),
                 StartDate = ev.StartDate.ToString(),
                 EndDate = ev.EndDate.ToString(),
                 AvailablePlaces = ev.AvailablePlaces,
                 State = ev.state.ToString(),
+                CafeOwnerId = ev.CafeOwnerId.ToString(),
+                EntertainerId = ev.EnterteinerId.ToString(),
             };
             return response;
         }
@@ -151,7 +156,7 @@ namespace Service.Services
             };
             return response;
         }
-        public override async Task<GetEventResponse> AcceptEvent(GetEventRequest request, ServerCallContext context)
+        public override async Task<GetEventResponse> AcceptEvent(GetRequest request, ServerCallContext context)
         {
             Event @event = await _eventRepository.GetByIdAsync(Guid.Parse(request.Id));
             Event result = await _eventRepository.AcceptEventAsync(@event);
@@ -160,17 +165,19 @@ namespace Service.Services
                 Id = result.Id.ToString(),
                 Name = result.Title.ToString(),
                 Description = result.Text.ToString(),
-                CafeOwner = result.CafeOwnerId.ToString(),
-                Entertainer = result.EnterteinerId.ToString(),
+                CafeOwner = result.CafeOwner.Username.ToString(),
+                Entertainer = result.Enterteiner.Username.ToString(),
                 StartDate = result.StartDate.ToString(),
                 EndDate = result.EndDate.ToString(),
                 AvailablePlaces = result.AvailablePlaces,
                 State = result.state.ToString(),
+                CafeOwnerId = result.CafeOwnerId.ToString(),
+                EntertainerId = result.EnterteinerId.ToString(),
 
             };
             return response;
         }
-        public override async Task<GetEventResponse> RefuseEvent(GetEventRequest request, ServerCallContext context)
+        public override async Task<GetEventResponse> RefuseEvent(GetRequest request, ServerCallContext context)
         {
 
             Event @event = await _eventRepository.GetByIdAsync(Guid.Parse(request.Id));
@@ -180,17 +187,18 @@ namespace Service.Services
                 Id = result.Id.ToString(),
                 Name = result.Title.ToString(),
                 Description = result.Text.ToString(),
-                CafeOwner = result.CafeOwnerId.ToString(),
-                Entertainer = result.EnterteinerId.ToString(),
+                CafeOwner = result.CafeOwner.Username.ToString(),
+                Entertainer = result.Enterteiner.Username.ToString(),
                 StartDate = result.StartDate.ToString(),
                 EndDate = result.EndDate.ToString(),
                 AvailablePlaces = result.AvailablePlaces,
                 State = result.state.ToString(),
-
+                CafeOwnerId = result.CafeOwnerId.ToString(),
+                EntertainerId = result.EnterteinerId.ToString(),
             };
             return response;
         }
-        public override async Task<GetEventResponse> ReverseState(GetEventRequest request, ServerCallContext context)
+        public override async Task<GetEventResponse> ReverseState(GetRequest request, ServerCallContext context)
         {
 
             Event @event = await _eventRepository.GetByIdAsync(Guid.Parse(request.Id));
@@ -200,15 +208,16 @@ namespace Service.Services
                 Id = result.Id.ToString(),
                 Name = result.Title.ToString(),
                 Description = result.Text.ToString(),
-                CafeOwner = result.CafeOwnerId.ToString(),
-                Entertainer = result.EnterteinerId.ToString(),
+                CafeOwner = result.CafeOwner.Username.ToString(),
+                Entertainer = result.Enterteiner.Username.ToString(),
                 StartDate = result.StartDate.ToString(),
                 EndDate = result.EndDate.ToString(),
                 AvailablePlaces = result.AvailablePlaces,
                 State = result.state.ToString(),
+                CafeOwnerId = result.CafeOwnerId.ToString(),
+                EntertainerId = result.EnterteinerId.ToString(),
             };
             return response;
         }
-
     }
 }

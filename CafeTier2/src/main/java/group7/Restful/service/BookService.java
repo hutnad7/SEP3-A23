@@ -2,8 +2,7 @@ package group7.Restful.service;
 
 import group7.Grpc.service.EventClientService;
 import group7.Restful.entity.Booking;
-import group7.protobuf.BookEventRequest;
-import group7.protobuf.BookEventResponse;
+import group7.protobuf.*;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
