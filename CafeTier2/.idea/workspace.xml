@@ -6,48 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="746ef1db-a193-4e4e-917c-6021319eba52" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/group7/Grpc/service/PostClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group7/Grpc/service/PostClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/group7/Restful/Controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/Controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/group7/Restful/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/service/EventService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/group7/Restful/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/proto/product.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/product.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/FileContentIndex/d8a735f8-b532-4159-961a-3c2e060b5a1d.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/v17/.futdcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/v17/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/ProjectEvaluation/datatier1.metadata.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/.vs/ProjectEvaluation/datatier1.metadata.v7.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/ProjectEvaluation/datatier1.projects.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/.vs/ProjectEvaluation/datatier1.projects.v7.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Data.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231107140343_h4.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231107140343_h4.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231107140620_h1.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231107140620_h1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231107140818_h.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231107140818_h.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231127133743_27nov.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231127133743_27nov.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231130121847_enddate.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231130121847_enddate.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231205150036_o.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231205150036_o.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231205154911_op.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231205154911_op.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/DBContextModelSnapshot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Repositories/EventRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Repositories/EventRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/Protos/proto3.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/Protos/proto3.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/Services/EventServiceImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/Services/EventServiceImpl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/Services/UserServiceImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/Services/UserServiceImpl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Service.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Service.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Service.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Service.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Models/Event.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Models/Event.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/BookEvent.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/BookEvent.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/CreateEvent.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/CreateEvent.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/EventPage.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/EventPage.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Events.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Events.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Presentation tier/Shared/Models/Event.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Shared/Models/Event.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/UserPage.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/UserPage.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +43,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "denitsa",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/denim/Documents/VIA/3-Semester/SDJ3/SEP3-05-12/SEP3-A23/CafeTier2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -127,7 +88,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/group7/Restful/Controller/BookController.java</url>
           <line>37</line>
-          <properties class="group7.Restful.Controller.BookController" method="createBook">
+          <properties class="group7.Restful.Controller.BookController">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
