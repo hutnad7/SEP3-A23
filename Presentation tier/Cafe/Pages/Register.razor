@@ -8,20 +8,28 @@
 <h3>Register</h3>
 <div class="card">
     <div class="field">
+        <label>First Name:</label>
+        <input type="text" @bind="firstName" />
+    </div>
+    <div class="field">
+        <label>Last Name:</label>
+        <input type="text" @bind="lastName" />
+        </div>
+    <div class="field">
         <label>User Name:</label>
-        <input type="text" @bind="userName" />
+        <input type="text" @bind="userName"/>
     </div>
     <div class="field">
         <label>Password:</label>
-        <input type="password" @bind="password" />
+        <input type="password" @bind="password"/>
     </div>
     <div class="field">
         <label>Confirm Password:</label>
-        <input type="password" @bind="confirmPassword" />
+        <input type="password" @bind="confirmPassword"/>
     </div>
     <div class="field">
         <label>Email:</label>
-        <input type="text" @bind="email" />
+        <input type="text" @bind="email"/>
     </div>
     <div class="field">
         <label>Role:</label>
@@ -45,6 +53,8 @@
 </div>
 
 @code {
+    private string firstName;
+    private string lastName;
     private string userName;
     private string password;
     private string confirmPassword;
@@ -59,6 +69,8 @@
         {
             var user = new User
             {
+                FirstName = firstName,
+                LastName = lastName,
                 Username = userName,
                 Password = password,
                 Email = email,

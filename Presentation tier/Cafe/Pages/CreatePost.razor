@@ -5,9 +5,8 @@
 @inject NotificationService NotificationService
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject IAuthService JwtAuthService
-
 @inject HttpClient HttpClient
-
+@attribute [Authorize("MustBeCafeOwner")]
 
 <h3>CreatePost</h3>
 
