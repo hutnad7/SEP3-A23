@@ -118,7 +118,7 @@ public class EventService {
         GetEventsByUserResponse response = eventClientService.getEventsByUserId(request);
         ArrayList<EventDto> events = new ArrayList<>();
         SimpleDateFormat parser = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
-        for (GetEventResponse e : response.getEventsList()) {
+        for (GetEventByUserResponse e : response.getEventsList()) {
             EventDto event = new EventDto() {
                 {
                     setId(UUID.fromString(e.getId()));
