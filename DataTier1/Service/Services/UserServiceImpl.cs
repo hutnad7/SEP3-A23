@@ -26,8 +26,8 @@ namespace Service.Services
                     Lastname = request.LastName,
                     Username = request.Email + "u",
                     Email = request.Email,
-                    CreationDate = DateTime.Now,
-                    Role = (Role)Enum.Parse(typeof(Role), request.Role),
+                    CreationDate = DateTime.Now.ToString(),
+                    Role = (Role)Enum.Parse(request.Role),
                     PasswordHash = request.Password
                 };
 

@@ -1,0 +1,131 @@
+﻿@page "/Event/{Id}"
+@using Cafe.dto
+@using Cafe.Uitlities
+@using global::Shared.Dtos
+@using global::Shared.Models
+@using JsonSerializer = System.Text.Json.JsonSerializer
+@inject HttpClient httpClient;
+@inject NotificationService NotificationService
+
+<section class="section about-section gray-bg" id="about">
+            <div class="container">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-6">
+                        <div class="about-text go-to">
+                            <h3 class="dark-color">@eventDto.Name</h3>
+                        <!--    <h6 class="theme-color lead">@eventDto.Start</h6>-->
+                            <p>@eventDto.Description</p>
+                            <div class="row about-list">
+                                <div class="col-md-6">
+                                    <div class="media">
+                                        <label>Enterteiner</label>
+                                        <p>@eventDto.EntertainerId</p>
+                                    </div>
+                                    <div class="media">
+                                        <label>Email</label>
+                                        <p>@enterteiner.Email</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="media">
+                                        <label>Cafe</label>
+                                        <p>@eventDto.CafeOwnerName</p>
+                                    </div>
+                                    <div class="media">
+                                        <label>Email</label>
+                                        <p>@cafeOwner.Email</p>
+                                    </div>
+                                    <!-- Maybe a follow Button-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-avatar">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" title="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="counter">
+                    <div class="row">
+                        <h2 style="text-align: center">Posts</h2>
+                    </div>
+                    @foreach (PostDto p in posts)
+                    {
+                        <RadzenCard Class="rz-my-6 rz-mx-auto">
+                            <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
+                                <RadzenImage Path="https://bootdey.com/img/Content/avatar/avatar7.png" Style="width: 100px; height: 100px; border-radius: 50%;"/>
+                                <RadzenStack Gap="0">
+                                    <RadzenText TextStyle="TextStyle.Overline" class="rz-display-flex rz-mt-2 rz-my-0"><b>@p.AuthorName</b> posted</RadzenText>
+                                    <RadzenText TextStyle="TextStyle.Body1" class="rz-display-flex rz-mt-4 rz-mb-0"><b>@p.Title</b></RadzenText>
+                                    <RadzenText TextStyle="TextStyle.Body1" class="rz-display-flex rz-mt-4 rz-mb-0">@p.Content</RadzenText>
+                                </RadzenStack>
+                            </RadzenStack>
+                            <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.End" Gap="0">
+                            </RadzenStack>
+                        </RadzenCard>
+                    }
+                </div>
+            </div>
+        </section>
+
+@code {
+    [Parameter]
+    public string Id { get; set; }
+
+    EventDto eventDto;
+    User cafeOwner = new User() { Username = "Bob", Email = "Bob@email.com" };
+    User enterteiner= new User() { Username = "John", Email = "John@email.com" };
+
+    List<PostDto> posts = new List<PostDto>()
+    {
+        /*new PostDto()
+        {
+            Title = "Post",
+            AuthorName = "John Ticker",
+            Content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum lorem a nibh aliquam, vitae viverra nisi fringilla. Pellentesque felis augue, molestie mollis placerat eu, bibendum ac diam. Maecenas a massa eu lacus consequat pulvinar. Nunc pretium, purus at posuere maximus, nunc libero scelerisque turpis, et hendrerit felis nulla ut tellus. Suspendisse molestie vehicula erat, ac ornare ipsum feugiat vitae. Nam tempus elit enim, dictum elementum turpis dictum vel. Morbi lobortis scelerisque massa, ac sodales felis lobortis in. Curabitur at porta nunc, in ornare urna.\n",
+        },
+        new PostDto()
+        {
+            Title = "Post",
+            AuthorName = "John Ticker",
+            Content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum lorem a nibh aliquam, vitae viverra nisi fringilla. Pellentesque felis augue, molestie mollis placerat eu, bibendum ac diam. Maecenas a massa eu lacus consequat pulvinar. Nunc pretium, purus at posuere maximus, nunc libero scelerisque turpis, et hendrerit felis nulla ut tellus. Suspendisse molestie vehicula erat, ac ornare ipsum feugiat vitae. Nam tempus elit enim, dictum elementum turpis dictum vel. Morbi lobortis scelerisque massa, ac sodales felis lobortis in. Curabitur at porta nunc, in ornare urna.\n",
+        },*/
+    };
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await httpClient.GetAsync("http://localhost:8080/api/events/" + Guid.Parse(Id));
+        if (response.IsSuccessStatusCode)
+        {
+            var stream = await response.Content.ReadAsStreamAsync();
+        //      my_events = await httpClient.GetFromJsonAsync<List<EventDto>>("http://localhost:8080/api/events/users/" + id, JsonOptionsHelper.DefaultJsonSerializerOptions);
+            eventDto = await JsonSerializer.DeserializeAsync<EventDto>(stream, JsonOptionsHelper.DefaultJsonSerializerOptions) ?? new EventDto();
+            ShowSuccessNotification();
+        }
+        else
+        {
+            ShowErrorNotification("An error occurred while processing your request.");
+        }
+        response = await httpClient.GetAsync("http://localhost:8080/api/posts/events/" + Guid.Parse(Id));
+        if (response.IsSuccessStatusCode)
+        {
+            var stream = await response.Content.ReadAsStreamAsync();
+    //      my_events = await httpClient.GetFromJsonAsync<List<EventDto>>("http://localhost:8080/api/events/users/" + id, JsonOptionsHelper.DefaultJsonSerializerOptions);
+            posts = await JsonSerializer.DeserializeAsync<List<PostDto>>(stream, JsonOptionsHelper.DefaultJsonSerializerOptions) ?? new List<PostDto>();
+            ShowSuccessNotification();
+        }
+        else
+        {
+            ShowErrorNotification("An error occurred while processing your request.");
+        }
+
+    }
+    private void ShowSuccessNotification()
+    {
+        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Event created", Detail = "Success Detail", Duration = 4000 });
+    }
+    private void ShowErrorNotification(string message)
+    {
+        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = message, Detail = "Unable to create the event", Duration = 4000 });
+    }
+}

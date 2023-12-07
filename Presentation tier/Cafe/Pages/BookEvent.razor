@@ -1,8 +1,7 @@
 ﻿@page "/BookEvent/{Id}"
-@using Cafe.Models
-@using global::Shared.Models
 @inject HttpClient HttpClient
 @inject NotificationService NotificationService
+@using global::Shared.Models
 @attribute [Authorize]
 <h3>BookEvent</h3>
 <RadzenTemplateForm TItem="Booking" Data="booking" Submit="@Submit">

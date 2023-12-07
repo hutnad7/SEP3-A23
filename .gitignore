@@ -1,4 +1,8 @@
 
+<<<<<<< HEAD
+*.vsidx
+*.cache
+=======
 *.gz
 DataTier1/Data/bin/Debug/net7.0/Data.deps.json
 DataTier1/Data/bin/Debug/net7.0/Data.deps.json
@@ -411,3 +415,4 @@ FodyWeavers.xsd
 
 
 *sue
+>>>>>>> 7c9ab47a80f9de9bbbc95ddfb895efbd1f1b8823

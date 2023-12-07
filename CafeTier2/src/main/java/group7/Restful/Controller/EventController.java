@@ -41,10 +41,9 @@ public class EventController {
 //    }
 
     @GetMapping({"/{id}"})
-    public ResponseEntity<Event> getEventById(@PathVariable UUID id) {
-   //     Optional<Event> eventOpt = this.eventService.getEventById(id);
-    //    return eventOpt.isPresent() ? ResponseEntity.ok((Event)eventOpt.get()) : ResponseEntity.notFound().build();
-        return null;
+    public ResponseEntity<EventDto> getEventById(@PathVariable UUID id) {
+        Optional<EventDto> eventOpt = this.eventService.getEventById(id);
+        return eventOpt.isPresent() ? ResponseEntity.ok((EventDto)eventOpt.get()) : ResponseEntity.notFound().build();
     }
 
     @GetMapping({"/users/{id}"})

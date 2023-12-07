@@ -58,18 +58,39 @@ namespace Data.Migrations
                     b.Property<Guid>("CafeOwnerId")
                         .HasColumnType("char(36)");
 
-                    b.Property<DateTime>("CreationDate")
-                        .HasColumnType("datetime(6)");
+                    b.Property<string>("CreationDate")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+                    b.Property<DateTime>("Date")
+=======
                     b.Property<DateTime>("EndDate")
+>>>>>>> 7c9ab47a80f9de9bbbc95ddfb895efbd1f1b8823
                         .HasColumnType("datetime(6)");
+=======
+                    b.Property<string>("EndDate")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+>>>>>>> Stashed changes
 
                     b.Property<Guid>("EnterteinerId")
                         .HasColumnType("char(36)");
 
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+                    b.Property<string>("StartDate")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+>>>>>>> Stashed changes
+=======
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime(6)");
 
+>>>>>>> 7c9ab47a80f9de9bbbc95ddfb895efbd1f1b8823
                     b.Property<string>("Text")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -90,14 +111,52 @@ namespace Data.Migrations
                     b.ToTable("Events");
                 });
 
+            modelBuilder.Entity("Data.Models.Post", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<Guid>("AuthorId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("CreationDate")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<Guid>("EventId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("EventId");
+
+                    b.ToTable("Posts");
+                });
+
             modelBuilder.Entity("Data.Models.User", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 
-                    b.Property<DateTime>("CreationDate")
-                        .HasColumnType("datetime(6)");
+                    b.Property<string>("CreationDate")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -135,17 +194,66 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+                            Id = new Guid("0d8d4874-3b70-445c-98ef-eb9c2306ba55"),
+                            CreationDate = new DateTime(2023, 11, 7, 16, 8, 17, 932, DateTimeKind.Local).AddTicks(2190),
+                            Email = "coffeowner@gmail.com",
+                            Firstname = "Coffe",
+                            Lastname = "Owner",
+                            PasswordHash = "-1417871599",
+=======
+                            Id = new Guid("85ca6e30-075d-438d-a239-48d2ce1076e7"),
+                            CreationDate = "05/12/2023 17:49:11",
+                            Description = "Cafe Owner",
+                            Email = "coffeowner@gmail.com",
+                            Firstname = "Coffe",
+                            Lastname = "Owner",
+                            PasswordHash = "291333243",
+>>>>>>> Stashed changes
+=======
                             Id = new Guid("75d0d2c8-d933-4c13-96fd-4cda008e3327"),
                             CreationDate = new DateTime(2023, 11, 27, 14, 37, 43, 425, DateTimeKind.Local).AddTicks(8970),
                             Email = "coffeowner@gmail.com",
                             Firstname = "Coffe",
                             Lastname = "Owner",
                             PasswordHash = "-1472469731",
+>>>>>>> 7c9ab47a80f9de9bbbc95ddfb895efbd1f1b8823
                             Role = 1,
                             Username = "CoffeOwnerTest"
                         },
                         new
                         {
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+                            Id = new Guid("2ef5bf7b-11a9-41cc-aed0-fe37e3b46e62"),
+                            CreationDate = new DateTime(2023, 11, 7, 16, 8, 17, 932, DateTimeKind.Local).AddTicks(2323),
+                            Email = "enterteiner@gmail.com",
+                            Firstname = "Enter",
+                            Lastname = "Teiner",
+                            PasswordHash = "764849110",
+=======
+                            Id = new Guid("eafa239b-dbfa-4866-b6b8-ac03cf287d22"),
+                            CreationDate = "05/12/2023 17:49:11",
+                            Description = "",
+                            Email = "normaluser@gmail.com",
+                            Firstname = "User",
+                            Lastname = "Normal",
+                            PasswordHash = "996018477",
+                            Role = 0,
+                            Username = "normal_user"
+                        },
+                        new
+                        {
+                            Id = new Guid("b488d487-58cd-496d-8e51-6952ff771c97"),
+                            CreationDate = "05/12/2023 17:49:11",
+                            Description = "Enterteiner",
+                            Email = "enterteiner@gmail.com",
+                            Firstname = "Enter",
+                            Lastname = "Teiner",
+                            PasswordHash = "-1091989785",
+>>>>>>> Stashed changes
+=======
                             Id = new Guid("a4f3e04a-8ee0-436e-b628-8873cd77508d"),
                             CreationDate = new DateTime(2023, 11, 27, 14, 37, 43, 425, DateTimeKind.Local).AddTicks(9058),
                             Email = "normaluser@gmail.com",
@@ -163,6 +271,7 @@ namespace Data.Migrations
                             Firstname = "Enter",
                             Lastname = "Teiner",
                             PasswordHash = "-822210838",
+>>>>>>> 7c9ab47a80f9de9bbbc95ddfb895efbd1f1b8823
                             Role = 2,
                             Username = "enterteiner"
                         });
@@ -206,16 +315,50 @@ namespace Data.Migrations
                     b.Navigation("Enterteiner");
                 });
 
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+            modelBuilder.Entity("Data.Models.Post", b =>
+                {
+                    b.HasOne("Data.Models.User", "Author")
+                        .WithMany("Posts")
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Data.Models.Event", "Event")
+                        .WithMany("Posts")
+                        .HasForeignKey("EventId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Author");
+
+                    b.Navigation("Event");
+                });
+
+            modelBuilder.Entity("Data.Models.Event", b =>
+                {
+                    b.Navigation("Bookings");
+
+                    b.Navigation("Posts");
+                });
+
+>>>>>>> Stashed changes
+=======
             modelBuilder.Entity("Data.Models.Event", b =>
                 {
                     b.Navigation("Bookings");
                 });
 
+>>>>>>> 7c9ab47a80f9de9bbbc95ddfb895efbd1f1b8823
             modelBuilder.Entity("Data.Models.User", b =>
                 {
                     b.Navigation("Bookings");
 
                     b.Navigation("Events");
+
+                    b.Navigation("Posts");
                 });
 #pragma warning restore 612, 618
         }

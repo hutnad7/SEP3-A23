@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Linq.Expressions;
 using Data.Models;
-using Data.State;
 using Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,19 +17,19 @@ namespace Data.Repositories
         }
         public override async Task<ICollection<Event>> GetAll()
         {
-            return await _context.Set<Event>().Include(e => e.Bookings).ToListAsync();
+            return await _context.Set<Event>().Include(e => e.Bookings).Include(e => e.CafeOwner).Include(e => e.Enterteiner).ToListAsync();
         }
         public override async Task<ICollection<Event>> GetAll(Expression<Func<Event, bool>> filter)
         {
-            return await _context.Set<Event>().Include(e => e.Bookings).Where(filter).ToListAsync();
+            return await _context.Set<Event>().Include(e => e.Bookings).Include(e => e.CafeOwner).Include(e => e.Enterteiner).Where(filter).ToListAsync();
         }
         public override async ValueTask<ICollection<Event>> GetByAsync(Expression<Func<Event, bool>> filter)
         {
-            return await _context.Events.Where(filter).Include(e => e.Bookings).Include(e=>e.Enterteiner).Include(e=>e.CafeOwner).ToListAsync();
+            return await _context.Events.Where(filter).Include(e => e.Bookings).Include(e => e.CafeOwner).Include(e=>e.Enterteiner).Include(e=>e.CafeOwner).ToListAsync();
         }
         public override async Task<Event> GetByIdAsync(Guid id)
         {
-            return await _context.Set<Event>().Include(e => e.Bookings).SingleAsync(e => e.Id == id);
+            return await _context.Set<Event>().Include(e => e.Bookings).Include(e=>e.CafeOwner).Include(e => e.Enterteiner).SingleAsync(e => e.Id == id);
         }
         public override async Task UpdateAsync(Event entity)
         {
@@ -51,7 +50,7 @@ namespace Data.Repositories
             _context.Update(dbEntity);
 
             await _context.SaveChangesAsync();
-        }
+        } 
         public override async Task<Event> CreateAsync(Event entity)
         {
             try

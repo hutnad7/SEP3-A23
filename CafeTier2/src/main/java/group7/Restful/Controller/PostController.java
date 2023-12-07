@@ -1,5 +1,9 @@
 package group7.Restful.Controller;
 
+<<<<<<< HEAD
+import group7.Restful.dto.PostDto;
+=======
+>>>>>>> 7c9ab47a80f9de9bbbc95ddfb895efbd1f1b8823
 import group7.Restful.entity.Post;
 import group7.Restful.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,10 +50,17 @@ public class PostController {
         return postOpt.isPresent() ? ResponseEntity.ok((Post)postOpt.get()) : ResponseEntity.notFound().build();
     }
 
-    @GetMapping
-    public ResponseEntity<List<Post>> getAllPostsByAuthor(@PathVariable String author){
+    @GetMapping({"/users/{author}"})
+    public ResponseEntity<List<PostDto>> getAllPostsByAuthor(@PathVariable UUID author){
         return ResponseEntity.ok(this.postService.getPostsByAuthor(author));
     }
-
+    @GetMapping({"/events/{event}"})
+    public ResponseEntity<List<PostDto>> getAllPostsByEvent(@PathVariable UUID event){
+        return ResponseEntity.ok(this.postService.getPostsByEvent(event));
+    }
+    @GetMapping
+    public ResponseEntity<List<PostDto>> getAllPosts(){
+        return ResponseEntity.ok(this.postService.getPosts());
+    }
 }
 

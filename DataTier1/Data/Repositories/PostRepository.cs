@@ -13,17 +13,17 @@ public class PostRepository : BaseRepository<Post>, IPostRepository
     
     public override async Task<ICollection<Post>> GetAll()
     {
-        return await _context.Set<Post>().Include(p => p.Author).ToListAsync();
+        return await _context.Set<Post>().Include(p => p.Author).Include(p => p.Event).ToListAsync();
     }
     
     public override async Task<ICollection<Post>> GetAll(Expression<Func<Post, bool>> filter)
     {
-        return await _context.Set<Post>().Include(p => p.Author).Where(filter).ToListAsync();
+        return await _context.Set<Post>().Include(p => p.Author).Include(p=> p.Event).Where(filter).ToListAsync();
     }
     
     public override async ValueTask<ICollection<Post>> GetByAsync(Expression<Func<Post, bool>> filter)
     {
-        return await _context.Set<Post>().Include(p => p.Author).Where(filter).ToListAsync();
+        return await _context.Set<Post>().Include(p => p.Author).Include(p=> p.Event).Where(filter).ToListAsync();
     }
     
     public override async Task<Post> GetByIdAsync(Guid id)
@@ -37,6 +37,10 @@ public class PostRepository : BaseRepository<Post>, IPostRepository
         {
             User author = _context.Set<User>().Include(u => u.Posts).FirstOrDefault(c => c.Id.Equals(entity.Author));
             entity.Author = author;
+            if (entity.Author is not null) { 
+            Event events = _context.Set<Event>().Include(u => u.CafeOwner).FirstOrDefault(c => c.Id.Equals(entity.EventId));
+            entity.Event = events;
+        }
             await _context.Posts.AddAsync(entity);
             await _context.SaveChangesAsync();
             return entity;

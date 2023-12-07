@@ -1,15 +1,11 @@
 ﻿@page "/events"
-@using Cafe.Models
-@using System.Text.Json
 @using System.Collections
-@using System.Net
-@using System.Net.Http.Headers
-@using System.Text.Json
-@using Cafe.Uitlities
-@using global::Shared.Models
 @inject NotificationService NotificationService
 @inject HttpClient HttpClient
 @inject NavigationManager _nav_manager
+@using System.Text.Json
+@using Cafe.Uitlities
+@using global::Shared.Models
 
 <h3>Events</h3>
 @foreach (Event e in events)
@@ -19,15 +15,21 @@
             <Items>
                 <RadzenAccordionItem ExpandTitle="@e.Name" Text=@e.Name>
                     <div class="row">
-                        <p class="col-12" style="text-align: end">Date: @e.Date</p>
-                        <p class="col-12" style="text-align: center">Description: @e.Description</p>
+                        <p class="col-12" style="text-align: end">@e.Date</p>
+                        <p class="col-12" style="text-align: center">@e.Description</p>
                     </div>
-                    
-                    
+                    <p>
+                        @e.Id
+                    </p>
+                    <div class="row">
+                        <div class="button-row">
+                            <p class="col-12" style="text-align: end">Date: @e.Date</p>
+                            <p class="col-12" style="text-align: center">Description: @e.Description</p>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-12">
                             <div class="button-row">
-                                <p>Available places: @e.AvailablePlaces</p>
                                 <button type="button" ButtonType="ButtonType.Submit" class="acceptbtn" Text="Book now" @onclick="@(() => _nav_manager.NavigateTo($"/BookEvent/{e.Id.ToString()}"))">Book now</button>
                             </div>
                         </div>
@@ -39,7 +41,7 @@
 
 }
 @code {
-    List<Event> events = new ();
+    List<Event> events = new List<Event>();
     
     protected override async Task OnInitializedAsync()
     {
@@ -65,9 +67,6 @@
             ShowErrorNotification($"An unexpected error occurred: {ex.Message}");
         }
     }
-
-
-    
     private void ShowErrorNotification(string message)
     {
         NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = message, Detail = "Unable to create the event", Duration = 4000 });
@@ -77,6 +76,4 @@
     {
         _nav_manager.NavigateTo("create-event");
     }
-    
-
 }

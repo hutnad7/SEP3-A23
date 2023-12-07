@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="746ef1db-a193-4e4e-917c-6021319eba52" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/group7/Grpc/Configs/GrpcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/group7/Grpc/Configs/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/group7/Grpc/dto/ChangeState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/group7/Grpc/dto/EventDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/group7/Grpc/service/AuthClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/Controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/dto/UserLoginDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/entity/Booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/entity/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/Interfaces/IAuthRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/Interfaces/IBookingRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/Interfaces/IPostRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231127133743_27nov.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/Models/Auth.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/Models/Booking.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/Repositories/AuthRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/Repositories/BookingRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/State/Accepted.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/State/EventState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/State/Pending.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/State/Refused.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/State/StateEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Service.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Service.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/.vs/Cafe/FileContentIndex/19f5a362-10cf-4df0-9082-79d7730152e6.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/.vs/Cafe/FileContentIndex/cc8812f4-d501-40d6-98ce-0e546530fe43.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Auth/CustomAuthProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Models/Appointment.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Login.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/LoginBtn.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Register.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/RegisterBtn.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Schedule.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Services/Http/JwtAuthService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Services/IAuthService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Uitlities/CustomDateTimeConverter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Uitlities/JsonOptionsHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/dto/ChangeState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/dto/EventDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/web.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/wwwroot/img/Login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/wwwroot/img/Logout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/wwwroot/img/Register.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Shared/Auth/AuthorizationPolicies.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Shared/Dtos/UserLoginDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Shared/Models/Booking.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Shared/Models/Event.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Shared/Models/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Shared/Shared.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/WebAPI/Controllers/AuthController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/WebAPI/Controllers/TestController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/WebAPI/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/WebAPI/Services/AuthService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/WebAPI/Services/IAuthService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/WebAPI/WebAPI.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/WebAPI/WebApiTests.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/WebAPI/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/group7/Grpc/service/EventClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group7/Grpc/service/EventClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/group7/Grpc/service/PostClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group7/Grpc/service/PostClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/group7/Restful/Controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/Controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/group7/Restful/Controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/Controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/group7/Restful/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/service/EventService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/product.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/product.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data tier/Data/Migrations/20231107140343_h4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Data tier/Data/Migrations/20231107140343_h4.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data tier/Data/Migrations/20231107140620_h1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Data tier/Data/Migrations/20231107140620_h1.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data tier/Data/Migrations/20231107140818_h.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Data tier/Data/Migrations/20231107140818_h.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/FileContentIndex/d8a735f8-b532-4159-961a-3c2e060b5a1d.vsidx" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/FileContentIndex/d8a735f8-b532-4159-961a-3c2e060b5a1d.vsidx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/ProjectEvaluation/datatier1.metadata.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/.vs/ProjectEvaluation/datatier1.metadata.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/ProjectEvaluation/datatier1.projects.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/.vs/ProjectEvaluation/datatier1.projects.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Class1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Class1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/DBContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/DBContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Data.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Interfaces/IEventRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Interfaces/IEventRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231107140343_h4.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231107140343_h4.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231107140343_h4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231107140343_h4.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231107140620_h1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231107140620_h1.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231107140620_h1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231107140620_h1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231107140818_h.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231107140818_h.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231107140818_h.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231107140818_h.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231127133743_27nov.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231127133743_27nov.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231130121847_enddate.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231130121847_enddate.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231130121847_enddate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231130121847_enddate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/DBContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Migrations/DBContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Models/Event.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Models/Event.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Models/Post.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Models/Post.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Repositories/CafeOwnerRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Repositories/CafeOwnerRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Repositories/EnterteinerRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Repositories/EnterteinerRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Repositories/EventRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Repositories/EventRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/Protos/proto3.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/Protos/proto3.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/Services/EventServiceImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/Services/EventServiceImpl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/Services/UserServiceImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/Services/UserServiceImpl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic tier/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic tier/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic tier/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic tier/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic tier/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic tier/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic tier/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic tier/src/main/java/group7/Grpc/DataService/EventServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic tier/src/main/java/group7/Grpc/GrpcApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group7/GrpcApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic tier/src/main/java/group7/Restful/Controller/EventController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic tier/src/main/java/group7/Restful/entity/Event.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic tier/src/main/java/group7/Restful/service/EventService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Logic tier/src/main/proto/product.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/.vs/Cafe/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/.vs/Cafe/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/.vs/Cafe/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/.vs/Cafe/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/.vs/Cafe/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/.vs/Cafe/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/.vs/ProjectEvaluation/cafe.metadata.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/.vs/ProjectEvaluation/cafe.metadata.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/.vs/ProjectEvaluation/cafe.projects.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/.vs/ProjectEvaluation/cafe.projects.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/App.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Cafe.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Cafe.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Models/Entertainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Shared/Models/Entertainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Models/Event.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Models/Event.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/BookEvent.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/BookEvent.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Counter.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/CreateEvent.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/CreateEvent.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/CreatePost.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/CreatePost.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Events.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Events.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/FetchData.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Shared/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Shared/MainLayout.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Shared/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Shared/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/_Imports.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/wwwroot/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/wwwroot/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/WebAPI/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/WebAPI/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/WebAPI/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/WebAPI/appsettings.Development.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2Z7jk9CePggxagx5OWaOrXVjR1Y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Merging denitsa",
+    "last_opened_file_path": "C:/Users/denim/Documents/VIA/3-Semester/SDJ3/SEP3-05-12/SEP3-A23/CafeTier2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="GrpcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="CafeTier2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="group7.GrpcApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="746ef1db-a193-4e4e-917c-6021319eba52" name="Changes" comment="" />
+      <created>1701780156653</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701780156653</updated>
+      <workItem from="1701780159162" duration="6537000" />
+      <workItem from="1701857999724" duration="10675000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/group7/Restful/Controller/EventController.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/group7/Restful/service/EventService.java</url>
+          <line>197</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/group7/Restful/service/PostService.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
