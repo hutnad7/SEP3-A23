@@ -17,10 +17,6 @@ public static class AuthorizationPolicies
 
             options.AddPolicy("MustBeUser", a =>
                 a.RequireAuthenticatedUser().RequireClaim("Role", "User"));
-            
-            options.AddPolicy("MustBeAdmin", a =>
-                a.RequireAuthenticatedUser().RequireClaim("Role", "Admin"));
-            
         });
     }
 }

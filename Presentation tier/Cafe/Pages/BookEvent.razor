@@ -2,8 +2,11 @@
 @inject HttpClient HttpClient
 @inject NotificationService NotificationService
 @using global::Shared.Models
+
 @attribute [Authorize]
+
 <h3>BookEvent</h3>
+
 <RadzenTemplateForm TItem="Booking" Data="booking" Submit="@Submit">
     <RadzenTextBox @bind-Value="booking.FirstName" Name="First Name" Placeholder="First Name" Style="width:100%; margin-bottom: 20px;" />
     <RadzenTextBox @bind-Value="booking.LastName" Name="Last Name" Placeholder="Last Name" Style="width:100%; margin-bottom: 20px;" />
