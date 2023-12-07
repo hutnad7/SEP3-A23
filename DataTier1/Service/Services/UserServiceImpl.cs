@@ -1,5 +1,6 @@
 ﻿using Data.Interfaces;
 using Data.Models;
+using Data.State;
 using Grpc.Core;
 
 namespace Service.Services
@@ -26,8 +27,8 @@ namespace Service.Services
                     Lastname = request.LastName,
                     Username = request.Email + "u",
                     Email = request.Email,
-                    CreationDate = DateTime.Now,
-                    Role = (Role)Enum.Parse(typeof(Role), request.Role),
+                    CreationDate = DateTime.Now.ToString(),
+                    Role = Enum.Parse<Role>(request.Role),
                     PasswordHash = request.Password
                 };
 

@@ -1,10 +1,13 @@
 ﻿@page "/create-post"
 @using Cafe.Models
+@using Cafe.Services
 @using global::Shared.Models
 @inject NotificationService NotificationService
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IAuthService JwtAuthService
 @inject HttpClient HttpClient
-
 @attribute [Authorize("MustBeCafeOwner")]
+
 <h3>CreatePost</h3>
 
 <RadzenTemplateForm TItem="Post" Data=Post Submit="@SubmitPost">
@@ -17,8 +20,15 @@
 
 @code {
     public Post Post = new Post();
-    IEnumerable<Entertainer> entertainers;
-    
+    IEnumerable<UserPage> entertainers;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var jwt = JwtAuthService.GetJwt();
+        Console.WriteLine("JWT :: " + jwt);
+           ;
+    }
+
     private async Task SubmitPost(Post post)
     {
         try

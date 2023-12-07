@@ -1,12 +1,12 @@
 ﻿@page "/BookEvent/{Id}"
-@using Cafe.Models
-@using global::Shared.Models
 @inject HttpClient HttpClient
 @inject NotificationService NotificationService
+@using global::Shared.Models
 
 @attribute [Authorize]
 
 <h3>BookEvent</h3>
+
 <RadzenTemplateForm TItem="Booking" Data="booking" Submit="@Submit">
     <RadzenTextBox @bind-Value="booking.FirstName" Name="First Name" Placeholder="First Name" Style="width:100%; margin-bottom: 20px;" />
     <RadzenTextBox @bind-Value="booking.LastName" Name="Last Name" Placeholder="Last Name" Style="width:100%; margin-bottom: 20px;" />
@@ -34,16 +34,15 @@
     {
         try
         {
-    /*var response = await HttpClient.PostAsJsonAsync("http://localhost:8080/api/events", evt);
+    var response = await HttpClient.PostAsJsonAsync("http://localhost:8080/api/books", booking);
             if (response.IsSuccessStatusCode)
             {
                 ShowSuccessNotification();
-                ResetForm();
             }
             else
             {
                 ShowErrorNotification("An error occurred while processing your request.");
-            }*/
+            }
         }
         catch (HttpRequestException)
         {
@@ -58,5 +57,10 @@
     private void ShowErrorNotification(string message)
     {
         NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = message, Detail = "Unable to create the event", Duration = 4000 });
+    }
+    
+    private void ShowSuccessNotification()
+    {
+        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Event created", Detail = "Success Detail", Duration = 4000 });
     }
 }

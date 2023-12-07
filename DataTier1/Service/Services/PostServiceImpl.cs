@@ -1,5 +1,6 @@
 ﻿using Data.Interfaces;
 using Data.Models;
+using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 
 namespace Service.Services;
@@ -21,7 +22,10 @@ public class PostServiceImpl: PostService.PostServiceBase
         {
             Id = Guid.NewGuid(),
             Content = request.Content,
-            Title = request.Title
+            Title = request.Title,
+            EventId = Guid.Parse(request.Event),
+            AuthorId = Guid.Parse(request.Author),
+            CreationDate = DateTime.Now.ToString()
         };
         Post post = await _postRepository.CreateAsync(p);
         CreatePostResponse response = new CreatePostResponse()
@@ -32,5 +36,72 @@ public class PostServiceImpl: PostService.PostServiceBase
             Title = post.Title
         };
         return response;
+    }
+    public override async Task<GetPostsResponse> getAllPosts(Empty request, ServerCallContext context)
+    {
+        ICollection<Post> posts = await _postRepository.GetAll();
+        ICollection<GetPostResponse> response = new List<GetPostResponse>();
+        foreach (Post post in posts)
+        {
+            GetPostResponse p = new GetPostResponse()
+            {
+                Id = post.Id.ToString(),
+                Author = post.AuthorId.ToString(),
+                Content = post.Content,
+                Title = post.Title,
+                Date = post.CreationDate.ToString(),
+                EventId = post.EventId.ToString(),
+                AuthorName = post.Author.Username,
+            };
+            response.Add(p);
+        }
+        GetPostsResponse getPostsResponse = new GetPostsResponse();
+        getPostsResponse.Posts.Add(response);
+        return getPostsResponse;
+    }
+    public override async Task<GetPostsResponse> getAllPostsByAuthorId(GetRequest request, ServerCallContext context)
+    {
+        ICollection<Post> posts = await _postRepository.GetByAsync(e => e.AuthorId.Equals(request.Id));
+        ICollection<GetPostResponse> response = new List<GetPostResponse>();
+        foreach (Post post in posts)
+        {
+            GetPostResponse p = new GetPostResponse()
+            {
+                Id = post.Id.ToString(),
+                Author = post.AuthorId.ToString(),
+                Content = post.Content,
+                Title = post.Title,
+                Date = post.CreationDate.ToString(),
+                EventId = post.EventId.ToString(),
+                AuthorName = post.Author.Username,
+            };
+            response.Add(p);
+        }
+        GetPostsResponse getPostsResponse = new GetPostsResponse();
+        getPostsResponse.Posts.Add(response);
+        return getPostsResponse;
+    }
+    public override async Task<GetPostsResponse> getAllPostsByEventId(GetRequest request, ServerCallContext context)
+    {
+        ICollection<Post> postss = await _postRepository.GetAll();
+        ICollection<Post> posts = await _postRepository.GetByAsync(e => e.EventId.Equals(Guid.Parse(request.Id)));
+        ICollection<GetPostResponse> response = new List<GetPostResponse>();
+        foreach (Post post in posts)
+        {
+            GetPostResponse p = new GetPostResponse()
+            {
+                Id = post.Id.ToString(),
+                Author = post.AuthorId.ToString(),
+                Content = post.Content,
+                Title = post.Title,
+                Date = post.CreationDate.ToString(),
+                EventId = post.EventId.ToString(),
+                AuthorName = post.Author.Username,
+            };
+            response.Add(p);
+        }
+        GetPostsResponse getPostsResponse = new GetPostsResponse();
+        getPostsResponse.Posts.Add(response);
+        return getPostsResponse;
     }
 }

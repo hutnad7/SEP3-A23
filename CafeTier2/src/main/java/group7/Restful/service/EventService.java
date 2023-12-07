@@ -17,12 +17,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
-
-
-import group7.protobuf.CreateEventRequest;
-import group7.protobuf.CreateEventResponse;
-import group7.protobuf.GetEventResponse;
-import group7.protobuf.GetEventsResponse;
 import group7.protobuf.*;
 import org.springframework.stereotype.Service;
 
@@ -69,7 +63,7 @@ public class EventService {
         }
 
     public Event acceptState(UUID id){
-        GetEventResponse response = eventClientService.acceptEvent(GetEventRequest.newBuilder().setId(id.toString()).build());
+        GetEventResponse response = eventClientService.acceptEvent(GetRequest.newBuilder().setId(id.toString()).build());
         Event e = new Event(){
             {
                 setId(UUID.fromString(response.getId()));
@@ -86,7 +80,7 @@ public class EventService {
         return e;
     }
     public Event refuseEvent(UUID id){
-        GetEventResponse response = eventClientService.refuseEvent(GetEventRequest.newBuilder().setId(id.toString()).build());
+        GetEventResponse response = eventClientService.refuseEvent(GetRequest.newBuilder().setId(id.toString()).build());
         Event e = new Event(){
             {
                 setId(UUID.fromString(response.getId()));
@@ -103,7 +97,7 @@ public class EventService {
         return e;
     }
     public Event reverseState(UUID id){
-        GetEventResponse response = eventClientService.reverseState(GetEventRequest.newBuilder().setId(id.toString()).build());
+        GetEventResponse response = eventClientService.reverseState(GetRequest.newBuilder().setId(id.toString()).build());
         Event e = new Event(){
             {
                 setId(UUID.fromString(response.getId()));
@@ -120,7 +114,7 @@ public class EventService {
         return e;
     }
     public ArrayList<EventDto> getEventByUserId(UUID id) throws ParseException {
-        GetEventRequest request = GetEventRequest.newBuilder().setId(id.toString()).build();
+        GetRequest request = GetRequest.newBuilder().setId(id.toString()).build();
         GetEventsByUserResponse response = eventClientService.getEventsByUserId(request);
         ArrayList<EventDto> events = new ArrayList<>();
         SimpleDateFormat parser = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
@@ -159,11 +153,26 @@ public class EventService {
         return events;
     }
 
-//    public Optional<Event> getEventById(UUID id) {
-//        return this.events.stream().filter((e) -> {
-//            return e.getId().equals(id);
-//        }).findFirst();
-//    }
+    public Optional<EventDto> getEventById(UUID id) {
+        GetRequest request = GetRequest.newBuilder().setId(id.toString()).build();
+        GetEventResponse response = eventClientService.getEventById(request);
+        EventDto event = new EventDto() {
+            {
+                setId(UUID.fromString(response.getId()));
+                setName(response.getName());
+                setDescription(response.getDescription());
+                setEntertainerId(UUID.fromString(response.getEntertainerId()));
+                setStartDate(response.getStartDate());
+                setEndDate(response.getEndDate());
+                setAvailablePlaces(response.getAvailablePlaces());
+                setCafeOwnerId(UUID.fromString(response.getCafeOwnerId()));
+                setStatus(response.getState());
+                setCafeOwnerName(response.getCafeOwner());
+                setEntertainerName(response.getEntertainer());
+            }
+        };
+        return Optional.of(event);
+    }
 
 //    public Optional<Event> updateEvent(UUID id, Event event) {
 //        Optional<Event> existingEventOpt = this.getEventById(id);
@@ -190,8 +199,8 @@ public class EventService {
                 UUID.fromString(event.getId()),
                 event.getName(),
                 event.getDescription(),
-                UUID.fromString(event.getEntertainer()),
-                UUID.fromString(event.getCafeOwner()),
+                UUID.fromString(event.getEntertainerId()),
+                UUID.fromString(event.getCafeOwnerId()),
                 event.getStartDate(),
                 event.getEndDate(),
                 event.getState(),

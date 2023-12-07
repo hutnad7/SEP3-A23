@@ -12,7 +12,9 @@ public class Post : BaseEntity
     public User Author { get; set; }
     [Required]
     public Guid AuthorId { get; set; }
+    public Event Event { get; set; }
+    public Guid EventId { get; set; }
+
     [Required]
-    public DateTime CreationDate { get; set; }
-    
+    public string CreationDate { get; set; }
 }

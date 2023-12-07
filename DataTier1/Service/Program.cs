@@ -20,6 +20,7 @@ builder.Services.AddScoped<IEnterteinerRepository, EnterteinerRepository>();
 builder.Services.AddScoped<ICafeOwnerRepository, CafeOwnerRepository>();
 builder.Services.AddScoped<IEventRepository, EventRepository>();
 builder.Services.AddScoped<IBookingRepository, BookingRepository>();
+builder.Services.AddScoped<IPostRepository, PostRepository>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: "AllowBlazorOrigin",
@@ -37,6 +38,7 @@ app.UseCors("AllowBlazorOrigin");
 // Configure the HTTP request pipeline.
 app.MapGrpcService<Service.Services.EventServiceImpl>();
 app.MapGrpcService<Service.Services.UserServiceImpl>();
+app.MapGrpcService<Service.Services.PostServiceImpl>();
 app.MapGet("/", () => "Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909");
 
  app.Run();

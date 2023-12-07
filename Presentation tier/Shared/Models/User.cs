@@ -4,6 +4,7 @@ namespace Shared.Models;
 
 public class User
 {
+    public int Id { get; set; }
     [JsonPropertyName("firstName")]
     public string FirstName { get; set; }
     [JsonPropertyName("lastName")]
@@ -17,3 +18,4 @@ public class User
     [JsonPropertyName("role")]
     public string Role { get; set; }
 }
+

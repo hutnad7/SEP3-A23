@@ -43,8 +43,9 @@ namespace Data
                     Lastname = "Owner",
                     Username = "CoffeOwnerTest",
                     Email = "coffeowner@gmail.com",
-                    CreationDate = DateTime.Now,
+                    CreationDate = DateTime.Now.ToString(),
                     Role = Role.CafeOwner,
+                    Description = "Cafe Owner",
                     PasswordHash = "CafePa33word".GetHashCode().ToString(),
                 });
             modelBuilder.Entity<User>().HasData(
@@ -55,8 +56,9 @@ namespace Data
                     Lastname = "Normal",
                     Username = "normal_user",
                     Email = "normaluser@gmail.com",
-                    CreationDate = DateTime.Now,
+                    CreationDate = DateTime.Now.ToString(),
                     Role = Role.User,
+                    Description = "", 
                     PasswordHash = "UserPa33word".GetHashCode().ToString(),
                 });
             modelBuilder.Entity<User>().HasData(
@@ -67,8 +69,9 @@ namespace Data
                     Lastname = "Teiner",
                     Username = "enterteiner",
                     Email = "enterteiner@gmail.com",
-                    CreationDate = DateTime.Now,
-                    Role = Role.Entertainer,
+                    Description = "Enterteiner",
+                    CreationDate = DateTime.Now.ToString(),
+                    Role = Role.Enterteiner,
                     PasswordHash = "EntrPa33word".GetHashCode().ToString(),
                 });
             base.OnModelCreating(modelBuilder);
