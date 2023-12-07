@@ -21,9 +21,4 @@
     <PackageReference Include="MySqlConnector" Version="2.2.7" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Remove="Migrations\20231127133743_27nov.cs" />
-    <Compile Remove="Migrations\20231127133743_27nov.Designer.cs" />
-  </ItemGroup>
-
 </Project>

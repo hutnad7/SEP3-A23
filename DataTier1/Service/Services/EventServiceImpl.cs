@@ -129,6 +129,8 @@ namespace Service.Services
                 EndDate = ev.EndDate.ToString(),
                 AvailablePlaces = ev.AvailablePlaces,
                 State = ev.state.ToString(),
+                CafeOwnerId = ev.CafeOwnerId.ToString(),
+                EntertainerId = ev.EnterteinerId.ToString(),
             };
             return response;
         }
@@ -154,7 +156,7 @@ namespace Service.Services
             };
             return response;
         }
-        public override async Task<GetEventResponse> AcceptEvent(GetEventRequest request, ServerCallContext context)
+        public override async Task<GetEventResponse> AcceptEvent(GetRequest request, ServerCallContext context)
         {
             Event @event = await _eventRepository.GetByIdAsync(Guid.Parse(request.Id));
             Event result = await _eventRepository.AcceptEventAsync(@event);
