@@ -10,7 +10,6 @@ public class User {
     private String Email;
     private String Role;
     private UUID Id;
-
     private String Password;
 
     public User() {

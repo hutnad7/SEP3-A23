@@ -1,0 +1,81 @@
+﻿@page "/user/{UserId:int}"
+@using Cafe.Models
+@using global::Shared.Models
+@using System.Net.Http.Json;
+@using System.Text.Json;
+@inject HttpClient HttpClient
+
+<h3>@FirstName</h3>
+<h4>@LastName</h4>
+<h4>@UserName</h4>
+<h5>@Address</h5>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Content</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var post in Posts)
+    {
+        <tr>
+            <td>@post.Title</td>
+            <td>@post.Content</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+@code {
+    [Parameter] public int UserId { get; set; }
+    string FirstName;
+    string LastName;
+    string UserName;
+    string Address;
+    List<Post> Posts = new List<Post>();
+
+    private async Task GetPosts()
+    {
+        var response = await HttpClient.GetAsync("http://localhost:8080/api/posts");
+        if (response.IsSuccessStatusCode)
+        {
+            var jsonString = await response.Content.ReadAsStringAsync();
+            Posts = JsonSerializer.Deserialize<List<Post>>(jsonString);
+        }
+        else
+        {
+    // Handle error
+        }
+    }
+
+    private async Task GetData()
+    {
+        var response = await HttpClient.GetAsync("http://localhost:8080/api/users");
+        if (response.IsSuccessStatusCode)
+        {
+            var jsonString = await response.Content.ReadAsStringAsync();
+            var users = JsonSerializer.Deserialize<IEnumerable<User>>(jsonString);
+            var user = users.FirstOrDefault(u => u.Id == UserId);
+            if (user != null)
+            {
+                FirstName = user.FirstName;
+                LastName = user.LastName;
+                UserName = user.Username;
+                Address = user.Address;
+            }
+        }
+        else
+        {
+    // Handle error
+        }
+    }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetPosts();
+        await GetData();
+    }
+}

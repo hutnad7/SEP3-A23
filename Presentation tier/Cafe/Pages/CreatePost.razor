@@ -1,6 +1,9 @@
 ﻿@page "/create-post"
 @using Cafe.Models
+@using Cafe.Services
 @inject NotificationService NotificationService
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IAuthService JwtAuthService
 
 @inject HttpClient HttpClient
 
@@ -17,8 +20,15 @@
 
 @code {
     public Post Post = new Post();
-    IEnumerable<Entertainer> entertainers;
-    
+    IEnumerable<UserPage> entertainers;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var jwt = JwtAuthService.GetJwt();
+        Console.WriteLine("JWT :: " + jwt);
+           ;
+    }
+
     private async Task SubmitPost(Post post)
     {
         try
