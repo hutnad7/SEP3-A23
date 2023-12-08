@@ -1,13 +1,19 @@
 ﻿@page "/create-post/{Id}"
 @using Cafe.Models
+@using Cafe.Services
 @using global::Shared.Models
 @using Blazored.LocalStorage
 @using Cafe.Services
 @inject NotificationService NotificationService
+<<<<<<< HEAD
 @inject ILocalStorageService _LocalStorage;
 @inject IAuthService AuthService;
+=======
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IAuthService JwtAuthService
+>>>>>>> aba4e3a47ed61f31e95ac4a7561ec14885b47a5e
 @inject HttpClient HttpClient
-
+@attribute [Authorize("MustBeCafeOwner")]
 
 <h3>CreatePost</h3>
 <RadzenTemplateForm TItem="Post" Data=Post Submit="@SubmitPost">
@@ -24,8 +30,15 @@
 
     public string token;
     public Post Post = new Post();
-    IEnumerable<Entertainer> entertainers;
-    
+    IEnumerable<UserPage> entertainers;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var jwt = JwtAuthService.GetJwt();
+        Console.WriteLine("JWT :: " + jwt);
+           ;
+    }
+
     private async Task SubmitPost(Post post)
     {
         try

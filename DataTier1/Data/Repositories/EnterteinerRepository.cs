@@ -18,15 +18,15 @@ namespace Data.Repositories
 
         public override async Task<ICollection<User>> GetAll()
         {
-            return await _context.Set<User>().Where(e=> e.Role.Equals(Role.Enterteiner)).Include(e => e.Bookings).Include(e=> e.Events).ToListAsync();
+            return await _context.Set<User>().Where(e=> e.Role.Equals(Role.Entertainer)).Include(e => e.Bookings).Include(e=> e.Events).ToListAsync();
         }
         public override async Task<ICollection<User>> GetAll(Expression<Func<User, bool>> filter)
         {
-            return await _context.Set<User>().Where(e => e.Role.Equals(Role.Enterteiner)).Include(e => e.Events).Include(e => e.Bookings).Where(filter).ToListAsync();
+            return await _context.Set<User>().Where(e => e.Role.Equals(Role.Entertainer)).Include(e => e.Events).Include(e => e.Bookings).Where(filter).ToListAsync();
         }
         public override async ValueTask<ICollection<User>> GetByAsync(Expression<Func<User, bool>> filter)
         {
-            return await _context.Set<User>().Where(e => e.Role.Equals(Role.Enterteiner)).Include(e => e.Events).Include(e => e.Bookings).Where(filter).ToListAsync();
+            return await _context.Set<User>().Where(e => e.Role.Equals(Role.Entertainer)).Include(e => e.Events).Include(e => e.Bookings).Where(filter).ToListAsync();
         }
         public override async Task<User> GetByIdAsync(Guid id)
         {

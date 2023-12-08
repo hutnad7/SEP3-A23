@@ -11,7 +11,6 @@
 @inject ILocalStorageService _LocalStorage;
 @attribute [Authorize("MustBeCafeOwner")]
 
-
 <h3>Create event</h3>
 
 <RadzenTemplateForm TItem="Event" Data=Event Submit="@SubmitEvent">
@@ -32,7 +31,7 @@
 
 @code {
     public Event Event = new();
-    IEnumerable<Entertainer> entertainers;
+    IEnumerable<User> entertainers;
 
     protected override async Task OnInitializedAsync()
     {
@@ -41,18 +40,18 @@
         
         CultureInfo provider = CultureInfo.CreateSpecificCulture("en-GB");
 
-        entertainers = new List<Entertainer>
+        entertainers = new List<User>
         {
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "John", LastName = "Doe" },
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "Jane", LastName = "Smith" },
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "Bob", LastName = "Brown" },
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "Alice", LastName = "White" },
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "Charlie", LastName = "Green" },
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "David", LastName = "Black" },
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "Eva", LastName = "Blue" },
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "Frank", LastName = "Gray" },
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "Grace", LastName = "Red" },
-            new Entertainer { Id = Guid.NewGuid(), FirstName = "Harry", LastName = "Yellow" }
+            new User { Id = Guid.NewGuid(), FirstName = "John", LastName = "Doe" },
+            new User { Id = Guid.NewGuid(), FirstName = "Jane", LastName = "Smith" },
+            new User { Id = Guid.NewGuid(), FirstName = "Bob", LastName = "Brown" },
+            new User { Id = Guid.NewGuid(), FirstName = "Alice", LastName = "White" },
+            new User { Id = Guid.NewGuid(), FirstName = "Charlie", LastName = "Green" },
+            new User { Id = Guid.NewGuid(), FirstName = "David", LastName = "Black" },
+            new User { Id = Guid.NewGuid(), FirstName = "Eva", LastName = "Blue" },
+            new User { Id = Guid.NewGuid(), FirstName = "Frank", LastName = "Gray" },
+            new User { Id = Guid.NewGuid(), FirstName = "Grace", LastName = "Red" },
+            new User { Id = Guid.NewGuid(), FirstName = "Harry", LastName = "Yellow" }
         };
 
         Event.EntertainerId = Guid.NewGuid();

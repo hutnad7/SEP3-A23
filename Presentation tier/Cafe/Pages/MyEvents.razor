@@ -10,6 +10,8 @@
 @inject NotificationService NotificationService
 @inject HttpClient httpClient
 
+@attribute [Authorize(policy:"MustBeEntertainer")]
+
 <RadzenFieldset AllowCollapse="true" Style="width: 700px; margin: 40px auto;" ExpandTitle="Expand events." CollapseTitle="Collapse events."
                 ExpandAriaLabel="Expand the list of events." CollapseAriaLabel="Collapse the list of events.">
     <HeaderTemplate>

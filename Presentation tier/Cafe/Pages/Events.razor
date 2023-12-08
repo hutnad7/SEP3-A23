@@ -7,6 +7,8 @@
 @using Cafe.Uitlities
 @using global::Shared.Models
 
+@attribute [Authorize]
+
 <h3>Events</h3>
 @foreach (Event e in events)
 {
