@@ -5,10 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="746ef1db-a193-4e4e-917c-6021319eba52" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/group7/Grpc/service/UserClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/Controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/CafeOwners.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Entertainers.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/group7/Restful/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/proto/product.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/product.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/DBContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/DBContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/CreateEvent.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/CreateEvent.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/UserPage.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/UserPage.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Shared/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Shared/Models/User.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,11 +57,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/denim/Documents/VIA/3-Semester/SDJ3/SEP3-05-12/SEP3-A23/CafeTier2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -61,6 +76,13 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-8f899f12" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -71,6 +93,7 @@
       <updated>1701780156653</updated>
       <workItem from="1701780159162" duration="6537000" />
       <workItem from="1701857999724" duration="13893000" />
+      <workItem from="1702042361219" duration="619000" />
     </task>
     <servers />
   </component>
@@ -80,11 +103,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/group7/Restful/service/PostService.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/group7/Restful/Controller/BookController.java</url>
           <line>37</line>

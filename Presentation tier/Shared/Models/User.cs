@@ -20,5 +20,8 @@ public class User
     public string Role { get; set; }
     [JsonPropertyName("description")]
     public string Description { get; set; }
+    [JsonPropertyName("address")]    
+    public string? Address { get; set; }
+
 }
 
