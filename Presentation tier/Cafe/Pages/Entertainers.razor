@@ -10,7 +10,6 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
                 <th>Username</th>
                 <th>FirstName</th>
                 <th>LastName</th>
@@ -18,14 +17,13 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var owner in _entertainers)
+            @foreach (var entertainer in _entertainers)
             {
                 <tr>
-                    <td>@owner.Id</td>
-                    <td>@owner.Username</td>
-                    <td>@owner.FirstName</td>
-                    <td>@owner.LastName</td>
-                    <td>@owner.Role</td>
+                    <td><NavLink href="/user/@entertainer.Id">@entertainer.Username</NavLink></td>
+                    <td>@entertainer.FirstName</td>
+                    <td>@entertainer.LastName</td>
+                    <td>@entertainer.Role</td>
                 </tr>
             }
         </tbody>

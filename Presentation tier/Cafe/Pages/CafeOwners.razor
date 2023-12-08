@@ -12,7 +12,6 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
                 <th>Username</th>
                 <th>FirstName</th>
                 <th>LastName</th>
@@ -23,8 +22,7 @@
             @foreach (var owner in _owners)
             {
                 <tr>
-                    <td>@owner.Id</td>
-                    <td>@owner.Username</td>
+                    <td><NavLink href="/user/@owner.Id">@owner.Username</NavLink></td>
                     <td>@owner.FirstName</td>
                     <td>@owner.LastName</td>
                     <td>@owner.Role</td>
