@@ -1,5 +1,10 @@
 ﻿@page "/"
-
+@using System.Security.Claims
+@using Blazored.LocalStorage
+@using Cafe.Services
+@using global::Shared.Auth
+@inject IAuthService jwtService;
+@inject ILocalStorageService _LocalStorage;
 <PageTitle>Index</PageTitle>
 
 <h1>Hello, world!</h1>
@@ -7,3 +12,12 @@
 Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?"/>
+
+@code
+{
+    string token;
+    protected override async Task OnInitializedAsync()
+    {
+        token =  await _LocalStorage.GetItemAsStringAsync("token");
+    }
+}

@@ -1,10 +1,17 @@
 ﻿@page "/Event/{Id}"
 @using Cafe.dto
 @using Cafe.Uitlities
+@using global::Shared.Auth
 @using global::Shared.Dtos
 @using global::Shared.Models
 @using JsonSerializer = System.Text.Json.JsonSerializer
+@using Blazored.LocalStorage
+@using System.Dynamic
+@inject NavigationManager _nav_manager
+@using Cafe.Services
 @inject HttpClient httpClient;
+@inject ILocalStorageService _LocalStorage;
+@inject IAuthService authService;
 @inject NotificationService NotificationService
 
 <section class="section about-section gray-bg" id="about">
@@ -48,7 +55,11 @@
                 <div class="counter">
                     <div class="row">
                         <h2 style="text-align: center">Posts</h2>
-                    </div>
+                        @if (authService.GetId(token).Result.Equals(eventDto.CafeOwnerId) || authService.GetId(token).Result.Equals(eventDto.EntertainerId))
+                        {
+                            <RadzenButton Click=@OnPost Text="Create a Post" />
+                        }
+                        </div>
                     @foreach (PostDto p in posts)
                     {
                         <RadzenCard Class="rz-my-6 rz-mx-auto">
@@ -72,10 +83,11 @@
     [Parameter]
     public string Id { get; set; }
 
+    public string token;
     EventDto eventDto;
     User cafeOwner = new User() { Username = "Bob", Email = "Bob@email.com" };
     User enterteiner= new User() { Username = "John", Email = "John@email.com" };
-
+    string id;
     List<PostDto> posts = new List<PostDto>()
     {
         /*new PostDto()
@@ -93,6 +105,7 @@
     };
     protected override async Task OnInitializedAsync()
     {
+        token = await _LocalStorage.GetItemAsStringAsync("token");
         var response = await httpClient.GetAsync("http://localhost:8080/api/events/" + Guid.Parse(Id));
         if (response.IsSuccessStatusCode)
         {
@@ -126,5 +139,10 @@
     private void ShowErrorNotification(string message)
     {
         NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = message, Detail = "Unable to create the event", Duration = 4000 });
+    }
+
+    void OnPost()
+    {
+        _nav_manager.NavigateTo("create-post/" + eventDto.Id);
     }
 }

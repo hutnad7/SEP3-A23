@@ -5,7 +5,7 @@ namespace Shared.Models;
 public class User
 {
     [JsonPropertyName("id")]
-    public int Id { get; set; }
+    public Guid Id { get; set; }
     [JsonPropertyName("firstName")]
     public string FirstName { get; set; }
     [JsonPropertyName("lastName")]
