@@ -2,6 +2,7 @@
 @using global::Shared.Models
 @using System.Text.Json
 @inject HttpClient HttpClient
+@attribute [Authorize]
 
 <h3>Entertainers</h3>
 @if (_entertainers != null)
