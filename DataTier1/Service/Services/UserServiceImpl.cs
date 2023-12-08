@@ -28,6 +28,7 @@ namespace Service.Services
                     Username = request.Email + "u",
                     Email = request.Email,
                     CreationDate = DateTime.Now.ToString(),
+                    Description = request.Description,
                     Role = Enum.Parse<Role>(request.Role),
                     PasswordHash = request.Password
                 };
@@ -38,6 +39,7 @@ namespace Service.Services
                 {
                     FisrtName = createdUser.Firstname,
                     LastName = createdUser.Lastname,
+                    Description = createdUser.Description,
                     Username = createdUser.Username,
                     Email = createdUser.Email,
                     Role = createdUser.Role.ToString(),

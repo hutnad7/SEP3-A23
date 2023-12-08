@@ -2,11 +2,13 @@
 @using Cafe.Services
 @using Cafe.Services.Http
 @using System.Globalization
+@using Blazored.LocalStorage
 @using global::Shared.Models
 @inject NotificationService NotificationService
 @inject HttpClient HttpClient
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject IAuthService JwtAuthService
+@inject ILocalStorageService _LocalStorage;
 @attribute [Authorize("MustBeCafeOwner")]
 
 <h3>Create event</h3>
@@ -29,27 +31,27 @@
 
 @code {
     public Event Event = new();
-    IEnumerable<UserPage> entertainers;
+    IEnumerable<User> entertainers;
 
     protected override async Task OnInitializedAsync()
     {
-        var jwt = JwtAuthService.GetJwt();
+        var jwt = _LocalStorage.GetItemAsStringAsync("token");
         Console.WriteLine("JWT :: " + jwt);;
         
         CultureInfo provider = CultureInfo.CreateSpecificCulture("en-GB");
 
-        entertainers = new List<UserPage>
+        entertainers = new List<User>
         {
-            new UserPage { Id = Guid.NewGuid(), FirstName = "John", LastName = "Doe" },
-            new UserPage { Id = Guid.NewGuid(), FirstName = "Jane", LastName = "Smith" },
-            new UserPage { Id = Guid.NewGuid(), FirstName = "Bob", LastName = "Brown" },
-            new UserPage { Id = Guid.NewGuid(), FirstName = "Alice", LastName = "White" },
-            new UserPage { Id = Guid.NewGuid(), FirstName = "Charlie", LastName = "Green" },
-            new UserPage { Id = Guid.NewGuid(), FirstName = "David", LastName = "Black" },
-            new UserPage { Id = Guid.NewGuid(), FirstName = "Eva", LastName = "Blue" },
-            new UserPage { Id = Guid.NewGuid(), FirstName = "Frank", LastName = "Gray" },
-            new UserPage { Id = Guid.NewGuid(), FirstName = "Grace", LastName = "Red" },
-            new UserPage { Id = Guid.NewGuid(), FirstName = "Harry", LastName = "Yellow" }
+            new User { Id = Guid.NewGuid(), FirstName = "John", LastName = "Doe" },
+            new User { Id = Guid.NewGuid(), FirstName = "Jane", LastName = "Smith" },
+            new User { Id = Guid.NewGuid(), FirstName = "Bob", LastName = "Brown" },
+            new User { Id = Guid.NewGuid(), FirstName = "Alice", LastName = "White" },
+            new User { Id = Guid.NewGuid(), FirstName = "Charlie", LastName = "Green" },
+            new User { Id = Guid.NewGuid(), FirstName = "David", LastName = "Black" },
+            new User { Id = Guid.NewGuid(), FirstName = "Eva", LastName = "Blue" },
+            new User { Id = Guid.NewGuid(), FirstName = "Frank", LastName = "Gray" },
+            new User { Id = Guid.NewGuid(), FirstName = "Grace", LastName = "Red" },
+            new User { Id = Guid.NewGuid(), FirstName = "Harry", LastName = "Yellow" }
         };
 
         Event.EntertainerId = Guid.NewGuid();

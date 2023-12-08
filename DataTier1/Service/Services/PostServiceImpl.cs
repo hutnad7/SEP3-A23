@@ -18,15 +18,32 @@ public class PostServiceImpl: PostService.PostServiceBase
     
     public override async Task<CreatePostResponse> CreatePost(CreatePostRequest request, ServerCallContext context)
     {
-        Post p = new Post()
+        Post p;
+        if (request.Event.Equals(""))
         {
-            Id = Guid.NewGuid(),
-            Content = request.Content,
-            Title = request.Title,
-            EventId = Guid.Parse(request.Event),
-            AuthorId = Guid.Parse(request.Author),
-            CreationDate = DateTime.Now.ToString()
-        };
+            p = new Post()
+            {
+                Id = Guid.NewGuid(),
+                Content = request.Content,
+                Title = request.Title,
+                EventId = null,
+                AuthorId = Guid.Parse(request.Author),
+                CreationDate = DateTime.Now.ToString()
+            };
+        }
+        else
+        {
+            p = new Post()
+            {
+                Id = Guid.NewGuid(),
+                Content = request.Content,
+                Title = request.Title,
+                EventId = Guid.Parse(request.Event),
+                AuthorId = Guid.Parse(request.Author),
+                CreationDate = DateTime.Now.ToString()
+            };
+        }
+
         Post post = await _postRepository.CreateAsync(p);
         CreatePostResponse response = new CreatePostResponse()
         {
