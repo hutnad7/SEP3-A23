@@ -2,11 +2,13 @@
 @using Cafe.Services
 @using Cafe.Services.Http
 @using System.Globalization
+@using Blazored.LocalStorage
 @using global::Shared.Models
 @inject NotificationService NotificationService
 @inject HttpClient HttpClient
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject IAuthService JwtAuthService
+@inject ILocalStorageService _LocalStorage;
 @attribute [Authorize("MustBeCafeOwner")]
 
 
@@ -34,7 +36,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        var jwt = JwtAuthService.GetJwt();
+        var jwt = _LocalStorage.GetItemAsStringAsync("token");
         Console.WriteLine("JWT :: " + jwt);;
         
         CultureInfo provider = CultureInfo.CreateSpecificCulture("en-GB");

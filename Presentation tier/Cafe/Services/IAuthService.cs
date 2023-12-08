@@ -11,6 +11,8 @@ public interface IAuthService
     public Task<ClaimsPrincipal> GetAuthAsync();
 
     public Action<ClaimsPrincipal> OnAuthStateChanged { get; set; }
-    
-    string? GetJwt();
+    public Task<string> GetRole(string jwt);
+    public Task<Guid> GetId(string jwt);
+
+
 }

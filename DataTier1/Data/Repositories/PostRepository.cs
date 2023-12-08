@@ -35,12 +35,16 @@ public class PostRepository : BaseRepository<Post>, IPostRepository
     {
         try
         {
-            User author = _context.Set<User>().Include(u => u.Posts).FirstOrDefault(c => c.Id.Equals(entity.Author));
+            User author = _context.Set<User>().Include(u => u.Posts).FirstOrDefault(c => c.Id.Equals(entity.AuthorId));
             entity.Author = author;
-            if (entity.Author is not null) { 
-            Event events = _context.Set<Event>().Include(u => u.CafeOwner).FirstOrDefault(c => c.Id.Equals(entity.EventId));
-            entity.Event = events;
+            if (!entity.EventId.Equals(Guid.Empty)) { 
+                Event events = _context.Set<Event>().Include(u => u.CafeOwner).FirstOrDefault(c => c.Id.Equals(entity.EventId));
+                entity.Event = events;
         }
+            else
+            {
+                entity.Event = null;
+            }
             await _context.Posts.AddAsync(entity);
             await _context.SaveChangesAsync();
             return entity;

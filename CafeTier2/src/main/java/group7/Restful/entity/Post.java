@@ -9,7 +9,7 @@ public class Post {
     private String title;
     private String content;
     private String author;
-    private String event;
+    private String Event;
 
     public Post() {
     }
