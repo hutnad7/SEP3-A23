@@ -59,7 +59,9 @@
         {
             var jsonString = await response.Content.ReadAsStringAsync();
             var users = JsonSerializer.Deserialize<IEnumerable<User>>(jsonString);
-            var user = users.FirstOrDefault(u => u.Id.Equals(UserId));
+            var user = users.FirstOrDefault(u => u.Id == Guid.Parse(UserId.ToString()));
+
+
             if (user != null)
             {
                 FirstName = user.FirstName;

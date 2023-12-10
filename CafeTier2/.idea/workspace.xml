@@ -5,6 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="746ef1db-a193-4e4e-917c-6021319eba52" name="Changes" comment="">
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231208093503_testtest.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231208093503_testtest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/product.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/product.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/FileContentIndex/bd336540-4ecb-4c2e-b5ae-097964850da3.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/ProjectEvaluation/datatier1.metadata.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/.vs/ProjectEvaluation/datatier1.metadata.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/ProjectEvaluation/datatier1.projects.v7.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/.vs/ProjectEvaluation/datatier1.projects.v7.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/DBContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/DBContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231206192610_q.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231206192610_q.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Migrations/DBContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Migrations/DBContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/Protos/proto3.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/Protos/proto3.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/Services/UserServiceImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/Services/UserServiceImpl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/CreateEvent.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/CreateEvent.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Login.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Login.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Register.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Register.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/RegisterBtn.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/UserPage.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/UserPage.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Services/Http/JwtAuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Services/Http/JwtAuthService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Shared/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Shared/MainLayout.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Shared/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Shared/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/wwwroot/img/Login.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/wwwroot/img/Login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/wwwroot/img/Logout.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/wwwroot/img/Logout.png" afterDir="false" />
+=======
       <change afterPath="$PROJECT_DIR$/src/main/java/group7/Grpc/service/UserClientService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/Controller/UserController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/dto/UserDto.java" afterDir="false" />
@@ -21,6 +57,7 @@
       <change beforePath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/CreateEvent.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/CreateEvent.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/UserPage.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/UserPage.razor" afterDir="false" />
+>>>>>>> master
       <change beforePath="$PROJECT_DIR$/../Presentation tier/Shared/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Shared/Models/User.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +84,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;huti1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/denim/Documents/VIA/3-Semester/SDJ3/SEP3-05-12/SEP3-A23/CafeTier2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RequestMappingsPanelOrder0": "0",
@@ -65,8 +120,9 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+>>>>>>> master
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="GrpcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="CafeTier2" />
@@ -93,16 +149,41 @@
       <updated>1701780156653</updated>
       <workItem from="1701780159162" duration="6537000" />
       <workItem from="1701857999724" duration="13893000" />
+<<<<<<< HEAD
+      <workItem from="1701955514995" duration="6746000" />
+      <workItem from="1701962727157" duration="596000" />
+      <workItem from="1702023142816" duration="8896000" />
+      <workItem from="1702039326662" duration="1646000" />
+      <workItem from="1702207724590" duration="4554000" />
+=======
       <workItem from="1702042361219" duration="619000" />
+>>>>>>> master
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
+<<<<<<< HEAD
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/group7/Restful/service/PostService.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="8" />
+=======
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/group7/Restful/Controller/BookController.java</url>
           <line>37</line>
@@ -111,6 +192,7 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="11" />
+>>>>>>> master
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -13,7 +13,7 @@ namespace Service.Services
         public UserServiceImpl(ILogger<EventServiceImpl> logger, IAuthRepository authRepository)
         {
             _logger = logger;
-            _authRepository = authRepository;
+            _authRepository = authRepository;   
         }
 
         public override async Task<CreateUserResponse> CreateUser(CreateUserRequest request, ServerCallContext context)
@@ -25,12 +25,13 @@ namespace Service.Services
                     Id = Guid.NewGuid(),
                     Firstname = request.FisrtName,
                     Lastname = request.LastName,
-                    Username = request.Email + "u",
+                    Username = request.Email,
                     Email = request.Email,
                     CreationDate = DateTime.Now.ToString(),
                     Description = request.Description,
                     Role = Enum.Parse<Role>(request.Role),
-                    PasswordHash = request.Password
+                    PasswordHash = request.Password,
+                    Description = request.Description
                 };
 
                 User createdUser = await _authRepository.RegisterUserAsync(user);
@@ -44,6 +45,7 @@ namespace Service.Services
                     Email = createdUser.Email,
                     Role = createdUser.Role.ToString(),
                     Id = createdUser.Id.ToString(),
+                    Description = createdUser.Description
                 };
 
                 return response;
