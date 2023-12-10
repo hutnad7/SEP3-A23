@@ -26,7 +26,12 @@ public class PostService {
 
 
     public Post createPost(Post post) {
-        CreatePostRequest request = CreatePostRequest.newBuilder().setAuthor(post.getAuthor()).setTitle(post.getTitle()).setContent(post.getContent()).build();
+        CreatePostRequest request = CreatePostRequest.newBuilder()
+                .setAuthor(post.getAuthor())
+                .setEvent(post.getEvent())
+                .setTitle(post.getTitle())
+                .setContent(post.getContent())
+                .build();
         CreatePostResponse response = postClientService.createPost(request);
         Post p = new Post(){
             {

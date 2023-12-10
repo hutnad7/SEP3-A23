@@ -1,15 +1,16 @@
-﻿@page "/create-post"
+﻿@page "/create-post/{Id}"
 @using Cafe.Models
 @using Cafe.Services
 @using global::Shared.Models
+@using Blazored.LocalStorage
+@using Cafe.Services
 @inject NotificationService NotificationService
-@inject AuthenticationStateProvider AuthenticationStateProvider
-@inject IAuthService JwtAuthService
+@inject ILocalStorageService _LocalStorage;
+@inject IAuthService AuthService;
 @inject HttpClient HttpClient
 @attribute [Authorize("MustBeCafeOwner")]
 
 <h3>CreatePost</h3>
-
 <RadzenTemplateForm TItem="Post" Data=Post Submit="@SubmitPost">
     <RadzenTextBox @bind-value="Post.Title" Name="Title" Placeholder="Post Title" Style="width:100%; margin-bottom: 20px;"/>
     <RadzenTextArea @bind-value="Post.Content" Name="Content" Placeholder="Content" Style="width:100%; margin-bottom: 20px; height: 200px"/>
@@ -19,20 +20,29 @@
 
 
 @code {
+    [Parameter]
+    public string Id { get; set; }
+
+    public string token;
     public Post Post = new Post();
     IEnumerable<UserPage> entertainers;
 
-    protected override async Task OnInitializedAsync()
-    {
-        var jwt = JwtAuthService.GetJwt();
-        Console.WriteLine("JWT :: " + jwt);
-           ;
-    }
+    
 
     private async Task SubmitPost(Post post)
     {
         try
         {
+            token = await _LocalStorage.GetItemAsStringAsync("token");
+            post.author = AuthService.GetId(token).Result.ToString();
+            if (!Id.Equals("null"))
+            {
+                post.Event = Id;
+            }
+            else
+            {
+                post.Event = "";
+            }
             var response = await HttpClient.PostAsJsonAsync("http://localhost:8080/api/posts", post);
             if (response.IsSuccessStatusCode)
             {

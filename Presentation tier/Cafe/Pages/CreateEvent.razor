@@ -2,11 +2,13 @@
 @using Cafe.Services
 @using Cafe.Services.Http
 @using System.Globalization
+@using Blazored.LocalStorage
 @using global::Shared.Models
 @inject NotificationService NotificationService
 @inject HttpClient HttpClient
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject IAuthService JwtAuthService
+@inject ILocalStorageService _LocalStorage;
 @attribute [Authorize("MustBeCafeOwner")]
 
 <h3>Create event</h3>
@@ -19,11 +21,11 @@
     </div>
     
     <RadzenNumeric @bind-Value="Event.AvailablePlaces" />
-    <!--  <RadzenTextBox @bind-Value="Event.Date" Name="Date" Placeholder="Date" Style="width:100%; margin-bottom: 20px;" />
-   
-    <RadzenDatePicker @bind-Value="Event.Start" ShowTime="true" HourFormat="12" Culture='CultureInfo.CreateSpecificCulture("en-GB")' DateFormat="yyyy/MM/dd hh:mm" />
-    <RadzenDatePicker @bind-Value="Event.End" ShowTime="true" HourFormat="12" Culture='CultureInfo.CreateSpecificCulture("en-GB")' DateFormat="yyyy/MM/dd hh:mm" />
- -->
+ @*    <!--  <RadzenTextBox @bind-Value="Event.Date" Name="Date" Placeholder="Date" Style="width:100%; margin-bottom: 20px;" /> *@
+ @*    *@
+ @*    <RadzenDatePicker @bind-Value="Event.Start" ShowTime="true" HourFormat="12" Culture='CultureInfo.CreateSpecificCulture("en-GB")' DateFormat="yyyy/MM/dd hh:mm" /> *@
+ @*    <RadzenDatePicker @bind-Value="Event.End" ShowTime="true" HourFormat="12" Culture='CultureInfo.CreateSpecificCulture("en-GB")' DateFormat="yyyy/MM/dd hh:mm" /> *@
+ @* --> *@
     <RadzenButton ButtonType="ButtonType.Submit" Text="Create Event" />
 </RadzenTemplateForm>
 
@@ -33,7 +35,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        var jwt = JwtAuthService.GetJwt();
+        var jwt = _LocalStorage.GetItemAsStringAsync("token");
         Console.WriteLine("JWT :: " + jwt);;
         
         CultureInfo provider = CultureInfo.CreateSpecificCulture("en-GB");

@@ -1,4 +1,5 @@
-﻿using Shared.Dtos;
+﻿using Blazored.LocalStorage;
+using Shared.Dtos;
 using Shared.Models;
 namespace Cafe.Services.Http;
 using System.Reflection.Metadata;
@@ -12,12 +13,17 @@ using System.Text.Json;
 public class JwtAuthService : IAuthService
 {
     private readonly HttpClient client = new ();
-    public string? Jwt { get; private set; } = "";
-    
-    public string? GetJwt() => Jwt;
+    private ILocalStorageService _localStorage;
 
+
+    // this private variable for simple caching
+    
     public Action<ClaimsPrincipal> OnAuthStateChanged { get; set; } = null!;
 
+    public JwtAuthService(ILocalStorageService localStorage)
+    {
+        this._localStorage = localStorage;
+    }
     public async Task LoginAsync(string username, string password)
     {
         UserLoginDto userLoginDto = new()
@@ -36,17 +42,17 @@ public class JwtAuthService : IAuthService
         {
             throw new Exception(responseContent);
         }
+        await _localStorage.SetItemAsync("token", responseContent);
 
-        string token = responseContent;
-        Jwt = token;
 
-        ClaimsPrincipal principal = CreateClaimsPrincipal();
+        ClaimsPrincipal principal = await CreateClaimsPrincipal();
 
         OnAuthStateChanged.Invoke(principal);
     }
 
-    private  ClaimsPrincipal CreateClaimsPrincipal()
+    private async  Task<ClaimsPrincipal> CreateClaimsPrincipal()
     {
+        String Jwt = await _localStorage.GetItemAsStringAsync("token");
         if (string.IsNullOrEmpty(Jwt))
         {
             return new ClaimsPrincipal();
@@ -62,7 +68,7 @@ public class JwtAuthService : IAuthService
 
     public Task LogoutAsync()
     {
-        Jwt = null;
+        _localStorage.RemoveItemAsync("token");
         ClaimsPrincipal principal = new();
         OnAuthStateChanged.Invoke(principal);
         return Task.CompletedTask;
@@ -81,10 +87,20 @@ public class JwtAuthService : IAuthService
         }
     }
 
-    public  Task<ClaimsPrincipal> GetAuthAsync()
+    public async Task<string> GetRole(string jwt)
     {
-        ClaimsPrincipal principal = CreateClaimsPrincipal();
-        return Task.FromResult(principal);
+        IEnumerable<Claim> claims = ParseClaimsFromJwt(jwt);
+        return claims.First(c => c.Type.Equals("role")).Value;
+    }
+    public async Task<Guid> GetId(string jwt)
+    {
+        IEnumerable<Claim> claims = ParseClaimsFromJwt(jwt);
+        return Guid.Parse(claims.First(c => c.Type.Equals("id")).Value);
+    }
+    public async Task<ClaimsPrincipal> GetAuthAsync()
+    {
+        ClaimsPrincipal principal = await CreateClaimsPrincipal();
+        return principal;
     }
 
 
@@ -96,6 +112,7 @@ public class JwtAuthService : IAuthService
         Dictionary<string, object>? keyValuePairs = JsonSerializer.Deserialize<Dictionary<string, object>>(jsonBytes);
         return keyValuePairs!.Select(kvp => new Claim(kvp.Key, kvp.Value.ToString()!));
     }
+    
 
     private static byte[] ParseBase64WithoutPadding(string base64)
     {
