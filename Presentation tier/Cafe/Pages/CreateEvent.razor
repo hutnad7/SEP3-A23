@@ -29,7 +29,7 @@
 
 @code {
     public Event Event = new();
-    IEnumerable<UserPage> entertainers;
+    IEnumerable<User> entertainers;
 
     protected override async Task OnInitializedAsync()
     {
@@ -38,18 +38,18 @@
         
         CultureInfo provider = CultureInfo.CreateSpecificCulture("en-GB");
 
-        entertainers = new List<UserPage>
+        entertainers = new List<User>
         {
-            new UserPage { Id = Guid.NewGuid(), FirstName = "John", LastName = "Doe" },
-            new UserPage { Id = Guid.NewGuid(), FirstName = "Jane", LastName = "Smith" },
-            new UserPage { Id = Guid.NewGuid(), FirstName = "Bob", LastName = "Brown" },
-            new UserPage { Id = Guid.NewGuid(), FirstName = "Alice", LastName = "White" },
-            new UserPage { Id = Guid.NewGuid(), FirstName = "Charlie", LastName = "Green" },
-            new UserPage { Id = Guid.NewGuid(), FirstName = "David", LastName = "Black" },
-            new UserPage { Id = Guid.NewGuid(), FirstName = "Eva", LastName = "Blue" },
-            new UserPage { Id = Guid.NewGuid(), FirstName = "Frank", LastName = "Gray" },
-            new UserPage { Id = Guid.NewGuid(), FirstName = "Grace", LastName = "Red" },
-            new UserPage { Id = Guid.NewGuid(), FirstName = "Harry", LastName = "Yellow" }
+            new User { Id = Guid.NewGuid(), FirstName = "John", LastName = "Doe" },
+            new User { Id = Guid.NewGuid(), FirstName = "Jane", LastName = "Smith" },
+            new User { Id = Guid.NewGuid(), FirstName = "Bob", LastName = "Brown" },
+            new User { Id = Guid.NewGuid(), FirstName = "Alice", LastName = "White" },
+            new User { Id = Guid.NewGuid(), FirstName = "Charlie", LastName = "Green" },
+            new User { Id = Guid.NewGuid(), FirstName = "David", LastName = "Black" },
+            new User { Id = Guid.NewGuid(), FirstName = "Eva", LastName = "Blue" },
+            new User { Id = Guid.NewGuid(), FirstName = "Frank", LastName = "Gray" },
+            new User { Id = Guid.NewGuid(), FirstName = "Grace", LastName = "Red" },
+            new User { Id = Guid.NewGuid(), FirstName = "Harry", LastName = "Yellow" }
         };
 
         Event.EntertainerId = Guid.NewGuid();
@@ -63,11 +63,11 @@
             evt.CafeOwnerId = Guid.Parse("e7c9d815-30fd-4e94-95f1-64d0577a7acf");
             evt.EntertainerId = Guid.Parse("cc232ead-0b61-4395-9b14-a1de097c0e49");
             evt.CafeOwnerId = Guid.Parse("2d22883c-aed7-4725-89fb-1457ddac2882");
-         /*   CultureInfo provider = CultureInfo.CreateSpecificCulture("en-GB");
+            CultureInfo provider = CultureInfo.CreateSpecificCulture("en-GB");
             string format = "dd/MM/yyyy hh:mm";
             DateTime date = DateTime.Now;
             // evt.Date = DateTime.ParseExact(evt.Date.ToShortTimeString(), format,provider);
-            // evt.Date = DateTime.Parse( evt.Date.ToString(), CultureInfo.CreateSpecificCulture("fr-FR") );*/
+            // evt.Date = DateTime.Parse( evt.Date.ToString(), CultureInfo.CreateSpecificCulture("fr-FR") );
             var response = await HttpClient.PostAsJsonAsync("http://localhost:8080/api/events", evt);
             if (response.IsSuccessStatusCode)
             {

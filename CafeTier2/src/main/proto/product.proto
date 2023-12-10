@@ -72,6 +72,7 @@ message CreateUserRequest{
   string Email = 4;
   string Role = 5;
   string Password = 6;
+  string Description = 7;
 }
 
 message CreateUserResponse{
@@ -81,6 +82,7 @@ message CreateUserResponse{
   string Email = 4;
   string Role = 5;
   string Id = 6;
+  string Description = 7;
 }
 message CreatePostRequest{
   string id = 1;

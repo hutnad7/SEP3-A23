@@ -18,8 +18,6 @@ namespace Data.Models
         public string Lastname { get; set; }
         [AllowNull]
         public string Description { get; set; }
-
-
         [Required]
         public string Username { get; set; }
 

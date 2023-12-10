@@ -12,8 +12,6 @@ using System.Text.Json;
 public class JwtAuthService : IAuthService
 {
     private readonly HttpClient client = new ();
-
-    // this private variable for simple caching
     public string? Jwt { get; private set; } = "";
     
     public string? GetJwt() => Jwt;
@@ -83,7 +81,7 @@ public class JwtAuthService : IAuthService
         }
     }
 
-    public Task<ClaimsPrincipal> GetAuthAsync()
+    public  Task<ClaimsPrincipal> GetAuthAsync()
     {
         ClaimsPrincipal principal = CreateClaimsPrincipal();
         return Task.FromResult(principal);
