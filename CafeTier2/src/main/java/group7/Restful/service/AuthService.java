@@ -2,7 +2,7 @@ package group7.Restful.service;
 
 
 import group7.Grpc.service.AuthClientService;
-import group7.Restful.dto.UserLoginDto;
+import group7.Grpc.dto.UserLoginDto;
 import group7.Restful.entity.User;
 import group7.protobuf.*;
 import org.springframework.stereotype.Service;

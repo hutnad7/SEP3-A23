@@ -8,6 +8,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 import group7.Grpc.dto.EventDto;
+import group7.Restful.entity.Booking;
 import group7.Restful.entity.Event;
 import group7.Restful.service.EventService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +34,10 @@ public class EventController {
     public ResponseEntity<Event> createEvent(@RequestBody Event event) {
         return ResponseEntity.ok(this.eventService.createEvent(event));
     }
-
+    @PostMapping
+    public ResponseEntity<Booking> createBook(@RequestBody Booking booking) {
+        return ResponseEntity.ok(this.eventService.createBooking(booking));
+    }
 //    @GetMapping({"/{id}"})
 //    public ResponseEntity<Event> getEventById(@PathVariable UUID id) {
 //        Optional<Event> eventOpt = this.eventService.getEventById(id);

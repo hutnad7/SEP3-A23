@@ -8,6 +8,7 @@ package group7.Restful.service;
 import com.google.type.DateTime;
 import group7.Grpc.dto.EventDto;
 import group7.Grpc.service.EventClientService;
+import group7.Restful.entity.Booking;
 import group7.Restful.entity.Event;
 
 import java.text.DateFormat;
@@ -189,7 +190,20 @@ public class EventService {
         };
         return Optional.of(event);
     }
-
+    public Booking createBooking(Booking booking) {
+        BookEventRequest request = BookEventRequest.newBuilder().setUserId(booking.getUserId().toString()).setEventId(booking.getEventId().toString()).setNumerOfPeople(booking.getNumberOfPeople()).build();
+        GetEventResponse r = eventClientService.getEventById(GetRequest.newBuilder().setId(booking.getEventId().toString()).build());
+        if(r.getAvailablePlaces()<booking.getNumberOfPeople()){
+            throw new IllegalArgumentException("Not enough places");
+        }
+        BookEventResponse response = eventClientService.bookEvent(request);
+        Booking b = new Booking(
+                UUID.fromString(response.getUserId()),
+                UUID.fromString(response.getEventId()),
+                response.getCreationDate().toString(),
+                response.getNumerOfPeople());
+        return booking;
+    }
 //    public Optional<Event> updateEvent(UUID id, Event event) {
 //        Optional<Event> existingEventOpt = this.getEventById(id);
 //        if (existingEventOpt.isPresent()) {

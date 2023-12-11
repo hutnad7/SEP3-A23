@@ -1,4 +1,4 @@
-package group7.Restful.dto;
+package group7.Grpc.dto;
 
 import lombok.Data;
 
