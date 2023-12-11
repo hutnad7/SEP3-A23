@@ -1,0 +1,147 @@
+\doxysection{Data.\+Repositories.\+Post\+Repository Class Reference}
+\hypertarget{class_data_1_1_repositories_1_1_post_repository}{}\label{class_data_1_1_repositories_1_1_post_repository}\index{Data.Repositories.PostRepository@{Data.Repositories.PostRepository}}
+Inheritance diagram for Data.\+Repositories.\+Post\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_data_1_1_repositories_1_1_post_repository}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data_1_1_repositories_1_1_post_repository_a5248ca4f045d81117d2fd6eee26cc8e0}{Post\+Repository}} (\mbox{\hyperlink{class_data_1_1_d_b_context}{DBContext}} context)
+\item 
+override async Task$<$ ICollection$<$ \mbox{\hyperlink{class_data_1_1_models_1_1_post}{Post}} $>$ $>$ \mbox{\hyperlink{class_data_1_1_repositories_1_1_post_repository_a5b49fa24533a87f8bf85d611053c1f06}{Get\+All}} ()
+\item 
+override async Task$<$ ICollection$<$ \mbox{\hyperlink{class_data_1_1_models_1_1_post}{Post}} $>$ $>$ \mbox{\hyperlink{class_data_1_1_repositories_1_1_post_repository_a277ad71cc049fd36da5e97a06f518d6e}{Get\+All}} (Expression$<$ Func$<$ \mbox{\hyperlink{class_data_1_1_models_1_1_post}{Post}}, bool $>$ $>$ filter)
+\item 
+override async Value\+Task$<$ ICollection$<$ \mbox{\hyperlink{class_data_1_1_models_1_1_post}{Post}} $>$ $>$ \mbox{\hyperlink{class_data_1_1_repositories_1_1_post_repository_a4dc92209f7e2df137e6333286fa87c7a}{Get\+By\+Async}} (Expression$<$ Func$<$ \mbox{\hyperlink{class_data_1_1_models_1_1_post}{Post}}, bool $>$ $>$ filter)
+\item 
+override async Task$<$ \mbox{\hyperlink{class_data_1_1_models_1_1_post}{Post}} $>$ \mbox{\hyperlink{class_data_1_1_repositories_1_1_post_repository_a22d133206f3d6e0d5b28db4ad516a9d4}{Get\+By\+Id\+Async}} (Guid id)
+\item 
+override async Task$<$ \mbox{\hyperlink{class_data_1_1_models_1_1_post}{Post}} $>$ \mbox{\hyperlink{class_data_1_1_repositories_1_1_post_repository_a4f97861bed550677cb997090e7b6435a}{Create\+Async}} (\mbox{\hyperlink{class_data_1_1_models_1_1_post}{Post}} entity)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_data_1_1_repositories_1_1_base_repository}{Data.\+Repositories.\+Base\+Repository$<$ Post $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data_1_1_repositories_1_1_base_repository_a397a1e4ebe236fa8166ed8360392e174}{Base\+Repository}} (\mbox{\hyperlink{class_data_1_1_d_b_context}{DBContext}} context)
+\item 
+virtual async Task$<$ ICollection$<$ T $>$ $>$ \mbox{\hyperlink{class_data_1_1_repositories_1_1_base_repository_a137eb609adafb59f49359239f676d086}{Get\+All}} (Expression$<$ Func$<$ T, bool $>$ $>$ filter)
+\item 
+virtual async Value\+Task$<$ ICollection$<$ T $>$ $>$ \mbox{\hyperlink{class_data_1_1_repositories_1_1_base_repository_a92e9970e8293796850deebf79e72c7c2}{Get\+By\+Async}} (Expression$<$ Func$<$ T, bool $>$ $>$ filter)
+\item 
+virtual async Task$<$ T $>$ \mbox{\hyperlink{class_data_1_1_repositories_1_1_base_repository_a529b12e68e31441399bf2f8daa58158e}{Create\+Async}} (T entity)
+\item 
+virtual async Task \mbox{\hyperlink{class_data_1_1_repositories_1_1_base_repository_ad41095e76cfadfb0188c984ca2c22554}{Update\+Async}} (T entity)
+\item 
+virtual async Task \mbox{\hyperlink{class_data_1_1_repositories_1_1_base_repository_a39c9d9172f264bd4fec32643daacbe45}{Delete\+Async}} (Guid id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository}{Data.\+Interfaces.\+IBase\+Repository$<$ Post $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ T $>$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository_a85e24924e99f5db8adf3fd50af6a313b}{Create\+Async}} (T entity)
+\item 
+Task \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository_ab16643ed17b737b626033e7176a3b388}{Delete\+Async}} (Guid id)
+\item 
+Task$<$ ICollection$<$ T $>$ $>$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository_a6c29fb2e5f8219a39933aff1286c3ecb}{Get\+All}} ()
+\item 
+Task$<$ ICollection$<$ T $>$ $>$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository_ad989a3e8eda9ba1ef14c010a419d9faf}{Get\+All}} (Expression$<$ Func$<$ T, bool $>$ $>$ filter)
+\item 
+Task$<$ T $>$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository_a60647473d091c5836cbe58a08107a7fd}{Get\+By\+Id\+Async}} (Guid id)
+\item 
+Value\+Task$<$ ICollection$<$ T $>$ $>$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository_a81187241a4c2c057f67a615ef40531c6}{Get\+By\+Async}} (Expression$<$ Func$<$ T, bool $>$ $>$ filter)
+\item 
+Task \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository_abf9aab7d66e0d533c9def315bb2a22a8}{Update\+Async}} (T entity)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_data_1_1_repositories_1_1_base_repository}{Data.\+Repositories.\+Base\+Repository$<$ Post $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{class_data_1_1_d_b_context}{DBContext}} \mbox{\hyperlink{class_data_1_1_repositories_1_1_base_repository_a8a7ec909e7e6829b67f85aadcf2e4df1}{\+\_\+context}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_post_repository_8cs_source_l00008}{8}} of file \mbox{\hyperlink{_post_repository_8cs_source}{Post\+Repository.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_data_1_1_repositories_1_1_post_repository_a5248ca4f045d81117d2fd6eee26cc8e0}\label{class_data_1_1_repositories_1_1_post_repository_a5248ca4f045d81117d2fd6eee26cc8e0} 
+\index{Data.Repositories.PostRepository@{Data.Repositories.PostRepository}!PostRepository@{PostRepository}}
+\index{PostRepository@{PostRepository}!Data.Repositories.PostRepository@{Data.Repositories.PostRepository}}
+\doxysubsubsection{\texorpdfstring{PostRepository()}{PostRepository()}}
+{\footnotesize\ttfamily Data.\+Repositories.\+Post\+Repository.\+Post\+Repository (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data_1_1_d_b_context}{DBContext}}}]{context }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_post_repository_8cs_source_l00010}{10}} of file \mbox{\hyperlink{_post_repository_8cs_source}{Post\+Repository.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_data_1_1_repositories_1_1_post_repository_a4f97861bed550677cb997090e7b6435a}\label{class_data_1_1_repositories_1_1_post_repository_a4f97861bed550677cb997090e7b6435a} 
+\index{Data.Repositories.PostRepository@{Data.Repositories.PostRepository}!CreateAsync@{CreateAsync}}
+\index{CreateAsync@{CreateAsync}!Data.Repositories.PostRepository@{Data.Repositories.PostRepository}}
+\doxysubsubsection{\texorpdfstring{CreateAsync()}{CreateAsync()}}
+{\footnotesize\ttfamily override async Task$<$ \mbox{\hyperlink{class_data_1_1_models_1_1_post}{Post}} $>$ Data.\+Repositories.\+Post\+Repository.\+Create\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data_1_1_models_1_1_post}{Post}}}]{entity }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_post_repository_8cs_source_l00034}{34}} of file \mbox{\hyperlink{_post_repository_8cs_source}{Post\+Repository.\+cs}}.
+
+\Hypertarget{class_data_1_1_repositories_1_1_post_repository_a5b49fa24533a87f8bf85d611053c1f06}\label{class_data_1_1_repositories_1_1_post_repository_a5b49fa24533a87f8bf85d611053c1f06} 
+\index{Data.Repositories.PostRepository@{Data.Repositories.PostRepository}!GetAll@{GetAll}}
+\index{GetAll@{GetAll}!Data.Repositories.PostRepository@{Data.Repositories.PostRepository}}
+\doxysubsubsection{\texorpdfstring{GetAll()}{GetAll()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily override async Task$<$ ICollection$<$ \mbox{\hyperlink{class_data_1_1_models_1_1_post}{Post}} $>$ $>$ Data.\+Repositories.\+Post\+Repository.\+Get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_data_1_1_repositories_1_1_base_repository_a6163b596f5c93a3610b47494d057b0f5}{Data.\+Repositories.\+Base\+Repository$<$ Post $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{_post_repository_8cs_source_l00014}{14}} of file \mbox{\hyperlink{_post_repository_8cs_source}{Post\+Repository.\+cs}}.
+
+\Hypertarget{class_data_1_1_repositories_1_1_post_repository_a277ad71cc049fd36da5e97a06f518d6e}\label{class_data_1_1_repositories_1_1_post_repository_a277ad71cc049fd36da5e97a06f518d6e} 
+\index{Data.Repositories.PostRepository@{Data.Repositories.PostRepository}!GetAll@{GetAll}}
+\index{GetAll@{GetAll}!Data.Repositories.PostRepository@{Data.Repositories.PostRepository}}
+\doxysubsubsection{\texorpdfstring{GetAll()}{GetAll()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily override async Task$<$ ICollection$<$ \mbox{\hyperlink{class_data_1_1_models_1_1_post}{Post}} $>$ $>$ Data.\+Repositories.\+Post\+Repository.\+Get\+All (\begin{DoxyParamCaption}\item[{Expression$<$ Func$<$ \mbox{\hyperlink{class_data_1_1_models_1_1_post}{Post}}, bool $>$ $>$}]{filter }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_post_repository_8cs_source_l00019}{19}} of file \mbox{\hyperlink{_post_repository_8cs_source}{Post\+Repository.\+cs}}.
+
+\Hypertarget{class_data_1_1_repositories_1_1_post_repository_a4dc92209f7e2df137e6333286fa87c7a}\label{class_data_1_1_repositories_1_1_post_repository_a4dc92209f7e2df137e6333286fa87c7a} 
+\index{Data.Repositories.PostRepository@{Data.Repositories.PostRepository}!GetByAsync@{GetByAsync}}
+\index{GetByAsync@{GetByAsync}!Data.Repositories.PostRepository@{Data.Repositories.PostRepository}}
+\doxysubsubsection{\texorpdfstring{GetByAsync()}{GetByAsync()}}
+{\footnotesize\ttfamily override async Value\+Task$<$ ICollection$<$ \mbox{\hyperlink{class_data_1_1_models_1_1_post}{Post}} $>$ $>$ Data.\+Repositories.\+Post\+Repository.\+Get\+By\+Async (\begin{DoxyParamCaption}\item[{Expression$<$ Func$<$ \mbox{\hyperlink{class_data_1_1_models_1_1_post}{Post}}, bool $>$ $>$}]{filter }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_post_repository_8cs_source_l00024}{24}} of file \mbox{\hyperlink{_post_repository_8cs_source}{Post\+Repository.\+cs}}.
+
+\Hypertarget{class_data_1_1_repositories_1_1_post_repository_a22d133206f3d6e0d5b28db4ad516a9d4}\label{class_data_1_1_repositories_1_1_post_repository_a22d133206f3d6e0d5b28db4ad516a9d4} 
+\index{Data.Repositories.PostRepository@{Data.Repositories.PostRepository}!GetByIdAsync@{GetByIdAsync}}
+\index{GetByIdAsync@{GetByIdAsync}!Data.Repositories.PostRepository@{Data.Repositories.PostRepository}}
+\doxysubsubsection{\texorpdfstring{GetByIdAsync()}{GetByIdAsync()}}
+{\footnotesize\ttfamily override async Task$<$ \mbox{\hyperlink{class_data_1_1_models_1_1_post}{Post}} $>$ Data.\+Repositories.\+Post\+Repository.\+Get\+By\+Id\+Async (\begin{DoxyParamCaption}\item[{Guid}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_data_1_1_repositories_1_1_base_repository_ac2cfe1daf966fec44f41c884943e13c4}{Data.\+Repositories.\+Base\+Repository$<$ Post $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{_post_repository_8cs_source_l00029}{29}} of file \mbox{\hyperlink{_post_repository_8cs_source}{Post\+Repository.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Data/\+Repositories/\mbox{\hyperlink{_post_repository_8cs}{Post\+Repository.\+cs}}\end{DoxyCompactItemize}

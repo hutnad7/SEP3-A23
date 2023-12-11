@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service" kind="class" language="C#" prot="public">
+    <compoundname>Cafe::Services::Http::JwtAuthService</compoundname>
+    <basecompoundref refid="interface_cafe_1_1_services_1_1_i_auth_service" prot="public" virt="non-virtual">Cafe.Services.IAuthService</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1ae40fef858731a81f7dabdf5b80e44665" prot="private" static="no" mutable="no">
+        <type>readonly HttpClient</type>
+        <definition>readonly HttpClient Cafe.Services.Http.JwtAuthService.client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <qualifiedname>Cafe.Services.Http.JwtAuthService.client</qualifiedname>
+        <initializer>= new ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Services/Http/JwtAuthService.cs" line="15" column="33" bodyfile="Cafe/Services/Http/JwtAuthService.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a0398fa4f1dda210a55f4eba97786f945" prot="private" static="no" mutable="no">
+        <type>ILocalStorageService</type>
+        <definition>ILocalStorageService Cafe.Services.Http.JwtAuthService._localStorage</definition>
+        <argsstring></argsstring>
+        <name>_localStorage</name>
+        <qualifiedname>Cafe.Services.Http.JwtAuthService._localStorage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Services/Http/JwtAuthService.cs" line="16" column="34" bodyfile="Cafe/Services/Http/JwtAuthService.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a4603951cc708c70e4acc5a3a18ba5b93" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Action&lt; ClaimsPrincipal &gt;</type>
+        <definition>Action&lt;ClaimsPrincipal&gt; Cafe.Services.Http.JwtAuthService.OnAuthStateChanged</definition>
+        <argsstring></argsstring>
+        <name>OnAuthStateChanged</name>
+        <qualifiedname>Cafe.Services.Http.JwtAuthService.OnAuthStateChanged</qualifiedname>
+        <reimplements refid="interface_cafe_1_1_services_1_1_i_auth_service_1ad4adc13742444c6063033f2f2b1e20f7">OnAuthStateChanged</reimplements>
+        <initializer>= null!</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Services/Http/JwtAuthService.cs" line="21" column="19" bodyfile="Cafe/Services/Http/JwtAuthService.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a78b3bac442bb8dd3f279bcfe4e9aa722" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Cafe.Services.Http.JwtAuthService.JwtAuthService</definition>
+        <argsstring>(ILocalStorageService localStorage)</argsstring>
+        <name>JwtAuthService</name>
+        <qualifiedname>Cafe.Services.Http.JwtAuthService.JwtAuthService</qualifiedname>
+        <param>
+          <type>ILocalStorageService</type>
+          <declname>localStorage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Services/Http/JwtAuthService.cs" line="23" column="12" bodyfile="Cafe/Services/Http/JwtAuthService.cs" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1ae70d9096be0faa9347e652f6b5a0cfa7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Cafe.Services.Http.JwtAuthService.LoginAsync</definition>
+        <argsstring>(string username, string password)</argsstring>
+        <name>LoginAsync</name>
+        <qualifiedname>Cafe.Services.Http.JwtAuthService.LoginAsync</qualifiedname>
+        <reimplements refid="interface_cafe_1_1_services_1_1_i_auth_service_1a246d02f384c97643fb29032aa3a14abf">LoginAsync</reimplements>
+        <param>
+          <type>string</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Services/Http/JwtAuthService.cs" line="27" column="23" bodyfile="Cafe/Services/Http/JwtAuthService.cs" bodystart="27" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a5246187dbe66dbd012f5b2f4d948cccb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task Cafe.Services.Http.JwtAuthService.LogoutAsync</definition>
+        <argsstring>()</argsstring>
+        <name>LogoutAsync</name>
+        <qualifiedname>Cafe.Services.Http.JwtAuthService.LogoutAsync</qualifiedname>
+        <reimplements refid="interface_cafe_1_1_services_1_1_i_auth_service_1abba8d07bdaf57566485e1275d461213d">LogoutAsync</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Services/Http/JwtAuthService.cs" line="69" column="17" bodyfile="Cafe/Services/Http/JwtAuthService.cs" bodystart="69" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a81f16ac1d10a0c13ebfc6471594486a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Cafe.Services.Http.JwtAuthService.RegisterAsync</definition>
+        <argsstring>(User user)</argsstring>
+        <name>RegisterAsync</name>
+        <qualifiedname>Cafe.Services.Http.JwtAuthService.RegisterAsync</qualifiedname>
+        <reimplements refid="interface_cafe_1_1_services_1_1_i_auth_service_1a685a95126fc3c6de39e907b782165744">RegisterAsync</reimplements>
+        <param>
+          <type><ref refid="class_shared_1_1_models_1_1_user" kindref="compound">User</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Services/Http/JwtAuthService.cs" line="77" column="23" bodyfile="Cafe/Services/Http/JwtAuthService.cs" bodystart="77" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a7d35f74bb585288807dfbc0ab6866bd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; string &gt;</type>
+        <definition>async Task&lt; string &gt; Cafe.Services.Http.JwtAuthService.GetRole</definition>
+        <argsstring>(string jwt)</argsstring>
+        <name>GetRole</name>
+        <qualifiedname>Cafe.Services.Http.JwtAuthService.GetRole</qualifiedname>
+        <reimplements refid="interface_cafe_1_1_services_1_1_i_auth_service_1a670f4f287bc8f5b28a8bcfe1c5bb509f">GetRole</reimplements>
+        <param>
+          <type>string</type>
+          <declname>jwt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Services/Http/JwtAuthService.cs" line="90" column="23" bodyfile="Cafe/Services/Http/JwtAuthService.cs" bodystart="90" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a5a497871cbf2d591e71b5a74163a0ca1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; Guid &gt;</type>
+        <definition>async Task&lt; Guid &gt; Cafe.Services.Http.JwtAuthService.GetId</definition>
+        <argsstring>(string jwt)</argsstring>
+        <name>GetId</name>
+        <qualifiedname>Cafe.Services.Http.JwtAuthService.GetId</qualifiedname>
+        <reimplements refid="interface_cafe_1_1_services_1_1_i_auth_service_1a8df7a943ed5f24c1f84edb6e80ca25ca">GetId</reimplements>
+        <param>
+          <type>string</type>
+          <declname>jwt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Services/Http/JwtAuthService.cs" line="95" column="23" bodyfile="Cafe/Services/Http/JwtAuthService.cs" bodystart="95" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a3e7eefdc57f4b597ad2af29d9a66451b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; ClaimsPrincipal &gt;</type>
+        <definition>async Task&lt; ClaimsPrincipal &gt; Cafe.Services.Http.JwtAuthService.GetAuthAsync</definition>
+        <argsstring>()</argsstring>
+        <name>GetAuthAsync</name>
+        <qualifiedname>Cafe.Services.Http.JwtAuthService.GetAuthAsync</qualifiedname>
+        <reimplements refid="interface_cafe_1_1_services_1_1_i_auth_service_1af5673c7bc984c564db187fec9acb678e">GetAuthAsync</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Services/Http/JwtAuthService.cs" line="100" column="23" bodyfile="Cafe/Services/Http/JwtAuthService.cs" bodystart="100" bodyend="104"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a18e4f05f7b38860cf5aeb3eb555230b7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; ClaimsPrincipal &gt;</type>
+        <definition>async Task&lt; ClaimsPrincipal &gt; Cafe.Services.Http.JwtAuthService.CreateClaimsPrincipal</definition>
+        <argsstring>()</argsstring>
+        <name>CreateClaimsPrincipal</name>
+        <qualifiedname>Cafe.Services.Http.JwtAuthService.CreateClaimsPrincipal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Services/Http/JwtAuthService.cs" line="53" column="25" bodyfile="Cafe/Services/Http/JwtAuthService.cs" bodystart="53" bodyend="67"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a5ef4f6bf7820af64b3dfa0b6d6e64485" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; Claim &gt;</type>
+        <definition>static IEnumerable&lt; Claim &gt; Cafe.Services.Http.JwtAuthService.ParseClaimsFromJwt</definition>
+        <argsstring>(string jwt)</argsstring>
+        <name>ParseClaimsFromJwt</name>
+        <qualifiedname>Cafe.Services.Http.JwtAuthService.ParseClaimsFromJwt</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>jwt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Services/Http/JwtAuthService.cs" line="108" column="32" bodyfile="Cafe/Services/Http/JwtAuthService.cs" bodystart="108" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1aac5fa13c1010f4aa38544572674e4df0" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>byte[]</type>
+        <definition>static byte[] Cafe.Services.Http.JwtAuthService.ParseBase64WithoutPadding</definition>
+        <argsstring>(string base64)</argsstring>
+        <name>ParseBase64WithoutPadding</name>
+        <qualifiedname>Cafe.Services.Http.JwtAuthService.ParseBase64WithoutPadding</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>base64</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Services/Http/JwtAuthService.cs" line="117" column="25" bodyfile="Cafe/Services/Http/JwtAuthService.cs" bodystart="117" bodyend="130"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Cafe.Services.Http.JwtAuthService</label>
+        <link refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IAuthService</label>
+        <link refid="interface_cafe_1_1_services_1_1_i_auth_service"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Cafe.Services.Http.JwtAuthService</label>
+        <link refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IAuthService</label>
+        <link refid="interface_cafe_1_1_services_1_1_i_auth_service"/>
+      </node>
+    </collaborationgraph>
+    <location file="Cafe/Services/Http/JwtAuthService.cs" line="13" column="7" bodyfile="Cafe/Services/Http/JwtAuthService.cs" bodystart="14" bodyend="131"/>
+    <listofallmembers>
+      <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a0398fa4f1dda210a55f4eba97786f945" prot="private" virt="non-virtual"><scope>Cafe::Services::Http::JwtAuthService</scope><name>_localStorage</name></member>
+      <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1ae40fef858731a81f7dabdf5b80e44665" prot="private" virt="non-virtual"><scope>Cafe::Services::Http::JwtAuthService</scope><name>client</name></member>
+      <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a18e4f05f7b38860cf5aeb3eb555230b7" prot="private" virt="non-virtual"><scope>Cafe::Services::Http::JwtAuthService</scope><name>CreateClaimsPrincipal</name></member>
+      <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a3e7eefdc57f4b597ad2af29d9a66451b" prot="public" virt="non-virtual"><scope>Cafe::Services::Http::JwtAuthService</scope><name>GetAuthAsync</name></member>
+      <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a5a497871cbf2d591e71b5a74163a0ca1" prot="public" virt="non-virtual"><scope>Cafe::Services::Http::JwtAuthService</scope><name>GetId</name></member>
+      <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a7d35f74bb585288807dfbc0ab6866bd9" prot="public" virt="non-virtual"><scope>Cafe::Services::Http::JwtAuthService</scope><name>GetRole</name></member>
+      <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a78b3bac442bb8dd3f279bcfe4e9aa722" prot="public" virt="non-virtual"><scope>Cafe::Services::Http::JwtAuthService</scope><name>JwtAuthService</name></member>
+      <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1ae70d9096be0faa9347e652f6b5a0cfa7" prot="public" virt="non-virtual"><scope>Cafe::Services::Http::JwtAuthService</scope><name>LoginAsync</name></member>
+      <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a5246187dbe66dbd012f5b2f4d948cccb" prot="public" virt="non-virtual"><scope>Cafe::Services::Http::JwtAuthService</scope><name>LogoutAsync</name></member>
+      <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a4603951cc708c70e4acc5a3a18ba5b93" prot="public" virt="non-virtual"><scope>Cafe::Services::Http::JwtAuthService</scope><name>OnAuthStateChanged</name></member>
+      <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1aac5fa13c1010f4aa38544572674e4df0" prot="private" virt="non-virtual"><scope>Cafe::Services::Http::JwtAuthService</scope><name>ParseBase64WithoutPadding</name></member>
+      <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a5ef4f6bf7820af64b3dfa0b6d6e64485" prot="private" virt="non-virtual"><scope>Cafe::Services::Http::JwtAuthService</scope><name>ParseClaimsFromJwt</name></member>
+      <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a81f16ac1d10a0c13ebfc6471594486a1" prot="public" virt="non-virtual"><scope>Cafe::Services::Http::JwtAuthService</scope><name>RegisterAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

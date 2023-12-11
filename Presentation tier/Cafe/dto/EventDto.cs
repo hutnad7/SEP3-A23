@@ -18,11 +18,11 @@ public class EventDto{
     public string EntertainerName { get; set; }
     [JsonPropertyName("cafeOwnerName")]
     public string CafeOwnerName { get; set; }
- /*   [JsonPropertyName("startDate")]
-    public DateTime Start { get; set; }
+    [JsonPropertyName("startDate")]
+    public string Start { get; set; }
     [JsonPropertyName("endDate")]
-    public DateTime End { get; set; }
-    [JsonPropertyName("availablePlaces")]*/
+    public string End { get; set; }
+    [JsonPropertyName("availablePlaces")]
     
     public int AvailablePlaces { get; set; }
     [JsonPropertyName("status")]

@@ -1,0 +1,158 @@
+\doxysection{Service/\+Program.cs File Reference}
+\hypertarget{_program_8cs}{}\label{_program_8cs}\index{Service/Program.cs@{Service/Program.cs}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_ad606ca0e313077bd3d59aa018f758a33}{Add\+Grpc}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a9b79cb7b68f148b4bf7705d4ae833644}{Add\+Db\+Context$<$ DBContext $>$}} (options=$>$ options.\+Use\+My\+SQL(builder.\+Configuration.\+Get\+Connection\+String("{}Database"{})))
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_ab16ce314052ebbb14dce60b09bb3ef0c}{Add\+Scoped$<$ IAuth\+Repository, Auth\+Repository $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a5e5cc85b20664df76f7941ce05b15428}{Add\+Scoped$<$ IEnterteiner\+Repository, Enterteiner\+Repository $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a4d2682aa6d8e9464aba5d0c5ad597986}{Add\+Scoped$<$ ICafe\+Owner\+Repository, Cafe\+Owner\+Repository $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a99498a1be42e30716bcd942475e430c6}{Add\+Scoped$<$ IEvent\+Repository, Event\+Repository $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a6466880c43c2a916f6c7196291f99a6b}{Add\+Scoped$<$ IBooking\+Repository, Booking\+Repository $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a9b25dea302cc823259b319c9cca24d73}{Add\+Scoped$<$ IPost\+Repository, Post\+Repository $>$}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a6d09a5f2945b4c6108be845e6015cbcf}{Add\+Cors}} (options=$>$ \{ options.\+Add\+Policy(name\+:"{}\+Allow\+Blazor\+Origin"{}, \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}=$>$ \{ builder.\+With\+Origins("{}https\+://localhost\+:7185"{}, "{}https\+://localhost\+:5200"{}).Allow\+Any\+Header().Allow\+Any\+Method();\});\})
+\item 
+app. \mbox{\hyperlink{_program_8cs_ae21f4d83b5bf960636aebee0205958ee}{Use\+Cors}} ("{}Allow\+Blazor\+Origin"{})
+\item 
+app. \mbox{\hyperlink{_program_8cs_a2582f3d1a7c63664f33348328fe0d699}{Map\+Grpc\+Service$<$ Service.\+Services.\+Event\+Service\+Impl $>$}} ()
+\item 
+app. \mbox{\hyperlink{_program_8cs_a7f367f4be1a6fb6eb46e5c9f57bf335e}{Map\+Grpc\+Service$<$ Service.\+Services.\+User\+Service\+Impl $>$}} ()
+\item 
+app. \mbox{\hyperlink{_program_8cs_af977f307f6e5ff0520948800061ba1ba}{Map\+Grpc\+Service$<$ Service.\+Services.\+Post\+Service\+Impl $>$}} ()
+\item 
+app. \mbox{\hyperlink{_program_8cs_aa4e9da4ebbd93717f13079f35809b0e8}{Map\+Get}} ("{}/"{},()=$>$ "{}Communication with g\+RPC endpoints must be made through a g\+RPC client. To learn how to create a client, visit\+: https\+://go.\+microsoft.\+com/fwlink/?linkid=2086909"{})
+\item 
+app. \mbox{\hyperlink{_program_8cs_aaa3dbf02e269c3ef7e8546d290c6b3dd}{Run}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}} = Web\+Application.\+Create\+Builder(args)
+\item 
+var \mbox{\hyperlink{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}} = builder.\+Build()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_program_8cs_a6d09a5f2945b4c6108be845e6015cbcf}\label{_program_8cs_a6d09a5f2945b4c6108be845e6015cbcf} 
+\index{Program.cs@{Program.cs}!AddCors@{AddCors}}
+\index{AddCors@{AddCors}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddCors()}{AddCors()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Cors (\begin{DoxyParamCaption}\item[{options}]{,  }\item[{\{ options.\+Add\+Policy(name\+:"{}\+Allow\+Blazor\+Origin"{}, \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}=$>$ \{ builder.\+With\+Origins("{}https\+://localhost\+:7185"{}, "{}https\+://localhost\+:5200"{}).Allow\+Any\+Header().Allow\+Any\+Method();\});\}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a9b79cb7b68f148b4bf7705d4ae833644}\label{_program_8cs_a9b79cb7b68f148b4bf7705d4ae833644} 
+\index{Program.cs@{Program.cs}!AddDbContext$<$ DBContext $>$@{AddDbContext$<$ DBContext $>$}}
+\index{AddDbContext$<$ DBContext $>$@{AddDbContext$<$ DBContext $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddDbContext$<$ DBContext $>$()}{AddDbContext< DBContext >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Db\+Context$<$ \mbox{\hyperlink{class_data_1_1_d_b_context}{DBContext}} $>$ (\begin{DoxyParamCaption}\item[{options}]{,  }\item[{options.}]{Use\+My\+SQLbuilder.\+Configuration.\+Get\+Connection\+String("{}\+Database"{}) }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_ad606ca0e313077bd3d59aa018f758a33}\label{_program_8cs_ad606ca0e313077bd3d59aa018f758a33} 
+\index{Program.cs@{Program.cs}!AddGrpc@{AddGrpc}}
+\index{AddGrpc@{AddGrpc}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddGrpc()}{AddGrpc()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Grpc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_ab16ce314052ebbb14dce60b09bb3ef0c}\label{_program_8cs_ab16ce314052ebbb14dce60b09bb3ef0c} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ IAuthRepository, AuthRepository $>$@{AddScoped$<$ IAuthRepository, AuthRepository $>$}}
+\index{AddScoped$<$ IAuthRepository, AuthRepository $>$@{AddScoped$<$ IAuthRepository, AuthRepository $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ IAuthRepository, AuthRepository $>$()}{AddScoped< IAuthRepository, AuthRepository >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped$<$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_auth_repository}{IAuth\+Repository}}, \mbox{\hyperlink{class_data_1_1_repositories_1_1_auth_repository}{Auth\+Repository}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a6466880c43c2a916f6c7196291f99a6b}\label{_program_8cs_a6466880c43c2a916f6c7196291f99a6b} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ IBookingRepository, BookingRepository $>$@{AddScoped$<$ IBookingRepository, BookingRepository $>$}}
+\index{AddScoped$<$ IBookingRepository, BookingRepository $>$@{AddScoped$<$ IBookingRepository, BookingRepository $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ IBookingRepository, BookingRepository $>$()}{AddScoped< IBookingRepository, BookingRepository >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped$<$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_booking_repository}{IBooking\+Repository}}, \mbox{\hyperlink{class_data_1_1_repositories_1_1_booking_repository}{Booking\+Repository}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a4d2682aa6d8e9464aba5d0c5ad597986}\label{_program_8cs_a4d2682aa6d8e9464aba5d0c5ad597986} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ ICafeOwnerRepository, CafeOwnerRepository $>$@{AddScoped$<$ ICafeOwnerRepository, CafeOwnerRepository $>$}}
+\index{AddScoped$<$ ICafeOwnerRepository, CafeOwnerRepository $>$@{AddScoped$<$ ICafeOwnerRepository, CafeOwnerRepository $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ ICafeOwnerRepository, CafeOwnerRepository $>$()}{AddScoped< ICafeOwnerRepository, CafeOwnerRepository >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped$<$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_cafe_owner_repository}{ICafe\+Owner\+Repository}}, \mbox{\hyperlink{class_data_1_1_repositories_1_1_cafe_owner_repository}{Cafe\+Owner\+Repository}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a5e5cc85b20664df76f7941ce05b15428}\label{_program_8cs_a5e5cc85b20664df76f7941ce05b15428} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ IEnterteinerRepository, EnterteinerRepository $>$@{AddScoped$<$ IEnterteinerRepository, EnterteinerRepository $>$}}
+\index{AddScoped$<$ IEnterteinerRepository, EnterteinerRepository $>$@{AddScoped$<$ IEnterteinerRepository, EnterteinerRepository $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ IEnterteinerRepository, EnterteinerRepository $>$()}{AddScoped< IEnterteinerRepository, EnterteinerRepository >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped$<$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_enterteiner_repository}{IEnterteiner\+Repository}}, \mbox{\hyperlink{class_data_1_1_repositories_1_1_enterteiner_repository}{Enterteiner\+Repository}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a99498a1be42e30716bcd942475e430c6}\label{_program_8cs_a99498a1be42e30716bcd942475e430c6} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ IEventRepository, EventRepository $>$@{AddScoped$<$ IEventRepository, EventRepository $>$}}
+\index{AddScoped$<$ IEventRepository, EventRepository $>$@{AddScoped$<$ IEventRepository, EventRepository $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ IEventRepository, EventRepository $>$()}{AddScoped< IEventRepository, EventRepository >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped$<$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_event_repository}{IEvent\+Repository}}, \mbox{\hyperlink{class_data_1_1_repositories_1_1_event_repository}{Event\+Repository}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a9b25dea302cc823259b319c9cca24d73}\label{_program_8cs_a9b25dea302cc823259b319c9cca24d73} 
+\index{Program.cs@{Program.cs}!AddScoped$<$ IPostRepository, PostRepository $>$@{AddScoped$<$ IPostRepository, PostRepository $>$}}
+\index{AddScoped$<$ IPostRepository, PostRepository $>$@{AddScoped$<$ IPostRepository, PostRepository $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddScoped$<$ IPostRepository, PostRepository $>$()}{AddScoped< IPostRepository, PostRepository >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Scoped$<$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_post_repository}{IPost\+Repository}}, \mbox{\hyperlink{class_data_1_1_repositories_1_1_post_repository}{Post\+Repository}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_aa4e9da4ebbd93717f13079f35809b0e8}\label{_program_8cs_aa4e9da4ebbd93717f13079f35809b0e8} 
+\index{Program.cs@{Program.cs}!MapGet@{MapGet}}
+\index{MapGet@{MapGet}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{MapGet()}{MapGet()}}
+{\footnotesize\ttfamily app. Map\+Get (\begin{DoxyParamCaption}\item[{"{}/"{}}]{,  }\item[{()}]{,  }\item[{"{}Communication with g\+RPC endpoints must be made through a g\+RPC client. To learn how to create a}]{client }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a2582f3d1a7c63664f33348328fe0d699}\label{_program_8cs_a2582f3d1a7c63664f33348328fe0d699} 
+\index{Program.cs@{Program.cs}!MapGrpcService$<$ Service.Services.EventServiceImpl $>$@{MapGrpcService$<$ Service.Services.EventServiceImpl $>$}}
+\index{MapGrpcService$<$ Service.Services.EventServiceImpl $>$@{MapGrpcService$<$ Service.Services.EventServiceImpl $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{MapGrpcService$<$ Service.Services.EventServiceImpl $>$()}{MapGrpcService< Service.Services.EventServiceImpl >()}}
+{\footnotesize\ttfamily app. Map\+Grpc\+Service$<$ \mbox{\hyperlink{class_service_1_1_services_1_1_event_service_impl}{Service.\+Services.\+Event\+Service\+Impl}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_af977f307f6e5ff0520948800061ba1ba}\label{_program_8cs_af977f307f6e5ff0520948800061ba1ba} 
+\index{Program.cs@{Program.cs}!MapGrpcService$<$ Service.Services.PostServiceImpl $>$@{MapGrpcService$<$ Service.Services.PostServiceImpl $>$}}
+\index{MapGrpcService$<$ Service.Services.PostServiceImpl $>$@{MapGrpcService$<$ Service.Services.PostServiceImpl $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{MapGrpcService$<$ Service.Services.PostServiceImpl $>$()}{MapGrpcService< Service.Services.PostServiceImpl >()}}
+{\footnotesize\ttfamily app. Map\+Grpc\+Service$<$ \mbox{\hyperlink{class_service_1_1_services_1_1_post_service_impl}{Service.\+Services.\+Post\+Service\+Impl}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a7f367f4be1a6fb6eb46e5c9f57bf335e}\label{_program_8cs_a7f367f4be1a6fb6eb46e5c9f57bf335e} 
+\index{Program.cs@{Program.cs}!MapGrpcService$<$ Service.Services.UserServiceImpl $>$@{MapGrpcService$<$ Service.Services.UserServiceImpl $>$}}
+\index{MapGrpcService$<$ Service.Services.UserServiceImpl $>$@{MapGrpcService$<$ Service.Services.UserServiceImpl $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{MapGrpcService$<$ Service.Services.UserServiceImpl $>$()}{MapGrpcService< Service.Services.UserServiceImpl >()}}
+{\footnotesize\ttfamily app. Map\+Grpc\+Service$<$ \mbox{\hyperlink{class_service_1_1_services_1_1_user_service_impl}{Service.\+Services.\+User\+Service\+Impl}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_aaa3dbf02e269c3ef7e8546d290c6b3dd}\label{_program_8cs_aaa3dbf02e269c3ef7e8546d290c6b3dd} 
+\index{Program.cs@{Program.cs}!Run@{Run}}
+\index{Run@{Run}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily app. Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_ae21f4d83b5bf960636aebee0205958ee}\label{_program_8cs_ae21f4d83b5bf960636aebee0205958ee} 
+\index{Program.cs@{Program.cs}!UseCors@{UseCors}}
+\index{UseCors@{UseCors}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseCors()}{UseCors()}}
+{\footnotesize\ttfamily app. Use\+Cors (\begin{DoxyParamCaption}\item[{"{}Allow\+Blazor\+Origin"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}\label{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d} 
+\index{Program.cs@{Program.cs}!app@{app}}
+\index{app@{app}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily var app = builder.\+Build()}
+
+
+
+Definition at line \mbox{\hyperlink{_program_8cs_source_l00035}{35}} of file \mbox{\hyperlink{_program_8cs_source}{Program.\+cs}}.
+
+\Hypertarget{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}\label{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5} 
+\index{Program.cs@{Program.cs}!builder@{builder}}
+\index{builder@{builder}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{builder}{builder}}
+{\footnotesize\ttfamily var builder = Web\+Application.\+Create\+Builder(args)}
+
+
+
+Definition at line \mbox{\hyperlink{_program_8cs_source_l00009}{9}} of file \mbox{\hyperlink{_program_8cs_source}{Program.\+cs}}.
+

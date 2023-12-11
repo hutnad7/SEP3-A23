@@ -1,14 +1,18 @@
 ﻿@page "/Schedule"
 @using Cafe.dto
-@using Cafe.Models
+@using Cafe.Services
+@using Blazored.LocalStorage
+@using global::Shared.Models
 @inject NotificationService NotificationService
 @inject HttpClient httpClient
+@inject ILocalStorageService _LocalStorage;
+@inject IAuthService AuthService;
 
 @attribute [Authorize("MustBeEntertainer")]
 
 
 
-<RadzenScheduler @ref=@Scheduler SlotRender=@OnSlotRender style="height: 768px;" TItem="EventDto" Data=@appointments 
+<RadzenScheduler @ref=@Scheduler SlotRender=@OnSlotRender style="height: 768px;" TItem="Event" Data=@_events 
     TextProperty="Name" SelectedIndex="2" StartProperty="Start" EndProperty="End">
     <RadzenDayView />
     <RadzenWeekView />
@@ -16,7 +20,7 @@
     <RadzenYearView />
 </RadzenScheduler>
 @code {
-    RadzenScheduler<EventDto> Scheduler;
+    RadzenScheduler<Event> Scheduler;
     Dictionary<DateTime, string> events = new Dictionary<DateTime, string>();
     IList<EventDto> appointments = new List<EventDto>
     {
@@ -25,10 +29,13 @@
         new EventDto { Start = DateTime.Today.AddDays(-2), End = DateTime.Today.AddDays(-2), Name = "Birthday"  },
         new EventDto { Start = DateTime.Today.AddDays(-2), End = DateTime.Today.AddDays(-2), Name = "Birthday"  },*/
      };
+
+    IList<Event> _events = new List<Event>();
     protected async override void OnInitialized()
     {
-        Guid id = Guid.Parse("c60f40aa-9028-4036-9c09-192dceb95f73");
-     var response = await httpClient.GetAsync("http://localhost:8080/api/events/users"+id);
+        string token = await _LocalStorage.GetItemAsStringAsync("token");
+        Guid id = await AuthService.GetId(token);
+        var response = await httpClient.GetAsync("http://localhost:8080/api/events/users/" + id);
     if (response.IsSuccessStatusCode)
         {
             ShowSuccessNotification();
@@ -38,6 +45,18 @@
             ShowErrorNotification("An error occurred while processing your request.");
         }
         appointments = await response.ReadAsync<List<EventDto>>();
+        DateTime start = DateTime.Parse(appointments[0].Start);
+        foreach (EventDto appointment in appointments)
+        {
+            Event _event = new Event()
+            {
+                Id = appointment.Id,
+                Start = DateTime.Parse(appointment.Start),
+                End = DateTime.Parse(appointment.End),
+                Name = appointment.Name
+            };
+            _events.Add(_event);
+        }
     }
     private void ShowSuccessNotification()
     {

@@ -1,0 +1,160 @@
+\doxysection{Cafe.\+Services.\+Http.\+Jwt\+Auth\+Service Class Reference}
+\hypertarget{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service}{}\label{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service}\index{Cafe.Services.Http.JwtAuthService@{Cafe.Services.Http.JwtAuthService}}
+Inheritance diagram for Cafe.\+Services.\+Http.\+Jwt\+Auth\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a78b3bac442bb8dd3f279bcfe4e9aa722}{Jwt\+Auth\+Service}} (ILocal\+Storage\+Service local\+Storage)
+\item 
+async Task \mbox{\hyperlink{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_ae70d9096be0faa9347e652f6b5a0cfa7}{Login\+Async}} (string username, string password)
+\item 
+Task \mbox{\hyperlink{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a5246187dbe66dbd012f5b2f4d948cccb}{Logout\+Async}} ()
+\item 
+async Task \mbox{\hyperlink{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a81f16ac1d10a0c13ebfc6471594486a1}{Register\+Async}} (\mbox{\hyperlink{class_shared_1_1_models_1_1_user}{User}} user)
+\item 
+async Task$<$ string $>$ \mbox{\hyperlink{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a7d35f74bb585288807dfbc0ab6866bd9}{Get\+Role}} (string jwt)
+\item 
+async Task$<$ Guid $>$ \mbox{\hyperlink{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a5a497871cbf2d591e71b5a74163a0ca1}{Get\+Id}} (string jwt)
+\item 
+async Task$<$ Claims\+Principal $>$ \mbox{\hyperlink{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a3e7eefdc57f4b597ad2af29d9a66451b}{Get\+Auth\+Async}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Action$<$ Claims\+Principal $>$ \mbox{\hyperlink{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a4603951cc708c70e4acc5a3a18ba5b93}{On\+Auth\+State\+Changed}} = null!\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_cafe_1_1_services_1_1_i_auth_service}{Cafe.\+Services.\+IAuth\+Service}}}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_jwt_auth_service_8cs_source_l00013}{13}} of file \mbox{\hyperlink{_jwt_auth_service_8cs_source}{Jwt\+Auth\+Service.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a78b3bac442bb8dd3f279bcfe4e9aa722}\label{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a78b3bac442bb8dd3f279bcfe4e9aa722} 
+\index{Cafe.Services.Http.JwtAuthService@{Cafe.Services.Http.JwtAuthService}!JwtAuthService@{JwtAuthService}}
+\index{JwtAuthService@{JwtAuthService}!Cafe.Services.Http.JwtAuthService@{Cafe.Services.Http.JwtAuthService}}
+\doxysubsubsection{\texorpdfstring{JwtAuthService()}{JwtAuthService()}}
+{\footnotesize\ttfamily Cafe.\+Services.\+Http.\+Jwt\+Auth\+Service.\+Jwt\+Auth\+Service (\begin{DoxyParamCaption}\item[{ILocal\+Storage\+Service}]{local\+Storage }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_jwt_auth_service_8cs_source_l00023}{23}} of file \mbox{\hyperlink{_jwt_auth_service_8cs_source}{Jwt\+Auth\+Service.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a3e7eefdc57f4b597ad2af29d9a66451b}\label{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a3e7eefdc57f4b597ad2af29d9a66451b} 
+\index{Cafe.Services.Http.JwtAuthService@{Cafe.Services.Http.JwtAuthService}!GetAuthAsync@{GetAuthAsync}}
+\index{GetAuthAsync@{GetAuthAsync}!Cafe.Services.Http.JwtAuthService@{Cafe.Services.Http.JwtAuthService}}
+\doxysubsubsection{\texorpdfstring{GetAuthAsync()}{GetAuthAsync()}}
+{\footnotesize\ttfamily async Task$<$ Claims\+Principal $>$ Cafe.\+Services.\+Http.\+Jwt\+Auth\+Service.\+Get\+Auth\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_cafe_1_1_services_1_1_i_auth_service_af5673c7bc984c564db187fec9acb678e}{Cafe.\+Services.\+IAuth\+Service}}.
+
+
+
+Definition at line \mbox{\hyperlink{_jwt_auth_service_8cs_source_l00100}{100}} of file \mbox{\hyperlink{_jwt_auth_service_8cs_source}{Jwt\+Auth\+Service.\+cs}}.
+
+\Hypertarget{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a5a497871cbf2d591e71b5a74163a0ca1}\label{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a5a497871cbf2d591e71b5a74163a0ca1} 
+\index{Cafe.Services.Http.JwtAuthService@{Cafe.Services.Http.JwtAuthService}!GetId@{GetId}}
+\index{GetId@{GetId}!Cafe.Services.Http.JwtAuthService@{Cafe.Services.Http.JwtAuthService}}
+\doxysubsubsection{\texorpdfstring{GetId()}{GetId()}}
+{\footnotesize\ttfamily async Task$<$ Guid $>$ Cafe.\+Services.\+Http.\+Jwt\+Auth\+Service.\+Get\+Id (\begin{DoxyParamCaption}\item[{string}]{jwt }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_cafe_1_1_services_1_1_i_auth_service_a8df7a943ed5f24c1f84edb6e80ca25ca}{Cafe.\+Services.\+IAuth\+Service}}.
+
+
+
+Definition at line \mbox{\hyperlink{_jwt_auth_service_8cs_source_l00095}{95}} of file \mbox{\hyperlink{_jwt_auth_service_8cs_source}{Jwt\+Auth\+Service.\+cs}}.
+
+\Hypertarget{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a7d35f74bb585288807dfbc0ab6866bd9}\label{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a7d35f74bb585288807dfbc0ab6866bd9} 
+\index{Cafe.Services.Http.JwtAuthService@{Cafe.Services.Http.JwtAuthService}!GetRole@{GetRole}}
+\index{GetRole@{GetRole}!Cafe.Services.Http.JwtAuthService@{Cafe.Services.Http.JwtAuthService}}
+\doxysubsubsection{\texorpdfstring{GetRole()}{GetRole()}}
+{\footnotesize\ttfamily async Task$<$ string $>$ Cafe.\+Services.\+Http.\+Jwt\+Auth\+Service.\+Get\+Role (\begin{DoxyParamCaption}\item[{string}]{jwt }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_cafe_1_1_services_1_1_i_auth_service_a670f4f287bc8f5b28a8bcfe1c5bb509f}{Cafe.\+Services.\+IAuth\+Service}}.
+
+
+
+Definition at line \mbox{\hyperlink{_jwt_auth_service_8cs_source_l00090}{90}} of file \mbox{\hyperlink{_jwt_auth_service_8cs_source}{Jwt\+Auth\+Service.\+cs}}.
+
+\Hypertarget{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_ae70d9096be0faa9347e652f6b5a0cfa7}\label{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_ae70d9096be0faa9347e652f6b5a0cfa7} 
+\index{Cafe.Services.Http.JwtAuthService@{Cafe.Services.Http.JwtAuthService}!LoginAsync@{LoginAsync}}
+\index{LoginAsync@{LoginAsync}!Cafe.Services.Http.JwtAuthService@{Cafe.Services.Http.JwtAuthService}}
+\doxysubsubsection{\texorpdfstring{LoginAsync()}{LoginAsync()}}
+{\footnotesize\ttfamily async Task Cafe.\+Services.\+Http.\+Jwt\+Auth\+Service.\+Login\+Async (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_cafe_1_1_services_1_1_i_auth_service_a246d02f384c97643fb29032aa3a14abf}{Cafe.\+Services.\+IAuth\+Service}}.
+
+
+
+Definition at line \mbox{\hyperlink{_jwt_auth_service_8cs_source_l00027}{27}} of file \mbox{\hyperlink{_jwt_auth_service_8cs_source}{Jwt\+Auth\+Service.\+cs}}.
+
+\Hypertarget{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a5246187dbe66dbd012f5b2f4d948cccb}\label{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a5246187dbe66dbd012f5b2f4d948cccb} 
+\index{Cafe.Services.Http.JwtAuthService@{Cafe.Services.Http.JwtAuthService}!LogoutAsync@{LogoutAsync}}
+\index{LogoutAsync@{LogoutAsync}!Cafe.Services.Http.JwtAuthService@{Cafe.Services.Http.JwtAuthService}}
+\doxysubsubsection{\texorpdfstring{LogoutAsync()}{LogoutAsync()}}
+{\footnotesize\ttfamily Task Cafe.\+Services.\+Http.\+Jwt\+Auth\+Service.\+Logout\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_cafe_1_1_services_1_1_i_auth_service_abba8d07bdaf57566485e1275d461213d}{Cafe.\+Services.\+IAuth\+Service}}.
+
+
+
+Definition at line \mbox{\hyperlink{_jwt_auth_service_8cs_source_l00069}{69}} of file \mbox{\hyperlink{_jwt_auth_service_8cs_source}{Jwt\+Auth\+Service.\+cs}}.
+
+\Hypertarget{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a81f16ac1d10a0c13ebfc6471594486a1}\label{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a81f16ac1d10a0c13ebfc6471594486a1} 
+\index{Cafe.Services.Http.JwtAuthService@{Cafe.Services.Http.JwtAuthService}!RegisterAsync@{RegisterAsync}}
+\index{RegisterAsync@{RegisterAsync}!Cafe.Services.Http.JwtAuthService@{Cafe.Services.Http.JwtAuthService}}
+\doxysubsubsection{\texorpdfstring{RegisterAsync()}{RegisterAsync()}}
+{\footnotesize\ttfamily async Task Cafe.\+Services.\+Http.\+Jwt\+Auth\+Service.\+Register\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_shared_1_1_models_1_1_user}{User}}}]{user }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_cafe_1_1_services_1_1_i_auth_service_a685a95126fc3c6de39e907b782165744}{Cafe.\+Services.\+IAuth\+Service}}.
+
+
+
+Definition at line \mbox{\hyperlink{_jwt_auth_service_8cs_source_l00077}{77}} of file \mbox{\hyperlink{_jwt_auth_service_8cs_source}{Jwt\+Auth\+Service.\+cs}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a4603951cc708c70e4acc5a3a18ba5b93}\label{class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_a4603951cc708c70e4acc5a3a18ba5b93} 
+\index{Cafe.Services.Http.JwtAuthService@{Cafe.Services.Http.JwtAuthService}!OnAuthStateChanged@{OnAuthStateChanged}}
+\index{OnAuthStateChanged@{OnAuthStateChanged}!Cafe.Services.Http.JwtAuthService@{Cafe.Services.Http.JwtAuthService}}
+\doxysubsubsection{\texorpdfstring{OnAuthStateChanged}{OnAuthStateChanged}}
+{\footnotesize\ttfamily Action$<$Claims\+Principal$>$ Cafe.\+Services.\+Http.\+Jwt\+Auth\+Service.\+On\+Auth\+State\+Changed = null!\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_cafe_1_1_services_1_1_i_auth_service_ad4adc13742444c6063033f2f2b1e20f7}{Cafe.\+Services.\+IAuth\+Service}}.
+
+
+
+Definition at line \mbox{\hyperlink{_jwt_auth_service_8cs_source_l00021}{21}} of file \mbox{\hyperlink{_jwt_auth_service_8cs_source}{Jwt\+Auth\+Service.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cafe/\+Services/\+Http/\mbox{\hyperlink{_jwt_auth_service_8cs}{Jwt\+Auth\+Service.\+cs}}\end{DoxyCompactItemize}

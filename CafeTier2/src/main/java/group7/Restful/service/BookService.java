@@ -23,7 +23,10 @@ public class BookService {
 
     public Booking createBook(Booking booking) {
         BookEventRequest request = BookEventRequest.newBuilder().setUserId(booking.getUserId().toString()).setEventId(booking.getEventId().toString()).setNumerOfPeople(booking.getNumberOfPeople()).build();
-
+        GetEventResponse r = eventClientService.getEventById(GetRequest.newBuilder().setId(booking.getEventId().toString()).build());
+        if(r.getAvailablePlaces()<booking.getNumberOfPeople()){
+            throw new IllegalArgumentException("Not enough places");
+        }
         BookEventResponse response = eventClientService.bookEvent(request);
         Booking b = new Booking(
                 UUID.fromString(response.getUserId()),

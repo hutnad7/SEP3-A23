@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_proto3_reflection" kind="class" language="C#" prot="public">
+    <compoundname>Proto3Reflection</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_proto3_reflection_1a266ad122130b3eafccaf77363a9ae5ca" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>pbr::FileDescriptor</type>
+        <definition>pbr::FileDescriptor Proto3Reflection.Descriptor</definition>
+        <argsstring></argsstring>
+        <name>Descriptor</name>
+        <qualifiedname>Proto3Reflection.Descriptor</qualifiedname>
+        <briefdescription>
+<para>File descriptor for Protos/proto3.proto. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="17" column="37" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="17" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_proto3_reflection_1af7b2464a4d6e9b4ac7f128bd3a51944c" prot="private" static="yes" mutable="no">
+        <type>pbr::FileDescriptor</type>
+        <definition>pbr::FileDescriptor Proto3Reflection.descriptor</definition>
+        <argsstring></argsstring>
+        <name>descriptor</name>
+        <qualifiedname>Proto3Reflection.descriptor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="20" column="38" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_proto3_reflection_1afe2e399af5d7b13661a64beec12f90f2" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>static</type>
+        <definition>static Proto3Reflection.Proto3Reflection</definition>
+        <argsstring>()</argsstring>
+        <name>Proto3Reflection</name>
+        <qualifiedname>Proto3Reflection.Proto3Reflection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="22" column="10" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="22" bodyend="113"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Holder for reflection information generated from Protos/proto3.proto. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="13" column="22" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="13" bodyend="116"/>
+    <listofallmembers>
+      <member refid="class_proto3_reflection_1a266ad122130b3eafccaf77363a9ae5ca" prot="public" virt="non-virtual"><scope>Proto3Reflection</scope><name>Descriptor</name></member>
+      <member refid="class_proto3_reflection_1af7b2464a4d6e9b4ac7f128bd3a51944c" prot="private" virt="non-virtual"><scope>Proto3Reflection</scope><name>descriptor</name></member>
+      <member refid="class_proto3_reflection_1afe2e399af5d7b13661a64beec12f90f2" prot="private" virt="non-virtual"><scope>Proto3Reflection</scope><name>Proto3Reflection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

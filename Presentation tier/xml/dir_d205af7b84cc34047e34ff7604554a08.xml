@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_d205af7b84cc34047e34ff7604554a08" kind="dir">
+    <compoundname>Shared/Dtos</compoundname>
+    <innerfile refid="_post_dto_8cs">PostDto.cs</innerfile>
+    <innerfile refid="_user_login_dto_8cs">UserLoginDto.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Shared/Dtos/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,22 @@
+\doxysection{IEvent\+Repository.\+cs}
+\hypertarget{_i_event_repository_8cs_source}{}\label{_i_event_repository_8cs_source}\index{Data/Interfaces/IEventRepository.cs@{Data/Interfaces/IEventRepository.cs}}
+\mbox{\hyperlink{_i_event_repository_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_i_event_repository_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_i_event_repository_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_i_event_repository_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }System.Linq;}
+\DoxyCodeLine{\Hypertarget{_i_event_repository_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }System.Text;}
+\DoxyCodeLine{\Hypertarget{_i_event_repository_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }System.Threading.Tasks;}
+\DoxyCodeLine{\Hypertarget{_i_event_repository_8cs_source_l00006}00006\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_data_1_1_models}{Data.Models}};}
+\DoxyCodeLine{\Hypertarget{_i_event_repository_8cs_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_i_event_repository_8cs_source_l00008}00008\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_data_1_1_interfaces}{Data.Interfaces}}}
+\DoxyCodeLine{\Hypertarget{_i_event_repository_8cs_source_l00009}00009\ \{}
+\DoxyCodeLine{\Hypertarget{_i_event_repository_8cs_source_l00010}\mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_event_repository}{00010}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{interface\ }\mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_event_repository}{IEventRepository}}\ :\ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository}{IBaseRepository}}<Event>}
+\DoxyCodeLine{\Hypertarget{_i_event_repository_8cs_source_l00011}00011\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_i_event_repository_8cs_source_l00012}\mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_event_repository_ae14c8867e9ad924be743a4a7a9c4e2ab}{00012}}\ \ \ \ \ \ \ \ \ Task<Event>\ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_event_repository_ae14c8867e9ad924be743a4a7a9c4e2ab}{AcceptEventAsync}}(\mbox{\hyperlink{class_data_1_1_models_1_1_event}{Event}}\ @event);}
+\DoxyCodeLine{\Hypertarget{_i_event_repository_8cs_source_l00013}\mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_event_repository_a8d6a98498b5bdd48d22bb6d0a12520fd}{00013}}\ \ \ \ \ \ \ \ \ Task<Event>\ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_event_repository_a8d6a98498b5bdd48d22bb6d0a12520fd}{RefuseEventAsync}}(\mbox{\hyperlink{class_data_1_1_models_1_1_event}{Event}}\ @event);}
+\DoxyCodeLine{\Hypertarget{_i_event_repository_8cs_source_l00014}\mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_event_repository_ad95e7830cd6f2e79d62d4f3176e9e7b4}{00014}}\ \ \ \ \ \ \ \ \ Task<Event>\ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_event_repository_ad95e7830cd6f2e79d62d4f3176e9e7b4}{RevertStateAsync}}(\mbox{\hyperlink{class_data_1_1_models_1_1_event}{Event}}\ @event);}
+\DoxyCodeLine{\Hypertarget{_i_event_repository_8cs_source_l00015}00015\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_i_event_repository_8cs_source_l00016}00016\ \}}
+
+\end{DoxyCode}

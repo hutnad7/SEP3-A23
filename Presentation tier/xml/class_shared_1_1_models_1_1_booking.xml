@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_shared_1_1_models_1_1_booking" kind="class" language="C#" prot="public">
+    <compoundname>Shared::Models::Booking</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_shared_1_1_models_1_1_booking_1a72f482d790dd8edf93d99bb14081fd29" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Guid</type>
+        <definition>Guid Shared.Models.Booking.EventId</definition>
+        <argsstring></argsstring>
+        <name>EventId</name>
+        <qualifiedname>Shared.Models.Booking.EventId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shared/Models/Booking.cs" line="5" column="17" bodyfile="Shared/Models/Booking.cs" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="property" id="class_shared_1_1_models_1_1_booking_1acd4b3bccafeec776eb35fbee9d9d9eeb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>String</type>
+        <definition>String Shared.Models.Booking.FirstName</definition>
+        <argsstring></argsstring>
+        <name>FirstName</name>
+        <qualifiedname>Shared.Models.Booking.FirstName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shared/Models/Booking.cs" line="6" column="19" bodyfile="Shared/Models/Booking.cs" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="property" id="class_shared_1_1_models_1_1_booking_1abff29cc4d0ec06757f3a26ce28a31c41" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>String</type>
+        <definition>String Shared.Models.Booking.LastName</definition>
+        <argsstring></argsstring>
+        <name>LastName</name>
+        <qualifiedname>Shared.Models.Booking.LastName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shared/Models/Booking.cs" line="7" column="19" bodyfile="Shared/Models/Booking.cs" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="property" id="class_shared_1_1_models_1_1_booking_1a7740b905ccad8ab29185ce5f70309796" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Shared.Models.Booking.numberOfPeople</definition>
+        <argsstring></argsstring>
+        <name>numberOfPeople</name>
+        <qualifiedname>Shared.Models.Booking.numberOfPeople</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shared/Models/Booking.cs" line="8" column="16" bodyfile="Shared/Models/Booking.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Shared/Models/Booking.cs" line="3" column="7" bodyfile="Shared/Models/Booking.cs" bodystart="4" bodyend="9"/>
+    <listofallmembers>
+      <member refid="class_shared_1_1_models_1_1_booking_1a72f482d790dd8edf93d99bb14081fd29" prot="public" virt="non-virtual"><scope>Shared::Models::Booking</scope><name>EventId</name></member>
+      <member refid="class_shared_1_1_models_1_1_booking_1acd4b3bccafeec776eb35fbee9d9d9eeb" prot="public" virt="non-virtual"><scope>Shared::Models::Booking</scope><name>FirstName</name></member>
+      <member refid="class_shared_1_1_models_1_1_booking_1abff29cc4d0ec06757f3a26ce28a31c41" prot="public" virt="non-virtual"><scope>Shared::Models::Booking</scope><name>LastName</name></member>
+      <member refid="class_shared_1_1_models_1_1_booking_1a7740b905ccad8ab29185ce5f70309796" prot="public" virt="non-virtual"><scope>Shared::Models::Booking</scope><name>numberOfPeople</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

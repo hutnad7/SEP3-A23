@@ -1,0 +1,53 @@
+\doxysection{Event.\+cs}
+\hypertarget{_event_8cs_source}{}\label{_event_8cs_source}\index{Data/Models/Event.cs@{Data/Models/Event.cs}}
+\mbox{\hyperlink{_event_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }System.ComponentModel.DataAnnotations;}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }System.Linq;}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }System.Threading.Tasks;}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00006}00006\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_data_1_1_state}{Data.State}};}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00008}00008\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_data_1_1_models}{Data.Models}}}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00009}00009\ \{}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00010}\mbox{\hyperlink{class_data_1_1_models_1_1_event}{00010}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_data_1_1_models_1_1_event}{Event}}\ :\ \mbox{\hyperlink{class_data_1_1_models_1_1_base_entity}{BaseEntity}}}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00011}00011\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00013}00013\ \ \ \ \ \ \ \ \ [Required]}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00014}\mbox{\hyperlink{class_data_1_1_models_1_1_event_a4eedf4a5ff26b3d825d506f8289c8600}{00014}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_data_1_1_models_1_1_user}{User}}\ \mbox{\hyperlink{class_data_1_1_models_1_1_event_a4eedf4a5ff26b3d825d506f8289c8600}{CafeOwner}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00016}00016\ \ \ \ \ \ \ \ \ [Required]}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00017}\mbox{\hyperlink{class_data_1_1_models_1_1_event_a9bb8400276cc7f7dbee39429d7808015}{00017}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Guid\ \mbox{\hyperlink{class_data_1_1_models_1_1_event_a9bb8400276cc7f7dbee39429d7808015}{CafeOwnerId}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ [Required]}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00019}\mbox{\hyperlink{class_data_1_1_models_1_1_event_ab353d7c96ca3754a810ce74ba7a039af}{00019}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_data_1_1_models_1_1_user}{User}}\ \mbox{\hyperlink{class_data_1_1_models_1_1_event_ab353d7c96ca3754a810ce74ba7a039af}{Enterteiner}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ [Required]}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00021}\mbox{\hyperlink{class_data_1_1_models_1_1_event_aeb397dbffb772e78f5ec7cf9697cd65a}{00021}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Guid\ \mbox{\hyperlink{class_data_1_1_models_1_1_event_aeb397dbffb772e78f5ec7cf9697cd65a}{EnterteinerId}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ [Required]}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00024}\mbox{\hyperlink{class_data_1_1_models_1_1_event_a549af68433c3028dd46c03b6e1a3a020}{00024}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_data_1_1_models_1_1_event_a549af68433c3028dd46c03b6e1a3a020}{CreationDate}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ [Required]}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00027}\mbox{\hyperlink{class_data_1_1_models_1_1_event_a14a1fc939e0d6dbcf4d66a03a39eab44}{00027}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_data_1_1_models_1_1_event_a14a1fc939e0d6dbcf4d66a03a39eab44}{StartDate}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ [Required]}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00029}\mbox{\hyperlink{class_data_1_1_models_1_1_event_a34b7cabc2dd9e5dc3b2217ce417ca745}{00029}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_data_1_1_models_1_1_event_a34b7cabc2dd9e5dc3b2217ce417ca745}{EndDate}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ [Required]}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00031}\mbox{\hyperlink{class_data_1_1_models_1_1_event_a7825d373ba79f06230d65a286673377d}{00031}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_data_1_1_models_1_1_event_a7825d373ba79f06230d65a286673377d}{Title}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ [Required]}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00034}\mbox{\hyperlink{class_data_1_1_models_1_1_event_ab3b31f8e55250f61c032dd9b1daa28b8}{00034}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_data_1_1_models_1_1_event_ab3b31f8e55250f61c032dd9b1daa28b8}{Text}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ [Required]}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00037}\mbox{\hyperlink{class_data_1_1_models_1_1_event_a9c6202ad3c7543fe3130389710216c23}{00037}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_data_1_1_models_1_1_event_a9c6202ad3c7543fe3130389710216c23}{AvailablePlaces}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00038}\mbox{\hyperlink{class_data_1_1_models_1_1_event_a1e3ebda893d04be671a661a2ecd1e4f8}{00038}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ ICollection<Booking>\ \mbox{\hyperlink{class_data_1_1_models_1_1_event_a1e3ebda893d04be671a661a2ecd1e4f8}{Bookings}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00039}\mbox{\hyperlink{class_data_1_1_models_1_1_event_a95a2eaf7fb3f65eeaa715083e3a1e187}{00039}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ ICollection<Post>\ \mbox{\hyperlink{class_data_1_1_models_1_1_event_a95a2eaf7fb3f65eeaa715083e3a1e187}{Posts}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00041}\mbox{\hyperlink{class_data_1_1_models_1_1_event_a4d3d1a602490ccff80478b22fc863b92}{00041}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{namespace_data_1_1_state_acaa7f9b11f4e199ae9199088d77e4a84}{StateEvent}}\ \mbox{\hyperlink{class_data_1_1_models_1_1_event_a4d3d1a602490ccff80478b22fc863b92}{state}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00042}\mbox{\hyperlink{class_data_1_1_models_1_1_event_a267291381c1a8e8c95d056944801e1d2}{00042}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_data_1_1_models_1_1_event_a267291381c1a8e8c95d056944801e1d2}{Event}}()\ }
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ this.state\ =\ \mbox{\hyperlink{namespace_data_1_1_state_acaa7f9b11f4e199ae9199088d77e4a84}{StateEvent}}.Pending;}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00046}00046\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_event_8cs_source_l00047}00047\ \}}
+
+\end{DoxyCode}

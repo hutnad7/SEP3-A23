@@ -1,0 +1,114 @@
+\doxysection{Data.\+Interfaces.\+IBase\+Repository\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Interface Template Reference}
+\hypertarget{interface_data_1_1_interfaces_1_1_i_base_repository}{}\label{interface_data_1_1_interfaces_1_1_i_base_repository}\index{Data.Interfaces.IBaseRepository$<$ T $>$@{Data.Interfaces.IBaseRepository$<$ T $>$}}
+Inheritance diagram for Data.\+Interfaces.\+IBase\+Repository\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_data_1_1_interfaces_1_1_i_base_repository}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ T $>$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository_a85e24924e99f5db8adf3fd50af6a313b}{Create\+Async}} (T entity)
+\item 
+Task \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository_ab16643ed17b737b626033e7176a3b388}{Delete\+Async}} (Guid id)
+\item 
+Task$<$ ICollection$<$ T $>$ $>$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository_a6c29fb2e5f8219a39933aff1286c3ecb}{Get\+All}} ()
+\item 
+Task$<$ ICollection$<$ T $>$ $>$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository_ad989a3e8eda9ba1ef14c010a419d9faf}{Get\+All}} (Expression$<$ Func$<$ T, bool $>$ $>$ filter)
+\item 
+Task$<$ T $>$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository_a60647473d091c5836cbe58a08107a7fd}{Get\+By\+Id\+Async}} (Guid id)
+\item 
+Value\+Task$<$ ICollection$<$ T $>$ $>$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository_a81187241a4c2c057f67a615ef40531c6}{Get\+By\+Async}} (Expression$<$ Func$<$ T, bool $>$ $>$ filter)
+\item 
+Task \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository_abf9aab7d66e0d533c9def315bb2a22a8}{Update\+Async}} (T entity)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Base\+Entity}]\end{description}
+\end{Desc}
+
+
+Definition at line \mbox{\hyperlink{_i_base_repository_8cs_source_l00011}{11}} of file \mbox{\hyperlink{_i_base_repository_8cs_source}{IBase\+Repository.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_data_1_1_interfaces_1_1_i_base_repository_a85e24924e99f5db8adf3fd50af6a313b}\label{interface_data_1_1_interfaces_1_1_i_base_repository_a85e24924e99f5db8adf3fd50af6a313b} 
+\index{Data.Interfaces.IBaseRepository$<$ T $>$@{Data.Interfaces.IBaseRepository$<$ T $>$}!CreateAsync@{CreateAsync}}
+\index{CreateAsync@{CreateAsync}!Data.Interfaces.IBaseRepository$<$ T $>$@{Data.Interfaces.IBaseRepository$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CreateAsync()}{CreateAsync()}}
+{\footnotesize\ttfamily Task$<$ T $>$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository}{Data.\+Interfaces.\+IBase\+Repository}}$<$ T $>$.Create\+Async (\begin{DoxyParamCaption}\item[{T}]{entity }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_data_1_1_repositories_1_1_base_repository_a529b12e68e31441399bf2f8daa58158e}{Data.\+Repositories.\+Base\+Repository$<$ T $>$}}.
+
+\Hypertarget{interface_data_1_1_interfaces_1_1_i_base_repository_ab16643ed17b737b626033e7176a3b388}\label{interface_data_1_1_interfaces_1_1_i_base_repository_ab16643ed17b737b626033e7176a3b388} 
+\index{Data.Interfaces.IBaseRepository$<$ T $>$@{Data.Interfaces.IBaseRepository$<$ T $>$}!DeleteAsync@{DeleteAsync}}
+\index{DeleteAsync@{DeleteAsync}!Data.Interfaces.IBaseRepository$<$ T $>$@{Data.Interfaces.IBaseRepository$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{DeleteAsync()}{DeleteAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository}{Data.\+Interfaces.\+IBase\+Repository}}$<$ T $>$.Delete\+Async (\begin{DoxyParamCaption}\item[{Guid}]{id }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_data_1_1_repositories_1_1_base_repository_a39c9d9172f264bd4fec32643daacbe45}{Data.\+Repositories.\+Base\+Repository$<$ T $>$}}.
+
+\Hypertarget{interface_data_1_1_interfaces_1_1_i_base_repository_a6c29fb2e5f8219a39933aff1286c3ecb}\label{interface_data_1_1_interfaces_1_1_i_base_repository_a6c29fb2e5f8219a39933aff1286c3ecb} 
+\index{Data.Interfaces.IBaseRepository$<$ T $>$@{Data.Interfaces.IBaseRepository$<$ T $>$}!GetAll@{GetAll}}
+\index{GetAll@{GetAll}!Data.Interfaces.IBaseRepository$<$ T $>$@{Data.Interfaces.IBaseRepository$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetAll()}{GetAll()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Task$<$ ICollection$<$ T $>$ $>$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository}{Data.\+Interfaces.\+IBase\+Repository}}$<$ T $>$.Get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_data_1_1_repositories_1_1_base_repository_a6163b596f5c93a3610b47494d057b0f5}{Data.\+Repositories.\+Base\+Repository$<$ T $>$}}.
+
+\Hypertarget{interface_data_1_1_interfaces_1_1_i_base_repository_ad989a3e8eda9ba1ef14c010a419d9faf}\label{interface_data_1_1_interfaces_1_1_i_base_repository_ad989a3e8eda9ba1ef14c010a419d9faf} 
+\index{Data.Interfaces.IBaseRepository$<$ T $>$@{Data.Interfaces.IBaseRepository$<$ T $>$}!GetAll@{GetAll}}
+\index{GetAll@{GetAll}!Data.Interfaces.IBaseRepository$<$ T $>$@{Data.Interfaces.IBaseRepository$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetAll()}{GetAll()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Task$<$ ICollection$<$ T $>$ $>$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository}{Data.\+Interfaces.\+IBase\+Repository}}$<$ T $>$.Get\+All (\begin{DoxyParamCaption}\item[{Expression$<$ Func$<$ T, bool $>$ $>$}]{filter }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_data_1_1_repositories_1_1_base_repository_a137eb609adafb59f49359239f676d086}{Data.\+Repositories.\+Base\+Repository$<$ T $>$}}.
+
+\Hypertarget{interface_data_1_1_interfaces_1_1_i_base_repository_a81187241a4c2c057f67a615ef40531c6}\label{interface_data_1_1_interfaces_1_1_i_base_repository_a81187241a4c2c057f67a615ef40531c6} 
+\index{Data.Interfaces.IBaseRepository$<$ T $>$@{Data.Interfaces.IBaseRepository$<$ T $>$}!GetByAsync@{GetByAsync}}
+\index{GetByAsync@{GetByAsync}!Data.Interfaces.IBaseRepository$<$ T $>$@{Data.Interfaces.IBaseRepository$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetByAsync()}{GetByAsync()}}
+{\footnotesize\ttfamily Value\+Task$<$ ICollection$<$ T $>$ $>$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository}{Data.\+Interfaces.\+IBase\+Repository}}$<$ T $>$.Get\+By\+Async (\begin{DoxyParamCaption}\item[{Expression$<$ Func$<$ T, bool $>$ $>$}]{filter }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_data_1_1_repositories_1_1_base_repository_a92e9970e8293796850deebf79e72c7c2}{Data.\+Repositories.\+Base\+Repository$<$ T $>$}}.
+
+\Hypertarget{interface_data_1_1_interfaces_1_1_i_base_repository_a60647473d091c5836cbe58a08107a7fd}\label{interface_data_1_1_interfaces_1_1_i_base_repository_a60647473d091c5836cbe58a08107a7fd} 
+\index{Data.Interfaces.IBaseRepository$<$ T $>$@{Data.Interfaces.IBaseRepository$<$ T $>$}!GetByIdAsync@{GetByIdAsync}}
+\index{GetByIdAsync@{GetByIdAsync}!Data.Interfaces.IBaseRepository$<$ T $>$@{Data.Interfaces.IBaseRepository$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetByIdAsync()}{GetByIdAsync()}}
+{\footnotesize\ttfamily Task$<$ T $>$ \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository}{Data.\+Interfaces.\+IBase\+Repository}}$<$ T $>$.Get\+By\+Id\+Async (\begin{DoxyParamCaption}\item[{Guid}]{id }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_data_1_1_repositories_1_1_base_repository_ac2cfe1daf966fec44f41c884943e13c4}{Data.\+Repositories.\+Base\+Repository$<$ T $>$}}.
+
+\Hypertarget{interface_data_1_1_interfaces_1_1_i_base_repository_abf9aab7d66e0d533c9def315bb2a22a8}\label{interface_data_1_1_interfaces_1_1_i_base_repository_abf9aab7d66e0d533c9def315bb2a22a8} 
+\index{Data.Interfaces.IBaseRepository$<$ T $>$@{Data.Interfaces.IBaseRepository$<$ T $>$}!UpdateAsync@{UpdateAsync}}
+\index{UpdateAsync@{UpdateAsync}!Data.Interfaces.IBaseRepository$<$ T $>$@{Data.Interfaces.IBaseRepository$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{UpdateAsync()}{UpdateAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_base_repository}{Data.\+Interfaces.\+IBase\+Repository}}$<$ T $>$.Update\+Async (\begin{DoxyParamCaption}\item[{T}]{entity }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_data_1_1_repositories_1_1_base_repository_ad41095e76cfadfb0188c984ca2c22554}{Data.\+Repositories.\+Base\+Repository$<$ T $>$}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Data/\+Interfaces/\mbox{\hyperlink{_i_base_repository_8cs}{IBase\+Repository.\+cs}}\end{DoxyCompactItemize}

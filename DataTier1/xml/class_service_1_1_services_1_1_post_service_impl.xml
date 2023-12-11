@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_service_1_1_services_1_1_post_service_impl" kind="class" language="C#" prot="public">
+    <compoundname>Service::Services::PostServiceImpl</compoundname>
+    <basecompoundref refid="class_post_service_1_1_post_service_base" prot="public" virt="non-virtual">PostService.PostServiceBase</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_service_1_1_services_1_1_post_service_impl_1ab699cd709a471a369eec71e5eb7efacf" prot="private" static="no" mutable="no">
+        <type>readonly ILogger&lt; <ref refid="class_service_1_1_services_1_1_post_service_impl" kindref="compound">PostServiceImpl</ref> &gt;</type>
+        <definition>readonly ILogger&lt;PostServiceImpl&gt; Service.Services.PostServiceImpl._logger</definition>
+        <argsstring></argsstring>
+        <name>_logger</name>
+        <qualifiedname>Service.Services.PostServiceImpl._logger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Services/PostServiceImpl.cs" line="10" column="30" bodyfile="Service/Services/PostServiceImpl.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_service_1_1_services_1_1_post_service_impl_1ad5282c4897ce736707461f5af611a13c" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_data_1_1_interfaces_1_1_i_post_repository" kindref="compound">IPostRepository</ref></type>
+        <definition>readonly IPostRepository Service.Services.PostServiceImpl._postRepository</definition>
+        <argsstring></argsstring>
+        <name>_postRepository</name>
+        <qualifiedname>Service.Services.PostServiceImpl._postRepository</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Services/PostServiceImpl.cs" line="11" column="38" bodyfile="Service/Services/PostServiceImpl.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_service_1_1_services_1_1_post_service_impl_1a881b4366e48c339be300ad76a6a3ac47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Service.Services.PostServiceImpl.PostServiceImpl</definition>
+        <argsstring>(ILogger&lt; PostServiceImpl &gt; logger, IPostRepository postRepository)</argsstring>
+        <name>PostServiceImpl</name>
+        <qualifiedname>Service.Services.PostServiceImpl.PostServiceImpl</qualifiedname>
+        <param>
+          <type>ILogger&lt; <ref refid="class_service_1_1_services_1_1_post_service_impl" kindref="compound">PostServiceImpl</ref> &gt;</type>
+          <declname>logger</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_data_1_1_interfaces_1_1_i_post_repository" kindref="compound">IPostRepository</ref></type>
+          <declname>postRepository</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Services/PostServiceImpl.cs" line="13" column="12" bodyfile="Service/Services/PostServiceImpl.cs" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_service_1_1_services_1_1_post_service_impl_1a889f64d38d35b12d193c5bb318c40209" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override async Task&lt; <ref refid="class_create_post_response" kindref="compound">CreatePostResponse</ref> &gt;</type>
+        <definition>override async Task&lt; CreatePostResponse &gt; Service.Services.PostServiceImpl.CreatePost</definition>
+        <argsstring>(CreatePostRequest request, ServerCallContext context)</argsstring>
+        <name>CreatePost</name>
+        <qualifiedname>Service.Services.PostServiceImpl.CreatePost</qualifiedname>
+        <param>
+          <type><ref refid="class_create_post_request" kindref="compound">CreatePostRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>ServerCallContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Services/PostServiceImpl.cs" line="19" column="32" bodyfile="Service/Services/PostServiceImpl.cs" bodystart="19" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_service_1_1_services_1_1_post_service_impl_1a72cf8e56842b5ca063bd3d4d0174eb21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override async Task&lt; <ref refid="class_get_posts_response" kindref="compound">GetPostsResponse</ref> &gt;</type>
+        <definition>override async Task&lt; GetPostsResponse &gt; Service.Services.PostServiceImpl.getAllPosts</definition>
+        <argsstring>(Empty request, ServerCallContext context)</argsstring>
+        <name>getAllPosts</name>
+        <qualifiedname>Service.Services.PostServiceImpl.getAllPosts</qualifiedname>
+        <param>
+          <type>Empty</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>ServerCallContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Services/PostServiceImpl.cs" line="57" column="32" bodyfile="Service/Services/PostServiceImpl.cs" bodystart="57" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_service_1_1_services_1_1_post_service_impl_1a6d132e5873c7870ddc91daca6d15d0fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override async Task&lt; <ref refid="class_get_posts_response" kindref="compound">GetPostsResponse</ref> &gt;</type>
+        <definition>override async Task&lt; GetPostsResponse &gt; Service.Services.PostServiceImpl.getAllPostsByAuthorId</definition>
+        <argsstring>(GetRequest request, ServerCallContext context)</argsstring>
+        <name>getAllPostsByAuthorId</name>
+        <qualifiedname>Service.Services.PostServiceImpl.getAllPostsByAuthorId</qualifiedname>
+        <param>
+          <type><ref refid="class_get_request" kindref="compound">GetRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>ServerCallContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Services/PostServiceImpl.cs" line="79" column="32" bodyfile="Service/Services/PostServiceImpl.cs" bodystart="79" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_service_1_1_services_1_1_post_service_impl_1abf9575ae41034d8c77ffcd4f7daad5ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override async Task&lt; <ref refid="class_get_posts_response" kindref="compound">GetPostsResponse</ref> &gt;</type>
+        <definition>override async Task&lt; GetPostsResponse &gt; Service.Services.PostServiceImpl.getAllPostsByEventId</definition>
+        <argsstring>(GetRequest request, ServerCallContext context)</argsstring>
+        <name>getAllPostsByEventId</name>
+        <qualifiedname>Service.Services.PostServiceImpl.getAllPostsByEventId</qualifiedname>
+        <param>
+          <type><ref refid="class_get_request" kindref="compound">GetRequest</ref></type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>ServerCallContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Services/PostServiceImpl.cs" line="101" column="32" bodyfile="Service/Services/PostServiceImpl.cs" bodystart="101" bodyend="123"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>PostService::PostServiceBase</label>
+        <link refid="class_post_service_1_1_post_service_base"/>
+      </node>
+      <node id="1">
+        <label>Service.Services.PostServiceImpl</label>
+        <link refid="class_service_1_1_services_1_1_post_service_impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>PostService::PostServiceBase</label>
+        <link refid="class_post_service_1_1_post_service_base"/>
+      </node>
+      <node id="1">
+        <label>Service.Services.PostServiceImpl</label>
+        <link refid="class_service_1_1_services_1_1_post_service_impl"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Service/Services/PostServiceImpl.cs" line="8" column="7" bodyfile="Service/Services/PostServiceImpl.cs" bodystart="9" bodyend="124"/>
+    <listofallmembers>
+      <member refid="class_service_1_1_services_1_1_post_service_impl_1ab699cd709a471a369eec71e5eb7efacf" prot="private" virt="non-virtual"><scope>Service::Services::PostServiceImpl</scope><name>_logger</name></member>
+      <member refid="class_service_1_1_services_1_1_post_service_impl_1ad5282c4897ce736707461f5af611a13c" prot="private" virt="non-virtual"><scope>Service::Services::PostServiceImpl</scope><name>_postRepository</name></member>
+      <member refid="class_service_1_1_services_1_1_post_service_impl_1a889f64d38d35b12d193c5bb318c40209" prot="public" virt="non-virtual"><scope>Service::Services::PostServiceImpl</scope><name>CreatePost</name></member>
+      <member refid="class_post_service_1_1_post_service_base_1ac36cf3096e67b33fbf8240f597301a46" prot="public" virt="virtual" ambiguityscope="PostService::PostServiceBase."><scope>Service::Services::PostServiceImpl</scope><name>CreatePost</name></member>
+      <member refid="class_service_1_1_services_1_1_post_service_impl_1a72cf8e56842b5ca063bd3d4d0174eb21" prot="public" virt="non-virtual"><scope>Service::Services::PostServiceImpl</scope><name>getAllPosts</name></member>
+      <member refid="class_post_service_1_1_post_service_base_1aeb7f4c52261ac6a98de5aa4465364b7b" prot="public" virt="virtual" ambiguityscope="PostService::PostServiceBase."><scope>Service::Services::PostServiceImpl</scope><name>getAllPosts</name></member>
+      <member refid="class_service_1_1_services_1_1_post_service_impl_1a6d132e5873c7870ddc91daca6d15d0fd" prot="public" virt="non-virtual"><scope>Service::Services::PostServiceImpl</scope><name>getAllPostsByAuthorId</name></member>
+      <member refid="class_post_service_1_1_post_service_base_1a6684264eeab4bc3ed7c00273a3a480fc" prot="public" virt="virtual" ambiguityscope="PostService::PostServiceBase."><scope>Service::Services::PostServiceImpl</scope><name>getAllPostsByAuthorId</name></member>
+      <member refid="class_service_1_1_services_1_1_post_service_impl_1abf9575ae41034d8c77ffcd4f7daad5ee" prot="public" virt="non-virtual"><scope>Service::Services::PostServiceImpl</scope><name>getAllPostsByEventId</name></member>
+      <member refid="class_post_service_1_1_post_service_base_1a2265ddb6b9ffaa170e1003d9b79d853e" prot="public" virt="virtual" ambiguityscope="PostService::PostServiceBase."><scope>Service::Services::PostServiceImpl</scope><name>getAllPostsByEventId</name></member>
+      <member refid="class_service_1_1_services_1_1_post_service_impl_1a881b4366e48c339be300ad76a6a3ac47" prot="public" virt="non-virtual"><scope>Service::Services::PostServiceImpl</scope><name>PostServiceImpl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

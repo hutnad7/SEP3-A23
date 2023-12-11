@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_program_8cs" kind="file" language="C#">
+    <compoundname>Program.cs</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var builder</definition>
+        <argsstring></argsstring>
+        <name>builder</name>
+        <initializer>= WebApplication.CreateBuilder(args)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Program.cs" line="9" column="5" bodyfile="Service/Program.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var app</definition>
+        <argsstring></argsstring>
+        <name>app</name>
+        <initializer>= builder.Build()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Program.cs" line="35" column="5" bodyfile="Service/Program.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_program_8cs_1ad606ca0e313077bd3d59aa018f758a33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddGrpc</definition>
+        <argsstring>()</argsstring>
+        <name>AddGrpc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Program.cs" line="15" column="16" declfile="Service/Program.cs" declline="15" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a9b79cb7b68f148b4bf7705d4ae833644" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddDbContext&lt; DBContext &gt;</definition>
+        <argsstring>(options=&gt; options.UseMySQL(builder.Configuration.GetConnectionString(&quot;Database&quot;)))</argsstring>
+        <name>AddDbContext&lt; DBContext &gt;</name>
+        <param>
+          <type>options</type>
+        </param>
+        <param>
+          <type>options.</type>
+          <declname>UseMySQL</declname>
+          <array>builder.Configuration.GetConnectionString(&quot;Database&quot;)</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Program.cs" line="16" column="8" declfile="Service/Program.cs" declline="16" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1ab16ce314052ebbb14dce60b09bb3ef0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddScoped&lt; IAuthRepository, AuthRepository &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>AddScoped&lt; IAuthRepository, AuthRepository &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Program.cs" line="18" column="8" declfile="Service/Program.cs" declline="18" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a5e5cc85b20664df76f7941ce05b15428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddScoped&lt; IEnterteinerRepository, EnterteinerRepository &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>AddScoped&lt; IEnterteinerRepository, EnterteinerRepository &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Program.cs" line="19" column="8" declfile="Service/Program.cs" declline="19" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a4d2682aa6d8e9464aba5d0c5ad597986" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddScoped&lt; ICafeOwnerRepository, CafeOwnerRepository &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>AddScoped&lt; ICafeOwnerRepository, CafeOwnerRepository &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Program.cs" line="20" column="8" declfile="Service/Program.cs" declline="20" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a99498a1be42e30716bcd942475e430c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddScoped&lt; IEventRepository, EventRepository &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>AddScoped&lt; IEventRepository, EventRepository &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Program.cs" line="21" column="8" declfile="Service/Program.cs" declline="21" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a6466880c43c2a916f6c7196291f99a6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddScoped&lt; IBookingRepository, BookingRepository &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>AddScoped&lt; IBookingRepository, BookingRepository &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Program.cs" line="22" column="8" declfile="Service/Program.cs" declline="22" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a9b25dea302cc823259b319c9cca24d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddScoped&lt; IPostRepository, PostRepository &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>AddScoped&lt; IPostRepository, PostRepository &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Program.cs" line="23" column="8" declfile="Service/Program.cs" declline="23" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a6d09a5f2945b4c6108be845e6015cbcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddCors</definition>
+        <argsstring>(options=&gt; { options.AddPolicy(name:&quot;AllowBlazorOrigin&quot;, builder=&gt; { builder.WithOrigins(&quot;https://localhost:7185&quot;, &quot;https://localhost:5200&quot;).AllowAnyHeader().AllowAnyMethod();});})</argsstring>
+        <name>AddCors</name>
+        <param>
+          <type>options</type>
+        </param>
+        <param>
+          <type>{ options.AddPolicy(name:&quot;AllowBlazorOrigin&quot;, <ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>=&gt; { builder.WithOrigins(&quot;https://localhost:7185&quot;, &quot;https://localhost:5200&quot;).AllowAnyHeader().AllowAnyMethod();});}</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Program.cs" line="24" column="16" declfile="Service/Program.cs" declline="24" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1ae21f4d83b5bf960636aebee0205958ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. UseCors</definition>
+        <argsstring>(&quot;AllowBlazorOrigin&quot;)</argsstring>
+        <name>UseCors</name>
+        <param>
+          <type>&quot;AllowBlazorOrigin&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Program.cs" line="36" column="4" declfile="Service/Program.cs" declline="36" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a2582f3d1a7c63664f33348328fe0d699" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. MapGrpcService&lt; Service.Services.EventServiceImpl &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>MapGrpcService&lt; Service.Services.EventServiceImpl &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Program.cs" line="39" column="1" declfile="Service/Program.cs" declline="39" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a7f367f4be1a6fb6eb46e5c9f57bf335e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. MapGrpcService&lt; Service.Services.UserServiceImpl &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>MapGrpcService&lt; Service.Services.UserServiceImpl &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Program.cs" line="40" column="1" declfile="Service/Program.cs" declline="40" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1af977f307f6e5ff0520948800061ba1ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. MapGrpcService&lt; Service.Services.PostServiceImpl &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>MapGrpcService&lt; Service.Services.PostServiceImpl &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Program.cs" line="41" column="1" declfile="Service/Program.cs" declline="41" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1aa4e9da4ebbd93717f13079f35809b0e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. MapGet</definition>
+        <argsstring>(&quot;/&quot;,()=&gt; &quot;Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909&quot;)</argsstring>
+        <name>MapGet</name>
+        <param>
+          <type>&quot;/&quot;</type>
+        </param>
+        <param>
+          <type>()</type>
+        </param>
+        <param>
+          <type>&quot;Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a</type>
+          <declname>client</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Program.cs" line="42" column="4" declfile="Service/Program.cs" declline="42" declcolumn="4"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1aaa3dbf02e269c3ef7e8546d290c6b3dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>app.</type>
+        <definition>app. Run</definition>
+        <argsstring>()</argsstring>
+        <name>Run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/Program.cs" line="44" column="5" declfile="Service/Program.cs" declline="44" declcolumn="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.EntityFrameworkCore;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Text.Json.Serialization;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_service_1_1_services" kindref="compound">Service.Services</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_data" kindref="compound">Data</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_data_1_1_interfaces" kindref="compound">Data.Interfaces</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_data_1_1_repositories" kindref="compound">Data.Repositories</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" refkind="member"><highlight class="normal">var<sp/><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref><sp/>=<sp/>WebApplication.CreateBuilder(args);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Additional<sp/>configuration<sp/>is<sp/>required<sp/>to<sp/>successfully<sp/>run<sp/>gRPC<sp/>on<sp/>macOS.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>instructions<sp/>on<sp/>how<sp/>to<sp/>configure<sp/>Kestrel<sp/>and<sp/>gRPC<sp/>clients<sp/>on<sp/>macOS,<sp/>visit<sp/>https://go.microsoft.com/fwlink/?linkid=2099682</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Add<sp/>services<sp/>to<sp/>the<sp/>container.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="_program_8cs_1ad606ca0e313077bd3d59aa018f758a33" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddGrpc();</highlight></codeline>
+<codeline lineno="16" refid="_program_8cs_1a9b79cb7b68f148b4bf7705d4ae833644" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddDbContext&lt;<ref refid="class_data_1_1_d_b_context" kindref="compound">DBContext</ref>&gt;(options<sp/>=&gt;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/>options.UseMySQL(<ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Configuration.GetConnectionString(</highlight><highlight class="stringliteral">&quot;Database&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="18" refid="_program_8cs_1ab16ce314052ebbb14dce60b09bb3ef0c" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddScoped&lt;<ref refid="interface_data_1_1_interfaces_1_1_i_auth_repository" kindref="compound">IAuthRepository</ref>,<sp/><ref refid="class_data_1_1_repositories_1_1_auth_repository" kindref="compound">AuthRepository</ref>&gt;();</highlight></codeline>
+<codeline lineno="19" refid="_program_8cs_1a5e5cc85b20664df76f7941ce05b15428" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddScoped&lt;<ref refid="interface_data_1_1_interfaces_1_1_i_enterteiner_repository" kindref="compound">IEnterteinerRepository</ref>,<sp/><ref refid="class_data_1_1_repositories_1_1_enterteiner_repository" kindref="compound">EnterteinerRepository</ref>&gt;();</highlight></codeline>
+<codeline lineno="20" refid="_program_8cs_1a4d2682aa6d8e9464aba5d0c5ad597986" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddScoped&lt;<ref refid="interface_data_1_1_interfaces_1_1_i_cafe_owner_repository" kindref="compound">ICafeOwnerRepository</ref>,<sp/><ref refid="class_data_1_1_repositories_1_1_cafe_owner_repository" kindref="compound">CafeOwnerRepository</ref>&gt;();</highlight></codeline>
+<codeline lineno="21" refid="_program_8cs_1a99498a1be42e30716bcd942475e430c6" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddScoped&lt;<ref refid="interface_data_1_1_interfaces_1_1_i_event_repository" kindref="compound">IEventRepository</ref>,<sp/><ref refid="class_data_1_1_repositories_1_1_event_repository" kindref="compound">EventRepository</ref>&gt;();</highlight></codeline>
+<codeline lineno="22" refid="_program_8cs_1a6466880c43c2a916f6c7196291f99a6b" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddScoped&lt;<ref refid="interface_data_1_1_interfaces_1_1_i_booking_repository" kindref="compound">IBookingRepository</ref>,<sp/><ref refid="class_data_1_1_repositories_1_1_booking_repository" kindref="compound">BookingRepository</ref>&gt;();</highlight></codeline>
+<codeline lineno="23" refid="_program_8cs_1a9b25dea302cc823259b319c9cca24d73" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddScoped&lt;<ref refid="interface_data_1_1_interfaces_1_1_i_post_repository" kindref="compound">IPostRepository</ref>,<sp/><ref refid="class_data_1_1_repositories_1_1_post_repository" kindref="compound">PostRepository</ref>&gt;();</highlight></codeline>
+<codeline lineno="24" refid="_program_8cs_1a6d09a5f2945b4c6108be845e6015cbcf" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddCors(options<sp/>=&gt;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>options.AddPolicy(name:<sp/></highlight><highlight class="stringliteral">&quot;AllowBlazorOrigin&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref><sp/>=&gt;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.WithOrigins(</highlight><highlight class="stringliteral">&quot;https://localhost:7185&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;https://localhost:5200&quot;</highlight><highlight class="normal">).AllowAnyHeader().AllowAnyMethod();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">});</highlight></codeline>
+<codeline lineno="35" refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" refkind="member"><highlight class="normal">var<sp/><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref><sp/>=<sp/><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Build();</highlight></codeline>
+<codeline lineno="36" refid="_program_8cs_1ae21f4d83b5bf960636aebee0205958ee" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.UseCors(</highlight><highlight class="stringliteral">&quot;AllowBlazorOrigin&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Configure<sp/>the<sp/>HTTP<sp/>request<sp/>pipeline.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_program_8cs_1a2582f3d1a7c63664f33348328fe0d699" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapGrpcService&lt;<ref refid="namespace_service" kindref="compound">Service</ref>.<ref refid="namespace_service_1_1_services" kindref="compound">Services</ref>.<ref refid="class_service_1_1_services_1_1_event_service_impl" kindref="compound">EventServiceImpl</ref>&gt;();</highlight></codeline>
+<codeline lineno="40" refid="_program_8cs_1a7f367f4be1a6fb6eb46e5c9f57bf335e" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapGrpcService&lt;<ref refid="namespace_service" kindref="compound">Service</ref>.<ref refid="namespace_service_1_1_services" kindref="compound">Services</ref>.<ref refid="class_service_1_1_services_1_1_user_service_impl" kindref="compound">UserServiceImpl</ref>&gt;();</highlight></codeline>
+<codeline lineno="41" refid="_program_8cs_1af977f307f6e5ff0520948800061ba1ba" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapGrpcService&lt;<ref refid="namespace_service" kindref="compound">Service</ref>.<ref refid="namespace_service_1_1_services" kindref="compound">Services</ref>.<ref refid="class_service_1_1_services_1_1_post_service_impl" kindref="compound">PostServiceImpl</ref>&gt;();</highlight></codeline>
+<codeline lineno="42" refid="_program_8cs_1aa4e9da4ebbd93717f13079f35809b0e8" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.MapGet(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">,<sp/>()<sp/>=&gt;<sp/></highlight><highlight class="stringliteral">&quot;Communication<sp/>with<sp/>gRPC<sp/>endpoints<sp/>must<sp/>be<sp/>made<sp/>through<sp/>a<sp/>gRPC<sp/>client.<sp/>To<sp/>learn<sp/>how<sp/>to<sp/>create<sp/>a<sp/>client,<sp/>visit:<sp/>https://go.microsoft.com/fwlink/?linkid=2086909&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="_program_8cs_1aaa3dbf02e269c3ef7e8546d290c6b3dd" refkind="member"><highlight class="normal"><sp/><ref refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kindref="member">app</ref>.Run();</highlight></codeline>
+    </programlisting>
+    <location file="Service/Program.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_cafe_1_1_models_1_1_event" kind="class" language="C#" prot="public">
+    <compoundname>Cafe::Models::Event</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_cafe_1_1_models_1_1_event_1a3ead835577771dccc084ad9545838073" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Guid</type>
+        <definition>Guid Cafe.Models.Event.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>Cafe.Models.Event.Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Models/Event.cs" line="8" column="17" bodyfile="Cafe/Models/Event.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_cafe_1_1_models_1_1_event_1a61011c2a029393585cf6b98735564daa" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Cafe.Models.Event.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <qualifiedname>Cafe.Models.Event.Name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Models/Event.cs" line="10" column="19" bodyfile="Cafe/Models/Event.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="property" id="class_cafe_1_1_models_1_1_event_1a97a6f60fbd49291702b873ab2da16d8f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Cafe.Models.Event.Description</definition>
+        <argsstring></argsstring>
+        <name>Description</name>
+        <qualifiedname>Cafe.Models.Event.Description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Models/Event.cs" line="12" column="19" bodyfile="Cafe/Models/Event.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_cafe_1_1_models_1_1_event_1a5810d7da4335d42905474de015d14cbd" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Guid</type>
+        <definition>Guid Cafe.Models.Event.EntertainerId</definition>
+        <argsstring></argsstring>
+        <name>EntertainerId</name>
+        <qualifiedname>Cafe.Models.Event.EntertainerId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Models/Event.cs" line="14" column="17" bodyfile="Cafe/Models/Event.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_cafe_1_1_models_1_1_event_1a559700ffcf8edc6bace8fd71f4145618" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Guid</type>
+        <definition>Guid Cafe.Models.Event.CafeOwnerId</definition>
+        <argsstring></argsstring>
+        <name>CafeOwnerId</name>
+        <qualifiedname>Cafe.Models.Event.CafeOwnerId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Models/Event.cs" line="16" column="17" bodyfile="Cafe/Models/Event.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_cafe_1_1_models_1_1_event_1a45f43b8e63e40cffb0f11cbb4e2dfff6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Cafe.Models.Event.EntertainerName</definition>
+        <argsstring></argsstring>
+        <name>EntertainerName</name>
+        <qualifiedname>Cafe.Models.Event.EntertainerName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Models/Event.cs" line="18" column="19" bodyfile="Cafe/Models/Event.cs" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="property" id="class_cafe_1_1_models_1_1_event_1a4615f9e02d263e0e0b34204ac38e4233" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Cafe.Models.Event.CafeOwnerName</definition>
+        <argsstring></argsstring>
+        <name>CafeOwnerName</name>
+        <qualifiedname>Cafe.Models.Event.CafeOwnerName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Models/Event.cs" line="20" column="19" bodyfile="Cafe/Models/Event.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="property" id="class_cafe_1_1_models_1_1_event_1aa284b3547cbcea93a946891422c43ed2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Cafe.Models.Event.Start</definition>
+        <argsstring></argsstring>
+        <name>Start</name>
+        <qualifiedname>Cafe.Models.Event.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Models/Event.cs" line="22" column="19" bodyfile="Cafe/Models/Event.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="property" id="class_cafe_1_1_models_1_1_event_1a869fcd1dbc7e11d59b9834f801b161da" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Cafe.Models.Event.End</definition>
+        <argsstring></argsstring>
+        <name>End</name>
+        <qualifiedname>Cafe.Models.Event.End</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Models/Event.cs" line="24" column="19" bodyfile="Cafe/Models/Event.cs" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="property" id="class_cafe_1_1_models_1_1_event_1aa47b8fccf29632e7253dbc6b6cbb458d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Cafe.Models.Event.AvailablePlaces</definition>
+        <argsstring></argsstring>
+        <name>AvailablePlaces</name>
+        <qualifiedname>Cafe.Models.Event.AvailablePlaces</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Models/Event.cs" line="27" column="16" bodyfile="Cafe/Models/Event.cs" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="property" id="class_cafe_1_1_models_1_1_event_1a3a455e7ec3001ce1e372396abce89c6a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Cafe.Models.Event.Status</definition>
+        <argsstring></argsstring>
+        <name>Status</name>
+        <qualifiedname>Cafe.Models.Event.Status</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Models/Event.cs" line="29" column="19" bodyfile="Cafe/Models/Event.cs" bodystart="29" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Cafe/Models/Event.cs" line="6" column="7" bodyfile="Cafe/Models/Event.cs" bodystart="6" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_cafe_1_1_models_1_1_event_1aa47b8fccf29632e7253dbc6b6cbb458d" prot="public" virt="non-virtual"><scope>Cafe::Models::Event</scope><name>AvailablePlaces</name></member>
+      <member refid="class_cafe_1_1_models_1_1_event_1a559700ffcf8edc6bace8fd71f4145618" prot="public" virt="non-virtual"><scope>Cafe::Models::Event</scope><name>CafeOwnerId</name></member>
+      <member refid="class_cafe_1_1_models_1_1_event_1a4615f9e02d263e0e0b34204ac38e4233" prot="public" virt="non-virtual"><scope>Cafe::Models::Event</scope><name>CafeOwnerName</name></member>
+      <member refid="class_cafe_1_1_models_1_1_event_1a97a6f60fbd49291702b873ab2da16d8f" prot="public" virt="non-virtual"><scope>Cafe::Models::Event</scope><name>Description</name></member>
+      <member refid="class_cafe_1_1_models_1_1_event_1a869fcd1dbc7e11d59b9834f801b161da" prot="public" virt="non-virtual"><scope>Cafe::Models::Event</scope><name>End</name></member>
+      <member refid="class_cafe_1_1_models_1_1_event_1a5810d7da4335d42905474de015d14cbd" prot="public" virt="non-virtual"><scope>Cafe::Models::Event</scope><name>EntertainerId</name></member>
+      <member refid="class_cafe_1_1_models_1_1_event_1a45f43b8e63e40cffb0f11cbb4e2dfff6" prot="public" virt="non-virtual"><scope>Cafe::Models::Event</scope><name>EntertainerName</name></member>
+      <member refid="class_cafe_1_1_models_1_1_event_1a3ead835577771dccc084ad9545838073" prot="public" virt="non-virtual"><scope>Cafe::Models::Event</scope><name>Id</name></member>
+      <member refid="class_cafe_1_1_models_1_1_event_1a61011c2a029393585cf6b98735564daa" prot="public" virt="non-virtual"><scope>Cafe::Models::Event</scope><name>Name</name></member>
+      <member refid="class_cafe_1_1_models_1_1_event_1aa284b3547cbcea93a946891422c43ed2" prot="public" virt="non-virtual"><scope>Cafe::Models::Event</scope><name>Start</name></member>
+      <member refid="class_cafe_1_1_models_1_1_event_1a3a455e7ec3001ce1e372396abce89c6a" prot="public" virt="non-virtual"><scope>Cafe::Models::Event</scope><name>Status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

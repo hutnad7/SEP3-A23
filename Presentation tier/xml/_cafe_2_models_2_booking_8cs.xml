@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_cafe_2_models_2_booking_8cs" kind="file" language="C#">
+    <compoundname>Booking.cs</compoundname>
+    <innerclass refid="class_cafe_1_1_models_1_1_booking" prot="public">Cafe::Models::Booking</innerclass>
+    <innernamespace refid="namespace_cafe">Cafe</innernamespace>
+    <innernamespace refid="namespace_cafe_1_1_models">Cafe::Models</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_cafe_1_1_models" kindref="compound">Cafe.Models</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_cafe_1_1_models_1_1_booking" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_cafe_1_1_models_1_1_booking" kindref="compound">Booking</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="class_cafe_1_1_models_1_1_booking_1a30bfd168a6647fcd9c048d9f3041f7d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Guid<sp/><ref refid="class_cafe_1_1_models_1_1_booking_1a30bfd168a6647fcd9c048d9f3041f7d2" kindref="member">EventId</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="6" refid="class_cafe_1_1_models_1_1_booking_1a0dbabc118cf3a53b942bd5232b090863" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="class_cafe_1_1_models_1_1_booking_1a0dbabc118cf3a53b942bd5232b090863" kindref="member">FirstName</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="7" refid="class_cafe_1_1_models_1_1_booking_1a25e0866e1d872ef6fe3909e331031801" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="class_cafe_1_1_models_1_1_booking_1a25e0866e1d872ef6fe3909e331031801" kindref="member">LastName</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="8" refid="class_cafe_1_1_models_1_1_booking_1a14319d2f4af452e793221e3123c12adf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_cafe_1_1_models_1_1_booking_1a14319d2f4af452e793221e3123c12adf" kindref="member">numberOfPeople</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Cafe/Models/Booking.cs"/>
+  </compounddef>
+</doxygen>

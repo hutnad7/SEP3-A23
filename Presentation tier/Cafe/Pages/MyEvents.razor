@@ -4,11 +4,15 @@
 @using System.Data
 @using System.Net.Http.Headers
 @using System.Text.Json.Serialization
+@using Blazored.LocalStorage
+@using Cafe.Services
 @using Cafe.Uitlities
 @using Newtonsoft.Json
 @using JsonSerializer = System.Text.Json.JsonSerializer
 @inject NotificationService NotificationService
 @inject HttpClient httpClient
+@inject ILocalStorageService _LocalStorage;
+@inject IAuthService AuthService;
 
 @attribute [Authorize(policy:"MustBeEntertainer")]
 
@@ -64,10 +68,11 @@
 
 
 @code {
-    Guid id = Guid.Parse("cc232ead-0b61-4395-9b14-a1de097c0e49");
     List<EventDto> my_events = new List<EventDto>();
     protected async override void OnInitialized()
     {
+        string token = await _LocalStorage.GetItemAsStringAsync("token");
+        Guid id = await AuthService.GetId(token);
         var response = await httpClient.GetAsync("http://localhost:8080/api/events/users/" + id);
         if (response.IsSuccessStatusCode)
         {

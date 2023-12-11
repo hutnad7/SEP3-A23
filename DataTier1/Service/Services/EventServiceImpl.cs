@@ -118,6 +118,7 @@ namespace Service.Services
         public override async Task<GetEventResponse> GetEvent(GetRequest request, ServerCallContext context)
         {
             Event ev = await _eventRepository.GetByIdAsync(Guid.Parse(request.Id));
+            DateTime dateTime = DateTime.Parse(ev.StartDate);
             GetEventResponse response = new GetEventResponse()
             {
                 Id = ev.Id.ToString(),

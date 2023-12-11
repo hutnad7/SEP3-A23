@@ -1,0 +1,452 @@
+\doxysection{Proto3\+Grpc.\+cs}
+\hypertarget{_proto3_grpc_8cs_source}{}\label{_proto3_grpc_8cs_source}\index{Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs@{Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs}}
+\mbox{\hyperlink{_proto3_grpc_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00001}00001\ \textcolor{comment}{//\ <auto-\/generated>}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00002}00002\ \textcolor{comment}{//\ \ \ \ \ Generated\ by\ the\ protocol\ buffer\ compiler.\ \ DO\ NOT\ EDIT!}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00003}00003\ \textcolor{comment}{//\ \ \ \ \ source:\ Protos/proto3.proto}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00004}00004\ \textcolor{comment}{//\ </auto-\/generated>}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00005}00005\ \textcolor{preprocessor}{\#pragma\ warning\ disable\ 0414,\ 1591}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00006}00006\ \textcolor{preprocessor}{\#region\ Designer\ generated\ code}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00008}\mbox{\hyperlink{_proto3_grpc_8cs_ac1caf7931d9a6735b7877748b4ae5c7a}{00008}}\ \textcolor{keyword}{using\ }\mbox{\hyperlink{_proto3_grpc_8cs_ac1caf7931d9a6735b7877748b4ae5c7a}{grpc}}\ =\ global::Grpc.Core;}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00010}00010\ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{partial\ class\ }EventService}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00011}00011\ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00012}00012\ \ \ \textcolor{keyword}{static}\ readonly\ \textcolor{keywordtype}{string}\ \_\_ServiceName\ =\ \textcolor{stringliteral}{"{}EventService"{}};}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00014}00014\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00015}00015\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \_\_Helper\_SerializeMessage(global::Google.Protobuf.IMessage\ message,\ grpc::SerializationContext\ context)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00016}00016\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00017}00017\ \textcolor{preprocessor}{\ \ \ \ \#if\ !GRPC\_DISABLE\_PROTOBUF\_BUFFER\_SERIALIZATION}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00018}00018\ \ \ \ \ \textcolor{keywordflow}{if}\ (message\ is\ global::Google.Protobuf.IBufferMessage)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00019}00019\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00020}00020\ \ \ \ \ \ \ context.SetPayloadLength(message.CalculateSize());}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00021}00021\ \ \ \ \ \ \ global::Google.Protobuf.MessageExtensions.WriteTo(message,\ context.GetBufferWriter());}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00022}00022\ \ \ \ \ \ \ context.Complete();}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00023}00023\ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00024}00024\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00025}00025\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00026}00026\ \ \ \ \ context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00027}00027\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00029}00029\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00030}00030\ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{class\ }\_\_Helper\_MessageCache<T>}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00031}00031\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00032}00032\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ readonly\ \textcolor{keywordtype}{bool}\ IsBufferMessage\ =\ global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00033}00033\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00035}00035\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00036}00036\ \ \ \textcolor{keyword}{static}\ T\ \_\_Helper\_DeserializeMessage<T>(grpc::DeserializationContext\ context,\ global::Google.Protobuf.MessageParser<T>\ parser)\ where\ T\ :\ global::Google.Protobuf.IMessage<T>}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00037}00037\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00038}00038\ \textcolor{preprocessor}{\ \ \ \ \#if\ !GRPC\_DISABLE\_PROTOBUF\_BUFFER\_SERIALIZATION}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00039}00039\ \ \ \ \ \textcolor{keywordflow}{if}\ (\_\_Helper\_MessageCache<T>.IsBufferMessage)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00040}00040\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00041}00041\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ parser.ParseFrom(context.PayloadAsReadOnlySequence());}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00042}00042\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00043}00043\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00044}00044\ \ \ \ \ \textcolor{keywordflow}{return}\ parser.ParseFrom(context.PayloadAsNewBuffer());}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00045}00045\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00047}00047\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00048}00048\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Marshaller<global::CreateEventRequest>\ \_\_Marshaller\_CreateEventRequest\ =\ grpc::Marshallers.Create(\_\_Helper\_SerializeMessage,\ context\ =>\ \_\_Helper\_DeserializeMessage(context,\ global::CreateEventRequest.Parser));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00049}00049\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00050}00050\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Marshaller<global::GetEventResponse>\ \_\_Marshaller\_GetEventResponse\ =\ grpc::Marshallers.Create(\_\_Helper\_SerializeMessage,\ context\ =>\ \_\_Helper\_DeserializeMessage(context,\ global::GetEventResponse.Parser));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00051}00051\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00052}00052\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Marshaller<global::GetRequest>\ \_\_Marshaller\_GetRequest\ =\ grpc::Marshallers.Create(\_\_Helper\_SerializeMessage,\ context\ =>\ \_\_Helper\_DeserializeMessage(context,\ global::GetRequest.Parser));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00053}00053\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00054}00054\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Marshaller<global::GetEventsByUserResponse>\ \_\_Marshaller\_GetEventsByUserResponse\ =\ grpc::Marshallers.Create(\_\_Helper\_SerializeMessage,\ context\ =>\ \_\_Helper\_DeserializeMessage(context,\ global::GetEventsByUserResponse.Parser));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00055}00055\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00056}00056\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty>\ \_\_Marshaller\_google\_protobuf\_Empty\ =\ grpc::Marshallers.Create(\_\_Helper\_SerializeMessage,\ context\ =>\ \_\_Helper\_DeserializeMessage(context,\ global::Google.Protobuf.WellKnownTypes.Empty.Parser));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00057}00057\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00058}00058\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Marshaller<global::GetEventsResponse>\ \_\_Marshaller\_GetEventsResponse\ =\ grpc::Marshallers.Create(\_\_Helper\_SerializeMessage,\ context\ =>\ \_\_Helper\_DeserializeMessage(context,\ global::GetEventsResponse.Parser));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00059}00059\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00060}00060\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Marshaller<global::BookEventRequest>\ \_\_Marshaller\_BookEventRequest\ =\ grpc::Marshallers.Create(\_\_Helper\_SerializeMessage,\ context\ =>\ \_\_Helper\_DeserializeMessage(context,\ global::BookEventRequest.Parser));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00061}00061\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00062}00062\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Marshaller<global::BookEventResponse>\ \_\_Marshaller\_BookEventResponse\ =\ grpc::Marshallers.Create(\_\_Helper\_SerializeMessage,\ context\ =>\ \_\_Helper\_DeserializeMessage(context,\ global::BookEventResponse.Parser));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00064}00064\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00065}00065\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Method<global::CreateEventRequest,\ global::GetEventResponse>\ \_\_Method\_CreateEvent\ =\ \textcolor{keyword}{new}\ grpc::Method<global::CreateEventRequest,\ global::GetEventResponse>(}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00066}00066\ \ \ \ \ \ \ grpc::MethodType.Unary,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00067}00067\ \ \ \ \ \ \ \_\_ServiceName,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00068}00068\ \ \ \ \ \ \ \textcolor{stringliteral}{"{}CreateEvent"{}},}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00069}00069\ \ \ \ \ \ \ \_\_Marshaller\_CreateEventRequest,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00070}00070\ \ \ \ \ \ \ \_\_Marshaller\_GetEventResponse);}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00072}00072\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00073}00073\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Method<global::GetRequest,\ global::GetEventResponse>\ \_\_Method\_GetEvent\ =\ \textcolor{keyword}{new}\ grpc::Method<global::GetRequest,\ global::GetEventResponse>(}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00074}00074\ \ \ \ \ \ \ grpc::MethodType.Unary,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00075}00075\ \ \ \ \ \ \ \_\_ServiceName,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00076}00076\ \ \ \ \ \ \ \textcolor{stringliteral}{"{}GetEvent"{}},}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00077}00077\ \ \ \ \ \ \ \_\_Marshaller\_GetRequest,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00078}00078\ \ \ \ \ \ \ \_\_Marshaller\_GetEventResponse);}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00080}00080\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00081}00081\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Method<global::GetRequest,\ global::GetEventsByUserResponse>\ \_\_Method\_GetEventsByUser\ =\ \textcolor{keyword}{new}\ grpc::Method<global::GetRequest,\ global::GetEventsByUserResponse>(}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00082}00082\ \ \ \ \ \ \ grpc::MethodType.Unary,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00083}00083\ \ \ \ \ \ \ \_\_ServiceName,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00084}00084\ \ \ \ \ \ \ \textcolor{stringliteral}{"{}GetEventsByUser"{}},}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00085}00085\ \ \ \ \ \ \ \_\_Marshaller\_GetRequest,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00086}00086\ \ \ \ \ \ \ \_\_Marshaller\_GetEventsByUserResponse);}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00088}00088\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00089}00089\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty,\ global::GetEventsResponse>\ \_\_Method\_GetAllEvents\ =\ \textcolor{keyword}{new}\ grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty,\ global::GetEventsResponse>(}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00090}00090\ \ \ \ \ \ \ grpc::MethodType.Unary,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00091}00091\ \ \ \ \ \ \ \_\_ServiceName,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00092}00092\ \ \ \ \ \ \ \textcolor{stringliteral}{"{}GetAllEvents"{}},}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00093}00093\ \ \ \ \ \ \ \_\_Marshaller\_google\_protobuf\_Empty,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00094}00094\ \ \ \ \ \ \ \_\_Marshaller\_GetEventsResponse);}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00096}00096\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00097}00097\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Method<global::BookEventRequest,\ global::BookEventResponse>\ \_\_Method\_BookEvent\ =\ \textcolor{keyword}{new}\ grpc::Method<global::BookEventRequest,\ global::BookEventResponse>(}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00098}00098\ \ \ \ \ \ \ grpc::MethodType.Unary,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00099}00099\ \ \ \ \ \ \ \_\_ServiceName,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00100}00100\ \ \ \ \ \ \ \textcolor{stringliteral}{"{}BookEvent"{}},}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00101}00101\ \ \ \ \ \ \ \_\_Marshaller\_BookEventRequest,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00102}00102\ \ \ \ \ \ \ \_\_Marshaller\_BookEventResponse);}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00103}00103\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00104}00104\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00105}00105\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Method<global::GetRequest,\ global::GetEventResponse>\ \_\_Method\_AcceptEvent\ =\ \textcolor{keyword}{new}\ grpc::Method<global::GetRequest,\ global::GetEventResponse>(}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00106}00106\ \ \ \ \ \ \ grpc::MethodType.Unary,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00107}00107\ \ \ \ \ \ \ \_\_ServiceName,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00108}00108\ \ \ \ \ \ \ \textcolor{stringliteral}{"{}AcceptEvent"{}},}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00109}00109\ \ \ \ \ \ \ \_\_Marshaller\_GetRequest,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00110}00110\ \ \ \ \ \ \ \_\_Marshaller\_GetEventResponse);}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00111}00111\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00112}00112\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00113}00113\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Method<global::GetRequest,\ global::GetEventResponse>\ \_\_Method\_RefuseEvent\ =\ \textcolor{keyword}{new}\ grpc::Method<global::GetRequest,\ global::GetEventResponse>(}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00114}00114\ \ \ \ \ \ \ grpc::MethodType.Unary,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00115}00115\ \ \ \ \ \ \ \_\_ServiceName,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00116}00116\ \ \ \ \ \ \ \textcolor{stringliteral}{"{}RefuseEvent"{}},}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00117}00117\ \ \ \ \ \ \ \_\_Marshaller\_GetRequest,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00118}00118\ \ \ \ \ \ \ \_\_Marshaller\_GetEventResponse);}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00119}00119\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00120}00120\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00121}00121\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Method<global::GetRequest,\ global::GetEventResponse>\ \_\_Method\_ReverseState\ =\ \textcolor{keyword}{new}\ grpc::Method<global::GetRequest,\ global::GetEventResponse>(}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00122}00122\ \ \ \ \ \ \ grpc::MethodType.Unary,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00123}00123\ \ \ \ \ \ \ \_\_ServiceName,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00124}00124\ \ \ \ \ \ \ \textcolor{stringliteral}{"{}ReverseState"{}},}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00125}00125\ \ \ \ \ \ \ \_\_Marshaller\_GetRequest,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00126}00126\ \ \ \ \ \ \ \_\_Marshaller\_GetEventResponse);}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00129}00129\ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ global::Google.Protobuf.Reflection.ServiceDescriptor\ Descriptor}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00130}00130\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00131}00131\ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ global::Proto3Reflection.Descriptor.Services[0];\ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00132}00132\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00133}00133\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00135}00135\ \ \ [grpc::BindServiceMethod(typeof(EventService),\ \textcolor{stringliteral}{"{}BindService"{}})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00136}\mbox{\hyperlink{class_event_service_1_1_event_service_base}{00136}}\ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{abstract}\ \textcolor{keyword}{partial\ class\ }\mbox{\hyperlink{class_event_service_1_1_event_service_base}{EventServiceBase}}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00137}00137\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00138}00138\ \ \ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00139}\mbox{\hyperlink{class_event_service_1_1_event_service_base_ad2e015578a7d1057189ecc1137ff2cea}{00139}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ global::System.Threading.Tasks.Task<global::GetEventResponse>\ \mbox{\hyperlink{class_event_service_1_1_event_service_base_ad2e015578a7d1057189ecc1137ff2cea}{CreateEvent}}(global::CreateEventRequest\ request,\ grpc::ServerCallContext\ context)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00140}00140\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00141}00141\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ grpc::RpcException(\textcolor{keyword}{new}\ grpc::Status(grpc::StatusCode.Unimplemented,\ \textcolor{stringliteral}{"{}"{}}));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00142}00142\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00143}00143\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00144}00144\ \ \ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00145}\mbox{\hyperlink{class_event_service_1_1_event_service_base_a9b08193df54689323e796cd749d9f4c1}{00145}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ global::System.Threading.Tasks.Task<global::GetEventResponse>\ \mbox{\hyperlink{class_event_service_1_1_event_service_base_a9b08193df54689323e796cd749d9f4c1}{GetEvent}}(global::GetRequest\ request,\ grpc::ServerCallContext\ context)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00146}00146\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00147}00147\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ grpc::RpcException(\textcolor{keyword}{new}\ grpc::Status(grpc::StatusCode.Unimplemented,\ \textcolor{stringliteral}{"{}"{}}));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00148}00148\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00149}00149\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00150}00150\ \ \ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00151}\mbox{\hyperlink{class_event_service_1_1_event_service_base_a38218fbe030a172d3b585a4af68d12f5}{00151}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ global::System.Threading.Tasks.Task<global::GetEventsByUserResponse>\ \mbox{\hyperlink{class_event_service_1_1_event_service_base_a38218fbe030a172d3b585a4af68d12f5}{GetEventsByUser}}(global::GetRequest\ request,\ grpc::ServerCallContext\ context)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00152}00152\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00153}00153\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ grpc::RpcException(\textcolor{keyword}{new}\ grpc::Status(grpc::StatusCode.Unimplemented,\ \textcolor{stringliteral}{"{}"{}}));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00154}00154\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00155}00155\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00156}00156\ \ \ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00157}\mbox{\hyperlink{class_event_service_1_1_event_service_base_acbad882ee0ff2d0153b75312ffe6caea}{00157}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ global::System.Threading.Tasks.Task<global::GetEventsResponse>\ \mbox{\hyperlink{class_event_service_1_1_event_service_base_acbad882ee0ff2d0153b75312ffe6caea}{GetAllEvents}}(global::Google.Protobuf.WellKnownTypes.Empty\ request,\ grpc::ServerCallContext\ context)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00158}00158\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00159}00159\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ grpc::RpcException(\textcolor{keyword}{new}\ grpc::Status(grpc::StatusCode.Unimplemented,\ \textcolor{stringliteral}{"{}"{}}));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00160}00160\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00161}00161\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00162}00162\ \ \ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00163}\mbox{\hyperlink{class_event_service_1_1_event_service_base_a438b9e7792746d6e722dd4989d1765d6}{00163}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ global::System.Threading.Tasks.Task<global::BookEventResponse>\ \mbox{\hyperlink{class_event_service_1_1_event_service_base_a438b9e7792746d6e722dd4989d1765d6}{BookEvent}}(global::BookEventRequest\ request,\ grpc::ServerCallContext\ context)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00164}00164\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00165}00165\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ grpc::RpcException(\textcolor{keyword}{new}\ grpc::Status(grpc::StatusCode.Unimplemented,\ \textcolor{stringliteral}{"{}"{}}));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00166}00166\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00167}00167\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00168}00168\ \ \ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00169}\mbox{\hyperlink{class_event_service_1_1_event_service_base_ab7187adce64f0ddb55a7cd87c21dfb38}{00169}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ global::System.Threading.Tasks.Task<global::GetEventResponse>\ \mbox{\hyperlink{class_event_service_1_1_event_service_base_ab7187adce64f0ddb55a7cd87c21dfb38}{AcceptEvent}}(global::GetRequest\ request,\ grpc::ServerCallContext\ context)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00170}00170\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00171}00171\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ grpc::RpcException(\textcolor{keyword}{new}\ grpc::Status(grpc::StatusCode.Unimplemented,\ \textcolor{stringliteral}{"{}"{}}));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00172}00172\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00173}00173\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00174}00174\ \ \ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00175}\mbox{\hyperlink{class_event_service_1_1_event_service_base_a7a055f79cabb0639fd67358d1132eaf7}{00175}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ global::System.Threading.Tasks.Task<global::GetEventResponse>\ \mbox{\hyperlink{class_event_service_1_1_event_service_base_a7a055f79cabb0639fd67358d1132eaf7}{RefuseEvent}}(global::GetRequest\ request,\ grpc::ServerCallContext\ context)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00176}00176\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00177}00177\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ grpc::RpcException(\textcolor{keyword}{new}\ grpc::Status(grpc::StatusCode.Unimplemented,\ \textcolor{stringliteral}{"{}"{}}));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00178}00178\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00179}00179\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00180}00180\ \ \ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00181}\mbox{\hyperlink{class_event_service_1_1_event_service_base_ab51bf3c62ae65a1db5e081537f869355}{00181}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ global::System.Threading.Tasks.Task<global::GetEventResponse>\ \mbox{\hyperlink{class_event_service_1_1_event_service_base_ab51bf3c62ae65a1db5e081537f869355}{ReverseState}}(global::GetRequest\ request,\ grpc::ServerCallContext\ context)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00182}00182\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00183}00183\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ grpc::RpcException(\textcolor{keyword}{new}\ grpc::Status(grpc::StatusCode.Unimplemented,\ \textcolor{stringliteral}{"{}"{}}));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00184}00184\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00185}00185\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00186}00186\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00187}00187\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00190}00190\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00191}00191\ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ grpc::ServerServiceDefinition\ BindService(EventServiceBase\ serviceImpl)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00192}00192\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00193}00193\ \ \ \ \ \textcolor{keywordflow}{return}\ grpc::ServerServiceDefinition.CreateBuilder()}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00194}00194\ \ \ \ \ \ \ \ \ .AddMethod(\_\_Method\_CreateEvent,\ serviceImpl.CreateEvent)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00195}00195\ \ \ \ \ \ \ \ \ .AddMethod(\_\_Method\_GetEvent,\ serviceImpl.GetEvent)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00196}00196\ \ \ \ \ \ \ \ \ .AddMethod(\_\_Method\_GetEventsByUser,\ serviceImpl.GetEventsByUser)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00197}00197\ \ \ \ \ \ \ \ \ .AddMethod(\_\_Method\_GetAllEvents,\ serviceImpl.GetAllEvents)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00198}00198\ \ \ \ \ \ \ \ \ .AddMethod(\_\_Method\_BookEvent,\ serviceImpl.BookEvent)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00199}00199\ \ \ \ \ \ \ \ \ .AddMethod(\_\_Method\_AcceptEvent,\ serviceImpl.AcceptEvent)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00200}00200\ \ \ \ \ \ \ \ \ .AddMethod(\_\_Method\_RefuseEvent,\ serviceImpl.RefuseEvent)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00201}00201\ \ \ \ \ \ \ \ \ .AddMethod(\_\_Method\_ReverseState,\ serviceImpl.ReverseState).Build();}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00202}00202\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00203}00203\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00208}00208\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00209}00209\ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ BindService(grpc::ServiceBinderBase\ serviceBinder,\ EventServiceBase\ serviceImpl)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00210}00210\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00211}00211\ \ \ \ \ serviceBinder.AddMethod(\_\_Method\_CreateEvent,\ serviceImpl\ ==\ \textcolor{keyword}{null}\ ?\ \textcolor{keyword}{null}\ :\ new\ \mbox{\hyperlink{_proto3_grpc_8cs_ac1caf7931d9a6735b7877748b4ae5c7a}{grpc}}::UnaryServerMethod<global::\mbox{\hyperlink{class_create_event_request}{CreateEventRequest}},\ global::\mbox{\hyperlink{class_get_event_response}{GetEventResponse}}>(serviceImpl.CreateEvent));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00212}00212\ \ \ \ \ serviceBinder.AddMethod(\_\_Method\_GetEvent,\ serviceImpl\ ==\ \textcolor{keyword}{null}\ ?\ \textcolor{keyword}{null}\ :\ new\ \mbox{\hyperlink{_proto3_grpc_8cs_ac1caf7931d9a6735b7877748b4ae5c7a}{grpc}}::UnaryServerMethod<global::\mbox{\hyperlink{class_get_request}{GetRequest}},\ global::\mbox{\hyperlink{class_get_event_response}{GetEventResponse}}>(serviceImpl.GetEvent));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00213}00213\ \ \ \ \ serviceBinder.AddMethod(\_\_Method\_GetEventsByUser,\ serviceImpl\ ==\ \textcolor{keyword}{null}\ ?\ \textcolor{keyword}{null}\ :\ new\ \mbox{\hyperlink{_proto3_grpc_8cs_ac1caf7931d9a6735b7877748b4ae5c7a}{grpc}}::UnaryServerMethod<global::\mbox{\hyperlink{class_get_request}{GetRequest}},\ global::\mbox{\hyperlink{class_get_events_by_user_response}{GetEventsByUserResponse}}>(serviceImpl.GetEventsByUser));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00214}00214\ \ \ \ \ serviceBinder.AddMethod(\_\_Method\_GetAllEvents,\ serviceImpl\ ==\ \textcolor{keyword}{null}\ ?\ \textcolor{keyword}{null}\ :\ new\ \mbox{\hyperlink{_proto3_grpc_8cs_ac1caf7931d9a6735b7877748b4ae5c7a}{grpc}}::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty,\ global::\mbox{\hyperlink{class_get_events_response}{GetEventsResponse}}>(serviceImpl.GetAllEvents));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00215}00215\ \ \ \ \ serviceBinder.AddMethod(\_\_Method\_BookEvent,\ serviceImpl\ ==\ \textcolor{keyword}{null}\ ?\ \textcolor{keyword}{null}\ :\ new\ \mbox{\hyperlink{_proto3_grpc_8cs_ac1caf7931d9a6735b7877748b4ae5c7a}{grpc}}::UnaryServerMethod<global::\mbox{\hyperlink{class_book_event_request}{BookEventRequest}},\ global::\mbox{\hyperlink{class_book_event_response}{BookEventResponse}}>(serviceImpl.BookEvent));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00216}00216\ \ \ \ \ serviceBinder.AddMethod(\_\_Method\_AcceptEvent,\ serviceImpl\ ==\ \textcolor{keyword}{null}\ ?\ \textcolor{keyword}{null}\ :\ new\ \mbox{\hyperlink{_proto3_grpc_8cs_ac1caf7931d9a6735b7877748b4ae5c7a}{grpc}}::UnaryServerMethod<global::\mbox{\hyperlink{class_get_request}{GetRequest}},\ global::\mbox{\hyperlink{class_get_event_response}{GetEventResponse}}>(serviceImpl.AcceptEvent));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00217}00217\ \ \ \ \ serviceBinder.AddMethod(\_\_Method\_RefuseEvent,\ serviceImpl\ ==\ \textcolor{keyword}{null}\ ?\ \textcolor{keyword}{null}\ :\ new\ \mbox{\hyperlink{_proto3_grpc_8cs_ac1caf7931d9a6735b7877748b4ae5c7a}{grpc}}::UnaryServerMethod<global::\mbox{\hyperlink{class_get_request}{GetRequest}},\ global::\mbox{\hyperlink{class_get_event_response}{GetEventResponse}}>(serviceImpl.RefuseEvent));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00218}00218\ \ \ \ \ serviceBinder.AddMethod(\_\_Method\_ReverseState,\ serviceImpl\ ==\ \textcolor{keyword}{null}\ ?\ \textcolor{keyword}{null}\ :\ new\ \mbox{\hyperlink{_proto3_grpc_8cs_ac1caf7931d9a6735b7877748b4ae5c7a}{grpc}}::UnaryServerMethod<global::\mbox{\hyperlink{class_get_request}{GetRequest}},\ global::\mbox{\hyperlink{class_get_event_response}{GetEventResponse}}>(serviceImpl.ReverseState));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00219}00219\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00220}00220\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00221}00221\ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00222}00222\ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{partial\ class\ }UserService}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00223}00223\ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00224}00224\ \ \ \textcolor{keyword}{static}\ readonly\ \textcolor{keywordtype}{string}\ \_\_ServiceName\ =\ \textcolor{stringliteral}{"{}UserService"{}};}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00225}00225\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00226}00226\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00227}00227\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \_\_Helper\_SerializeMessage(global::Google.Protobuf.IMessage\ message,\ grpc::SerializationContext\ context)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00228}00228\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00229}00229\ \textcolor{preprocessor}{\ \ \ \ \#if\ !GRPC\_DISABLE\_PROTOBUF\_BUFFER\_SERIALIZATION}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00230}00230\ \ \ \ \ \textcolor{keywordflow}{if}\ (message\ is\ global::Google.Protobuf.IBufferMessage)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00231}00231\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00232}00232\ \ \ \ \ \ \ context.SetPayloadLength(message.CalculateSize());}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00233}00233\ \ \ \ \ \ \ global::Google.Protobuf.MessageExtensions.WriteTo(message,\ context.GetBufferWriter());}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00234}00234\ \ \ \ \ \ \ context.Complete();}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00235}00235\ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00236}00236\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00237}00237\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00238}00238\ \ \ \ \ context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00239}00239\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00240}00240\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00241}00241\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00242}00242\ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{class\ }\_\_Helper\_MessageCache<T>}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00243}00243\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00244}00244\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ readonly\ \textcolor{keywordtype}{bool}\ IsBufferMessage\ =\ global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00245}00245\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00246}00246\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00247}00247\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00248}00248\ \ \ \textcolor{keyword}{static}\ T\ \_\_Helper\_DeserializeMessage<T>(grpc::DeserializationContext\ context,\ global::Google.Protobuf.MessageParser<T>\ parser)\ where\ T\ :\ global::Google.Protobuf.IMessage<T>}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00249}00249\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00250}00250\ \textcolor{preprocessor}{\ \ \ \ \#if\ !GRPC\_DISABLE\_PROTOBUF\_BUFFER\_SERIALIZATION}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00251}00251\ \ \ \ \ \textcolor{keywordflow}{if}\ (\_\_Helper\_MessageCache<T>.IsBufferMessage)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00252}00252\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00253}00253\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ parser.ParseFrom(context.PayloadAsReadOnlySequence());}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00254}00254\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00255}00255\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00256}00256\ \ \ \ \ \textcolor{keywordflow}{return}\ parser.ParseFrom(context.PayloadAsNewBuffer());}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00257}00257\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00258}00258\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00259}00259\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00260}00260\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Marshaller<global::CreateUserRequest>\ \_\_Marshaller\_CreateUserRequest\ =\ grpc::Marshallers.Create(\_\_Helper\_SerializeMessage,\ context\ =>\ \_\_Helper\_DeserializeMessage(context,\ global::CreateUserRequest.Parser));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00261}00261\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00262}00262\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Marshaller<global::CreateUserResponse>\ \_\_Marshaller\_CreateUserResponse\ =\ grpc::Marshallers.Create(\_\_Helper\_SerializeMessage,\ context\ =>\ \_\_Helper\_DeserializeMessage(context,\ global::CreateUserResponse.Parser));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00263}00263\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00264}00264\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Marshaller<global::LoginRequest>\ \_\_Marshaller\_LoginRequest\ =\ grpc::Marshallers.Create(\_\_Helper\_SerializeMessage,\ context\ =>\ \_\_Helper\_DeserializeMessage(context,\ global::LoginRequest.Parser));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00265}00265\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00266}00266\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00267}00267\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Method<global::CreateUserRequest,\ global::CreateUserResponse>\ \_\_Method\_CreateUser\ =\ \textcolor{keyword}{new}\ grpc::Method<global::CreateUserRequest,\ global::CreateUserResponse>(}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00268}00268\ \ \ \ \ \ \ grpc::MethodType.Unary,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00269}00269\ \ \ \ \ \ \ \_\_ServiceName,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00270}00270\ \ \ \ \ \ \ \textcolor{stringliteral}{"{}CreateUser"{}},}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00271}00271\ \ \ \ \ \ \ \_\_Marshaller\_CreateUserRequest,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00272}00272\ \ \ \ \ \ \ \_\_Marshaller\_CreateUserResponse);}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00273}00273\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00274}00274\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00275}00275\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Method<global::LoginRequest,\ global::CreateUserResponse>\ \_\_Method\_LoginUser\ =\ \textcolor{keyword}{new}\ grpc::Method<global::LoginRequest,\ global::CreateUserResponse>(}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00276}00276\ \ \ \ \ \ \ grpc::MethodType.Unary,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00277}00277\ \ \ \ \ \ \ \_\_ServiceName,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00278}00278\ \ \ \ \ \ \ \textcolor{stringliteral}{"{}LoginUser"{}},}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00279}00279\ \ \ \ \ \ \ \_\_Marshaller\_LoginRequest,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00280}00280\ \ \ \ \ \ \ \_\_Marshaller\_CreateUserResponse);}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00281}00281\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00283}00283\ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ global::Google.Protobuf.Reflection.ServiceDescriptor\ Descriptor}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00284}00284\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00285}00285\ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ global::Proto3Reflection.Descriptor.Services[1];\ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00286}00286\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00287}00287\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00289}00289\ \ \ [grpc::BindServiceMethod(typeof(UserService),\ \textcolor{stringliteral}{"{}BindService"{}})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00290}\mbox{\hyperlink{class_user_service_1_1_user_service_base}{00290}}\ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{abstract}\ \textcolor{keyword}{partial\ class\ }\mbox{\hyperlink{class_user_service_1_1_user_service_base}{UserServiceBase}}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00291}00291\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00292}00292\ \ \ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00293}\mbox{\hyperlink{class_user_service_1_1_user_service_base_abb7e08b675cc04ebf7319a4ddaabb03b}{00293}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ global::System.Threading.Tasks.Task<global::CreateUserResponse>\ \mbox{\hyperlink{class_user_service_1_1_user_service_base_abb7e08b675cc04ebf7319a4ddaabb03b}{CreateUser}}(global::CreateUserRequest\ request,\ grpc::ServerCallContext\ context)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00294}00294\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00295}00295\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ grpc::RpcException(\textcolor{keyword}{new}\ grpc::Status(grpc::StatusCode.Unimplemented,\ \textcolor{stringliteral}{"{}"{}}));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00296}00296\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00297}00297\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00298}00298\ \ \ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00299}\mbox{\hyperlink{class_user_service_1_1_user_service_base_aefafc38b3cea8dae52202917062e304a}{00299}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ global::System.Threading.Tasks.Task<global::CreateUserResponse>\ \mbox{\hyperlink{class_user_service_1_1_user_service_base_aefafc38b3cea8dae52202917062e304a}{LoginUser}}(global::LoginRequest\ request,\ grpc::ServerCallContext\ context)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00300}00300\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00301}00301\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ grpc::RpcException(\textcolor{keyword}{new}\ grpc::Status(grpc::StatusCode.Unimplemented,\ \textcolor{stringliteral}{"{}"{}}));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00302}00302\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00303}00303\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00304}00304\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00305}00305\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00308}00308\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00309}00309\ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ grpc::ServerServiceDefinition\ BindService(UserServiceBase\ serviceImpl)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00310}00310\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00311}00311\ \ \ \ \ \textcolor{keywordflow}{return}\ grpc::ServerServiceDefinition.CreateBuilder()}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00312}00312\ \ \ \ \ \ \ \ \ .AddMethod(\_\_Method\_CreateUser,\ serviceImpl.CreateUser)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00313}00313\ \ \ \ \ \ \ \ \ .AddMethod(\_\_Method\_LoginUser,\ serviceImpl.LoginUser).Build();}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00314}00314\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00315}00315\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00320}00320\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00321}00321\ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ BindService(grpc::ServiceBinderBase\ serviceBinder,\ UserServiceBase\ serviceImpl)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00322}00322\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00323}00323\ \ \ \ \ serviceBinder.AddMethod(\_\_Method\_CreateUser,\ serviceImpl\ ==\ \textcolor{keyword}{null}\ ?\ \textcolor{keyword}{null}\ :\ new\ \mbox{\hyperlink{_proto3_grpc_8cs_ac1caf7931d9a6735b7877748b4ae5c7a}{grpc}}::UnaryServerMethod<global::\mbox{\hyperlink{class_create_user_request}{CreateUserRequest}},\ global::\mbox{\hyperlink{class_create_user_response}{CreateUserResponse}}>(serviceImpl.CreateUser));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00324}00324\ \ \ \ \ serviceBinder.AddMethod(\_\_Method\_LoginUser,\ serviceImpl\ ==\ \textcolor{keyword}{null}\ ?\ \textcolor{keyword}{null}\ :\ new\ \mbox{\hyperlink{_proto3_grpc_8cs_ac1caf7931d9a6735b7877748b4ae5c7a}{grpc}}::UnaryServerMethod<global::\mbox{\hyperlink{class_login_request}{LoginRequest}},\ global::\mbox{\hyperlink{class_create_user_response}{CreateUserResponse}}>(serviceImpl.LoginUser));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00325}00325\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00326}00326\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00327}00327\ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00328}00328\ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{partial\ class\ }PostService}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00329}00329\ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00330}00330\ \ \ \textcolor{keyword}{static}\ readonly\ \textcolor{keywordtype}{string}\ \_\_ServiceName\ =\ \textcolor{stringliteral}{"{}PostService"{}};}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00331}00331\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00332}00332\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00333}00333\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \_\_Helper\_SerializeMessage(global::Google.Protobuf.IMessage\ message,\ grpc::SerializationContext\ context)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00334}00334\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00335}00335\ \textcolor{preprocessor}{\ \ \ \ \#if\ !GRPC\_DISABLE\_PROTOBUF\_BUFFER\_SERIALIZATION}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00336}00336\ \ \ \ \ \textcolor{keywordflow}{if}\ (message\ is\ global::Google.Protobuf.IBufferMessage)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00337}00337\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00338}00338\ \ \ \ \ \ \ context.SetPayloadLength(message.CalculateSize());}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00339}00339\ \ \ \ \ \ \ global::Google.Protobuf.MessageExtensions.WriteTo(message,\ context.GetBufferWriter());}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00340}00340\ \ \ \ \ \ \ context.Complete();}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00341}00341\ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00342}00342\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00343}00343\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00344}00344\ \ \ \ \ context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00345}00345\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00346}00346\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00347}00347\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00348}00348\ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{class\ }\_\_Helper\_MessageCache<T>}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00349}00349\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00350}00350\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ readonly\ \textcolor{keywordtype}{bool}\ IsBufferMessage\ =\ global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00351}00351\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00352}00352\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00353}00353\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00354}00354\ \ \ \textcolor{keyword}{static}\ T\ \_\_Helper\_DeserializeMessage<T>(grpc::DeserializationContext\ context,\ global::Google.Protobuf.MessageParser<T>\ parser)\ where\ T\ :\ global::Google.Protobuf.IMessage<T>}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00355}00355\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00356}00356\ \textcolor{preprocessor}{\ \ \ \ \#if\ !GRPC\_DISABLE\_PROTOBUF\_BUFFER\_SERIALIZATION}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00357}00357\ \ \ \ \ \textcolor{keywordflow}{if}\ (\_\_Helper\_MessageCache<T>.IsBufferMessage)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00358}00358\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00359}00359\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ parser.ParseFrom(context.PayloadAsReadOnlySequence());}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00360}00360\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00361}00361\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00362}00362\ \ \ \ \ \textcolor{keywordflow}{return}\ parser.ParseFrom(context.PayloadAsNewBuffer());}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00363}00363\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00364}00364\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00365}00365\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00366}00366\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Marshaller<global::CreatePostRequest>\ \_\_Marshaller\_CreatePostRequest\ =\ grpc::Marshallers.Create(\_\_Helper\_SerializeMessage,\ context\ =>\ \_\_Helper\_DeserializeMessage(context,\ global::CreatePostRequest.Parser));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00367}00367\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00368}00368\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Marshaller<global::CreatePostResponse>\ \_\_Marshaller\_CreatePostResponse\ =\ grpc::Marshallers.Create(\_\_Helper\_SerializeMessage,\ context\ =>\ \_\_Helper\_DeserializeMessage(context,\ global::CreatePostResponse.Parser));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00369}00369\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00370}00370\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty>\ \_\_Marshaller\_google\_protobuf\_Empty\ =\ grpc::Marshallers.Create(\_\_Helper\_SerializeMessage,\ context\ =>\ \_\_Helper\_DeserializeMessage(context,\ global::Google.Protobuf.WellKnownTypes.Empty.Parser));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00371}00371\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00372}00372\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Marshaller<global::GetPostsResponse>\ \_\_Marshaller\_GetPostsResponse\ =\ grpc::Marshallers.Create(\_\_Helper\_SerializeMessage,\ context\ =>\ \_\_Helper\_DeserializeMessage(context,\ global::GetPostsResponse.Parser));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00373}00373\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00374}00374\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Marshaller<global::GetRequest>\ \_\_Marshaller\_GetRequest\ =\ grpc::Marshallers.Create(\_\_Helper\_SerializeMessage,\ context\ =>\ \_\_Helper\_DeserializeMessage(context,\ global::GetRequest.Parser));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00375}00375\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00376}00376\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00377}00377\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Method<global::CreatePostRequest,\ global::CreatePostResponse>\ \_\_Method\_CreatePost\ =\ \textcolor{keyword}{new}\ grpc::Method<global::CreatePostRequest,\ global::CreatePostResponse>(}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00378}00378\ \ \ \ \ \ \ grpc::MethodType.Unary,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00379}00379\ \ \ \ \ \ \ \_\_ServiceName,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00380}00380\ \ \ \ \ \ \ \textcolor{stringliteral}{"{}CreatePost"{}},}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00381}00381\ \ \ \ \ \ \ \_\_Marshaller\_CreatePostRequest,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00382}00382\ \ \ \ \ \ \ \_\_Marshaller\_CreatePostResponse);}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00383}00383\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00384}00384\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00385}00385\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty,\ global::GetPostsResponse>\ \_\_Method\_getAllPosts\ =\ \textcolor{keyword}{new}\ grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty,\ global::GetPostsResponse>(}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00386}00386\ \ \ \ \ \ \ grpc::MethodType.Unary,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00387}00387\ \ \ \ \ \ \ \_\_ServiceName,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00388}00388\ \ \ \ \ \ \ \textcolor{stringliteral}{"{}getAllPosts"{}},}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00389}00389\ \ \ \ \ \ \ \_\_Marshaller\_google\_protobuf\_Empty,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00390}00390\ \ \ \ \ \ \ \_\_Marshaller\_GetPostsResponse);}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00391}00391\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00392}00392\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00393}00393\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Method<global::GetRequest,\ global::GetPostsResponse>\ \_\_Method\_getAllPostsByAuthorId\ =\ \textcolor{keyword}{new}\ grpc::Method<global::GetRequest,\ global::GetPostsResponse>(}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00394}00394\ \ \ \ \ \ \ grpc::MethodType.Unary,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00395}00395\ \ \ \ \ \ \ \_\_ServiceName,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00396}00396\ \ \ \ \ \ \ \textcolor{stringliteral}{"{}getAllPostsByAuthorId"{}},}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00397}00397\ \ \ \ \ \ \ \_\_Marshaller\_GetRequest,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00398}00398\ \ \ \ \ \ \ \_\_Marshaller\_GetPostsResponse);}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00399}00399\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00400}00400\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00401}00401\ \ \ \textcolor{keyword}{static}\ readonly\ grpc::Method<global::GetRequest,\ global::GetPostsResponse>\ \_\_Method\_getAllPostsByEventId\ =\ \textcolor{keyword}{new}\ grpc::Method<global::GetRequest,\ global::GetPostsResponse>(}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00402}00402\ \ \ \ \ \ \ grpc::MethodType.Unary,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00403}00403\ \ \ \ \ \ \ \_\_ServiceName,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00404}00404\ \ \ \ \ \ \ \textcolor{stringliteral}{"{}getAllPostsByEventId"{}},}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00405}00405\ \ \ \ \ \ \ \_\_Marshaller\_GetRequest,}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00406}00406\ \ \ \ \ \ \ \_\_Marshaller\_GetPostsResponse);}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00407}00407\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00409}00409\ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ global::Google.Protobuf.Reflection.ServiceDescriptor\ Descriptor}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00410}00410\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00411}00411\ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ global::Proto3Reflection.Descriptor.Services[2];\ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00412}00412\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00413}00413\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00415}00415\ \ \ [grpc::BindServiceMethod(typeof(PostService),\ \textcolor{stringliteral}{"{}BindService"{}})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00416}\mbox{\hyperlink{class_post_service_1_1_post_service_base}{00416}}\ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{abstract}\ \textcolor{keyword}{partial\ class\ }\mbox{\hyperlink{class_post_service_1_1_post_service_base}{PostServiceBase}}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00417}00417\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00418}00418\ \ \ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00419}\mbox{\hyperlink{class_post_service_1_1_post_service_base_ac36cf3096e67b33fbf8240f597301a46}{00419}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ global::System.Threading.Tasks.Task<global::CreatePostResponse>\ \mbox{\hyperlink{class_post_service_1_1_post_service_base_ac36cf3096e67b33fbf8240f597301a46}{CreatePost}}(global::CreatePostRequest\ request,\ grpc::ServerCallContext\ context)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00420}00420\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00421}00421\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ grpc::RpcException(\textcolor{keyword}{new}\ grpc::Status(grpc::StatusCode.Unimplemented,\ \textcolor{stringliteral}{"{}"{}}));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00422}00422\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00423}00423\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00424}00424\ \ \ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00425}\mbox{\hyperlink{class_post_service_1_1_post_service_base_aeb7f4c52261ac6a98de5aa4465364b7b}{00425}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ global::System.Threading.Tasks.Task<global::GetPostsResponse>\ \mbox{\hyperlink{class_post_service_1_1_post_service_base_aeb7f4c52261ac6a98de5aa4465364b7b}{getAllPosts}}(global::Google.Protobuf.WellKnownTypes.Empty\ request,\ grpc::ServerCallContext\ context)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00426}00426\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00427}00427\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ grpc::RpcException(\textcolor{keyword}{new}\ grpc::Status(grpc::StatusCode.Unimplemented,\ \textcolor{stringliteral}{"{}"{}}));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00428}00428\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00429}00429\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00430}00430\ \ \ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00431}\mbox{\hyperlink{class_post_service_1_1_post_service_base_a6684264eeab4bc3ed7c00273a3a480fc}{00431}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ global::System.Threading.Tasks.Task<global::GetPostsResponse>\ \mbox{\hyperlink{class_post_service_1_1_post_service_base_a6684264eeab4bc3ed7c00273a3a480fc}{getAllPostsByAuthorId}}(global::GetRequest\ request,\ grpc::ServerCallContext\ context)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00432}00432\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00433}00433\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ grpc::RpcException(\textcolor{keyword}{new}\ grpc::Status(grpc::StatusCode.Unimplemented,\ \textcolor{stringliteral}{"{}"{}}));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00434}00434\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00435}00435\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00436}00436\ \ \ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00437}\mbox{\hyperlink{class_post_service_1_1_post_service_base_a2265ddb6b9ffaa170e1003d9b79d853e}{00437}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ global::System.Threading.Tasks.Task<global::GetPostsResponse>\ \mbox{\hyperlink{class_post_service_1_1_post_service_base_a2265ddb6b9ffaa170e1003d9b79d853e}{getAllPostsByEventId}}(global::GetRequest\ request,\ grpc::ServerCallContext\ context)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00438}00438\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00439}00439\ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ grpc::RpcException(\textcolor{keyword}{new}\ grpc::Status(grpc::StatusCode.Unimplemented,\ \textcolor{stringliteral}{"{}"{}}));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00440}00440\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00441}00441\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00442}00442\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00443}00443\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00446}00446\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00447}00447\ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ grpc::ServerServiceDefinition\ BindService(PostServiceBase\ serviceImpl)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00448}00448\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00449}00449\ \ \ \ \ \textcolor{keywordflow}{return}\ grpc::ServerServiceDefinition.CreateBuilder()}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00450}00450\ \ \ \ \ \ \ \ \ .AddMethod(\_\_Method\_CreatePost,\ serviceImpl.CreatePost)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00451}00451\ \ \ \ \ \ \ \ \ .AddMethod(\_\_Method\_getAllPosts,\ serviceImpl.getAllPosts)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00452}00452\ \ \ \ \ \ \ \ \ .AddMethod(\_\_Method\_getAllPostsByAuthorId,\ serviceImpl.getAllPostsByAuthorId)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00453}00453\ \ \ \ \ \ \ \ \ .AddMethod(\_\_Method\_getAllPostsByEventId,\ serviceImpl.getAllPostsByEventId).Build();}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00454}00454\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00455}00455\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00460}00460\ \ \ [global::System.CodeDom.Compiler.GeneratedCode(\textcolor{stringliteral}{"{}grpc\_csharp\_plugin"{}},\ \textcolor{keyword}{null})]}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00461}00461\ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ BindService(grpc::ServiceBinderBase\ serviceBinder,\ PostServiceBase\ serviceImpl)}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00462}00462\ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00463}00463\ \ \ \ \ serviceBinder.AddMethod(\_\_Method\_CreatePost,\ serviceImpl\ ==\ \textcolor{keyword}{null}\ ?\ \textcolor{keyword}{null}\ :\ new\ \mbox{\hyperlink{_proto3_grpc_8cs_ac1caf7931d9a6735b7877748b4ae5c7a}{grpc}}::UnaryServerMethod<global::\mbox{\hyperlink{class_create_post_request}{CreatePostRequest}},\ global::\mbox{\hyperlink{class_create_post_response}{CreatePostResponse}}>(serviceImpl.CreatePost));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00464}00464\ \ \ \ \ serviceBinder.AddMethod(\_\_Method\_getAllPosts,\ serviceImpl\ ==\ \textcolor{keyword}{null}\ ?\ \textcolor{keyword}{null}\ :\ new\ \mbox{\hyperlink{_proto3_grpc_8cs_ac1caf7931d9a6735b7877748b4ae5c7a}{grpc}}::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty,\ global::\mbox{\hyperlink{class_get_posts_response}{GetPostsResponse}}>(serviceImpl.getAllPosts));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00465}00465\ \ \ \ \ serviceBinder.AddMethod(\_\_Method\_getAllPostsByAuthorId,\ serviceImpl\ ==\ \textcolor{keyword}{null}\ ?\ \textcolor{keyword}{null}\ :\ new\ \mbox{\hyperlink{_proto3_grpc_8cs_ac1caf7931d9a6735b7877748b4ae5c7a}{grpc}}::UnaryServerMethod<global::\mbox{\hyperlink{class_get_request}{GetRequest}},\ global::\mbox{\hyperlink{class_get_posts_response}{GetPostsResponse}}>(serviceImpl.getAllPostsByAuthorId));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00466}00466\ \ \ \ \ serviceBinder.AddMethod(\_\_Method\_getAllPostsByEventId,\ serviceImpl\ ==\ \textcolor{keyword}{null}\ ?\ \textcolor{keyword}{null}\ :\ new\ \mbox{\hyperlink{_proto3_grpc_8cs_ac1caf7931d9a6735b7877748b4ae5c7a}{grpc}}::UnaryServerMethod<global::\mbox{\hyperlink{class_get_request}{GetRequest}},\ global::\mbox{\hyperlink{class_get_posts_response}{GetPostsResponse}}>(serviceImpl.getAllPostsByEventId));}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00467}00467\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00468}00468\ }
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00469}00469\ \}}
+\DoxyCodeLine{\Hypertarget{_proto3_grpc_8cs_source_l00470}00470\ \textcolor{preprocessor}{\#endregion}}
+
+\end{DoxyCode}

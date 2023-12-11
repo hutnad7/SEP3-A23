@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespace_service_1_1_services" kind="namespace" language="C#">
+    <compoundname>Service::Services</compoundname>
+    <innerclass refid="class_service_1_1_services_1_1_event_service_impl" prot="public">Service::Services::EventServiceImpl</innerclass>
+    <innerclass refid="class_service_1_1_services_1_1_post_service_impl" prot="public">Service::Services::PostServiceImpl</innerclass>
+    <innerclass refid="class_service_1_1_services_1_1_user_service_impl" prot="public">Service::Services::UserServiceImpl</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Service/Services/EventServiceImpl.cs" line="13" column="1"/>
+  </compounddef>
+</doxygen>

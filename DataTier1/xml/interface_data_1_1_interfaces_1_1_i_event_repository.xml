@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="interface_data_1_1_interfaces_1_1_i_event_repository" kind="interface" language="C#" prot="public">
+    <compoundname>Data::Interfaces::IEventRepository</compoundname>
+    <basecompoundref refid="interface_data_1_1_interfaces_1_1_i_base_repository" prot="public" virt="non-virtual">Data.Interfaces.IBaseRepository&lt; Event &gt;</basecompoundref>
+    <derivedcompoundref refid="class_data_1_1_repositories_1_1_event_repository" prot="public" virt="non-virtual">Data.Repositories.EventRepository</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_data_1_1_interfaces_1_1_i_event_repository_1ae14c8867e9ad924be743a4a7a9c4e2ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_data_1_1_models_1_1_event" kindref="compound">Event</ref> &gt;</type>
+        <definition>Task&lt; Event &gt; Data.Interfaces.IEventRepository.AcceptEventAsync</definition>
+        <argsstring>(Event @event)</argsstring>
+        <name>AcceptEventAsync</name>
+        <qualifiedname>Data.Interfaces.IEventRepository.AcceptEventAsync</qualifiedname>
+        <reimplementedby refid="class_data_1_1_repositories_1_1_event_repository_1a94cd22580a8d817ee959d78ddfe10404">AcceptEventAsync</reimplementedby>
+        <param>
+          <type><ref refid="class_data_1_1_models_1_1_event" kindref="compound">Event</ref> @</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Interfaces/IEventRepository.cs" line="12" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_data_1_1_interfaces_1_1_i_event_repository_1a8d6a98498b5bdd48d22bb6d0a12520fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_data_1_1_models_1_1_event" kindref="compound">Event</ref> &gt;</type>
+        <definition>Task&lt; Event &gt; Data.Interfaces.IEventRepository.RefuseEventAsync</definition>
+        <argsstring>(Event @event)</argsstring>
+        <name>RefuseEventAsync</name>
+        <qualifiedname>Data.Interfaces.IEventRepository.RefuseEventAsync</qualifiedname>
+        <reimplementedby refid="class_data_1_1_repositories_1_1_event_repository_1a83fbb08edb080ce7061a6576a85ec126">RefuseEventAsync</reimplementedby>
+        <param>
+          <type><ref refid="class_data_1_1_models_1_1_event" kindref="compound">Event</ref> @</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Interfaces/IEventRepository.cs" line="13" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_data_1_1_interfaces_1_1_i_event_repository_1ad95e7830cd6f2e79d62d4f3176e9e7b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_data_1_1_models_1_1_event" kindref="compound">Event</ref> &gt;</type>
+        <definition>Task&lt; Event &gt; Data.Interfaces.IEventRepository.RevertStateAsync</definition>
+        <argsstring>(Event @event)</argsstring>
+        <name>RevertStateAsync</name>
+        <qualifiedname>Data.Interfaces.IEventRepository.RevertStateAsync</qualifiedname>
+        <reimplementedby refid="class_data_1_1_repositories_1_1_event_repository_1a4f1c1f62c46ee2e4bbc926a6973aff26">RevertStateAsync</reimplementedby>
+        <param>
+          <type><ref refid="class_data_1_1_models_1_1_event" kindref="compound">Event</ref> @</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Interfaces/IEventRepository.cs" line="14" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Data.Interfaces.IEventRepository</label>
+        <link refid="interface_data_1_1_interfaces_1_1_i_event_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Data.Repositories.EventRepository</label>
+        <link refid="class_data_1_1_repositories_1_1_event_repository"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IBaseRepository&lt; Event &gt;</label>
+        <link refid="interface_data_1_1_interfaces_1_1_i_base_repository"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Data.Interfaces.IEventRepository</label>
+        <link refid="interface_data_1_1_interfaces_1_1_i_event_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IBaseRepository&lt; Event &gt;</label>
+        <link refid="interface_data_1_1_interfaces_1_1_i_base_repository"/>
+      </node>
+    </collaborationgraph>
+    <location file="Data/Interfaces/IEventRepository.cs" line="10" column="22" bodyfile="Data/Interfaces/IEventRepository.cs" bodystart="11" bodyend="15"/>
+    <listofallmembers>
+      <member refid="interface_data_1_1_interfaces_1_1_i_event_repository_1ae14c8867e9ad924be743a4a7a9c4e2ab" prot="public" virt="non-virtual"><scope>Data::Interfaces::IEventRepository</scope><name>AcceptEventAsync</name></member>
+      <member refid="interface_data_1_1_interfaces_1_1_i_base_repository_1a85e24924e99f5db8adf3fd50af6a313b" prot="public" virt="non-virtual"><scope>Data::Interfaces::IEventRepository</scope><name>CreateAsync</name></member>
+      <member refid="interface_data_1_1_interfaces_1_1_i_base_repository_1ab16643ed17b737b626033e7176a3b388" prot="public" virt="non-virtual"><scope>Data::Interfaces::IEventRepository</scope><name>DeleteAsync</name></member>
+      <member refid="interface_data_1_1_interfaces_1_1_i_base_repository_1a6c29fb2e5f8219a39933aff1286c3ecb" prot="public" virt="non-virtual"><scope>Data::Interfaces::IEventRepository</scope><name>GetAll</name></member>
+      <member refid="interface_data_1_1_interfaces_1_1_i_base_repository_1ad989a3e8eda9ba1ef14c010a419d9faf" prot="public" virt="non-virtual"><scope>Data::Interfaces::IEventRepository</scope><name>GetAll</name></member>
+      <member refid="interface_data_1_1_interfaces_1_1_i_base_repository_1a81187241a4c2c057f67a615ef40531c6" prot="public" virt="non-virtual"><scope>Data::Interfaces::IEventRepository</scope><name>GetByAsync</name></member>
+      <member refid="interface_data_1_1_interfaces_1_1_i_base_repository_1a60647473d091c5836cbe58a08107a7fd" prot="public" virt="non-virtual"><scope>Data::Interfaces::IEventRepository</scope><name>GetByIdAsync</name></member>
+      <member refid="interface_data_1_1_interfaces_1_1_i_event_repository_1a8d6a98498b5bdd48d22bb6d0a12520fd" prot="public" virt="non-virtual"><scope>Data::Interfaces::IEventRepository</scope><name>RefuseEventAsync</name></member>
+      <member refid="interface_data_1_1_interfaces_1_1_i_event_repository_1ad95e7830cd6f2e79d62d4f3176e9e7b4" prot="public" virt="non-virtual"><scope>Data::Interfaces::IEventRepository</scope><name>RevertStateAsync</name></member>
+      <member refid="interface_data_1_1_interfaces_1_1_i_base_repository_1abf9aab7d66e0d533c9def315bb2a22a8" prot="public" virt="non-virtual"><scope>Data::Interfaces::IEventRepository</scope><name>UpdateAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespace_cafe_1_1_models" kind="namespace" language="C#">
+    <compoundname>Cafe::Models</compoundname>
+    <innerclass refid="class_cafe_1_1_models_1_1_appointment" prot="public">Cafe::Models::Appointment</innerclass>
+    <innerclass refid="class_cafe_1_1_models_1_1_booking" prot="public">Cafe::Models::Booking</innerclass>
+    <innerclass refid="class_cafe_1_1_models_1_1_event" prot="public">Cafe::Models::Event</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Cafe/Models/Appointment.cs" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_program_8cs" kind="file" language="C#">
+    <compoundname>Program.cs</compoundname>
+    <innernamespace refid="namespace_blazored_1_1_local_storage">Blazored::LocalStorage</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_asp_net_core_1_1_components_1_1_web">Microsoft::AspNetCore::Components::Web</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_asp_net_core_1_1_components_1_1_web_assembly_1_1_hosting">Microsoft::AspNetCore::Components::WebAssembly::Hosting</innernamespace>
+    <innernamespace refid="namespace_radzen">Radzen</innernamespace>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" prot="public" static="no" mutable="no">
+        <type>var</type>
+        <definition>var builder</definition>
+        <argsstring></argsstring>
+        <name>builder</name>
+        <initializer>= WebAssemblyHostBuilder.CreateDefault(args)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Program.cs" line="12" column="5" bodyfile="Cafe/Program.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_program_8cs_1a40d549968a84d91d5a5eb9ecf29daae9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.RootComponents.</type>
+        <definition>builder.RootComponents. Add&lt; App &gt;</definition>
+        <argsstring>(&quot;#app&quot;)</argsstring>
+        <name>Add&lt; App &gt;</name>
+        <param>
+          <type>&quot;#app&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Program.cs" line="13" column="8" declfile="Cafe/Program.cs" declline="13" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1ad6782a94a41c3712e4b16f5e5e37f781" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.RootComponents.</type>
+        <definition>builder.RootComponents. Add&lt; HeadOutlet &gt;</definition>
+        <argsstring>(&quot;head::after&quot;)</argsstring>
+        <name>Add&lt; HeadOutlet &gt;</name>
+        <param>
+          <type>&quot;head::after&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Program.cs" line="14" column="8" declfile="Cafe/Program.cs" declline="14" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a1f1cce3f5474799a573735972fcfa9db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddScoped&lt; AuthenticationStateProvider, CustomAuthProvider &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>AddScoped&lt; AuthenticationStateProvider, CustomAuthProvider &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Program.cs" line="16" column="8" declfile="Cafe/Program.cs" declline="16" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1ae14ea207d2637a339741660d3f70d58c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddScoped&lt; IAuthService, JwtAuthService &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>AddScoped&lt; IAuthService, JwtAuthService &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Program.cs" line="17" column="8" declfile="Cafe/Program.cs" declline="17" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a076111912e0b92dfcc028f6af646ee9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>AuthorizationPolicies.</type>
+        <definition>AuthorizationPolicies. AddPolicies</definition>
+        <argsstring>(builder.Services)</argsstring>
+        <name>AddPolicies</name>
+        <param>
+          <type>builder.</type>
+          <declname>Services</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Program.cs" line="19" column="22" declfile="Cafe/Program.cs" declline="19" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1ad23e038402085511bf6d150f155199f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddScoped</definition>
+        <argsstring>(sp=&gt; new HttpClient { BaseAddress=new Uri(builder.HostEnvironment.BaseAddress) })</argsstring>
+        <name>AddScoped</name>
+        <param>
+          <type>sp</type>
+        </param>
+        <param>
+          <type>new HttpClient { BaseAddress=new Uri(builder.HostEnvironment.BaseAddress) }</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Program.cs" line="21" column="16" declfile="Cafe/Program.cs" declline="21" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a123e39cc7c9ef6e668dea1e793557dd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddBlazoredLocalStorage</definition>
+        <argsstring>()</argsstring>
+        <name>AddBlazoredLocalStorage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Program.cs" line="22" column="16" declfile="Cafe/Program.cs" declline="22" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a2ee5517a6d87cbc5d173f16e0cd11c01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddAuthorizationCore</definition>
+        <argsstring>()</argsstring>
+        <name>AddAuthorizationCore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Program.cs" line="23" column="16" declfile="Cafe/Program.cs" declline="23" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1aa7055c04d0d3929e08e96e4755994dd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddScoped</definition>
+        <argsstring>(sp=&gt; new HttpClient { BaseAddress=new Uri(&quot;https://localhost:7185/&quot;) })</argsstring>
+        <name>AddScoped</name>
+        <param>
+          <type>sp</type>
+        </param>
+        <param>
+          <type>new HttpClient { BaseAddress=new Uri(&quot;https://localhost:7185/&quot;) }</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Program.cs" line="25" column="16" declfile="Cafe/Program.cs" declline="25" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a2effe6704f8039f6508bca902dfdad67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>builder.Services.</type>
+        <definition>builder.Services. AddRadzenComponents</definition>
+        <argsstring>()</argsstring>
+        <name>AddRadzenComponents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Program.cs" line="27" column="16" declfile="Cafe/Program.cs" declline="27" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="_program_8cs_1a103eab9352a5901779f62f6c98b53f7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>await builder.</type>
+        <definition>await builder. Build</definition>
+        <argsstring>().RunAsync()</argsstring>
+        <name>Build</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Program.cs" line="29" column="14" declfile="Cafe/Program.cs" declline="29" declcolumn="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">Blazored.LocalStorage;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.AspNetCore.Components.Web;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.AspNetCore.Components.WebAssembly.Hosting;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_cafe" kindref="compound">Cafe</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_cafe_1_1_auth" kindref="compound">Cafe.Auth</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_cafe_1_1_services" kindref="compound">Cafe.Services</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_cafe_1_1_services_1_1_http" kindref="compound">Cafe.Services.Http</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.AspNetCore.Components.Authorization;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Radzen;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_shared_1_1_auth" kindref="compound">Shared.Auth</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" refkind="member"><highlight class="normal">var<sp/><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref><sp/>=<sp/>WebAssemblyHostBuilder.CreateDefault(args);</highlight></codeline>
+<codeline lineno="13" refid="_program_8cs_1a40d549968a84d91d5a5eb9ecf29daae9" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.RootComponents.Add&lt;App&gt;(</highlight><highlight class="stringliteral">&quot;#app&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="14" refid="_program_8cs_1ad6782a94a41c3712e4b16f5e5e37f781" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.RootComponents.Add&lt;HeadOutlet&gt;(</highlight><highlight class="stringliteral">&quot;head::after&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="_program_8cs_1a1f1cce3f5474799a573735972fcfa9db" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddScoped&lt;AuthenticationStateProvider,<sp/><ref refid="class_cafe_1_1_auth_1_1_custom_auth_provider" kindref="compound">CustomAuthProvider</ref>&gt;();</highlight></codeline>
+<codeline lineno="17" refid="_program_8cs_1ae14ea207d2637a339741660d3f70d58c" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddScoped&lt;<ref refid="interface_cafe_1_1_services_1_1_i_auth_service" kindref="compound">IAuthService</ref>,<sp/><ref refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service" kindref="compound">JwtAuthService</ref>&gt;();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_program_8cs_1a076111912e0b92dfcc028f6af646ee9a" refkind="member"><highlight class="normal">AuthorizationPolicies.AddPolicies(<ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="_program_8cs_1ad23e038402085511bf6d150f155199f9" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddScoped(sp<sp/>=&gt;<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>HttpClient<sp/>{<sp/>BaseAddress<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Uri(<ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.HostEnvironment.BaseAddress)<sp/>});</highlight></codeline>
+<codeline lineno="22" refid="_program_8cs_1a123e39cc7c9ef6e668dea1e793557dd0" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddBlazoredLocalStorage();</highlight></codeline>
+<codeline lineno="23" refid="_program_8cs_1a2ee5517a6d87cbc5d173f16e0cd11c01" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddAuthorizationCore();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//builder.Services.AddScoped(sp<sp/>=&gt;<sp/>new<sp/>HttpClient<sp/>{<sp/>BaseAddress<sp/>=<sp/>new<sp/>Uri(builder.HostEnvironment.BaseAddress)<sp/>});</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="_program_8cs_1aa7055c04d0d3929e08e96e4755994dd3" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddScoped(sp<sp/>=&gt;<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>HttpClient<sp/>{<sp/>BaseAddress<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Uri(</highlight><highlight class="stringliteral">&quot;https://localhost:7185/&quot;</highlight><highlight class="normal">)<sp/>});</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="_program_8cs_1a2effe6704f8039f6508bca902dfdad67" refkind="member"><highlight class="normal"><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Services.AddRadzenComponents();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="_program_8cs_1a103eab9352a5901779f62f6c98b53f7b" refkind="member"><highlight class="normal">await<sp/><ref refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kindref="member">builder</ref>.Build().RunAsync();</highlight></codeline>
+    </programlisting>
+    <location file="Cafe/Program.cs"/>
+  </compounddef>
+</doxygen>

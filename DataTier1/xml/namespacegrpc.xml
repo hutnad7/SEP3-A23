@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacegrpc" kind="namespace" language="C#">
+    <compoundname>grpc</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="8" column="11"/>
+  </compounddef>
+</doxygen>

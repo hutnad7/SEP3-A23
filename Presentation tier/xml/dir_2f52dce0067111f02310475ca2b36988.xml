@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_2f52dce0067111f02310475ca2b36988" kind="dir">
+    <compoundname>Cafe</compoundname>
+    <innerdir refid="dir_111b1a86e57dca9e28051258ad258d2e">Cafe/Auth</innerdir>
+    <innerdir refid="dir_3cfcc6f19711ae66b519dcfd2689cefa">Cafe/dto</innerdir>
+    <innerdir refid="dir_d518ce180aaa05e7ccdcd7c2db34ac85">Cafe/Models</innerdir>
+    <innerdir refid="dir_5ec4c003314db1e4026463159f8a2ba9">Cafe/obj</innerdir>
+    <innerdir refid="dir_d4d6f9ac5358bf58f9691494476b8c49">Cafe/Services</innerdir>
+    <innerdir refid="dir_953eaf5de681637ee2d6ab8c0b226c23">Cafe/Uitlities</innerdir>
+    <innerdir refid="dir_cd72463a0fadd4596e2292d0b90e91c1">Cafe/wwwroot</innerdir>
+    <innerfile refid="_program_8cs">Program.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Cafe/"/>
+  </compounddef>
+</doxygen>

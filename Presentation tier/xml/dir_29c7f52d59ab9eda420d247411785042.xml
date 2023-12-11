@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_29c7f52d59ab9eda420d247411785042" kind="dir">
+    <compoundname>Shared/Models</compoundname>
+    <innerfile refid="_shared_2_models_2_booking_8cs">Booking.cs</innerfile>
+    <innerfile refid="_entertainer_8cs">Entertainer.cs</innerfile>
+    <innerfile refid="_shared_2_models_2_event_8cs">Event.cs</innerfile>
+    <innerfile refid="_post_8cs">Post.cs</innerfile>
+    <innerfile refid="_user_8cs">User.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Shared/Models/"/>
+  </compounddef>
+</doxygen>

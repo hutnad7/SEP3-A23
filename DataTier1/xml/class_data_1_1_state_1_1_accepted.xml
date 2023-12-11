@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_data_1_1_state_1_1_accepted" kind="class" language="C#" prot="public">
+    <compoundname>Data::State::Accepted</compoundname>
+    <basecompoundref refid="class_data_1_1_state_1_1_event_state" prot="public" virt="non-virtual">Data.State.EventState</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_data_1_1_state_1_1_accepted_1a91094c73a9692ae887c27aabad58e56d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Data.State.Accepted.accept</definition>
+        <argsstring>(Event @event)</argsstring>
+        <name>accept</name>
+        <qualifiedname>Data.State.Accepted.accept</qualifiedname>
+        <param>
+          <type><ref refid="class_data_1_1_models_1_1_event" kindref="compound">Event</ref> @</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/State/Accepted.cs" line="12" column="30" bodyfile="Data/State/Accepted.cs" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_1_1_state_1_1_accepted_1a1d484ac67449edaf0c605ef1597fe121" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Data.State.Accepted.cancel</definition>
+        <argsstring>(Event @event)</argsstring>
+        <name>cancel</name>
+        <qualifiedname>Data.State.Accepted.cancel</qualifiedname>
+        <param>
+          <type><ref refid="class_data_1_1_models_1_1_event" kindref="compound">Event</ref> @</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/State/Accepted.cs" line="17" column="30" bodyfile="Data/State/Accepted.cs" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_1_1_state_1_1_accepted_1a63793a54ecd68d2ff5366f3352770159" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Data.State.Accepted.refuse</definition>
+        <argsstring>(Event @event)</argsstring>
+        <name>refuse</name>
+        <qualifiedname>Data.State.Accepted.refuse</qualifiedname>
+        <param>
+          <type><ref refid="class_data_1_1_models_1_1_event" kindref="compound">Event</ref> @</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/State/Accepted.cs" line="22" column="30" bodyfile="Data/State/Accepted.cs" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_1_1_state_1_1_accepted_1a7f3cb5f907bcc231b34501f08854447c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Data.State.Accepted.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Data.State.Accepted.ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/State/Accepted.cs" line="26" column="32" bodyfile="Data/State/Accepted.cs" bodystart="26" bodyend="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Data.State.Accepted</label>
+        <link refid="class_data_1_1_state_1_1_accepted"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>EventState</label>
+        <link refid="class_data_1_1_state_1_1_event_state"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Data.State.Accepted</label>
+        <link refid="class_data_1_1_state_1_1_accepted"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>EventState</label>
+        <link refid="class_data_1_1_state_1_1_event_state"/>
+      </node>
+    </collaborationgraph>
+    <location file="Data/State/Accepted.cs" line="10" column="11" bodyfile="Data/State/Accepted.cs" bodystart="11" bodyend="30"/>
+    <listofallmembers>
+      <member refid="class_data_1_1_state_1_1_accepted_1a91094c73a9692ae887c27aabad58e56d" prot="public" virt="non-virtual"><scope>Data::State::Accepted</scope><name>accept</name></member>
+      <member refid="class_data_1_1_state_1_1_accepted_1a1d484ac67449edaf0c605ef1597fe121" prot="public" virt="non-virtual"><scope>Data::State::Accepted</scope><name>cancel</name></member>
+      <member refid="class_data_1_1_state_1_1_accepted_1a63793a54ecd68d2ff5366f3352770159" prot="public" virt="non-virtual"><scope>Data::State::Accepted</scope><name>refuse</name></member>
+      <member refid="class_data_1_1_state_1_1_event_state_1a9a494b2a9053d771e06304099c29a5dd" prot="public" virt="non-virtual"><scope>Data::State::Accepted</scope><name>Role</name></member>
+      <member refid="class_data_1_1_state_1_1_accepted_1a7f3cb5f907bcc231b34501f08854447c" prot="public" virt="non-virtual"><scope>Data::State::Accepted</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

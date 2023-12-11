@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_data_1_1_models_1_1_user" kind="class" language="C#" prot="public">
+    <compoundname>Data::Models::User</compoundname>
+    <basecompoundref refid="class_data_1_1_models_1_1_base_entity" prot="public" virt="non-virtual">Data.Models.BaseEntity</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_data_1_1_models_1_1_user_1ae517071af89c2f9fb365e2bba9573f7d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Data.Models.User.Firstname</definition>
+        <argsstring></argsstring>
+        <name>Firstname</name>
+        <qualifiedname>Data.Models.User.Firstname</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/User.cs" line="15" column="23" bodyfile="Data/Models/User.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_user_1aa6db365a2318633bc6bff47b3b30c9ae" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Data.Models.User.Lastname</definition>
+        <argsstring></argsstring>
+        <name>Lastname</name>
+        <qualifiedname>Data.Models.User.Lastname</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/User.cs" line="18" column="23" bodyfile="Data/Models/User.cs" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_user_1a002abe68e587be976bc1b7c2e583d4c0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Data.Models.User.Description</definition>
+        <argsstring></argsstring>
+        <name>Description</name>
+        <qualifiedname>Data.Models.User.Description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/User.cs" line="20" column="23" bodyfile="Data/Models/User.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_user_1a771f52c5344e3bc7c17bf4809551684a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Data.Models.User.Username</definition>
+        <argsstring></argsstring>
+        <name>Username</name>
+        <qualifiedname>Data.Models.User.Username</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/User.cs" line="24" column="23" bodyfile="Data/Models/User.cs" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_user_1a9ce90c10eb34ca893afbd4a4c4992478" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Data.Models.User.Email</definition>
+        <argsstring></argsstring>
+        <name>Email</name>
+        <qualifiedname>Data.Models.User.Email</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/User.cs" line="27" column="23" bodyfile="Data/Models/User.cs" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_user_1a5eb17bf0aa156d13afc7b66a6e4c2bee" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Data.Models.User.CreationDate</definition>
+        <argsstring></argsstring>
+        <name>CreationDate</name>
+        <qualifiedname>Data.Models.User.CreationDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/User.cs" line="30" column="23" bodyfile="Data/Models/User.cs" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_user_1a49a6a912367f723bc1a1e5cfc8b3403e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_data_1_1_models_1a4ca06d0eba59dff4686824595750f053" kindref="member">Role</ref></type>
+        <definition>Role Data.Models.User.Role</definition>
+        <argsstring></argsstring>
+        <name>Role</name>
+        <qualifiedname>Data.Models.User.Role</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/User.cs" line="33" column="21" bodyfile="Data/Models/User.cs" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_user_1ae6804b4c997a18427b2a88ccc848b96a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>ICollection&lt; <ref refid="class_data_1_1_models_1_1_event" kindref="compound">Event</ref> &gt;</type>
+        <definition>virtual ICollection&lt;Event&gt; Data.Models.User.Events</definition>
+        <argsstring></argsstring>
+        <name>Events</name>
+        <qualifiedname>Data.Models.User.Events</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/User.cs" line="35" column="36" bodyfile="Data/Models/User.cs" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_user_1a9518eb7623b4480591c2e241f5c07b29" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>ICollection&lt; <ref refid="class_data_1_1_models_1_1_booking" kindref="compound">Booking</ref> &gt;</type>
+        <definition>virtual ICollection&lt;Booking&gt; Data.Models.User.Bookings</definition>
+        <argsstring></argsstring>
+        <name>Bookings</name>
+        <qualifiedname>Data.Models.User.Bookings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/User.cs" line="36" column="36" bodyfile="Data/Models/User.cs" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_user_1a0dd3ba77235f9152810eebfd47c7bc36" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>ICollection&lt; <ref refid="class_data_1_1_models_1_1_post" kindref="compound">Post</ref> &gt;</type>
+        <definition>virtual ICollection&lt;Post&gt; Data.Models.User.Posts</definition>
+        <argsstring></argsstring>
+        <name>Posts</name>
+        <qualifiedname>Data.Models.User.Posts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/User.cs" line="37" column="36" bodyfile="Data/Models/User.cs" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_user_1abaca9b8db3ef38051228f7979f8216c0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Data.Models.User.PasswordHash</definition>
+        <argsstring></argsstring>
+        <name>PasswordHash</name>
+        <qualifiedname>Data.Models.User.PasswordHash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/User.cs" line="39" column="23" bodyfile="Data/Models/User.cs" bodystart="39" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>BaseEntity</label>
+        <link refid="class_data_1_1_models_1_1_base_entity"/>
+      </node>
+      <node id="1">
+        <label>Data.Models.User</label>
+        <link refid="class_data_1_1_models_1_1_user"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>BaseEntity</label>
+        <link refid="class_data_1_1_models_1_1_base_entity"/>
+      </node>
+      <node id="1">
+        <label>Data.Models.User</label>
+        <link refid="class_data_1_1_models_1_1_user"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Data/Models/User.cs" line="11" column="11" bodyfile="Data/Models/User.cs" bodystart="12" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_data_1_1_models_1_1_user_1a9518eb7623b4480591c2e241f5c07b29" prot="public" virt="non-virtual"><scope>Data::Models::User</scope><name>Bookings</name></member>
+      <member refid="class_data_1_1_models_1_1_user_1a5eb17bf0aa156d13afc7b66a6e4c2bee" prot="public" virt="non-virtual"><scope>Data::Models::User</scope><name>CreationDate</name></member>
+      <member refid="class_data_1_1_models_1_1_user_1a002abe68e587be976bc1b7c2e583d4c0" prot="public" virt="non-virtual"><scope>Data::Models::User</scope><name>Description</name></member>
+      <member refid="class_data_1_1_models_1_1_user_1a9ce90c10eb34ca893afbd4a4c4992478" prot="public" virt="non-virtual"><scope>Data::Models::User</scope><name>Email</name></member>
+      <member refid="class_data_1_1_models_1_1_user_1ae6804b4c997a18427b2a88ccc848b96a" prot="public" virt="non-virtual"><scope>Data::Models::User</scope><name>Events</name></member>
+      <member refid="class_data_1_1_models_1_1_user_1ae517071af89c2f9fb365e2bba9573f7d" prot="public" virt="non-virtual"><scope>Data::Models::User</scope><name>Firstname</name></member>
+      <member refid="class_data_1_1_models_1_1_base_entity_1a7d3260b1b11dcbaa9fff6c47a048584d" prot="public" virt="non-virtual"><scope>Data::Models::User</scope><name>Id</name></member>
+      <member refid="class_data_1_1_models_1_1_user_1aa6db365a2318633bc6bff47b3b30c9ae" prot="public" virt="non-virtual"><scope>Data::Models::User</scope><name>Lastname</name></member>
+      <member refid="class_data_1_1_models_1_1_user_1abaca9b8db3ef38051228f7979f8216c0" prot="public" virt="non-virtual"><scope>Data::Models::User</scope><name>PasswordHash</name></member>
+      <member refid="class_data_1_1_models_1_1_user_1a0dd3ba77235f9152810eebfd47c7bc36" prot="public" virt="non-virtual"><scope>Data::Models::User</scope><name>Posts</name></member>
+      <member refid="class_data_1_1_models_1_1_user_1a49a6a912367f723bc1a1e5cfc8b3403e" prot="public" virt="non-virtual"><scope>Data::Models::User</scope><name>Role</name></member>
+      <member refid="class_data_1_1_models_1_1_user_1a771f52c5344e3bc7c17bf4809551684a" prot="public" virt="non-virtual"><scope>Data::Models::User</scope><name>Username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

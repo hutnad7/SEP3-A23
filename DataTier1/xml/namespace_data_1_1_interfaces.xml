@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespace_data_1_1_interfaces" kind="namespace" language="C#">
+    <compoundname>Data::Interfaces</compoundname>
+    <innerclass refid="interface_data_1_1_interfaces_1_1_i_auth_repository" prot="public">Data::Interfaces::IAuthRepository</innerclass>
+    <innerclass refid="interface_data_1_1_interfaces_1_1_i_base_repository" prot="public">Data::Interfaces::IBaseRepository</innerclass>
+    <innerclass refid="interface_data_1_1_interfaces_1_1_i_booking_repository" prot="public">Data::Interfaces::IBookingRepository</innerclass>
+    <innerclass refid="interface_data_1_1_interfaces_1_1_i_cafe_owner_repository" prot="public">Data::Interfaces::ICafeOwnerRepository</innerclass>
+    <innerclass refid="interface_data_1_1_interfaces_1_1_i_enterteiner_repository" prot="public">Data::Interfaces::IEnterteinerRepository</innerclass>
+    <innerclass refid="interface_data_1_1_interfaces_1_1_i_event_repository" prot="public">Data::Interfaces::IEventRepository</innerclass>
+    <innerclass refid="interface_data_1_1_interfaces_1_1_i_post_repository" prot="public">Data::Interfaces::IPostRepository</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Data/Interfaces/IAuthRepository.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

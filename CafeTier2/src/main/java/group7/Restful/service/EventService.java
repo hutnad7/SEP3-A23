@@ -141,14 +141,30 @@ public class EventService {
 
 
 
-    public List<Event> getAllEvents() {
+    public List<EventDto> getAllEvents() {
             GetEventsResponse response = eventClientService.getAllEvents();
-        List<Event> events = new ArrayList<>();
+        List<EventDto> events = new ArrayList<>();
         for (GetEventResponse grpcEvent : response.getEventList()) {
             // Assuming you have a method to convert from EventProtoMessage to Event
-            Event event = convertToEvent(grpcEvent);
-            events.add(event);
-        }
+            EventDto event = new EventDto() {
+                {
+                    setId(UUID.fromString(grpcEvent.getId()));
+                    setName(grpcEvent.getName());
+                    setDescription(grpcEvent.getDescription());
+                    setEntertainerId(UUID.fromString(grpcEvent.getEntertainerId()));
+                    setStartDate(grpcEvent.getStartDate());
+                    setEndDate(grpcEvent.getEndDate());
+                    setAvailablePlaces(grpcEvent.getAvailablePlaces());
+                    setCafeOwnerId(UUID.fromString(grpcEvent.getCafeOwnerId()));
+                    setStatus(grpcEvent.getState());
+                    setCafeOwnerName(grpcEvent.getCafeOwner());
+                    setEntertainerName(grpcEvent.getEntertainer());
+                }
+            };
+            if(event.getStatus().equals("Accepted")){
+                events.add(event);
+            }
+         }
 
         return events;
     }

@@ -1,0 +1,100 @@
+\doxysection{Service.\+Services.\+Post\+Service\+Impl Class Reference}
+\hypertarget{class_service_1_1_services_1_1_post_service_impl}{}\label{class_service_1_1_services_1_1_post_service_impl}\index{Service.Services.PostServiceImpl@{Service.Services.PostServiceImpl}}
+Inheritance diagram for Service.\+Services.\+Post\+Service\+Impl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_service_1_1_services_1_1_post_service_impl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_service_1_1_services_1_1_post_service_impl_a881b4366e48c339be300ad76a6a3ac47}{Post\+Service\+Impl}} (ILogger$<$ \mbox{\hyperlink{class_service_1_1_services_1_1_post_service_impl}{Post\+Service\+Impl}} $>$ logger, \mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_post_repository}{IPost\+Repository}} post\+Repository)
+\item 
+override async Task$<$ \mbox{\hyperlink{class_create_post_response}{Create\+Post\+Response}} $>$ \mbox{\hyperlink{class_service_1_1_services_1_1_post_service_impl_a889f64d38d35b12d193c5bb318c40209}{Create\+Post}} (\mbox{\hyperlink{class_create_post_request}{Create\+Post\+Request}} request, Server\+Call\+Context context)
+\item 
+override async Task$<$ \mbox{\hyperlink{class_get_posts_response}{Get\+Posts\+Response}} $>$ \mbox{\hyperlink{class_service_1_1_services_1_1_post_service_impl_a72cf8e56842b5ca063bd3d4d0174eb21}{get\+All\+Posts}} (Empty request, Server\+Call\+Context context)
+\item 
+override async Task$<$ \mbox{\hyperlink{class_get_posts_response}{Get\+Posts\+Response}} $>$ \mbox{\hyperlink{class_service_1_1_services_1_1_post_service_impl_a6d132e5873c7870ddc91daca6d15d0fd}{get\+All\+Posts\+By\+Author\+Id}} (\mbox{\hyperlink{class_get_request}{Get\+Request}} request, Server\+Call\+Context context)
+\item 
+override async Task$<$ \mbox{\hyperlink{class_get_posts_response}{Get\+Posts\+Response}} $>$ \mbox{\hyperlink{class_service_1_1_services_1_1_post_service_impl_abf9575ae41034d8c77ffcd4f7daad5ee}{get\+All\+Posts\+By\+Event\+Id}} (\mbox{\hyperlink{class_get_request}{Get\+Request}} request, Server\+Call\+Context context)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_post_service_1_1_post_service_base}{Post\+Service.\+Post\+Service\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual global\+::\+System.\+Threading.\+Tasks.\+Task$<$ global\+::\+Create\+Post\+Response $>$ \mbox{\hyperlink{class_post_service_1_1_post_service_base_ac36cf3096e67b33fbf8240f597301a46}{Create\+Post}} (global\+::\+Create\+Post\+Request request, grpc\+::\+Server\+Call\+Context context)
+\item 
+virtual global\+::\+System.\+Threading.\+Tasks.\+Task$<$ global\+::\+Get\+Posts\+Response $>$ \mbox{\hyperlink{class_post_service_1_1_post_service_base_aeb7f4c52261ac6a98de5aa4465364b7b}{get\+All\+Posts}} (global\+::\+Google.\+Protobuf.\+Well\+Known\+Types.\+Empty request, grpc\+::\+Server\+Call\+Context context)
+\item 
+virtual global\+::\+System.\+Threading.\+Tasks.\+Task$<$ global\+::\+Get\+Posts\+Response $>$ \mbox{\hyperlink{class_post_service_1_1_post_service_base_a6684264eeab4bc3ed7c00273a3a480fc}{get\+All\+Posts\+By\+Author\+Id}} (global\+::\+Get\+Request request, grpc\+::\+Server\+Call\+Context context)
+\item 
+virtual global\+::\+System.\+Threading.\+Tasks.\+Task$<$ global\+::\+Get\+Posts\+Response $>$ \mbox{\hyperlink{class_post_service_1_1_post_service_base_a2265ddb6b9ffaa170e1003d9b79d853e}{get\+All\+Posts\+By\+Event\+Id}} (global\+::\+Get\+Request request, grpc\+::\+Server\+Call\+Context context)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_post_service_impl_8cs_source_l00008}{8}} of file \mbox{\hyperlink{_post_service_impl_8cs_source}{Post\+Service\+Impl.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_service_1_1_services_1_1_post_service_impl_a881b4366e48c339be300ad76a6a3ac47}\label{class_service_1_1_services_1_1_post_service_impl_a881b4366e48c339be300ad76a6a3ac47} 
+\index{Service.Services.PostServiceImpl@{Service.Services.PostServiceImpl}!PostServiceImpl@{PostServiceImpl}}
+\index{PostServiceImpl@{PostServiceImpl}!Service.Services.PostServiceImpl@{Service.Services.PostServiceImpl}}
+\doxysubsubsection{\texorpdfstring{PostServiceImpl()}{PostServiceImpl()}}
+{\footnotesize\ttfamily Service.\+Services.\+Post\+Service\+Impl.\+Post\+Service\+Impl (\begin{DoxyParamCaption}\item[{ILogger$<$ \mbox{\hyperlink{class_service_1_1_services_1_1_post_service_impl}{Post\+Service\+Impl}} $>$}]{logger,  }\item[{\mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_post_repository}{IPost\+Repository}}}]{post\+Repository }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_post_service_impl_8cs_source_l00013}{13}} of file \mbox{\hyperlink{_post_service_impl_8cs_source}{Post\+Service\+Impl.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_service_1_1_services_1_1_post_service_impl_a889f64d38d35b12d193c5bb318c40209}\label{class_service_1_1_services_1_1_post_service_impl_a889f64d38d35b12d193c5bb318c40209} 
+\index{Service.Services.PostServiceImpl@{Service.Services.PostServiceImpl}!CreatePost@{CreatePost}}
+\index{CreatePost@{CreatePost}!Service.Services.PostServiceImpl@{Service.Services.PostServiceImpl}}
+\doxysubsubsection{\texorpdfstring{CreatePost()}{CreatePost()}}
+{\footnotesize\ttfamily override async Task$<$ \mbox{\hyperlink{class_create_post_response}{Create\+Post\+Response}} $>$ Service.\+Services.\+Post\+Service\+Impl.\+Create\+Post (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_create_post_request}{Create\+Post\+Request}}}]{request,  }\item[{Server\+Call\+Context}]{context }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_post_service_impl_8cs_source_l00019}{19}} of file \mbox{\hyperlink{_post_service_impl_8cs_source}{Post\+Service\+Impl.\+cs}}.
+
+\Hypertarget{class_service_1_1_services_1_1_post_service_impl_a72cf8e56842b5ca063bd3d4d0174eb21}\label{class_service_1_1_services_1_1_post_service_impl_a72cf8e56842b5ca063bd3d4d0174eb21} 
+\index{Service.Services.PostServiceImpl@{Service.Services.PostServiceImpl}!getAllPosts@{getAllPosts}}
+\index{getAllPosts@{getAllPosts}!Service.Services.PostServiceImpl@{Service.Services.PostServiceImpl}}
+\doxysubsubsection{\texorpdfstring{getAllPosts()}{getAllPosts()}}
+{\footnotesize\ttfamily override async Task$<$ \mbox{\hyperlink{class_get_posts_response}{Get\+Posts\+Response}} $>$ Service.\+Services.\+Post\+Service\+Impl.\+get\+All\+Posts (\begin{DoxyParamCaption}\item[{Empty}]{request,  }\item[{Server\+Call\+Context}]{context }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_post_service_impl_8cs_source_l00057}{57}} of file \mbox{\hyperlink{_post_service_impl_8cs_source}{Post\+Service\+Impl.\+cs}}.
+
+\Hypertarget{class_service_1_1_services_1_1_post_service_impl_a6d132e5873c7870ddc91daca6d15d0fd}\label{class_service_1_1_services_1_1_post_service_impl_a6d132e5873c7870ddc91daca6d15d0fd} 
+\index{Service.Services.PostServiceImpl@{Service.Services.PostServiceImpl}!getAllPostsByAuthorId@{getAllPostsByAuthorId}}
+\index{getAllPostsByAuthorId@{getAllPostsByAuthorId}!Service.Services.PostServiceImpl@{Service.Services.PostServiceImpl}}
+\doxysubsubsection{\texorpdfstring{getAllPostsByAuthorId()}{getAllPostsByAuthorId()}}
+{\footnotesize\ttfamily override async Task$<$ \mbox{\hyperlink{class_get_posts_response}{Get\+Posts\+Response}} $>$ Service.\+Services.\+Post\+Service\+Impl.\+get\+All\+Posts\+By\+Author\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_get_request}{Get\+Request}}}]{request,  }\item[{Server\+Call\+Context}]{context }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_post_service_impl_8cs_source_l00079}{79}} of file \mbox{\hyperlink{_post_service_impl_8cs_source}{Post\+Service\+Impl.\+cs}}.
+
+\Hypertarget{class_service_1_1_services_1_1_post_service_impl_abf9575ae41034d8c77ffcd4f7daad5ee}\label{class_service_1_1_services_1_1_post_service_impl_abf9575ae41034d8c77ffcd4f7daad5ee} 
+\index{Service.Services.PostServiceImpl@{Service.Services.PostServiceImpl}!getAllPostsByEventId@{getAllPostsByEventId}}
+\index{getAllPostsByEventId@{getAllPostsByEventId}!Service.Services.PostServiceImpl@{Service.Services.PostServiceImpl}}
+\doxysubsubsection{\texorpdfstring{getAllPostsByEventId()}{getAllPostsByEventId()}}
+{\footnotesize\ttfamily override async Task$<$ \mbox{\hyperlink{class_get_posts_response}{Get\+Posts\+Response}} $>$ Service.\+Services.\+Post\+Service\+Impl.\+get\+All\+Posts\+By\+Event\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_get_request}{Get\+Request}}}]{request,  }\item[{Server\+Call\+Context}]{context }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_post_service_impl_8cs_source_l00101}{101}} of file \mbox{\hyperlink{_post_service_impl_8cs_source}{Post\+Service\+Impl.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Service/\+Services/\mbox{\hyperlink{_post_service_impl_8cs}{Post\+Service\+Impl.\+cs}}\end{DoxyCompactItemize}

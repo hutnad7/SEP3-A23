@@ -1,0 +1,441 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_get_books_response" kind="class" language="C#" prot="public" sealed="yes">
+    <compoundname>GetBooksResponse</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">pb::IMessage&lt; GetBooksResponse &gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">pb.IBufferMessage</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_get_books_response_1a6374d25d562ff47cdaa8557ade85ae9c" prot="private" static="yes" mutable="no">
+        <type>readonly pb::MessageParser&lt; <ref refid="class_get_books_response" kindref="compound">GetBooksResponse</ref> &gt;</type>
+        <definition>readonly pb::MessageParser&lt;GetBooksResponse&gt; GetBooksResponse._parser</definition>
+        <argsstring></argsstring>
+        <name>_parser</name>
+        <qualifiedname>GetBooksResponse._parser</qualifiedname>
+        <initializer>= new pb::MessageParser&lt;<ref refid="class_get_books_response" kindref="compound">GetBooksResponse</ref>&gt;(() =&gt; new <ref refid="class_get_books_response" kindref="compound">GetBooksResponse</ref>())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1429" column="45" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_get_books_response_1a4a2d3ed7da8fdc3959c1ade81270ea2a" prot="private" static="yes" mutable="no">
+        <type>readonly pb::FieldCodec&lt; global::BookEventResponse &gt;</type>
+        <definition>readonly pb::FieldCodec&lt;global::BookEventResponse&gt; GetBooksResponse._repeated_book_codec</definition>
+        <argsstring></argsstring>
+        <name>_repeated_book_codec</name>
+        <qualifiedname>GetBooksResponse._repeated_book_codec</qualifiedname>
+        <initializer>= pb::FieldCodec.ForMessage(10, global::BookEventResponse.Parser)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1464" column="42" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1465" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_get_books_response_1af43c68093ae915cd4b231452910bcb8b" prot="private" static="no" mutable="no">
+        <type>pb::UnknownFieldSet</type>
+        <definition>pb::UnknownFieldSet GetBooksResponse._unknownFields</definition>
+        <argsstring></argsstring>
+        <name>_unknownFields</name>
+        <qualifiedname>GetBooksResponse._unknownFields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1430" column="31" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_get_books_response_1adc62f9d46f89042edc98c5f0994c28d3" prot="private" static="no" mutable="no">
+        <type>readonly pbc::RepeatedField&lt; global::BookEventResponse &gt;</type>
+        <definition>readonly pbc::RepeatedField&lt;global::BookEventResponse&gt; GetBooksResponse.book_</definition>
+        <argsstring></argsstring>
+        <name>book_</name>
+        <qualifiedname>GetBooksResponse.book_</qualifiedname>
+        <initializer>= new pbc::RepeatedField&lt;global::BookEventResponse&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1466" column="39" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1466" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_get_books_response_1ace1babbe88ea5bd9000e60b93f8e01ee" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>pb::MessageParser&lt; <ref refid="class_get_books_response" kindref="compound">GetBooksResponse</ref> &gt;</type>
+        <definition>pb::MessageParser&lt;GetBooksResponse&gt; GetBooksResponse.Parser</definition>
+        <argsstring></argsstring>
+        <name>Parser</name>
+        <qualifiedname>GetBooksResponse.Parser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1432" column="35" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1432" bodyend="1432"/>
+      </memberdef>
+      <memberdef kind="property" id="class_get_books_response_1ab768c0d9734971086afd9515fc8f7b0a" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>pbr::MessageDescriptor</type>
+        <definition>pbr::MessageDescriptor GetBooksResponse.Descriptor</definition>
+        <argsstring></argsstring>
+        <name>Descriptor</name>
+        <qualifiedname>GetBooksResponse.Descriptor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1435" column="40" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1435" bodyend="1437"/>
+      </memberdef>
+      <memberdef kind="property" id="class_get_books_response_1a420914b9733e06bf4b6de28c59f8f561" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>pbr::MessageDescriptor pb::IMessage.</type>
+        <definition>pbr::MessageDescriptor pb::IMessage. GetBooksResponse.Descriptor</definition>
+        <argsstring></argsstring>
+        <name>Descriptor</name>
+        <qualifiedname>GetBooksResponse.Descriptor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1440" column="38" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1440" bodyend="1442"/>
+      </memberdef>
+      <memberdef kind="property" id="class_get_books_response_1a0f9bc910749b533800959b11c96db2c8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>pbc::RepeatedField&lt; global::BookEventResponse &gt;</type>
+        <definition>pbc::RepeatedField&lt;global::BookEventResponse&gt; GetBooksResponse.Book</definition>
+        <argsstring></argsstring>
+        <name>Book</name>
+        <qualifiedname>GetBooksResponse.Book</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1468" column="29" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1468" bodyend="1470"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_get_books_response_1a089aadde1f85cc87e0e1b9b17f679ef2" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int GetBooksResponse.BookFieldNumber</definition>
+        <argsstring></argsstring>
+        <name>BookFieldNumber</name>
+        <qualifiedname>GetBooksResponse.BookFieldNumber</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>Field number for the &quot;book&quot; field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1463" column="20" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1463" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_get_books_response_1a036b849ea1d8268531ee6a08d0ffa864" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GetBooksResponse.GetBooksResponse</definition>
+        <argsstring>()</argsstring>
+        <name>GetBooksResponse</name>
+        <qualifiedname>GetBooksResponse.GetBooksResponse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1445" column="10" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1445" bodyend="1447"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_books_response_1a176e01c83dc9bb4ff54cd0482dca6588" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GetBooksResponse.GetBooksResponse</definition>
+        <argsstring>(GetBooksResponse other)</argsstring>
+        <name>GetBooksResponse</name>
+        <qualifiedname>GetBooksResponse.GetBooksResponse</qualifiedname>
+        <param>
+          <type><ref refid="class_get_books_response" kindref="compound">GetBooksResponse</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1452" column="10" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1452" bodyend="1455"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_books_response_1afd52bd8d8e8d6b9f4325b57b6f44e687" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_get_books_response" kindref="compound">GetBooksResponse</ref></type>
+        <definition>GetBooksResponse GetBooksResponse.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <qualifiedname>GetBooksResponse.Clone</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1458" column="27" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1458" bodyend="1460"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_books_response_1a2427dc7e0eb70a98822ab798ac594bcc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool GetBooksResponse.Equals</definition>
+        <argsstring>(object other)</argsstring>
+        <name>Equals</name>
+        <qualifiedname>GetBooksResponse.Equals</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1473" column="24" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1473" bodyend="1475"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_books_response_1aa55cecfeae067b36cbf8c62384ae55c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GetBooksResponse.Equals</definition>
+        <argsstring>(GetBooksResponse other)</argsstring>
+        <name>Equals</name>
+        <qualifiedname>GetBooksResponse.Equals</qualifiedname>
+        <param>
+          <type><ref refid="class_get_books_response" kindref="compound">GetBooksResponse</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1478" column="15" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1478" bodyend="1487"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_books_response_1a8f0b5dd0eb3de6d7375e96fbfc197109" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override int</type>
+        <definition>override int GetBooksResponse.GetHashCode</definition>
+        <argsstring>()</argsstring>
+        <name>GetHashCode</name>
+        <qualifiedname>GetBooksResponse.GetHashCode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1490" column="23" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1490" bodyend="1497"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_books_response_1a93e946d0146256b3fb9cb7d51555d0be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string GetBooksResponse.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>GetBooksResponse.ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1500" column="26" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1500" bodyend="1502"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_books_response_1a587e4151196f20303b54b889c5f36f99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GetBooksResponse.WriteTo</definition>
+        <argsstring>(pb::CodedOutputStream output)</argsstring>
+        <name>WriteTo</name>
+        <qualifiedname>GetBooksResponse.WriteTo</qualifiedname>
+        <param>
+          <type>pb::CodedOutputStream</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1505" column="15" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1505" bodyend="1514"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_books_response_1a9ced94d4e86a8566c1efc9bc47ffc731" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetBooksResponse.CalculateSize</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateSize</name>
+        <qualifiedname>GetBooksResponse.CalculateSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1527" column="14" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1527" bodyend="1534"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_books_response_1a8e98d88806a7a13c6733ed582ea18edd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GetBooksResponse.MergeFrom</definition>
+        <argsstring>(GetBooksResponse other)</argsstring>
+        <name>MergeFrom</name>
+        <qualifiedname>GetBooksResponse.MergeFrom</qualifiedname>
+        <param>
+          <type><ref refid="class_get_books_response" kindref="compound">GetBooksResponse</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1537" column="15" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1537" bodyend="1543"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_books_response_1a9a33474aa92a5b993727cc92fd66b087" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GetBooksResponse.MergeFrom</definition>
+        <argsstring>(pb::CodedInputStream input)</argsstring>
+        <name>MergeFrom</name>
+        <qualifiedname>GetBooksResponse.MergeFrom</qualifiedname>
+        <param>
+          <type>pb::CodedInputStream</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1546" column="15" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1546" bodyend="1563"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_get_books_response_1a318c25a61614c0b004bd9b407df394a7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>partial void</type>
+        <definition>partial void GetBooksResponse.OnConstruction</definition>
+        <argsstring>()</argsstring>
+        <name>OnConstruction</name>
+        <qualifiedname>GetBooksResponse.OnConstruction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1449" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_books_response_1a5b38c795fa26425df4e49ffc1a6e48e7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void pb::IBufferMessage.</type>
+        <definition>void pb::IBufferMessage. GetBooksResponse.InternalWriteTo</definition>
+        <argsstring>(ref pb::WriteContext output)</argsstring>
+        <name>InternalWriteTo</name>
+        <qualifiedname>GetBooksResponse.InternalWriteTo</qualifiedname>
+        <param>
+          <type>ref pb::WriteContext</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1518" column="26" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1518" bodyend="1523"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_books_response_1a7c2c2bd8bf18f36c46e07854eb2f46d0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void pb::IBufferMessage.</type>
+        <definition>void pb::IBufferMessage. GetBooksResponse.InternalMergeFrom</definition>
+        <argsstring>(ref pb::ParseContext input)</argsstring>
+        <name>InternalMergeFrom</name>
+        <qualifiedname>GetBooksResponse.InternalMergeFrom</qualifiedname>
+        <param>
+          <type>ref pb::ParseContext</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1567" column="26" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1567" bodyend="1580"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>GetBooksResponse</label>
+        <link refid="class_get_books_response"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pb::IBufferMessage</label>
+      </node>
+      <node id="2">
+        <label>pb::IMessage&lt; GetBooksResponse &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>GetBooksResponse</label>
+        <link refid="class_get_books_response"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pb::IBufferMessage</label>
+      </node>
+      <node id="2">
+        <label>pb::IMessage&lt; GetBooksResponse &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1424" column="14" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1428" bodyend="1583"/>
+    <listofallmembers>
+      <member refid="class_get_books_response_1a6374d25d562ff47cdaa8557ade85ae9c" prot="private" virt="non-virtual"><scope>GetBooksResponse</scope><name>_parser</name></member>
+      <member refid="class_get_books_response_1a4a2d3ed7da8fdc3959c1ade81270ea2a" prot="private" virt="non-virtual"><scope>GetBooksResponse</scope><name>_repeated_book_codec</name></member>
+      <member refid="class_get_books_response_1af43c68093ae915cd4b231452910bcb8b" prot="private" virt="non-virtual"><scope>GetBooksResponse</scope><name>_unknownFields</name></member>
+      <member refid="class_get_books_response_1a0f9bc910749b533800959b11c96db2c8" prot="public" virt="non-virtual"><scope>GetBooksResponse</scope><name>Book</name></member>
+      <member refid="class_get_books_response_1adc62f9d46f89042edc98c5f0994c28d3" prot="private" virt="non-virtual"><scope>GetBooksResponse</scope><name>book_</name></member>
+      <member refid="class_get_books_response_1a089aadde1f85cc87e0e1b9b17f679ef2" prot="public" virt="non-virtual"><scope>GetBooksResponse</scope><name>BookFieldNumber</name></member>
+      <member refid="class_get_books_response_1a9ced94d4e86a8566c1efc9bc47ffc731" prot="public" virt="non-virtual"><scope>GetBooksResponse</scope><name>CalculateSize</name></member>
+      <member refid="class_get_books_response_1afd52bd8d8e8d6b9f4325b57b6f44e687" prot="public" virt="non-virtual"><scope>GetBooksResponse</scope><name>Clone</name></member>
+      <member refid="class_get_books_response_1ab768c0d9734971086afd9515fc8f7b0a" prot="public" virt="non-virtual"><scope>GetBooksResponse</scope><name>Descriptor</name></member>
+      <member refid="class_get_books_response_1a420914b9733e06bf4b6de28c59f8f561" prot="private" virt="non-virtual"><scope>GetBooksResponse</scope><name>Descriptor</name></member>
+      <member refid="class_get_books_response_1a2427dc7e0eb70a98822ab798ac594bcc" prot="public" virt="non-virtual"><scope>GetBooksResponse</scope><name>Equals</name></member>
+      <member refid="class_get_books_response_1aa55cecfeae067b36cbf8c62384ae55c8" prot="public" virt="non-virtual"><scope>GetBooksResponse</scope><name>Equals</name></member>
+      <member refid="class_get_books_response_1a036b849ea1d8268531ee6a08d0ffa864" prot="public" virt="non-virtual"><scope>GetBooksResponse</scope><name>GetBooksResponse</name></member>
+      <member refid="class_get_books_response_1a176e01c83dc9bb4ff54cd0482dca6588" prot="public" virt="non-virtual"><scope>GetBooksResponse</scope><name>GetBooksResponse</name></member>
+      <member refid="class_get_books_response_1a8f0b5dd0eb3de6d7375e96fbfc197109" prot="public" virt="non-virtual"><scope>GetBooksResponse</scope><name>GetHashCode</name></member>
+      <member refid="class_get_books_response_1a7c2c2bd8bf18f36c46e07854eb2f46d0" prot="private" virt="non-virtual"><scope>GetBooksResponse</scope><name>InternalMergeFrom</name></member>
+      <member refid="class_get_books_response_1a5b38c795fa26425df4e49ffc1a6e48e7" prot="private" virt="non-virtual"><scope>GetBooksResponse</scope><name>InternalWriteTo</name></member>
+      <member refid="class_get_books_response_1a8e98d88806a7a13c6733ed582ea18edd" prot="public" virt="non-virtual"><scope>GetBooksResponse</scope><name>MergeFrom</name></member>
+      <member refid="class_get_books_response_1a9a33474aa92a5b993727cc92fd66b087" prot="public" virt="non-virtual"><scope>GetBooksResponse</scope><name>MergeFrom</name></member>
+      <member refid="class_get_books_response_1a318c25a61614c0b004bd9b407df394a7" prot="private" virt="non-virtual"><scope>GetBooksResponse</scope><name>OnConstruction</name></member>
+      <member refid="class_get_books_response_1ace1babbe88ea5bd9000e60b93f8e01ee" prot="public" virt="non-virtual"><scope>GetBooksResponse</scope><name>Parser</name></member>
+      <member refid="class_get_books_response_1a93e946d0146256b3fb9cb7d51555d0be" prot="public" virt="non-virtual"><scope>GetBooksResponse</scope><name>ToString</name></member>
+      <member refid="class_get_books_response_1a587e4151196f20303b54b889c5f36f99" prot="public" virt="non-virtual"><scope>GetBooksResponse</scope><name>WriteTo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

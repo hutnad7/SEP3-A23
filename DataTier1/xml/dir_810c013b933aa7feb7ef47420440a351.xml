@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_810c013b933aa7feb7ef47420440a351" kind="dir">
+    <compoundname>Service/obj</compoundname>
+    <innerdir refid="dir_a245102308967ca992e7fb73b4fc6df9">Service/obj/Debug</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Service/obj/"/>
+  </compounddef>
+</doxygen>

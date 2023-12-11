@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_post_service_1_1_post_service_base" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>PostService::PostServiceBase</compoundname>
+    <derivedcompoundref refid="class_service_1_1_services_1_1_post_service_impl" prot="public" virt="non-virtual">Service.Services.PostServiceImpl</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_post_service_1_1_post_service_base_1ac36cf3096e67b33fbf8240f597301a46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>global::System.Threading.Tasks.Task&lt; global::CreatePostResponse &gt;</type>
+        <definition>virtual global::System.Threading.Tasks.Task&lt; global::CreatePostResponse &gt; PostService.PostServiceBase.CreatePost</definition>
+        <argsstring>(global::CreatePostRequest request, grpc::ServerCallContext context)</argsstring>
+        <name>CreatePost</name>
+        <qualifiedname>PostService.PostServiceBase.CreatePost</qualifiedname>
+        <param>
+          <type>global::CreatePostRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>grpc::ServerCallContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="419" column="53" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="419" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="function" id="class_post_service_1_1_post_service_base_1aeb7f4c52261ac6a98de5aa4465364b7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>global::System.Threading.Tasks.Task&lt; global::GetPostsResponse &gt;</type>
+        <definition>virtual global::System.Threading.Tasks.Task&lt; global::GetPostsResponse &gt; PostService.PostServiceBase.getAllPosts</definition>
+        <argsstring>(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)</argsstring>
+        <name>getAllPosts</name>
+        <qualifiedname>PostService.PostServiceBase.getAllPosts</qualifiedname>
+        <param>
+          <type>global::Google.Protobuf.WellKnownTypes.Empty</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>grpc::ServerCallContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="425" column="53" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="425" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="class_post_service_1_1_post_service_base_1a6684264eeab4bc3ed7c00273a3a480fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>global::System.Threading.Tasks.Task&lt; global::GetPostsResponse &gt;</type>
+        <definition>virtual global::System.Threading.Tasks.Task&lt; global::GetPostsResponse &gt; PostService.PostServiceBase.getAllPostsByAuthorId</definition>
+        <argsstring>(global::GetRequest request, grpc::ServerCallContext context)</argsstring>
+        <name>getAllPostsByAuthorId</name>
+        <qualifiedname>PostService.PostServiceBase.getAllPostsByAuthorId</qualifiedname>
+        <param>
+          <type>global::GetRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>grpc::ServerCallContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="431" column="53" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="431" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="function" id="class_post_service_1_1_post_service_base_1a2265ddb6b9ffaa170e1003d9b79d853e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>global::System.Threading.Tasks.Task&lt; global::GetPostsResponse &gt;</type>
+        <definition>virtual global::System.Threading.Tasks.Task&lt; global::GetPostsResponse &gt; PostService.PostServiceBase.getAllPostsByEventId</definition>
+        <argsstring>(global::GetRequest request, grpc::ServerCallContext context)</argsstring>
+        <name>getAllPostsByEventId</name>
+        <qualifiedname>PostService.PostServiceBase.getAllPostsByEventId</qualifiedname>
+        <param>
+          <type>global::GetRequest</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>grpc::ServerCallContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="437" column="53" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="437" bodyend="440"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Base class for server-side implementations of PostService. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>PostService.PostServiceBase</label>
+        <link refid="class_post_service_1_1_post_service_base"/>
+      </node>
+      <node id="2">
+        <label>Service.Services.PostServiceImpl</label>
+        <link refid="class_service_1_1_services_1_1_post_service_impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="416" column="26" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="417" bodyend="442"/>
+    <listofallmembers>
+      <member refid="class_post_service_1_1_post_service_base_1ac36cf3096e67b33fbf8240f597301a46" prot="public" virt="virtual"><scope>PostService::PostServiceBase</scope><name>CreatePost</name></member>
+      <member refid="class_post_service_1_1_post_service_base_1aeb7f4c52261ac6a98de5aa4465364b7b" prot="public" virt="virtual"><scope>PostService::PostServiceBase</scope><name>getAllPosts</name></member>
+      <member refid="class_post_service_1_1_post_service_base_1a6684264eeab4bc3ed7c00273a3a480fc" prot="public" virt="virtual"><scope>PostService::PostServiceBase</scope><name>getAllPostsByAuthorId</name></member>
+      <member refid="class_post_service_1_1_post_service_base_1a2265ddb6b9ffaa170e1003d9b79d853e" prot="public" virt="virtual"><scope>PostService::PostServiceBase</scope><name>getAllPostsByEventId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
