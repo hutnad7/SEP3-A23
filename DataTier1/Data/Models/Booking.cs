@@ -19,6 +19,10 @@ namespace Data.Models
         [Required]
         public Guid EventId { get; set; }
         [Required]
+        public string FirstName { get; set; }
+        [Required]
+        public string LastName { get; set; }
+        [Required]
         public DateTime CreationDate { get; set; }
 
         [Required]

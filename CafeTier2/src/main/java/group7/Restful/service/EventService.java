@@ -191,7 +191,7 @@ public class EventService {
         return Optional.of(event);
     }
     public Booking createBooking(Booking booking) {
-        BookEventRequest request = BookEventRequest.newBuilder().setUserId(booking.getUserId().toString()).setEventId(booking.getEventId().toString()).setNumerOfPeople(booking.getNumberOfPeople()).build();
+        BookEventRequest request = BookEventRequest.newBuilder().setFirstName(booking.getFirstName()).setLastName(booking.getLastName()).setUserId(booking.getUserId().toString()).setEventId(booking.getEventId().toString()).setNumerOfPeople(booking.getNumberOfPeople()).build();
         GetEventResponse r = eventClientService.getEventById(GetRequest.newBuilder().setId(booking.getEventId().toString()).build());
         if(r.getAvailablePlaces()<booking.getNumberOfPeople()){
             throw new IllegalArgumentException("Not enough places");

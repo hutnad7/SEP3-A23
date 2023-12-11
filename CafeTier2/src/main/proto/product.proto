@@ -45,6 +45,8 @@ message BookEventRequest{
   string eventId = 2;
   string Date = 3;
   int32 NumerOfPeople = 4;
+  string firstName = 5;
+  string lastName = 6;
 }
 
 message GetEventsResponse{
@@ -57,6 +59,8 @@ message BookEventResponse{
   string CreationDate = 3;
   int32 NumerOfPeople = 4;
   string id =5;
+  string firstName = 6;
+  string lastName = 7;
 }
 message GetBooksResponse{
   repeated BookEventResponse book = 1;

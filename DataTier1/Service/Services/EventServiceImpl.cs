@@ -143,7 +143,9 @@ namespace Service.Services
                 UserId = Guid.Parse(request.UserId),
                 EventId = Guid.Parse(request.EventId),
                 CreationDate = DateTime.Now,
-                NumberOfPeople = request.NumerOfPeople
+                NumberOfPeople = request.NumerOfPeople,
+                FirstName = request.FirstName,
+                LastName = request.LastName,
             };
             Booking b =  await _bookingRepository.CreateAsync(booking);
             BookEventResponse response = new BookEventResponse()
@@ -153,7 +155,8 @@ namespace Service.Services
                 EventId = b.EventId.ToString(),
                 CreationDate = b.CreationDate.ToString(),
                 NumerOfPeople = b.NumberOfPeople,
-
+                FirstName = b.FirstName,
+                LastName = b.LastName,
             };
             return response;
         }

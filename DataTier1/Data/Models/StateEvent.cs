@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data.State
-{
+namespace Data.Models{
     public enum StateEvent
     {
         Accepted,

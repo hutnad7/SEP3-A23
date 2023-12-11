@@ -31,6 +31,14 @@ namespace Data.Migrations
                     b.Property<Guid>("EventId")
                         .HasColumnType("char(36)");
 
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<int>("NumberOfPeople")
                         .HasColumnType("int");
 
@@ -58,17 +66,20 @@ namespace Data.Migrations
                     b.Property<Guid>("CafeOwnerId")
                         .HasColumnType("char(36)");
 
-                    b.Property<DateTime>("CreationDate")
-                        .HasColumnType("datetime(6)");
+                    b.Property<string>("CreationDate")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
-                    b.Property<DateTime>("EndDate")
-                        .HasColumnType("datetime(6)");
+                    b.Property<string>("EndDate")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<Guid>("EnterteinerId")
                         .HasColumnType("char(36)");
 
-                    b.Property<DateTime>("StartDate")
-                        .HasColumnType("datetime(6)");
+                    b.Property<string>("StartDate")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Text")
                         .IsRequired()
@@ -103,8 +114,12 @@ namespace Data.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<DateTime>("CreationDate")
-                        .HasColumnType("datetime(6)");
+                    b.Property<string>("CreationDate")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<Guid?>("EventId")
+                        .HasColumnType("char(36)");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -113,6 +128,8 @@ namespace Data.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("AuthorId");
+
+                    b.HasIndex("EventId");
 
                     b.ToTable("Posts");
                 });
@@ -123,8 +140,13 @@ namespace Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 
-                    b.Property<DateTime>("CreationDate")
-                        .HasColumnType("datetime(6)");
+                    b.Property<string>("CreationDate")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -162,34 +184,37 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("8ca05d39-7ab2-47d7-9be0-4690e38252fc"),
-                            CreationDate = new DateTime(2023, 12, 6, 20, 26, 10, 702, DateTimeKind.Local).AddTicks(3196),
+                            Id = new Guid("452305db-1b1d-4a18-96cf-549d4a0a7799"),
+                            CreationDate = "11/12/2023 12:06:33",
+                            Description = "Cafe Owner",
                             Email = "coffeowner@gmail.com",
                             Firstname = "Coffe",
                             Lastname = "Owner",
-                            PasswordHash = "-333322552",
+                            PasswordHash = "880143643",
                             Role = 1,
                             Username = "CoffeOwnerTest"
                         },
                         new
                         {
-                            Id = new Guid("275ef8cd-0d4f-486c-a1b9-5b6e5f01fcb8"),
-                            CreationDate = new DateTime(2023, 12, 6, 20, 26, 10, 702, DateTimeKind.Local).AddTicks(3289),
+                            Id = new Guid("53b07d8f-822f-4f84-ad38-decbf82df573"),
+                            CreationDate = "11/12/2023 12:06:33",
+                            Description = "",
                             Email = "normaluser@gmail.com",
                             Firstname = "User",
                             Lastname = "Normal",
-                            PasswordHash = "-1420581839",
+                            PasswordHash = "-849727421",
                             Role = 0,
                             Username = "normal_user"
                         },
                         new
                         {
-                            Id = new Guid("2280de98-a867-43ce-8b87-25049fd45e9c"),
-                            CreationDate = new DateTime(2023, 12, 6, 20, 26, 10, 702, DateTimeKind.Local).AddTicks(3353),
+                            Id = new Guid("74a3439c-b6de-4b2c-b77c-cbc60a8af002"),
+                            CreationDate = "11/12/2023 12:06:33",
+                            Description = "Enterteiner",
                             Email = "enterteiner@gmail.com",
                             Firstname = "Enter",
                             Lastname = "Teiner",
-                            PasswordHash = "-2064360427",
+                            PasswordHash = "2053625805",
                             Role = 2,
                             Username = "enterteiner"
                         });
@@ -241,12 +266,20 @@ namespace Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Data.Models.Event", "Event")
+                        .WithMany("Posts")
+                        .HasForeignKey("EventId");
+
                     b.Navigation("Author");
+
+                    b.Navigation("Event");
                 });
 
             modelBuilder.Entity("Data.Models.Event", b =>
                 {
                     b.Navigation("Bookings");
+
+                    b.Navigation("Posts");
                 });
 
             modelBuilder.Entity("Data.Models.User", b =>

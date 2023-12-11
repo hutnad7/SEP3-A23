@@ -1,6 +1,5 @@
 ﻿using Data.Interfaces;
 using Data.Models;
-using Data.State;
 using Grpc.Core;
 
 namespace Service.Services

@@ -29,9 +29,6 @@
     <ItemGroup>
       <ProjectReference Include="..\Shared\Shared.csproj" />
 
-    <ItemGroup>
-      <Folder Include="dto\" />
-    </ItemGroup>
 
     </ItemGroup>
 

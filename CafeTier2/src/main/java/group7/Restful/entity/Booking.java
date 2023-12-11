@@ -9,6 +9,8 @@ public class Booking {
     private String CreationDate;
     private int NumberOfPeople;
     private UUID id;
+    private String FirstName;
+    private String LastName;
 
     public Booking() {
     }

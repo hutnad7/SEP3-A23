@@ -34,8 +34,8 @@ public class EventController {
     public ResponseEntity<Event> createEvent(@RequestBody Event event) {
         return ResponseEntity.ok(this.eventService.createEvent(event));
     }
-    @PostMapping
-    public ResponseEntity<Booking> createBook(@RequestBody Booking booking) {
+    @PostMapping({"/booking"})
+    public ResponseEntity<Booking> createBooking(@RequestBody Booking booking) {
         return ResponseEntity.ok(this.eventService.createBooking(booking));
     }
 //    @GetMapping({"/{id}"})
