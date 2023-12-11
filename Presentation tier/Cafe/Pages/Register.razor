@@ -1,6 +1,7 @@
 ﻿@page "/Register"
 @using Cafe.Services
 @using global::Shared.Models
+@using System.Text.RegularExpressions
 @inject IAuthService authService
 @inject NavigationManager navMgr
 
@@ -92,8 +93,21 @@
                 errorLabel = "Passwords do not match.";
                 return;
             }
+            
+            if (!IsPasswordValid(password))
+            {
+                errorLabel = "Password must be at least 6 characters long and contain at least one uppercase letter, one lowercase letter, and one digit.";
+                return;
+            }
+            
+            if (!IsEmailValid(email))
+            {
+                errorLabel = "Invalid email address.";
+                return;
+            }
 
             var user = new User
+            
             {
                 FirstName = firstName,
                 LastName = lastName,
@@ -111,5 +125,17 @@
         {
             errorLabel = $"Error: {e.Message}";
         }
+    }
+    private bool IsPasswordValid(string password)
+    {
+    
+        const string pattern = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$";
+        return Regex.IsMatch(password, pattern);
+    }
+    
+    private bool IsEmailValid(string email)
+    {
+        const string emailPattern = @"^\S+@\S+\.\S+$";
+        return Regex.IsMatch(email, emailPattern);
     }
 }

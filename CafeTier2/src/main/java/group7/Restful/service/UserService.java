@@ -3,13 +3,12 @@ package group7.Restful.service;
 import group7.Grpc.service.UserClientService;
 import group7.Restful.dto.UserDto;
 import group7.Restful.entity.User;
-import group7.protobuf.GetRequest;
-import group7.protobuf.*;
+import group7.protobuf.GetUserResponse;
+import group7.protobuf.GetUsersResponse;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
