@@ -3,10 +3,12 @@
 @using System.Net.Http.Json;
 @using System.Text.Json;
 @inject HttpClient HttpClient
+@attribute [Authorize]
 
 <h3>@FirstName</h3>
 <h4>@LastName</h4>
 <h4>@UserName</h4>
+<h4>@Description</h4>
 <h5>@Address</h5>
 
 <table class="table">
@@ -33,11 +35,12 @@
     string LastName;
     string UserName;
     string Address;
+    string Description;
     List<Post> Posts = new List<Post>();
 
     private async Task GetPosts()
     {
-        var response = await HttpClient.GetAsync("http://localhost:8080/api/posts");
+        var response = await HttpClient.GetAsync($"http://localhost:8080/api/posts/users/{UserId}");
         if (response.IsSuccessStatusCode)
         {
             var jsonString = await response.Content.ReadAsStringAsync();
@@ -56,12 +59,16 @@
         {
             var jsonString = await response.Content.ReadAsStringAsync();
             var users = JsonSerializer.Deserialize<IEnumerable<User>>(jsonString);
-            var user = users.FirstOrDefault(u => u.Id.Equals(UserId));
+            var user = users.FirstOrDefault(u => u.Id == Guid.Parse(UserId.ToString()));
+
+
             if (user != null)
             {
                 FirstName = user.FirstName;
                 LastName = user.LastName;
                 UserName = user.Username;
+                Address = user.Address;
+                Description = user.Description;
             }
         }
         else

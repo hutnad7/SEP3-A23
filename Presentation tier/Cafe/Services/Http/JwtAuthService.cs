@@ -1,4 +1,5 @@
-﻿using Blazored.LocalStorage;
+﻿using System.IdentityModel.Tokens.Jwt;
+using Blazored.LocalStorage;
 using Shared.Dtos;
 using Shared.Models;
 namespace Cafe.Services.Http;
@@ -112,7 +113,6 @@ public class JwtAuthService : IAuthService
         Dictionary<string, object>? keyValuePairs = JsonSerializer.Deserialize<Dictionary<string, object>>(jsonBytes);
         return keyValuePairs!.Select(kvp => new Claim(kvp.Key, kvp.Value.ToString()!));
     }
-    
 
     private static byte[] ParseBase64WithoutPadding(string base64)
     {

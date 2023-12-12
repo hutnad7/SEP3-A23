@@ -1,56 +1,51 @@
 ﻿@page "/Register"
-
 @using Cafe.Services
 @using global::Shared.Models
+@using System.Text.RegularExpressions
 @inject IAuthService authService
 @inject NavigationManager navMgr
 
-<h3>Register</h3>
-<div class="card">
-    <div class="field">
-        <label>First Name:</label>
-        <input type="text" @bind="firstName" />
-    </div>
-    <div class="field">
-        <label>Last Name:</label>
-        <input type="text" @bind="lastName" />
-        </div>
-    <div class="field">
-        <label>User Name:</label>
-        <input type="text" @bind="userName"/>
-    </div>
-    <div class="field">
-        <label>Password:</label>
-        <input type="password" @bind="password"/>
-    </div>
-    <div class="field">
-        <label>Confirm Password:</label>
-        <input type="password" @bind="confirmPassword"/>
-    </div>
-    <div class="field">
-        <label>Email:</label>
-        <input type="text" @bind="email"/>
-    </div>
-    <div class="field">
-        <label>Role:</label>
-        <select @bind="selectedRole">
-            <option value="User">User</option>
-            <option value="CafeOwner">Cafe Owner</option>
-            <option value="Entertainer">Entertainer</option>
-        </select>
-    </div>
-    @if (!string.IsNullOrEmpty(errorLabel))
+<RadzenCard class="rz-my-12 rz-mx-auto rz-p-4 rz-p-md-12" style="max-width: 600px;">
+    <RadzenTemplateForm Data=@("RegisterWithDefaultValues") Context="registerFormContext">
+        <RadzenCardHeader>
+            <h3>Register</h3>
+        </RadzenCardHeader>
+        <RadzenCardBody>
+            <RadzenFormLayout>
+                <RadzenFieldset>
+                    <RadzenTextBox @bind-Value="@firstName" Placeholder="First Name" />
+                    <RadzenTextBox @bind-Value="@lastName" Placeholder="Last Name" />
+                    <RadzenTextBox @bind-Value="@userName" Placeholder="User Name" />
+                    <RadzenPassword @bind-Value="@password" Placeholder="Password" />
+                    <RadzenPassword @bind-Value="@confirmPassword" Placeholder="Confirm Password" />
+                    <RadzenTextBox @bind-Value="@email" Placeholder="Email" />
+                    <RadzenDropDown @bind-Value="@selectedRole" Data="@roles" TextProperty="Text" ValueProperty="Value" Placeholder="Role" />
+
+                    @if (selectedRole == "CafeOwner" || selectedRole == "Entertainer")
+                    {
+                        <RadzenTextBox @bind-Value="@description" Placeholder="Description" />
+                    }
+                </RadzenFieldset>
+                <RadzenButton ButtonType="ButtonType.Submit" Text="Register" Click="@RegisterAsync" Style="margin-top: 16px;" />
+            </RadzenFormLayout>
+        </RadzenCardBody>
+        <RadzenCardFooter>
+            @if (!string.IsNullOrEmpty(errorLabel))
+            {
+                <RadzenLabel style="color: red">
+                    @errorLabel
+                </RadzenLabel>
+            }
+        </RadzenCardFooter>
+    </RadzenTemplateForm>
+
+    @if (registrationSuccess)
     {
-        <div class="field">
-            <label style="color: red">
-                @errorLabel
-            </label>
+        <div style="color: green; margin-top: 16px;">
+            Account created successfully! You can now <a href="/Login">login</a>.
         </div>
     }
-    <div class="field">
-        <button class="registerbtn" @onclick="RegisterAsync">Register</button>
-    </div>
-</div>
+</RadzenCard>
 
 @code {
     private string firstName;
@@ -59,31 +54,88 @@
     private string password;
     private string confirmPassword;
     private string email;
-    private string selectedRole = "User"; // Default role is User
+    private string selectedRole = "User"; 
+    private string description;
     private string errorLabel;
+    private bool registrationSuccess = false;
+
+    private List<RoleItem> roles = new List<RoleItem>
+    {
+        new RoleItem { Text = "User", Value = "User" },
+        new RoleItem { Text = "CafeOwner", Value = "CafeOwner" },
+        new RoleItem { Text = "Entertainer", Value = "Entertainer" },
+        
+    };
+
+    private class RoleItem
+    {
+        public string Text { get; set; }
+        public string Value { get; set; }
+    }
 
     private async Task RegisterAsync()
     {
         errorLabel = "";
+
         try
         {
+            
+            if (string.IsNullOrWhiteSpace(firstName) || string.IsNullOrWhiteSpace(lastName) || 
+                string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(confirmPassword) || 
+                string.IsNullOrWhiteSpace(email))
+            {
+                errorLabel = "Please fill in all required fields.";
+                return;
+            }
+
+            if (password != confirmPassword)
+            {
+                errorLabel = "Passwords do not match.";
+                return;
+            }
+            
+            if (!IsPasswordValid(password))
+            {
+                errorLabel = "Password must be at least 6 characters long and contain at least one uppercase letter, one lowercase letter, and one digit.";
+                return;
+            }
+            
+            if (!IsEmailValid(email))
+            {
+                errorLabel = "Invalid email address.";
+                return;
+            }
+
             var user = new User
+            
             {
                 FirstName = firstName,
                 LastName = lastName,
                 Username = userName,
-                Password = password,
+                Password = password, 
                 Email = email,
-                Role = selectedRole
+                Role = selectedRole,
+                Description = description 
             };
 
             await authService.RegisterAsync(user);
-            navMgr.NavigateTo("/Login"); 
+            registrationSuccess = true;
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
             errorLabel = $"Error: {e.Message}";
         }
+    }
+    private bool IsPasswordValid(string password)
+    {
+    
+        const string pattern = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$";
+        return Regex.IsMatch(password, pattern);
+    }
+    
+    private bool IsEmailValid(string email)
+    {
+        const string emailPattern = @"^\S+@\S+\.\S+$";
+        return Regex.IsMatch(email, emailPattern);
     }
 }

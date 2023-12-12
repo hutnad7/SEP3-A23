@@ -19,6 +19,7 @@ service EventService{
 service UserService{
   rpc CreateUser(CreateUserRequest) returns (CreateUserResponse){};
   rpc LoginUser(LoginRequest) returns (CreateUserResponse){};
+  rpc GetAllUsers(google.protobuf.Empty) returns (GetUsersResponse){};
 }
 
 service PostService{
@@ -53,6 +54,20 @@ message GetEventsResponse{
   repeated GetEventResponse event = 1;
 }
 
+message GetUsersResponse{
+  repeated GetUserResponse user = 1;
+}
+
+message GetUserResponse{
+  string id = 1;
+  string FirstName = 2;
+  string LastName = 3;
+  string Username = 4;
+  string role = 5;
+  string address = 6;
+  string description = 7;
+}
+
 message BookEventResponse{
   string userId = 1;
   string eventId = 2;
@@ -76,6 +91,7 @@ message CreateUserRequest{
   string Email = 4;
   string Role = 5;
   string Password = 6;
+  string Description = 7;
 }
 
 message CreateUserResponse{
@@ -85,6 +101,7 @@ message CreateUserResponse{
   string Email = 4;
   string Role = 5;
   string Id = 6;
+  string Description = 7;
 }
 message CreatePostRequest{
   string id = 1;
@@ -161,6 +178,7 @@ message GetEventByUserResponse{
   string Entertainer = 10;
   string CafeOwner = 11;
 }
+
 message GetEventsByUserResponse{
   repeated GetEventByUserResponse events = 1;
 }

@@ -1,0 +1,59 @@
+﻿@page "/Entertainers"
+@using global::Shared.Models
+@using System.Text.Json
+@inject HttpClient HttpClient
+@attribute [Authorize]
+
+<h3>Entertainers</h3>
+@if (_entertainers != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+       @* <tbody>
+            @foreach (var entertainer in _entertainers)
+            {
+                <tr>
+                    <td><NavLink href="/user/@entertainer.Id">@entertainer.Username</NavLink></td>
+                    <td>@entertainer.FirstName</td>
+                    <td>@entertainer.LastName</td>
+                    <td>@entertainer.Role</td>
+                </tr>
+            }
+        </tbody>*@
+    </table>
+}
+else
+{
+    <p><em>Loading...</em></p>
+}
+@code {
+    List<User> _entertainers = new List<User>();
+
+    private async Task GetCafeOwners()
+    {
+        var response = await HttpClient.GetAsync($"http://localhost:8080/api/users");
+        if (response.IsSuccessStatusCode)
+        {
+            var jsonString = await response.Content.ReadAsStringAsync();
+            _entertainers = JsonSerializer.Deserialize<List<User>>(jsonString);
+        }
+        else
+        {
+            Console.WriteLine($"Failed to load owners: {response.StatusCode}");
+        }
+
+    }
+    
+    protected override async Task OnInitializedAsync()
+    {
+        await GetCafeOwners();
+    }
+
+}
