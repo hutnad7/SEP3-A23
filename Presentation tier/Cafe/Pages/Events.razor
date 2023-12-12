@@ -9,7 +9,6 @@
 @using global::Shared.Models
 
 @attribute [Authorize]
-
 <RadzenFieldset AllowCollapse="true" Style="width: 700px; margin: 40px auto;" ExpandTitle="Expand events." CollapseTitle="Collapse events."
                 ExpandAriaLabel="Expand the list of events." CollapseAriaLabel="Collapse the list of events.">
     <HeaderTemplate>
@@ -38,12 +37,16 @@
                             <div style="font-size: .8em">@(myEvent.Description)</div>
                         </div>
                     </div>
-                                        <hr style="border: none; background-color: rgba(0,0,0,.08); height: 1px; margin: 1rem 0;" />
+                    <hr style="border: none; background-color: rgba(0,0,0,.08); height: 1px; margin: 1rem 0;" />
                     <div class="d-flex flex-row align-items-center">
                         <div>
                             <div class="button-row">
                                 <button type="button" ButtonType="ButtonType.Submit" class="acceptbtn" Text="Book now" @onclick="@(() => _nav_manager.NavigateTo($"/BookEvent/{myEvent.Id.ToString()}"))">Book now</button>
                             </div>
+                            <div class="button-row">
+                                <button type="button" ButtonType="ButtonType.Submit" class="acceptbtn" Text="See event" @onclick="@(() => _nav_manager.NavigateTo($"/Event/{myEvent.Id.ToString()}"))">See more</button>
+                            </div>
+                            
                         </div>
                     </div>
                 </RadzenCard>

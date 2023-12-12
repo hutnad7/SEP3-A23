@@ -28,7 +28,8 @@ namespace Data.Repositories
         {
             return await _context.Set<T>().Where(filter).ToListAsync();
         }
-        public virtual async ValueTask<ICollection<T>> GetByAsync(Expression<Func<T, bool>> filter)
+        public virtual async ValueTask<ICollection<T>> GetByAsync(
+            Expression<Func<T, bool>> filter)
         {
             return await _context.Set<T>().Where(filter).ToListAsync();
         }

@@ -14,12 +14,11 @@ namespace Service.Services
 {
     public class EventServiceImpl : EventService.EventServiceBase
     {
-        private readonly ILogger<EventServiceImpl> _logger;
         private readonly IEventRepository _eventRepository;
         private readonly IBookingRepository _bookingRepository;
-        public EventServiceImpl(ILogger<EventServiceImpl> logger, IEventRepository eventRepository, IBookingRepository bookingRepository)
+        public EventServiceImpl(IEventRepository eventRepository, 
+            IBookingRepository bookingRepository)
         {
-            _logger = logger;
             _eventRepository = eventRepository;
             _bookingRepository = bookingRepository;
         }
@@ -135,7 +134,8 @@ namespace Service.Services
             };
             return response;
         }
-        public override async Task<BookEventResponse> BookEvent(BookEventRequest request, ServerCallContext context)
+        public override async Task<BookEventResponse> BookEvent(BookEventRequest request,
+            ServerCallContext context)
         {
             Booking booking = new Booking()
             {
@@ -148,6 +148,9 @@ namespace Service.Services
                 LastName = request.LastName,
             };
             Booking b =  await _bookingRepository.CreateAsync(booking);
+            Event e = await _eventRepository.GetByIdAsync(booking.EventId);
+            e.AvailablePlaces -= b.NumberOfPeople;
+            await _eventRepository.UpdateAsync(e);
             BookEventResponse response = new BookEventResponse()
             {
                 Id = booking.Id.ToString(),

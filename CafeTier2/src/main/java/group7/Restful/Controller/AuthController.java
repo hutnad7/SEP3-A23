@@ -24,7 +24,6 @@ import java.util.Date;
 @RequestMapping("/api/auth")
 public class AuthController {
 //    @Value("${jwt.secret}")
-    private String jwtSecret = "7KB9b5NLCZ5yZ1rV3I2hM9EvygH5EM8c6K2E7CQqOAm48B9+pX78Upgm7YL8Nk+JKUp7SbJkObiN9VZ7mpRxuWU6+uZOjpA9ZS5YDfn3Z2vhYH3QYh9PrB2UTh88Df";
 
     private final AuthService authService;
 
@@ -37,7 +36,7 @@ public class AuthController {
     public ResponseEntity<String> registerUser(@RequestBody User user) {
         User createdUser = authService.createUser(user);
 
-        String jwt = generateJwtToken(createdUser);
+        String jwt = authService.generateJwtToken(createdUser);
 
         return ResponseEntity.ok(jwt);
     }
@@ -47,7 +46,7 @@ public class AuthController {
         try {
             User foundUser = authService.loginUser(userLoginDto);
 
-            String jwt = generateJwtToken(foundUser);
+            String jwt = authService.generateJwtToken(foundUser);
 
             return ResponseEntity.ok(jwt);
         } catch (Exception e) {
@@ -55,23 +54,6 @@ public class AuthController {
         }
     }
 
-    private String generateJwtToken(User user) {
-        long expirationMs = 360000000; // 1 hour
-        Date now = new Date();
-        Date expiration = new Date(now.getTime() + expirationMs);
-        Key hmacKey = new SecretKeySpec(Base64.getDecoder().decode(jwtSecret),
-                SignatureAlgorithm.HS512.getJcaName());
-        return Jwts.builder()
-                .setSubject(user.getEmail())
-                .setHeaderParam("typ", "JWT")
-                .claim("role", user.getRole())
-                .claim("firstName", user.getFirstName())
-                .claim("lastName", user.getLastName())
-                .claim("id", user.getId())
-                .setIssuedAt(now)
-                .setExpiration(expiration)
-                .signWith(hmacKey)
-                .compact();
-    }
+
 }
 
