@@ -5,43 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="746ef1db-a193-4e4e-917c-6021319eba52" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/group7/Grpc/service/UserClientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/Controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/Migrations/20231208093503_testtest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/CafeOwners.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Entertainers.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/group7/Grpc/Configs/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/group7/Grpc/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group7/Grpc/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/group7/Restful/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/group7/Grpc/service/UserClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group7/Grpc/service/UserClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/group7/Restful/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/Controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/group7/Restful/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/service/EventService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/group7/Restful/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/group7/Restful/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/proto/product.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/product.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/FileContentIndex/bd336540-4ecb-4c2e-b5ae-097964850da3.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/v17/.futdcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/.vs/DataTier1/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Data/bin/Debug/net7.0/Data.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DataTier1/Service/Protos/proto3.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/Protos/proto3.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DataTier1/Service/Services/UserServiceImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/Services/UserServiceImpl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../DataTier1/Service/bin/Debug/net7.0/Data.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/CreateEvent.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/CreateEvent.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/CreatePost.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/CreatePost.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Login.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Login.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/LoginBtn.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/LoginBtn.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Register.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Register.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/RegisterBtn.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Entertainers.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/Entertainers.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/UserPage.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Pages/UserPage.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Services/Http/JwtAuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Services/Http/JwtAuthService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Shared/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Shared/MainLayout.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/Shared/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/Shared/NavMenu.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/wwwroot/img/Login.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/wwwroot/img/Login.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/wwwroot/img/Logout.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Cafe/wwwroot/img/Logout.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Presentation tier/Cafe/wwwroot/img/Register.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Presentation tier/Shared/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Presentation tier/Shared/Models/User.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +57,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging denitsa",
+    "git-widget-placeholder": "denitsa",
     "last_opened_file_path": "C:/Users/denim/Documents/VIA/3-Semester/SDJ3/SEP3-05-12/SEP3-A23/CafeTier2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -105,7 +86,7 @@
       <workItem from="1701780159162" duration="6537000" />
       <workItem from="1701857999724" duration="14620000" />
       <workItem from="1701952610985" duration="18439000" />
-      <workItem from="1702288513621" duration="11765000" />
+      <workItem from="1702288513621" duration="17164000" />
     </task>
     <servers />
   </component>
@@ -119,21 +100,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/group7/Restful/service/PostService.java</url>
           <line>62</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/group7/Restful/service/PostService.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/group7/Restful/service/EventService.java</url>
-          <line>145</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/group7/Restful/service/EventService.java</url>
-          <line>169</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

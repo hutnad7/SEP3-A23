@@ -23,8 +23,8 @@ public class UserClientService {
         this.stub = UserServiceGrpc.newBlockingStub(channel);
     }
 
-    public GetUsersResponse getAllUsers() {
-        return stub.getAllUsers(Empty.getDefaultInstance());
+    public GetUsersResponse getAllEntertainers() {
+        return stub.getAllEntertainers(Empty.getDefaultInstance());
     }
     public void shutdown() {
         channel.shutdown();

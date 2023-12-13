@@ -19,7 +19,7 @@ service EventService{
 service UserService{
   rpc CreateUser(CreateUserRequest) returns (CreateUserResponse){};
   rpc LoginUser(LoginRequest) returns (CreateUserResponse){};
-  rpc GetAllUsers(google.protobuf.Empty) returns (GetUsersResponse){};
+  rpc GetAllEntertainers(google.protobuf.Empty) returns (GetUsersResponse){};
 }
 
 service PostService{
