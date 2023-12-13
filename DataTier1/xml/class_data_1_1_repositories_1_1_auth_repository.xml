@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_data_1_1_repositories_1_1_auth_repository" kind="class" language="C#" prot="public">
+    <compoundname>Data::Repositories::AuthRepository</compoundname>
+    <basecompoundref refid="interface_data_1_1_interfaces_1_1_i_auth_repository" prot="public" virt="non-virtual">Data.Interfaces.IAuthRepository</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_data_1_1_repositories_1_1_auth_repository_1ae7fb4beb7907e22262603243405c5f11" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_data_1_1_d_b_context" kindref="compound">DBContext</ref></type>
+        <definition>readonly DBContext Data.Repositories.AuthRepository._context</definition>
+        <argsstring></argsstring>
+        <name>_context</name>
+        <qualifiedname>Data.Repositories.AuthRepository._context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Repositories/AuthRepository.cs" line="10" column="32" bodyfile="Data/Repositories/AuthRepository.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_data_1_1_repositories_1_1_auth_repository_1ade710c5f2e4e0b9c53c7839925221dab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Data.Repositories.AuthRepository.AuthRepository</definition>
+        <argsstring>(DBContext context)</argsstring>
+        <name>AuthRepository</name>
+        <qualifiedname>Data.Repositories.AuthRepository.AuthRepository</qualifiedname>
+        <param>
+          <type><ref refid="class_data_1_1_d_b_context" kindref="compound">DBContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Repositories/AuthRepository.cs" line="12" column="12" bodyfile="Data/Repositories/AuthRepository.cs" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_1_1_repositories_1_1_auth_repository_1a8392506dc0b5d4f0290c0ddffa3e8440" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; <ref refid="class_data_1_1_models_1_1_user" kindref="compound">User</ref> &gt;</type>
+        <definition>async Task&lt; User &gt; Data.Repositories.AuthRepository.RegisterUserAsync</definition>
+        <argsstring>(User user)</argsstring>
+        <name>RegisterUserAsync</name>
+        <qualifiedname>Data.Repositories.AuthRepository.RegisterUserAsync</qualifiedname>
+        <reimplements refid="interface_data_1_1_interfaces_1_1_i_auth_repository_1a25b63c66ae687259fa798bc6dbd4dcc8">RegisterUserAsync</reimplements>
+        <param>
+          <type><ref refid="class_data_1_1_models_1_1_user" kindref="compound">User</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Repositories/AuthRepository.cs" line="17" column="23" bodyfile="Data/Repositories/AuthRepository.cs" bodystart="17" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_1_1_repositories_1_1_auth_repository_1ace2cc7bda011fd59fc95fa8ef1b8333b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; <ref refid="class_data_1_1_models_1_1_user" kindref="compound">User</ref> &gt;</type>
+        <definition>async Task&lt; User &gt; Data.Repositories.AuthRepository.LoginUserAsync</definition>
+        <argsstring>(Auth auth)</argsstring>
+        <name>LoginUserAsync</name>
+        <qualifiedname>Data.Repositories.AuthRepository.LoginUserAsync</qualifiedname>
+        <reimplements refid="interface_data_1_1_interfaces_1_1_i_auth_repository_1ac8164392b3c959992614d395c9630a9b">LoginUserAsync</reimplements>
+        <param>
+          <type><ref refid="class_data_1_1_models_1_1_auth" kindref="compound">Auth</ref></type>
+          <declname>auth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Repositories/AuthRepository.cs" line="33" column="23" bodyfile="Data/Repositories/AuthRepository.cs" bodystart="33" bodyend="51"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Data.Repositories.AuthRepository</label>
+        <link refid="class_data_1_1_repositories_1_1_auth_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IAuthRepository</label>
+        <link refid="interface_data_1_1_interfaces_1_1_i_auth_repository"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Data.Repositories.AuthRepository</label>
+        <link refid="class_data_1_1_repositories_1_1_auth_repository"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IAuthRepository</label>
+        <link refid="interface_data_1_1_interfaces_1_1_i_auth_repository"/>
+      </node>
+    </collaborationgraph>
+    <location file="Data/Repositories/AuthRepository.cs" line="8" column="7" bodyfile="Data/Repositories/AuthRepository.cs" bodystart="9" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_data_1_1_repositories_1_1_auth_repository_1ae7fb4beb7907e22262603243405c5f11" prot="private" virt="non-virtual"><scope>Data::Repositories::AuthRepository</scope><name>_context</name></member>
+      <member refid="class_data_1_1_repositories_1_1_auth_repository_1ade710c5f2e4e0b9c53c7839925221dab" prot="public" virt="non-virtual"><scope>Data::Repositories::AuthRepository</scope><name>AuthRepository</name></member>
+      <member refid="class_data_1_1_repositories_1_1_auth_repository_1ace2cc7bda011fd59fc95fa8ef1b8333b" prot="public" virt="non-virtual"><scope>Data::Repositories::AuthRepository</scope><name>LoginUserAsync</name></member>
+      <member refid="class_data_1_1_repositories_1_1_auth_repository_1a8392506dc0b5d4f0290c0ddffa3e8440" prot="public" virt="non-virtual"><scope>Data::Repositories::AuthRepository</scope><name>RegisterUserAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

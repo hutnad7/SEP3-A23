@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_7fc4309c91838eb1d63421ca255c41db" kind="dir">
+    <compoundname>Cafe/obj/Debug</compoundname>
+    <innerdir refid="dir_2412ed9b6e0b69310ededac91ced1b2c">Cafe/obj/Debug/net7.0</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Cafe/obj/Debug/"/>
+  </compounddef>
+</doxygen>

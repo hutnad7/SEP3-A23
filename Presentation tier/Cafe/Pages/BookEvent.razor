@@ -2,7 +2,10 @@
 @inject HttpClient HttpClient
 @inject NotificationService NotificationService
 @using global::Shared.Models
-
+@using Blazored.LocalStorage
+@using Cafe.Services
+@inject ILocalStorageService _LocalStorage;
+@inject IAuthService AuthService;
 @attribute [Authorize]
 
 <h3>BookEvent</h3>
@@ -13,7 +16,6 @@
     <div class="rz-p-12 rz-text-align-center">
         <RadzenNumeric @bind-Value=@booking.numberOfPeople />
     </div>
-    <p>@booking.EventId</p>
     <RadzenButton ButtonType="ButtonType.Submit" Text="Book now" />
 </RadzenTemplateForm>
 
@@ -28,13 +30,15 @@
     protected override async void OnInitialized()
     {
         booking.EventId = Guid.Parse(Id);
+        string token =  await _LocalStorage.GetItemAsStringAsync("token");
+        booking.UserId = await AuthService.GetId(token);
     }
 
     private async Task Submit(Booking _booking)
     {
         try
         {
-    var response = await HttpClient.PostAsJsonAsync("http://localhost:8080/api/books", booking);
+            var response = await HttpClient.PostAsJsonAsync("http://localhost:8080/api/events/booking", booking);
             if (response.IsSuccessStatusCode)
             {
                 ShowSuccessNotification();
@@ -56,11 +60,11 @@
 
     private void ShowErrorNotification(string message)
     {
-        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = message, Detail = "Unable to create the event", Duration = 4000 });
+        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = message, Detail = "Unable to book the event", Duration = 4000 });
     }
     
     private void ShowSuccessNotification()
     {
-        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Event created", Detail = "Success Detail", Duration = 4000 });
+        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Booking created", Detail = "Success Detail", Duration = 4000 });
     }
 }

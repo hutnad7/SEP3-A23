@@ -1,0 +1,713 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_get_post_response" kind="class" language="C#" prot="public" sealed="yes">
+    <compoundname>GetPostResponse</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">pb::IMessage&lt; GetPostResponse &gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">pb.IBufferMessage</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_get_post_response_1aee40be9138a85ce9e14a3e8a98a60a47" prot="private" static="yes" mutable="no">
+        <type>readonly pb::MessageParser&lt; <ref refid="class_get_post_response" kindref="compound">GetPostResponse</ref> &gt;</type>
+        <definition>readonly pb::MessageParser&lt;GetPostResponse&gt; GetPostResponse._parser</definition>
+        <argsstring></argsstring>
+        <name>_parser</name>
+        <qualifiedname>GetPostResponse._parser</qualifiedname>
+        <initializer>= new pb::MessageParser&lt;<ref refid="class_get_post_response" kindref="compound">GetPostResponse</ref>&gt;(() =&gt; new <ref refid="class_get_post_response" kindref="compound">GetPostResponse</ref>())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="284" column="45" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="284" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_get_post_response_1aed905198d864aa2ef3e183aa88628b89" prot="private" static="no" mutable="no">
+        <type>pb::UnknownFieldSet</type>
+        <definition>pb::UnknownFieldSet GetPostResponse._unknownFields</definition>
+        <argsstring></argsstring>
+        <name>_unknownFields</name>
+        <qualifiedname>GetPostResponse._unknownFields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="285" column="31" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_get_post_response_1a3ec846b17d5a440ffff491c5ba72c765" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GetPostResponse.id_</definition>
+        <argsstring></argsstring>
+        <name>id_</name>
+        <qualifiedname>GetPostResponse.id_</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="325" column="18" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_get_post_response_1a6b1585eb98fa4ad38f4fc0125d8e8e9f" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GetPostResponse.author_</definition>
+        <argsstring></argsstring>
+        <name>author_</name>
+        <qualifiedname>GetPostResponse.author_</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="336" column="18" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_get_post_response_1a9cb9946aefef74bdb456c157480a567a" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GetPostResponse.title_</definition>
+        <argsstring></argsstring>
+        <name>title_</name>
+        <qualifiedname>GetPostResponse.title_</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="347" column="18" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_get_post_response_1ae44c238d75c6910402fb823cccae09b8" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GetPostResponse.content_</definition>
+        <argsstring></argsstring>
+        <name>content_</name>
+        <qualifiedname>GetPostResponse.content_</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="358" column="18" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_get_post_response_1a0fa63e0335630f3139fcde737c40a18c" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GetPostResponse.date_</definition>
+        <argsstring></argsstring>
+        <name>date_</name>
+        <qualifiedname>GetPostResponse.date_</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="369" column="18" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_get_post_response_1ad52c389f70cb67a634c4e35583ed1cb0" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GetPostResponse.eventId_</definition>
+        <argsstring></argsstring>
+        <name>eventId_</name>
+        <qualifiedname>GetPostResponse.eventId_</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="380" column="18" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_get_post_response_1a745666e02424c5c50c99bc9b117e599e" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GetPostResponse.authorName_</definition>
+        <argsstring></argsstring>
+        <name>authorName_</name>
+        <qualifiedname>GetPostResponse.authorName_</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="391" column="18" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="391" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_get_post_response_1a68da072d762a70c46690fbcf5ef3fa93" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>pb::MessageParser&lt; <ref refid="class_get_post_response" kindref="compound">GetPostResponse</ref> &gt;</type>
+        <definition>pb::MessageParser&lt;GetPostResponse&gt; GetPostResponse.Parser</definition>
+        <argsstring></argsstring>
+        <name>Parser</name>
+        <qualifiedname>GetPostResponse.Parser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="287" column="35" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="287" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="property" id="class_get_post_response_1abaf20a93e0dafcbb85c322a04ba14db1" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>pbr::MessageDescriptor</type>
+        <definition>pbr::MessageDescriptor GetPostResponse.Descriptor</definition>
+        <argsstring></argsstring>
+        <name>Descriptor</name>
+        <qualifiedname>GetPostResponse.Descriptor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="290" column="40" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="290" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="property" id="class_get_post_response_1a258ed585a9cc1d6133bf22e999523a3f" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>pbr::MessageDescriptor pb::IMessage.</type>
+        <definition>pbr::MessageDescriptor pb::IMessage. GetPostResponse.Descriptor</definition>
+        <argsstring></argsstring>
+        <name>Descriptor</name>
+        <qualifiedname>GetPostResponse.Descriptor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="295" column="38" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="295" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="property" id="class_get_post_response_1a9136bf22ff303ed52d40762c3fa62510" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string GetPostResponse.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>GetPostResponse.Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="327" column="17" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="327" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="property" id="class_get_post_response_1ae2ad2fa3bc36877b7f8fb734910e5c06" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string GetPostResponse.Author</definition>
+        <argsstring></argsstring>
+        <name>Author</name>
+        <qualifiedname>GetPostResponse.Author</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="338" column="17" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="338" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="property" id="class_get_post_response_1a729250ff420e1936f1b186dcb079363c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string GetPostResponse.Title</definition>
+        <argsstring></argsstring>
+        <name>Title</name>
+        <qualifiedname>GetPostResponse.Title</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="349" column="17" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="349" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="property" id="class_get_post_response_1adcff0074020a2373c55aef758e580aed" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string GetPostResponse.Content</definition>
+        <argsstring></argsstring>
+        <name>Content</name>
+        <qualifiedname>GetPostResponse.Content</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="360" column="17" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="360" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="property" id="class_get_post_response_1a2397ba9d7a1942e4364200a692c0a9ca" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string GetPostResponse.Date</definition>
+        <argsstring></argsstring>
+        <name>Date</name>
+        <qualifiedname>GetPostResponse.Date</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="371" column="17" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="371" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="property" id="class_get_post_response_1a37ff959a6f82fc2bc90ab3996370d181" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string GetPostResponse.EventId</definition>
+        <argsstring></argsstring>
+        <name>EventId</name>
+        <qualifiedname>GetPostResponse.EventId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="382" column="17" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="382" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="property" id="class_get_post_response_1ad66bbf19ae007e52f0b1a9d9f3b50233" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string GetPostResponse.AuthorName</definition>
+        <argsstring></argsstring>
+        <name>AuthorName</name>
+        <qualifiedname>GetPostResponse.AuthorName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="393" column="17" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="393" bodyend="398"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_get_post_response_1a8b6deed212339528958935c18c96d1b2" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int GetPostResponse.IdFieldNumber</definition>
+        <argsstring></argsstring>
+        <name>IdFieldNumber</name>
+        <qualifiedname>GetPostResponse.IdFieldNumber</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>Field number for the &quot;id&quot; field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="324" column="20" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_get_post_response_1a7128557257c99b8d496403447931f64f" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int GetPostResponse.AuthorFieldNumber</definition>
+        <argsstring></argsstring>
+        <name>AuthorFieldNumber</name>
+        <qualifiedname>GetPostResponse.AuthorFieldNumber</qualifiedname>
+        <initializer>= 2</initializer>
+        <briefdescription>
+<para>Field number for the &quot;author&quot; field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="335" column="20" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_get_post_response_1a74a34318892ab1af04d0c276e233ed66" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int GetPostResponse.TitleFieldNumber</definition>
+        <argsstring></argsstring>
+        <name>TitleFieldNumber</name>
+        <qualifiedname>GetPostResponse.TitleFieldNumber</qualifiedname>
+        <initializer>= 3</initializer>
+        <briefdescription>
+<para>Field number for the &quot;title&quot; field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="346" column="20" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_get_post_response_1a8be9b79d927defdf27f5c63fbcad33ac" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int GetPostResponse.ContentFieldNumber</definition>
+        <argsstring></argsstring>
+        <name>ContentFieldNumber</name>
+        <qualifiedname>GetPostResponse.ContentFieldNumber</qualifiedname>
+        <initializer>= 4</initializer>
+        <briefdescription>
+<para>Field number for the &quot;content&quot; field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="357" column="20" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_get_post_response_1a03941effc8428594556b4dc41c7fc22f" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int GetPostResponse.DateFieldNumber</definition>
+        <argsstring></argsstring>
+        <name>DateFieldNumber</name>
+        <qualifiedname>GetPostResponse.DateFieldNumber</qualifiedname>
+        <initializer>= 5</initializer>
+        <briefdescription>
+<para>Field number for the &quot;Date&quot; field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="368" column="20" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_get_post_response_1a33c374d4b4df2b615d2d642312f73885" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int GetPostResponse.EventIdFieldNumber</definition>
+        <argsstring></argsstring>
+        <name>EventIdFieldNumber</name>
+        <qualifiedname>GetPostResponse.EventIdFieldNumber</qualifiedname>
+        <initializer>= 6</initializer>
+        <briefdescription>
+<para>Field number for the &quot;eventId&quot; field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="379" column="20" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_get_post_response_1a668b47047ab7406b6ab26422472503d2" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int GetPostResponse.AuthorNameFieldNumber</definition>
+        <argsstring></argsstring>
+        <name>AuthorNameFieldNumber</name>
+        <qualifiedname>GetPostResponse.AuthorNameFieldNumber</qualifiedname>
+        <initializer>= 7</initializer>
+        <briefdescription>
+<para>Field number for the &quot;authorName&quot; field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="390" column="20" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="390" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_get_post_response_1ac0e4a22273a7d9d4d5b5170cfbb2e0d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GetPostResponse.GetPostResponse</definition>
+        <argsstring>()</argsstring>
+        <name>GetPostResponse</name>
+        <qualifiedname>GetPostResponse.GetPostResponse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="300" column="10" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="300" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_post_response_1a2175e7fc49ca74fac54d0e0b326738b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GetPostResponse.GetPostResponse</definition>
+        <argsstring>(GetPostResponse other)</argsstring>
+        <name>GetPostResponse</name>
+        <qualifiedname>GetPostResponse.GetPostResponse</qualifiedname>
+        <param>
+          <type><ref refid="class_get_post_response" kindref="compound">GetPostResponse</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="307" column="10" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="307" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_post_response_1ab3f37800b8ae2ff5b306f2ced82dc7c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_get_post_response" kindref="compound">GetPostResponse</ref></type>
+        <definition>GetPostResponse GetPostResponse.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <qualifiedname>GetPostResponse.Clone</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="319" column="26" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="319" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_post_response_1a6236aa9b5e9f049ce726dde47aa3ca5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool GetPostResponse.Equals</definition>
+        <argsstring>(object other)</argsstring>
+        <name>Equals</name>
+        <qualifiedname>GetPostResponse.Equals</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="401" column="24" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="401" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_post_response_1a87e93a188aebdc883fc4437bd3a8caff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GetPostResponse.Equals</definition>
+        <argsstring>(GetPostResponse other)</argsstring>
+        <name>Equals</name>
+        <qualifiedname>GetPostResponse.Equals</qualifiedname>
+        <param>
+          <type><ref refid="class_get_post_response" kindref="compound">GetPostResponse</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="406" column="15" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="406" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_post_response_1aa51f26fced1b1ae50df8b86db21ecde5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override int</type>
+        <definition>override int GetPostResponse.GetHashCode</definition>
+        <argsstring>()</argsstring>
+        <name>GetHashCode</name>
+        <qualifiedname>GetPostResponse.GetHashCode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="424" column="23" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="424" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_post_response_1ae281030264ce8eafecc3d25c4a55ef2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string GetPostResponse.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>GetPostResponse.ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="440" column="26" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="440" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_post_response_1a9c3783d88ff252ef24a6295671fc064f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GetPostResponse.WriteTo</definition>
+        <argsstring>(pb::CodedOutputStream output)</argsstring>
+        <name>WriteTo</name>
+        <qualifiedname>GetPostResponse.WriteTo</qualifiedname>
+        <param>
+          <type>pb::CodedOutputStream</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="445" column="15" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="445" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_post_response_1a5fc06e9b5ac7387aca695f3051163481" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int GetPostResponse.CalculateSize</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateSize</name>
+        <qualifiedname>GetPostResponse.CalculateSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="521" column="14" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="521" bodyend="548"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_post_response_1ae9aa413d7946a3329a7ad200a9dd561f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GetPostResponse.MergeFrom</definition>
+        <argsstring>(GetPostResponse other)</argsstring>
+        <name>MergeFrom</name>
+        <qualifiedname>GetPostResponse.MergeFrom</qualifiedname>
+        <param>
+          <type><ref refid="class_get_post_response" kindref="compound">GetPostResponse</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="551" column="15" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="551" bodyend="577"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_post_response_1a62af55b86c7ee78a0641e51f80b6e159" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GetPostResponse.MergeFrom</definition>
+        <argsstring>(pb::CodedInputStream input)</argsstring>
+        <name>MergeFrom</name>
+        <qualifiedname>GetPostResponse.MergeFrom</qualifiedname>
+        <param>
+          <type>pb::CodedInputStream</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="580" column="15" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="580" bodyend="621"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_get_post_response_1a2bf95e15a9317e2a1dae5d388fb80ab9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>partial void</type>
+        <definition>partial void GetPostResponse.OnConstruction</definition>
+        <argsstring>()</argsstring>
+        <name>OnConstruction</name>
+        <qualifiedname>GetPostResponse.OnConstruction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="304" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_post_response_1a25606a6f835dafb8abd6f73f8f4cfb25" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void pb::IBufferMessage.</type>
+        <definition>void pb::IBufferMessage. GetPostResponse.InternalWriteTo</definition>
+        <argsstring>(ref pb::WriteContext output)</argsstring>
+        <name>InternalWriteTo</name>
+        <qualifiedname>GetPostResponse.InternalWriteTo</qualifiedname>
+        <param>
+          <type>ref pb::WriteContext</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="485" column="26" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="485" bodyend="517"/>
+      </memberdef>
+      <memberdef kind="function" id="class_get_post_response_1a9c4b5a96640a1d08bb30f7415dbe3b7c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void pb::IBufferMessage.</type>
+        <definition>void pb::IBufferMessage. GetPostResponse.InternalMergeFrom</definition>
+        <argsstring>(ref pb::ParseContext input)</argsstring>
+        <name>InternalMergeFrom</name>
+        <qualifiedname>GetPostResponse.InternalMergeFrom</qualifiedname>
+        <param>
+          <type>ref pb::ParseContext</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="625" column="26" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="625" bodyend="662"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>GetPostResponse</label>
+        <link refid="class_get_post_response"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pb::IBufferMessage</label>
+      </node>
+      <node id="2">
+        <label>pb::IMessage&lt; GetPostResponse &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>GetPostResponse</label>
+        <link refid="class_get_post_response"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pb::IBufferMessage</label>
+      </node>
+      <node id="2">
+        <label>pb::IMessage&lt; GetPostResponse &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="279" column="14" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="283" bodyend="665"/>
+    <listofallmembers>
+      <member refid="class_get_post_response_1aee40be9138a85ce9e14a3e8a98a60a47" prot="private" virt="non-virtual"><scope>GetPostResponse</scope><name>_parser</name></member>
+      <member refid="class_get_post_response_1aed905198d864aa2ef3e183aa88628b89" prot="private" virt="non-virtual"><scope>GetPostResponse</scope><name>_unknownFields</name></member>
+      <member refid="class_get_post_response_1ae2ad2fa3bc36877b7f8fb734910e5c06" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>Author</name></member>
+      <member refid="class_get_post_response_1a6b1585eb98fa4ad38f4fc0125d8e8e9f" prot="private" virt="non-virtual"><scope>GetPostResponse</scope><name>author_</name></member>
+      <member refid="class_get_post_response_1a7128557257c99b8d496403447931f64f" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>AuthorFieldNumber</name></member>
+      <member refid="class_get_post_response_1ad66bbf19ae007e52f0b1a9d9f3b50233" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>AuthorName</name></member>
+      <member refid="class_get_post_response_1a745666e02424c5c50c99bc9b117e599e" prot="private" virt="non-virtual"><scope>GetPostResponse</scope><name>authorName_</name></member>
+      <member refid="class_get_post_response_1a668b47047ab7406b6ab26422472503d2" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>AuthorNameFieldNumber</name></member>
+      <member refid="class_get_post_response_1a5fc06e9b5ac7387aca695f3051163481" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>CalculateSize</name></member>
+      <member refid="class_get_post_response_1ab3f37800b8ae2ff5b306f2ced82dc7c3" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>Clone</name></member>
+      <member refid="class_get_post_response_1adcff0074020a2373c55aef758e580aed" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>Content</name></member>
+      <member refid="class_get_post_response_1ae44c238d75c6910402fb823cccae09b8" prot="private" virt="non-virtual"><scope>GetPostResponse</scope><name>content_</name></member>
+      <member refid="class_get_post_response_1a8be9b79d927defdf27f5c63fbcad33ac" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>ContentFieldNumber</name></member>
+      <member refid="class_get_post_response_1a2397ba9d7a1942e4364200a692c0a9ca" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>Date</name></member>
+      <member refid="class_get_post_response_1a0fa63e0335630f3139fcde737c40a18c" prot="private" virt="non-virtual"><scope>GetPostResponse</scope><name>date_</name></member>
+      <member refid="class_get_post_response_1a03941effc8428594556b4dc41c7fc22f" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>DateFieldNumber</name></member>
+      <member refid="class_get_post_response_1abaf20a93e0dafcbb85c322a04ba14db1" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>Descriptor</name></member>
+      <member refid="class_get_post_response_1a258ed585a9cc1d6133bf22e999523a3f" prot="private" virt="non-virtual"><scope>GetPostResponse</scope><name>Descriptor</name></member>
+      <member refid="class_get_post_response_1a6236aa9b5e9f049ce726dde47aa3ca5d" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>Equals</name></member>
+      <member refid="class_get_post_response_1a87e93a188aebdc883fc4437bd3a8caff" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>Equals</name></member>
+      <member refid="class_get_post_response_1a37ff959a6f82fc2bc90ab3996370d181" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>EventId</name></member>
+      <member refid="class_get_post_response_1ad52c389f70cb67a634c4e35583ed1cb0" prot="private" virt="non-virtual"><scope>GetPostResponse</scope><name>eventId_</name></member>
+      <member refid="class_get_post_response_1a33c374d4b4df2b615d2d642312f73885" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>EventIdFieldNumber</name></member>
+      <member refid="class_get_post_response_1aa51f26fced1b1ae50df8b86db21ecde5" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>GetHashCode</name></member>
+      <member refid="class_get_post_response_1ac0e4a22273a7d9d4d5b5170cfbb2e0d3" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>GetPostResponse</name></member>
+      <member refid="class_get_post_response_1a2175e7fc49ca74fac54d0e0b326738b1" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>GetPostResponse</name></member>
+      <member refid="class_get_post_response_1a9136bf22ff303ed52d40762c3fa62510" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>Id</name></member>
+      <member refid="class_get_post_response_1a3ec846b17d5a440ffff491c5ba72c765" prot="private" virt="non-virtual"><scope>GetPostResponse</scope><name>id_</name></member>
+      <member refid="class_get_post_response_1a8b6deed212339528958935c18c96d1b2" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>IdFieldNumber</name></member>
+      <member refid="class_get_post_response_1a9c4b5a96640a1d08bb30f7415dbe3b7c" prot="private" virt="non-virtual"><scope>GetPostResponse</scope><name>InternalMergeFrom</name></member>
+      <member refid="class_get_post_response_1a25606a6f835dafb8abd6f73f8f4cfb25" prot="private" virt="non-virtual"><scope>GetPostResponse</scope><name>InternalWriteTo</name></member>
+      <member refid="class_get_post_response_1ae9aa413d7946a3329a7ad200a9dd561f" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>MergeFrom</name></member>
+      <member refid="class_get_post_response_1a62af55b86c7ee78a0641e51f80b6e159" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>MergeFrom</name></member>
+      <member refid="class_get_post_response_1a2bf95e15a9317e2a1dae5d388fb80ab9" prot="private" virt="non-virtual"><scope>GetPostResponse</scope><name>OnConstruction</name></member>
+      <member refid="class_get_post_response_1a68da072d762a70c46690fbcf5ef3fa93" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>Parser</name></member>
+      <member refid="class_get_post_response_1a729250ff420e1936f1b186dcb079363c" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>Title</name></member>
+      <member refid="class_get_post_response_1a9cb9946aefef74bdb456c157480a567a" prot="private" virt="non-virtual"><scope>GetPostResponse</scope><name>title_</name></member>
+      <member refid="class_get_post_response_1a74a34318892ab1af04d0c276e233ed66" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>TitleFieldNumber</name></member>
+      <member refid="class_get_post_response_1ae281030264ce8eafecc3d25c4a55ef2e" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>ToString</name></member>
+      <member refid="class_get_post_response_1a9c3783d88ff252ef24a6295671fc064f" prot="public" virt="non-virtual"><scope>GetPostResponse</scope><name>WriteTo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

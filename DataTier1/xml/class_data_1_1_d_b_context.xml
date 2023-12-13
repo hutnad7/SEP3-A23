@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_data_1_1_d_b_context" kind="class" language="C#" prot="public">
+    <compoundname>Data::DBContext</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">DbContext</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_data_1_1_d_b_context_1aa946d08b19f009e67c3e46dcf0b785b4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DbSet&lt; <ref refid="class_data_1_1_models_1_1_user" kindref="compound">User</ref> &gt;</type>
+        <definition>DbSet&lt;User&gt; Data.DBContext.Users</definition>
+        <argsstring></argsstring>
+        <name>Users</name>
+        <qualifiedname>Data.DBContext.Users</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/DBContext.cs" line="17" column="22" bodyfile="Data/DBContext.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_d_b_context_1a19f981373561626842b0eaef1193b461" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DbSet&lt; <ref refid="class_data_1_1_models_1_1_event" kindref="compound">Event</ref> &gt;</type>
+        <definition>DbSet&lt;Event&gt; Data.DBContext.Events</definition>
+        <argsstring></argsstring>
+        <name>Events</name>
+        <qualifiedname>Data.DBContext.Events</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/DBContext.cs" line="18" column="22" bodyfile="Data/DBContext.cs" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_d_b_context_1adbb0bac35b5b8800dedee7654217fc94" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DbSet&lt; <ref refid="class_data_1_1_models_1_1_post" kindref="compound">Post</ref> &gt;</type>
+        <definition>DbSet&lt;Post&gt; Data.DBContext.Posts</definition>
+        <argsstring></argsstring>
+        <name>Posts</name>
+        <qualifiedname>Data.DBContext.Posts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/DBContext.cs" line="19" column="22" bodyfile="Data/DBContext.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_d_b_context_1a3841e4f2d1b62bd78e820a65a8104fe2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DbSet&lt; <ref refid="class_data_1_1_models_1_1_booking" kindref="compound">Booking</ref> &gt;</type>
+        <definition>DbSet&lt;Booking&gt; Data.DBContext.Bookings</definition>
+        <argsstring></argsstring>
+        <name>Bookings</name>
+        <qualifiedname>Data.DBContext.Bookings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/DBContext.cs" line="20" column="22" bodyfile="Data/DBContext.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_data_1_1_d_b_context_1adb6efd7b4d94a7c6ef54770aba40c2b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Data.DBContext.DBContext</definition>
+        <argsstring>(DbContextOptions&lt; DBContext &gt; options)</argsstring>
+        <name>DBContext</name>
+        <qualifiedname>Data.DBContext.DBContext</qualifiedname>
+        <param>
+          <type>DbContextOptions&lt; <ref refid="class_data_1_1_d_b_context" kindref="compound">DBContext</ref> &gt;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/DBContext.cs" line="12" column="16" bodyfile="Data/DBContext.cs" bodystart="12" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_data_1_1_d_b_context_1aa56dac27d37daafa4445baf88f6ce936" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Data.DBContext.OnModelCreating</definition>
+        <argsstring>(ModelBuilder modelBuilder)</argsstring>
+        <name>OnModelCreating</name>
+        <qualifiedname>Data.DBContext.OnModelCreating</qualifiedname>
+        <param>
+          <type>ModelBuilder</type>
+          <declname>modelBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/DBContext.cs" line="23" column="33" bodyfile="Data/DBContext.cs" bodystart="23" bodyend="78"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Data.DBContext</label>
+        <link refid="class_data_1_1_d_b_context"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DbContext</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Data.DBContext</label>
+        <link refid="class_data_1_1_d_b_context"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DbContext</label>
+      </node>
+    </collaborationgraph>
+    <location file="Data/DBContext.cs" line="10" column="11" bodyfile="Data/DBContext.cs" bodystart="11" bodyend="79"/>
+    <listofallmembers>
+      <member refid="class_data_1_1_d_b_context_1a3841e4f2d1b62bd78e820a65a8104fe2" prot="public" virt="non-virtual"><scope>Data::DBContext</scope><name>Bookings</name></member>
+      <member refid="class_data_1_1_d_b_context_1adb6efd7b4d94a7c6ef54770aba40c2b5" prot="public" virt="non-virtual"><scope>Data::DBContext</scope><name>DBContext</name></member>
+      <member refid="class_data_1_1_d_b_context_1a19f981373561626842b0eaef1193b461" prot="public" virt="non-virtual"><scope>Data::DBContext</scope><name>Events</name></member>
+      <member refid="class_data_1_1_d_b_context_1aa56dac27d37daafa4445baf88f6ce936" prot="protected" virt="non-virtual"><scope>Data::DBContext</scope><name>OnModelCreating</name></member>
+      <member refid="class_data_1_1_d_b_context_1adbb0bac35b5b8800dedee7654217fc94" prot="public" virt="non-virtual"><scope>Data::DBContext</scope><name>Posts</name></member>
+      <member refid="class_data_1_1_d_b_context_1aa946d08b19f009e67c3e46dcf0b785b4" prot="public" virt="non-virtual"><scope>Data::DBContext</scope><name>Users</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

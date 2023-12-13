@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_data_1_1_models_1_1_booking" kind="class" language="C#" prot="public">
+    <compoundname>Data::Models::Booking</compoundname>
+    <basecompoundref refid="class_data_1_1_models_1_1_base_entity" prot="public" virt="non-virtual">Data.Models.BaseEntity</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_data_1_1_models_1_1_booking_1afa6d6110f9f3bec4042a3728b5a73f3a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_data_1_1_models_1_1_user" kindref="compound">User</ref></type>
+        <definition>User Data.Models.Booking.User</definition>
+        <argsstring></argsstring>
+        <name>User</name>
+        <qualifiedname>Data.Models.Booking.User</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Booking.cs" line="13" column="21" bodyfile="Data/Models/Booking.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_booking_1a68eb369e6533be23245a01ff50074090" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Guid</type>
+        <definition>Guid Data.Models.Booking.UserId</definition>
+        <argsstring></argsstring>
+        <name>UserId</name>
+        <qualifiedname>Data.Models.Booking.UserId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Booking.cs" line="16" column="21" bodyfile="Data/Models/Booking.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_booking_1aece854cf2ee4ef053cc47770af37ff51" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_data_1_1_models_1_1_event" kindref="compound">Event</ref></type>
+        <definition>Event Data.Models.Booking.Event</definition>
+        <argsstring></argsstring>
+        <name>Event</name>
+        <qualifiedname>Data.Models.Booking.Event</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Booking.cs" line="18" column="22" bodyfile="Data/Models/Booking.cs" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_booking_1ae61c4caef17146d1bed4e12351945b3f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Guid</type>
+        <definition>Guid Data.Models.Booking.EventId</definition>
+        <argsstring></argsstring>
+        <name>EventId</name>
+        <qualifiedname>Data.Models.Booking.EventId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Booking.cs" line="20" column="21" bodyfile="Data/Models/Booking.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_booking_1a7ab260239178e15dd492be70c0ace7f7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime Data.Models.Booking.CreationDate</definition>
+        <argsstring></argsstring>
+        <name>CreationDate</name>
+        <qualifiedname>Data.Models.Booking.CreationDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Booking.cs" line="22" column="25" bodyfile="Data/Models/Booking.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_booking_1af956e4375869f04502f8d6863fbd1476" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Data.Models.Booking.NumberOfPeople</definition>
+        <argsstring></argsstring>
+        <name>NumberOfPeople</name>
+        <qualifiedname>Data.Models.Booking.NumberOfPeople</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Booking.cs" line="25" column="20" bodyfile="Data/Models/Booking.cs" bodystart="25" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>BaseEntity</label>
+        <link refid="class_data_1_1_models_1_1_base_entity"/>
+      </node>
+      <node id="1">
+        <label>Data.Models.Booking</label>
+        <link refid="class_data_1_1_models_1_1_booking"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>BaseEntity</label>
+        <link refid="class_data_1_1_models_1_1_base_entity"/>
+      </node>
+      <node id="1">
+        <label>Data.Models.Booking</label>
+        <link refid="class_data_1_1_models_1_1_booking"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Data/Models/Booking.cs" line="10" column="11" bodyfile="Data/Models/Booking.cs" bodystart="11" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_data_1_1_models_1_1_booking_1a7ab260239178e15dd492be70c0ace7f7" prot="public" virt="non-virtual"><scope>Data::Models::Booking</scope><name>CreationDate</name></member>
+      <member refid="class_data_1_1_models_1_1_booking_1aece854cf2ee4ef053cc47770af37ff51" prot="public" virt="non-virtual"><scope>Data::Models::Booking</scope><name>Event</name></member>
+      <member refid="class_data_1_1_models_1_1_booking_1ae61c4caef17146d1bed4e12351945b3f" prot="public" virt="non-virtual"><scope>Data::Models::Booking</scope><name>EventId</name></member>
+      <member refid="class_data_1_1_models_1_1_base_entity_1a7d3260b1b11dcbaa9fff6c47a048584d" prot="public" virt="non-virtual"><scope>Data::Models::Booking</scope><name>Id</name></member>
+      <member refid="class_data_1_1_models_1_1_booking_1af956e4375869f04502f8d6863fbd1476" prot="public" virt="non-virtual"><scope>Data::Models::Booking</scope><name>NumberOfPeople</name></member>
+      <member refid="class_data_1_1_models_1_1_booking_1afa6d6110f9f3bec4042a3728b5a73f3a" prot="public" virt="non-virtual"><scope>Data::Models::Booking</scope><name>User</name></member>
+      <member refid="class_data_1_1_models_1_1_booking_1a68eb369e6533be23245a01ff50074090" prot="public" virt="non-virtual"><scope>Data::Models::Booking</scope><name>UserId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

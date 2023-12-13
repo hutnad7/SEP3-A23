@@ -23,9 +23,9 @@ public class Event
 
         [JsonPropertyName("availablePlaces")]
         public int AvailablePlaces { get; set; }
-      /*  [JsonPropertyName("startDate")]
+        [JsonPropertyName("startDate")]
 
         public DateTime Start { get; set; }
         [JsonPropertyName("endDate")]
-        public DateTime End { get; set; }*/
+        public DateTime End { get; set; }
 }

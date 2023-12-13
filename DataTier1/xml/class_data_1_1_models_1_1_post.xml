@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_data_1_1_models_1_1_post" kind="class" language="C#" prot="public">
+    <compoundname>Data::Models::Post</compoundname>
+    <basecompoundref refid="class_data_1_1_models_1_1_base_entity" prot="public" virt="non-virtual">Data.Models.BaseEntity</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_data_1_1_models_1_1_post_1a1aa552c2635273ffb66a915265bf066b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Data.Models.Post.Title</definition>
+        <argsstring></argsstring>
+        <name>Title</name>
+        <qualifiedname>Data.Models.Post.Title</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Post.cs" line="9" column="19" bodyfile="Data/Models/Post.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_post_1a6c419fe55a0a6c9a08edb1a732286577" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Data.Models.Post.Content</definition>
+        <argsstring></argsstring>
+        <name>Content</name>
+        <qualifiedname>Data.Models.Post.Content</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Post.cs" line="11" column="19" bodyfile="Data/Models/Post.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_post_1a585ca6736cc6f2c9123bcb4362057d3e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_data_1_1_models_1_1_user" kindref="compound">User</ref></type>
+        <definition>User Data.Models.Post.Author</definition>
+        <argsstring></argsstring>
+        <name>Author</name>
+        <qualifiedname>Data.Models.Post.Author</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Post.cs" line="13" column="17" bodyfile="Data/Models/Post.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_post_1a2f255ef3956ffef550e9d4f04a5efdc3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Guid</type>
+        <definition>Guid Data.Models.Post.AuthorId</definition>
+        <argsstring></argsstring>
+        <name>AuthorId</name>
+        <qualifiedname>Data.Models.Post.AuthorId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Post.cs" line="15" column="17" bodyfile="Data/Models/Post.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_post_1ad2b2fe35761008b141ec8de86598e8b8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_data_1_1_models_1_1_event" kindref="compound">Event</ref></type>
+        <definition>Event Data.Models.Post.Event</definition>
+        <argsstring></argsstring>
+        <name>Event</name>
+        <qualifiedname>Data.Models.Post.Event</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Post.cs" line="16" column="18" bodyfile="Data/Models/Post.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_post_1a4a5cfacdb89a7b061b143b87c3f946f7" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Guid?</type>
+        <definition>Guid? Data.Models.Post.EventId</definition>
+        <argsstring></argsstring>
+        <name>EventId</name>
+        <qualifiedname>Data.Models.Post.EventId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Post.cs" line="17" column="17" bodyfile="Data/Models/Post.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_post_1a3d6b9de4b7409ab3191d7bd6c651f8fd" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Data.Models.Post.CreationDate</definition>
+        <argsstring></argsstring>
+        <name>CreationDate</name>
+        <qualifiedname>Data.Models.Post.CreationDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Post.cs" line="20" column="19" bodyfile="Data/Models/Post.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>BaseEntity</label>
+        <link refid="class_data_1_1_models_1_1_base_entity"/>
+      </node>
+      <node id="1">
+        <label>Data.Models.Post</label>
+        <link refid="class_data_1_1_models_1_1_post"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>BaseEntity</label>
+        <link refid="class_data_1_1_models_1_1_base_entity"/>
+      </node>
+      <node id="1">
+        <label>Data.Models.Post</label>
+        <link refid="class_data_1_1_models_1_1_post"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Data/Models/Post.cs" line="6" column="7" bodyfile="Data/Models/Post.cs" bodystart="7" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_data_1_1_models_1_1_post_1a585ca6736cc6f2c9123bcb4362057d3e" prot="public" virt="non-virtual"><scope>Data::Models::Post</scope><name>Author</name></member>
+      <member refid="class_data_1_1_models_1_1_post_1a2f255ef3956ffef550e9d4f04a5efdc3" prot="public" virt="non-virtual"><scope>Data::Models::Post</scope><name>AuthorId</name></member>
+      <member refid="class_data_1_1_models_1_1_post_1a6c419fe55a0a6c9a08edb1a732286577" prot="public" virt="non-virtual"><scope>Data::Models::Post</scope><name>Content</name></member>
+      <member refid="class_data_1_1_models_1_1_post_1a3d6b9de4b7409ab3191d7bd6c651f8fd" prot="public" virt="non-virtual"><scope>Data::Models::Post</scope><name>CreationDate</name></member>
+      <member refid="class_data_1_1_models_1_1_post_1ad2b2fe35761008b141ec8de86598e8b8" prot="public" virt="non-virtual"><scope>Data::Models::Post</scope><name>Event</name></member>
+      <member refid="class_data_1_1_models_1_1_post_1a4a5cfacdb89a7b061b143b87c3f946f7" prot="public" virt="non-virtual"><scope>Data::Models::Post</scope><name>EventId</name></member>
+      <member refid="class_data_1_1_models_1_1_base_entity_1a7d3260b1b11dcbaa9fff6c47a048584d" prot="public" virt="non-virtual"><scope>Data::Models::Post</scope><name>Id</name></member>
+      <member refid="class_data_1_1_models_1_1_post_1a1aa552c2635273ffb66a915265bf066b" prot="public" virt="non-virtual"><scope>Data::Models::Post</scope><name>Title</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

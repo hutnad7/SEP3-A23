@@ -1,0 +1,127 @@
+\doxysection{Event\+Service.\+Event\+Service\+Base Class Reference}
+\hypertarget{class_event_service_1_1_event_service_base}{}\label{class_event_service_1_1_event_service_base}\index{EventService.EventServiceBase@{EventService.EventServiceBase}}
+
+
+Base class for server-\/side implementations of Event\+Service.  
+
+
+Inheritance diagram for Event\+Service.\+Event\+Service\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_event_service_1_1_event_service_base}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual global\+::\+System.\+Threading.\+Tasks.\+Task$<$ global\+::\+Get\+Event\+Response $>$ \mbox{\hyperlink{class_event_service_1_1_event_service_base_ad2e015578a7d1057189ecc1137ff2cea}{Create\+Event}} (global\+::\+Create\+Event\+Request request, grpc\+::\+Server\+Call\+Context context)
+\item 
+virtual global\+::\+System.\+Threading.\+Tasks.\+Task$<$ global\+::\+Get\+Event\+Response $>$ \mbox{\hyperlink{class_event_service_1_1_event_service_base_a9b08193df54689323e796cd749d9f4c1}{Get\+Event}} (global\+::\+Get\+Request request, grpc\+::\+Server\+Call\+Context context)
+\item 
+virtual global\+::\+System.\+Threading.\+Tasks.\+Task$<$ global\+::\+Get\+Events\+By\+User\+Response $>$ \mbox{\hyperlink{class_event_service_1_1_event_service_base_a38218fbe030a172d3b585a4af68d12f5}{Get\+Events\+By\+User}} (global\+::\+Get\+Request request, grpc\+::\+Server\+Call\+Context context)
+\item 
+virtual global\+::\+System.\+Threading.\+Tasks.\+Task$<$ global\+::\+Get\+Events\+Response $>$ \mbox{\hyperlink{class_event_service_1_1_event_service_base_acbad882ee0ff2d0153b75312ffe6caea}{Get\+All\+Events}} (global\+::\+Google.\+Protobuf.\+Well\+Known\+Types.\+Empty request, grpc\+::\+Server\+Call\+Context context)
+\item 
+virtual global\+::\+System.\+Threading.\+Tasks.\+Task$<$ global\+::\+Book\+Event\+Response $>$ \mbox{\hyperlink{class_event_service_1_1_event_service_base_a438b9e7792746d6e722dd4989d1765d6}{Book\+Event}} (global\+::\+Book\+Event\+Request request, grpc\+::\+Server\+Call\+Context context)
+\item 
+virtual global\+::\+System.\+Threading.\+Tasks.\+Task$<$ global\+::\+Get\+Event\+Response $>$ \mbox{\hyperlink{class_event_service_1_1_event_service_base_ab7187adce64f0ddb55a7cd87c21dfb38}{Accept\+Event}} (global\+::\+Get\+Request request, grpc\+::\+Server\+Call\+Context context)
+\item 
+virtual global\+::\+System.\+Threading.\+Tasks.\+Task$<$ global\+::\+Get\+Event\+Response $>$ \mbox{\hyperlink{class_event_service_1_1_event_service_base_a7a055f79cabb0639fd67358d1132eaf7}{Refuse\+Event}} (global\+::\+Get\+Request request, grpc\+::\+Server\+Call\+Context context)
+\item 
+virtual global\+::\+System.\+Threading.\+Tasks.\+Task$<$ global\+::\+Get\+Event\+Response $>$ \mbox{\hyperlink{class_event_service_1_1_event_service_base_ab51bf3c62ae65a1db5e081537f869355}{Reverse\+State}} (global\+::\+Get\+Request request, grpc\+::\+Server\+Call\+Context context)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for server-\/side implementations of Event\+Service. 
+
+Definition at line \mbox{\hyperlink{_proto3_grpc_8cs_source_l00136}{136}} of file \mbox{\hyperlink{_proto3_grpc_8cs_source}{Proto3\+Grpc.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_event_service_1_1_event_service_base_ab7187adce64f0ddb55a7cd87c21dfb38}\label{class_event_service_1_1_event_service_base_ab7187adce64f0ddb55a7cd87c21dfb38} 
+\index{EventService.EventServiceBase@{EventService.EventServiceBase}!AcceptEvent@{AcceptEvent}}
+\index{AcceptEvent@{AcceptEvent}!EventService.EventServiceBase@{EventService.EventServiceBase}}
+\doxysubsubsection{\texorpdfstring{AcceptEvent()}{AcceptEvent()}}
+{\footnotesize\ttfamily virtual global.\+System.\+Threading.\+Tasks.\+Task$<$ global.\+Get\+Event\+Response $>$ Event\+Service.\+Event\+Service\+Base.\+Accept\+Event (\begin{DoxyParamCaption}\item[{global\+::\+Get\+Request}]{request,  }\item[{grpc\+::\+Server\+Call\+Context}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{_proto3_grpc_8cs_source_l00169}{169}} of file \mbox{\hyperlink{_proto3_grpc_8cs_source}{Proto3\+Grpc.\+cs}}.
+
+\Hypertarget{class_event_service_1_1_event_service_base_a438b9e7792746d6e722dd4989d1765d6}\label{class_event_service_1_1_event_service_base_a438b9e7792746d6e722dd4989d1765d6} 
+\index{EventService.EventServiceBase@{EventService.EventServiceBase}!BookEvent@{BookEvent}}
+\index{BookEvent@{BookEvent}!EventService.EventServiceBase@{EventService.EventServiceBase}}
+\doxysubsubsection{\texorpdfstring{BookEvent()}{BookEvent()}}
+{\footnotesize\ttfamily virtual global.\+System.\+Threading.\+Tasks.\+Task$<$ global.\+Book\+Event\+Response $>$ Event\+Service.\+Event\+Service\+Base.\+Book\+Event (\begin{DoxyParamCaption}\item[{global\+::\+Book\+Event\+Request}]{request,  }\item[{grpc\+::\+Server\+Call\+Context}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{_proto3_grpc_8cs_source_l00163}{163}} of file \mbox{\hyperlink{_proto3_grpc_8cs_source}{Proto3\+Grpc.\+cs}}.
+
+\Hypertarget{class_event_service_1_1_event_service_base_ad2e015578a7d1057189ecc1137ff2cea}\label{class_event_service_1_1_event_service_base_ad2e015578a7d1057189ecc1137ff2cea} 
+\index{EventService.EventServiceBase@{EventService.EventServiceBase}!CreateEvent@{CreateEvent}}
+\index{CreateEvent@{CreateEvent}!EventService.EventServiceBase@{EventService.EventServiceBase}}
+\doxysubsubsection{\texorpdfstring{CreateEvent()}{CreateEvent()}}
+{\footnotesize\ttfamily virtual global.\+System.\+Threading.\+Tasks.\+Task$<$ global.\+Get\+Event\+Response $>$ Event\+Service.\+Event\+Service\+Base.\+Create\+Event (\begin{DoxyParamCaption}\item[{global\+::\+Create\+Event\+Request}]{request,  }\item[{grpc\+::\+Server\+Call\+Context}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{_proto3_grpc_8cs_source_l00139}{139}} of file \mbox{\hyperlink{_proto3_grpc_8cs_source}{Proto3\+Grpc.\+cs}}.
+
+\Hypertarget{class_event_service_1_1_event_service_base_acbad882ee0ff2d0153b75312ffe6caea}\label{class_event_service_1_1_event_service_base_acbad882ee0ff2d0153b75312ffe6caea} 
+\index{EventService.EventServiceBase@{EventService.EventServiceBase}!GetAllEvents@{GetAllEvents}}
+\index{GetAllEvents@{GetAllEvents}!EventService.EventServiceBase@{EventService.EventServiceBase}}
+\doxysubsubsection{\texorpdfstring{GetAllEvents()}{GetAllEvents()}}
+{\footnotesize\ttfamily virtual global.\+System.\+Threading.\+Tasks.\+Task$<$ global.\+Get\+Events\+Response $>$ Event\+Service.\+Event\+Service\+Base.\+Get\+All\+Events (\begin{DoxyParamCaption}\item[{global\+::\+Google\+::\+Protobuf\+::\+Well\+Known\+Types\+::\+Empty}]{request,  }\item[{grpc\+::\+Server\+Call\+Context}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{_proto3_grpc_8cs_source_l00157}{157}} of file \mbox{\hyperlink{_proto3_grpc_8cs_source}{Proto3\+Grpc.\+cs}}.
+
+\Hypertarget{class_event_service_1_1_event_service_base_a9b08193df54689323e796cd749d9f4c1}\label{class_event_service_1_1_event_service_base_a9b08193df54689323e796cd749d9f4c1} 
+\index{EventService.EventServiceBase@{EventService.EventServiceBase}!GetEvent@{GetEvent}}
+\index{GetEvent@{GetEvent}!EventService.EventServiceBase@{EventService.EventServiceBase}}
+\doxysubsubsection{\texorpdfstring{GetEvent()}{GetEvent()}}
+{\footnotesize\ttfamily virtual global.\+System.\+Threading.\+Tasks.\+Task$<$ global.\+Get\+Event\+Response $>$ Event\+Service.\+Event\+Service\+Base.\+Get\+Event (\begin{DoxyParamCaption}\item[{global\+::\+Get\+Request}]{request,  }\item[{grpc\+::\+Server\+Call\+Context}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{_proto3_grpc_8cs_source_l00145}{145}} of file \mbox{\hyperlink{_proto3_grpc_8cs_source}{Proto3\+Grpc.\+cs}}.
+
+\Hypertarget{class_event_service_1_1_event_service_base_a38218fbe030a172d3b585a4af68d12f5}\label{class_event_service_1_1_event_service_base_a38218fbe030a172d3b585a4af68d12f5} 
+\index{EventService.EventServiceBase@{EventService.EventServiceBase}!GetEventsByUser@{GetEventsByUser}}
+\index{GetEventsByUser@{GetEventsByUser}!EventService.EventServiceBase@{EventService.EventServiceBase}}
+\doxysubsubsection{\texorpdfstring{GetEventsByUser()}{GetEventsByUser()}}
+{\footnotesize\ttfamily virtual global.\+System.\+Threading.\+Tasks.\+Task$<$ global.\+Get\+Events\+By\+User\+Response $>$ Event\+Service.\+Event\+Service\+Base.\+Get\+Events\+By\+User (\begin{DoxyParamCaption}\item[{global\+::\+Get\+Request}]{request,  }\item[{grpc\+::\+Server\+Call\+Context}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{_proto3_grpc_8cs_source_l00151}{151}} of file \mbox{\hyperlink{_proto3_grpc_8cs_source}{Proto3\+Grpc.\+cs}}.
+
+\Hypertarget{class_event_service_1_1_event_service_base_a7a055f79cabb0639fd67358d1132eaf7}\label{class_event_service_1_1_event_service_base_a7a055f79cabb0639fd67358d1132eaf7} 
+\index{EventService.EventServiceBase@{EventService.EventServiceBase}!RefuseEvent@{RefuseEvent}}
+\index{RefuseEvent@{RefuseEvent}!EventService.EventServiceBase@{EventService.EventServiceBase}}
+\doxysubsubsection{\texorpdfstring{RefuseEvent()}{RefuseEvent()}}
+{\footnotesize\ttfamily virtual global.\+System.\+Threading.\+Tasks.\+Task$<$ global.\+Get\+Event\+Response $>$ Event\+Service.\+Event\+Service\+Base.\+Refuse\+Event (\begin{DoxyParamCaption}\item[{global\+::\+Get\+Request}]{request,  }\item[{grpc\+::\+Server\+Call\+Context}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{_proto3_grpc_8cs_source_l00175}{175}} of file \mbox{\hyperlink{_proto3_grpc_8cs_source}{Proto3\+Grpc.\+cs}}.
+
+\Hypertarget{class_event_service_1_1_event_service_base_ab51bf3c62ae65a1db5e081537f869355}\label{class_event_service_1_1_event_service_base_ab51bf3c62ae65a1db5e081537f869355} 
+\index{EventService.EventServiceBase@{EventService.EventServiceBase}!ReverseState@{ReverseState}}
+\index{ReverseState@{ReverseState}!EventService.EventServiceBase@{EventService.EventServiceBase}}
+\doxysubsubsection{\texorpdfstring{ReverseState()}{ReverseState()}}
+{\footnotesize\ttfamily virtual global.\+System.\+Threading.\+Tasks.\+Task$<$ global.\+Get\+Event\+Response $>$ Event\+Service.\+Event\+Service\+Base.\+Reverse\+State (\begin{DoxyParamCaption}\item[{global\+::\+Get\+Request}]{request,  }\item[{grpc\+::\+Server\+Call\+Context}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{_proto3_grpc_8cs_source_l00181}{181}} of file \mbox{\hyperlink{_proto3_grpc_8cs_source}{Proto3\+Grpc.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Service/obj/\+Debug/net7.\+0/\+Protos/\mbox{\hyperlink{_proto3_grpc_8cs}{Proto3\+Grpc.\+cs}}\end{DoxyCompactItemize}

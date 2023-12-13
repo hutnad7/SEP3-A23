@@ -1,7 +1,7 @@
 package group7.Restful.service;
 
 import group7.Grpc.service.UserClientService;
-import group7.Restful.dto.UserDto;
+import group7.Grpc.dto.UserDto;
 import group7.Restful.entity.User;
 import group7.protobuf.GetUserResponse;
 import group7.protobuf.GetUsersResponse;
@@ -21,27 +21,23 @@ public class UserService {
 
     public UserService(UserClientService userClientService){this.userClientService = userClientService;}
 
-    public List<UserDto> getAllUsers() {
-        GetUsersResponse response = userClientService.getAllUsers();
-        List<UserDto> users = new ArrayList<>();
+    public List<User> getAllEntertainers() {
+        GetUsersResponse response = userClientService.getAllEntertainers();
+        List<User> users = new ArrayList<>();
         for(GetUserResponse getUserResponse : response.getUserList()){
-            UserDto user = new UserDto();
+            User user = new User();
             user.setId(UUID.fromString(getUserResponse.getId()));
             user.setFirstName(getUserResponse.getFirstName());
             user.setLastName(getUserResponse.getLastName());
             user.setDescription(getUserResponse.getDescription());
-            user.setAddress(getUserResponse.getAddress());
             user.setRole(getUserResponse.getRole());
+            user.setUsername(getUserResponse.getUsername());
             users.add(user);
         }
         return users;
     }
 
-    public List<User> getAllEntertainers() {
-        return this.users.stream()
-                .filter(e -> e.getRole().equals("entertainer"))
-                .collect(Collectors.toList());
-    }
+
 
 
     public List<User> getAllCafeOwners() {

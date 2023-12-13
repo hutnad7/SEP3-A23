@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_8b6391660f59079dd84d8ac053080e4f" kind="dir">
+    <compoundname>Data/Models</compoundname>
+    <innerfile refid="_auth_8cs">Auth.cs</innerfile>
+    <innerfile refid="_base_entity_8cs">BaseEntity.cs</innerfile>
+    <innerfile refid="_booking_8cs">Booking.cs</innerfile>
+    <innerfile refid="_event_8cs">Event.cs</innerfile>
+    <innerfile refid="_post_8cs">Post.cs</innerfile>
+    <innerfile refid="_role_8cs">Role.cs</innerfile>
+    <innerfile refid="_user_8cs">User.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Data/Models/"/>
+  </compounddef>
+</doxygen>

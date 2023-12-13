@@ -1,0 +1,713 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_create_user_request" kind="class" language="C#" prot="public" sealed="yes">
+    <compoundname>CreateUserRequest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">pb::IMessage&lt; CreateUserRequest &gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">pb.IBufferMessage</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_create_user_request_1a1f3536e0d879d05068feddfe056288a0" prot="private" static="yes" mutable="no">
+        <type>readonly pb::MessageParser&lt; <ref refid="class_create_user_request" kindref="compound">CreateUserRequest</ref> &gt;</type>
+        <definition>readonly pb::MessageParser&lt;CreateUserRequest&gt; CreateUserRequest._parser</definition>
+        <argsstring></argsstring>
+        <name>_parser</name>
+        <qualifiedname>CreateUserRequest._parser</qualifiedname>
+        <initializer>= new pb::MessageParser&lt;<ref refid="class_create_user_request" kindref="compound">CreateUserRequest</ref>&gt;(() =&gt; new <ref refid="class_create_user_request" kindref="compound">CreateUserRequest</ref>())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1762" column="45" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1762" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_create_user_request_1a0e79811ad5bfa094a82b01778ebba1c1" prot="private" static="no" mutable="no">
+        <type>pb::UnknownFieldSet</type>
+        <definition>pb::UnknownFieldSet CreateUserRequest._unknownFields</definition>
+        <argsstring></argsstring>
+        <name>_unknownFields</name>
+        <qualifiedname>CreateUserRequest._unknownFields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1763" column="31" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1763" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_create_user_request_1ac6ffbf229cfd6e67b7ac760a8007e23b" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CreateUserRequest.fisrtName_</definition>
+        <argsstring></argsstring>
+        <name>fisrtName_</name>
+        <qualifiedname>CreateUserRequest.fisrtName_</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1803" column="18" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1803" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_create_user_request_1a6133785d663742e3b2208ad62595dcb7" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CreateUserRequest.lastName_</definition>
+        <argsstring></argsstring>
+        <name>lastName_</name>
+        <qualifiedname>CreateUserRequest.lastName_</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1814" column="18" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1814" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_create_user_request_1a92324f3e6876b46685aaf0aaf70e9a8b" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CreateUserRequest.username_</definition>
+        <argsstring></argsstring>
+        <name>username_</name>
+        <qualifiedname>CreateUserRequest.username_</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1825" column="18" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1825" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_create_user_request_1a7c2b38da5489c6a3cdafdedf02fe3922" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CreateUserRequest.email_</definition>
+        <argsstring></argsstring>
+        <name>email_</name>
+        <qualifiedname>CreateUserRequest.email_</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1836" column="18" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1836" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_create_user_request_1a86b59c244144e23bfcd05f7c269c59c8" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CreateUserRequest.role_</definition>
+        <argsstring></argsstring>
+        <name>role_</name>
+        <qualifiedname>CreateUserRequest.role_</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1847" column="18" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1847" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_create_user_request_1a5e54470ed006b02eaaba843702cdcc82" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CreateUserRequest.password_</definition>
+        <argsstring></argsstring>
+        <name>password_</name>
+        <qualifiedname>CreateUserRequest.password_</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1858" column="18" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1858" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_create_user_request_1ab79d5b4d0afec32a5842569d5e8bfc19" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CreateUserRequest.description_</definition>
+        <argsstring></argsstring>
+        <name>description_</name>
+        <qualifiedname>CreateUserRequest.description_</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1869" column="18" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1869" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_create_user_request_1a2cd334df2b28e93e7ace0ca958c500f8" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>pb::MessageParser&lt; <ref refid="class_create_user_request" kindref="compound">CreateUserRequest</ref> &gt;</type>
+        <definition>pb::MessageParser&lt;CreateUserRequest&gt; CreateUserRequest.Parser</definition>
+        <argsstring></argsstring>
+        <name>Parser</name>
+        <qualifiedname>CreateUserRequest.Parser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1765" column="35" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1765" bodyend="1765"/>
+      </memberdef>
+      <memberdef kind="property" id="class_create_user_request_1a90c5c5114a26b1f168c263ce8243fc45" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>pbr::MessageDescriptor</type>
+        <definition>pbr::MessageDescriptor CreateUserRequest.Descriptor</definition>
+        <argsstring></argsstring>
+        <name>Descriptor</name>
+        <qualifiedname>CreateUserRequest.Descriptor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1768" column="40" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1768" bodyend="1770"/>
+      </memberdef>
+      <memberdef kind="property" id="class_create_user_request_1a99bb0c16cb340c828d81bdb3dd223a98" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>pbr::MessageDescriptor pb::IMessage.</type>
+        <definition>pbr::MessageDescriptor pb::IMessage. CreateUserRequest.Descriptor</definition>
+        <argsstring></argsstring>
+        <name>Descriptor</name>
+        <qualifiedname>CreateUserRequest.Descriptor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1773" column="38" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1773" bodyend="1775"/>
+      </memberdef>
+      <memberdef kind="property" id="class_create_user_request_1acf87b9fc1284fc99a881ccad444666bd" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string CreateUserRequest.FisrtName</definition>
+        <argsstring></argsstring>
+        <name>FisrtName</name>
+        <qualifiedname>CreateUserRequest.FisrtName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1805" column="17" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1805" bodyend="1810"/>
+      </memberdef>
+      <memberdef kind="property" id="class_create_user_request_1a0690f1b499f9ed303bcc7c1be367f5db" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string CreateUserRequest.LastName</definition>
+        <argsstring></argsstring>
+        <name>LastName</name>
+        <qualifiedname>CreateUserRequest.LastName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1816" column="17" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1816" bodyend="1821"/>
+      </memberdef>
+      <memberdef kind="property" id="class_create_user_request_1a0b2bc59d2801b8109f423bb5fc8b4f2f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string CreateUserRequest.Username</definition>
+        <argsstring></argsstring>
+        <name>Username</name>
+        <qualifiedname>CreateUserRequest.Username</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1827" column="17" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1827" bodyend="1832"/>
+      </memberdef>
+      <memberdef kind="property" id="class_create_user_request_1a1e1b1f203a5eaa5600129e75714ecec3" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string CreateUserRequest.Email</definition>
+        <argsstring></argsstring>
+        <name>Email</name>
+        <qualifiedname>CreateUserRequest.Email</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1838" column="17" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1838" bodyend="1843"/>
+      </memberdef>
+      <memberdef kind="property" id="class_create_user_request_1ac2996486b20c8e116df4c3606a2cd584" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string CreateUserRequest.Role</definition>
+        <argsstring></argsstring>
+        <name>Role</name>
+        <qualifiedname>CreateUserRequest.Role</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1849" column="17" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1849" bodyend="1854"/>
+      </memberdef>
+      <memberdef kind="property" id="class_create_user_request_1a17201c402eaae32951ff9d1e723ef15d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string CreateUserRequest.Password</definition>
+        <argsstring></argsstring>
+        <name>Password</name>
+        <qualifiedname>CreateUserRequest.Password</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1860" column="17" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1860" bodyend="1865"/>
+      </memberdef>
+      <memberdef kind="property" id="class_create_user_request_1ace97add2794c7a1977728d65e067f23a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string CreateUserRequest.Description</definition>
+        <argsstring></argsstring>
+        <name>Description</name>
+        <qualifiedname>CreateUserRequest.Description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1871" column="17" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1871" bodyend="1876"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_create_user_request_1a31898e4b747d201e57459eaebb2cfd35" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int CreateUserRequest.FisrtNameFieldNumber</definition>
+        <argsstring></argsstring>
+        <name>FisrtNameFieldNumber</name>
+        <qualifiedname>CreateUserRequest.FisrtNameFieldNumber</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>Field number for the &quot;FisrtName&quot; field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1802" column="20" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1802" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_create_user_request_1a7010fc279854c091855bd2ec6019c290" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int CreateUserRequest.LastNameFieldNumber</definition>
+        <argsstring></argsstring>
+        <name>LastNameFieldNumber</name>
+        <qualifiedname>CreateUserRequest.LastNameFieldNumber</qualifiedname>
+        <initializer>= 2</initializer>
+        <briefdescription>
+<para>Field number for the &quot;LastName&quot; field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1813" column="20" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1813" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_create_user_request_1ad279a7ab4302b35ce5d41d2b34590ae7" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int CreateUserRequest.UsernameFieldNumber</definition>
+        <argsstring></argsstring>
+        <name>UsernameFieldNumber</name>
+        <qualifiedname>CreateUserRequest.UsernameFieldNumber</qualifiedname>
+        <initializer>= 3</initializer>
+        <briefdescription>
+<para>Field number for the &quot;Username&quot; field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1824" column="20" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1824" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_create_user_request_1aeee0bd026d0956a42b015235b0787632" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int CreateUserRequest.EmailFieldNumber</definition>
+        <argsstring></argsstring>
+        <name>EmailFieldNumber</name>
+        <qualifiedname>CreateUserRequest.EmailFieldNumber</qualifiedname>
+        <initializer>= 4</initializer>
+        <briefdescription>
+<para>Field number for the &quot;Email&quot; field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1835" column="20" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1835" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_create_user_request_1a5a1ef73e613b220c17b878f3c67be6bc" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int CreateUserRequest.RoleFieldNumber</definition>
+        <argsstring></argsstring>
+        <name>RoleFieldNumber</name>
+        <qualifiedname>CreateUserRequest.RoleFieldNumber</qualifiedname>
+        <initializer>= 5</initializer>
+        <briefdescription>
+<para>Field number for the &quot;Role&quot; field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1846" column="20" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1846" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_create_user_request_1acdd56771500984879405fa896b4e00b5" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int CreateUserRequest.PasswordFieldNumber</definition>
+        <argsstring></argsstring>
+        <name>PasswordFieldNumber</name>
+        <qualifiedname>CreateUserRequest.PasswordFieldNumber</qualifiedname>
+        <initializer>= 6</initializer>
+        <briefdescription>
+<para>Field number for the &quot;Password&quot; field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1857" column="20" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1857" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_create_user_request_1a4386ce9424eea1b1188bca393391464b" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int CreateUserRequest.DescriptionFieldNumber</definition>
+        <argsstring></argsstring>
+        <name>DescriptionFieldNumber</name>
+        <qualifiedname>CreateUserRequest.DescriptionFieldNumber</qualifiedname>
+        <initializer>= 7</initializer>
+        <briefdescription>
+<para>Field number for the &quot;Description&quot; field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1868" column="20" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1868" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_create_user_request_1a5dfba4b4db4c69e9452ca0dc67f18378" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CreateUserRequest.CreateUserRequest</definition>
+        <argsstring>()</argsstring>
+        <name>CreateUserRequest</name>
+        <qualifiedname>CreateUserRequest.CreateUserRequest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1778" column="10" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1778" bodyend="1780"/>
+      </memberdef>
+      <memberdef kind="function" id="class_create_user_request_1a22d80be55f0ac58d9e4c076ef19bfad4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CreateUserRequest.CreateUserRequest</definition>
+        <argsstring>(CreateUserRequest other)</argsstring>
+        <name>CreateUserRequest</name>
+        <qualifiedname>CreateUserRequest.CreateUserRequest</qualifiedname>
+        <param>
+          <type><ref refid="class_create_user_request" kindref="compound">CreateUserRequest</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1785" column="10" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1785" bodyend="1794"/>
+      </memberdef>
+      <memberdef kind="function" id="class_create_user_request_1adbd72427060def9f9fb93730b2e06d82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_create_user_request" kindref="compound">CreateUserRequest</ref></type>
+        <definition>CreateUserRequest CreateUserRequest.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <qualifiedname>CreateUserRequest.Clone</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1797" column="28" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1797" bodyend="1799"/>
+      </memberdef>
+      <memberdef kind="function" id="class_create_user_request_1a709ec538d6163f24c75a64146d82a864" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool CreateUserRequest.Equals</definition>
+        <argsstring>(object other)</argsstring>
+        <name>Equals</name>
+        <qualifiedname>CreateUserRequest.Equals</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1879" column="24" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1879" bodyend="1881"/>
+      </memberdef>
+      <memberdef kind="function" id="class_create_user_request_1a8ded64262630637bca9b182fc524726f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CreateUserRequest.Equals</definition>
+        <argsstring>(CreateUserRequest other)</argsstring>
+        <name>Equals</name>
+        <qualifiedname>CreateUserRequest.Equals</qualifiedname>
+        <param>
+          <type><ref refid="class_create_user_request" kindref="compound">CreateUserRequest</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1884" column="15" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1884" bodyend="1899"/>
+      </memberdef>
+      <memberdef kind="function" id="class_create_user_request_1a1a8152dd15c2a38cfe9f6e823f613d80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override int</type>
+        <definition>override int CreateUserRequest.GetHashCode</definition>
+        <argsstring>()</argsstring>
+        <name>GetHashCode</name>
+        <qualifiedname>CreateUserRequest.GetHashCode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1902" column="23" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1902" bodyend="1915"/>
+      </memberdef>
+      <memberdef kind="function" id="class_create_user_request_1aff68884eebdc1460d255aaf27c8e0e47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string CreateUserRequest.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>CreateUserRequest.ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1918" column="26" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1918" bodyend="1920"/>
+      </memberdef>
+      <memberdef kind="function" id="class_create_user_request_1a3f0f14259b13f6435ef1a1d18ab0004b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CreateUserRequest.WriteTo</definition>
+        <argsstring>(pb::CodedOutputStream output)</argsstring>
+        <name>WriteTo</name>
+        <qualifiedname>CreateUserRequest.WriteTo</qualifiedname>
+        <param>
+          <type>pb::CodedOutputStream</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1923" column="15" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1923" bodyend="1959"/>
+      </memberdef>
+      <memberdef kind="function" id="class_create_user_request_1a645ecb6e7c4488554b9d62bcdc138151" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int CreateUserRequest.CalculateSize</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateSize</name>
+        <qualifiedname>CreateUserRequest.CalculateSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1999" column="14" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1999" bodyend="2026"/>
+      </memberdef>
+      <memberdef kind="function" id="class_create_user_request_1ac6d704cbcaff5b47b5f3b83a791b7f61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CreateUserRequest.MergeFrom</definition>
+        <argsstring>(CreateUserRequest other)</argsstring>
+        <name>MergeFrom</name>
+        <qualifiedname>CreateUserRequest.MergeFrom</qualifiedname>
+        <param>
+          <type><ref refid="class_create_user_request" kindref="compound">CreateUserRequest</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="2029" column="15" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="2029" bodyend="2055"/>
+      </memberdef>
+      <memberdef kind="function" id="class_create_user_request_1a0ef4c26869a907bc708023952acb2145" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CreateUserRequest.MergeFrom</definition>
+        <argsstring>(pb::CodedInputStream input)</argsstring>
+        <name>MergeFrom</name>
+        <qualifiedname>CreateUserRequest.MergeFrom</qualifiedname>
+        <param>
+          <type>pb::CodedInputStream</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="2058" column="15" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="2058" bodyend="2099"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_create_user_request_1a829351ac7357f1e955b622bf16cf4a81" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>partial void</type>
+        <definition>partial void CreateUserRequest.OnConstruction</definition>
+        <argsstring>()</argsstring>
+        <name>OnConstruction</name>
+        <qualifiedname>CreateUserRequest.OnConstruction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1782" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_create_user_request_1a089a551d251c00be892b210918b3babe" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void pb::IBufferMessage.</type>
+        <definition>void pb::IBufferMessage. CreateUserRequest.InternalWriteTo</definition>
+        <argsstring>(ref pb::WriteContext output)</argsstring>
+        <name>InternalWriteTo</name>
+        <qualifiedname>CreateUserRequest.InternalWriteTo</qualifiedname>
+        <param>
+          <type>ref pb::WriteContext</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1963" column="26" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1963" bodyend="1995"/>
+      </memberdef>
+      <memberdef kind="function" id="class_create_user_request_1a51092a8f2e971f513db3ebe56c81ea63" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void pb::IBufferMessage.</type>
+        <definition>void pb::IBufferMessage. CreateUserRequest.InternalMergeFrom</definition>
+        <argsstring>(ref pb::ParseContext input)</argsstring>
+        <name>InternalMergeFrom</name>
+        <qualifiedname>CreateUserRequest.InternalMergeFrom</qualifiedname>
+        <param>
+          <type>ref pb::ParseContext</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="2103" column="26" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="2103" bodyend="2140"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CreateUserRequest</label>
+        <link refid="class_create_user_request"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pb::IBufferMessage</label>
+      </node>
+      <node id="2">
+        <label>pb::IMessage&lt; CreateUserRequest &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CreateUserRequest</label>
+        <link refid="class_create_user_request"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pb::IBufferMessage</label>
+      </node>
+      <node id="2">
+        <label>pb::IMessage&lt; CreateUserRequest &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="1757" column="14" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="1761" bodyend="2143"/>
+    <listofallmembers>
+      <member refid="class_create_user_request_1a1f3536e0d879d05068feddfe056288a0" prot="private" virt="non-virtual"><scope>CreateUserRequest</scope><name>_parser</name></member>
+      <member refid="class_create_user_request_1a0e79811ad5bfa094a82b01778ebba1c1" prot="private" virt="non-virtual"><scope>CreateUserRequest</scope><name>_unknownFields</name></member>
+      <member refid="class_create_user_request_1a645ecb6e7c4488554b9d62bcdc138151" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>CalculateSize</name></member>
+      <member refid="class_create_user_request_1adbd72427060def9f9fb93730b2e06d82" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>Clone</name></member>
+      <member refid="class_create_user_request_1a5dfba4b4db4c69e9452ca0dc67f18378" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>CreateUserRequest</name></member>
+      <member refid="class_create_user_request_1a22d80be55f0ac58d9e4c076ef19bfad4" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>CreateUserRequest</name></member>
+      <member refid="class_create_user_request_1ace97add2794c7a1977728d65e067f23a" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>Description</name></member>
+      <member refid="class_create_user_request_1ab79d5b4d0afec32a5842569d5e8bfc19" prot="private" virt="non-virtual"><scope>CreateUserRequest</scope><name>description_</name></member>
+      <member refid="class_create_user_request_1a4386ce9424eea1b1188bca393391464b" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>DescriptionFieldNumber</name></member>
+      <member refid="class_create_user_request_1a90c5c5114a26b1f168c263ce8243fc45" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>Descriptor</name></member>
+      <member refid="class_create_user_request_1a99bb0c16cb340c828d81bdb3dd223a98" prot="private" virt="non-virtual"><scope>CreateUserRequest</scope><name>Descriptor</name></member>
+      <member refid="class_create_user_request_1a1e1b1f203a5eaa5600129e75714ecec3" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>Email</name></member>
+      <member refid="class_create_user_request_1a7c2b38da5489c6a3cdafdedf02fe3922" prot="private" virt="non-virtual"><scope>CreateUserRequest</scope><name>email_</name></member>
+      <member refid="class_create_user_request_1aeee0bd026d0956a42b015235b0787632" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>EmailFieldNumber</name></member>
+      <member refid="class_create_user_request_1a709ec538d6163f24c75a64146d82a864" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>Equals</name></member>
+      <member refid="class_create_user_request_1a8ded64262630637bca9b182fc524726f" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>Equals</name></member>
+      <member refid="class_create_user_request_1acf87b9fc1284fc99a881ccad444666bd" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>FisrtName</name></member>
+      <member refid="class_create_user_request_1ac6ffbf229cfd6e67b7ac760a8007e23b" prot="private" virt="non-virtual"><scope>CreateUserRequest</scope><name>fisrtName_</name></member>
+      <member refid="class_create_user_request_1a31898e4b747d201e57459eaebb2cfd35" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>FisrtNameFieldNumber</name></member>
+      <member refid="class_create_user_request_1a1a8152dd15c2a38cfe9f6e823f613d80" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>GetHashCode</name></member>
+      <member refid="class_create_user_request_1a51092a8f2e971f513db3ebe56c81ea63" prot="private" virt="non-virtual"><scope>CreateUserRequest</scope><name>InternalMergeFrom</name></member>
+      <member refid="class_create_user_request_1a089a551d251c00be892b210918b3babe" prot="private" virt="non-virtual"><scope>CreateUserRequest</scope><name>InternalWriteTo</name></member>
+      <member refid="class_create_user_request_1a0690f1b499f9ed303bcc7c1be367f5db" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>LastName</name></member>
+      <member refid="class_create_user_request_1a6133785d663742e3b2208ad62595dcb7" prot="private" virt="non-virtual"><scope>CreateUserRequest</scope><name>lastName_</name></member>
+      <member refid="class_create_user_request_1a7010fc279854c091855bd2ec6019c290" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>LastNameFieldNumber</name></member>
+      <member refid="class_create_user_request_1ac6d704cbcaff5b47b5f3b83a791b7f61" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>MergeFrom</name></member>
+      <member refid="class_create_user_request_1a0ef4c26869a907bc708023952acb2145" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>MergeFrom</name></member>
+      <member refid="class_create_user_request_1a829351ac7357f1e955b622bf16cf4a81" prot="private" virt="non-virtual"><scope>CreateUserRequest</scope><name>OnConstruction</name></member>
+      <member refid="class_create_user_request_1a2cd334df2b28e93e7ace0ca958c500f8" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>Parser</name></member>
+      <member refid="class_create_user_request_1a17201c402eaae32951ff9d1e723ef15d" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>Password</name></member>
+      <member refid="class_create_user_request_1a5e54470ed006b02eaaba843702cdcc82" prot="private" virt="non-virtual"><scope>CreateUserRequest</scope><name>password_</name></member>
+      <member refid="class_create_user_request_1acdd56771500984879405fa896b4e00b5" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>PasswordFieldNumber</name></member>
+      <member refid="class_create_user_request_1ac2996486b20c8e116df4c3606a2cd584" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>Role</name></member>
+      <member refid="class_create_user_request_1a86b59c244144e23bfcd05f7c269c59c8" prot="private" virt="non-virtual"><scope>CreateUserRequest</scope><name>role_</name></member>
+      <member refid="class_create_user_request_1a5a1ef73e613b220c17b878f3c67be6bc" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>RoleFieldNumber</name></member>
+      <member refid="class_create_user_request_1aff68884eebdc1460d255aaf27c8e0e47" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>ToString</name></member>
+      <member refid="class_create_user_request_1a0b2bc59d2801b8109f423bb5fc8b4f2f" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>Username</name></member>
+      <member refid="class_create_user_request_1a92324f3e6876b46685aaf0aaf70e9a8b" prot="private" virt="non-virtual"><scope>CreateUserRequest</scope><name>username_</name></member>
+      <member refid="class_create_user_request_1ad279a7ab4302b35ce5d41d2b34590ae7" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>UsernameFieldNumber</name></member>
+      <member refid="class_create_user_request_1a3f0f14259b13f6435ef1a1d18ab0004b" prot="public" virt="non-virtual"><scope>CreateUserRequest</scope><name>WriteTo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

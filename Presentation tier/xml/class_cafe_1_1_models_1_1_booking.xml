@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_cafe_1_1_models_1_1_booking" kind="class" language="C#" prot="public">
+    <compoundname>Cafe::Models::Booking</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_cafe_1_1_models_1_1_booking_1a30bfd168a6647fcd9c048d9f3041f7d2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Guid</type>
+        <definition>Guid Cafe.Models.Booking.EventId</definition>
+        <argsstring></argsstring>
+        <name>EventId</name>
+        <qualifiedname>Cafe.Models.Booking.EventId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Models/Booking.cs" line="5" column="17" bodyfile="Cafe/Models/Booking.cs" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="property" id="class_cafe_1_1_models_1_1_booking_1a0dbabc118cf3a53b942bd5232b090863" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>String</type>
+        <definition>String Cafe.Models.Booking.FirstName</definition>
+        <argsstring></argsstring>
+        <name>FirstName</name>
+        <qualifiedname>Cafe.Models.Booking.FirstName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Models/Booking.cs" line="6" column="19" bodyfile="Cafe/Models/Booking.cs" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="property" id="class_cafe_1_1_models_1_1_booking_1a25e0866e1d872ef6fe3909e331031801" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>String</type>
+        <definition>String Cafe.Models.Booking.LastName</definition>
+        <argsstring></argsstring>
+        <name>LastName</name>
+        <qualifiedname>Cafe.Models.Booking.LastName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Models/Booking.cs" line="7" column="19" bodyfile="Cafe/Models/Booking.cs" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="property" id="class_cafe_1_1_models_1_1_booking_1a14319d2f4af452e793221e3123c12adf" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Cafe.Models.Booking.numberOfPeople</definition>
+        <argsstring></argsstring>
+        <name>numberOfPeople</name>
+        <qualifiedname>Cafe.Models.Booking.numberOfPeople</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Models/Booking.cs" line="8" column="16" bodyfile="Cafe/Models/Booking.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Cafe/Models/Booking.cs" line="3" column="7" bodyfile="Cafe/Models/Booking.cs" bodystart="4" bodyend="9"/>
+    <listofallmembers>
+      <member refid="class_cafe_1_1_models_1_1_booking_1a30bfd168a6647fcd9c048d9f3041f7d2" prot="public" virt="non-virtual"><scope>Cafe::Models::Booking</scope><name>EventId</name></member>
+      <member refid="class_cafe_1_1_models_1_1_booking_1a0dbabc118cf3a53b942bd5232b090863" prot="public" virt="non-virtual"><scope>Cafe::Models::Booking</scope><name>FirstName</name></member>
+      <member refid="class_cafe_1_1_models_1_1_booking_1a25e0866e1d872ef6fe3909e331031801" prot="public" virt="non-virtual"><scope>Cafe::Models::Booking</scope><name>LastName</name></member>
+      <member refid="class_cafe_1_1_models_1_1_booking_1a14319d2f4af452e793221e3123c12adf" prot="public" virt="non-virtual"><scope>Cafe::Models::Booking</scope><name>numberOfPeople</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

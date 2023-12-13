@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_custom_date_time_converter" kind="class" language="C#" prot="public">
+    <compoundname>CustomDateTimeConverter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JsonConverter&lt; DateTime &gt;</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_custom_date_time_converter_1a5bb77e4cb15db1606763271c1ba4a29a" prot="private" static="no" mutable="no">
+        <type>readonly string</type>
+        <definition>readonly string CustomDateTimeConverter._dateFormat</definition>
+        <argsstring></argsstring>
+        <name>_dateFormat</name>
+        <qualifiedname>CustomDateTimeConverter._dateFormat</qualifiedname>
+        <initializer>= &quot;dd/MM/yyyy HH.mm.ss&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Uitlities/CustomDateTimeConverter.cs" line="8" column="29" bodyfile="Cafe/Uitlities/CustomDateTimeConverter.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_custom_date_time_converter_1a4a8ddfee7518001ba8975f3ca051431c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override DateTime</type>
+        <definition>override DateTime CustomDateTimeConverter.Read</definition>
+        <argsstring>(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)</argsstring>
+        <name>Read</name>
+        <qualifiedname>CustomDateTimeConverter.Read</qualifiedname>
+        <param>
+          <type>ref Utf8JsonReader</type>
+          <declname>reader</declname>
+        </param>
+        <param>
+          <type>Type</type>
+          <declname>typeToConvert</declname>
+        </param>
+        <param>
+          <type>JsonSerializerOptions</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Uitlities/CustomDateTimeConverter.cs" line="10" column="30" bodyfile="Cafe/Uitlities/CustomDateTimeConverter.cs" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_custom_date_time_converter_1a6a5ab0302158d121a500048aff5bc6bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void CustomDateTimeConverter.Write</definition>
+        <argsstring>(Utf8JsonWriter writer, DateTime value, JsonSerializerOptions options)</argsstring>
+        <name>Write</name>
+        <qualifiedname>CustomDateTimeConverter.Write</qualifiedname>
+        <param>
+          <type>Utf8JsonWriter</type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>DateTime</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>JsonSerializerOptions</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Uitlities/CustomDateTimeConverter.cs" line="15" column="26" bodyfile="Cafe/Uitlities/CustomDateTimeConverter.cs" bodystart="15" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CustomDateTimeConverter</label>
+        <link refid="class_custom_date_time_converter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JsonConverter&lt; DateTime &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CustomDateTimeConverter</label>
+        <link refid="class_custom_date_time_converter"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JsonConverter&lt; DateTime &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="Cafe/Uitlities/CustomDateTimeConverter.cs" line="6" column="7" bodyfile="Cafe/Uitlities/CustomDateTimeConverter.cs" bodystart="7" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_custom_date_time_converter_1a5bb77e4cb15db1606763271c1ba4a29a" prot="private" virt="non-virtual"><scope>CustomDateTimeConverter</scope><name>_dateFormat</name></member>
+      <member refid="class_custom_date_time_converter_1a4a8ddfee7518001ba8975f3ca051431c" prot="public" virt="non-virtual"><scope>CustomDateTimeConverter</scope><name>Read</name></member>
+      <member refid="class_custom_date_time_converter_1a6a5ab0302158d121a500048aff5bc6bc" prot="public" virt="non-virtual"><scope>CustomDateTimeConverter</scope><name>Write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

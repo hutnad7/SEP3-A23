@@ -14,12 +14,11 @@ namespace Service.Services
 {
     public class EventServiceImpl : EventService.EventServiceBase
     {
-        private readonly ILogger<EventServiceImpl> _logger;
         private readonly IEventRepository _eventRepository;
         private readonly IBookingRepository _bookingRepository;
-        public EventServiceImpl(ILogger<EventServiceImpl> logger, IEventRepository eventRepository, IBookingRepository bookingRepository)
+        public EventServiceImpl(IEventRepository eventRepository, 
+            IBookingRepository bookingRepository)
         {
-            _logger = logger;
             _eventRepository = eventRepository;
             _bookingRepository = bookingRepository;
         }
@@ -118,6 +117,7 @@ namespace Service.Services
         public override async Task<GetEventResponse> GetEvent(GetRequest request, ServerCallContext context)
         {
             Event ev = await _eventRepository.GetByIdAsync(Guid.Parse(request.Id));
+            DateTime dateTime = DateTime.Parse(ev.StartDate);
             GetEventResponse response = new GetEventResponse()
             {
                 Id = ev.Id.ToString(),
@@ -134,7 +134,8 @@ namespace Service.Services
             };
             return response;
         }
-        public override async Task<BookEventResponse> BookEvent(BookEventRequest request, ServerCallContext context)
+        public override async Task<BookEventResponse> BookEvent(BookEventRequest request,
+            ServerCallContext context)
         {
             Booking booking = new Booking()
             {
@@ -142,9 +143,14 @@ namespace Service.Services
                 UserId = Guid.Parse(request.UserId),
                 EventId = Guid.Parse(request.EventId),
                 CreationDate = DateTime.Now,
-                NumberOfPeople = request.NumerOfPeople
+                NumberOfPeople = request.NumerOfPeople,
+                FirstName = request.FirstName,
+                LastName = request.LastName,
             };
             Booking b =  await _bookingRepository.CreateAsync(booking);
+            Event e = await _eventRepository.GetByIdAsync(booking.EventId);
+            e.AvailablePlaces -= b.NumberOfPeople;
+            await _eventRepository.UpdateAsync(e);
             BookEventResponse response = new BookEventResponse()
             {
                 Id = booking.Id.ToString(),
@@ -152,7 +158,8 @@ namespace Service.Services
                 EventId = b.EventId.ToString(),
                 CreationDate = b.CreationDate.ToString(),
                 NumerOfPeople = b.NumberOfPeople,
-
+                FirstName = b.FirstName,
+                LastName = b.LastName,
             };
             return response;
         }

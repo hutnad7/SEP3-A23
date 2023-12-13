@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_45157d2596e62bf84b523dad207ff06d" kind="dir">
+    <compoundname>Service/Services</compoundname>
+    <innerfile refid="_event_service_impl_8cs">EventServiceImpl.cs</innerfile>
+    <innerfile refid="_post_service_impl_8cs">PostServiceImpl.cs</innerfile>
+    <innerfile refid="_user_service_impl_8cs">UserServiceImpl.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Service/Services/"/>
+  </compounddef>
+</doxygen>

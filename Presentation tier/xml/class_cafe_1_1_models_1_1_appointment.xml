@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_cafe_1_1_models_1_1_appointment" kind="class" language="C#" prot="public">
+    <compoundname>Cafe::Models::Appointment</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_cafe_1_1_models_1_1_appointment_1aced122ae22b48e00ecedc435f7943d96" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime Cafe.Models.Appointment.Start</definition>
+        <argsstring></argsstring>
+        <name>Start</name>
+        <qualifiedname>Cafe.Models.Appointment.Start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Models/Appointment.cs" line="5" column="21" bodyfile="Cafe/Models/Appointment.cs" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="property" id="class_cafe_1_1_models_1_1_appointment_1a4d5e991dc8b545d002f62a3bb2d26506" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime Cafe.Models.Appointment.End</definition>
+        <argsstring></argsstring>
+        <name>End</name>
+        <qualifiedname>Cafe.Models.Appointment.End</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Models/Appointment.cs" line="6" column="21" bodyfile="Cafe/Models/Appointment.cs" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="property" id="class_cafe_1_1_models_1_1_appointment_1a002c97d56c5c787021b7ed9d9bd44c8a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Cafe.Models.Appointment.Text</definition>
+        <argsstring></argsstring>
+        <name>Text</name>
+        <qualifiedname>Cafe.Models.Appointment.Text</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Models/Appointment.cs" line="8" column="19" bodyfile="Cafe/Models/Appointment.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Cafe/Models/Appointment.cs" line="3" column="7" bodyfile="Cafe/Models/Appointment.cs" bodystart="4" bodyend="9"/>
+    <listofallmembers>
+      <member refid="class_cafe_1_1_models_1_1_appointment_1a4d5e991dc8b545d002f62a3bb2d26506" prot="public" virt="non-virtual"><scope>Cafe::Models::Appointment</scope><name>End</name></member>
+      <member refid="class_cafe_1_1_models_1_1_appointment_1aced122ae22b48e00ecedc435f7943d96" prot="public" virt="non-virtual"><scope>Cafe::Models::Appointment</scope><name>Start</name></member>
+      <member refid="class_cafe_1_1_models_1_1_appointment_1a002c97d56c5c787021b7ed9d9bd44c8a" prot="public" virt="non-virtual"><scope>Cafe::Models::Appointment</scope><name>Text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

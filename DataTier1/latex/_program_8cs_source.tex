@@ -1,0 +1,50 @@
+\doxysection{Program.\+cs}
+\hypertarget{_program_8cs_source}{}\label{_program_8cs_source}\index{Service/Program.cs@{Service/Program.cs}}
+\mbox{\hyperlink{_program_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }Microsoft.EntityFrameworkCore;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Text.Json.Serialization;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_service_1_1_services}{Service.Services}};}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_data}{Data}};}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00006}00006\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_data_1_1_interfaces}{Data.Interfaces}};}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00007}00007\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_data_1_1_repositories}{Data.Repositories}};}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00009}\mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{00009}}\ var\ \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}\ =\ WebApplication.CreateBuilder(args);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00011}00011\ \textcolor{comment}{//\ Additional\ configuration\ is\ required\ to\ successfully\ run\ gRPC\ on\ macOS.}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00012}00012\ \textcolor{comment}{//\ For\ instructions\ on\ how\ to\ configure\ Kestrel\ and\ gRPC\ clients\ on\ macOS,\ visit\ https://go.microsoft.com/fwlink/?linkid=2099682}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00014}00014\ \textcolor{comment}{//\ Add\ services\ to\ the\ container.}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00015}\mbox{\hyperlink{_program_8cs_ad606ca0e313077bd3d59aa018f758a33}{00015}}\ \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddGrpc();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00016}\mbox{\hyperlink{_program_8cs_a9b79cb7b68f148b4bf7705d4ae833644}{00016}}\ \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddDbContext<\mbox{\hyperlink{class_data_1_1_d_b_context}{DBContext}}>(options\ =>}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00017}00017\ \ \ options.UseMySQL(\mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Configuration.GetConnectionString(\textcolor{stringliteral}{"{}Database"{}})));}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00018}\mbox{\hyperlink{_program_8cs_ab16ce314052ebbb14dce60b09bb3ef0c}{00018}}\ \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddScoped<\mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_auth_repository}{IAuthRepository}},\ \mbox{\hyperlink{class_data_1_1_repositories_1_1_auth_repository}{AuthRepository}}>();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00019}\mbox{\hyperlink{_program_8cs_a5e5cc85b20664df76f7941ce05b15428}{00019}}\ \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddScoped<\mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_enterteiner_repository}{IEnterteinerRepository}},\ \mbox{\hyperlink{class_data_1_1_repositories_1_1_enterteiner_repository}{EnterteinerRepository}}>();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00020}\mbox{\hyperlink{_program_8cs_a4d2682aa6d8e9464aba5d0c5ad597986}{00020}}\ \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddScoped<\mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_cafe_owner_repository}{ICafeOwnerRepository}},\ \mbox{\hyperlink{class_data_1_1_repositories_1_1_cafe_owner_repository}{CafeOwnerRepository}}>();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00021}\mbox{\hyperlink{_program_8cs_a99498a1be42e30716bcd942475e430c6}{00021}}\ \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddScoped<\mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_event_repository}{IEventRepository}},\ \mbox{\hyperlink{class_data_1_1_repositories_1_1_event_repository}{EventRepository}}>();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00022}\mbox{\hyperlink{_program_8cs_a6466880c43c2a916f6c7196291f99a6b}{00022}}\ \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddScoped<\mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_booking_repository}{IBookingRepository}},\ \mbox{\hyperlink{class_data_1_1_repositories_1_1_booking_repository}{BookingRepository}}>();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00023}\mbox{\hyperlink{_program_8cs_a9b25dea302cc823259b319c9cca24d73}{00023}}\ \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddScoped<\mbox{\hyperlink{interface_data_1_1_interfaces_1_1_i_post_repository}{IPostRepository}},\ \mbox{\hyperlink{class_data_1_1_repositories_1_1_post_repository}{PostRepository}}>();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00024}\mbox{\hyperlink{_program_8cs_a6d09a5f2945b4c6108be845e6015cbcf}{00024}}\ \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddCors(options\ =>}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00025}00025\ \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00026}00026\ \ \ \ \ options.AddPolicy(name:\ \textcolor{stringliteral}{"{}AllowBlazorOrigin"{}},}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}\ =>}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.WithOrigins(\textcolor{stringliteral}{"{}https://localhost:7185"{}},}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}https://localhost:5200"{}}).AllowAnyHeader().AllowAnyMethod();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00034}00034\ \});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00035}\mbox{\hyperlink{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{00035}}\ var\ \mbox{\hyperlink{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}\ =\ \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Build();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00036}\mbox{\hyperlink{_program_8cs_ae21f4d83b5bf960636aebee0205958ee}{00036}}\ \mbox{\hyperlink{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}.UseCors(\textcolor{stringliteral}{"{}AllowBlazorOrigin"{}});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00038}00038\ \textcolor{comment}{//\ Configure\ the\ HTTP\ request\ pipeline.}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00039}\mbox{\hyperlink{_program_8cs_a2582f3d1a7c63664f33348328fe0d699}{00039}}\ \mbox{\hyperlink{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}.MapGrpcService<\mbox{\hyperlink{namespace_service}{Service}}.\mbox{\hyperlink{namespace_service_1_1_services}{Services}}.\mbox{\hyperlink{class_service_1_1_services_1_1_event_service_impl}{EventServiceImpl}}>();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00040}\mbox{\hyperlink{_program_8cs_a7f367f4be1a6fb6eb46e5c9f57bf335e}{00040}}\ \mbox{\hyperlink{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}.MapGrpcService<\mbox{\hyperlink{namespace_service}{Service}}.\mbox{\hyperlink{namespace_service_1_1_services}{Services}}.\mbox{\hyperlink{class_service_1_1_services_1_1_user_service_impl}{UserServiceImpl}}>();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00041}\mbox{\hyperlink{_program_8cs_af977f307f6e5ff0520948800061ba1ba}{00041}}\ \mbox{\hyperlink{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}.MapGrpcService<\mbox{\hyperlink{namespace_service}{Service}}.\mbox{\hyperlink{namespace_service_1_1_services}{Services}}.\mbox{\hyperlink{class_service_1_1_services_1_1_post_service_impl}{PostServiceImpl}}>();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00042}\mbox{\hyperlink{_program_8cs_aa4e9da4ebbd93717f13079f35809b0e8}{00042}}\ \mbox{\hyperlink{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}.MapGet(\textcolor{stringliteral}{"{}/"{}},\ ()\ =>\ \textcolor{stringliteral}{"{}Communication\ with\ gRPC\ endpoints\ must\ be\ made\ through\ a\ gRPC\ client.\ To\ learn\ how\ to\ create\ a\ client,\ visit:\ https://go.microsoft.com/fwlink/?linkid=2086909"{}});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00044}\mbox{\hyperlink{_program_8cs_aaa3dbf02e269c3ef7e8546d290c6b3dd}{00044}}\ \ \mbox{\hyperlink{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}.Run();}
+
+\end{DoxyCode}

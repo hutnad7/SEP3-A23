@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_post_service_1_1_____helper___message_cache" kind="class" language="C#" prot="private">
+    <compoundname>PostService::__Helper_MessageCache</compoundname>
+    <templateparamlist>
+      <param>
+        <type>T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_post_service_1_1_____helper___message_cache_1aef76f37ddf947253e3abee04bdaf2300" prot="public" static="yes" mutable="no">
+        <type>readonly bool</type>
+        <definition>readonly bool PostService.__Helper_MessageCache&lt; T &gt;.IsBufferMessage</definition>
+        <argsstring></argsstring>
+        <name>IsBufferMessage</name>
+        <qualifiedname>PostService.__Helper_MessageCache.IsBufferMessage</qualifiedname>
+        <initializer>= global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="350" column="33" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="350" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>PostService.__Helper_MessageCache&lt; T &gt;</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>IsBufferMessage</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>static</label>
+      </node>
+    </collaborationgraph>
+    <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="348" column="10" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="349" bodyend="351"/>
+    <listofallmembers>
+      <member refid="class_post_service_1_1_____helper___message_cache_1aef76f37ddf947253e3abee04bdaf2300" prot="public" virt="non-virtual"><scope>PostService::__Helper_MessageCache</scope><name>IsBufferMessage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

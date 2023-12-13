@@ -29,12 +29,13 @@ namespace Data
             modelBuilder.Entity<User>()
                 .HasIndex(x => x.Email)
                 .IsUnique();
+
              modelBuilder.Entity<Event>()
-    .HasOne(e => e.CafeOwner)
-    .WithMany(e => e.Events)
-    .HasForeignKey(e => e.CafeOwnerId)
-    .IsRequired();
-             
+                .HasOne(e => e.CafeOwner)
+                .WithMany(e => e.Events)
+                .HasForeignKey(e => e.CafeOwnerId)
+                .IsRequired();
+
             modelBuilder.Entity<User>().HasData(
                 new User 
                 { 

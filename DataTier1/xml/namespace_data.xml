@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespace_data" kind="namespace" language="C#">
+    <compoundname>Data</compoundname>
+    <innerclass refid="class_data_1_1_class1" prot="public">Data::Class1</innerclass>
+    <innerclass refid="class_data_1_1_d_b_context" prot="public">Data::DBContext</innerclass>
+    <innernamespace refid="namespace_data_1_1_interfaces">Data::Interfaces</innernamespace>
+    <innernamespace refid="namespace_data_1_1_migrations">Data::Migrations</innernamespace>
+    <innernamespace refid="namespace_data_1_1_models">Data::Models</innernamespace>
+    <innernamespace refid="namespace_data_1_1_repositories">Data::Repositories</innernamespace>
+    <innernamespace refid="namespace_data_1_1_state">Data::State</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Data/Class1.cs" line="1" column="1"/>
+  </compounddef>
+</doxygen>

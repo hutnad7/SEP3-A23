@@ -31,6 +31,14 @@ namespace Data.Migrations
                     b.Property<Guid>("EventId")
                         .HasColumnType("char(36)");
 
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<int>("NumberOfPeople")
                         .HasColumnType("int");
 
@@ -110,7 +118,7 @@ namespace Data.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<Guid>("EventId")
+                    b.Property<Guid?>("EventId")
                         .HasColumnType("char(36)");
 
                     b.Property<string>("Title")
@@ -176,37 +184,37 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("ba7eb629-b652-4348-82b6-1f3a35affe04"),
-                            CreationDate = "08/12/2023 10.35.03",
+                            Id = new Guid("452305db-1b1d-4a18-96cf-549d4a0a7799"),
+                            CreationDate = "11/12/2023 12:06:33",
                             Description = "Cafe Owner",
                             Email = "coffeowner@gmail.com",
                             Firstname = "Coffe",
                             Lastname = "Owner",
-                            PasswordHash = "-973406980",
+                            PasswordHash = "880143643",
                             Role = 1,
                             Username = "CoffeOwnerTest"
                         },
                         new
                         {
-                            Id = new Guid("8b767e08-b3d5-4a36-8103-ca4b39ea3cbf"),
-                            CreationDate = "08/12/2023 10.35.03",
+                            Id = new Guid("53b07d8f-822f-4f84-ad38-decbf82df573"),
+                            CreationDate = "11/12/2023 12:06:33",
                             Description = "",
                             Email = "normaluser@gmail.com",
                             Firstname = "User",
                             Lastname = "Normal",
-                            PasswordHash = "-2126989161",
+                            PasswordHash = "-849727421",
                             Role = 0,
                             Username = "normal_user"
                         },
                         new
                         {
-                            Id = new Guid("3962c10d-7ae0-4d99-9988-4ec60e9209e9"),
-                            CreationDate = "08/12/2023 10.35.03",
+                            Id = new Guid("74a3439c-b6de-4b2c-b77c-cbc60a8af002"),
+                            CreationDate = "11/12/2023 12:06:33",
                             Description = "Enterteiner",
                             Email = "enterteiner@gmail.com",
                             Firstname = "Enter",
                             Lastname = "Teiner",
-                            PasswordHash = "-1476151250",
+                            PasswordHash = "2053625805",
                             Role = 2,
                             Username = "enterteiner"
                         });
@@ -260,9 +268,7 @@ namespace Data.Migrations
 
                     b.HasOne("Data.Models.Event", "Event")
                         .WithMany("Posts")
-                        .HasForeignKey("EventId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("EventId");
 
                     b.Navigation("Author");
 

@@ -1,0 +1,1225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="class_event_service_1_1_____helper___message_cache" kind="class"><name>EventService::__Helper_MessageCache</name>
+    <member refid="class_event_service_1_1_____helper___message_cache_1a1a481a9b2cda8320593a8185cf2ff65c" kind="variable"><name>IsBufferMessage</name></member>
+  </compound>
+  <compound refid="class_post_service_1_1_____helper___message_cache" kind="class"><name>PostService::__Helper_MessageCache</name>
+    <member refid="class_post_service_1_1_____helper___message_cache_1aef76f37ddf947253e3abee04bdaf2300" kind="variable"><name>IsBufferMessage</name></member>
+  </compound>
+  <compound refid="class_user_service_1_1_____helper___message_cache" kind="class"><name>UserService::__Helper_MessageCache</name>
+    <member refid="class_user_service_1_1_____helper___message_cache_1a669fabdf305cf98511ae0dd0647ea53c" kind="variable"><name>IsBufferMessage</name></member>
+  </compound>
+  <compound refid="class_data_1_1_state_1_1_accepted" kind="class"><name>Data::State::Accepted</name>
+    <member refid="class_data_1_1_state_1_1_accepted_1a91094c73a9692ae887c27aabad58e56d" kind="function"><name>accept</name></member>
+    <member refid="class_data_1_1_state_1_1_accepted_1a1d484ac67449edaf0c605ef1597fe121" kind="function"><name>cancel</name></member>
+    <member refid="class_data_1_1_state_1_1_accepted_1a63793a54ecd68d2ff5366f3352770159" kind="function"><name>refuse</name></member>
+    <member refid="class_data_1_1_state_1_1_accepted_1a7f3cb5f907bcc231b34501f08854447c" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_data_1_1_models_1_1_auth" kind="class"><name>Data::Models::Auth</name>
+    <member refid="class_data_1_1_models_1_1_auth_1ac23bf3633250eb08304a24c1e18e7db4" kind="property"><name>Email</name></member>
+    <member refid="class_data_1_1_models_1_1_auth_1a86a25cc508c658c6bfa4d4018c117a29" kind="property"><name>Password</name></member>
+  </compound>
+  <compound refid="class_data_1_1_repositories_1_1_auth_repository" kind="class"><name>Data::Repositories::AuthRepository</name>
+    <member refid="class_data_1_1_repositories_1_1_auth_repository_1ae7fb4beb7907e22262603243405c5f11" kind="variable"><name>_context</name></member>
+    <member refid="class_data_1_1_repositories_1_1_auth_repository_1ade710c5f2e4e0b9c53c7839925221dab" kind="function"><name>AuthRepository</name></member>
+    <member refid="class_data_1_1_repositories_1_1_auth_repository_1a8392506dc0b5d4f0290c0ddffa3e8440" kind="function"><name>RegisterUserAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_auth_repository_1ace2cc7bda011fd59fc95fa8ef1b8333b" kind="function"><name>LoginUserAsync</name></member>
+  </compound>
+  <compound refid="class_data_1_1_models_1_1_base_entity" kind="class"><name>Data::Models::BaseEntity</name>
+    <member refid="class_data_1_1_models_1_1_base_entity_1a7d3260b1b11dcbaa9fff6c47a048584d" kind="property"><name>Id</name></member>
+  </compound>
+  <compound refid="class_data_1_1_repositories_1_1_base_repository" kind="class"><name>Data::Repositories::BaseRepository</name>
+    <member refid="class_data_1_1_repositories_1_1_base_repository_1a8a7ec909e7e6829b67f85aadcf2e4df1" kind="variable"><name>_context</name></member>
+    <member refid="class_data_1_1_repositories_1_1_base_repository_1a397a1e4ebe236fa8166ed8360392e174" kind="function"><name>BaseRepository</name></member>
+    <member refid="class_data_1_1_repositories_1_1_base_repository_1a6163b596f5c93a3610b47494d057b0f5" kind="function"><name>GetAll</name></member>
+    <member refid="class_data_1_1_repositories_1_1_base_repository_1a137eb609adafb59f49359239f676d086" kind="function"><name>GetAll</name></member>
+    <member refid="class_data_1_1_repositories_1_1_base_repository_1a92e9970e8293796850deebf79e72c7c2" kind="function"><name>GetByAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_base_repository_1ac2cfe1daf966fec44f41c884943e13c4" kind="function"><name>GetByIdAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_base_repository_1a529b12e68e31441399bf2f8daa58158e" kind="function"><name>CreateAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_base_repository_1ad41095e76cfadfb0188c984ca2c22554" kind="function"><name>UpdateAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_base_repository_1a39c9d9172f264bd4fec32643daacbe45" kind="function"><name>DeleteAsync</name></member>
+  </compound>
+  <compound refid="class_book_event_request" kind="class"><name>BookEventRequest</name>
+    <member refid="class_book_event_request_1a16218dcd87d689bac06d666218eafe0a" kind="variable"><name>_parser</name></member>
+    <member refid="class_book_event_request_1abef361c5f81fb9394ec536e2193967df" kind="variable"><name>_unknownFields</name></member>
+    <member refid="class_book_event_request_1a571d360a3845f2a5736be39f0fedfb6d" kind="variable"><name>userId_</name></member>
+    <member refid="class_book_event_request_1ac632e3ec44e5713cb0f08ad8bf4e7c91" kind="variable"><name>eventId_</name></member>
+    <member refid="class_book_event_request_1aad42eec632398777174a5e89bc916c09" kind="variable"><name>date_</name></member>
+    <member refid="class_book_event_request_1ad9b85ac3b68d4a7a00a9ea6ccb8089a6" kind="variable"><name>numerOfPeople_</name></member>
+    <member refid="class_book_event_request_1a4372bdf1636214399612acfb17305de6" kind="property"><name>Parser</name></member>
+    <member refid="class_book_event_request_1a47ac837f8ad4b2aab942b3fc7a37b0e5" kind="property"><name>Descriptor</name></member>
+    <member refid="class_book_event_request_1abc80474512c79fbee7aadcd16893d73a" kind="property"><name>Descriptor</name></member>
+    <member refid="class_book_event_request_1aca8e5c1e4da9673f489ce10f7709aa04" kind="property"><name>UserId</name></member>
+    <member refid="class_book_event_request_1ac3fd2d1888740502c8830ab71492573d" kind="property"><name>EventId</name></member>
+    <member refid="class_book_event_request_1a043abdeff3bed17ce8cbefce646c4690" kind="property"><name>Date</name></member>
+    <member refid="class_book_event_request_1aa979899fe1296972b1c24b756a51fc77" kind="property"><name>NumerOfPeople</name></member>
+    <member refid="class_book_event_request_1a65256ae04be68129506543a725ea1ef0" kind="variable"><name>UserIdFieldNumber</name></member>
+    <member refid="class_book_event_request_1aa2250f4f7e28aa27a51dc0d5718c8893" kind="variable"><name>EventIdFieldNumber</name></member>
+    <member refid="class_book_event_request_1ac7103e963ebf878c1bb10ba9489ea66d" kind="variable"><name>DateFieldNumber</name></member>
+    <member refid="class_book_event_request_1a64c03f2b7eb7a26946bb69f4536a8c30" kind="variable"><name>NumerOfPeopleFieldNumber</name></member>
+    <member refid="class_book_event_request_1a0bc3563c4371030922adffc2bad20dc6" kind="function"><name>BookEventRequest</name></member>
+    <member refid="class_book_event_request_1a447fea8abe2cac0c9aa7209a9ffccb8f" kind="function"><name>BookEventRequest</name></member>
+    <member refid="class_book_event_request_1a5509ddb5df3f2b21404de337e33972df" kind="function"><name>Clone</name></member>
+    <member refid="class_book_event_request_1a6a6e482d81c9bb2637ada789b0d0e141" kind="function"><name>Equals</name></member>
+    <member refid="class_book_event_request_1a473dd213f6f7386fcc221bcec1430151" kind="function"><name>Equals</name></member>
+    <member refid="class_book_event_request_1abb9c62ebbe37fde691b1afb392818331" kind="function"><name>GetHashCode</name></member>
+    <member refid="class_book_event_request_1a5ca7f771add2fc54539fdd3afe3edc7d" kind="function"><name>ToString</name></member>
+    <member refid="class_book_event_request_1a015ddad666c494ef9ac7e0c425703008" kind="function"><name>WriteTo</name></member>
+    <member refid="class_book_event_request_1a8059e066920d913fc62fd359824c11bf" kind="function"><name>CalculateSize</name></member>
+    <member refid="class_book_event_request_1ac998cb9fc6d271135a3f46efee23fa4a" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_book_event_request_1ad33308a98024c360b1aa6167ba81fd99" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_book_event_request_1a7a8a3731af2e36d492aba15fea4c98f2" kind="function"><name>OnConstruction</name></member>
+    <member refid="class_book_event_request_1aae2044f8ff53df68a87c13886df32aa5" kind="function"><name>InternalWriteTo</name></member>
+    <member refid="class_book_event_request_1a4f3da4562e5baeb56323e7f4165f1943" kind="function"><name>InternalMergeFrom</name></member>
+  </compound>
+  <compound refid="class_book_event_response" kind="class"><name>BookEventResponse</name>
+    <member refid="class_book_event_response_1a6b1ef08fc23971b4ae6879b8bd9710f9" kind="variable"><name>_parser</name></member>
+    <member refid="class_book_event_response_1ace6374739ece826b600ceb5108b2398c" kind="variable"><name>_unknownFields</name></member>
+    <member refid="class_book_event_response_1af941dab1465f29fc6c388607d4e69c37" kind="variable"><name>userId_</name></member>
+    <member refid="class_book_event_response_1ad8fd490e2ba00a599ebac6b7a39edb28" kind="variable"><name>eventId_</name></member>
+    <member refid="class_book_event_response_1af70e6b44fb9c684d204a496900e8298b" kind="variable"><name>creationDate_</name></member>
+    <member refid="class_book_event_response_1a1a82fd2beda8b265d50363036892748f" kind="variable"><name>numerOfPeople_</name></member>
+    <member refid="class_book_event_response_1ac280add08d91d83491747510fe16c937" kind="variable"><name>id_</name></member>
+    <member refid="class_book_event_response_1a7d917a4629f2861c123c3556dc62509d" kind="property"><name>Parser</name></member>
+    <member refid="class_book_event_response_1ace72d6a16d322ac49957847672cd95bd" kind="property"><name>Descriptor</name></member>
+    <member refid="class_book_event_response_1a4953439e46168bf0c8c86c49ed18ec19" kind="property"><name>Descriptor</name></member>
+    <member refid="class_book_event_response_1ad28194772be856dcad7680651c0af1ac" kind="property"><name>UserId</name></member>
+    <member refid="class_book_event_response_1a94e7b8b4cad8d6454abfe74f30fa39b5" kind="property"><name>EventId</name></member>
+    <member refid="class_book_event_response_1a694b653e51baed6e670c087863d5c9f0" kind="property"><name>CreationDate</name></member>
+    <member refid="class_book_event_response_1a2347f996d5d7249639398ad909c740d1" kind="property"><name>NumerOfPeople</name></member>
+    <member refid="class_book_event_response_1acbeab2cf61f8676b887163c831dd590d" kind="property"><name>Id</name></member>
+    <member refid="class_book_event_response_1a61b9550bcaf5551acf591567a5ee3561" kind="variable"><name>UserIdFieldNumber</name></member>
+    <member refid="class_book_event_response_1a791b58bdba1084795543bd4e7ac435a6" kind="variable"><name>EventIdFieldNumber</name></member>
+    <member refid="class_book_event_response_1a6def889be9dbeb15d1f9a2643a115242" kind="variable"><name>CreationDateFieldNumber</name></member>
+    <member refid="class_book_event_response_1a2ff8ffee1845c4e1b2b1b4feb19fc2a0" kind="variable"><name>NumerOfPeopleFieldNumber</name></member>
+    <member refid="class_book_event_response_1a2d956dd01f067c33eade94a960a6a3e3" kind="variable"><name>IdFieldNumber</name></member>
+    <member refid="class_book_event_response_1a1ffc474fd607a2545376451e5d93d426" kind="function"><name>BookEventResponse</name></member>
+    <member refid="class_book_event_response_1a613d8c3de1963378c30115daa80dc462" kind="function"><name>BookEventResponse</name></member>
+    <member refid="class_book_event_response_1af6f388076fd8fc40b7d467feb75a408b" kind="function"><name>Clone</name></member>
+    <member refid="class_book_event_response_1ada64e07132f5815f601d8e21c723888c" kind="function"><name>Equals</name></member>
+    <member refid="class_book_event_response_1aa68fe424e6a68d78efd7b36d44f6973f" kind="function"><name>Equals</name></member>
+    <member refid="class_book_event_response_1a1eaa17ee2556fafa098f85b45c705d8e" kind="function"><name>GetHashCode</name></member>
+    <member refid="class_book_event_response_1ad1e514bd56b446acaf8edd040b2f9f0a" kind="function"><name>ToString</name></member>
+    <member refid="class_book_event_response_1a0e26b1274021cdb028a71621513fe6c2" kind="function"><name>WriteTo</name></member>
+    <member refid="class_book_event_response_1a7debf763d76fbf4fd34ab2787610e0ee" kind="function"><name>CalculateSize</name></member>
+    <member refid="class_book_event_response_1adc1e123cebed2a42dc6b5f257c6cb563" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_book_event_response_1a320c344ee90bade35f66470e1a7f5212" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_book_event_response_1a49c479c08bdb184699eb76234b83dc95" kind="function"><name>OnConstruction</name></member>
+    <member refid="class_book_event_response_1a78d2287b6241d8a952249a9fc0c7f4e9" kind="function"><name>InternalWriteTo</name></member>
+    <member refid="class_book_event_response_1a1e1d3f43ca659618c1c690192c3ad86b" kind="function"><name>InternalMergeFrom</name></member>
+  </compound>
+  <compound refid="class_data_1_1_models_1_1_booking" kind="class"><name>Data::Models::Booking</name>
+    <member refid="class_data_1_1_models_1_1_booking_1afa6d6110f9f3bec4042a3728b5a73f3a" kind="property"><name>User</name></member>
+    <member refid="class_data_1_1_models_1_1_booking_1a68eb369e6533be23245a01ff50074090" kind="property"><name>UserId</name></member>
+    <member refid="class_data_1_1_models_1_1_booking_1aece854cf2ee4ef053cc47770af37ff51" kind="property"><name>Event</name></member>
+    <member refid="class_data_1_1_models_1_1_booking_1ae61c4caef17146d1bed4e12351945b3f" kind="property"><name>EventId</name></member>
+    <member refid="class_data_1_1_models_1_1_booking_1a7ab260239178e15dd492be70c0ace7f7" kind="property"><name>CreationDate</name></member>
+    <member refid="class_data_1_1_models_1_1_booking_1af956e4375869f04502f8d6863fbd1476" kind="property"><name>NumberOfPeople</name></member>
+  </compound>
+  <compound refid="class_data_1_1_repositories_1_1_booking_repository" kind="class"><name>Data::Repositories::BookingRepository</name>
+    <member refid="class_data_1_1_repositories_1_1_booking_repository_1a966c1fdf395c0e8e939a10fc92067566" kind="function"><name>BookingRepository</name></member>
+    <member refid="class_data_1_1_repositories_1_1_booking_repository_1aafa051b0e5f082d20812336732fb81cb" kind="function"><name>GetAll</name></member>
+    <member refid="class_data_1_1_repositories_1_1_booking_repository_1a25e95c8052dc09f1f61282b0c3226ac5" kind="function"><name>GetAll</name></member>
+    <member refid="class_data_1_1_repositories_1_1_booking_repository_1a703f7cd93edd1554fb7da483c74969e2" kind="function"><name>GetByAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_booking_repository_1ae71cb4b211a0314a9875660f45c43b70" kind="function"><name>GetByIdAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_booking_repository_1a2976c68a84917e9efd440a9928fdf342" kind="function"><name>UpdateAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_booking_repository_1a16a7ac43ca526ef513c0885c1daeb602" kind="function"><name>CreateAsync</name></member>
+  </compound>
+  <compound refid="class_data_1_1_repositories_1_1_cafe_owner_repository" kind="class"><name>Data::Repositories::CafeOwnerRepository</name>
+    <member refid="class_data_1_1_repositories_1_1_cafe_owner_repository_1ab11ae64925e415e3167d15b96f1f9abb" kind="function"><name>CafeOwnerRepository</name></member>
+    <member refid="class_data_1_1_repositories_1_1_cafe_owner_repository_1a0fc7ba59fd31e9e72f184afac43a15dc" kind="function"><name>GetAll</name></member>
+    <member refid="class_data_1_1_repositories_1_1_cafe_owner_repository_1a6881a26aa053c2a78dc04437b715ed4d" kind="function"><name>GetAll</name></member>
+    <member refid="class_data_1_1_repositories_1_1_cafe_owner_repository_1af8d2013d1a6642fbcd4c5e71b413d16d" kind="function"><name>GetByAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_cafe_owner_repository_1a149a8879c11556af9b17d41a05e46a98" kind="function"><name>GetByIdAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_cafe_owner_repository_1a5d77ae1b0885e735ea420bfc73c21314" kind="function"><name>UpdateAsync</name></member>
+  </compound>
+  <compound refid="class_data_1_1_class1" kind="class"><name>Data::Class1</name>
+  </compound>
+  <compound refid="class_create_event_request" kind="class"><name>CreateEventRequest</name>
+    <member refid="class_create_event_request_1ad08cb8019844f29de4d91b247f324c69" kind="variable"><name>_parser</name></member>
+    <member refid="class_create_event_request_1a682894ae0c895ba701db6bcf26c3c513" kind="variable"><name>_unknownFields</name></member>
+    <member refid="class_create_event_request_1ab4db19aa46fdf6e0904dc480cdf7b985" kind="variable"><name>name_</name></member>
+    <member refid="class_create_event_request_1a6ff8110c38520c423ad6312404104cb5" kind="variable"><name>description_</name></member>
+    <member refid="class_create_event_request_1a38c08caff9a247d22e0f0a294a1eb5ef" kind="variable"><name>entertainer_</name></member>
+    <member refid="class_create_event_request_1aa8e9b0453817c02fec98bab8d7a44d21" kind="variable"><name>cafeOwner_</name></member>
+    <member refid="class_create_event_request_1a3175a1b113b680da9e9f475d5831c639" kind="variable"><name>startDate_</name></member>
+    <member refid="class_create_event_request_1af60ab0d8c876560e5fa9d3ddb65040ae" kind="variable"><name>endDate_</name></member>
+    <member refid="class_create_event_request_1a601f3401f47fe1bc53236052355d3285" kind="variable"><name>availablePlaces_</name></member>
+    <member refid="class_create_event_request_1ab007681fbc4f4737aaac48a21fe7fb5d" kind="property"><name>Parser</name></member>
+    <member refid="class_create_event_request_1a90b1d0faaeaa6d8f7b2a03fd0a464727" kind="property"><name>Descriptor</name></member>
+    <member refid="class_create_event_request_1aecfa7ff9f49ec9306964eaa3ff308d8a" kind="property"><name>Descriptor</name></member>
+    <member refid="class_create_event_request_1afae1e550eb0de2c5e7a93553bc88b1e6" kind="property"><name>Name</name></member>
+    <member refid="class_create_event_request_1a89c9bbb482a70660c77ae98c46edcb45" kind="property"><name>Description</name></member>
+    <member refid="class_create_event_request_1a63ee33d099cf08c0cf62ee925dea4dee" kind="property"><name>Entertainer</name></member>
+    <member refid="class_create_event_request_1a9d5d47e8e06a089965e56ae81fd7f1a8" kind="property"><name>CafeOwner</name></member>
+    <member refid="class_create_event_request_1ae26ff508a3396b6aa5322d1ed26234f7" kind="property"><name>StartDate</name></member>
+    <member refid="class_create_event_request_1a04ea0fc91dcd37438f7fd2606e91bdf5" kind="property"><name>EndDate</name></member>
+    <member refid="class_create_event_request_1ad2348cede0348be3d5eafd598b37b0a8" kind="property"><name>AvailablePlaces</name></member>
+    <member refid="class_create_event_request_1a84bc08b94ec251b1a9e5fc5646bc3beb" kind="variable"><name>NameFieldNumber</name></member>
+    <member refid="class_create_event_request_1ac77fb30426673689304834b4f7d783ed" kind="variable"><name>DescriptionFieldNumber</name></member>
+    <member refid="class_create_event_request_1ad3bf2e055d78b110d1bfaadac3c74015" kind="variable"><name>EntertainerFieldNumber</name></member>
+    <member refid="class_create_event_request_1a3173e68ff15141d0afe6455f1d12d299" kind="variable"><name>CafeOwnerFieldNumber</name></member>
+    <member refid="class_create_event_request_1a22bde79c7e816c189fe2b6f1092d2a8b" kind="variable"><name>StartDateFieldNumber</name></member>
+    <member refid="class_create_event_request_1abfa31b8a77931395d87fcaa0a05854b1" kind="variable"><name>EndDateFieldNumber</name></member>
+    <member refid="class_create_event_request_1a6c229502d940f2c7be82087eb224ceed" kind="variable"><name>AvailablePlacesFieldNumber</name></member>
+    <member refid="class_create_event_request_1ab5c0a17e79f87ef7e33d58c5e03e4da1" kind="function"><name>CreateEventRequest</name></member>
+    <member refid="class_create_event_request_1af1bf2bcb6c6760de92d7a5eeb7f3710f" kind="function"><name>CreateEventRequest</name></member>
+    <member refid="class_create_event_request_1aa55bceafeb2f0c27e5017083fa7218c7" kind="function"><name>Clone</name></member>
+    <member refid="class_create_event_request_1a00bf475efda625af6ae1f8381db7b614" kind="function"><name>Equals</name></member>
+    <member refid="class_create_event_request_1a860fd10cbb6008f31ff1b81aa8d5e499" kind="function"><name>Equals</name></member>
+    <member refid="class_create_event_request_1a5f5bebe541f074c02ab7e6528daa9aa7" kind="function"><name>GetHashCode</name></member>
+    <member refid="class_create_event_request_1a57926e1648ca92320543ec0722fc160c" kind="function"><name>ToString</name></member>
+    <member refid="class_create_event_request_1a58bde9622b3c04cb7ad1875f2379ee4a" kind="function"><name>WriteTo</name></member>
+    <member refid="class_create_event_request_1a1832af4a2c9c0614678a1b446a7bd356" kind="function"><name>CalculateSize</name></member>
+    <member refid="class_create_event_request_1ac6cfe7f2ad26ad2f5f5bf8a88fd4709d" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_create_event_request_1a262386de588f628923ccb70f3bf9c724" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_create_event_request_1a459bc3b5c12f42fa3ffaaeadf367a4b5" kind="function"><name>OnConstruction</name></member>
+    <member refid="class_create_event_request_1a2448034a0d15c9ff5e136487c5cb3f6d" kind="function"><name>InternalWriteTo</name></member>
+    <member refid="class_create_event_request_1aa30acad1e8262aa8d6263610090d793f" kind="function"><name>InternalMergeFrom</name></member>
+  </compound>
+  <compound refid="class_create_event_response" kind="class"><name>CreateEventResponse</name>
+    <member refid="class_create_event_response_1a12804be8d17cb191dc9915cc7aea0a2f" kind="variable"><name>_parser</name></member>
+    <member refid="class_create_event_response_1a4f0ae1d12009a8f52a6bcafdd6b476cd" kind="variable"><name>_unknownFields</name></member>
+    <member refid="class_create_event_response_1a65f5e6f35166c8d46f3d6e200d45081b" kind="variable"><name>id_</name></member>
+    <member refid="class_create_event_response_1a867be2a468f5d14fa582e9d96267ce55" kind="variable"><name>name_</name></member>
+    <member refid="class_create_event_response_1ae11235ee9ec51241fef22f6b4252ce3d" kind="variable"><name>description_</name></member>
+    <member refid="class_create_event_response_1a56f6bb728aee03f46ccadb696d87cfdf" kind="variable"><name>entertainer_</name></member>
+    <member refid="class_create_event_response_1aa3cf3c1adee8c9c54dfbf726d2203d72" kind="variable"><name>availablePlaces_</name></member>
+    <member refid="class_create_event_response_1ad7814895900fc8ca4338ee4f847540b4" kind="property"><name>Parser</name></member>
+    <member refid="class_create_event_response_1a4d6515b6086c1cfb951d071a8ac1aef0" kind="property"><name>Descriptor</name></member>
+    <member refid="class_create_event_response_1afcc4418ddb9d3e3ba1281ef91c6aa2ea" kind="property"><name>Descriptor</name></member>
+    <member refid="class_create_event_response_1a5730435c09f8f94f5fc6c5cbf07c45bd" kind="property"><name>Id</name></member>
+    <member refid="class_create_event_response_1aa3297b0162f35aec85a9bd70c8e10ef9" kind="property"><name>Name</name></member>
+    <member refid="class_create_event_response_1af1a41d46ac0b99bb0baeed1ad8522f29" kind="property"><name>Description</name></member>
+    <member refid="class_create_event_response_1a5d5ec05d7c419585d8ab123e89c5cf8c" kind="property"><name>Entertainer</name></member>
+    <member refid="class_create_event_response_1a7953118a684e96850b874991835d1e66" kind="property"><name>AvailablePlaces</name></member>
+    <member refid="class_create_event_response_1a593ad17e2acb78eddfc5dfd06d73d8cd" kind="variable"><name>IdFieldNumber</name></member>
+    <member refid="class_create_event_response_1a03060a732d87aed93e804ad9a9328c90" kind="variable"><name>NameFieldNumber</name></member>
+    <member refid="class_create_event_response_1ae38a06f33ede902a522e1c83046fda36" kind="variable"><name>DescriptionFieldNumber</name></member>
+    <member refid="class_create_event_response_1aac5833c14d8983f553d836fc2fc08794" kind="variable"><name>EntertainerFieldNumber</name></member>
+    <member refid="class_create_event_response_1a210a61c04daba3e68a2f4c9b2b87f3f5" kind="variable"><name>AvailablePlacesFieldNumber</name></member>
+    <member refid="class_create_event_response_1a63596d49017a1222f582ac0e56f8adae" kind="function"><name>CreateEventResponse</name></member>
+    <member refid="class_create_event_response_1a0a0d40c4c6f9df6c6322f9388a19f2da" kind="function"><name>CreateEventResponse</name></member>
+    <member refid="class_create_event_response_1a1c76408fb0604bce87c612dfb1312ca0" kind="function"><name>Clone</name></member>
+    <member refid="class_create_event_response_1a0dfd533b70ba7fd31538a240b321374c" kind="function"><name>Equals</name></member>
+    <member refid="class_create_event_response_1a3b0b03edbd369312065d5a639e0ba694" kind="function"><name>Equals</name></member>
+    <member refid="class_create_event_response_1aa883707111e02e6ca8178ea3b431eb86" kind="function"><name>GetHashCode</name></member>
+    <member refid="class_create_event_response_1a32fc008c3a65a2f19e0882023ac0ad1a" kind="function"><name>ToString</name></member>
+    <member refid="class_create_event_response_1a2af554d08493b146bf5e359a41a61735" kind="function"><name>WriteTo</name></member>
+    <member refid="class_create_event_response_1af8abf6d1cd2458afa14dc555041a045a" kind="function"><name>CalculateSize</name></member>
+    <member refid="class_create_event_response_1affb19b2c4ca83fa63e43c1c3c627f3cc" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_create_event_response_1a2300bc7b03518d9427be3684e5e033aa" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_create_event_response_1a56ccf957a43c95fab2c42dca6825755f" kind="function"><name>OnConstruction</name></member>
+    <member refid="class_create_event_response_1a0ac5fb0b4377eae80a4bd8ef6771525e" kind="function"><name>InternalWriteTo</name></member>
+    <member refid="class_create_event_response_1a263a419c72156317d4fab3418462b9cf" kind="function"><name>InternalMergeFrom</name></member>
+  </compound>
+  <compound refid="class_create_post_request" kind="class"><name>CreatePostRequest</name>
+    <member refid="class_create_post_request_1a0c1b1e1020580c4d25187442a5678f7b" kind="variable"><name>_parser</name></member>
+    <member refid="class_create_post_request_1a77c165702ff91673e4a037008717703b" kind="variable"><name>_unknownFields</name></member>
+    <member refid="class_create_post_request_1a6ec4d7783525691616407191205270ee" kind="variable"><name>id_</name></member>
+    <member refid="class_create_post_request_1a9e9b17d13672d4f9250b7d7b2d0ef3da" kind="variable"><name>author_</name></member>
+    <member refid="class_create_post_request_1a7f8ce708236e99aed71aab642bc77fb8" kind="variable"><name>title_</name></member>
+    <member refid="class_create_post_request_1a2ef7b66bd9a5aa7840eada2095a098f8" kind="variable"><name>content_</name></member>
+    <member refid="class_create_post_request_1a8ce94da5346cfbd26c838ad28c464479" kind="variable"><name>date_</name></member>
+    <member refid="class_create_post_request_1a3d05c368cd8b999eb893bb377297f778" kind="variable"><name>event_</name></member>
+    <member refid="class_create_post_request_1a1173a73dd017a7aa8c9dc690401f2ec5" kind="property"><name>Parser</name></member>
+    <member refid="class_create_post_request_1a5ed2478fbe8b1b6c4df62335377f3414" kind="property"><name>Descriptor</name></member>
+    <member refid="class_create_post_request_1ae0cee06bcc258c603031f4dee8315e4a" kind="property"><name>Descriptor</name></member>
+    <member refid="class_create_post_request_1ab99bdb99616be7dfec30314777d84e54" kind="property"><name>Id</name></member>
+    <member refid="class_create_post_request_1a2584165d8b46efd43bfe4de7dbd67606" kind="property"><name>Author</name></member>
+    <member refid="class_create_post_request_1aaeca7211cfba4c66c5bf220b1646c595" kind="property"><name>Title</name></member>
+    <member refid="class_create_post_request_1a08195c4e89fbf2cd63ea721af67304c6" kind="property"><name>Content</name></member>
+    <member refid="class_create_post_request_1a71705e404905b5eedbec8adc35738a8a" kind="property"><name>Date</name></member>
+    <member refid="class_create_post_request_1a4839f1265fb98bd935048f17849265a4" kind="property"><name>Event</name></member>
+    <member refid="class_create_post_request_1ae922e5cb84142a632d41abb4f5fec779" kind="variable"><name>IdFieldNumber</name></member>
+    <member refid="class_create_post_request_1aba8791e476a918c67a670e910499c121" kind="variable"><name>AuthorFieldNumber</name></member>
+    <member refid="class_create_post_request_1a72e0d92f5fffaa69bb547611fd66f865" kind="variable"><name>TitleFieldNumber</name></member>
+    <member refid="class_create_post_request_1a9da948107c67206afa9ad5b27e55ee44" kind="variable"><name>ContentFieldNumber</name></member>
+    <member refid="class_create_post_request_1aa64cad7f78eccd1cfffecea4dc39d923" kind="variable"><name>DateFieldNumber</name></member>
+    <member refid="class_create_post_request_1a04b85b8b8542c324925a22a45273b999" kind="variable"><name>EventFieldNumber</name></member>
+    <member refid="class_create_post_request_1a12ddf8a98f7be7caf930ea23e6859a51" kind="function"><name>CreatePostRequest</name></member>
+    <member refid="class_create_post_request_1aeb5eabb544ac502dda0dfeb4c36bb11e" kind="function"><name>CreatePostRequest</name></member>
+    <member refid="class_create_post_request_1a2fc139987564d388f5c191bb8c09f5e1" kind="function"><name>Clone</name></member>
+    <member refid="class_create_post_request_1a9d3a7a69d2ffba83958fc116d63fdec4" kind="function"><name>Equals</name></member>
+    <member refid="class_create_post_request_1a79f503521fdcd3b4d35748edc89b70df" kind="function"><name>Equals</name></member>
+    <member refid="class_create_post_request_1aad1462e1648fec354822d6b694e22b29" kind="function"><name>GetHashCode</name></member>
+    <member refid="class_create_post_request_1abc54b848ac062017e413c69c2c4896e2" kind="function"><name>ToString</name></member>
+    <member refid="class_create_post_request_1a1b3fcbbccf51834c08896823ae7bd2db" kind="function"><name>WriteTo</name></member>
+    <member refid="class_create_post_request_1ab14aaff1b909d7fcf76a57dcfdeae403" kind="function"><name>CalculateSize</name></member>
+    <member refid="class_create_post_request_1ab7ee352c1367de6795e9e100e33a2a39" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_create_post_request_1ab61825e4abec20d705b5d09966678e71" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_create_post_request_1a1ed32cdb3befd36de51a53d48d819e5c" kind="function"><name>OnConstruction</name></member>
+    <member refid="class_create_post_request_1ad53fb4314a4c3a92abecb3bf1ee7d4a0" kind="function"><name>InternalWriteTo</name></member>
+    <member refid="class_create_post_request_1a2088b5010d6912d6f8941f3ff1fd3782" kind="function"><name>InternalMergeFrom</name></member>
+  </compound>
+  <compound refid="class_create_post_response" kind="class"><name>CreatePostResponse</name>
+    <member refid="class_create_post_response_1aba7a9b36acd3bef08b49e52b54930565" kind="variable"><name>_parser</name></member>
+    <member refid="class_create_post_response_1abd20bedb9022dd2e2a57c9ca32d6f506" kind="variable"><name>_unknownFields</name></member>
+    <member refid="class_create_post_response_1a2ca03a570f0e8bf0084d3184f3c0272f" kind="variable"><name>id_</name></member>
+    <member refid="class_create_post_response_1a2f0269a3e3594245e86a9192a3cdadbf" kind="variable"><name>author_</name></member>
+    <member refid="class_create_post_response_1a6929f3d5b1e92346557477a7fefbe653" kind="variable"><name>title_</name></member>
+    <member refid="class_create_post_response_1a0156375ecbf6807b20ec94a2d0647c31" kind="variable"><name>content_</name></member>
+    <member refid="class_create_post_response_1a488793c072bb8d54f701f691f27a55ed" kind="variable"><name>date_</name></member>
+    <member refid="class_create_post_response_1a0a9cb2abc7665fc445a1467ab3e21199" kind="variable"><name>event_</name></member>
+    <member refid="class_create_post_response_1ac4820a9f3ff81021fbd79af9fd7b0a30" kind="property"><name>Parser</name></member>
+    <member refid="class_create_post_response_1a571086c7cd4b7ccf4a2083e42c2490c5" kind="property"><name>Descriptor</name></member>
+    <member refid="class_create_post_response_1a8038b8480ade4fa60400f3c7f8e95e01" kind="property"><name>Descriptor</name></member>
+    <member refid="class_create_post_response_1a512a4520fcc5728fbcd4834401ba26e5" kind="property"><name>Id</name></member>
+    <member refid="class_create_post_response_1a8366cac0cf981a935a4ff9018a111156" kind="property"><name>Author</name></member>
+    <member refid="class_create_post_response_1af14393bd68f5feea8e4edcef5a6bd98c" kind="property"><name>Title</name></member>
+    <member refid="class_create_post_response_1a498565213ddc23e5cf7b95f2880d40f5" kind="property"><name>Content</name></member>
+    <member refid="class_create_post_response_1abb5b29f4ad1290f5587ca6f38eb14b66" kind="property"><name>Date</name></member>
+    <member refid="class_create_post_response_1a6a9a40370489cbe88ca239df9e661d7b" kind="property"><name>Event</name></member>
+    <member refid="class_create_post_response_1abbf40f13181d4794fdbc71fca5072a0d" kind="variable"><name>IdFieldNumber</name></member>
+    <member refid="class_create_post_response_1a16abd4485110d446b3de2c1f32bd58d9" kind="variable"><name>AuthorFieldNumber</name></member>
+    <member refid="class_create_post_response_1a655a4b1127ba50799cfef3450294da41" kind="variable"><name>TitleFieldNumber</name></member>
+    <member refid="class_create_post_response_1a50e290153311271648fd1f7762328661" kind="variable"><name>ContentFieldNumber</name></member>
+    <member refid="class_create_post_response_1aa5e7eceff4f7124ff0876cf0f822dd58" kind="variable"><name>DateFieldNumber</name></member>
+    <member refid="class_create_post_response_1a6d4c35af5d9e4df9fcdcd723084d63af" kind="variable"><name>EventFieldNumber</name></member>
+    <member refid="class_create_post_response_1aeb10d8a925f2f33f07ed1b99ccc9bcc7" kind="function"><name>CreatePostResponse</name></member>
+    <member refid="class_create_post_response_1a64741e4585bb992600533487711ab00f" kind="function"><name>CreatePostResponse</name></member>
+    <member refid="class_create_post_response_1a80dfc8b8ea4c88fc34f665869794ec2e" kind="function"><name>Clone</name></member>
+    <member refid="class_create_post_response_1a1bdcfd3fc0fa75dca26b9aa36c4163ca" kind="function"><name>Equals</name></member>
+    <member refid="class_create_post_response_1a3a939466f5b20956f9f7088e8d78d7eb" kind="function"><name>Equals</name></member>
+    <member refid="class_create_post_response_1ac5c145aec34a74da88df2e3642d88015" kind="function"><name>GetHashCode</name></member>
+    <member refid="class_create_post_response_1a14afcc9b83daca57af3bd9b328365e7b" kind="function"><name>ToString</name></member>
+    <member refid="class_create_post_response_1a9ddc17b355e9f1ba7be717948ce70017" kind="function"><name>WriteTo</name></member>
+    <member refid="class_create_post_response_1ae51414c3f7d047e9834103795af43e31" kind="function"><name>CalculateSize</name></member>
+    <member refid="class_create_post_response_1a81a9e01f745b40569a6e8ddb75289066" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_create_post_response_1a12c6a0643dea74bd727ba927041f4ccf" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_create_post_response_1a33b109105f9f87ff8fb0a8782d2203bb" kind="function"><name>OnConstruction</name></member>
+    <member refid="class_create_post_response_1aff2bfcdb1134a4b42eb2442b01139cb1" kind="function"><name>InternalWriteTo</name></member>
+    <member refid="class_create_post_response_1a1f38f5f242c3454960fc9ca6442b9bd4" kind="function"><name>InternalMergeFrom</name></member>
+  </compound>
+  <compound refid="class_create_user_request" kind="class"><name>CreateUserRequest</name>
+    <member refid="class_create_user_request_1a1f3536e0d879d05068feddfe056288a0" kind="variable"><name>_parser</name></member>
+    <member refid="class_create_user_request_1a0e79811ad5bfa094a82b01778ebba1c1" kind="variable"><name>_unknownFields</name></member>
+    <member refid="class_create_user_request_1ac6ffbf229cfd6e67b7ac760a8007e23b" kind="variable"><name>fisrtName_</name></member>
+    <member refid="class_create_user_request_1a6133785d663742e3b2208ad62595dcb7" kind="variable"><name>lastName_</name></member>
+    <member refid="class_create_user_request_1a92324f3e6876b46685aaf0aaf70e9a8b" kind="variable"><name>username_</name></member>
+    <member refid="class_create_user_request_1a7c2b38da5489c6a3cdafdedf02fe3922" kind="variable"><name>email_</name></member>
+    <member refid="class_create_user_request_1a86b59c244144e23bfcd05f7c269c59c8" kind="variable"><name>role_</name></member>
+    <member refid="class_create_user_request_1a5e54470ed006b02eaaba843702cdcc82" kind="variable"><name>password_</name></member>
+    <member refid="class_create_user_request_1ab79d5b4d0afec32a5842569d5e8bfc19" kind="variable"><name>description_</name></member>
+    <member refid="class_create_user_request_1a2cd334df2b28e93e7ace0ca958c500f8" kind="property"><name>Parser</name></member>
+    <member refid="class_create_user_request_1a90c5c5114a26b1f168c263ce8243fc45" kind="property"><name>Descriptor</name></member>
+    <member refid="class_create_user_request_1a99bb0c16cb340c828d81bdb3dd223a98" kind="property"><name>Descriptor</name></member>
+    <member refid="class_create_user_request_1acf87b9fc1284fc99a881ccad444666bd" kind="property"><name>FisrtName</name></member>
+    <member refid="class_create_user_request_1a0690f1b499f9ed303bcc7c1be367f5db" kind="property"><name>LastName</name></member>
+    <member refid="class_create_user_request_1a0b2bc59d2801b8109f423bb5fc8b4f2f" kind="property"><name>Username</name></member>
+    <member refid="class_create_user_request_1a1e1b1f203a5eaa5600129e75714ecec3" kind="property"><name>Email</name></member>
+    <member refid="class_create_user_request_1ac2996486b20c8e116df4c3606a2cd584" kind="property"><name>Role</name></member>
+    <member refid="class_create_user_request_1a17201c402eaae32951ff9d1e723ef15d" kind="property"><name>Password</name></member>
+    <member refid="class_create_user_request_1ace97add2794c7a1977728d65e067f23a" kind="property"><name>Description</name></member>
+    <member refid="class_create_user_request_1a31898e4b747d201e57459eaebb2cfd35" kind="variable"><name>FisrtNameFieldNumber</name></member>
+    <member refid="class_create_user_request_1a7010fc279854c091855bd2ec6019c290" kind="variable"><name>LastNameFieldNumber</name></member>
+    <member refid="class_create_user_request_1ad279a7ab4302b35ce5d41d2b34590ae7" kind="variable"><name>UsernameFieldNumber</name></member>
+    <member refid="class_create_user_request_1aeee0bd026d0956a42b015235b0787632" kind="variable"><name>EmailFieldNumber</name></member>
+    <member refid="class_create_user_request_1a5a1ef73e613b220c17b878f3c67be6bc" kind="variable"><name>RoleFieldNumber</name></member>
+    <member refid="class_create_user_request_1acdd56771500984879405fa896b4e00b5" kind="variable"><name>PasswordFieldNumber</name></member>
+    <member refid="class_create_user_request_1a4386ce9424eea1b1188bca393391464b" kind="variable"><name>DescriptionFieldNumber</name></member>
+    <member refid="class_create_user_request_1a5dfba4b4db4c69e9452ca0dc67f18378" kind="function"><name>CreateUserRequest</name></member>
+    <member refid="class_create_user_request_1a22d80be55f0ac58d9e4c076ef19bfad4" kind="function"><name>CreateUserRequest</name></member>
+    <member refid="class_create_user_request_1adbd72427060def9f9fb93730b2e06d82" kind="function"><name>Clone</name></member>
+    <member refid="class_create_user_request_1a709ec538d6163f24c75a64146d82a864" kind="function"><name>Equals</name></member>
+    <member refid="class_create_user_request_1a8ded64262630637bca9b182fc524726f" kind="function"><name>Equals</name></member>
+    <member refid="class_create_user_request_1a1a8152dd15c2a38cfe9f6e823f613d80" kind="function"><name>GetHashCode</name></member>
+    <member refid="class_create_user_request_1aff68884eebdc1460d255aaf27c8e0e47" kind="function"><name>ToString</name></member>
+    <member refid="class_create_user_request_1a3f0f14259b13f6435ef1a1d18ab0004b" kind="function"><name>WriteTo</name></member>
+    <member refid="class_create_user_request_1a645ecb6e7c4488554b9d62bcdc138151" kind="function"><name>CalculateSize</name></member>
+    <member refid="class_create_user_request_1ac6d704cbcaff5b47b5f3b83a791b7f61" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_create_user_request_1a0ef4c26869a907bc708023952acb2145" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_create_user_request_1a829351ac7357f1e955b622bf16cf4a81" kind="function"><name>OnConstruction</name></member>
+    <member refid="class_create_user_request_1a089a551d251c00be892b210918b3babe" kind="function"><name>InternalWriteTo</name></member>
+    <member refid="class_create_user_request_1a51092a8f2e971f513db3ebe56c81ea63" kind="function"><name>InternalMergeFrom</name></member>
+  </compound>
+  <compound refid="class_create_user_response" kind="class"><name>CreateUserResponse</name>
+    <member refid="class_create_user_response_1ad7bc5bf05e7d8f4d3e4e4c2e44df61f3" kind="variable"><name>_parser</name></member>
+    <member refid="class_create_user_response_1ab3581bac7d83ee7ff8d15d7602282f5c" kind="variable"><name>_unknownFields</name></member>
+    <member refid="class_create_user_response_1a0751aed25904248d96fa4ca61d89c31c" kind="variable"><name>fisrtName_</name></member>
+    <member refid="class_create_user_response_1a156852ec889fe9e768b174cd1db6c961" kind="variable"><name>lastName_</name></member>
+    <member refid="class_create_user_response_1a621830c5aac17cada88dbdedcbdf8553" kind="variable"><name>username_</name></member>
+    <member refid="class_create_user_response_1a23a3d1f860e2cba912fc7d2c1cebce24" kind="variable"><name>email_</name></member>
+    <member refid="class_create_user_response_1a9e6446c07dc49d4b370f5770ee8693b0" kind="variable"><name>role_</name></member>
+    <member refid="class_create_user_response_1aa07d10db06b0583e00921736845c6de2" kind="variable"><name>id_</name></member>
+    <member refid="class_create_user_response_1a4302b29107c1a82a03d07a7fc5aef2ff" kind="variable"><name>description_</name></member>
+    <member refid="class_create_user_response_1a5cfe894b566093a60c16b001473e30db" kind="property"><name>Parser</name></member>
+    <member refid="class_create_user_response_1a0f6389870f6062ef36e67377b7c11ecb" kind="property"><name>Descriptor</name></member>
+    <member refid="class_create_user_response_1aa0bdf66078fbffb904e0a78a7586004e" kind="property"><name>Descriptor</name></member>
+    <member refid="class_create_user_response_1a5377da9e9cc6fbbb4acfed46c4a1028b" kind="property"><name>FisrtName</name></member>
+    <member refid="class_create_user_response_1a3121927067f12153c3ac84f542b8b9a4" kind="property"><name>LastName</name></member>
+    <member refid="class_create_user_response_1a692453abb812f9b04fd34f510085f708" kind="property"><name>Username</name></member>
+    <member refid="class_create_user_response_1a1044ba56d335955df56c9f671c47cae5" kind="property"><name>Email</name></member>
+    <member refid="class_create_user_response_1adcf6b588b8928e321acd409df7d30be1" kind="property"><name>Role</name></member>
+    <member refid="class_create_user_response_1ac5deaaf4150c5bb093d9d244dcee448c" kind="property"><name>Id</name></member>
+    <member refid="class_create_user_response_1aa8c01769bdbe40f438387da9aeae6896" kind="property"><name>Description</name></member>
+    <member refid="class_create_user_response_1abe1cce6d708cbfd9ceb80a5469d87989" kind="variable"><name>FisrtNameFieldNumber</name></member>
+    <member refid="class_create_user_response_1a46f5b39cc6beecc288ba59f97829e472" kind="variable"><name>LastNameFieldNumber</name></member>
+    <member refid="class_create_user_response_1a09046fccb7981e976f289e24c95ca976" kind="variable"><name>UsernameFieldNumber</name></member>
+    <member refid="class_create_user_response_1a9f2469a1941d18022e33d0ab1f2fc426" kind="variable"><name>EmailFieldNumber</name></member>
+    <member refid="class_create_user_response_1a9d1493f4409a7d961503ab17cda28ed9" kind="variable"><name>RoleFieldNumber</name></member>
+    <member refid="class_create_user_response_1a350cdf55a7ee693c2855b6babcca5c62" kind="variable"><name>IdFieldNumber</name></member>
+    <member refid="class_create_user_response_1ab1771cfb5638d1d95770793b5a792502" kind="variable"><name>DescriptionFieldNumber</name></member>
+    <member refid="class_create_user_response_1a7d620fed50ded4555c93c638abb2b8d0" kind="function"><name>CreateUserResponse</name></member>
+    <member refid="class_create_user_response_1af8a0889c05380023000d808a17da93ca" kind="function"><name>CreateUserResponse</name></member>
+    <member refid="class_create_user_response_1a4a5ef4c3a81bd83875a9571f2169ba2c" kind="function"><name>Clone</name></member>
+    <member refid="class_create_user_response_1a24b93672a74b929ba0578ad19952fbb0" kind="function"><name>Equals</name></member>
+    <member refid="class_create_user_response_1a4c01c142d101518d70cd367872cdd050" kind="function"><name>Equals</name></member>
+    <member refid="class_create_user_response_1a0e5df8e2af7dfc85c01c975f3e7a559f" kind="function"><name>GetHashCode</name></member>
+    <member refid="class_create_user_response_1a3da05b8a0ab57dd56f6a546ea801ea08" kind="function"><name>ToString</name></member>
+    <member refid="class_create_user_response_1af4f6f67ff5e336ab6d64702f81abeadf" kind="function"><name>WriteTo</name></member>
+    <member refid="class_create_user_response_1af5a0a562512e1cccc79fb0015746d128" kind="function"><name>CalculateSize</name></member>
+    <member refid="class_create_user_response_1a04f9738818597c9c26700cc1104f724e" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_create_user_response_1a29aead4224d450ae8480a823b1f2b1ff" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_create_user_response_1a9c6ab94c4ccb3dd38af2f572359fca52" kind="function"><name>OnConstruction</name></member>
+    <member refid="class_create_user_response_1ad2e950282d637aba103aa75963fd0232" kind="function"><name>InternalWriteTo</name></member>
+    <member refid="class_create_user_response_1ab8da0834e760f315f2fdd49b6952de70" kind="function"><name>InternalMergeFrom</name></member>
+  </compound>
+  <compound refid="class_data_1_1_d_b_context" kind="class"><name>Data::DBContext</name>
+    <member refid="class_data_1_1_d_b_context_1aa946d08b19f009e67c3e46dcf0b785b4" kind="property"><name>Users</name></member>
+    <member refid="class_data_1_1_d_b_context_1a19f981373561626842b0eaef1193b461" kind="property"><name>Events</name></member>
+    <member refid="class_data_1_1_d_b_context_1adbb0bac35b5b8800dedee7654217fc94" kind="property"><name>Posts</name></member>
+    <member refid="class_data_1_1_d_b_context_1a3841e4f2d1b62bd78e820a65a8104fe2" kind="property"><name>Bookings</name></member>
+    <member refid="class_data_1_1_d_b_context_1adb6efd7b4d94a7c6ef54770aba40c2b5" kind="function"><name>DBContext</name></member>
+    <member refid="class_data_1_1_d_b_context_1aa56dac27d37daafa4445baf88f6ce936" kind="function"><name>OnModelCreating</name></member>
+  </compound>
+  <compound refid="class_data_1_1_migrations_1_1_d_b_context_model_snapshot" kind="class"><name>Data::Migrations::DBContextModelSnapshot</name>
+    <member refid="class_data_1_1_migrations_1_1_d_b_context_model_snapshot_1aa206465f9de0f986c98d371b2c3facf3" kind="function"><name>BuildModel</name></member>
+  </compound>
+  <compound refid="class_data_1_1_repositories_1_1_enterteiner_repository" kind="class"><name>Data::Repositories::EnterteinerRepository</name>
+    <member refid="class_data_1_1_repositories_1_1_enterteiner_repository_1a49443a1389573f9b667326256af807f4" kind="function"><name>EnterteinerRepository</name></member>
+    <member refid="class_data_1_1_repositories_1_1_enterteiner_repository_1a797aa314a49f46df184f37c61fd735e2" kind="function"><name>GetAll</name></member>
+    <member refid="class_data_1_1_repositories_1_1_enterteiner_repository_1a4bba3fc36847e3915f2816ff0b4a8b9d" kind="function"><name>GetAll</name></member>
+    <member refid="class_data_1_1_repositories_1_1_enterteiner_repository_1ab08a98befc397f2c310e2fe840f98137" kind="function"><name>GetByAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_enterteiner_repository_1a3523931558acc7cc0f70abca8c21d9da" kind="function"><name>GetByIdAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_enterteiner_repository_1a192ed34e2681c5ca98eaf64562b3484b" kind="function"><name>UpdateAsync</name></member>
+  </compound>
+  <compound refid="class_data_1_1_models_1_1_event" kind="class"><name>Data::Models::Event</name>
+    <member refid="class_data_1_1_models_1_1_event_1a4eedf4a5ff26b3d825d506f8289c8600" kind="property"><name>CafeOwner</name></member>
+    <member refid="class_data_1_1_models_1_1_event_1a9bb8400276cc7f7dbee39429d7808015" kind="property"><name>CafeOwnerId</name></member>
+    <member refid="class_data_1_1_models_1_1_event_1ab353d7c96ca3754a810ce74ba7a039af" kind="property"><name>Enterteiner</name></member>
+    <member refid="class_data_1_1_models_1_1_event_1aeb397dbffb772e78f5ec7cf9697cd65a" kind="property"><name>EnterteinerId</name></member>
+    <member refid="class_data_1_1_models_1_1_event_1a549af68433c3028dd46c03b6e1a3a020" kind="property"><name>CreationDate</name></member>
+    <member refid="class_data_1_1_models_1_1_event_1a14a1fc939e0d6dbcf4d66a03a39eab44" kind="property"><name>StartDate</name></member>
+    <member refid="class_data_1_1_models_1_1_event_1a34b7cabc2dd9e5dc3b2217ce417ca745" kind="property"><name>EndDate</name></member>
+    <member refid="class_data_1_1_models_1_1_event_1a7825d373ba79f06230d65a286673377d" kind="property"><name>Title</name></member>
+    <member refid="class_data_1_1_models_1_1_event_1ab3b31f8e55250f61c032dd9b1daa28b8" kind="property"><name>Text</name></member>
+    <member refid="class_data_1_1_models_1_1_event_1a9c6202ad3c7543fe3130389710216c23" kind="property"><name>AvailablePlaces</name></member>
+    <member refid="class_data_1_1_models_1_1_event_1a1e3ebda893d04be671a661a2ecd1e4f8" kind="property"><name>Bookings</name></member>
+    <member refid="class_data_1_1_models_1_1_event_1a95a2eaf7fb3f65eeaa715083e3a1e187" kind="property"><name>Posts</name></member>
+    <member refid="class_data_1_1_models_1_1_event_1a4d3d1a602490ccff80478b22fc863b92" kind="property"><name>state</name></member>
+    <member refid="class_data_1_1_models_1_1_event_1a267291381c1a8e8c95d056944801e1d2" kind="function"><name>Event</name></member>
+  </compound>
+  <compound refid="class_data_1_1_repositories_1_1_event_repository" kind="class"><name>Data::Repositories::EventRepository</name>
+    <member refid="class_data_1_1_repositories_1_1_event_repository_1a226b9256e908297d794f6685240d1965" kind="function"><name>EventRepository</name></member>
+    <member refid="class_data_1_1_repositories_1_1_event_repository_1a2f9f677ca46b99f3802b606f07d9ac04" kind="function"><name>GetAll</name></member>
+    <member refid="class_data_1_1_repositories_1_1_event_repository_1ac112c3a5306b6a0886d69d8b1a82eace" kind="function"><name>GetAll</name></member>
+    <member refid="class_data_1_1_repositories_1_1_event_repository_1ac3b3230675b79b7b6110c2c8079ca723" kind="function"><name>GetByAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_event_repository_1aab781162b7534701dd82d3f2071f9a3f" kind="function"><name>GetByIdAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_event_repository_1a5c6aef71f356302fc2a4a8c75de6909f" kind="function"><name>UpdateAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_event_repository_1a3d5ac8653cfe4663b5d3f2eee7257bf6" kind="function"><name>CreateAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_event_repository_1a94cd22580a8d817ee959d78ddfe10404" kind="function"><name>AcceptEventAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_event_repository_1a83fbb08edb080ce7061a6576a85ec126" kind="function"><name>RefuseEventAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_event_repository_1a4f1c1f62c46ee2e4bbc926a6973aff26" kind="function"><name>RevertStateAsync</name></member>
+  </compound>
+  <compound refid="class_event_service" kind="class"><name>EventService</name>
+    <member refid="class_event_service_1a3d6f1fbfc805468209e9d7fcc9cba44a" kind="variable"><name>__ServiceName</name></member>
+    <member refid="class_event_service_1a8d2a8d0f04259eddb2f3cd506023ac3e" kind="variable"><name>__Marshaller_CreateEventRequest</name></member>
+    <member refid="class_event_service_1a123cd0a4111e62e841e6d35a99de7034" kind="variable"><name>__Marshaller_GetEventResponse</name></member>
+    <member refid="class_event_service_1a504255731336e58df1e7636e169c1707" kind="variable"><name>__Marshaller_GetRequest</name></member>
+    <member refid="class_event_service_1a628ffccd145eb6a29877afe5f190b1fd" kind="variable"><name>__Marshaller_GetEventsByUserResponse</name></member>
+    <member refid="class_event_service_1ad7a7d451880b51e22c748aa6a1cceba0" kind="variable"><name>__Marshaller_google_protobuf_Empty</name></member>
+    <member refid="class_event_service_1abb01a9f4ca7148f72312d68177df0ca6" kind="variable"><name>__Marshaller_GetEventsResponse</name></member>
+    <member refid="class_event_service_1ab8cd2939301b2be6f975a31c5fb497df" kind="variable"><name>__Marshaller_BookEventRequest</name></member>
+    <member refid="class_event_service_1a9723fcd95e776ed201c0081a3da34d74" kind="variable"><name>__Marshaller_BookEventResponse</name></member>
+    <member refid="class_event_service_1acb4f1021a5a526aa8e6bbc350186f55e" kind="variable"><name>__Method_CreateEvent</name></member>
+    <member refid="class_event_service_1ac3ea8e4b53510cf8ccc8d72c5af72843" kind="variable"><name>__Method_GetEvent</name></member>
+    <member refid="class_event_service_1a5c556544d0c34c57ed1263f6cfbd5af2" kind="variable"><name>__Method_GetEventsByUser</name></member>
+    <member refid="class_event_service_1a5478ebfac5e73de878106b821b37f05d" kind="variable"><name>__Method_GetAllEvents</name></member>
+    <member refid="class_event_service_1ac9e640a9eb0b1fa5d37d03b88f6c3343" kind="variable"><name>__Method_BookEvent</name></member>
+    <member refid="class_event_service_1a9cf7a5c7a9fcf0b7ef02d6d53696ac60" kind="variable"><name>__Method_AcceptEvent</name></member>
+    <member refid="class_event_service_1a5850ab51bd02e361e229d5d91601b1a6" kind="variable"><name>__Method_RefuseEvent</name></member>
+    <member refid="class_event_service_1ab6ab1869be71900d03c67dede702150d" kind="variable"><name>__Method_ReverseState</name></member>
+    <member refid="class_event_service_1a6651d39133d6c6873c3801467e773115" kind="property"><name>Descriptor</name></member>
+    <member refid="class_event_service_1a336d84b450834a8f50b1369971a88d7c" kind="function"><name>__Helper_SerializeMessage</name></member>
+    <member refid="class_event_service_1af2d6cc2412ce67f41e4425c60c1f0aaf" kind="function"><name>__Helper_DeserializeMessage&lt; T &gt;</name></member>
+    <member refid="class_event_service_1a241060a45110f4bd795a81e47cb0954e" kind="function"><name>BindService</name></member>
+    <member refid="class_event_service_1a936ff8afb9555b5b79c28a8b3a4b238f" kind="function"><name>BindService</name></member>
+  </compound>
+  <compound refid="class_event_service_1_1_event_service_base" kind="class"><name>EventService::EventServiceBase</name>
+    <member refid="class_event_service_1_1_event_service_base_1ad2e015578a7d1057189ecc1137ff2cea" kind="function"><name>CreateEvent</name></member>
+    <member refid="class_event_service_1_1_event_service_base_1a9b08193df54689323e796cd749d9f4c1" kind="function"><name>GetEvent</name></member>
+    <member refid="class_event_service_1_1_event_service_base_1a38218fbe030a172d3b585a4af68d12f5" kind="function"><name>GetEventsByUser</name></member>
+    <member refid="class_event_service_1_1_event_service_base_1acbad882ee0ff2d0153b75312ffe6caea" kind="function"><name>GetAllEvents</name></member>
+    <member refid="class_event_service_1_1_event_service_base_1a438b9e7792746d6e722dd4989d1765d6" kind="function"><name>BookEvent</name></member>
+    <member refid="class_event_service_1_1_event_service_base_1ab7187adce64f0ddb55a7cd87c21dfb38" kind="function"><name>AcceptEvent</name></member>
+    <member refid="class_event_service_1_1_event_service_base_1a7a055f79cabb0639fd67358d1132eaf7" kind="function"><name>RefuseEvent</name></member>
+    <member refid="class_event_service_1_1_event_service_base_1ab51bf3c62ae65a1db5e081537f869355" kind="function"><name>ReverseState</name></member>
+  </compound>
+  <compound refid="class_service_1_1_services_1_1_event_service_impl" kind="class"><name>Service::Services::EventServiceImpl</name>
+    <member refid="class_service_1_1_services_1_1_event_service_impl_1a5d8916fb6f2cb56226119c8f298c4c66" kind="variable"><name>_logger</name></member>
+    <member refid="class_service_1_1_services_1_1_event_service_impl_1a54a5218d1d028a7f8b3caeeac2d9e514" kind="variable"><name>_eventRepository</name></member>
+    <member refid="class_service_1_1_services_1_1_event_service_impl_1a80f796ce90bf41b445d0f7f93e3b1384" kind="variable"><name>_bookingRepository</name></member>
+    <member refid="class_service_1_1_services_1_1_event_service_impl_1afcf325584b268c2332c93596d77e4c7e" kind="function"><name>EventServiceImpl</name></member>
+    <member refid="class_service_1_1_services_1_1_event_service_impl_1ad3ea7fb3bde95e10eaaa9108c87c76ba" kind="function"><name>GetAllEvents</name></member>
+    <member refid="class_service_1_1_services_1_1_event_service_impl_1a9ce98880416f10c0e50157a6523e7fbe" kind="function"><name>CreateEvent</name></member>
+    <member refid="class_service_1_1_services_1_1_event_service_impl_1a89252691fabc52a2c6d45b82a0c82248" kind="function"><name>GetEventsByUser</name></member>
+    <member refid="class_service_1_1_services_1_1_event_service_impl_1aacd4ba7aedc0cc35cf41a182faca698b" kind="function"><name>GetEvent</name></member>
+    <member refid="class_service_1_1_services_1_1_event_service_impl_1a2729c81f6b3db3380f0d393598786d6f" kind="function"><name>BookEvent</name></member>
+    <member refid="class_service_1_1_services_1_1_event_service_impl_1a934b03378d08421f30f2b764d43efce9" kind="function"><name>AcceptEvent</name></member>
+    <member refid="class_service_1_1_services_1_1_event_service_impl_1a019a368c9df5d196c9941d9419dceaf7" kind="function"><name>RefuseEvent</name></member>
+    <member refid="class_service_1_1_services_1_1_event_service_impl_1ab4f1088230819e003c4a084df5b3e538" kind="function"><name>ReverseState</name></member>
+  </compound>
+  <compound refid="class_data_1_1_state_1_1_event_state" kind="class"><name>Data::State::EventState</name>
+    <member refid="class_data_1_1_state_1_1_event_state_1a9a494b2a9053d771e06304099c29a5dd" kind="property"><name>Role</name></member>
+    <member refid="class_data_1_1_state_1_1_event_state_1a84cd81516ce6ceb204d60406698687f5" kind="function"><name>accept</name></member>
+    <member refid="class_data_1_1_state_1_1_event_state_1ae52c293a9c5840c68ff5ab7c6a8ee08b" kind="function"><name>cancel</name></member>
+    <member refid="class_data_1_1_state_1_1_event_state_1acc0c34340712535f0a0200ce24d0ce61" kind="function"><name>refuse</name></member>
+  </compound>
+  <compound refid="class_get_book_request" kind="class"><name>GetBookRequest</name>
+    <member refid="class_get_book_request_1a653893674b57a1dc69a2d3ec7f759204" kind="variable"><name>_parser</name></member>
+    <member refid="class_get_book_request_1acf257a9536e340e07d2af26a73ac0dd4" kind="variable"><name>_unknownFields</name></member>
+    <member refid="class_get_book_request_1a47bd090183c2ff9502c3f4732f945570" kind="variable"><name>id_</name></member>
+    <member refid="class_get_book_request_1a140efbf5c4b1a0a6f0778efc489c25f4" kind="property"><name>Parser</name></member>
+    <member refid="class_get_book_request_1a4701f8d4cd452eb528bcba598ab5eb4d" kind="property"><name>Descriptor</name></member>
+    <member refid="class_get_book_request_1a1e7cafe8a79409d3c9ab07bfb15ef11a" kind="property"><name>Descriptor</name></member>
+    <member refid="class_get_book_request_1a7a7b6937754df629578686d7d1f628bb" kind="property"><name>Id</name></member>
+    <member refid="class_get_book_request_1a2b58fab554bb45c2337aae1664e51f9b" kind="variable"><name>IdFieldNumber</name></member>
+    <member refid="class_get_book_request_1ae844c4913e70f787970bf2242796e9d0" kind="function"><name>GetBookRequest</name></member>
+    <member refid="class_get_book_request_1a59ace6b22b8b115f0f29c31ee163f81c" kind="function"><name>GetBookRequest</name></member>
+    <member refid="class_get_book_request_1ae66583c70ed58d4a5a30fe6617d2184b" kind="function"><name>Clone</name></member>
+    <member refid="class_get_book_request_1a12195ae7303694f69b8f7527e1112a54" kind="function"><name>Equals</name></member>
+    <member refid="class_get_book_request_1ae0ab85dea6512fb212192f4a53a45e2d" kind="function"><name>Equals</name></member>
+    <member refid="class_get_book_request_1a5e45a11fd32340ff726b8613072466c0" kind="function"><name>GetHashCode</name></member>
+    <member refid="class_get_book_request_1a8cfd4a7686ee2b4137c6b9d7ba574364" kind="function"><name>ToString</name></member>
+    <member refid="class_get_book_request_1a632250c6c6f05e3a295f88934f475cfe" kind="function"><name>WriteTo</name></member>
+    <member refid="class_get_book_request_1ac149f7804e910d3c8c2f83948e1e3810" kind="function"><name>CalculateSize</name></member>
+    <member refid="class_get_book_request_1a8e780a045ac9a4239d9dbe556b43bd7b" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_get_book_request_1a946135f81f799942924ebcc0f4f1a1c8" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_get_book_request_1a2e7f9884fc2a61792d1fb09a4d6e3abd" kind="function"><name>OnConstruction</name></member>
+    <member refid="class_get_book_request_1a8028f05532d3cb3318322d581eaa8ab4" kind="function"><name>InternalWriteTo</name></member>
+    <member refid="class_get_book_request_1a5dd854db665ebe4f913ee6a3ddb6a18a" kind="function"><name>InternalMergeFrom</name></member>
+  </compound>
+  <compound refid="class_get_books_response" kind="class"><name>GetBooksResponse</name>
+    <member refid="class_get_books_response_1a6374d25d562ff47cdaa8557ade85ae9c" kind="variable"><name>_parser</name></member>
+    <member refid="class_get_books_response_1a4a2d3ed7da8fdc3959c1ade81270ea2a" kind="variable"><name>_repeated_book_codec</name></member>
+    <member refid="class_get_books_response_1af43c68093ae915cd4b231452910bcb8b" kind="variable"><name>_unknownFields</name></member>
+    <member refid="class_get_books_response_1adc62f9d46f89042edc98c5f0994c28d3" kind="variable"><name>book_</name></member>
+    <member refid="class_get_books_response_1ace1babbe88ea5bd9000e60b93f8e01ee" kind="property"><name>Parser</name></member>
+    <member refid="class_get_books_response_1ab768c0d9734971086afd9515fc8f7b0a" kind="property"><name>Descriptor</name></member>
+    <member refid="class_get_books_response_1a420914b9733e06bf4b6de28c59f8f561" kind="property"><name>Descriptor</name></member>
+    <member refid="class_get_books_response_1a0f9bc910749b533800959b11c96db2c8" kind="property"><name>Book</name></member>
+    <member refid="class_get_books_response_1a089aadde1f85cc87e0e1b9b17f679ef2" kind="variable"><name>BookFieldNumber</name></member>
+    <member refid="class_get_books_response_1a036b849ea1d8268531ee6a08d0ffa864" kind="function"><name>GetBooksResponse</name></member>
+    <member refid="class_get_books_response_1a176e01c83dc9bb4ff54cd0482dca6588" kind="function"><name>GetBooksResponse</name></member>
+    <member refid="class_get_books_response_1afd52bd8d8e8d6b9f4325b57b6f44e687" kind="function"><name>Clone</name></member>
+    <member refid="class_get_books_response_1a2427dc7e0eb70a98822ab798ac594bcc" kind="function"><name>Equals</name></member>
+    <member refid="class_get_books_response_1aa55cecfeae067b36cbf8c62384ae55c8" kind="function"><name>Equals</name></member>
+    <member refid="class_get_books_response_1a8f0b5dd0eb3de6d7375e96fbfc197109" kind="function"><name>GetHashCode</name></member>
+    <member refid="class_get_books_response_1a93e946d0146256b3fb9cb7d51555d0be" kind="function"><name>ToString</name></member>
+    <member refid="class_get_books_response_1a587e4151196f20303b54b889c5f36f99" kind="function"><name>WriteTo</name></member>
+    <member refid="class_get_books_response_1a9ced94d4e86a8566c1efc9bc47ffc731" kind="function"><name>CalculateSize</name></member>
+    <member refid="class_get_books_response_1a8e98d88806a7a13c6733ed582ea18edd" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_get_books_response_1a9a33474aa92a5b993727cc92fd66b087" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_get_books_response_1a318c25a61614c0b004bd9b407df394a7" kind="function"><name>OnConstruction</name></member>
+    <member refid="class_get_books_response_1a5b38c795fa26425df4e49ffc1a6e48e7" kind="function"><name>InternalWriteTo</name></member>
+    <member refid="class_get_books_response_1a7c2c2bd8bf18f36c46e07854eb2f46d0" kind="function"><name>InternalMergeFrom</name></member>
+  </compound>
+  <compound refid="class_get_event_by_user_response" kind="class"><name>GetEventByUserResponse</name>
+    <member refid="class_get_event_by_user_response_1a29f1dd3e4e4e95fdda55433cb5deb6db" kind="variable"><name>_parser</name></member>
+    <member refid="class_get_event_by_user_response_1ae62d3d2f601e8111fa25a4c578f62ff7" kind="variable"><name>_unknownFields</name></member>
+    <member refid="class_get_event_by_user_response_1a625e63fe1a01f3238a5e86cfe9f9b5ac" kind="variable"><name>id_</name></member>
+    <member refid="class_get_event_by_user_response_1a198d72d4f478de85b36bd8d44aa8ae27" kind="variable"><name>name_</name></member>
+    <member refid="class_get_event_by_user_response_1a061d64d28045337da6890dc7a0817cf6" kind="variable"><name>description_</name></member>
+    <member refid="class_get_event_by_user_response_1a7d29110973396e4b1eeb64ec9b8b939b" kind="variable"><name>entertainerId_</name></member>
+    <member refid="class_get_event_by_user_response_1a80c7c0b16adf0878929f39bd8358010c" kind="variable"><name>cafeOwnerId_</name></member>
+    <member refid="class_get_event_by_user_response_1a79b48c80b020f5d70adfe7437e62d60b" kind="variable"><name>startDate_</name></member>
+    <member refid="class_get_event_by_user_response_1a66f83ade169e07dd4f7acc10937eeac4" kind="variable"><name>endDate_</name></member>
+    <member refid="class_get_event_by_user_response_1a4c3216c4ccd65d206d1b42133a21aaeb" kind="variable"><name>availablePlaces_</name></member>
+    <member refid="class_get_event_by_user_response_1a4cdad542d7ff2c1e2e65b476688968c6" kind="variable"><name>state_</name></member>
+    <member refid="class_get_event_by_user_response_1ac0c9c3413919fce45b7d580bbf9aaf8c" kind="variable"><name>entertainer_</name></member>
+    <member refid="class_get_event_by_user_response_1ac3c0df18274122f7c1d44e2de263beb7" kind="variable"><name>cafeOwner_</name></member>
+    <member refid="class_get_event_by_user_response_1aa543f9562a36872ffe902ebdb8f6227b" kind="property"><name>Parser</name></member>
+    <member refid="class_get_event_by_user_response_1a42278bc32f1a12f57f2554ddaf2f794e" kind="property"><name>Descriptor</name></member>
+    <member refid="class_get_event_by_user_response_1a68da45c2530ccfbd3f1ae60238ef4880" kind="property"><name>Descriptor</name></member>
+    <member refid="class_get_event_by_user_response_1a1156c3666bda7de1f8d621d1d05d2d9b" kind="property"><name>Id</name></member>
+    <member refid="class_get_event_by_user_response_1a929cc104311b5f90639483c46377fa14" kind="property"><name>Name</name></member>
+    <member refid="class_get_event_by_user_response_1a8c4a86f55fca9103c5b02c48c1352462" kind="property"><name>Description</name></member>
+    <member refid="class_get_event_by_user_response_1aeb091887422ebe45d1e7ba85dd0adec7" kind="property"><name>EntertainerId</name></member>
+    <member refid="class_get_event_by_user_response_1a163c2815291a16b32bd3838993c58f6a" kind="property"><name>CafeOwnerId</name></member>
+    <member refid="class_get_event_by_user_response_1aaac331e2d7ea8b3ee6859f4e006b9804" kind="property"><name>StartDate</name></member>
+    <member refid="class_get_event_by_user_response_1aa11a0af00b18a3d7f111929d33b41704" kind="property"><name>EndDate</name></member>
+    <member refid="class_get_event_by_user_response_1a932fd615394284bac0a769d1efc60f47" kind="property"><name>AvailablePlaces</name></member>
+    <member refid="class_get_event_by_user_response_1ae7cf5b48b1344c88e9bf0bd42e529493" kind="property"><name>State</name></member>
+    <member refid="class_get_event_by_user_response_1a2da261c261f4f3e44679b4dd8c65dca1" kind="property"><name>Entertainer</name></member>
+    <member refid="class_get_event_by_user_response_1a7a17efd386733152da6d6f480190ad98" kind="property"><name>CafeOwner</name></member>
+    <member refid="class_get_event_by_user_response_1a781f9f34ece1308d69cf2b264d34edb2" kind="variable"><name>IdFieldNumber</name></member>
+    <member refid="class_get_event_by_user_response_1a71c106b11b690e7d16611c163d56c2d5" kind="variable"><name>NameFieldNumber</name></member>
+    <member refid="class_get_event_by_user_response_1a38eba956df20f336a6246b08622ffa69" kind="variable"><name>DescriptionFieldNumber</name></member>
+    <member refid="class_get_event_by_user_response_1ae43ede5c970196e6a35d24ce087148c3" kind="variable"><name>EntertainerIdFieldNumber</name></member>
+    <member refid="class_get_event_by_user_response_1af6db39022e48a9d7846e4ea5b8f0f244" kind="variable"><name>CafeOwnerIdFieldNumber</name></member>
+    <member refid="class_get_event_by_user_response_1ad053b4ed5065755ef277ae6ce2851550" kind="variable"><name>StartDateFieldNumber</name></member>
+    <member refid="class_get_event_by_user_response_1a0451d2b66680bf41078bc992d4786f15" kind="variable"><name>EndDateFieldNumber</name></member>
+    <member refid="class_get_event_by_user_response_1a8e7cf41e66f18701a858fde5bb32a2de" kind="variable"><name>AvailablePlacesFieldNumber</name></member>
+    <member refid="class_get_event_by_user_response_1ac9c033625963eda1d31d5a7d9f9abc27" kind="variable"><name>StateFieldNumber</name></member>
+    <member refid="class_get_event_by_user_response_1a602819d654b09c6e758f9fe4d5849479" kind="variable"><name>EntertainerFieldNumber</name></member>
+    <member refid="class_get_event_by_user_response_1ad30e51a1b44f3aed83978701bebc8cfc" kind="variable"><name>CafeOwnerFieldNumber</name></member>
+    <member refid="class_get_event_by_user_response_1a9db251282e9d4ab28260a9a5004cbec2" kind="function"><name>GetEventByUserResponse</name></member>
+    <member refid="class_get_event_by_user_response_1a5cc3a42886f9d849b63f5b331834112f" kind="function"><name>GetEventByUserResponse</name></member>
+    <member refid="class_get_event_by_user_response_1a8592dea8842840024936f1d1dfe69dc8" kind="function"><name>Clone</name></member>
+    <member refid="class_get_event_by_user_response_1ae7de42984f8a46113c84c3f317fd5c8c" kind="function"><name>Equals</name></member>
+    <member refid="class_get_event_by_user_response_1a8c305c943a3fac74a4cedb26bdf63a65" kind="function"><name>Equals</name></member>
+    <member refid="class_get_event_by_user_response_1aaa287dc845c57410d2d9162023e130cb" kind="function"><name>GetHashCode</name></member>
+    <member refid="class_get_event_by_user_response_1ac5fd221f26dc99df353273d5ef0dd639" kind="function"><name>ToString</name></member>
+    <member refid="class_get_event_by_user_response_1a07eb855a801e0ba3154135b96c4d4b84" kind="function"><name>WriteTo</name></member>
+    <member refid="class_get_event_by_user_response_1a5224a1226b513427dd33ab666b6309db" kind="function"><name>CalculateSize</name></member>
+    <member refid="class_get_event_by_user_response_1a76691ce6427ec55306763bce48d4905e" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_get_event_by_user_response_1aa7639806b53d7776fbc555b92321f27b" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_get_event_by_user_response_1aa5e29725f4bb333d31f17a211d23eec7" kind="function"><name>OnConstruction</name></member>
+    <member refid="class_get_event_by_user_response_1a0d4bb33c540fb04a5e3574c4ea05b316" kind="function"><name>InternalWriteTo</name></member>
+    <member refid="class_get_event_by_user_response_1aae30a51a3dc5f6051f4a6cca25ff2c87" kind="function"><name>InternalMergeFrom</name></member>
+  </compound>
+  <compound refid="class_get_event_response" kind="class"><name>GetEventResponse</name>
+    <member refid="class_get_event_response_1a7f64c97a5c6891fa9a17f315a977a6e6" kind="variable"><name>_parser</name></member>
+    <member refid="class_get_event_response_1ad22ee2d96b47d30b221426823469c49c" kind="variable"><name>_unknownFields</name></member>
+    <member refid="class_get_event_response_1a22984be09762496e5297a7cb816efc91" kind="variable"><name>id_</name></member>
+    <member refid="class_get_event_response_1a9707158c52cb72736c048e6e6f4c6807" kind="variable"><name>name_</name></member>
+    <member refid="class_get_event_response_1a1b4a3cbf20c070f9cf9fcac83fa47b1a" kind="variable"><name>description_</name></member>
+    <member refid="class_get_event_response_1ab311e5062bfaedef40d98a02ac43f7b6" kind="variable"><name>entertainerId_</name></member>
+    <member refid="class_get_event_response_1a29f3039e656479196cb73aeff5034f2b" kind="variable"><name>cafeOwnerId_</name></member>
+    <member refid="class_get_event_response_1aaafe6a258369398ea458dd3e25165e70" kind="variable"><name>startDate_</name></member>
+    <member refid="class_get_event_response_1a60a32b4f2d8b17dba1d92e2a3925b924" kind="variable"><name>endDate_</name></member>
+    <member refid="class_get_event_response_1af0398b4c197f9c10d892a38a2eaf53cc" kind="variable"><name>availablePlaces_</name></member>
+    <member refid="class_get_event_response_1a42d7054293d86cbf0f4309e4cfa756d8" kind="variable"><name>state_</name></member>
+    <member refid="class_get_event_response_1aefc285f1c5b014f43872f7f9c2be063a" kind="variable"><name>entertainer_</name></member>
+    <member refid="class_get_event_response_1ac282dedc9ee5a7669d64f0a087353b67" kind="variable"><name>cafeOwner_</name></member>
+    <member refid="class_get_event_response_1a88d469c5d0cc34398bce97ac36195ae9" kind="property"><name>Parser</name></member>
+    <member refid="class_get_event_response_1a6176643b6219b96233d1b2bcfff72532" kind="property"><name>Descriptor</name></member>
+    <member refid="class_get_event_response_1a800147d78e0e23513765f0eb59d6b461" kind="property"><name>Descriptor</name></member>
+    <member refid="class_get_event_response_1aa4efb6672d0e3fb5cd8fc773d73ad541" kind="property"><name>Id</name></member>
+    <member refid="class_get_event_response_1afe16f20f2d1f55cef2df783cea945342" kind="property"><name>Name</name></member>
+    <member refid="class_get_event_response_1a7ef557c4ce21f250bbb4a0ad45fd8402" kind="property"><name>Description</name></member>
+    <member refid="class_get_event_response_1a85a5a692b7da00dff85ca43e7ed4e981" kind="property"><name>EntertainerId</name></member>
+    <member refid="class_get_event_response_1a1c556e7a2d58d549b523a1356a4a23cf" kind="property"><name>CafeOwnerId</name></member>
+    <member refid="class_get_event_response_1a4b0f46bef0dfb7a866591da06891c7c3" kind="property"><name>StartDate</name></member>
+    <member refid="class_get_event_response_1a600adb92ba621cc62aba69f14ec2a5bc" kind="property"><name>EndDate</name></member>
+    <member refid="class_get_event_response_1a2fdc07b4847fe037feef5fe6f60a8094" kind="property"><name>AvailablePlaces</name></member>
+    <member refid="class_get_event_response_1aa4a9c85b737efd2671ec54dabd46d313" kind="property"><name>State</name></member>
+    <member refid="class_get_event_response_1a02f4730c4f4528132cdef25ec4cfbc6c" kind="property"><name>Entertainer</name></member>
+    <member refid="class_get_event_response_1a5882e64dacec4bbb419ae4b653847224" kind="property"><name>CafeOwner</name></member>
+    <member refid="class_get_event_response_1ae7a9ebb76dcc93190e3edf495c101108" kind="variable"><name>IdFieldNumber</name></member>
+    <member refid="class_get_event_response_1ac5deabcf0013d50565abf2e178642f0e" kind="variable"><name>NameFieldNumber</name></member>
+    <member refid="class_get_event_response_1a01b90d502820036bf1277e7debd95ad7" kind="variable"><name>DescriptionFieldNumber</name></member>
+    <member refid="class_get_event_response_1acd3ad28211ab5a34d9b0bbac47e1c859" kind="variable"><name>EntertainerIdFieldNumber</name></member>
+    <member refid="class_get_event_response_1aec1643bf1bfb1a2c11a1f642e18215ac" kind="variable"><name>CafeOwnerIdFieldNumber</name></member>
+    <member refid="class_get_event_response_1a9ffeb6d9f2f105a84065a811ebcc7a88" kind="variable"><name>StartDateFieldNumber</name></member>
+    <member refid="class_get_event_response_1a83c521a46d5cb83cd425cb792c6ec40f" kind="variable"><name>EndDateFieldNumber</name></member>
+    <member refid="class_get_event_response_1aee1b7cf380ca0571e04c8e276861eacb" kind="variable"><name>AvailablePlacesFieldNumber</name></member>
+    <member refid="class_get_event_response_1acbcf7be8e7198e86524d6c361d4c30cd" kind="variable"><name>StateFieldNumber</name></member>
+    <member refid="class_get_event_response_1a3132ee552ded830ae5a080a0d392af6f" kind="variable"><name>EntertainerFieldNumber</name></member>
+    <member refid="class_get_event_response_1a195042c67083994611b55cb66b83c67f" kind="variable"><name>CafeOwnerFieldNumber</name></member>
+    <member refid="class_get_event_response_1aea3b8d37e41e247e9b9b9702d2b6963c" kind="function"><name>GetEventResponse</name></member>
+    <member refid="class_get_event_response_1a825450876dfccac7edae4943433607e0" kind="function"><name>GetEventResponse</name></member>
+    <member refid="class_get_event_response_1a190a160009afda1fb935d37c57d869b0" kind="function"><name>Clone</name></member>
+    <member refid="class_get_event_response_1add128c17a08d341d2c30274c5fcec03c" kind="function"><name>Equals</name></member>
+    <member refid="class_get_event_response_1a887a54f0fe5a309dbba041aa07d94e85" kind="function"><name>Equals</name></member>
+    <member refid="class_get_event_response_1ade28efce8a608b377bc64c69d9e57aa4" kind="function"><name>GetHashCode</name></member>
+    <member refid="class_get_event_response_1a739f1be6fe7a6a8dc65c3a36a4241d7f" kind="function"><name>ToString</name></member>
+    <member refid="class_get_event_response_1adae03f05e5a10ea560eacb729794e349" kind="function"><name>WriteTo</name></member>
+    <member refid="class_get_event_response_1aa6e78197a07250fb73144cbd52d50570" kind="function"><name>CalculateSize</name></member>
+    <member refid="class_get_event_response_1a7ba5e649a4656353a203b9ba51c05ef9" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_get_event_response_1a7c0de07a71e5a3c5875c0f039ebb5628" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_get_event_response_1ae1c46dd13ead73e6bf1eb82e79146c71" kind="function"><name>OnConstruction</name></member>
+    <member refid="class_get_event_response_1a782197827b43749ff154846ad143d497" kind="function"><name>InternalWriteTo</name></member>
+    <member refid="class_get_event_response_1a1c7bf91e64ffdd19ba8ee43c509a884a" kind="function"><name>InternalMergeFrom</name></member>
+  </compound>
+  <compound refid="class_get_events_by_user_response" kind="class"><name>GetEventsByUserResponse</name>
+    <member refid="class_get_events_by_user_response_1a0a292c45c2b11727c2eff64c05c96a88" kind="variable"><name>_parser</name></member>
+    <member refid="class_get_events_by_user_response_1a5208ed33eb54116f3a99849a4a470597" kind="variable"><name>_repeated_events_codec</name></member>
+    <member refid="class_get_events_by_user_response_1ad2168a835cbb0a3cf0994e268ac4d56c" kind="variable"><name>_unknownFields</name></member>
+    <member refid="class_get_events_by_user_response_1ad5d37c8d0e3bde73af37ee91ddb74cf9" kind="variable"><name>events_</name></member>
+    <member refid="class_get_events_by_user_response_1afc0260dfdcaf5cc4972f9d3d7a83d183" kind="property"><name>Parser</name></member>
+    <member refid="class_get_events_by_user_response_1ae62a156e5093090febf7ffb11800cf18" kind="property"><name>Descriptor</name></member>
+    <member refid="class_get_events_by_user_response_1a99e0b2bf8e678daf2fc95b1740f5f6b1" kind="property"><name>Descriptor</name></member>
+    <member refid="class_get_events_by_user_response_1a50d93c3eddd9aa670a458ed52cc1ba29" kind="property"><name>Events</name></member>
+    <member refid="class_get_events_by_user_response_1a7ce09227d3a0e8409a31b46edd8209ce" kind="variable"><name>EventsFieldNumber</name></member>
+    <member refid="class_get_events_by_user_response_1a1c32ed81e45db4ba99567591d7cc6cee" kind="function"><name>GetEventsByUserResponse</name></member>
+    <member refid="class_get_events_by_user_response_1a801f3fc391b19aa841bc823fdd187cb9" kind="function"><name>GetEventsByUserResponse</name></member>
+    <member refid="class_get_events_by_user_response_1af6fd628cedbe8d77ce3199cfd77586f1" kind="function"><name>Clone</name></member>
+    <member refid="class_get_events_by_user_response_1a41b34aa967f999012cf9e1d7ddf8f916" kind="function"><name>Equals</name></member>
+    <member refid="class_get_events_by_user_response_1a6876fefabaefe23df6f10540e6f1aa90" kind="function"><name>Equals</name></member>
+    <member refid="class_get_events_by_user_response_1a475128c366afa9449cf036e82697deff" kind="function"><name>GetHashCode</name></member>
+    <member refid="class_get_events_by_user_response_1a70538536590b1f20ce3579b0930b6e34" kind="function"><name>ToString</name></member>
+    <member refid="class_get_events_by_user_response_1a51ec820fb4fc2b73bab006028dfe72e7" kind="function"><name>WriteTo</name></member>
+    <member refid="class_get_events_by_user_response_1a63766324d0479c5c0bdb518208928cd9" kind="function"><name>CalculateSize</name></member>
+    <member refid="class_get_events_by_user_response_1a118c4d13791e68da413bc15d1df46d03" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_get_events_by_user_response_1a9b16c14c1fa2b3191c88d2ea5f289194" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_get_events_by_user_response_1a11fdd89740d82e61d9ef80cdddbe5ba2" kind="function"><name>OnConstruction</name></member>
+    <member refid="class_get_events_by_user_response_1aaba03871de83e37ee8c1f56e942dd635" kind="function"><name>InternalWriteTo</name></member>
+    <member refid="class_get_events_by_user_response_1a825ec7cee85fe743f0047b895969580b" kind="function"><name>InternalMergeFrom</name></member>
+  </compound>
+  <compound refid="class_get_events_response" kind="class"><name>GetEventsResponse</name>
+    <member refid="class_get_events_response_1a357b035cc8c4180b1dcecf1ea1744cc8" kind="variable"><name>_parser</name></member>
+    <member refid="class_get_events_response_1a3716581035bcf530eadbaf1233a83dd6" kind="variable"><name>_repeated_event_codec</name></member>
+    <member refid="class_get_events_response_1ae56a26e063ce4416732add6b3ebf3c1b" kind="variable"><name>_unknownFields</name></member>
+    <member refid="class_get_events_response_1a913f9aec441b438acc0a86b68e53598b" kind="variable"><name>event_</name></member>
+    <member refid="class_get_events_response_1a3ccffe426b2e1b6f2520ecec26cd1b5b" kind="property"><name>Parser</name></member>
+    <member refid="class_get_events_response_1a1c8f1b24e9a16d26bbdd9e7e55a6b871" kind="property"><name>Descriptor</name></member>
+    <member refid="class_get_events_response_1aefde2e01f16a242fdc35afbb00aaa3d8" kind="property"><name>Descriptor</name></member>
+    <member refid="class_get_events_response_1abde59e94363843bea0b16378157d7757" kind="property"><name>Event</name></member>
+    <member refid="class_get_events_response_1ac9b23cb0a6e9305a8979344d6860888b" kind="variable"><name>EventFieldNumber</name></member>
+    <member refid="class_get_events_response_1a22723b6af2878b5ddd172110c60aadc6" kind="function"><name>GetEventsResponse</name></member>
+    <member refid="class_get_events_response_1ab607b13d889acbb02f27c45fdf65f8f3" kind="function"><name>GetEventsResponse</name></member>
+    <member refid="class_get_events_response_1a80997789ad99ff8af9b9542a28f7fc0e" kind="function"><name>Clone</name></member>
+    <member refid="class_get_events_response_1af9fe8079f2c0d701ce70e094470f4a19" kind="function"><name>Equals</name></member>
+    <member refid="class_get_events_response_1a7b8782303afb4bbffb7e08777c0310d8" kind="function"><name>Equals</name></member>
+    <member refid="class_get_events_response_1ae5126234aa157610c7551cf549cd28c3" kind="function"><name>GetHashCode</name></member>
+    <member refid="class_get_events_response_1a01d3000e4bf2cd6e1efe4a980a50aa26" kind="function"><name>ToString</name></member>
+    <member refid="class_get_events_response_1aff2fb1d04c3dcfeda539556a8a00bf10" kind="function"><name>WriteTo</name></member>
+    <member refid="class_get_events_response_1a2ff209d3cd776266a222a1def31671f8" kind="function"><name>CalculateSize</name></member>
+    <member refid="class_get_events_response_1a98e1fa6b735caaab5f2d8dd8dcd66e9f" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_get_events_response_1ab74d0eb0e1fc5aa08009810f8bb265b7" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_get_events_response_1ab4f367100c53a2449ac6325a2a48ec50" kind="function"><name>OnConstruction</name></member>
+    <member refid="class_get_events_response_1ab61d256f25f352606e3140f149d4c735" kind="function"><name>InternalWriteTo</name></member>
+    <member refid="class_get_events_response_1a4b3c9762c97db61383d459acab839f84" kind="function"><name>InternalMergeFrom</name></member>
+  </compound>
+  <compound refid="class_get_post_response" kind="class"><name>GetPostResponse</name>
+    <member refid="class_get_post_response_1aee40be9138a85ce9e14a3e8a98a60a47" kind="variable"><name>_parser</name></member>
+    <member refid="class_get_post_response_1aed905198d864aa2ef3e183aa88628b89" kind="variable"><name>_unknownFields</name></member>
+    <member refid="class_get_post_response_1a3ec846b17d5a440ffff491c5ba72c765" kind="variable"><name>id_</name></member>
+    <member refid="class_get_post_response_1a6b1585eb98fa4ad38f4fc0125d8e8e9f" kind="variable"><name>author_</name></member>
+    <member refid="class_get_post_response_1a9cb9946aefef74bdb456c157480a567a" kind="variable"><name>title_</name></member>
+    <member refid="class_get_post_response_1ae44c238d75c6910402fb823cccae09b8" kind="variable"><name>content_</name></member>
+    <member refid="class_get_post_response_1a0fa63e0335630f3139fcde737c40a18c" kind="variable"><name>date_</name></member>
+    <member refid="class_get_post_response_1ad52c389f70cb67a634c4e35583ed1cb0" kind="variable"><name>eventId_</name></member>
+    <member refid="class_get_post_response_1a745666e02424c5c50c99bc9b117e599e" kind="variable"><name>authorName_</name></member>
+    <member refid="class_get_post_response_1a68da072d762a70c46690fbcf5ef3fa93" kind="property"><name>Parser</name></member>
+    <member refid="class_get_post_response_1abaf20a93e0dafcbb85c322a04ba14db1" kind="property"><name>Descriptor</name></member>
+    <member refid="class_get_post_response_1a258ed585a9cc1d6133bf22e999523a3f" kind="property"><name>Descriptor</name></member>
+    <member refid="class_get_post_response_1a9136bf22ff303ed52d40762c3fa62510" kind="property"><name>Id</name></member>
+    <member refid="class_get_post_response_1ae2ad2fa3bc36877b7f8fb734910e5c06" kind="property"><name>Author</name></member>
+    <member refid="class_get_post_response_1a729250ff420e1936f1b186dcb079363c" kind="property"><name>Title</name></member>
+    <member refid="class_get_post_response_1adcff0074020a2373c55aef758e580aed" kind="property"><name>Content</name></member>
+    <member refid="class_get_post_response_1a2397ba9d7a1942e4364200a692c0a9ca" kind="property"><name>Date</name></member>
+    <member refid="class_get_post_response_1a37ff959a6f82fc2bc90ab3996370d181" kind="property"><name>EventId</name></member>
+    <member refid="class_get_post_response_1ad66bbf19ae007e52f0b1a9d9f3b50233" kind="property"><name>AuthorName</name></member>
+    <member refid="class_get_post_response_1a8b6deed212339528958935c18c96d1b2" kind="variable"><name>IdFieldNumber</name></member>
+    <member refid="class_get_post_response_1a7128557257c99b8d496403447931f64f" kind="variable"><name>AuthorFieldNumber</name></member>
+    <member refid="class_get_post_response_1a74a34318892ab1af04d0c276e233ed66" kind="variable"><name>TitleFieldNumber</name></member>
+    <member refid="class_get_post_response_1a8be9b79d927defdf27f5c63fbcad33ac" kind="variable"><name>ContentFieldNumber</name></member>
+    <member refid="class_get_post_response_1a03941effc8428594556b4dc41c7fc22f" kind="variable"><name>DateFieldNumber</name></member>
+    <member refid="class_get_post_response_1a33c374d4b4df2b615d2d642312f73885" kind="variable"><name>EventIdFieldNumber</name></member>
+    <member refid="class_get_post_response_1a668b47047ab7406b6ab26422472503d2" kind="variable"><name>AuthorNameFieldNumber</name></member>
+    <member refid="class_get_post_response_1ac0e4a22273a7d9d4d5b5170cfbb2e0d3" kind="function"><name>GetPostResponse</name></member>
+    <member refid="class_get_post_response_1a2175e7fc49ca74fac54d0e0b326738b1" kind="function"><name>GetPostResponse</name></member>
+    <member refid="class_get_post_response_1ab3f37800b8ae2ff5b306f2ced82dc7c3" kind="function"><name>Clone</name></member>
+    <member refid="class_get_post_response_1a6236aa9b5e9f049ce726dde47aa3ca5d" kind="function"><name>Equals</name></member>
+    <member refid="class_get_post_response_1a87e93a188aebdc883fc4437bd3a8caff" kind="function"><name>Equals</name></member>
+    <member refid="class_get_post_response_1aa51f26fced1b1ae50df8b86db21ecde5" kind="function"><name>GetHashCode</name></member>
+    <member refid="class_get_post_response_1ae281030264ce8eafecc3d25c4a55ef2e" kind="function"><name>ToString</name></member>
+    <member refid="class_get_post_response_1a9c3783d88ff252ef24a6295671fc064f" kind="function"><name>WriteTo</name></member>
+    <member refid="class_get_post_response_1a5fc06e9b5ac7387aca695f3051163481" kind="function"><name>CalculateSize</name></member>
+    <member refid="class_get_post_response_1ae9aa413d7946a3329a7ad200a9dd561f" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_get_post_response_1a62af55b86c7ee78a0641e51f80b6e159" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_get_post_response_1a2bf95e15a9317e2a1dae5d388fb80ab9" kind="function"><name>OnConstruction</name></member>
+    <member refid="class_get_post_response_1a25606a6f835dafb8abd6f73f8f4cfb25" kind="function"><name>InternalWriteTo</name></member>
+    <member refid="class_get_post_response_1a9c4b5a96640a1d08bb30f7415dbe3b7c" kind="function"><name>InternalMergeFrom</name></member>
+  </compound>
+  <compound refid="class_get_posts_response" kind="class"><name>GetPostsResponse</name>
+    <member refid="class_get_posts_response_1a1dd6712b543f8a341874ab6ef056f105" kind="variable"><name>_parser</name></member>
+    <member refid="class_get_posts_response_1aebf1f377043dbd81c64dde0358e96f99" kind="variable"><name>_repeated_posts_codec</name></member>
+    <member refid="class_get_posts_response_1a26828a5af1f08ef00a4727f144da439b" kind="variable"><name>_unknownFields</name></member>
+    <member refid="class_get_posts_response_1a9b6e9c233dad9d9ad2e82419d34cfa99" kind="variable"><name>posts_</name></member>
+    <member refid="class_get_posts_response_1ab89e9c5b0eca6ea019975d9e2b3245e7" kind="property"><name>Parser</name></member>
+    <member refid="class_get_posts_response_1ae90d4df358a31ab95123a837d735e04c" kind="property"><name>Descriptor</name></member>
+    <member refid="class_get_posts_response_1aa92093831820eea8c2b49df87b3d88d5" kind="property"><name>Descriptor</name></member>
+    <member refid="class_get_posts_response_1a868c00cfe6b09e78c40d2fae2e676984" kind="property"><name>Posts</name></member>
+    <member refid="class_get_posts_response_1a11e2ba3411c0d8130355842625ea69f3" kind="variable"><name>PostsFieldNumber</name></member>
+    <member refid="class_get_posts_response_1ad3c0c9f77cd4ba23f787559a683ef006" kind="function"><name>GetPostsResponse</name></member>
+    <member refid="class_get_posts_response_1a581f44fdac6c730226797c57840a5c26" kind="function"><name>GetPostsResponse</name></member>
+    <member refid="class_get_posts_response_1a552fbb1cce389dc09401a92ac26a9b76" kind="function"><name>Clone</name></member>
+    <member refid="class_get_posts_response_1a63baf6aa326c5a2c1047a0059bd48440" kind="function"><name>Equals</name></member>
+    <member refid="class_get_posts_response_1a2160f2fb47a6b602cde0fb4be43cdde7" kind="function"><name>Equals</name></member>
+    <member refid="class_get_posts_response_1a1b3ab70c2d42d48bf352b037e99f355a" kind="function"><name>GetHashCode</name></member>
+    <member refid="class_get_posts_response_1af4d54894be59d8bf9317e70f1d85840a" kind="function"><name>ToString</name></member>
+    <member refid="class_get_posts_response_1a9901b5d7b540e2c2d08ade8f4a742a19" kind="function"><name>WriteTo</name></member>
+    <member refid="class_get_posts_response_1ab302ee6d6c6db9cc28f632fddd6ba112" kind="function"><name>CalculateSize</name></member>
+    <member refid="class_get_posts_response_1a29b7be3428842acd5c6966f353ecf323" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_get_posts_response_1a4a625dfdc45d6864193dc800074b8617" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_get_posts_response_1a89da4b8e71701de5f99a7f3b53021b41" kind="function"><name>OnConstruction</name></member>
+    <member refid="class_get_posts_response_1a00de388bb18aee030abf7d6a9ffc8844" kind="function"><name>InternalWriteTo</name></member>
+    <member refid="class_get_posts_response_1ae513cb957d154eeca7ca32c4d662309b" kind="function"><name>InternalMergeFrom</name></member>
+  </compound>
+  <compound refid="class_get_request" kind="class"><name>GetRequest</name>
+    <member refid="class_get_request_1a1fd6336ae0bf89628fed48dc31925b92" kind="variable"><name>_parser</name></member>
+    <member refid="class_get_request_1a0f9d877aa6584be0a2b2df471da357da" kind="variable"><name>_unknownFields</name></member>
+    <member refid="class_get_request_1abf8069d7b6691e8f1dfcafd7651775b7" kind="variable"><name>id_</name></member>
+    <member refid="class_get_request_1a28d718d9eaecda237ca0b432de381224" kind="property"><name>Parser</name></member>
+    <member refid="class_get_request_1ab78153a9ae46d2361b209e3a7f79bb4d" kind="property"><name>Descriptor</name></member>
+    <member refid="class_get_request_1a8eee9c7e66df2e6cea79efedfd37c0bf" kind="property"><name>Descriptor</name></member>
+    <member refid="class_get_request_1ae77dd3529ffe24928ac463de6d1eb60d" kind="property"><name>Id</name></member>
+    <member refid="class_get_request_1ada4c548cf06dc40912c3788fa09fae04" kind="variable"><name>IdFieldNumber</name></member>
+    <member refid="class_get_request_1a676258a57bfe7a4e27cd92985b436379" kind="function"><name>GetRequest</name></member>
+    <member refid="class_get_request_1a381b309364edda8bb11ff059a2513df0" kind="function"><name>GetRequest</name></member>
+    <member refid="class_get_request_1a3f0232c7fac06beccd246e4f3b3e8628" kind="function"><name>Clone</name></member>
+    <member refid="class_get_request_1a3923505025dc6f413461ee04808a9b1a" kind="function"><name>Equals</name></member>
+    <member refid="class_get_request_1a92f0c3b3fc085d0ed4c170bb2e26351b" kind="function"><name>Equals</name></member>
+    <member refid="class_get_request_1ae4df61ffe6bd5dfde44c8c0199f75e65" kind="function"><name>GetHashCode</name></member>
+    <member refid="class_get_request_1a83ad199f072bde0a360f079a6d4c18e1" kind="function"><name>ToString</name></member>
+    <member refid="class_get_request_1adfc5e2dda485aefa150374d68a7a9644" kind="function"><name>WriteTo</name></member>
+    <member refid="class_get_request_1a65cf0f851101b451889f10f99d63faac" kind="function"><name>CalculateSize</name></member>
+    <member refid="class_get_request_1a329f9319609b33a16dc201c700ddd994" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_get_request_1a36455046a838a830e908be935d8e27f8" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_get_request_1a6a56ab43a2c9b1bb46fb226a1e2c40b3" kind="function"><name>OnConstruction</name></member>
+    <member refid="class_get_request_1aadad2344f2d71d4e42c70da678881bb2" kind="function"><name>InternalWriteTo</name></member>
+    <member refid="class_get_request_1adca04f8430196f9307e1fc5531b1e139" kind="function"><name>InternalMergeFrom</name></member>
+  </compound>
+  <compound refid="interface_data_1_1_interfaces_1_1_i_auth_repository" kind="interface"><name>Data::Interfaces::IAuthRepository</name>
+    <member refid="interface_data_1_1_interfaces_1_1_i_auth_repository_1a25b63c66ae687259fa798bc6dbd4dcc8" kind="function"><name>RegisterUserAsync</name></member>
+    <member refid="interface_data_1_1_interfaces_1_1_i_auth_repository_1ac8164392b3c959992614d395c9630a9b" kind="function"><name>LoginUserAsync</name></member>
+  </compound>
+  <compound refid="interface_data_1_1_interfaces_1_1_i_base_repository" kind="interface"><name>Data::Interfaces::IBaseRepository</name>
+    <member refid="interface_data_1_1_interfaces_1_1_i_base_repository_1a85e24924e99f5db8adf3fd50af6a313b" kind="function"><name>CreateAsync</name></member>
+    <member refid="interface_data_1_1_interfaces_1_1_i_base_repository_1ab16643ed17b737b626033e7176a3b388" kind="function"><name>DeleteAsync</name></member>
+    <member refid="interface_data_1_1_interfaces_1_1_i_base_repository_1a6c29fb2e5f8219a39933aff1286c3ecb" kind="function"><name>GetAll</name></member>
+    <member refid="interface_data_1_1_interfaces_1_1_i_base_repository_1ad989a3e8eda9ba1ef14c010a419d9faf" kind="function"><name>GetAll</name></member>
+    <member refid="interface_data_1_1_interfaces_1_1_i_base_repository_1a60647473d091c5836cbe58a08107a7fd" kind="function"><name>GetByIdAsync</name></member>
+    <member refid="interface_data_1_1_interfaces_1_1_i_base_repository_1a81187241a4c2c057f67a615ef40531c6" kind="function"><name>GetByAsync</name></member>
+    <member refid="interface_data_1_1_interfaces_1_1_i_base_repository_1abf9aab7d66e0d533c9def315bb2a22a8" kind="function"><name>UpdateAsync</name></member>
+  </compound>
+  <compound refid="interface_data_1_1_interfaces_1_1_i_booking_repository" kind="interface"><name>Data::Interfaces::IBookingRepository</name>
+  </compound>
+  <compound refid="interface_data_1_1_interfaces_1_1_i_cafe_owner_repository" kind="interface"><name>Data::Interfaces::ICafeOwnerRepository</name>
+  </compound>
+  <compound refid="interface_data_1_1_interfaces_1_1_i_enterteiner_repository" kind="interface"><name>Data::Interfaces::IEnterteinerRepository</name>
+  </compound>
+  <compound refid="interface_data_1_1_interfaces_1_1_i_event_repository" kind="interface"><name>Data::Interfaces::IEventRepository</name>
+    <member refid="interface_data_1_1_interfaces_1_1_i_event_repository_1ae14c8867e9ad924be743a4a7a9c4e2ab" kind="function"><name>AcceptEventAsync</name></member>
+    <member refid="interface_data_1_1_interfaces_1_1_i_event_repository_1a8d6a98498b5bdd48d22bb6d0a12520fd" kind="function"><name>RefuseEventAsync</name></member>
+    <member refid="interface_data_1_1_interfaces_1_1_i_event_repository_1ad95e7830cd6f2e79d62d4f3176e9e7b4" kind="function"><name>RevertStateAsync</name></member>
+  </compound>
+  <compound refid="interface_data_1_1_interfaces_1_1_i_post_repository" kind="interface"><name>Data::Interfaces::IPostRepository</name>
+  </compound>
+  <compound refid="class_login_request" kind="class"><name>LoginRequest</name>
+    <member refid="class_login_request_1ae4556fe7e0a7035ce7960a22ef34e74d" kind="variable"><name>_parser</name></member>
+    <member refid="class_login_request_1a7569a70fa13d0d8880ba85952b6e493d" kind="variable"><name>_unknownFields</name></member>
+    <member refid="class_login_request_1a85bd2f6682f0d19a61b2c358520e6452" kind="variable"><name>email_</name></member>
+    <member refid="class_login_request_1a1930b3702554e31cde59035582cdc56c" kind="variable"><name>password_</name></member>
+    <member refid="class_login_request_1a9722bce7ec78d1b3c1ace543aa26c564" kind="property"><name>Parser</name></member>
+    <member refid="class_login_request_1a4beed3ddf82cceef47dd103773834ee9" kind="property"><name>Descriptor</name></member>
+    <member refid="class_login_request_1ab49ed7cc90f85b958b1c6422d1d34a8b" kind="property"><name>Descriptor</name></member>
+    <member refid="class_login_request_1ad6390c5bf154d12dc4f88f28df7fd166" kind="property"><name>Email</name></member>
+    <member refid="class_login_request_1aec5dc47ab59f96843b29831d9122f0dd" kind="property"><name>Password</name></member>
+    <member refid="class_login_request_1ae5d696693ceeb7d45d46be603bc7ac1d" kind="variable"><name>EmailFieldNumber</name></member>
+    <member refid="class_login_request_1a8ce7afc54d74cf85deb4d4d08420e477" kind="variable"><name>PasswordFieldNumber</name></member>
+    <member refid="class_login_request_1ada9453cdf2e7eac1df132f23da1c55ef" kind="function"><name>LoginRequest</name></member>
+    <member refid="class_login_request_1aee7c1a47de59a1cc063347a801c13e84" kind="function"><name>LoginRequest</name></member>
+    <member refid="class_login_request_1a57fcb8d4c5e96ea808cacd73c5a7fa8f" kind="function"><name>Clone</name></member>
+    <member refid="class_login_request_1a5f79cddb412d907ad234dd26bef8845b" kind="function"><name>Equals</name></member>
+    <member refid="class_login_request_1a985854c2e3e9e2bab236203227b1fd6f" kind="function"><name>Equals</name></member>
+    <member refid="class_login_request_1a68d41800483e851a3fb5731ac36e2e7d" kind="function"><name>GetHashCode</name></member>
+    <member refid="class_login_request_1acbaf1a42bbc8758b51711525c617a6bf" kind="function"><name>ToString</name></member>
+    <member refid="class_login_request_1a0b455c3d75352a575b655ae9bc5f65b8" kind="function"><name>WriteTo</name></member>
+    <member refid="class_login_request_1ac201ce777485f33bed037e1751beffb9" kind="function"><name>CalculateSize</name></member>
+    <member refid="class_login_request_1a54b358f0880a6bb1d4adf1d703883294" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_login_request_1af5e74fcb077c26d36f6b9c1394a5c2b1" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_login_request_1a1778d3f0665812d02fd06b7b34b65e20" kind="function"><name>OnConstruction</name></member>
+    <member refid="class_login_request_1ae0a29480552849ae9442b1f4d5f05ab0" kind="function"><name>InternalWriteTo</name></member>
+    <member refid="class_login_request_1a6604b006823ecdbabfdf46df3aee8577" kind="function"><name>InternalMergeFrom</name></member>
+  </compound>
+  <compound refid="class_login_response" kind="class"><name>LoginResponse</name>
+    <member refid="class_login_response_1a7ef2fb91719035b2633c5384c1d75a22" kind="variable"><name>_parser</name></member>
+    <member refid="class_login_response_1a91e5babcffb6158673add31267ddcf4e" kind="variable"><name>_unknownFields</name></member>
+    <member refid="class_login_response_1a15c5919490a89b34acd25732944fb2d0" kind="variable"><name>isSuccessful_</name></member>
+    <member refid="class_login_response_1a2fd19be2535280ddb5411a1e69f5fbe7" kind="property"><name>Parser</name></member>
+    <member refid="class_login_response_1aad69b6e7142b89295b0d3d3487ef6e26" kind="property"><name>Descriptor</name></member>
+    <member refid="class_login_response_1acd643ee2b0a3e8201cf703f36f40bd31" kind="property"><name>Descriptor</name></member>
+    <member refid="class_login_response_1a017323f83ceec89599b40ceb6269edf5" kind="property"><name>IsSuccessful</name></member>
+    <member refid="class_login_response_1ad9d39b81042e274c3e5ff6a2fe0336f2" kind="variable"><name>IsSuccessfulFieldNumber</name></member>
+    <member refid="class_login_response_1a35bb984de629b27bf7df026e653a43bf" kind="function"><name>LoginResponse</name></member>
+    <member refid="class_login_response_1a100693f8f0a3c64d7f58b70e25f88d4b" kind="function"><name>LoginResponse</name></member>
+    <member refid="class_login_response_1ad26fef6567d17787a2de4ea6571d43d1" kind="function"><name>Clone</name></member>
+    <member refid="class_login_response_1a2950689228a8eae2892c6ba1d3c29c47" kind="function"><name>Equals</name></member>
+    <member refid="class_login_response_1ae854e7b1a3471c2b35087e1d8df8b9af" kind="function"><name>Equals</name></member>
+    <member refid="class_login_response_1aa7c965163ac9f408dd5d2f82cc21a4bb" kind="function"><name>GetHashCode</name></member>
+    <member refid="class_login_response_1a06281241b108f9edb4193562a46ee990" kind="function"><name>ToString</name></member>
+    <member refid="class_login_response_1ac7b3f66fc2985f0b4cebd50ed7989538" kind="function"><name>WriteTo</name></member>
+    <member refid="class_login_response_1ab64b3258f908272e1b27478f9cda4cf2" kind="function"><name>CalculateSize</name></member>
+    <member refid="class_login_response_1aed96e2e01ff8cb8788b1ef6f28942f77" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_login_response_1add83e93139fed764e5156d27f80250b3" kind="function"><name>MergeFrom</name></member>
+    <member refid="class_login_response_1ada6b41f81b0c07e9715109130803cc12" kind="function"><name>OnConstruction</name></member>
+    <member refid="class_login_response_1a088dba49b77ae242e87661707dfc9f8b" kind="function"><name>InternalWriteTo</name></member>
+    <member refid="class_login_response_1a17fae5499c7badba15c7247da3844bd1" kind="function"><name>InternalMergeFrom</name></member>
+  </compound>
+  <compound refid="class_data_1_1_state_1_1_pending" kind="class"><name>Data::State::Pending</name>
+    <member refid="class_data_1_1_state_1_1_pending_1a2becc71b84d2f77aee68803147e58767" kind="function"><name>accept</name></member>
+    <member refid="class_data_1_1_state_1_1_pending_1ad49878d7d2db5456121617670649409b" kind="function"><name>cancel</name></member>
+    <member refid="class_data_1_1_state_1_1_pending_1a657674a5af587fca48e73a7c142dbd36" kind="function"><name>refuse</name></member>
+    <member refid="class_data_1_1_state_1_1_pending_1a98b327e0b94d552eec9c31e50cb75f77" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_data_1_1_models_1_1_post" kind="class"><name>Data::Models::Post</name>
+    <member refid="class_data_1_1_models_1_1_post_1a1aa552c2635273ffb66a915265bf066b" kind="property"><name>Title</name></member>
+    <member refid="class_data_1_1_models_1_1_post_1a6c419fe55a0a6c9a08edb1a732286577" kind="property"><name>Content</name></member>
+    <member refid="class_data_1_1_models_1_1_post_1a585ca6736cc6f2c9123bcb4362057d3e" kind="property"><name>Author</name></member>
+    <member refid="class_data_1_1_models_1_1_post_1a2f255ef3956ffef550e9d4f04a5efdc3" kind="property"><name>AuthorId</name></member>
+    <member refid="class_data_1_1_models_1_1_post_1ad2b2fe35761008b141ec8de86598e8b8" kind="property"><name>Event</name></member>
+    <member refid="class_data_1_1_models_1_1_post_1a4a5cfacdb89a7b061b143b87c3f946f7" kind="property"><name>EventId</name></member>
+    <member refid="class_data_1_1_models_1_1_post_1a3d6b9de4b7409ab3191d7bd6c651f8fd" kind="property"><name>CreationDate</name></member>
+  </compound>
+  <compound refid="class_data_1_1_repositories_1_1_post_repository" kind="class"><name>Data::Repositories::PostRepository</name>
+    <member refid="class_data_1_1_repositories_1_1_post_repository_1a5248ca4f045d81117d2fd6eee26cc8e0" kind="function"><name>PostRepository</name></member>
+    <member refid="class_data_1_1_repositories_1_1_post_repository_1a5b49fa24533a87f8bf85d611053c1f06" kind="function"><name>GetAll</name></member>
+    <member refid="class_data_1_1_repositories_1_1_post_repository_1a277ad71cc049fd36da5e97a06f518d6e" kind="function"><name>GetAll</name></member>
+    <member refid="class_data_1_1_repositories_1_1_post_repository_1a4dc92209f7e2df137e6333286fa87c7a" kind="function"><name>GetByAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_post_repository_1a22d133206f3d6e0d5b28db4ad516a9d4" kind="function"><name>GetByIdAsync</name></member>
+    <member refid="class_data_1_1_repositories_1_1_post_repository_1a4f97861bed550677cb997090e7b6435a" kind="function"><name>CreateAsync</name></member>
+  </compound>
+  <compound refid="class_post_service" kind="class"><name>PostService</name>
+    <member refid="class_post_service_1a0990239fbad14b16ce300d9a780104b1" kind="variable"><name>__ServiceName</name></member>
+    <member refid="class_post_service_1ac7e6473cde56a1ae459b9d970b2633e8" kind="variable"><name>__Marshaller_CreatePostRequest</name></member>
+    <member refid="class_post_service_1a30b16257cae1e7ab92f299155aaf02e7" kind="variable"><name>__Marshaller_CreatePostResponse</name></member>
+    <member refid="class_post_service_1abf989d372da0872e2b6ae3d7349487cc" kind="variable"><name>__Marshaller_google_protobuf_Empty</name></member>
+    <member refid="class_post_service_1a9e1d2290fb14d70da4603d2bc8bfba79" kind="variable"><name>__Marshaller_GetPostsResponse</name></member>
+    <member refid="class_post_service_1a3001d50ae0940a1d42bb043c06ac3ea5" kind="variable"><name>__Marshaller_GetRequest</name></member>
+    <member refid="class_post_service_1a04ccc339b975598b2ca6daabec5e8786" kind="variable"><name>__Method_CreatePost</name></member>
+    <member refid="class_post_service_1a27c6216b96ec7cc5698508f250ec19b8" kind="variable"><name>__Method_getAllPosts</name></member>
+    <member refid="class_post_service_1aea60b72fe688d338d708cc599ea45e15" kind="variable"><name>__Method_getAllPostsByAuthorId</name></member>
+    <member refid="class_post_service_1a0328e70413aeb38738519dfb071baa01" kind="variable"><name>__Method_getAllPostsByEventId</name></member>
+    <member refid="class_post_service_1a705f62e29a54f30124d9477c22099a21" kind="property"><name>Descriptor</name></member>
+    <member refid="class_post_service_1a4d3453f09644cc84fbb9f9ee8d03ba86" kind="function"><name>__Helper_SerializeMessage</name></member>
+    <member refid="class_post_service_1a34ff346378680ae2a5555f91e5b75634" kind="function"><name>__Helper_DeserializeMessage&lt; T &gt;</name></member>
+    <member refid="class_post_service_1a99e221a89f229d85477484e79035f7b2" kind="function"><name>BindService</name></member>
+    <member refid="class_post_service_1a7b9c3cfc1cd8d804c27b68948fa04870" kind="function"><name>BindService</name></member>
+  </compound>
+  <compound refid="class_post_service_1_1_post_service_base" kind="class"><name>PostService::PostServiceBase</name>
+    <member refid="class_post_service_1_1_post_service_base_1ac36cf3096e67b33fbf8240f597301a46" kind="function"><name>CreatePost</name></member>
+    <member refid="class_post_service_1_1_post_service_base_1aeb7f4c52261ac6a98de5aa4465364b7b" kind="function"><name>getAllPosts</name></member>
+    <member refid="class_post_service_1_1_post_service_base_1a6684264eeab4bc3ed7c00273a3a480fc" kind="function"><name>getAllPostsByAuthorId</name></member>
+    <member refid="class_post_service_1_1_post_service_base_1a2265ddb6b9ffaa170e1003d9b79d853e" kind="function"><name>getAllPostsByEventId</name></member>
+  </compound>
+  <compound refid="class_service_1_1_services_1_1_post_service_impl" kind="class"><name>Service::Services::PostServiceImpl</name>
+    <member refid="class_service_1_1_services_1_1_post_service_impl_1ab699cd709a471a369eec71e5eb7efacf" kind="variable"><name>_logger</name></member>
+    <member refid="class_service_1_1_services_1_1_post_service_impl_1ad5282c4897ce736707461f5af611a13c" kind="variable"><name>_postRepository</name></member>
+    <member refid="class_service_1_1_services_1_1_post_service_impl_1a881b4366e48c339be300ad76a6a3ac47" kind="function"><name>PostServiceImpl</name></member>
+    <member refid="class_service_1_1_services_1_1_post_service_impl_1a889f64d38d35b12d193c5bb318c40209" kind="function"><name>CreatePost</name></member>
+    <member refid="class_service_1_1_services_1_1_post_service_impl_1a72cf8e56842b5ca063bd3d4d0174eb21" kind="function"><name>getAllPosts</name></member>
+    <member refid="class_service_1_1_services_1_1_post_service_impl_1a6d132e5873c7870ddc91daca6d15d0fd" kind="function"><name>getAllPostsByAuthorId</name></member>
+    <member refid="class_service_1_1_services_1_1_post_service_impl_1abf9575ae41034d8c77ffcd4f7daad5ee" kind="function"><name>getAllPostsByEventId</name></member>
+  </compound>
+  <compound refid="class_proto3_reflection" kind="class"><name>Proto3Reflection</name>
+    <member refid="class_proto3_reflection_1a266ad122130b3eafccaf77363a9ae5ca" kind="property"><name>Descriptor</name></member>
+    <member refid="class_proto3_reflection_1af7b2464a4d6e9b4ac7f128bd3a51944c" kind="variable"><name>descriptor</name></member>
+    <member refid="class_proto3_reflection_1afe2e399af5d7b13661a64beec12f90f2" kind="function"><name>Proto3Reflection</name></member>
+  </compound>
+  <compound refid="class_data_1_1_migrations_1_1q" kind="class"><name>Data::Migrations::q</name>
+    <member refid="class_data_1_1_migrations_1_1q_1aa674da6aabaa2d1dff4e138dd66c3dd2" kind="function"><name>Up</name></member>
+    <member refid="class_data_1_1_migrations_1_1q_1a0d6898dbd1c9584c9227197de325b86d" kind="function"><name>Down</name></member>
+    <member refid="class_data_1_1_migrations_1_1q_1a8d61c668e739b73880e4c03bb90348b7" kind="function"><name>BuildTargetModel</name></member>
+  </compound>
+  <compound refid="class_data_1_1_migrations_1_1r1" kind="class"><name>Data::Migrations::r1</name>
+    <member refid="class_data_1_1_migrations_1_1r1_1a2e5f94f11fde2d085bfd5a8f66e5597e" kind="function"><name>Up</name></member>
+    <member refid="class_data_1_1_migrations_1_1r1_1a154e53cd23859a03630b78e5463e7033" kind="function"><name>Down</name></member>
+    <member refid="class_data_1_1_migrations_1_1r1_1ae56c0ca1c40d924c84222716dabc4550" kind="function"><name>BuildTargetModel</name></member>
+  </compound>
+  <compound refid="class_data_1_1_state_1_1_refused" kind="class"><name>Data::State::Refused</name>
+    <member refid="class_data_1_1_state_1_1_refused_1ab8754d7778af2ede6fa8599eff8140c9" kind="function"><name>accept</name></member>
+    <member refid="class_data_1_1_state_1_1_refused_1ad6dbfeb90ac2d06133dba77ee349ae67" kind="function"><name>cancel</name></member>
+    <member refid="class_data_1_1_state_1_1_refused_1a79f75dff4c7254cb90cee819c51ea6c4" kind="function"><name>refuse</name></member>
+    <member refid="class_data_1_1_state_1_1_refused_1a04d33ebb1d2129fe6a2af076fa6dc932" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_data_1_1_models_1_1_user" kind="class"><name>Data::Models::User</name>
+    <member refid="class_data_1_1_models_1_1_user_1ae517071af89c2f9fb365e2bba9573f7d" kind="property"><name>Firstname</name></member>
+    <member refid="class_data_1_1_models_1_1_user_1aa6db365a2318633bc6bff47b3b30c9ae" kind="property"><name>Lastname</name></member>
+    <member refid="class_data_1_1_models_1_1_user_1a002abe68e587be976bc1b7c2e583d4c0" kind="property"><name>Description</name></member>
+    <member refid="class_data_1_1_models_1_1_user_1a771f52c5344e3bc7c17bf4809551684a" kind="property"><name>Username</name></member>
+    <member refid="class_data_1_1_models_1_1_user_1a9ce90c10eb34ca893afbd4a4c4992478" kind="property"><name>Email</name></member>
+    <member refid="class_data_1_1_models_1_1_user_1a5eb17bf0aa156d13afc7b66a6e4c2bee" kind="property"><name>CreationDate</name></member>
+    <member refid="class_data_1_1_models_1_1_user_1a49a6a912367f723bc1a1e5cfc8b3403e" kind="property"><name>Role</name></member>
+    <member refid="class_data_1_1_models_1_1_user_1ae6804b4c997a18427b2a88ccc848b96a" kind="property"><name>Events</name></member>
+    <member refid="class_data_1_1_models_1_1_user_1a9518eb7623b4480591c2e241f5c07b29" kind="property"><name>Bookings</name></member>
+    <member refid="class_data_1_1_models_1_1_user_1a0dd3ba77235f9152810eebfd47c7bc36" kind="property"><name>Posts</name></member>
+    <member refid="class_data_1_1_models_1_1_user_1abaca9b8db3ef38051228f7979f8216c0" kind="property"><name>PasswordHash</name></member>
+  </compound>
+  <compound refid="class_user_service" kind="class"><name>UserService</name>
+    <member refid="class_user_service_1a94535a461d72897016089e5ab6a5c906" kind="variable"><name>__ServiceName</name></member>
+    <member refid="class_user_service_1ac63ab0806c9ee670edf63735dfd8b0f9" kind="variable"><name>__Marshaller_CreateUserRequest</name></member>
+    <member refid="class_user_service_1ab15bff6ca20456fc810306cb3da97599" kind="variable"><name>__Marshaller_CreateUserResponse</name></member>
+    <member refid="class_user_service_1a2755fd264c1e61332e75dcb47e76d416" kind="variable"><name>__Marshaller_LoginRequest</name></member>
+    <member refid="class_user_service_1ae30a23553c111d6481958744dd1f269f" kind="variable"><name>__Method_CreateUser</name></member>
+    <member refid="class_user_service_1a7254c9729fd2aff5de7ad8a0c30aa4b6" kind="variable"><name>__Method_LoginUser</name></member>
+    <member refid="class_user_service_1a2beee178cd8588af7b33fd5fc3db4a79" kind="property"><name>Descriptor</name></member>
+    <member refid="class_user_service_1ac77db4bc7959d60e61589c312ecb35cc" kind="function"><name>__Helper_SerializeMessage</name></member>
+    <member refid="class_user_service_1a3ffdec6e26842c0db35845889370d6ce" kind="function"><name>__Helper_DeserializeMessage&lt; T &gt;</name></member>
+    <member refid="class_user_service_1ab0d835a3f0fe77ba558d1408c471447d" kind="function"><name>BindService</name></member>
+    <member refid="class_user_service_1a81ffebe4162c22bc9a3221d654e71693" kind="function"><name>BindService</name></member>
+  </compound>
+  <compound refid="class_user_service_1_1_user_service_base" kind="class"><name>UserService::UserServiceBase</name>
+    <member refid="class_user_service_1_1_user_service_base_1abb7e08b675cc04ebf7319a4ddaabb03b" kind="function"><name>CreateUser</name></member>
+    <member refid="class_user_service_1_1_user_service_base_1aefafc38b3cea8dae52202917062e304a" kind="function"><name>LoginUser</name></member>
+  </compound>
+  <compound refid="class_service_1_1_services_1_1_user_service_impl" kind="class"><name>Service::Services::UserServiceImpl</name>
+    <member refid="class_service_1_1_services_1_1_user_service_impl_1afcda9bccbe2ebea70b51647517be4cd3" kind="variable"><name>_logger</name></member>
+    <member refid="class_service_1_1_services_1_1_user_service_impl_1a62bd872b6023ef6fe544f48077810d9d" kind="variable"><name>_authRepository</name></member>
+    <member refid="class_service_1_1_services_1_1_user_service_impl_1a7132c11c81ffc27dc10a2e53f9295855" kind="function"><name>UserServiceImpl</name></member>
+    <member refid="class_service_1_1_services_1_1_user_service_impl_1aa3c61c2b49b3f6f771cb801e868608d0" kind="function"><name>CreateUser</name></member>
+    <member refid="class_service_1_1_services_1_1_user_service_impl_1adb8233473394a399a17cfffb5cfb8319" kind="function"><name>LoginUser</name></member>
+  </compound>
+  <compound refid="namespace_data" kind="namespace"><name>Data</name>
+  </compound>
+  <compound refid="namespace_data_1_1_interfaces" kind="namespace"><name>Data::Interfaces</name>
+  </compound>
+  <compound refid="namespace_data_1_1_migrations" kind="namespace"><name>Data::Migrations</name>
+  </compound>
+  <compound refid="namespace_data_1_1_models" kind="namespace"><name>Data::Models</name>
+    <member refid="namespace_data_1_1_models_1a4ca06d0eba59dff4686824595750f053" kind="enum"><name>Role</name></member>
+    <member refid="namespace_data_1_1_models_1a4ca06d0eba59dff4686824595750f053a8f9bfe9d1345237cb3b2b205864da075" kind="enumvalue"><name>User</name></member>
+    <member refid="namespace_data_1_1_models_1a4ca06d0eba59dff4686824595750f053a6216052264cad567db36ca267d8c5f1f" kind="enumvalue"><name>CafeOwner</name></member>
+    <member refid="namespace_data_1_1_models_1a4ca06d0eba59dff4686824595750f053a2705f12e8aed2dd3b34043ec78962aa2" kind="enumvalue"><name>Entertainer</name></member>
+  </compound>
+  <compound refid="namespace_data_1_1_repositories" kind="namespace"><name>Data::Repositories</name>
+  </compound>
+  <compound refid="namespace_data_1_1_state" kind="namespace"><name>Data::State</name>
+    <member refid="namespace_data_1_1_state_1acaa7f9b11f4e199ae9199088d77e4a84" kind="enum"><name>StateEvent</name></member>
+    <member refid="namespace_data_1_1_state_1acaa7f9b11f4e199ae9199088d77e4a84a382ab522931673c11e398ead1b7b1678" kind="enumvalue"><name>Accepted</name></member>
+    <member refid="namespace_data_1_1_state_1acaa7f9b11f4e199ae9199088d77e4a84af48b206184b7442983452ea4c3e88a3a" kind="enumvalue"><name>Refused</name></member>
+    <member refid="namespace_data_1_1_state_1acaa7f9b11f4e199ae9199088d77e4a84a2d13df6f8b5e4c5af9f87e0dc39df69d" kind="enumvalue"><name>Pending</name></member>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_builder" kind="namespace"><name>global::Microsoft::AspNetCore::Builder</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_hosting" kind="namespace"><name>global::Microsoft::AspNetCore::Hosting</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_http" kind="namespace"><name>global::Microsoft::AspNetCore::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_asp_net_core_1_1_routing" kind="namespace"><name>global::Microsoft::AspNetCore::Routing</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_configuration" kind="namespace"><name>global::Microsoft::Extensions::Configuration</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_dependency_injection" kind="namespace"><name>global::Microsoft::Extensions::DependencyInjection</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_hosting" kind="namespace"><name>global::Microsoft::Extensions::Hosting</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_logging" kind="namespace"><name>global::Microsoft::Extensions::Logging</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system" kind="namespace"><name>global::System</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_collections_1_1_generic" kind="namespace"><name>global::System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_i_o" kind="namespace"><name>global::System::IO</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_linq" kind="namespace"><name>global::System::Linq</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http" kind="namespace"><name>global::System::Net::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http_1_1_json" kind="namespace"><name>global::System::Net::Http::Json</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading" kind="namespace"><name>global::System::Threading</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading_1_1_tasks" kind="namespace"><name>global::System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_google_1_1_protobuf_1_1_well_known_types" kind="namespace"><name>Google::Protobuf::WellKnownTypes</name>
+  </compound>
+  <compound refid="namespacegrpc" kind="namespace"><name>grpc</name>
+  </compound>
+  <compound refid="namespace_grpc_1_1_core" kind="namespace"><name>Grpc::Core</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core" kind="namespace"><name>Microsoft::EntityFrameworkCore</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core_1_1_change_tracking" kind="namespace"><name>Microsoft::EntityFrameworkCore::ChangeTracking</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core_1_1_infrastructure" kind="namespace"><name>Microsoft::EntityFrameworkCore::Infrastructure</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core_1_1_migrations" kind="namespace"><name>Microsoft::EntityFrameworkCore::Migrations</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_entity_framework_core_1_1_storage_1_1_value_conversion" kind="namespace"><name>Microsoft::EntityFrameworkCore::Storage::ValueConversion</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_visual_basic" kind="namespace"><name>Microsoft::VisualBasic</name>
+  </compound>
+  <compound refid="namespace_my_sql_x_1_1_x_dev_a_p_i_1_1_common" kind="namespace"><name>MySqlX::XDevAPI::Common</name>
+  </compound>
+  <compound refid="namespace_org_1_1_bouncy_castle_1_1_bcpg_1_1_attr_1_1_image_attrib" kind="namespace"><name>Org::BouncyCastle::Bcpg::Attr::ImageAttrib</name>
+  </compound>
+  <compound refid="namespacepb" kind="namespace"><name>pb</name>
+  </compound>
+  <compound refid="namespacepbc" kind="namespace"><name>pbc</name>
+  </compound>
+  <compound refid="namespacepbr" kind="namespace"><name>pbr</name>
+  </compound>
+  <compound refid="namespacescg" kind="namespace"><name>scg</name>
+  </compound>
+  <compound refid="namespace_service" kind="namespace"><name>Service</name>
+  </compound>
+  <compound refid="namespace_service_1_1_services" kind="namespace"><name>Service::Services</name>
+  </compound>
+  <compound refid="namespacestatic" kind="namespace"><name>static</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model_1_1_data_annotations" kind="namespace"><name>System::ComponentModel::DataAnnotations</name>
+  </compound>
+  <compound refid="namespace_system_1_1_diagnostics_1_1_code_analysis" kind="namespace"><name>System::Diagnostics::CodeAnalysis</name>
+  </compound>
+  <compound refid="namespace_system_1_1_globalization" kind="namespace"><name>System::Globalization</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq_1_1_expressions" kind="namespace"><name>System::Linq::Expressions</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_serialization" kind="namespace"><name>System::Runtime::Serialization</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text_1_1_json_1_1_serialization" kind="namespace"><name>System::Text::Json::Serialization</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_system_1_1_web" kind="namespace"><name>System::Web</name>
+  </compound>
+  <compound refid="namespace_system_1_1_xml_1_1_linq" kind="namespace"><name>System::Xml::Linq</name>
+  </compound>
+  <compound refid="_class1_8cs" kind="file"><name>Class1.cs</name>
+  </compound>
+  <compound refid="_d_b_context_8cs" kind="file"><name>DBContext.cs</name>
+  </compound>
+  <compound refid="_i_auth_repository_8cs" kind="file"><name>IAuthRepository.cs</name>
+  </compound>
+  <compound refid="_i_base_repository_8cs" kind="file"><name>IBaseRepository.cs</name>
+  </compound>
+  <compound refid="_i_booking_repository_8cs" kind="file"><name>IBookingRepository.cs</name>
+  </compound>
+  <compound refid="_i_cafe_owner_repository_8cs" kind="file"><name>ICafeOwnerRepository.cs</name>
+  </compound>
+  <compound refid="_i_enterteiner_repository_8cs" kind="file"><name>IEnterteinerRepository.cs</name>
+  </compound>
+  <compound refid="_i_event_repository_8cs" kind="file"><name>IEventRepository.cs</name>
+  </compound>
+  <compound refid="_i_post_repository_8cs" kind="file"><name>IPostRepository.cs</name>
+  </compound>
+  <compound refid="20231206192610__q_8cs" kind="file"><name>20231206192610_q.cs</name>
+  </compound>
+  <compound refid="20231206192610__q_8_designer_8cs" kind="file"><name>20231206192610_q.Designer.cs</name>
+  </compound>
+  <compound refid="20231208123651__r1_8cs" kind="file"><name>20231208123651_r1.cs</name>
+  </compound>
+  <compound refid="20231208123651__r1_8_designer_8cs" kind="file"><name>20231208123651_r1.Designer.cs</name>
+  </compound>
+  <compound refid="_d_b_context_model_snapshot_8cs" kind="file"><name>DBContextModelSnapshot.cs</name>
+  </compound>
+  <compound refid="_auth_8cs" kind="file"><name>Auth.cs</name>
+  </compound>
+  <compound refid="_base_entity_8cs" kind="file"><name>BaseEntity.cs</name>
+  </compound>
+  <compound refid="_booking_8cs" kind="file"><name>Booking.cs</name>
+  </compound>
+  <compound refid="_event_8cs" kind="file"><name>Event.cs</name>
+  </compound>
+  <compound refid="_post_8cs" kind="file"><name>Post.cs</name>
+  </compound>
+  <compound refid="_role_8cs" kind="file"><name>Role.cs</name>
+  </compound>
+  <compound refid="_user_8cs" kind="file"><name>User.cs</name>
+  </compound>
+  <compound refid="_data_2obj_2_debug_2net7_80_2_8_n_e_t_core_app_00_version_0av7_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v7.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_service_2obj_2_debug_2net7_80_2_8_n_e_t_core_app_00_version_0av7_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v7.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_data_8_assembly_info_8cs" kind="file"><name>Data.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_data_8_global_usings_8g_8cs" kind="file"><name>Data.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_auth_repository_8cs" kind="file"><name>AuthRepository.cs</name>
+  </compound>
+  <compound refid="_base_repository_8cs" kind="file"><name>BaseRepository.cs</name>
+  </compound>
+  <compound refid="_booking_repository_8cs" kind="file"><name>BookingRepository.cs</name>
+  </compound>
+  <compound refid="_cafe_owner_repository_8cs" kind="file"><name>CafeOwnerRepository.cs</name>
+  </compound>
+  <compound refid="_enterteiner_repository_8cs" kind="file"><name>EnterteinerRepository.cs</name>
+  </compound>
+  <compound refid="_event_repository_8cs" kind="file"><name>EventRepository.cs</name>
+  </compound>
+  <compound refid="_post_repository_8cs" kind="file"><name>PostRepository.cs</name>
+  </compound>
+  <compound refid="_accepted_8cs" kind="file"><name>Accepted.cs</name>
+  </compound>
+  <compound refid="_event_state_8cs" kind="file"><name>EventState.cs</name>
+  </compound>
+  <compound refid="_pending_8cs" kind="file"><name>Pending.cs</name>
+  </compound>
+  <compound refid="_refused_8cs" kind="file"><name>Refused.cs</name>
+  </compound>
+  <compound refid="_state_event_8cs" kind="file"><name>StateEvent.cs</name>
+  </compound>
+  <compound refid="_proto3_8cs" kind="file"><name>Proto3.cs</name>
+    <member refid="_proto3_8cs_1a3a8b1403f9034aa88aad1ce2c733db60" kind="typedef"><name>pb</name></member>
+    <member refid="_proto3_8cs_1acf353ca81053b715ef0a189df5a75499" kind="typedef"><name>pbc</name></member>
+    <member refid="_proto3_8cs_1a4c9bca18934bf8b310b9d65812404c69" kind="typedef"><name>pbr</name></member>
+    <member refid="_proto3_8cs_1a6de48d7be2d1c733071a3f897657ee05" kind="typedef"><name>scg</name></member>
+  </compound>
+  <compound refid="_proto3_grpc_8cs" kind="file"><name>Proto3Grpc.cs</name>
+    <member refid="_proto3_grpc_8cs_1ac1caf7931d9a6735b7877748b4ae5c7a" kind="typedef"><name>grpc</name></member>
+  </compound>
+  <compound refid="_service_8_assembly_info_8cs" kind="file"><name>Service.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_service_8_global_usings_8g_8cs" kind="file"><name>Service.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+    <member refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kind="variable"><name>builder</name></member>
+    <member refid="_program_8cs_1a7b225fcb720e4d5ed2bbf60e28a25e6d" kind="variable"><name>app</name></member>
+    <member refid="_program_8cs_1ad606ca0e313077bd3d59aa018f758a33" kind="function"><name>AddGrpc</name></member>
+    <member refid="_program_8cs_1a9b79cb7b68f148b4bf7705d4ae833644" kind="function"><name>AddDbContext&lt; DBContext &gt;</name></member>
+    <member refid="_program_8cs_1ab16ce314052ebbb14dce60b09bb3ef0c" kind="function"><name>AddScoped&lt; IAuthRepository, AuthRepository &gt;</name></member>
+    <member refid="_program_8cs_1a5e5cc85b20664df76f7941ce05b15428" kind="function"><name>AddScoped&lt; IEnterteinerRepository, EnterteinerRepository &gt;</name></member>
+    <member refid="_program_8cs_1a4d2682aa6d8e9464aba5d0c5ad597986" kind="function"><name>AddScoped&lt; ICafeOwnerRepository, CafeOwnerRepository &gt;</name></member>
+    <member refid="_program_8cs_1a99498a1be42e30716bcd942475e430c6" kind="function"><name>AddScoped&lt; IEventRepository, EventRepository &gt;</name></member>
+    <member refid="_program_8cs_1a6466880c43c2a916f6c7196291f99a6b" kind="function"><name>AddScoped&lt; IBookingRepository, BookingRepository &gt;</name></member>
+    <member refid="_program_8cs_1a9b25dea302cc823259b319c9cca24d73" kind="function"><name>AddScoped&lt; IPostRepository, PostRepository &gt;</name></member>
+    <member refid="_program_8cs_1a6d09a5f2945b4c6108be845e6015cbcf" kind="function"><name>AddCors</name></member>
+    <member refid="_program_8cs_1ae21f4d83b5bf960636aebee0205958ee" kind="function"><name>UseCors</name></member>
+    <member refid="_program_8cs_1a2582f3d1a7c63664f33348328fe0d699" kind="function"><name>MapGrpcService&lt; Service.Services.EventServiceImpl &gt;</name></member>
+    <member refid="_program_8cs_1a7f367f4be1a6fb6eb46e5c9f57bf335e" kind="function"><name>MapGrpcService&lt; Service.Services.UserServiceImpl &gt;</name></member>
+    <member refid="_program_8cs_1af977f307f6e5ff0520948800061ba1ba" kind="function"><name>MapGrpcService&lt; Service.Services.PostServiceImpl &gt;</name></member>
+    <member refid="_program_8cs_1aa4e9da4ebbd93717f13079f35809b0e8" kind="function"><name>MapGet</name></member>
+    <member refid="_program_8cs_1aaa3dbf02e269c3ef7e8546d290c6b3dd" kind="function"><name>Run</name></member>
+  </compound>
+  <compound refid="_event_service_impl_8cs" kind="file"><name>EventServiceImpl.cs</name>
+  </compound>
+  <compound refid="_post_service_impl_8cs" kind="file"><name>PostServiceImpl.cs</name>
+  </compound>
+  <compound refid="_user_service_impl_8cs" kind="file"><name>UserServiceImpl.cs</name>
+  </compound>
+  <compound refid="dir_e3d743d0ec9b4013b28b5d69101bc7fb" kind="dir"><name>Data</name>
+  </compound>
+  <compound refid="dir_b6172133c7baadd45584cd9669548251" kind="dir"><name>Data/obj/Debug</name>
+  </compound>
+  <compound refid="dir_a245102308967ca992e7fb73b4fc6df9" kind="dir"><name>Service/obj/Debug</name>
+  </compound>
+  <compound refid="dir_d37f83dd07bb447e30cbbb97fd45f0e2" kind="dir"><name>Data/Interfaces</name>
+  </compound>
+  <compound refid="dir_46c050375c8848df3c756c25538f1112" kind="dir"><name>Data/Migrations</name>
+  </compound>
+  <compound refid="dir_8b6391660f59079dd84d8ac053080e4f" kind="dir"><name>Data/Models</name>
+  </compound>
+  <compound refid="dir_e3797e894781fb27ed23d7a93ed36118" kind="dir"><name>Data/obj/Debug/net7.0</name>
+  </compound>
+  <compound refid="dir_7046eab85a07659609a0a4f799c83d5b" kind="dir"><name>Service/obj/Debug/net7.0</name>
+  </compound>
+  <compound refid="dir_4a544cfb18c9ef885f49a3a617ec149e" kind="dir"><name>Data/obj</name>
+  </compound>
+  <compound refid="dir_810c013b933aa7feb7ef47420440a351" kind="dir"><name>Service/obj</name>
+  </compound>
+  <compound refid="dir_7d33bcab55f8d6fc6ef9bb46e9ad575f" kind="dir"><name>Service/obj/Debug/net7.0/Protos</name>
+  </compound>
+  <compound refid="dir_5507385c9c6e05673f717fa15ef5a7a3" kind="dir"><name>Data/Repositories</name>
+  </compound>
+  <compound refid="dir_44eb20806aaf8411decdc863bb791107" kind="dir"><name>Service</name>
+  </compound>
+  <compound refid="dir_45157d2596e62bf84b523dad207ff06d" kind="dir"><name>Service/Services</name>
+  </compound>
+  <compound refid="dir_db1b1bc48c9641421a4f70edbd555819" kind="dir"><name>Data/State</name>
+  </compound>
+</doxygenindex>

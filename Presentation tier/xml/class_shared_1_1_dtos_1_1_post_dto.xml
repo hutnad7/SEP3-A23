@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_shared_1_1_dtos_1_1_post_dto" kind="class" language="C#" prot="public">
+    <compoundname>Shared::Dtos::PostDto</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_shared_1_1_dtos_1_1_post_dto_1a386eb7ca0eb1e4dcd2a82c4c57a83336" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Guid</type>
+        <definition>Guid Shared.Dtos.PostDto.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>Shared.Dtos.PostDto.Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shared/Dtos/PostDto.cs" line="8" column="17" bodyfile="Shared/Dtos/PostDto.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_shared_1_1_dtos_1_1_post_dto_1a539efa4286010c006762298765caebcd" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Shared.Dtos.PostDto.Title</definition>
+        <argsstring></argsstring>
+        <name>Title</name>
+        <qualifiedname>Shared.Dtos.PostDto.Title</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shared/Dtos/PostDto.cs" line="10" column="19" bodyfile="Shared/Dtos/PostDto.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="property" id="class_shared_1_1_dtos_1_1_post_dto_1a9ec3ae59ab06b5b1b72cb901a11b47ee" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Shared.Dtos.PostDto.Content</definition>
+        <argsstring></argsstring>
+        <name>Content</name>
+        <qualifiedname>Shared.Dtos.PostDto.Content</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shared/Dtos/PostDto.cs" line="12" column="19" bodyfile="Shared/Dtos/PostDto.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_shared_1_1_dtos_1_1_post_dto_1aa5d89bce83b08ae07b03732fab9604f0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Guid</type>
+        <definition>Guid Shared.Dtos.PostDto.AuthorId</definition>
+        <argsstring></argsstring>
+        <name>AuthorId</name>
+        <qualifiedname>Shared.Dtos.PostDto.AuthorId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shared/Dtos/PostDto.cs" line="14" column="17" bodyfile="Shared/Dtos/PostDto.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_shared_1_1_dtos_1_1_post_dto_1a48be2f752b4ccd2f0cdda969452861e4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Shared.Dtos.PostDto.AuthorName</definition>
+        <argsstring></argsstring>
+        <name>AuthorName</name>
+        <qualifiedname>Shared.Dtos.PostDto.AuthorName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shared/Dtos/PostDto.cs" line="16" column="19" bodyfile="Shared/Dtos/PostDto.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Shared/Dtos/PostDto.cs" line="5" column="7" bodyfile="Shared/Dtos/PostDto.cs" bodystart="6" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_shared_1_1_dtos_1_1_post_dto_1aa5d89bce83b08ae07b03732fab9604f0" prot="public" virt="non-virtual"><scope>Shared::Dtos::PostDto</scope><name>AuthorId</name></member>
+      <member refid="class_shared_1_1_dtos_1_1_post_dto_1a48be2f752b4ccd2f0cdda969452861e4" prot="public" virt="non-virtual"><scope>Shared::Dtos::PostDto</scope><name>AuthorName</name></member>
+      <member refid="class_shared_1_1_dtos_1_1_post_dto_1a9ec3ae59ab06b5b1b72cb901a11b47ee" prot="public" virt="non-virtual"><scope>Shared::Dtos::PostDto</scope><name>Content</name></member>
+      <member refid="class_shared_1_1_dtos_1_1_post_dto_1a386eb7ca0eb1e4dcd2a82c4c57a83336" prot="public" virt="non-virtual"><scope>Shared::Dtos::PostDto</scope><name>Id</name></member>
+      <member refid="class_shared_1_1_dtos_1_1_post_dto_1a539efa4286010c006762298765caebcd" prot="public" virt="non-virtual"><scope>Shared::Dtos::PostDto</scope><name>Title</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

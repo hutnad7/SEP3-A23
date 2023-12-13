@@ -16,17 +16,21 @@
                 <th>Role</th>
             </tr>
         </thead>
-       @* <tbody>
+        <tbody>
             @foreach (var entertainer in _entertainers)
             {
                 <tr>
-                    <td><NavLink href="/user/@entertainer.Id">@entertainer.Username</NavLink></td>
+                    <td>
+                        <a class="nav-link" href="user/@entertainer.Id.ToString()">
+                            @entertainer.Username
+                        </a>
+                    </td>
                     <td>@entertainer.FirstName</td>
                     <td>@entertainer.LastName</td>
                     <td>@entertainer.Role</td>
                 </tr>
             }
-        </tbody>*@
+        </tbody>
     </table>
 }
 else

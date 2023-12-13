@@ -27,7 +27,7 @@ public class UserController {
         return ResponseEntity.ok(this.userService.getAllEntertainers());
     }
 
-    @GetMapping()
+    @GetMapping({"/cafeOwners"})
     public ResponseEntity<List<User>> getAllCafeOwners(){
         return ResponseEntity.ok(this.userService.getAllCafeOwners());
     }

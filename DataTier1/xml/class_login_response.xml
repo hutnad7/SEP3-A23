@@ -1,0 +1,424 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_login_response" kind="class" language="C#" prot="public" sealed="yes">
+    <compoundname>LoginResponse</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">pb::IMessage&lt; LoginResponse &gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">pb.IBufferMessage</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_login_response_1a7ef2fb91719035b2633c5384c1d75a22" prot="private" static="yes" mutable="no">
+        <type>readonly pb::MessageParser&lt; <ref refid="class_login_response" kindref="compound">LoginResponse</ref> &gt;</type>
+        <definition>readonly pb::MessageParser&lt;LoginResponse&gt; LoginResponse._parser</definition>
+        <argsstring></argsstring>
+        <name>_parser</name>
+        <qualifiedname>LoginResponse._parser</qualifiedname>
+        <initializer>= new pb::MessageParser&lt;<ref refid="class_login_response" kindref="compound">LoginResponse</ref>&gt;(() =&gt; new <ref refid="class_login_response" kindref="compound">LoginResponse</ref>())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3450" column="45" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3450" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_login_response_1a91e5babcffb6158673add31267ddcf4e" prot="private" static="no" mutable="no">
+        <type>pb::UnknownFieldSet</type>
+        <definition>pb::UnknownFieldSet LoginResponse._unknownFields</definition>
+        <argsstring></argsstring>
+        <name>_unknownFields</name>
+        <qualifiedname>LoginResponse._unknownFields</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3451" column="31" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_login_response_1a15c5919490a89b34acd25732944fb2d0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool LoginResponse.isSuccessful_</definition>
+        <argsstring></argsstring>
+        <name>isSuccessful_</name>
+        <qualifiedname>LoginResponse.isSuccessful_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3485" column="16" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3485" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_login_response_1a2fd19be2535280ddb5411a1e69f5fbe7" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>pb::MessageParser&lt; <ref refid="class_login_response" kindref="compound">LoginResponse</ref> &gt;</type>
+        <definition>pb::MessageParser&lt;LoginResponse&gt; LoginResponse.Parser</definition>
+        <argsstring></argsstring>
+        <name>Parser</name>
+        <qualifiedname>LoginResponse.Parser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3453" column="35" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3453" bodyend="3453"/>
+      </memberdef>
+      <memberdef kind="property" id="class_login_response_1aad69b6e7142b89295b0d3d3487ef6e26" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>pbr::MessageDescriptor</type>
+        <definition>pbr::MessageDescriptor LoginResponse.Descriptor</definition>
+        <argsstring></argsstring>
+        <name>Descriptor</name>
+        <qualifiedname>LoginResponse.Descriptor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3456" column="40" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3456" bodyend="3458"/>
+      </memberdef>
+      <memberdef kind="property" id="class_login_response_1acd643ee2b0a3e8201cf703f36f40bd31" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>pbr::MessageDescriptor pb::IMessage.</type>
+        <definition>pbr::MessageDescriptor pb::IMessage. LoginResponse.Descriptor</definition>
+        <argsstring></argsstring>
+        <name>Descriptor</name>
+        <qualifiedname>LoginResponse.Descriptor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3461" column="38" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3461" bodyend="3463"/>
+      </memberdef>
+      <memberdef kind="property" id="class_login_response_1a017323f83ceec89599b40ceb6269edf5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool LoginResponse.IsSuccessful</definition>
+        <argsstring></argsstring>
+        <name>IsSuccessful</name>
+        <qualifiedname>LoginResponse.IsSuccessful</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3487" column="15" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3487" bodyend="3492"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_login_response_1ad9d39b81042e274c3e5ff6a2fe0336f2" prot="public" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int LoginResponse.IsSuccessfulFieldNumber</definition>
+        <argsstring></argsstring>
+        <name>IsSuccessfulFieldNumber</name>
+        <qualifiedname>LoginResponse.IsSuccessfulFieldNumber</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>Field number for the &quot;is_successful&quot; field. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3484" column="20" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3484" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_login_response_1a35bb984de629b27bf7df026e653a43bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LoginResponse.LoginResponse</definition>
+        <argsstring>()</argsstring>
+        <name>LoginResponse</name>
+        <qualifiedname>LoginResponse.LoginResponse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3466" column="10" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3466" bodyend="3468"/>
+      </memberdef>
+      <memberdef kind="function" id="class_login_response_1a100693f8f0a3c64d7f58b70e25f88d4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LoginResponse.LoginResponse</definition>
+        <argsstring>(LoginResponse other)</argsstring>
+        <name>LoginResponse</name>
+        <qualifiedname>LoginResponse.LoginResponse</qualifiedname>
+        <param>
+          <type><ref refid="class_login_response" kindref="compound">LoginResponse</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3473" column="10" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3473" bodyend="3476"/>
+      </memberdef>
+      <memberdef kind="function" id="class_login_response_1ad26fef6567d17787a2de4ea6571d43d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_login_response" kindref="compound">LoginResponse</ref></type>
+        <definition>LoginResponse LoginResponse.Clone</definition>
+        <argsstring>()</argsstring>
+        <name>Clone</name>
+        <qualifiedname>LoginResponse.Clone</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3479" column="24" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3479" bodyend="3481"/>
+      </memberdef>
+      <memberdef kind="function" id="class_login_response_1a2950689228a8eae2892c6ba1d3c29c47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool LoginResponse.Equals</definition>
+        <argsstring>(object other)</argsstring>
+        <name>Equals</name>
+        <qualifiedname>LoginResponse.Equals</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3495" column="24" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3495" bodyend="3497"/>
+      </memberdef>
+      <memberdef kind="function" id="class_login_response_1ae854e7b1a3471c2b35087e1d8df8b9af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool LoginResponse.Equals</definition>
+        <argsstring>(LoginResponse other)</argsstring>
+        <name>Equals</name>
+        <qualifiedname>LoginResponse.Equals</qualifiedname>
+        <param>
+          <type><ref refid="class_login_response" kindref="compound">LoginResponse</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3500" column="15" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3500" bodyend="3509"/>
+      </memberdef>
+      <memberdef kind="function" id="class_login_response_1aa7c965163ac9f408dd5d2f82cc21a4bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override int</type>
+        <definition>override int LoginResponse.GetHashCode</definition>
+        <argsstring>()</argsstring>
+        <name>GetHashCode</name>
+        <qualifiedname>LoginResponse.GetHashCode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3512" column="23" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3512" bodyend="3519"/>
+      </memberdef>
+      <memberdef kind="function" id="class_login_response_1a06281241b108f9edb4193562a46ee990" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string LoginResponse.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>LoginResponse.ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3522" column="26" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3522" bodyend="3524"/>
+      </memberdef>
+      <memberdef kind="function" id="class_login_response_1ac7b3f66fc2985f0b4cebd50ed7989538" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LoginResponse.WriteTo</definition>
+        <argsstring>(pb::CodedOutputStream output)</argsstring>
+        <name>WriteTo</name>
+        <qualifiedname>LoginResponse.WriteTo</qualifiedname>
+        <param>
+          <type>pb::CodedOutputStream</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3527" column="15" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3527" bodyend="3539"/>
+      </memberdef>
+      <memberdef kind="function" id="class_login_response_1ab64b3258f908272e1b27478f9cda4cf2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int LoginResponse.CalculateSize</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateSize</name>
+        <qualifiedname>LoginResponse.CalculateSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3555" column="14" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3555" bodyend="3564"/>
+      </memberdef>
+      <memberdef kind="function" id="class_login_response_1aed96e2e01ff8cb8788b1ef6f28942f77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LoginResponse.MergeFrom</definition>
+        <argsstring>(LoginResponse other)</argsstring>
+        <name>MergeFrom</name>
+        <qualifiedname>LoginResponse.MergeFrom</qualifiedname>
+        <param>
+          <type><ref refid="class_login_response" kindref="compound">LoginResponse</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3567" column="15" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3567" bodyend="3575"/>
+      </memberdef>
+      <memberdef kind="function" id="class_login_response_1add83e93139fed764e5156d27f80250b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LoginResponse.MergeFrom</definition>
+        <argsstring>(pb::CodedInputStream input)</argsstring>
+        <name>MergeFrom</name>
+        <qualifiedname>LoginResponse.MergeFrom</qualifiedname>
+        <param>
+          <type>pb::CodedInputStream</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3578" column="15" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3578" bodyend="3595"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_login_response_1ada6b41f81b0c07e9715109130803cc12" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>partial void</type>
+        <definition>partial void LoginResponse.OnConstruction</definition>
+        <argsstring>()</argsstring>
+        <name>OnConstruction</name>
+        <qualifiedname>LoginResponse.OnConstruction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3470" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_login_response_1a088dba49b77ae242e87661707dfc9f8b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void pb::IBufferMessage.</type>
+        <definition>void pb::IBufferMessage. LoginResponse.InternalWriteTo</definition>
+        <argsstring>(ref pb::WriteContext output)</argsstring>
+        <name>InternalWriteTo</name>
+        <qualifiedname>LoginResponse.InternalWriteTo</qualifiedname>
+        <param>
+          <type>ref pb::WriteContext</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3543" column="26" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3543" bodyend="3551"/>
+      </memberdef>
+      <memberdef kind="function" id="class_login_response_1a17fae5499c7badba15c7247da3844bd1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void pb::IBufferMessage.</type>
+        <definition>void pb::IBufferMessage. LoginResponse.InternalMergeFrom</definition>
+        <argsstring>(ref pb::ParseContext input)</argsstring>
+        <name>InternalMergeFrom</name>
+        <qualifiedname>LoginResponse.InternalMergeFrom</qualifiedname>
+        <param>
+          <type>ref pb::ParseContext</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3599" column="26" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3599" bodyend="3612"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>LoginResponse</label>
+        <link refid="class_login_response"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pb::IBufferMessage</label>
+      </node>
+      <node id="2">
+        <label>pb::IMessage&lt; LoginResponse &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>LoginResponse</label>
+        <link refid="class_login_response"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pb::IBufferMessage</label>
+      </node>
+      <node id="2">
+        <label>pb::IMessage&lt; LoginResponse &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="Service/obj/Debug/net7.0/Protos/Proto3.cs" line="3445" column="14" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3.cs" bodystart="3449" bodyend="3615"/>
+    <listofallmembers>
+      <member refid="class_login_response_1a7ef2fb91719035b2633c5384c1d75a22" prot="private" virt="non-virtual"><scope>LoginResponse</scope><name>_parser</name></member>
+      <member refid="class_login_response_1a91e5babcffb6158673add31267ddcf4e" prot="private" virt="non-virtual"><scope>LoginResponse</scope><name>_unknownFields</name></member>
+      <member refid="class_login_response_1ab64b3258f908272e1b27478f9cda4cf2" prot="public" virt="non-virtual"><scope>LoginResponse</scope><name>CalculateSize</name></member>
+      <member refid="class_login_response_1ad26fef6567d17787a2de4ea6571d43d1" prot="public" virt="non-virtual"><scope>LoginResponse</scope><name>Clone</name></member>
+      <member refid="class_login_response_1aad69b6e7142b89295b0d3d3487ef6e26" prot="public" virt="non-virtual"><scope>LoginResponse</scope><name>Descriptor</name></member>
+      <member refid="class_login_response_1acd643ee2b0a3e8201cf703f36f40bd31" prot="private" virt="non-virtual"><scope>LoginResponse</scope><name>Descriptor</name></member>
+      <member refid="class_login_response_1a2950689228a8eae2892c6ba1d3c29c47" prot="public" virt="non-virtual"><scope>LoginResponse</scope><name>Equals</name></member>
+      <member refid="class_login_response_1ae854e7b1a3471c2b35087e1d8df8b9af" prot="public" virt="non-virtual"><scope>LoginResponse</scope><name>Equals</name></member>
+      <member refid="class_login_response_1aa7c965163ac9f408dd5d2f82cc21a4bb" prot="public" virt="non-virtual"><scope>LoginResponse</scope><name>GetHashCode</name></member>
+      <member refid="class_login_response_1a17fae5499c7badba15c7247da3844bd1" prot="private" virt="non-virtual"><scope>LoginResponse</scope><name>InternalMergeFrom</name></member>
+      <member refid="class_login_response_1a088dba49b77ae242e87661707dfc9f8b" prot="private" virt="non-virtual"><scope>LoginResponse</scope><name>InternalWriteTo</name></member>
+      <member refid="class_login_response_1a017323f83ceec89599b40ceb6269edf5" prot="public" virt="non-virtual"><scope>LoginResponse</scope><name>IsSuccessful</name></member>
+      <member refid="class_login_response_1a15c5919490a89b34acd25732944fb2d0" prot="private" virt="non-virtual"><scope>LoginResponse</scope><name>isSuccessful_</name></member>
+      <member refid="class_login_response_1ad9d39b81042e274c3e5ff6a2fe0336f2" prot="public" virt="non-virtual"><scope>LoginResponse</scope><name>IsSuccessfulFieldNumber</name></member>
+      <member refid="class_login_response_1a35bb984de629b27bf7df026e653a43bf" prot="public" virt="non-virtual"><scope>LoginResponse</scope><name>LoginResponse</name></member>
+      <member refid="class_login_response_1a100693f8f0a3c64d7f58b70e25f88d4b" prot="public" virt="non-virtual"><scope>LoginResponse</scope><name>LoginResponse</name></member>
+      <member refid="class_login_response_1aed96e2e01ff8cb8788b1ef6f28942f77" prot="public" virt="non-virtual"><scope>LoginResponse</scope><name>MergeFrom</name></member>
+      <member refid="class_login_response_1add83e93139fed764e5156d27f80250b3" prot="public" virt="non-virtual"><scope>LoginResponse</scope><name>MergeFrom</name></member>
+      <member refid="class_login_response_1ada6b41f81b0c07e9715109130803cc12" prot="private" virt="non-virtual"><scope>LoginResponse</scope><name>OnConstruction</name></member>
+      <member refid="class_login_response_1a2fd19be2535280ddb5411a1e69f5fbe7" prot="public" virt="non-virtual"><scope>LoginResponse</scope><name>Parser</name></member>
+      <member refid="class_login_response_1a06281241b108f9edb4193562a46ee990" prot="public" virt="non-virtual"><scope>LoginResponse</scope><name>ToString</name></member>
+      <member refid="class_login_response_1ac7b3f66fc2985f0b4cebd50ed7989538" prot="public" virt="non-virtual"><scope>LoginResponse</scope><name>WriteTo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

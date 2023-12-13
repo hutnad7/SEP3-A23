@@ -1,13 +1,11 @@
 package group7.Restful.service;
 
-import group7.Grpc.service.EventClientService;
 import group7.Grpc.service.PostClientService;
-import group7.Restful.dto.PostDto;
+import group7.Grpc.dto.PostDto;
 import group7.Restful.entity.Post;
 import group7.protobuf.*;
 import org.springframework.stereotype.Service;
 
-import java.security.Guard;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;

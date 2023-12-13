@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_shared_1_1_models_1_1_user" kind="class" language="C#" prot="public">
+    <compoundname>Shared::Models::User</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_shared_1_1_models_1_1_user_1ae6b239c7bfeca47818ece848053c8ca2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Guid</type>
+        <definition>Guid Shared.Models.User.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>Shared.Models.User.Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shared/Models/User.cs" line="7" column="17" bodyfile="Shared/Models/User.cs" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="property" id="class_shared_1_1_models_1_1_user_1a3a7c2fa4c9a8c89eced400c144462ff4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Shared.Models.User.FirstName</definition>
+        <argsstring></argsstring>
+        <name>FirstName</name>
+        <qualifiedname>Shared.Models.User.FirstName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shared/Models/User.cs" line="9" column="19" bodyfile="Shared/Models/User.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="property" id="class_shared_1_1_models_1_1_user_1a5a406c222009aa166422753a82501e2f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Shared.Models.User.LastName</definition>
+        <argsstring></argsstring>
+        <name>LastName</name>
+        <qualifiedname>Shared.Models.User.LastName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shared/Models/User.cs" line="11" column="19" bodyfile="Shared/Models/User.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_shared_1_1_models_1_1_user_1a64bd2b0474caf713064648c6f9b2e45f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Shared.Models.User.Username</definition>
+        <argsstring></argsstring>
+        <name>Username</name>
+        <qualifiedname>Shared.Models.User.Username</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shared/Models/User.cs" line="13" column="19" bodyfile="Shared/Models/User.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="class_shared_1_1_models_1_1_user_1a7f89604705c816aee82c239897097312" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Shared.Models.User.Password</definition>
+        <argsstring></argsstring>
+        <name>Password</name>
+        <qualifiedname>Shared.Models.User.Password</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shared/Models/User.cs" line="15" column="19" bodyfile="Shared/Models/User.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="property" id="class_shared_1_1_models_1_1_user_1a9acc0d2577877393f44905bb07e0970b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Shared.Models.User.Email</definition>
+        <argsstring></argsstring>
+        <name>Email</name>
+        <qualifiedname>Shared.Models.User.Email</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shared/Models/User.cs" line="17" column="19" bodyfile="Shared/Models/User.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_shared_1_1_models_1_1_user_1a002c42876abcd3e4f664405eeb0c55eb" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Shared.Models.User.Role</definition>
+        <argsstring></argsstring>
+        <name>Role</name>
+        <qualifiedname>Shared.Models.User.Role</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shared/Models/User.cs" line="19" column="19" bodyfile="Shared/Models/User.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Shared/Models/User.cs" line="5" column="7" bodyfile="Shared/Models/User.cs" bodystart="6" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_shared_1_1_models_1_1_user_1a9acc0d2577877393f44905bb07e0970b" prot="public" virt="non-virtual"><scope>Shared::Models::User</scope><name>Email</name></member>
+      <member refid="class_shared_1_1_models_1_1_user_1a3a7c2fa4c9a8c89eced400c144462ff4" prot="public" virt="non-virtual"><scope>Shared::Models::User</scope><name>FirstName</name></member>
+      <member refid="class_shared_1_1_models_1_1_user_1ae6b239c7bfeca47818ece848053c8ca2" prot="public" virt="non-virtual"><scope>Shared::Models::User</scope><name>Id</name></member>
+      <member refid="class_shared_1_1_models_1_1_user_1a5a406c222009aa166422753a82501e2f" prot="public" virt="non-virtual"><scope>Shared::Models::User</scope><name>LastName</name></member>
+      <member refid="class_shared_1_1_models_1_1_user_1a7f89604705c816aee82c239897097312" prot="public" virt="non-virtual"><scope>Shared::Models::User</scope><name>Password</name></member>
+      <member refid="class_shared_1_1_models_1_1_user_1a002c42876abcd3e4f664405eeb0c55eb" prot="public" virt="non-virtual"><scope>Shared::Models::User</scope><name>Role</name></member>
+      <member refid="class_shared_1_1_models_1_1_user_1a64bd2b0474caf713064648c6f9b2e45f" prot="public" virt="non-virtual"><scope>Shared::Models::User</scope><name>Username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -25,7 +25,7 @@
                                 <div class="col-md-6">
                                     <div class="media">
                                         <label>Enterteiner</label>
-                                        <p>@eventDto.EntertainerId</p>
+                                        <p>@eventDto.EntertainerName</p>
                                     </div>
                                     <div class="media">
                                         <label>Email</label>
@@ -55,7 +55,8 @@
                 <div class="counter">
                     <div class="row">
                         <h2 style="text-align: center">Posts</h2>
-                        @if (authService.GetId(token).Result.Equals(eventDto.CafeOwnerId) || authService.GetId(token).Result.Equals(eventDto.EntertainerId))
+                        @if (authService.GetId(token).Result.Equals(eventDto.CafeOwnerId)
+                             || authService.GetId(token).Result.Equals(eventDto.EntertainerId))
                         {
                             <RadzenButton Click=@OnPost Text="Create a Post" />
                         }

@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_post_service" kind="class" language="C#" prot="public">
+    <compoundname>PostService</compoundname>
+    <innerclass refid="class_post_service_1_1_____helper___message_cache" prot="private">PostService::__Helper_MessageCache</innerclass>
+    <innerclass refid="class_post_service_1_1_post_service_base" prot="public">PostService::PostServiceBase</innerclass>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_post_service_1a0990239fbad14b16ce300d9a780104b1" prot="private" static="yes" mutable="no">
+        <type>readonly string</type>
+        <definition>readonly string PostService.__ServiceName</definition>
+        <argsstring></argsstring>
+        <name>__ServiceName</name>
+        <qualifiedname>PostService.__ServiceName</qualifiedname>
+        <initializer>= &quot;PostService&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="330" column="26" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_post_service_1ac7e6473cde56a1ae459b9d970b2633e8" prot="private" static="yes" mutable="no">
+        <type>readonly grpc::Marshaller&lt; global::CreatePostRequest &gt;</type>
+        <definition>readonly grpc::Marshaller&lt;global::CreatePostRequest&gt; PostService.__Marshaller_CreatePostRequest</definition>
+        <argsstring></argsstring>
+        <name>__Marshaller_CreatePostRequest</name>
+        <qualifiedname>PostService.__Marshaller_CreatePostRequest</qualifiedname>
+        <initializer>= grpc::Marshallers.Create(__Helper_SerializeMessage, context =&gt; __Helper_DeserializeMessage(context, global::CreatePostRequest.Parser))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="366" column="36" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_post_service_1a30b16257cae1e7ab92f299155aaf02e7" prot="private" static="yes" mutable="no">
+        <type>readonly grpc::Marshaller&lt; global::CreatePostResponse &gt;</type>
+        <definition>readonly grpc::Marshaller&lt;global::CreatePostResponse&gt; PostService.__Marshaller_CreatePostResponse</definition>
+        <argsstring></argsstring>
+        <name>__Marshaller_CreatePostResponse</name>
+        <qualifiedname>PostService.__Marshaller_CreatePostResponse</qualifiedname>
+        <initializer>= grpc::Marshallers.Create(__Helper_SerializeMessage, context =&gt; __Helper_DeserializeMessage(context, global::CreatePostResponse.Parser))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="368" column="36" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_post_service_1abf989d372da0872e2b6ae3d7349487cc" prot="private" static="yes" mutable="no">
+        <type>readonly grpc::Marshaller&lt; global::Google.Protobuf.WellKnownTypes.Empty &gt;</type>
+        <definition>readonly grpc::Marshaller&lt;global::Google.Protobuf.WellKnownTypes.Empty&gt; PostService.__Marshaller_google_protobuf_Empty</definition>
+        <argsstring></argsstring>
+        <name>__Marshaller_google_protobuf_Empty</name>
+        <qualifiedname>PostService.__Marshaller_google_protobuf_Empty</qualifiedname>
+        <initializer>= grpc::Marshallers.Create(__Helper_SerializeMessage, context =&gt; __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="370" column="36" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_post_service_1a9e1d2290fb14d70da4603d2bc8bfba79" prot="private" static="yes" mutable="no">
+        <type>readonly grpc::Marshaller&lt; global::GetPostsResponse &gt;</type>
+        <definition>readonly grpc::Marshaller&lt;global::GetPostsResponse&gt; PostService.__Marshaller_GetPostsResponse</definition>
+        <argsstring></argsstring>
+        <name>__Marshaller_GetPostsResponse</name>
+        <qualifiedname>PostService.__Marshaller_GetPostsResponse</qualifiedname>
+        <initializer>= grpc::Marshallers.Create(__Helper_SerializeMessage, context =&gt; __Helper_DeserializeMessage(context, global::GetPostsResponse.Parser))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="372" column="36" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_post_service_1a3001d50ae0940a1d42bb043c06ac3ea5" prot="private" static="yes" mutable="no">
+        <type>readonly grpc::Marshaller&lt; global::GetRequest &gt;</type>
+        <definition>readonly grpc::Marshaller&lt;global::GetRequest&gt; PostService.__Marshaller_GetRequest</definition>
+        <argsstring></argsstring>
+        <name>__Marshaller_GetRequest</name>
+        <qualifiedname>PostService.__Marshaller_GetRequest</qualifiedname>
+        <initializer>= grpc::Marshallers.Create(__Helper_SerializeMessage, context =&gt; __Helper_DeserializeMessage(context, global::GetRequest.Parser))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="374" column="36" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_post_service_1a04ccc339b975598b2ca6daabec5e8786" prot="private" static="yes" mutable="no">
+        <type>readonly grpc::Method&lt; global::CreatePostRequest, global::CreatePostResponse &gt;</type>
+        <definition>readonly grpc::Method&lt;global::CreatePostRequest, global::CreatePostResponse&gt; PostService.__Method_CreatePost</definition>
+        <argsstring></argsstring>
+        <name>__Method_CreatePost</name>
+        <qualifiedname>PostService.__Method_CreatePost</qualifiedname>
+        <initializer>= new grpc::Method&lt;global::CreatePostRequest, global::CreatePostResponse&gt;(
+      grpc::MethodType.Unary,
+      __ServiceName,
+      &quot;CreatePost&quot;,
+      __Marshaller_CreatePostRequest,
+      __Marshaller_CreatePostResponse)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="377" column="32" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_post_service_1a27c6216b96ec7cc5698508f250ec19b8" prot="private" static="yes" mutable="no">
+        <type>readonly grpc::Method&lt; global::Google.Protobuf.WellKnownTypes.Empty, global::GetPostsResponse &gt;</type>
+        <definition>readonly grpc::Method&lt;global::Google.Protobuf.WellKnownTypes.Empty, global::GetPostsResponse&gt; PostService.__Method_getAllPosts</definition>
+        <argsstring></argsstring>
+        <name>__Method_getAllPosts</name>
+        <qualifiedname>PostService.__Method_getAllPosts</qualifiedname>
+        <initializer>= new grpc::Method&lt;global::Google.Protobuf.WellKnownTypes.Empty, global::GetPostsResponse&gt;(
+      grpc::MethodType.Unary,
+      __ServiceName,
+      &quot;getAllPosts&quot;,
+      __Marshaller_google_protobuf_Empty,
+      __Marshaller_GetPostsResponse)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="385" column="32" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_post_service_1aea60b72fe688d338d708cc599ea45e15" prot="private" static="yes" mutable="no">
+        <type>readonly grpc::Method&lt; global::GetRequest, global::GetPostsResponse &gt;</type>
+        <definition>readonly grpc::Method&lt;global::GetRequest, global::GetPostsResponse&gt; PostService.__Method_getAllPostsByAuthorId</definition>
+        <argsstring></argsstring>
+        <name>__Method_getAllPostsByAuthorId</name>
+        <qualifiedname>PostService.__Method_getAllPostsByAuthorId</qualifiedname>
+        <initializer>= new grpc::Method&lt;global::GetRequest, global::GetPostsResponse&gt;(
+      grpc::MethodType.Unary,
+      __ServiceName,
+      &quot;getAllPostsByAuthorId&quot;,
+      __Marshaller_GetRequest,
+      __Marshaller_GetPostsResponse)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="393" column="32" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_post_service_1a0328e70413aeb38738519dfb071baa01" prot="private" static="yes" mutable="no">
+        <type>readonly grpc::Method&lt; global::GetRequest, global::GetPostsResponse &gt;</type>
+        <definition>readonly grpc::Method&lt;global::GetRequest, global::GetPostsResponse&gt; PostService.__Method_getAllPostsByEventId</definition>
+        <argsstring></argsstring>
+        <name>__Method_getAllPostsByEventId</name>
+        <qualifiedname>PostService.__Method_getAllPostsByEventId</qualifiedname>
+        <initializer>= new grpc::Method&lt;global::GetRequest, global::GetPostsResponse&gt;(
+      grpc::MethodType.Unary,
+      __ServiceName,
+      &quot;getAllPostsByEventId&quot;,
+      __Marshaller_GetRequest,
+      __Marshaller_GetPostsResponse)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="401" column="32" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="401" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_post_service_1a705f62e29a54f30124d9477c22099a21" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>global::Google.Protobuf.Reflection.ServiceDescriptor</type>
+        <definition>global::Google.Protobuf.Reflection.ServiceDescriptor PostService.Descriptor</definition>
+        <argsstring></argsstring>
+        <name>Descriptor</name>
+        <qualifiedname>PostService.Descriptor</qualifiedname>
+        <briefdescription>
+<para><ref refid="namespace_service" kindref="compound">Service</ref> descriptor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="409" column="67" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="410" bodyend="412"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_post_service_1a4d3453f09644cc84fbb9f9ee8d03ba86" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void PostService.__Helper_SerializeMessage</definition>
+        <argsstring>(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)</argsstring>
+        <name>__Helper_SerializeMessage</name>
+        <qualifiedname>PostService.__Helper_SerializeMessage</qualifiedname>
+        <param>
+          <type>global::Google.Protobuf.IMessage</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>grpc::SerializationContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="333" column="15" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="333" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="class_post_service_1a34ff346378680ae2a5555f91e5b75634" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T PostService.__Helper_DeserializeMessage&lt; T &gt;</definition>
+        <argsstring>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser&lt; T &gt; parser)</argsstring>
+        <name>__Helper_DeserializeMessage&lt; T &gt;</name>
+        <qualifiedname>PostService.__Helper_DeserializeMessage&lt; T &gt;</qualifiedname>
+        <param>
+          <type>grpc::DeserializationContext</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>global::Google.Protobuf.MessageParser&lt; T &gt;</type>
+          <declname>parser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="354" column="10" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="354" bodyend="363"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_post_service_1a99e221a89f229d85477484e79035f7b2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>grpc::ServerServiceDefinition</type>
+        <definition>static grpc::ServerServiceDefinition PostService.BindService</definition>
+        <argsstring>(PostServiceBase serviceImpl)</argsstring>
+        <name>BindService</name>
+        <qualifiedname>PostService.BindService</qualifiedname>
+        <param>
+          <type><ref refid="class_post_service_1_1_post_service_base" kindref="compound">PostServiceBase</ref></type>
+          <declname>serviceImpl</declname>
+        </param>
+        <briefdescription>
+<para>Creates service definition that can be registered with a server. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serviceImpl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An object implementing the server-side handling logic.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="447" column="47" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="447" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="class_post_service_1a7b9c3cfc1cd8d804c27b68948fa04870" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void PostService.BindService</definition>
+        <argsstring>(grpc::ServiceBinderBase serviceBinder, PostServiceBase serviceImpl)</argsstring>
+        <name>BindService</name>
+        <qualifiedname>PostService.BindService</qualifiedname>
+        <param>
+          <type>grpc::ServiceBinderBase</type>
+          <declname>serviceBinder</declname>
+        </param>
+        <param>
+          <type><ref refid="class_post_service_1_1_post_service_base" kindref="compound">PostServiceBase</ref></type>
+          <declname>serviceImpl</declname>
+        </param>
+        <briefdescription>
+<para>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic. Note: this method is part of an experimental API that can change or be removed without any prior notice. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serviceBinder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="namespace_service" kindref="compound">Service</ref> methods will be bound by calling <computeroutput>AddMethod</computeroutput> on this object.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>serviceImpl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An object implementing the server-side handling logic.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="461" column="22" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="461" bodyend="467"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" line="328" column="22" bodyfile="Service/obj/Debug/net7.0/Protos/Proto3Grpc.cs" bodystart="329" bodyend="469"/>
+    <listofallmembers>
+      <member refid="class_post_service_1a34ff346378680ae2a5555f91e5b75634" prot="private" virt="non-virtual"><scope>PostService</scope><name>__Helper_DeserializeMessage&lt; T &gt;</name></member>
+      <member refid="class_post_service_1a4d3453f09644cc84fbb9f9ee8d03ba86" prot="private" virt="non-virtual"><scope>PostService</scope><name>__Helper_SerializeMessage</name></member>
+      <member refid="class_post_service_1ac7e6473cde56a1ae459b9d970b2633e8" prot="private" virt="non-virtual"><scope>PostService</scope><name>__Marshaller_CreatePostRequest</name></member>
+      <member refid="class_post_service_1a30b16257cae1e7ab92f299155aaf02e7" prot="private" virt="non-virtual"><scope>PostService</scope><name>__Marshaller_CreatePostResponse</name></member>
+      <member refid="class_post_service_1a9e1d2290fb14d70da4603d2bc8bfba79" prot="private" virt="non-virtual"><scope>PostService</scope><name>__Marshaller_GetPostsResponse</name></member>
+      <member refid="class_post_service_1a3001d50ae0940a1d42bb043c06ac3ea5" prot="private" virt="non-virtual"><scope>PostService</scope><name>__Marshaller_GetRequest</name></member>
+      <member refid="class_post_service_1abf989d372da0872e2b6ae3d7349487cc" prot="private" virt="non-virtual"><scope>PostService</scope><name>__Marshaller_google_protobuf_Empty</name></member>
+      <member refid="class_post_service_1a04ccc339b975598b2ca6daabec5e8786" prot="private" virt="non-virtual"><scope>PostService</scope><name>__Method_CreatePost</name></member>
+      <member refid="class_post_service_1a27c6216b96ec7cc5698508f250ec19b8" prot="private" virt="non-virtual"><scope>PostService</scope><name>__Method_getAllPosts</name></member>
+      <member refid="class_post_service_1aea60b72fe688d338d708cc599ea45e15" prot="private" virt="non-virtual"><scope>PostService</scope><name>__Method_getAllPostsByAuthorId</name></member>
+      <member refid="class_post_service_1a0328e70413aeb38738519dfb071baa01" prot="private" virt="non-virtual"><scope>PostService</scope><name>__Method_getAllPostsByEventId</name></member>
+      <member refid="class_post_service_1a0990239fbad14b16ce300d9a780104b1" prot="private" virt="non-virtual"><scope>PostService</scope><name>__ServiceName</name></member>
+      <member refid="class_post_service_1a99e221a89f229d85477484e79035f7b2" prot="public" virt="non-virtual"><scope>PostService</scope><name>BindService</name></member>
+      <member refid="class_post_service_1a7b9c3cfc1cd8d804c27b68948fa04870" prot="public" virt="non-virtual"><scope>PostService</scope><name>BindService</name></member>
+      <member refid="class_post_service_1a705f62e29a54f30124d9477c22099a21" prot="public" virt="non-virtual"><scope>PostService</scope><name>Descriptor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

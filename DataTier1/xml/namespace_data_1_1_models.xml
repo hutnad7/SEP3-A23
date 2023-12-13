@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespace_data_1_1_models" kind="namespace" language="C#">
+    <compoundname>Data::Models</compoundname>
+    <innerclass refid="class_data_1_1_models_1_1_auth" prot="public">Data::Models::Auth</innerclass>
+    <innerclass refid="class_data_1_1_models_1_1_base_entity" prot="public">Data::Models::BaseEntity</innerclass>
+    <innerclass refid="class_data_1_1_models_1_1_booking" prot="public">Data::Models::Booking</innerclass>
+    <innerclass refid="class_data_1_1_models_1_1_event" prot="public">Data::Models::Event</innerclass>
+    <innerclass refid="class_data_1_1_models_1_1_post" prot="public">Data::Models::Post</innerclass>
+    <innerclass refid="class_data_1_1_models_1_1_user" prot="public">Data::Models::User</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_data_1_1_models_1a4ca06d0eba59dff4686824595750f053" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Role</name>
+        <qualifiedname>Data.Models.Role</qualifiedname>
+        <enumvalue id="namespace_data_1_1_models_1a4ca06d0eba59dff4686824595750f053a8f9bfe9d1345237cb3b2b205864da075" prot="public">
+          <name>User</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_data_1_1_models_1a4ca06d0eba59dff4686824595750f053a6216052264cad567db36ca267d8c5f1f" prot="public">
+          <name>CafeOwner</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_data_1_1_models_1a4ca06d0eba59dff4686824595750f053a2705f12e8aed2dd3b34043ec78962aa2" prot="public">
+          <name>Entertainer</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Role.cs" line="8" column="11" bodyfile="Data/Models/Role.cs" bodystart="9" bodyend="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Data/Models/Auth.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

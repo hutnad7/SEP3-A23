@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_cafe_1_1_auth_1_1_custom_auth_provider" kind="class" language="C#" prot="public">
+    <compoundname>Cafe::Auth::CustomAuthProvider</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AuthenticationStateProvider</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_cafe_1_1_auth_1_1_custom_auth_provider_1acf1ad3ce555143067301fb5106054063" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_cafe_1_1_services_1_1_i_auth_service" kindref="compound">IAuthService</ref></type>
+        <definition>readonly IAuthService Cafe.Auth.CustomAuthProvider.authService</definition>
+        <argsstring></argsstring>
+        <name>authService</name>
+        <qualifiedname>Cafe.Auth.CustomAuthProvider.authService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Auth/CustomAuthProvider.cs" line="10" column="35" bodyfile="Cafe/Auth/CustomAuthProvider.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_cafe_1_1_auth_1_1_custom_auth_provider_1ab9441d9fd4d5a97df41239d5a789acf2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Cafe.Auth.CustomAuthProvider.CustomAuthProvider</definition>
+        <argsstring>(IAuthService authService)</argsstring>
+        <name>CustomAuthProvider</name>
+        <qualifiedname>Cafe.Auth.CustomAuthProvider.CustomAuthProvider</qualifiedname>
+        <param>
+          <type><ref refid="interface_cafe_1_1_services_1_1_i_auth_service" kindref="compound">IAuthService</ref></type>
+          <declname>authService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Auth/CustomAuthProvider.cs" line="12" column="12" bodyfile="Cafe/Auth/CustomAuthProvider.cs" bodystart="12" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cafe_1_1_auth_1_1_custom_auth_provider_1aca693316a9eb25dab600d195e8715656" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override async Task&lt; AuthenticationState &gt;</type>
+        <definition>override async Task&lt; AuthenticationState &gt; Cafe.Auth.CustomAuthProvider.GetAuthenticationStateAsync</definition>
+        <argsstring>()</argsstring>
+        <name>GetAuthenticationStateAsync</name>
+        <qualifiedname>Cafe.Auth.CustomAuthProvider.GetAuthenticationStateAsync</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Auth/CustomAuthProvider.cs" line="18" column="32" bodyfile="Cafe/Auth/CustomAuthProvider.cs" bodystart="18" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_cafe_1_1_auth_1_1_custom_auth_provider_1a9e2ba6084fcdb883cf46168eda0258df" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cafe.Auth.CustomAuthProvider.AuthStateChanged</definition>
+        <argsstring>(ClaimsPrincipal principal)</argsstring>
+        <name>AuthStateChanged</name>
+        <qualifiedname>Cafe.Auth.CustomAuthProvider.AuthStateChanged</qualifiedname>
+        <param>
+          <type>ClaimsPrincipal</type>
+          <declname>principal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Cafe/Auth/CustomAuthProvider.cs" line="25" column="18" bodyfile="Cafe/Auth/CustomAuthProvider.cs" bodystart="25" bodyend="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AuthenticationStateProvider</label>
+      </node>
+      <node id="1">
+        <label>Cafe.Auth.CustomAuthProvider</label>
+        <link refid="class_cafe_1_1_auth_1_1_custom_auth_provider"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AuthenticationStateProvider</label>
+      </node>
+      <node id="1">
+        <label>Cafe.Auth.CustomAuthProvider</label>
+        <link refid="class_cafe_1_1_auth_1_1_custom_auth_provider"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Cafe/Auth/CustomAuthProvider.cs" line="8" column="7" bodyfile="Cafe/Auth/CustomAuthProvider.cs" bodystart="9" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_cafe_1_1_auth_1_1_custom_auth_provider_1acf1ad3ce555143067301fb5106054063" prot="private" virt="non-virtual"><scope>Cafe::Auth::CustomAuthProvider</scope><name>authService</name></member>
+      <member refid="class_cafe_1_1_auth_1_1_custom_auth_provider_1a9e2ba6084fcdb883cf46168eda0258df" prot="private" virt="non-virtual"><scope>Cafe::Auth::CustomAuthProvider</scope><name>AuthStateChanged</name></member>
+      <member refid="class_cafe_1_1_auth_1_1_custom_auth_provider_1ab9441d9fd4d5a97df41239d5a789acf2" prot="public" virt="non-virtual"><scope>Cafe::Auth::CustomAuthProvider</scope><name>CustomAuthProvider</name></member>
+      <member refid="class_cafe_1_1_auth_1_1_custom_auth_provider_1aca693316a9eb25dab600d195e8715656" prot="public" virt="non-virtual"><scope>Cafe::Auth::CustomAuthProvider</scope><name>GetAuthenticationStateAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

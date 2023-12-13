@@ -4,13 +4,63 @@
 @inject HttpClient HttpClient
 @inject NavigationManager _nav_manager
 @using System.Text.Json
+@using Cafe.dto
 @using Cafe.Uitlities
 @using global::Shared.Models
 
 @attribute [Authorize]
-
-<h3>Events</h3>
-@foreach (Event e in events)
+<RadzenFieldset AllowCollapse="true" Style="width: 700px; margin: 40px auto;" ExpandTitle="Expand events." CollapseTitle="Collapse events."
+                ExpandAriaLabel="Expand the list of events." CollapseAriaLabel="Collapse the list of events.">
+    <HeaderTemplate>
+        <span class="d-inline-flex align-items-center align-middle">
+            <RadzenIcon Icon="account_box" class="me-1" /><b>My events</b>
+        </span>
+    </HeaderTemplate>
+    <ChildContent>
+        <RadzenDataList PageSize="4" WrapItems="true" AllowPaging="true" 
+                        Data="@events" TItem="EventDto">
+            <Template Context="myEvent">
+                <RadzenCard Style="width: 250px">
+                    <div class="row">
+                        <div class="col-md-8 text-truncate">
+                            <b>@(myEvent.Name)</b>
+                        </div>
+                <!--        <div class="col-md-4 text-end">
+                            <RadzenBadge BadgeStyle="BadgeStyle.Info" Text=@myEvent.EntertainerId.ToString() />
+                        </div>-->
+                    </div>
+                    <hr style="border: none; background-color: rgba(0,0,0,.08); height: 1px; margin: 1rem 0;" />
+                    <div class="d-flex flex-row align-items-center">
+                        <div>
+                            <h4 class="mb-0">@(myEvent.CafeOwnerName)</h4>
+                            <div>@myEvent.EntertainerName</div>
+                            <div style="font-size: .8em">@(myEvent.Description)</div>
+                        </div>
+                    </div>
+                    <hr style="border: none; background-color: rgba(0,0,0,.08); height: 1px; margin: 1rem 0;" />
+                    <div class="d-flex flex-row align-items-center">
+                        <div>
+                            <div class="button-row">
+                                <button type="button" ButtonType="ButtonType.Submit" class="acceptbtn" Text="Book now" @onclick="@(() => _nav_manager.NavigateTo($"/BookEvent/{myEvent.Id.ToString()}"))">Book now</button>
+                            </div>
+                            <div class="button-row">
+                                <button type="button" ButtonType="ButtonType.Submit" class="acceptbtn" Text="See event" @onclick="@(() => _nav_manager.NavigateTo($"/Event/{myEvent.Id.ToString()}"))">See more</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </RadzenCard>
+            </Template>
+        </RadzenDataList>
+    </ChildContent>
+    <SummaryTemplate>
+        <RadzenCard class="mt-3">
+            <b>@events.Count() Events</b>
+        </RadzenCard>
+    </SummaryTemplate>
+</RadzenFieldset>
+@*
+@foreach (EventDto e in events)
 {
     <RadzenStack Gap="1rem" Class="rz-p-sm-12">
         <RadzenAccordion Multiple="true">
@@ -38,10 +88,10 @@
             </Items>
         </RadzenAccordion>
 </RadzenStack>
-
+*@
 }
 @code {
-    List<Event> events = new List<Event>();
+    List<EventDto> events = new List<EventDto>();
     
     protected override async Task OnInitializedAsync()
     {
@@ -51,7 +101,7 @@
             if (response.IsSuccessStatusCode)
             {
                 var stream = await response.Content.ReadAsStreamAsync();
-                events = await JsonSerializer.DeserializeAsync<List<Event>>(stream, JsonOptionsHelper.DefaultJsonSerializerOptions) ?? new List<Event>();
+                events = await JsonSerializer.DeserializeAsync<List<EventDto>>(stream, JsonOptionsHelper.DefaultJsonSerializerOptions) ?? new List<EventDto>();
             }
             else
             {

@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_data_1_1_migrations_1_1q" kind="class" language="C#" prot="public">
+    <compoundname>Data::Migrations::q</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Migration</basecompoundref>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_data_1_1_migrations_1_1q_1aa674da6aabaa2d1dff4e138dd66c3dd2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Data.Migrations.q.Up</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Up</name>
+        <qualifiedname>Data.Migrations.q.Up</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Migrations/20231206192610_q.cs" line="14" column="33" bodyfile="Data/Migrations/20231206192610_q.cs" bodystart="14" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_1_1_migrations_1_1q_1a0d6898dbd1c9584c9227197de325b86d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Data.Migrations.q.Down</definition>
+        <argsstring>(MigrationBuilder migrationBuilder)</argsstring>
+        <name>Down</name>
+        <qualifiedname>Data.Migrations.q.Down</qualifiedname>
+        <param>
+          <type>MigrationBuilder</type>
+          <declname>migrationBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Migrations/20231206192610_q.cs" line="70" column="33" bodyfile="Data/Migrations/20231206192610_q.cs" bodystart="70" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_data_1_1_migrations_1_1q_1a8d61c668e739b73880e4c03bb90348b7" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Data.Migrations.q.BuildTargetModel</definition>
+        <argsstring>(ModelBuilder modelBuilder)</argsstring>
+        <name>BuildTargetModel</name>
+        <qualifiedname>Data.Migrations.q.BuildTargetModel</qualifiedname>
+        <param>
+          <type>ModelBuilder</type>
+          <declname>modelBuilder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Migrations/20231206192610_q.Designer.cs" line="18" column="33" bodyfile="Data/Migrations/20231206192610_q.Designer.cs" bodystart="18" bodyend="264"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Data.Migrations.q</label>
+        <link refid="class_data_1_1_migrations_1_1q"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Data.Migrations.q</label>
+        <link refid="class_data_1_1_migrations_1_1q"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Migration</label>
+      </node>
+    </collaborationgraph>
+    <location file="Data/Migrations/20231206192610_q.cs" line="11" column="19" bodyfile="Data/Migrations/20231206192610_q.cs" bodystart="12" bodyend="100"/>
+    <listofallmembers>
+      <member refid="class_data_1_1_migrations_1_1q_1a8d61c668e739b73880e4c03bb90348b7" prot="protected" virt="non-virtual"><scope>Data::Migrations::q</scope><name>BuildTargetModel</name></member>
+      <member refid="class_data_1_1_migrations_1_1q_1a0d6898dbd1c9584c9227197de325b86d" prot="protected" virt="non-virtual"><scope>Data::Migrations::q</scope><name>Down</name></member>
+      <member refid="class_data_1_1_migrations_1_1q_1aa674da6aabaa2d1dff4e138dd66c3dd2" prot="protected" virt="non-virtual"><scope>Data::Migrations::q</scope><name>Up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

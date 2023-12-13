@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_953eaf5de681637ee2d6ab8c0b226c23" kind="dir">
+    <compoundname>Cafe/Uitlities</compoundname>
+    <innerfile refid="_custom_date_time_converter_8cs">CustomDateTimeConverter.cs</innerfile>
+    <innerfile refid="_json_options_helper_8cs">JsonOptionsHelper.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Cafe/Uitlities/"/>
+  </compounddef>
+</doxygen>

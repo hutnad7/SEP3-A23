@@ -1,0 +1,79 @@
+\doxysection{Post\+Service.\+Post\+Service\+Base Class Reference}
+\hypertarget{class_post_service_1_1_post_service_base}{}\label{class_post_service_1_1_post_service_base}\index{PostService.PostServiceBase@{PostService.PostServiceBase}}
+
+
+Base class for server-\/side implementations of Post\+Service.  
+
+
+Inheritance diagram for Post\+Service.\+Post\+Service\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_post_service_1_1_post_service_base}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual global\+::\+System.\+Threading.\+Tasks.\+Task$<$ global\+::\+Create\+Post\+Response $>$ \mbox{\hyperlink{class_post_service_1_1_post_service_base_ac36cf3096e67b33fbf8240f597301a46}{Create\+Post}} (global\+::\+Create\+Post\+Request request, grpc\+::\+Server\+Call\+Context context)
+\item 
+virtual global\+::\+System.\+Threading.\+Tasks.\+Task$<$ global\+::\+Get\+Posts\+Response $>$ \mbox{\hyperlink{class_post_service_1_1_post_service_base_aeb7f4c52261ac6a98de5aa4465364b7b}{get\+All\+Posts}} (global\+::\+Google.\+Protobuf.\+Well\+Known\+Types.\+Empty request, grpc\+::\+Server\+Call\+Context context)
+\item 
+virtual global\+::\+System.\+Threading.\+Tasks.\+Task$<$ global\+::\+Get\+Posts\+Response $>$ \mbox{\hyperlink{class_post_service_1_1_post_service_base_a6684264eeab4bc3ed7c00273a3a480fc}{get\+All\+Posts\+By\+Author\+Id}} (global\+::\+Get\+Request request, grpc\+::\+Server\+Call\+Context context)
+\item 
+virtual global\+::\+System.\+Threading.\+Tasks.\+Task$<$ global\+::\+Get\+Posts\+Response $>$ \mbox{\hyperlink{class_post_service_1_1_post_service_base_a2265ddb6b9ffaa170e1003d9b79d853e}{get\+All\+Posts\+By\+Event\+Id}} (global\+::\+Get\+Request request, grpc\+::\+Server\+Call\+Context context)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for server-\/side implementations of Post\+Service. 
+
+Definition at line \mbox{\hyperlink{_proto3_grpc_8cs_source_l00416}{416}} of file \mbox{\hyperlink{_proto3_grpc_8cs_source}{Proto3\+Grpc.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_post_service_1_1_post_service_base_ac36cf3096e67b33fbf8240f597301a46}\label{class_post_service_1_1_post_service_base_ac36cf3096e67b33fbf8240f597301a46} 
+\index{PostService.PostServiceBase@{PostService.PostServiceBase}!CreatePost@{CreatePost}}
+\index{CreatePost@{CreatePost}!PostService.PostServiceBase@{PostService.PostServiceBase}}
+\doxysubsubsection{\texorpdfstring{CreatePost()}{CreatePost()}}
+{\footnotesize\ttfamily virtual global.\+System.\+Threading.\+Tasks.\+Task$<$ global.\+Create\+Post\+Response $>$ Post\+Service.\+Post\+Service\+Base.\+Create\+Post (\begin{DoxyParamCaption}\item[{global\+::\+Create\+Post\+Request}]{request,  }\item[{grpc\+::\+Server\+Call\+Context}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{_proto3_grpc_8cs_source_l00419}{419}} of file \mbox{\hyperlink{_proto3_grpc_8cs_source}{Proto3\+Grpc.\+cs}}.
+
+\Hypertarget{class_post_service_1_1_post_service_base_aeb7f4c52261ac6a98de5aa4465364b7b}\label{class_post_service_1_1_post_service_base_aeb7f4c52261ac6a98de5aa4465364b7b} 
+\index{PostService.PostServiceBase@{PostService.PostServiceBase}!getAllPosts@{getAllPosts}}
+\index{getAllPosts@{getAllPosts}!PostService.PostServiceBase@{PostService.PostServiceBase}}
+\doxysubsubsection{\texorpdfstring{getAllPosts()}{getAllPosts()}}
+{\footnotesize\ttfamily virtual global.\+System.\+Threading.\+Tasks.\+Task$<$ global.\+Get\+Posts\+Response $>$ Post\+Service.\+Post\+Service\+Base.\+get\+All\+Posts (\begin{DoxyParamCaption}\item[{global\+::\+Google\+::\+Protobuf\+::\+Well\+Known\+Types\+::\+Empty}]{request,  }\item[{grpc\+::\+Server\+Call\+Context}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{_proto3_grpc_8cs_source_l00425}{425}} of file \mbox{\hyperlink{_proto3_grpc_8cs_source}{Proto3\+Grpc.\+cs}}.
+
+\Hypertarget{class_post_service_1_1_post_service_base_a6684264eeab4bc3ed7c00273a3a480fc}\label{class_post_service_1_1_post_service_base_a6684264eeab4bc3ed7c00273a3a480fc} 
+\index{PostService.PostServiceBase@{PostService.PostServiceBase}!getAllPostsByAuthorId@{getAllPostsByAuthorId}}
+\index{getAllPostsByAuthorId@{getAllPostsByAuthorId}!PostService.PostServiceBase@{PostService.PostServiceBase}}
+\doxysubsubsection{\texorpdfstring{getAllPostsByAuthorId()}{getAllPostsByAuthorId()}}
+{\footnotesize\ttfamily virtual global.\+System.\+Threading.\+Tasks.\+Task$<$ global.\+Get\+Posts\+Response $>$ Post\+Service.\+Post\+Service\+Base.\+get\+All\+Posts\+By\+Author\+Id (\begin{DoxyParamCaption}\item[{global\+::\+Get\+Request}]{request,  }\item[{grpc\+::\+Server\+Call\+Context}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{_proto3_grpc_8cs_source_l00431}{431}} of file \mbox{\hyperlink{_proto3_grpc_8cs_source}{Proto3\+Grpc.\+cs}}.
+
+\Hypertarget{class_post_service_1_1_post_service_base_a2265ddb6b9ffaa170e1003d9b79d853e}\label{class_post_service_1_1_post_service_base_a2265ddb6b9ffaa170e1003d9b79d853e} 
+\index{PostService.PostServiceBase@{PostService.PostServiceBase}!getAllPostsByEventId@{getAllPostsByEventId}}
+\index{getAllPostsByEventId@{getAllPostsByEventId}!PostService.PostServiceBase@{PostService.PostServiceBase}}
+\doxysubsubsection{\texorpdfstring{getAllPostsByEventId()}{getAllPostsByEventId()}}
+{\footnotesize\ttfamily virtual global.\+System.\+Threading.\+Tasks.\+Task$<$ global.\+Get\+Posts\+Response $>$ Post\+Service.\+Post\+Service\+Base.\+get\+All\+Posts\+By\+Event\+Id (\begin{DoxyParamCaption}\item[{global\+::\+Get\+Request}]{request,  }\item[{grpc\+::\+Server\+Call\+Context}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{_proto3_grpc_8cs_source_l00437}{437}} of file \mbox{\hyperlink{_proto3_grpc_8cs_source}{Proto3\+Grpc.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Service/obj/\+Debug/net7.\+0/\+Protos/\mbox{\hyperlink{_proto3_grpc_8cs}{Proto3\+Grpc.\+cs}}\end{DoxyCompactItemize}

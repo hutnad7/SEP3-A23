@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="class_cafe_1_1_models_1_1_appointment" kind="class"><name>Cafe::Models::Appointment</name>
+    <member refid="class_cafe_1_1_models_1_1_appointment_1aced122ae22b48e00ecedc435f7943d96" kind="property"><name>Start</name></member>
+    <member refid="class_cafe_1_1_models_1_1_appointment_1a4d5e991dc8b545d002f62a3bb2d26506" kind="property"><name>End</name></member>
+    <member refid="class_cafe_1_1_models_1_1_appointment_1a002c97d56c5c787021b7ed9d9bd44c8a" kind="property"><name>Text</name></member>
+  </compound>
+  <compound refid="class_shared_1_1_auth_1_1_authorization_policies" kind="class"><name>Shared::Auth::AuthorizationPolicies</name>
+    <member refid="class_shared_1_1_auth_1_1_authorization_policies_1ac74cca1659ba679a9ae17e3f4571cefd" kind="function"><name>AddPolicies</name></member>
+  </compound>
+  <compound refid="class_cafe_1_1_models_1_1_booking" kind="class"><name>Cafe::Models::Booking</name>
+    <member refid="class_cafe_1_1_models_1_1_booking_1a30bfd168a6647fcd9c048d9f3041f7d2" kind="property"><name>EventId</name></member>
+    <member refid="class_cafe_1_1_models_1_1_booking_1a0dbabc118cf3a53b942bd5232b090863" kind="property"><name>FirstName</name></member>
+    <member refid="class_cafe_1_1_models_1_1_booking_1a25e0866e1d872ef6fe3909e331031801" kind="property"><name>LastName</name></member>
+    <member refid="class_cafe_1_1_models_1_1_booking_1a14319d2f4af452e793221e3123c12adf" kind="property"><name>numberOfPeople</name></member>
+  </compound>
+  <compound refid="class_shared_1_1_models_1_1_booking" kind="class"><name>Shared::Models::Booking</name>
+    <member refid="class_shared_1_1_models_1_1_booking_1a72f482d790dd8edf93d99bb14081fd29" kind="property"><name>EventId</name></member>
+    <member refid="class_shared_1_1_models_1_1_booking_1acd4b3bccafeec776eb35fbee9d9d9eeb" kind="property"><name>FirstName</name></member>
+    <member refid="class_shared_1_1_models_1_1_booking_1abff29cc4d0ec06757f3a26ce28a31c41" kind="property"><name>LastName</name></member>
+    <member refid="class_shared_1_1_models_1_1_booking_1a7740b905ccad8ab29185ce5f70309796" kind="property"><name>numberOfPeople</name></member>
+  </compound>
+  <compound refid="class_cafe_1_1dto_1_1_change_state" kind="class"><name>Cafe::dto::ChangeState</name>
+    <member refid="class_cafe_1_1dto_1_1_change_state_1a06949d730fc352bca5aa95326314e03a" kind="property"><name>id</name></member>
+    <member refid="class_cafe_1_1dto_1_1_change_state_1adee0edf057cea812cff77114b490f374" kind="property"><name>state</name></member>
+    <member refid="class_cafe_1_1dto_1_1_change_state_1ab470f4d908eb6f0350af840315415fb6" kind="function"><name>ChangeState</name></member>
+  </compound>
+  <compound refid="class_cafe_1_1_auth_1_1_custom_auth_provider" kind="class"><name>Cafe::Auth::CustomAuthProvider</name>
+    <member refid="class_cafe_1_1_auth_1_1_custom_auth_provider_1acf1ad3ce555143067301fb5106054063" kind="variable"><name>authService</name></member>
+    <member refid="class_cafe_1_1_auth_1_1_custom_auth_provider_1ab9441d9fd4d5a97df41239d5a789acf2" kind="function"><name>CustomAuthProvider</name></member>
+    <member refid="class_cafe_1_1_auth_1_1_custom_auth_provider_1aca693316a9eb25dab600d195e8715656" kind="function"><name>GetAuthenticationStateAsync</name></member>
+    <member refid="class_cafe_1_1_auth_1_1_custom_auth_provider_1a9e2ba6084fcdb883cf46168eda0258df" kind="function"><name>AuthStateChanged</name></member>
+  </compound>
+  <compound refid="class_custom_date_time_converter" kind="class"><name>CustomDateTimeConverter</name>
+    <member refid="class_custom_date_time_converter_1a5bb77e4cb15db1606763271c1ba4a29a" kind="variable"><name>_dateFormat</name></member>
+    <member refid="class_custom_date_time_converter_1a4a8ddfee7518001ba8975f3ca051431c" kind="function"><name>Read</name></member>
+    <member refid="class_custom_date_time_converter_1a6a5ab0302158d121a500048aff5bc6bc" kind="function"><name>Write</name></member>
+  </compound>
+  <compound refid="class_shared_1_1_models_1_1_entertainer" kind="class"><name>Shared::Models::Entertainer</name>
+    <member refid="class_shared_1_1_models_1_1_entertainer_1a6e47a531e36c72358070525faa4ad3e2" kind="property"><name>Id</name></member>
+    <member refid="class_shared_1_1_models_1_1_entertainer_1a41061f543a02d090354642d9f77d3147" kind="property"><name>FirstName</name></member>
+    <member refid="class_shared_1_1_models_1_1_entertainer_1ab72fae6487cae506c0b498cc1ef2238b" kind="property"><name>LastName</name></member>
+    <member refid="class_shared_1_1_models_1_1_entertainer_1a005c0c206b318cd044369ce6bf624f76" kind="property"><name>FullName</name></member>
+  </compound>
+  <compound refid="class_cafe_1_1_models_1_1_event" kind="class"><name>Cafe::Models::Event</name>
+    <member refid="class_cafe_1_1_models_1_1_event_1a3ead835577771dccc084ad9545838073" kind="property"><name>Id</name></member>
+    <member refid="class_cafe_1_1_models_1_1_event_1a61011c2a029393585cf6b98735564daa" kind="property"><name>Name</name></member>
+    <member refid="class_cafe_1_1_models_1_1_event_1a97a6f60fbd49291702b873ab2da16d8f" kind="property"><name>Description</name></member>
+    <member refid="class_cafe_1_1_models_1_1_event_1a5810d7da4335d42905474de015d14cbd" kind="property"><name>EntertainerId</name></member>
+    <member refid="class_cafe_1_1_models_1_1_event_1a559700ffcf8edc6bace8fd71f4145618" kind="property"><name>CafeOwnerId</name></member>
+    <member refid="class_cafe_1_1_models_1_1_event_1a45f43b8e63e40cffb0f11cbb4e2dfff6" kind="property"><name>EntertainerName</name></member>
+    <member refid="class_cafe_1_1_models_1_1_event_1a4615f9e02d263e0e0b34204ac38e4233" kind="property"><name>CafeOwnerName</name></member>
+    <member refid="class_cafe_1_1_models_1_1_event_1aa284b3547cbcea93a946891422c43ed2" kind="property"><name>Start</name></member>
+    <member refid="class_cafe_1_1_models_1_1_event_1a869fcd1dbc7e11d59b9834f801b161da" kind="property"><name>End</name></member>
+    <member refid="class_cafe_1_1_models_1_1_event_1aa47b8fccf29632e7253dbc6b6cbb458d" kind="property"><name>AvailablePlaces</name></member>
+    <member refid="class_cafe_1_1_models_1_1_event_1a3a455e7ec3001ce1e372396abce89c6a" kind="property"><name>Status</name></member>
+  </compound>
+  <compound refid="class_shared_1_1_models_1_1_event" kind="class"><name>Shared::Models::Event</name>
+    <member refid="class_shared_1_1_models_1_1_event_1a3f040136638ee4959849e6c4ca164555" kind="property"><name>Id</name></member>
+    <member refid="class_shared_1_1_models_1_1_event_1aac76b803a17987289ddf66de7e7cb75a" kind="property"><name>Name</name></member>
+    <member refid="class_shared_1_1_models_1_1_event_1a98a02d14c9c7be83239993a4fbd14453" kind="property"><name>Description</name></member>
+    <member refid="class_shared_1_1_models_1_1_event_1a4293071aeff6342ee62b9e3c3810c4b8" kind="property"><name>EntertainerId</name></member>
+    <member refid="class_shared_1_1_models_1_1_event_1a5697e8237ecac4be21acf15dce249e2a" kind="property"><name>CafeOwnerId</name></member>
+    <member refid="class_shared_1_1_models_1_1_event_1a1df25144907e66743372fc3f4256381d" kind="property"><name>AvailablePlaces</name></member>
+    <member refid="class_shared_1_1_models_1_1_event_1a4f3fd54fb7a9516aaa4bbce8be8e4ddd" kind="property"><name>Start</name></member>
+    <member refid="class_shared_1_1_models_1_1_event_1a7d80fbe60332c3529d104639cc9f3371" kind="property"><name>End</name></member>
+  </compound>
+  <compound refid="class_cafe_1_1dto_1_1_event_dto" kind="class"><name>Cafe::dto::EventDto</name>
+    <member refid="class_cafe_1_1dto_1_1_event_dto_1a1c07721ce78640f01f4112741e585f0d" kind="property"><name>Id</name></member>
+    <member refid="class_cafe_1_1dto_1_1_event_dto_1ade736ac0817c8c90d3a4c99fcf6fcb4d" kind="property"><name>Name</name></member>
+    <member refid="class_cafe_1_1dto_1_1_event_dto_1a56eac98bac0b843f65572922a6ac8651" kind="property"><name>Description</name></member>
+    <member refid="class_cafe_1_1dto_1_1_event_dto_1a516f2a1ebafd3b0d86fc62c973b03f79" kind="property"><name>EntertainerId</name></member>
+    <member refid="class_cafe_1_1dto_1_1_event_dto_1a49b7d7cdce5a9d970ee1f4ffc9eb7671" kind="property"><name>CafeOwnerId</name></member>
+    <member refid="class_cafe_1_1dto_1_1_event_dto_1a881be543e68d94c0c072334c9809fc25" kind="property"><name>EntertainerName</name></member>
+    <member refid="class_cafe_1_1dto_1_1_event_dto_1aba48dc4be8694926b2defa4db55fda21" kind="property"><name>CafeOwnerName</name></member>
+    <member refid="class_cafe_1_1dto_1_1_event_dto_1aee99933b18d314cc0d5bc65f574deb7e" kind="property"><name>Start</name></member>
+    <member refid="class_cafe_1_1dto_1_1_event_dto_1a209197eacd8dac88de00618417d35478" kind="property"><name>End</name></member>
+    <member refid="class_cafe_1_1dto_1_1_event_dto_1ab17b7e725cf3a7a2ceb4c16c53f94202" kind="property"><name>AvailablePlaces</name></member>
+    <member refid="class_cafe_1_1dto_1_1_event_dto_1a9dd996b0ad4ff2bcbdc66d27b9fe6fe4" kind="property"><name>Status</name></member>
+  </compound>
+  <compound refid="interface_cafe_1_1_services_1_1_i_auth_service" kind="interface"><name>Cafe::Services::IAuthService</name>
+    <member refid="interface_cafe_1_1_services_1_1_i_auth_service_1ad4adc13742444c6063033f2f2b1e20f7" kind="property"><name>OnAuthStateChanged</name></member>
+    <member refid="interface_cafe_1_1_services_1_1_i_auth_service_1a246d02f384c97643fb29032aa3a14abf" kind="function"><name>LoginAsync</name></member>
+    <member refid="interface_cafe_1_1_services_1_1_i_auth_service_1abba8d07bdaf57566485e1275d461213d" kind="function"><name>LogoutAsync</name></member>
+    <member refid="interface_cafe_1_1_services_1_1_i_auth_service_1a685a95126fc3c6de39e907b782165744" kind="function"><name>RegisterAsync</name></member>
+    <member refid="interface_cafe_1_1_services_1_1_i_auth_service_1af5673c7bc984c564db187fec9acb678e" kind="function"><name>GetAuthAsync</name></member>
+    <member refid="interface_cafe_1_1_services_1_1_i_auth_service_1a670f4f287bc8f5b28a8bcfe1c5bb509f" kind="function"><name>GetRole</name></member>
+    <member refid="interface_cafe_1_1_services_1_1_i_auth_service_1a8df7a943ed5f24c1f84edb6e80ca25ca" kind="function"><name>GetId</name></member>
+  </compound>
+  <compound refid="class_cafe_1_1_uitlities_1_1_json_options_helper" kind="class"><name>Cafe::Uitlities::JsonOptionsHelper</name>
+    <member refid="class_cafe_1_1_uitlities_1_1_json_options_helper_1a0020437b6a3c3e04a10335efac3eaa06" kind="property"><name>DefaultJsonSerializerOptions</name></member>
+  </compound>
+  <compound refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service" kind="class"><name>Cafe::Services::Http::JwtAuthService</name>
+    <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1ae40fef858731a81f7dabdf5b80e44665" kind="variable"><name>client</name></member>
+    <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a0398fa4f1dda210a55f4eba97786f945" kind="variable"><name>_localStorage</name></member>
+    <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a4603951cc708c70e4acc5a3a18ba5b93" kind="property"><name>OnAuthStateChanged</name></member>
+    <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a78b3bac442bb8dd3f279bcfe4e9aa722" kind="function"><name>JwtAuthService</name></member>
+    <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1ae70d9096be0faa9347e652f6b5a0cfa7" kind="function"><name>LoginAsync</name></member>
+    <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a5246187dbe66dbd012f5b2f4d948cccb" kind="function"><name>LogoutAsync</name></member>
+    <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a81f16ac1d10a0c13ebfc6471594486a1" kind="function"><name>RegisterAsync</name></member>
+    <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a7d35f74bb585288807dfbc0ab6866bd9" kind="function"><name>GetRole</name></member>
+    <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a5a497871cbf2d591e71b5a74163a0ca1" kind="function"><name>GetId</name></member>
+    <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a3e7eefdc57f4b597ad2af29d9a66451b" kind="function"><name>GetAuthAsync</name></member>
+    <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a18e4f05f7b38860cf5aeb3eb555230b7" kind="function"><name>CreateClaimsPrincipal</name></member>
+    <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1a5ef4f6bf7820af64b3dfa0b6d6e64485" kind="function"><name>ParseClaimsFromJwt</name></member>
+    <member refid="class_cafe_1_1_services_1_1_http_1_1_jwt_auth_service_1aac5fa13c1010f4aa38544572674e4df0" kind="function"><name>ParseBase64WithoutPadding</name></member>
+  </compound>
+  <compound refid="class_shared_1_1_models_1_1_post" kind="class"><name>Shared::Models::Post</name>
+    <member refid="class_shared_1_1_models_1_1_post_1ac7a7a7d31134ec39b0a40cb10a8325b0" kind="property"><name>Id</name></member>
+    <member refid="class_shared_1_1_models_1_1_post_1ab0ca5bee6ab9e5355b7d872cce775fa1" kind="property"><name>Title</name></member>
+    <member refid="class_shared_1_1_models_1_1_post_1abf4c0a04b1f64280eb9ef9fef92ced9f" kind="property"><name>Content</name></member>
+    <member refid="class_shared_1_1_models_1_1_post_1a35d86fe05bdca73e7736d6cdde4e2295" kind="property"><name>author</name></member>
+    <member refid="class_shared_1_1_models_1_1_post_1a115e71039f84eb5368ea11d81bf834ce" kind="property"><name>Event</name></member>
+  </compound>
+  <compound refid="class_shared_1_1_dtos_1_1_post_dto" kind="class"><name>Shared::Dtos::PostDto</name>
+    <member refid="class_shared_1_1_dtos_1_1_post_dto_1a386eb7ca0eb1e4dcd2a82c4c57a83336" kind="property"><name>Id</name></member>
+    <member refid="class_shared_1_1_dtos_1_1_post_dto_1a539efa4286010c006762298765caebcd" kind="property"><name>Title</name></member>
+    <member refid="class_shared_1_1_dtos_1_1_post_dto_1a9ec3ae59ab06b5b1b72cb901a11b47ee" kind="property"><name>Content</name></member>
+    <member refid="class_shared_1_1_dtos_1_1_post_dto_1aa5d89bce83b08ae07b03732fab9604f0" kind="property"><name>AuthorId</name></member>
+    <member refid="class_shared_1_1_dtos_1_1_post_dto_1a48be2f752b4ccd2f0cdda969452861e4" kind="property"><name>AuthorName</name></member>
+  </compound>
+  <compound refid="class_shared_1_1_models_1_1_user" kind="class"><name>Shared::Models::User</name>
+    <member refid="class_shared_1_1_models_1_1_user_1ae6b239c7bfeca47818ece848053c8ca2" kind="property"><name>Id</name></member>
+    <member refid="class_shared_1_1_models_1_1_user_1a3a7c2fa4c9a8c89eced400c144462ff4" kind="property"><name>FirstName</name></member>
+    <member refid="class_shared_1_1_models_1_1_user_1a5a406c222009aa166422753a82501e2f" kind="property"><name>LastName</name></member>
+    <member refid="class_shared_1_1_models_1_1_user_1a64bd2b0474caf713064648c6f9b2e45f" kind="property"><name>Username</name></member>
+    <member refid="class_shared_1_1_models_1_1_user_1a7f89604705c816aee82c239897097312" kind="property"><name>Password</name></member>
+    <member refid="class_shared_1_1_models_1_1_user_1a9acc0d2577877393f44905bb07e0970b" kind="property"><name>Email</name></member>
+    <member refid="class_shared_1_1_models_1_1_user_1a002c42876abcd3e4f664405eeb0c55eb" kind="property"><name>Role</name></member>
+  </compound>
+  <compound refid="class_shared_1_1_dtos_1_1_user_login_dto" kind="class"><name>Shared::Dtos::UserLoginDto</name>
+    <member refid="class_shared_1_1_dtos_1_1_user_login_dto_1af23f5ee937d559ffe616da606e4ff0b9" kind="property"><name>Email</name></member>
+    <member refid="class_shared_1_1_dtos_1_1_user_login_dto_1a629611efe7d54b4ffea29d72cbe51d14" kind="property"><name>Password</name></member>
+  </compound>
+  <compound refid="namespace_blazored_1_1_local_storage" kind="namespace"><name>Blazored::LocalStorage</name>
+  </compound>
+  <compound refid="namespace_cafe" kind="namespace"><name>Cafe</name>
+  </compound>
+  <compound refid="namespace_cafe_1_1_auth" kind="namespace"><name>Cafe::Auth</name>
+  </compound>
+  <compound refid="namespace_cafe_1_1dto" kind="namespace"><name>Cafe::dto</name>
+  </compound>
+  <compound refid="namespace_cafe_1_1_models" kind="namespace"><name>Cafe::Models</name>
+  </compound>
+  <compound refid="namespace_cafe_1_1_services" kind="namespace"><name>Cafe::Services</name>
+  </compound>
+  <compound refid="namespace_cafe_1_1_services_1_1_http" kind="namespace"><name>Cafe::Services::Http</name>
+  </compound>
+  <compound refid="namespace_cafe_1_1_uitlities" kind="namespace"><name>Cafe::Uitlities</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_configuration" kind="namespace"><name>global::Microsoft::Extensions::Configuration</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_dependency_injection" kind="namespace"><name>global::Microsoft::Extensions::DependencyInjection</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_microsoft_1_1_extensions_1_1_logging" kind="namespace"><name>global::Microsoft::Extensions::Logging</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system" kind="namespace"><name>global::System</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_collections_1_1_generic" kind="namespace"><name>global::System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_i_o" kind="namespace"><name>global::System::IO</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_linq" kind="namespace"><name>global::System::Linq</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http" kind="namespace"><name>global::System::Net::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading" kind="namespace"><name>global::System::Threading</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading_1_1_tasks" kind="namespace"><name>global::System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_components_1_1_authorization" kind="namespace"><name>Microsoft::AspNetCore::Components::Authorization</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_components_1_1_web" kind="namespace"><name>Microsoft::AspNetCore::Components::Web</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_asp_net_core_1_1_components_1_1_web_assembly_1_1_hosting" kind="namespace"><name>Microsoft::AspNetCore::Components::WebAssembly::Hosting</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_extensions_1_1_dependency_injection" kind="namespace"><name>Microsoft::Extensions::DependencyInjection</name>
+  </compound>
+  <compound refid="namespace_radzen" kind="namespace"><name>Radzen</name>
+  </compound>
+  <compound refid="namespace_shared" kind="namespace"><name>Shared</name>
+  </compound>
+  <compound refid="namespace_shared_1_1_auth" kind="namespace"><name>Shared::Auth</name>
+  </compound>
+  <compound refid="namespace_shared_1_1_dtos" kind="namespace"><name>Shared::Dtos</name>
+  </compound>
+  <compound refid="namespace_shared_1_1_models" kind="namespace"><name>Shared::Models</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_globalization" kind="namespace"><name>System::Globalization</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection_1_1_metadata" kind="namespace"><name>System::Reflection::Metadata</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_serialization" kind="namespace"><name>System::Runtime::Serialization</name>
+  </compound>
+  <compound refid="namespace_system_1_1_security_1_1_claims" kind="namespace"><name>System::Security::Claims</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text_1_1_json" kind="namespace"><name>System::Text::Json</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text_1_1_json_1_1_serialization" kind="namespace"><name>System::Text::Json::Serialization</name>
+  </compound>
+  <compound refid="_custom_auth_provider_8cs" kind="file"><name>CustomAuthProvider.cs</name>
+  </compound>
+  <compound refid="_change_state_8cs" kind="file"><name>ChangeState.cs</name>
+  </compound>
+  <compound refid="_event_dto_8cs" kind="file"><name>EventDto.cs</name>
+  </compound>
+  <compound refid="_appointment_8cs" kind="file"><name>Appointment.cs</name>
+  </compound>
+  <compound refid="_cafe_2_models_2_booking_8cs" kind="file"><name>Booking.cs</name>
+  </compound>
+  <compound refid="_shared_2_models_2_booking_8cs" kind="file"><name>Booking.cs</name>
+  </compound>
+  <compound refid="_cafe_2_models_2_event_8cs" kind="file"><name>Event.cs</name>
+  </compound>
+  <compound refid="_shared_2_models_2_event_8cs" kind="file"><name>Event.cs</name>
+  </compound>
+  <compound refid="_cafe_2obj_2_debug_2net7_80_2_8_n_e_t_core_app_00_version_0av7_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v7.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_shared_2obj_2_debug_2net7_80_2_8_n_e_t_core_app_00_version_0av7_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v7.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_cafe_8_assembly_info_8cs" kind="file"><name>Cafe.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_cafe_8_global_usings_8g_8cs" kind="file"><name>Cafe.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+    <member refid="_program_8cs_1a2f78352277081c620fd4cf92a5ce15e5" kind="variable"><name>builder</name></member>
+    <member refid="_program_8cs_1a40d549968a84d91d5a5eb9ecf29daae9" kind="function"><name>Add&lt; App &gt;</name></member>
+    <member refid="_program_8cs_1ad6782a94a41c3712e4b16f5e5e37f781" kind="function"><name>Add&lt; HeadOutlet &gt;</name></member>
+    <member refid="_program_8cs_1a1f1cce3f5474799a573735972fcfa9db" kind="function"><name>AddScoped&lt; AuthenticationStateProvider, CustomAuthProvider &gt;</name></member>
+    <member refid="_program_8cs_1ae14ea207d2637a339741660d3f70d58c" kind="function"><name>AddScoped&lt; IAuthService, JwtAuthService &gt;</name></member>
+    <member refid="_program_8cs_1a076111912e0b92dfcc028f6af646ee9a" kind="function"><name>AddPolicies</name></member>
+    <member refid="_program_8cs_1ad23e038402085511bf6d150f155199f9" kind="function"><name>AddScoped</name></member>
+    <member refid="_program_8cs_1a123e39cc7c9ef6e668dea1e793557dd0" kind="function"><name>AddBlazoredLocalStorage</name></member>
+    <member refid="_program_8cs_1a2ee5517a6d87cbc5d173f16e0cd11c01" kind="function"><name>AddAuthorizationCore</name></member>
+    <member refid="_program_8cs_1aa7055c04d0d3929e08e96e4755994dd3" kind="function"><name>AddScoped</name></member>
+    <member refid="_program_8cs_1a2effe6704f8039f6508bca902dfdad67" kind="function"><name>AddRadzenComponents</name></member>
+    <member refid="_program_8cs_1a103eab9352a5901779f62f6c98b53f7b" kind="function"><name>Build</name></member>
+  </compound>
+  <compound refid="_jwt_auth_service_8cs" kind="file"><name>JwtAuthService.cs</name>
+  </compound>
+  <compound refid="_i_auth_service_8cs" kind="file"><name>IAuthService.cs</name>
+  </compound>
+  <compound refid="_custom_date_time_converter_8cs" kind="file"><name>CustomDateTimeConverter.cs</name>
+  </compound>
+  <compound refid="_json_options_helper_8cs" kind="file"><name>JsonOptionsHelper.cs</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="_authorization_policies_8cs" kind="file"><name>AuthorizationPolicies.cs</name>
+  </compound>
+  <compound refid="_post_dto_8cs" kind="file"><name>PostDto.cs</name>
+  </compound>
+  <compound refid="_user_login_dto_8cs" kind="file"><name>UserLoginDto.cs</name>
+  </compound>
+  <compound refid="_entertainer_8cs" kind="file"><name>Entertainer.cs</name>
+  </compound>
+  <compound refid="_post_8cs" kind="file"><name>Post.cs</name>
+  </compound>
+  <compound refid="_user_8cs" kind="file"><name>User.cs</name>
+  </compound>
+  <compound refid="_shared_8_assembly_info_8cs" kind="file"><name>Shared.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_shared_8_global_usings_8g_8cs" kind="file"><name>Shared.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="md__cafe_2wwwroot_2css_2open-iconic_2_r_e_a_d_m_e" kind="page"><name>md__cafe_2wwwroot_2css_2open-iconic_2_r_e_a_d_m_e</name>
+  </compound>
+  <compound refid="dir_111b1a86e57dca9e28051258ad258d2e" kind="dir"><name>Cafe/Auth</name>
+  </compound>
+  <compound refid="dir_3610144651057a03ccdb20c927028faa" kind="dir"><name>Shared/Auth</name>
+  </compound>
+  <compound refid="dir_2f52dce0067111f02310475ca2b36988" kind="dir"><name>Cafe</name>
+  </compound>
+  <compound refid="dir_17e2fba55515003e6b96b86ef5f333b2" kind="dir"><name>Cafe/wwwroot/css</name>
+  </compound>
+  <compound refid="dir_7fc4309c91838eb1d63421ca255c41db" kind="dir"><name>Cafe/obj/Debug</name>
+  </compound>
+  <compound refid="dir_f177435de9156633feda66c715fcae76" kind="dir"><name>Shared/obj/Debug</name>
+  </compound>
+  <compound refid="dir_3cfcc6f19711ae66b519dcfd2689cefa" kind="dir"><name>Cafe/dto</name>
+  </compound>
+  <compound refid="dir_d205af7b84cc34047e34ff7604554a08" kind="dir"><name>Shared/Dtos</name>
+  </compound>
+  <compound refid="dir_ef962426d58ffb76233027efa78502fa" kind="dir"><name>Cafe/Services/Http</name>
+  </compound>
+  <compound refid="dir_d518ce180aaa05e7ccdcd7c2db34ac85" kind="dir"><name>Cafe/Models</name>
+  </compound>
+  <compound refid="dir_29c7f52d59ab9eda420d247411785042" kind="dir"><name>Shared/Models</name>
+  </compound>
+  <compound refid="dir_2412ed9b6e0b69310ededac91ced1b2c" kind="dir"><name>Cafe/obj/Debug/net7.0</name>
+  </compound>
+  <compound refid="dir_de30af3ae8d5469be875dff6867671dd" kind="dir"><name>Shared/obj/Debug/net7.0</name>
+  </compound>
+  <compound refid="dir_5ec4c003314db1e4026463159f8a2ba9" kind="dir"><name>Cafe/obj</name>
+  </compound>
+  <compound refid="dir_3b0e1503baa947183ce128fb3a956a37" kind="dir"><name>Shared/obj</name>
+  </compound>
+  <compound refid="dir_2ca25d898d10b1309c5da516e3b91406" kind="dir"><name>Cafe/wwwroot/css/open-iconic</name>
+  </compound>
+  <compound refid="dir_d4d6f9ac5358bf58f9691494476b8c49" kind="dir"><name>Cafe/Services</name>
+  </compound>
+  <compound refid="dir_da555cc5272c9bb1aca8990be5c6787a" kind="dir"><name>Shared</name>
+  </compound>
+  <compound refid="dir_953eaf5de681637ee2d6ab8c0b226c23" kind="dir"><name>Cafe/Uitlities</name>
+  </compound>
+  <compound refid="dir_cd72463a0fadd4596e2292d0b90e91c1" kind="dir"><name>Cafe/wwwroot</name>
+  </compound>
+</doxygenindex>

@@ -47,14 +47,20 @@ namespace Data.Repositories
         {
             try
             {
-                User user = _context.Set<User>().Include(u => u.Events).Include(u => u.Bookings).FirstOrDefault(c => c.Id.Equals(entity.UserId));
-                entity.User = user;
-                Event events = _context.Set<Event>().Include(u => u.Bookings).FirstOrDefault(c => c.Id == entity.EventId);
-                entity.Event = events;
-                if (entity.NumberOfPeople > events.AvailablePlaces)
+                User? user = _context.Set<User>().Include(u => u.Events)
+                    .Include(u => u.Bookings).FirstOrDefault(c => c.Id.Equals(entity.UserId));
+                if (user is null)
                 {
-                    throw new ArgumentException("There are not enough places!");
+                    throw new ArgumentNullException("The user cannot be null");
                 }
+                entity.User = user;
+                Event? events = _context.Set<Event>()
+                    .Include(u => u.Bookings).FirstOrDefault(c => c.Id == entity.EventId);
+                if (events is null)
+                {
+                    throw new ArgumentNullException("The event cannot be null");
+                }
+                entity.Event = events;
                 await _context.Bookings.AddAsync(entity);
                 await _context.SaveChangesAsync();
                 return entity;

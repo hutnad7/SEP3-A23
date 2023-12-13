@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_data_1_1_models_1_1_event" kind="class" language="C#" prot="public">
+    <compoundname>Data::Models::Event</compoundname>
+    <basecompoundref refid="class_data_1_1_models_1_1_base_entity" prot="public" virt="non-virtual">Data.Models.BaseEntity</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_data_1_1_models_1_1_event_1a4eedf4a5ff26b3d825d506f8289c8600" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_data_1_1_models_1_1_user" kindref="compound">User</ref></type>
+        <definition>User Data.Models.Event.CafeOwner</definition>
+        <argsstring></argsstring>
+        <name>CafeOwner</name>
+        <qualifiedname>Data.Models.Event.CafeOwner</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Event.cs" line="14" column="21" bodyfile="Data/Models/Event.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_event_1a9bb8400276cc7f7dbee39429d7808015" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Guid</type>
+        <definition>Guid Data.Models.Event.CafeOwnerId</definition>
+        <argsstring></argsstring>
+        <name>CafeOwnerId</name>
+        <qualifiedname>Data.Models.Event.CafeOwnerId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Event.cs" line="17" column="21" bodyfile="Data/Models/Event.cs" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_event_1ab353d7c96ca3754a810ce74ba7a039af" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_data_1_1_models_1_1_user" kindref="compound">User</ref></type>
+        <definition>User Data.Models.Event.Enterteiner</definition>
+        <argsstring></argsstring>
+        <name>Enterteiner</name>
+        <qualifiedname>Data.Models.Event.Enterteiner</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Event.cs" line="19" column="21" bodyfile="Data/Models/Event.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_event_1aeb397dbffb772e78f5ec7cf9697cd65a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Guid</type>
+        <definition>Guid Data.Models.Event.EnterteinerId</definition>
+        <argsstring></argsstring>
+        <name>EnterteinerId</name>
+        <qualifiedname>Data.Models.Event.EnterteinerId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Event.cs" line="21" column="21" bodyfile="Data/Models/Event.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_event_1a549af68433c3028dd46c03b6e1a3a020" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Data.Models.Event.CreationDate</definition>
+        <argsstring></argsstring>
+        <name>CreationDate</name>
+        <qualifiedname>Data.Models.Event.CreationDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Event.cs" line="24" column="23" bodyfile="Data/Models/Event.cs" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_event_1a14a1fc939e0d6dbcf4d66a03a39eab44" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Data.Models.Event.StartDate</definition>
+        <argsstring></argsstring>
+        <name>StartDate</name>
+        <qualifiedname>Data.Models.Event.StartDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Event.cs" line="27" column="23" bodyfile="Data/Models/Event.cs" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_event_1a34b7cabc2dd9e5dc3b2217ce417ca745" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Data.Models.Event.EndDate</definition>
+        <argsstring></argsstring>
+        <name>EndDate</name>
+        <qualifiedname>Data.Models.Event.EndDate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Event.cs" line="29" column="23" bodyfile="Data/Models/Event.cs" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_event_1a7825d373ba79f06230d65a286673377d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Data.Models.Event.Title</definition>
+        <argsstring></argsstring>
+        <name>Title</name>
+        <qualifiedname>Data.Models.Event.Title</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Event.cs" line="31" column="23" bodyfile="Data/Models/Event.cs" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_event_1ab3b31f8e55250f61c032dd9b1daa28b8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Data.Models.Event.Text</definition>
+        <argsstring></argsstring>
+        <name>Text</name>
+        <qualifiedname>Data.Models.Event.Text</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Event.cs" line="34" column="23" bodyfile="Data/Models/Event.cs" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_event_1a9c6202ad3c7543fe3130389710216c23" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Data.Models.Event.AvailablePlaces</definition>
+        <argsstring></argsstring>
+        <name>AvailablePlaces</name>
+        <qualifiedname>Data.Models.Event.AvailablePlaces</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Event.cs" line="37" column="20" bodyfile="Data/Models/Event.cs" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_event_1a1e3ebda893d04be671a661a2ecd1e4f8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>ICollection&lt; <ref refid="class_data_1_1_models_1_1_booking" kindref="compound">Booking</ref> &gt;</type>
+        <definition>virtual ICollection&lt;Booking&gt; Data.Models.Event.Bookings</definition>
+        <argsstring></argsstring>
+        <name>Bookings</name>
+        <qualifiedname>Data.Models.Event.Bookings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Event.cs" line="38" column="36" bodyfile="Data/Models/Event.cs" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_event_1a95a2eaf7fb3f65eeaa715083e3a1e187" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>ICollection&lt; <ref refid="class_data_1_1_models_1_1_post" kindref="compound">Post</ref> &gt;</type>
+        <definition>virtual ICollection&lt;Post&gt; Data.Models.Event.Posts</definition>
+        <argsstring></argsstring>
+        <name>Posts</name>
+        <qualifiedname>Data.Models.Event.Posts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Event.cs" line="39" column="36" bodyfile="Data/Models/Event.cs" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="property" id="class_data_1_1_models_1_1_event_1a4d3d1a602490ccff80478b22fc863b92" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="namespace_data_1_1_state_1acaa7f9b11f4e199ae9199088d77e4a84" kindref="member">StateEvent</ref></type>
+        <definition>StateEvent Data.Models.Event.state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <qualifiedname>Data.Models.Event.state</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Event.cs" line="41" column="27" bodyfile="Data/Models/Event.cs" bodystart="41" bodyend="41"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_data_1_1_models_1_1_event_1a267291381c1a8e8c95d056944801e1d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Data.Models.Event.Event</definition>
+        <argsstring>()</argsstring>
+        <name>Event</name>
+        <qualifiedname>Data.Models.Event.Event</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Data/Models/Event.cs" line="42" column="16" bodyfile="Data/Models/Event.cs" bodystart="42" bodyend="45"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>BaseEntity</label>
+        <link refid="class_data_1_1_models_1_1_base_entity"/>
+      </node>
+      <node id="1">
+        <label>Data.Models.Event</label>
+        <link refid="class_data_1_1_models_1_1_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>BaseEntity</label>
+        <link refid="class_data_1_1_models_1_1_base_entity"/>
+      </node>
+      <node id="1">
+        <label>Data.Models.Event</label>
+        <link refid="class_data_1_1_models_1_1_event"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Data/Models/Event.cs" line="10" column="11" bodyfile="Data/Models/Event.cs" bodystart="11" bodyend="46"/>
+    <listofallmembers>
+      <member refid="class_data_1_1_models_1_1_event_1a9c6202ad3c7543fe3130389710216c23" prot="public" virt="non-virtual"><scope>Data::Models::Event</scope><name>AvailablePlaces</name></member>
+      <member refid="class_data_1_1_models_1_1_event_1a1e3ebda893d04be671a661a2ecd1e4f8" prot="public" virt="non-virtual"><scope>Data::Models::Event</scope><name>Bookings</name></member>
+      <member refid="class_data_1_1_models_1_1_event_1a4eedf4a5ff26b3d825d506f8289c8600" prot="public" virt="non-virtual"><scope>Data::Models::Event</scope><name>CafeOwner</name></member>
+      <member refid="class_data_1_1_models_1_1_event_1a9bb8400276cc7f7dbee39429d7808015" prot="public" virt="non-virtual"><scope>Data::Models::Event</scope><name>CafeOwnerId</name></member>
+      <member refid="class_data_1_1_models_1_1_event_1a549af68433c3028dd46c03b6e1a3a020" prot="public" virt="non-virtual"><scope>Data::Models::Event</scope><name>CreationDate</name></member>
+      <member refid="class_data_1_1_models_1_1_event_1a34b7cabc2dd9e5dc3b2217ce417ca745" prot="public" virt="non-virtual"><scope>Data::Models::Event</scope><name>EndDate</name></member>
+      <member refid="class_data_1_1_models_1_1_event_1ab353d7c96ca3754a810ce74ba7a039af" prot="public" virt="non-virtual"><scope>Data::Models::Event</scope><name>Enterteiner</name></member>
+      <member refid="class_data_1_1_models_1_1_event_1aeb397dbffb772e78f5ec7cf9697cd65a" prot="public" virt="non-virtual"><scope>Data::Models::Event</scope><name>EnterteinerId</name></member>
+      <member refid="class_data_1_1_models_1_1_event_1a267291381c1a8e8c95d056944801e1d2" prot="public" virt="non-virtual"><scope>Data::Models::Event</scope><name>Event</name></member>
+      <member refid="class_data_1_1_models_1_1_base_entity_1a7d3260b1b11dcbaa9fff6c47a048584d" prot="public" virt="non-virtual"><scope>Data::Models::Event</scope><name>Id</name></member>
+      <member refid="class_data_1_1_models_1_1_event_1a95a2eaf7fb3f65eeaa715083e3a1e187" prot="public" virt="non-virtual"><scope>Data::Models::Event</scope><name>Posts</name></member>
+      <member refid="class_data_1_1_models_1_1_event_1a14a1fc939e0d6dbcf4d66a03a39eab44" prot="public" virt="non-virtual"><scope>Data::Models::Event</scope><name>StartDate</name></member>
+      <member refid="class_data_1_1_models_1_1_event_1a4d3d1a602490ccff80478b22fc863b92" prot="public" virt="non-virtual"><scope>Data::Models::Event</scope><name>state</name></member>
+      <member refid="class_data_1_1_models_1_1_event_1ab3b31f8e55250f61c032dd9b1daa28b8" prot="public" virt="non-virtual"><scope>Data::Models::Event</scope><name>Text</name></member>
+      <member refid="class_data_1_1_models_1_1_event_1a7825d373ba79f06230d65a286673377d" prot="public" virt="non-virtual"><scope>Data::Models::Event</scope><name>Title</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

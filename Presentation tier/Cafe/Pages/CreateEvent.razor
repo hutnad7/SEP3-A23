@@ -17,7 +17,7 @@
     <RadzenTextBox @bind-Value="Event.Name" Name="Name" Placeholder="Event Name" Style="width:100%; margin-bottom: 20px;" />
     <RadzenTextBox @bind-Value="Event.Description" Name="Description" Placeholder="Description" Style="width:100%; margin-bottom: 20px;" />
     <div class="rz-p-sm-12 rz-text-align-center">
-        <RadzenDropDown @bind-Value="Event.EntertainerId" Data=@entertainers TextProperty="FullName" ValueProperty="Id" Style="width: 100%; max-width: 400px;" />
+        <RadzenDropDown @bind-Value="Event.EntertainerId" Data=@entertainers TextProperty="FirstName" ValueProperty="Id" Style="width: 100%; max-width: 400px;" />
     </div>
     
     <RadzenNumeric @bind-Value="Event.AvailablePlaces" />
@@ -35,25 +35,16 @@
 
     protected override async Task OnInitializedAsync()
     {
-        var jwt = _LocalStorage.GetItemAsStringAsync("token");
+        var jwt = await _LocalStorage.GetItemAsStringAsync("token");
         Console.WriteLine("JWT :: " + jwt);;
         
         CultureInfo provider = CultureInfo.CreateSpecificCulture("en-GB");
 
         entertainers = new List<User>
         {
-            new User { Id = Guid.NewGuid(), FirstName = "John", LastName = "Doe" },
-            new User { Id = Guid.NewGuid(), FirstName = "Jane", LastName = "Smith" },
-            new User { Id = Guid.NewGuid(), FirstName = "Bob", LastName = "Brown" },
-            new User { Id = Guid.NewGuid(), FirstName = "Alice", LastName = "White" },
-            new User { Id = Guid.NewGuid(), FirstName = "Charlie", LastName = "Green" },
-            new User { Id = Guid.NewGuid(), FirstName = "David", LastName = "Black" },
-            new User { Id = Guid.NewGuid(), FirstName = "Eva", LastName = "Blue" },
-            new User { Id = Guid.NewGuid(), FirstName = "Frank", LastName = "Gray" },
-            new User { Id = Guid.NewGuid(), FirstName = "Grace", LastName = "Red" },
-            new User { Id = Guid.NewGuid(), FirstName = "Harry", LastName = "Yellow" }
         };
-
+        entertainers = await HttpClient.GetFromJsonAsync<List<User>>("http://localhost:8080/api/users");
+        Event.CafeOwnerId = await JwtAuthService.GetId(jwt);
         Event.EntertainerId = Guid.NewGuid();
     }
 
@@ -61,15 +52,6 @@
     {
         try
         {
-            evt.EntertainerId = Guid.Parse("e7c9d815-30fd-4e94-95f1-64d0577a7acf");
-            evt.CafeOwnerId = Guid.Parse("e7c9d815-30fd-4e94-95f1-64d0577a7acf");
-            evt.EntertainerId = Guid.Parse("cc232ead-0b61-4395-9b14-a1de097c0e49");
-            evt.CafeOwnerId = Guid.Parse("2d22883c-aed7-4725-89fb-1457ddac2882");
-            CultureInfo provider = CultureInfo.CreateSpecificCulture("en-GB");
-            string format = "dd/MM/yyyy hh:mm";
-            DateTime date = DateTime.Now;
-            // evt.Date = DateTime.ParseExact(evt.Date.ToShortTimeString(), format,provider);
-            // evt.Date = DateTime.Parse( evt.Date.ToString(), CultureInfo.CreateSpecificCulture("fr-FR") );
             var response = await HttpClient.PostAsJsonAsync("http://localhost:8080/api/events", evt);
             if (response.IsSuccessStatusCode)
             {

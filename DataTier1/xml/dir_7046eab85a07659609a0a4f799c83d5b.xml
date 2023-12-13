@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_7046eab85a07659609a0a4f799c83d5b" kind="dir">
+    <compoundname>Service/obj/Debug/net7.0</compoundname>
+    <innerdir refid="dir_7d33bcab55f8d6fc6ef9bb46e9ad575f">Service/obj/Debug/net7.0/Protos</innerdir>
+    <innerfile refid="_service_2obj_2_debug_2net7_80_2_8_n_e_t_core_app_00_version_0av7_80_8_assembly_attributes_8cs">.NETCoreApp,Version=v7.0.AssemblyAttributes.cs</innerfile>
+    <innerfile refid="_service_8_assembly_info_8cs">Service.AssemblyInfo.cs</innerfile>
+    <innerfile refid="_service_8_global_usings_8g_8cs">Service.GlobalUsings.g.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Service/obj/Debug/net7.0/"/>
+  </compounddef>
+</doxygen>

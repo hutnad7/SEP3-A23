@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_d37f83dd07bb447e30cbbb97fd45f0e2" kind="dir">
+    <compoundname>Data/Interfaces</compoundname>
+    <innerfile refid="_i_auth_repository_8cs">IAuthRepository.cs</innerfile>
+    <innerfile refid="_i_base_repository_8cs">IBaseRepository.cs</innerfile>
+    <innerfile refid="_i_booking_repository_8cs">IBookingRepository.cs</innerfile>
+    <innerfile refid="_i_cafe_owner_repository_8cs">ICafeOwnerRepository.cs</innerfile>
+    <innerfile refid="_i_enterteiner_repository_8cs">IEnterteinerRepository.cs</innerfile>
+    <innerfile refid="_i_event_repository_8cs">IEventRepository.cs</innerfile>
+    <innerfile refid="_i_post_repository_8cs">IPostRepository.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Data/Interfaces/"/>
+  </compounddef>
+</doxygen>

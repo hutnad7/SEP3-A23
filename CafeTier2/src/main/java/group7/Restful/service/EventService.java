@@ -8,6 +8,7 @@ package group7.Restful.service;
 import com.google.type.DateTime;
 import group7.Grpc.dto.EventDto;
 import group7.Grpc.service.EventClientService;
+import group7.Restful.entity.Booking;
 import group7.Restful.entity.Event;
 
 import java.text.DateFormat;
@@ -50,11 +51,11 @@ public class EventService {
                 setId(UUID.fromString(response.getId()));
                 setName(response.getName());
                 setDescription(response.getDescription());
-                setEntertainerId(UUID.fromString(response.getEntertainer()));
+                setEntertainerId(UUID.fromString(response.getEntertainerId()));
                 setStartDate(response.getStartDate());
                 setEndDate(response.getEndDate());
                 setAvailablePlaces(response.getAvailablePlaces());
-                setCafeOwnerId(UUID.fromString(response.getCafeOwner()));
+                setCafeOwnerId(UUID.fromString(response.getCafeOwnerId()));
                 setStatus(response.getState());
             }
         };
@@ -141,14 +142,30 @@ public class EventService {
 
 
 
-    public List<Event> getAllEvents() {
+    public List<EventDto> getAllEvents() {
             GetEventsResponse response = eventClientService.getAllEvents();
-        List<Event> events = new ArrayList<>();
+        List<EventDto> events = new ArrayList<>();
         for (GetEventResponse grpcEvent : response.getEventList()) {
             // Assuming you have a method to convert from EventProtoMessage to Event
-            Event event = convertToEvent(grpcEvent);
-            events.add(event);
-        }
+            EventDto event = new EventDto() {
+                {
+                    setId(UUID.fromString(grpcEvent.getId()));
+                    setName(grpcEvent.getName());
+                    setDescription(grpcEvent.getDescription());
+                    setEntertainerId(UUID.fromString(grpcEvent.getEntertainerId()));
+                    setStartDate(grpcEvent.getStartDate());
+                    setEndDate(grpcEvent.getEndDate());
+                    setAvailablePlaces(grpcEvent.getAvailablePlaces());
+                    setCafeOwnerId(UUID.fromString(grpcEvent.getCafeOwnerId()));
+                    setStatus(grpcEvent.getState());
+                    setCafeOwnerName(grpcEvent.getCafeOwner());
+                    setEntertainerName(grpcEvent.getEntertainer());
+                }
+            };
+            if(event.getStatus().equals("Accepted")){
+                events.add(event);
+            }
+         }
 
         return events;
     }
@@ -173,7 +190,30 @@ public class EventService {
         };
         return Optional.of(event);
     }
-
+    public Booking createBooking(Booking booking) {
+        GetEventResponse r = eventClientService.getEventById(GetRequest
+                .newBuilder()
+                .setId(booking.getEventId().toString())
+                .build());
+        if(r.getAvailablePlaces()<booking.getNumberOfPeople()){
+            throw new IllegalArgumentException("Not enough places");
+        }
+        BookEventRequest request = BookEventRequest
+                .newBuilder()
+                .setFirstName(booking.getFirstName())
+                .setLastName(booking.getLastName())
+                .setUserId(booking.getUserId().toString())
+                .setEventId(booking.getEventId().toString())
+                .setNumerOfPeople(booking.getNumberOfPeople())
+                .build();
+        BookEventResponse response = eventClientService.bookEvent(request);
+        Booking b = new Booking(
+                UUID.fromString(response.getUserId()),
+                UUID.fromString(response.getEventId()),
+                response.getCreationDate().toString(),
+                response.getNumerOfPeople());
+        return b;
+    }
 //    public Optional<Event> updateEvent(UUID id, Event event) {
 //        Optional<Event> existingEventOpt = this.getEventById(id);
 //        if (existingEventOpt.isPresent()) {
