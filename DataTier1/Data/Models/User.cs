@@ -12,10 +12,10 @@ namespace Data.Models
     {
 
         [Required]
-        public string Firstname { get; set; }
+        public string FirstName { get; set; }
 
         [Required]
-        public string Lastname { get; set; }
+        public string LastName { get; set; }
         [AllowNull]
         public string Description { get; set; }
         [Required]

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using Data.Models;
 using Microsoft.EntityFrameworkCore;
+using Service.Utils;
 
 namespace Data
 {
@@ -40,40 +41,40 @@ namespace Data
                 new User 
                 { 
                     Id = Guid.NewGuid(),
-                    Firstname = "Coffe",
-                    Lastname = "Owner",
+                    FirstName = "Coffe",
+                    LastName = "Owner",
                     Username = "CoffeOwnerTest",
                     Email = "coffeowner@gmail.com",
                     CreationDate = DateTime.Now.ToString(),
                     Role = Role.CafeOwner,
                     Description = "Cafe Owner",
-                    PasswordHash = "CafePa33word".GetHashCode().ToString(),
+                    PasswordHash = PasswordHasher.HashPassword("test"),
                 });
             modelBuilder.Entity<User>().HasData(
                 new User 
                 { 
                     Id = Guid.NewGuid(),
-                    Firstname = "User",
-                    Lastname = "Normal",
+                    FirstName = "User",
+                    LastName = "Normal",
                     Username = "normal_user",
                     Email = "normaluser@gmail.com",
                     CreationDate = DateTime.Now.ToString(),
                     Role = Role.User,
                     Description = "", 
-                    PasswordHash = "UserPa33word".GetHashCode().ToString(),
+                    PasswordHash = PasswordHasher.HashPassword("test"),
                 });
             modelBuilder.Entity<User>().HasData(
                 new User
                 {
                     Id = Guid.NewGuid(),
-                    Firstname = "Enter",
-                    Lastname = "Teiner",
+                    FirstName = "Enter",
+                    LastName = "Teiner",
                     Username = "enterteiner",
                     Email = "enterteiner@gmail.com",
                     Description = "Enterteiner",
                     CreationDate = DateTime.Now.ToString(),
                     Role = Role.Entertainer,
-                    PasswordHash = "EntrPa33word".GetHashCode().ToString(),
+                    PasswordHash = PasswordHasher.HashPassword("test"),
                 });
             base.OnModelCreating(modelBuilder);
         }

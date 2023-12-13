@@ -2,6 +2,7 @@
 using Data.Models;
 using Data.Repositories;
 using Grpc.Core;
+using Service.Utils;
 
 namespace Service.Services
 {
@@ -22,16 +23,18 @@ namespace Service.Services
         {
             try
             {
+                string hashedPassword = PasswordHasher.HashPassword(request.Password);
+                
                 User user = new()
                 {
                     Id = Guid.NewGuid(),
-                    Firstname = request.FisrtName,
-                    Lastname = request.LastName,
+                    FirstName = request.FisrtName,
+                    LastName = request.LastName,
                     Username = request.Email,
                     Email = request.Email,
                     CreationDate = DateTime.Now.ToString(),
                     Role = Enum.Parse<Role>(request.Role),
-                    PasswordHash = request.Password,
+                    PasswordHash = hashedPassword,
                     Description = request.Description
                 };
 
@@ -39,8 +42,8 @@ namespace Service.Services
 
                 CreateUserResponse response = new()
                 {
-                    FisrtName = createdUser.Firstname,
-                    LastName = createdUser.Lastname,
+                    FisrtName = createdUser.FirstName,
+                    LastName = createdUser.LastName,
                     Username = createdUser.Username,
                     Email = createdUser.Email,
                     Role = createdUser.Role.ToString(),
@@ -67,10 +70,20 @@ namespace Service.Services
 
             User? foundUser = await _authRepository.LoginUserAsync(auth);
 
+            if (foundUser == null)
+            {
+                throw new Exception("User not found");
+            }
+
+            if (!PasswordHasher.VerifyPassword(foundUser.PasswordHash, auth.Password))
+            {
+                throw new Exception("Wrong password");
+            }
+
             CreateUserResponse response = new()
             {
-                FisrtName = foundUser.Firstname,
-                LastName = foundUser.Lastname,
+                FisrtName = foundUser.FirstName,
+                LastName = foundUser.LastName,
                 Username = foundUser.Username,
                 Email = foundUser.Email,
                 Role = foundUser.Role.ToString(),
@@ -89,8 +102,8 @@ namespace Service.Services
                 {
                     Id = user.Id.ToString(),
                     Description = user.Description,
-                    FirstName = user.Firstname, 
-                    LastName = user.Lastname,
+                    FirstName = user.FirstName, 
+                    LastName = user.LastName,
                     Username= user.Username,
                     Role = user.Role.ToString(),
                 };
