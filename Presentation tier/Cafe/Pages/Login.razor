@@ -1,7 +1,10 @@
 ﻿@page "/Login"
 @using Cafe.Services
+@using System.Net
+@using Cafe.Services.Http
 @inject IAuthService authService
 @inject NavigationManager navMgr
+@inject NotificationService NotificationService
 
 <AuthorizeView>
     <NotAuthorized>
@@ -26,12 +29,26 @@
         try
         {
             await authService.LoginAsync(args.Username, args.Password);
+            
             navMgr.NavigateTo("/");
+        }
+        catch (LoginException e)
+        {
+            ShowErrorNotification(e.Message);
+        }
+        catch (HttpRequestException e)
+        {
+            ShowErrorNotification($"Error fetching data: {e.Message}");
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
+            ShowErrorNotification($"An unexpected error occurred: {e.Message}");;
         }
+    }
+    
+    private void ShowErrorNotification(string message)
+    {
+        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = message, Duration = 4000 });
     }
 
     private void OnRegister()

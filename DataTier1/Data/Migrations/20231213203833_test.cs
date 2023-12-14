@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Data.Migrations
 {
     /// <inheritdoc />
-    public partial class testtest : Migration
+    public partial class test : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -21,8 +21,8 @@ namespace Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false),
-                    Firstname = table.Column<string>(type: "longtext", nullable: false),
-                    Lastname = table.Column<string>(type: "longtext", nullable: false),
+                    FirstName = table.Column<string>(type: "longtext", nullable: false),
+                    LastName = table.Column<string>(type: "longtext", nullable: false),
                     Description = table.Column<string>(type: "longtext", nullable: false),
                     Username = table.Column<string>(type: "varchar(255)", nullable: false),
                     Email = table.Column<string>(type: "varchar(255)", nullable: false),
@@ -76,6 +76,8 @@ namespace Data.Migrations
                     Id = table.Column<Guid>(type: "char(36)", nullable: false),
                     UserId = table.Column<Guid>(type: "char(36)", nullable: false),
                     EventId = table.Column<Guid>(type: "char(36)", nullable: false),
+                    FirstName = table.Column<string>(type: "longtext", nullable: false),
+                    LastName = table.Column<string>(type: "longtext", nullable: false),
                     CreationDate = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     NumberOfPeople = table.Column<int>(type: "int", nullable: false)
                 },
@@ -105,7 +107,7 @@ namespace Data.Migrations
                     Title = table.Column<string>(type: "longtext", nullable: false),
                     Content = table.Column<string>(type: "longtext", nullable: false),
                     AuthorId = table.Column<Guid>(type: "char(36)", nullable: false),
-                    EventId = table.Column<Guid>(type: "char(36)", nullable: false),
+                    EventId = table.Column<Guid>(type: "char(36)", nullable: true),
                     CreationDate = table.Column<string>(type: "longtext", nullable: false)
                 },
                 constraints: table =>
@@ -115,8 +117,7 @@ namespace Data.Migrations
                         name: "FK_Posts_Events_EventId",
                         column: x => x.EventId,
                         principalTable: "Events",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Posts_Users_AuthorId",
                         column: x => x.AuthorId,
@@ -128,12 +129,12 @@ namespace Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "Users",
-                columns: new[] { "Id", "CreationDate", "Description", "Email", "Firstname", "Lastname", "PasswordHash", "Role", "Username" },
+                columns: new[] { "Id", "CreationDate", "Description", "Email", "FirstName", "LastName", "PasswordHash", "Role", "Username" },
                 values: new object[,]
                 {
-                    { new Guid("3962c10d-7ae0-4d99-9988-4ec60e9209e9"), "08/12/2023 10.35.03", "Enterteiner", "enterteiner@gmail.com", "Enter", "Teiner", "-1476151250", 2, "enterteiner" },
-                    { new Guid("8b767e08-b3d5-4a36-8103-ca4b39ea3cbf"), "08/12/2023 10.35.03", "", "normaluser@gmail.com", "User", "Normal", "-2126989161", 0, "normal_user" },
-                    { new Guid("ba7eb629-b652-4348-82b6-1f3a35affe04"), "08/12/2023 10.35.03", "Cafe Owner", "coffeowner@gmail.com", "Coffe", "Owner", "-973406980", 1, "CoffeOwnerTest" }
+                    { new Guid("1fd99f02-ddd9-416f-afa5-8c8006dca890"), "13/12/2023 21.38.33", "", "normaluser@gmail.com", "User", "Normal", "EFkBVq44Z8u3DLJIDFCsNA==:d1qfGLlmWGU5jlGw4c1FyCsg4t042AaMFfC0LjIcZAU=", 0, "normal_user" },
+                    { new Guid("910a3cc5-8f4d-4008-a26f-aa4b76668e3d"), "13/12/2023 21.38.33", "Enterteiner", "enterteiner@gmail.com", "Enter", "Teiner", "Z7b3ZGW6cxsbHXvSg5Ujcw==:xlnbrWcFeqOQPvhccjVF2ls+uKq+pXgaX7WGT3fGapY=", 2, "enterteiner" },
+                    { new Guid("b8b0d1a3-77a6-4b01-afe9-d787e0be11e3"), "13/12/2023 21.38.33", "Cafe Owner", "coffeowner@gmail.com", "Coffe", "Owner", "5Ej6fpmoaH0R5wNu2dGmUQ==:+WKdZGdAOMNpOc94QzsDpJyo0cSIDIlcuNJVMLwhPuM=", 1, "CoffeOwnerTest" }
                 });
 
             migrationBuilder.CreateIndex(

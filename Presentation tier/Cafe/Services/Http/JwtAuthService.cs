@@ -1,4 +1,5 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
+using System.Net;
 using Blazored.LocalStorage;
 using Shared.Dtos;
 using Shared.Models;
@@ -41,6 +42,11 @@ public class JwtAuthService : IAuthService
 
         if (!response.IsSuccessStatusCode)
         {
+            if (response.StatusCode == HttpStatusCode.NotFound)
+            {
+                throw new LoginException("Invalid email or password");
+            }
+            
             throw new Exception(responseContent);
         }
         await _localStorage.SetItemAsync("token", responseContent);
@@ -128,4 +134,9 @@ public class JwtAuthService : IAuthService
 
         return Convert.FromBase64String(base64);
     }
+}
+
+public class LoginException : Exception
+{
+    public LoginException(string message) : base(message) { }
 }
