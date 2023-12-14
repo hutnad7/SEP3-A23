@@ -8,17 +8,18 @@
 @inject IAuthService AuthService;
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject HttpClient HttpClient
-@attribute [Authorize("MustBeCafeOwner")]
 
-<h3>CreatePost</h3>
-<RadzenTemplateForm TItem="Post" Data=Post Submit="@SubmitPost">
-    <RadzenTextBox @bind-value="Post.Title" Name="Title" Placeholder="Post Title" Style="width:100%; margin-bottom: 20px;"/>
-    <RadzenTextArea @bind-value="Post.Content" Name="Content" Placeholder="Content" Style="width:100%; margin-bottom: 20px; height: 200px"/>
-    
-    <RadzenButton ButtonType="ButtonType.Submit" Text="Post"/>
-</RadzenTemplateForm>
+@if (role.Equals("CafeOwner") || role.Equals("Entertainer"))
+{
+    <h3>CreatePost</h3>
+    <RadzenTemplateForm TItem="Post" Data=Post Submit="@SubmitPost">
+        <RadzenTextBox @bind-value="Post.Title" Name="Title" Placeholder="Post Title" Style="width:100%; margin-bottom: 20px;"/>
+        <RadzenTextArea @bind-value="Post.Content" Name="Content" Placeholder="Content" Style="width:100%; margin-bottom: 20px; height: 200px"/>
 
+        <RadzenButton ButtonType="ButtonType.Submit" Text="Post"/>
+    </RadzenTemplateForm>
 
+}
 @code {
     [Parameter]
     public string Id { get; set; }
@@ -26,13 +27,19 @@
     public string token;
     public Post Post = new Post();
     IEnumerable<UserPage> entertainers;
+    public string role;
 
+    protected override async Task OnInitializedAsync()
+    {
+        token = await _LocalStorage.GetItemAsStringAsync("token");
+
+        role = await AuthService.GetRole(token);
+    }
 
     private async Task SubmitPost(Post post)
     {
         try
         {
-            token = await _LocalStorage.GetItemAsStringAsync("token");
             post.author = AuthService.GetId(token).Result.ToString();
             if (!Id.Equals("null"))
             {
