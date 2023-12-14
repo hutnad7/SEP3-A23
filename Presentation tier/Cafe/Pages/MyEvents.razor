@@ -78,7 +78,7 @@
             var stream = await response.Content.ReadAsStreamAsync();
       //      my_events = await httpClient.GetFromJsonAsync<List<EventDto>>("http://localhost:8080/api/events/users/" + id, JsonOptionsHelper.DefaultJsonSerializerOptions);
             my_events = await JsonSerializer.DeserializeAsync<List<EventDto>>(stream, JsonOptionsHelper.DefaultJsonSerializerOptions) ?? new List<EventDto>();
-            ShowSuccessNotification();
+         //   ShowSuccessNotification();
         }
         else
         {
@@ -87,7 +87,7 @@
     }
     private void ShowSuccessNotification()
     {
-        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Event created", Detail = "Success Detail", Duration = 4000 });
+        NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Event Accepted", Detail = "Success Detail", Duration = 4000 });
     }
     private void ShowErrorNotification(string message)
     {
@@ -99,7 +99,7 @@
         var response = await httpClient.GetAsync("http://localhost:8080/api/events/state/" + id + "/" + "accepted");
         if (response.IsSuccessStatusCode)
         {
-            ShowSuccessNotification();
+          //  ShowSuccessNotification();
         }
         else
         {

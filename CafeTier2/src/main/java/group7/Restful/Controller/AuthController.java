@@ -46,7 +46,7 @@ public class AuthController {
         try {
             User foundUser = authService.loginUser(userLoginDto);
 
-            String jwt = authService.generateJwtToken(foundUser);
+                String jwt = authService.generateJwtToken(foundUser);
 
             return ResponseEntity.ok(jwt);
         } catch (Exception e) {

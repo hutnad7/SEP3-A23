@@ -70,11 +70,11 @@ public class EventService {
                 setId(UUID.fromString(response.getId()));
                 setName(response.getName());
                 setDescription(response.getDescription());
-                setEntertainerId(UUID.fromString(response.getEntertainer()));
+                setEntertainerId(UUID.fromString(response.getEntertainerId()));
                 setStartDate(response.getStartDate());
                 setEndDate(response.getEndDate());
                 setAvailablePlaces(response.getAvailablePlaces());
-                setCafeOwnerId(UUID.fromString(response.getCafeOwner()));
+                setCafeOwnerId(UUID.fromString(response.getCafeOwnerId()));
                  setStatus(response.getState());
             }
         };
